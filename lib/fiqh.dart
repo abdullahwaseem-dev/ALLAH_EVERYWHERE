@@ -2,8 +2,39 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'ask_ai.dart';
 
-class FiqhScreen extends StatelessWidget {
+class FiqhScreen extends StatefulWidget {
+  @override
+  State<FiqhScreen> createState() => _FiqhScreenState();
+}
+
+class _FiqhScreenState extends State<FiqhScreen> {
+  final TextEditingController _searchController = TextEditingController();
+  String _query = '';
+
+  static const List<String> _topics = [
+    'Purification (Taharah)',
+    'Salah',
+    'Zakat',
+    'Sawm (Fasting)',
+    'Hajj',
+    'Nikah (Marriage)',
+    'Halal & Haram',
+    'Business Transactions',
+  ];
+
+  List<String> get _filteredTopics => _query.isEmpty
+      ? _topics
+      : _topics.where((t) => t.toLowerCase().contains(_query.toLowerCase())).toList();
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,6 +108,8 @@ class FiqhScreen extends StatelessWidget {
                       SizedBox(width: 8.w),
                       Expanded(
                         child: TextField(
+                          controller: _searchController,
+                          onChanged: (value) => setState(() => _query = value),
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: 'Search For Fiqh',
@@ -87,87 +120,53 @@ class FiqhScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 16.h),
-                // Buttons Row
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                              (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed)) {
-                              return Colors.transparent;
-                            }
-                            return VoidColors.white;
-                          },
-                        ),
-                        elevation: MaterialStateProperty.all(2),
-                        shape: MaterialStateProperty.all(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.r),
-                          ),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 12.h),
-                        child: Text(
-                          'Fiqh',
-                          style: TextStyle(fontSize: 14.sp, color: Colors.black),
-                        ),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.r),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 12.h),
-                        child: Text(
-                          'Play',
-                          style: TextStyle(fontSize: 14.sp, color: Colors.black),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
               ],
             ),
           ),
           SizedBox(height: 20.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Tap a topic to ask AI about it',
+                style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade600),
+              ),
+            ),
+          ),
+          SizedBox(height: 8.h),
           Expanded(
             child: GridView.builder(
+              padding: EdgeInsets.symmetric(horizontal: 16.w),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                crossAxisSpacing: 30.w,
-                mainAxisSpacing: 30.h,
-                childAspectRatio: 1,
+                crossAxisSpacing: 16.w,
+                mainAxisSpacing: 16.h,
+                childAspectRatio: 1.1,
               ),
-              itemCount: 8,
+              itemCount: _filteredTopics.length,
               itemBuilder: (context, index) {
-                return Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16.r),
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        VoidImages.logo,
-                      ),
-                      SizedBox(height: 10.h),
-                      Text(
-                        'Category ${index + 1}',
-                        style: TextStyle(fontSize: 14.sp),
-                      ),
-                    ],
+                final topic = _filteredTopics[index];
+                return GestureDetector(
+                  onTap: () => Get.to(() => AskAiScreen(initialCategory: topic)),
+                  child: Container(
+                    padding: EdgeInsets.all(12.w),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16.r),
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.smart_toy_outlined, size: 32.sp, color: VoidColors.brown),
+                        SizedBox(height: 10.h),
+                        Text(
+                          topic,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },

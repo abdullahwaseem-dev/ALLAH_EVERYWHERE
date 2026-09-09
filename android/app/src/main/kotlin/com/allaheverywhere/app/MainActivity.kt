@@ -1,4 +1,4 @@
-package com.example.allah_everywhere
+package com.allaheverywhere.app
 
 import io.flutter.embedding.android.FlutterActivity
 

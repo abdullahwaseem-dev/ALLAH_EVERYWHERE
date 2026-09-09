@@ -1,15 +1,21 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:allah_everywhere/utils/utils/constraints/api_constants.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class HadithDetailService {
-  final String apiUrl = 'https://hadithapi.com/api/hadiths/?apiKey=\$2y\$10\$gZHaiB1KPJCVmowpqk8zuuYIbzEQCvddX0qPHxf9zY8txPvOjdEm';
-
-
   Future<Map<String, dynamic>?> fetchHadithDetails(String chapterId) async {
+    if (ApiConstant.hadithApiKey.isEmpty) {
+      VoidLogger.error(
+          'HADITH_API_KEY is not configured. Run with --dart-define=HADITH_API_KEY=your_key_here');
+      return null;
+    }
+
+    final String apiUrl =
+        'https://hadithapi.com/api/hadiths/?apiKey=${ApiConstant.hadithApiKey}&chapterId=$chapterId';
+
     try {
-      final response = await http.get(Uri.parse('$apiUrl&chapterId=$chapterId'));
-      print('Fetching Hadiths: ${response.statusCode}');
-      print('Fetching Hadiths: ${response.body}');
+      final response = await http.get(Uri.parse(apiUrl));
       if (response.statusCode == 200) {
         var data = jsonDecode(response.body);
         return data;
@@ -17,9 +23,8 @@ class HadithDetailService {
         throw Exception('Failed to load Hadiths');
       }
     } catch (e) {
-      print('Error fetching Hadiths: $e');
+      VoidLogger.error('Error fetching Hadith details', e);
       return null;
     }
   }
 }
-

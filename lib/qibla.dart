@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:allah_everywhere/widgets/instruction_text.dart';
 import 'package:allah_everywhere/widgets/location_info.dart';
 import 'package:allah_everywhere/widgets/masjid_image.dart';
@@ -8,12 +7,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:sensors_plus/sensors_plus.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
-
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class QiblaScreen extends StatefulWidget {
   @override
@@ -21,82 +18,53 @@ class QiblaScreen extends StatefulWidget {
 }
 
 class _QiblaScreenState extends State<QiblaScreen> {
-  double _qiblaDirection = 0.0;
-  double _deviceHeading = 0.0;
   String _currentLocation = "Fetching location...";
-
-  late StreamSubscription<GyroscopeEvent> _gyroscopeSubscription;
+  LocationStatus? _locationStatus;
 
   @override
   void initState() {
     super.initState();
-    _checkPermissions();
-    _startCompass();
+    _checkLocationStatus();
   }
 
-  Future<void> _checkPermissions() async {
-    PermissionStatus status = await Permission.location.request();
+  Future<void> _checkLocationStatus() async {
+    var status = await FlutterQiblah.checkLocationStatus();
+    if (status.enabled && status.status == LocationPermission.denied) {
+      await FlutterQiblah.requestPermissions();
+      status = await FlutterQiblah.checkLocationStatus();
+    }
 
-    if (status.isGranted) {
-      print("Location permission granted.");
-      _fetchCurrentLocation();
-      _fetchQiblaDirection();
-    } else {
-      print("Location permission denied.");
+    if (!mounted) return;
+    setState(() => _locationStatus = status);
+
+    if (status.enabled &&
+        (status.status == LocationPermission.always ||
+            status.status == LocationPermission.whileInUse)) {
+      _fetchCurrentLocationName();
     }
   }
 
-  Future<void> _fetchQiblaDirection() async {
+  Future<void> _fetchCurrentLocationName() async {
     try {
-      FlutterQiblah.qiblahStream.listen((QiblahDirection qiblaDirection) {
-        if (mounted) {
-          setState(() {
-            _qiblaDirection = qiblaDirection.qiblah;
-          });
-        }
-      });
-    } catch (e) {
-      print("Error fetching Qibla direction: $e");
-    }
-  }
+      Position position =
+          await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+      List<Placemark> placemarks =
+          await placemarkFromCoordinates(position.latitude, position.longitude);
 
-  void _startCompass() {
-    _gyroscopeSubscription = gyroscopeEvents.listen((GyroscopeEvent event) {
-      if (mounted) {
-        setState(() {
-          _deviceHeading = event.x;
-        });
-      }
-    });
-  }
-
-  Future<void> _fetchCurrentLocation() async {
-    try {
-      Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
-      List<Placemark> placemarks = await GeocodingPlatform.instance!.placemarkFromCoordinates(position.latitude, position.longitude);
-
+      if (!mounted) return;
       if (placemarks.isNotEmpty) {
         Placemark placemark = placemarks.first;
         setState(() {
-          _currentLocation = "${placemark.subLocality}, ${placemark.locality}, ${placemark.country}";
+          _currentLocation =
+              "${placemark.subLocality}, ${placemark.locality}, ${placemark.country}";
         });
       } else {
-        setState(() {
-          _currentLocation = "Location unavailable";
-        });
+        setState(() => _currentLocation = "Location unavailable");
       }
     } catch (e) {
-      print("Error fetching location: $e");
-      setState(() {
-        _currentLocation = "Location unavailable";
-      });
+      VoidLogger.error('Error fetching Qibla location name', e);
+      if (mounted) setState(() => _currentLocation = "Location unavailable");
     }
-  }
-
-  @override
-  void dispose() {
-    _gyroscopeSubscription.cancel();
-    super.dispose();
   }
 
   @override
@@ -108,55 +76,102 @@ class _QiblaScreenState extends State<QiblaScreen> {
         elevation: 0,
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
-          child: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          child: Icon(Icons.arrow_back_ios, color: Colors.black),
+          onPressed: () => Navigator.pop(context),
         ),
         title: Text(
           "Qibla",
-          style: TextStyle(
-            fontSize: 18.sp,
-            fontWeight: FontWeight.w600,
-            color: Colors.black,
-          ),
+          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: Colors.black),
         ),
         centerTitle: true,
       ),
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset(
-              VoidImages.semicircle_background,
-              fit: BoxFit.fill,
-            ),
+            child: Image.asset(VoidImages.semicircle_background, fit: BoxFit.fill),
           ),
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                SizedBox(height: 50.h),
-                QiblaCompass(deviceHeading: _deviceHeading, qiblaDirection: _qiblaDirection),
-                SizedBox(height: 10.h),
-                MasjidImage(),
-                SizedBox(height: 20.h),
-                InstructionText(),
-                SizedBox(height: 20.h),
-                MobileRotationImage(),
-                SizedBox(height: 10.h),
-              ],
-            ),
-          ),
-          Positioned(
-            bottom: 10.h,
-            left: 0,
-            right: 0,
-            child: LocationInfo(currentLocation: _currentLocation),
-          ),
+          _buildBody(),
         ],
       ),
     );
+  }
+
+  Widget _buildBody() {
+    final status = _locationStatus;
+    if (status == null) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    if (!status.enabled) {
+      return _buildLocationError(
+        "Location services are turned off. Please enable them to find the Qibla direction.",
+      );
+    }
+    if (status.status == LocationPermission.denied) {
+      return _buildLocationError(
+        "Location permission is required to find the Qibla direction.",
+      );
+    }
+    if (status.status == LocationPermission.deniedForever) {
+      return _buildLocationError(
+        "Location permission was permanently denied. Please enable it from app settings.",
+        showSettingsButton: true,
+      );
+    }
+
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(height: 50.h),
+          StreamBuilder<QiblahDirection>(
+            stream: FlutterQiblah.qiblahStream,
+            builder: (context, snapshot) {
+              if (!snapshot.hasData) {
+                return SizedBox(
+                  height: 180.h,
+                  child: const Center(child: CircularProgressIndicator()),
+                );
+              }
+              return QiblaCompass(qiblahDirection: snapshot.data!.qiblah);
+            },
+          ),
+          SizedBox(height: 10.h),
+          MasjidImage(),
+          SizedBox(height: 20.h),
+          InstructionText(),
+          SizedBox(height: 20.h),
+          MobileRotationImage(),
+          SizedBox(height: 60.h),
+          LocationInfo(currentLocation: _currentLocation),
+          SizedBox(height: 10.h),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLocationError(String message, {bool showSettingsButton = false}) {
+    return Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 32.w),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.location_off, size: 48.sp, color: Colors.black54),
+            SizedBox(height: 16.h),
+            Text(message, textAlign: TextAlign.center, style: TextStyle(fontSize: 14.sp)),
+            SizedBox(height: 16.h),
+            ElevatedButton(
+              onPressed: showSettingsButton ? Geolocator.openAppSettings : _checkLocationStatus,
+              child: Text(showSettingsButton ? 'Open Settings' : 'Retry'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    FlutterQiblah().dispose();
+    super.dispose();
   }
 }

@@ -7,25 +7,45 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:allah_everywhere/services/tasbeeh_service.dart';
+import 'package:allah_everywhere/services/reading_stats_service.dart';
+import 'package:allah_everywhere/services/account_service.dart';
 import 'About_us.dart';
 import 'login.dart';
 import 'notification.dart';
 
 class ProfileScreen extends StatelessWidget {
-  Future<Map<String, String>> _getUserProfile() async {
+  Future<Map<String, dynamic>> _getUserProfile() async {
     User? user = FirebaseAuth.instance.currentUser;
+
+    int tasbeehTotal = TasbeehService().lifetimeTotal;
+    int hadithRead = ReadingStatsService().hadithReadCount;
 
     if (user != null) {
       DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
 
       if (userDoc.exists) {
-        String name = userDoc['name'] ?? 'No Name';
+        final data = userDoc.data() as Map<String, dynamic>? ?? {};
+        String name = data['name'] ?? 'No Name';
         String profilePicUrl = VoidImages.profile;
-        return {'name': name, 'profilePicUrl': profilePicUrl};
+        // Firestore may hold a higher total synced from another device.
+        tasbeehTotal = (data['tasbeehTotal'] as num?)?.toInt() ?? tasbeehTotal;
+        hadithRead = (data['hadithReadCount'] as num?)?.toInt() ?? hadithRead;
+        return {
+          'name': name,
+          'profilePicUrl': profilePicUrl,
+          'tasbeehTotal': tasbeehTotal,
+          'hadithRead': hadithRead,
+        };
       }
     }
 
-    return {'name': 'Guest', 'profilePicUrl': VoidImages.profile};
+    return {
+      'name': 'Guest',
+      'profilePicUrl': VoidImages.profile,
+      'tasbeehTotal': tasbeehTotal,
+      'hadithRead': hadithRead,
+    };
   }
 
   @override
@@ -46,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
-      body: FutureBuilder<Map<String, String>>(
+      body: FutureBuilder<Map<String, dynamic>>(
         future: _getUserProfile(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -54,7 +74,7 @@ class ProfileScreen extends StatelessWidget {
           } else if (snapshot.hasError) {
             return Center(child: Text('Failed to load profile'));
           } else if (snapshot.hasData) {
-            Map<String, String> userProfile = snapshot.data!;
+            Map<String, dynamic> userProfile = snapshot.data!;
 
             return Container(
               width: double.infinity,
@@ -78,7 +98,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 10.h),
                   Text(
-                    userProfile['name']!,  // Display user name as fetched from Firestore
+                    userProfile['name'] as String,
                     style: TextStyle(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w700,
@@ -92,7 +112,7 @@ class ProfileScreen extends StatelessWidget {
                       Column(
                         children: [
                           Text(
-                            '47',
+                            '${userProfile['hadithRead']}',
                             style: TextStyle(
                               fontSize: 14.sp,
                               color: Colors.black,
@@ -113,7 +133,7 @@ class ProfileScreen extends StatelessWidget {
                       Column(
                         children: [
                           Text(
-                            '27',
+                            '${userProfile['tasbeehTotal']}',
                             style: TextStyle(
                               fontSize: 14.sp,
                               color: Colors.black,
@@ -121,28 +141,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'Masjid',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(width: 50.w),
-                      Column(
-                        children: [
-                          Text(
-                            '656',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            'Tasbah',
+                            'Tasbeeh Count',
                             style: TextStyle(
                               fontSize: 14.sp,
                               color: Colors.black,
@@ -158,16 +157,6 @@ class ProfileScreen extends StatelessWidget {
                     child: ListView(
                       physics: BouncingScrollPhysics(),
                       children: [
-                        _buildMenuItem(
-                          icon: Icons.favorite,
-                          text: 'Your Favorite',
-                          onTap: () {},
-                        ),
-                        _buildMenuItem(
-                          icon: Icons.person_add,
-                          text: 'Invite Your Friends',
-                          onTap: () {},
-                        ),
                         _buildMenuItem(
                           icon: Icons.account_circle_outlined,
                           text: 'About Us',
@@ -189,6 +178,13 @@ class ProfileScreen extends StatelessWidget {
                             _showLogoutDialog(context);
                           },
                         ),
+                        if (FirebaseAuth.instance.currentUser != null)
+                          _buildMenuItem(
+                            icon: Icons.delete_forever,
+                            text: 'Delete Account',
+                            iconColor: Colors.red,
+                            onTap: () => _showDeleteAccountDialog(context),
+                          ),
                       ],
                     ),
                   ),
@@ -204,14 +200,61 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildMenuItem(
-      {required IconData icon, required String text, required VoidCallback onTap}) {
+      {required IconData icon, required String text, required VoidCallback onTap, Color? iconColor}) {
     return ListTile(
-      leading: Icon(icon, color: Colors.blue, size: 28.sp),
+      leading: Icon(icon, color: iconColor ?? Colors.blue, size: 28.sp),
       title: Text(
         text,
-        style: TextStyle(fontSize: 18.sp, color: Colors.black),
+        style: TextStyle(fontSize: 18.sp, color: iconColor ?? Colors.black),
       ),
       onTap: onTap,
+    );
+  }
+
+  void _showDeleteAccountDialog(BuildContext context) {
+    final passwordController = TextEditingController();
+    showDialog(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('Delete your account?'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'This permanently deletes your account and profile data. This cannot be undone. Enter your password to confirm.',
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: passwordController,
+                obscureText: true,
+                decoration: const InputDecoration(labelText: 'Password'),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () async {
+                Navigator.pop(dialogContext);
+                try {
+                  await AccountService().deleteAccount(currentPassword: passwordController.text);
+                  Get.offAll(() => Login());
+                } catch (e) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Could not delete account: $e')),
+                  );
+                }
+              },
+              child: const Text('Delete', style: TextStyle(color: Colors.red)),
+            ),
+          ],
+        );
+      },
     );
   }
 

@@ -1,25 +1,30 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:allah_everywhere/utils/utils/constraints/api_constants.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class HadithService {
-
-  final String apiUrl = 'https://hadithapi.com/api/books?apiKey=\$2y\$10\$gZHaiB1KPJCVmowpqk8zuuYIbzEQCvddX0qPHxf9zY8txPvOjdEm';
-
   Future<List<dynamic>> fetchBooks() async {
-    print('Fetching books...');
+    if (ApiConstant.hadithApiKey.isEmpty) {
+      throw Exception(
+        'HADITH_API_KEY is not configured. Run with '
+        '--dart-define=HADITH_API_KEY=your_key_here',
+      );
+    }
+
+    final apiUrl =
+        'https://hadithapi.com/api/books?apiKey=${ApiConstant.hadithApiKey}';
+
     try {
-      // Make sure we treat the API URL and API key as strings
       final response = await http.get(Uri.parse(apiUrl));
-      print('Response status: ${response.body}');
-      print('Response status: ${response.statusCode}');
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
-        // Assuming the response has the structure as you provided.
         return data['books'];
       } else {
         throw Exception('Failed to load books');
       }
     } catch (e) {
+      VoidLogger.error('Error fetching Hadith books', e);
       throw Exception('Error: $e');
     }
   }

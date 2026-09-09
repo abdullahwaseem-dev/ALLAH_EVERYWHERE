@@ -15,7 +15,7 @@ class VoidLogger {
   static void warning (String message) {
     _logger.w(message);
   }
-  static void error (String message) {
-    _logger.e(message, error: error, stackTrace: StackTrace.current);
+  static void error (String message, [Object? error, StackTrace? stackTrace]) {
+    _logger.e(message, error: error, stackTrace: stackTrace ?? StackTrace.current);
   }
 }

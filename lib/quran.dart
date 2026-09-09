@@ -169,66 +169,6 @@ class QuranScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 16.h),
-
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ElevatedButton(
-                              onPressed: () {},
-                              style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
-                                  if (states.contains(MaterialState.pressed)) {
-                                    return Colors.black12;
-                                  }
-                                  return VoidColors.white;
-                                }),
-                                elevation: MaterialStateProperty.all(2),
-                                shape: MaterialStateProperty.all(
-                                  RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.r),
-                                  ),
-                                ),
-                              ),
-                              child: Container(
-                                decoration: BoxDecoration(
-
-                                  borderRadius: BorderRadius.circular(10.r),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 12.h),
-                                  child: Text(
-                                    'SURAH',
-                                    style: TextStyle(fontSize: 14.sp, color: Colors.black),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.black12,
-                                elevation: 0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.r),
-                                ),
-                              ),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.r),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 12.h),
-                                    child: Text(
-                                      'Play',
-                                      style: TextStyle(fontSize: 14.sp, color: Colors.black),
-                                    ),
-                                  ),
-                                )
-
-                            ),
-                          ],
-                        ),
                       ],
                     ),
                   ),

@@ -1,30 +1,30 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:allah_everywhere/main.dart';
+import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  group('VoidValidator.validateEmail', () {
+    test('rejects an empty value', () {
+      expect(VoidValidator.validateEmail(''), isNotNull);
+    });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    test('rejects a malformed address', () {
+      expect(VoidValidator.validateEmail('not-an-email'), isNotNull);
+    });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    test('accepts a well-formed address of any provider', () {
+      // Regression check: Forget Password used to only accept @gmail.com.
+      expect(VoidValidator.validateEmail('user@example.com'), isNull);
+      expect(VoidValidator.validateEmail('user@outlook.com'), isNull);
+    });
+  });
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  group('VoidValidator.validatePassword', () {
+    test('rejects a password missing an uppercase letter, digit, or symbol', () {
+      expect(VoidValidator.validatePassword('weakpass'), isNotNull);
+    });
+
+    test('accepts a password meeting all strength rules', () {
+      expect(VoidValidator.validatePassword('Str0ng!Pass'), isNull);
+    });
   });
 }

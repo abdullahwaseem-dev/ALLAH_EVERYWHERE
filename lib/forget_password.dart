@@ -7,7 +7,8 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';  // Firebase import
 
-import 'forget_password_success.dart'; // for text validation
+import 'forget_password_success.dart';
+import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);
@@ -24,11 +25,6 @@ class _ForgetPasswordState extends State<ForgetPassword> {
   // FirebaseAuth instance
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // Function to validate the email format containing "@gmail.com"
-  bool _isValidEmail(String email) {
-    return email.contains('@gmail.com');
-  }
-
   @override
   void initState() {
     super.initState();
@@ -36,7 +32,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
     // Add listener to enable/disable the button based on email input
     _emailController.addListener(() {
       setState(() {
-        _isButtonEnabled = _isValidEmail(_emailController.text);
+        _isButtonEnabled = VoidValidator.validateEmail(_emailController.text) == null;
       });
     });
   }

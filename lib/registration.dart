@@ -8,6 +8,8 @@ import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth
 import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/utils/utils/validators/validate.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -23,13 +25,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
 
+  String? _formError;
+
   void _checkFormValidity() {
     setState(() {
-      _isFormValid = _emailController.text.isNotEmpty &&
-          _passwordController.text.isNotEmpty &&
-          _confirmPasswordController.text.isNotEmpty &&
-          _passwordController.text == _confirmPasswordController.text &&
-          _isChecked;
+      _formError = VoidValidator.validateEmail(_emailController.text) ??
+          VoidValidator.validatePassword(_passwordController.text);
+      if (_formError == null && _passwordController.text != _confirmPasswordController.text) {
+        _formError = 'Passwords do not match.';
+      }
+      _isFormValid = _formError == null && _isChecked;
     });
   }
 
@@ -40,7 +45,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       String password = _passwordController.text.trim();
 
       // Create user with email and password
-      UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
@@ -62,7 +67,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
             errorMessage = "An error occurred. Please try again.";
             break;
         }
+      } else {
+        VoidLogger.error('Registration failed', e);
       }
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage)));
     }
   }
@@ -109,6 +117,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     passwordController: _passwordController,
                     confirmPasswordController: _confirmPasswordController,
                     isChecked: _isChecked,
+                    errorText: (_emailController.text.isEmpty && _passwordController.text.isEmpty)
+                        ? null
+                        : _formError,
                     onCheckboxChanged: (value) {
                       setState(() {
                         _isChecked = value ?? false;

@@ -1,4 +1,6 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
+import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'dart:math';
@@ -10,30 +12,64 @@ class TasbeehScreen extends StatefulWidget {
 }
 
 class _TasbeehScreenState extends State<TasbeehScreen> {
+  static const _countKey = 'tasbeeh_session_count';
+  static const _lapKey = 'tasbeeh_session_laps';
+
+  final TasbeehService _service = TasbeehService();
   int tasbeehCount = 0;
   int lapCount = 0;
+  int _unsyncedTaps = 0;
   Color beadColor = Colors.blue;
   List<bool> beadStates = List.generate(33, (index) => false);
+
+  @override
+  void initState() {
+    super.initState();
+    tasbeehCount = VoidStorage().readData<int>(_countKey) ?? 0;
+    lapCount = VoidStorage().readData<int>(_lapKey) ?? 0;
+    final remainder = tasbeehCount % 33;
+    beadStates = List.generate(33, (index) => index < remainder);
+  }
+
+  @override
+  void dispose() {
+    _syncPendingTaps();
+    super.dispose();
+  }
+
+  void _syncPendingTaps() {
+    if (_unsyncedTaps > 0) {
+      _service.addToLifetimeTotal(_unsyncedTaps);
+      _unsyncedTaps = 0;
+    }
+  }
 
   void incrementTasbeeh(int index) {
     setState(() {
       if (!beadStates[index]) {
         tasbeehCount++;
+        _unsyncedTaps++;
         beadStates[index] = true;
         if (tasbeehCount % 33 == 0) {
           lapCount++;
           beadStates = List.generate(33, (index) => false);
+          _syncPendingTaps();
         }
       }
     });
+    VoidStorage().saveData(_countKey, tasbeehCount);
+    VoidStorage().saveData(_lapKey, lapCount);
   }
 
   void resetTasbeeh() {
+    _syncPendingTaps();
     setState(() {
       tasbeehCount = 0;
       lapCount = 0;
       beadStates = List.generate(33, (index) => false);
     });
+    VoidStorage().saveData(_countKey, 0);
+    VoidStorage().saveData(_lapKey, 0);
   }
 
   void changeBeadColor(Color color) {

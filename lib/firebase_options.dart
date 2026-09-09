@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '756811172734',
     projectId: 'allah-everywhere',
     storageBucket: 'allah-everywhere.firebasestorage.app',
-    iosBundleId: 'com.example.allahEverywhere',
+    iosBundleId: 'com.allaheverywhere.app',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '756811172734',
     projectId: 'allah-everywhere',
     storageBucket: 'allah-everywhere.firebasestorage.app',
-    iosBundleId: 'com.example.allahEverywhere',
+    iosBundleId: 'com.allaheverywhere.app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

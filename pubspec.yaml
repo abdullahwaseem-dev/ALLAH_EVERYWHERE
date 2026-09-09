@@ -45,7 +45,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   get_cli: ^1.8.1
   curved_navigation_bar: ^1.0.6
-  flutter_qiblah: ^3.0.4
+  flutter_qiblah: ^3.1.0+1
   sensors_plus: ^6.1.0
   geolocator: ^13.0.2
   permission_handler: ^11.3.1
@@ -60,6 +60,10 @@ dependencies:
   firebase_auth: ^5.3.4
   shared_preferences: ^2.3.3
   firebase_storage: ^12.3.7
+  firebase_messaging: ^15.1.6
+  firebase_crashlytics: ^4.1.6
+  firebase_analytics: ^11.3.6
+  http: ^1.2.0
 
 dev_dependencies:
   flutter_test:

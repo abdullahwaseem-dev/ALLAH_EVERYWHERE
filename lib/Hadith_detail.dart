@@ -3,20 +3,31 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/services/reading_stats_service.dart';
 
 
 import 'controller/HadithDetailController.dart';
 
-class HadithDetail extends StatelessWidget {
+class HadithDetail extends StatefulWidget {
   final String chapterId;
-  HadithDetail({required this.chapterId});
+  const HadithDetail({Key? key, required this.chapterId}) : super(key: key);
 
+  @override
+  State<HadithDetail> createState() => _HadithDetailState();
+}
+
+class _HadithDetailState extends State<HadithDetail> {
   final HadithDetailController _controller = Get.put(HadithDetailController());
 
   @override
-  Widget build(BuildContext context) {
-    _controller.fetchHadiths(chapterId);
+  void initState() {
+    super.initState();
+    _controller.fetchHadiths(widget.chapterId);
+    ReadingStatsService().incrementHadithRead();
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [

@@ -14,7 +14,7 @@ class VoidAppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Lexend',
+    fontFamily: 'Almarai',
     brightness: Brightness.light,
     primaryColor: VoidColors.primary,
     scaffoldBackgroundColor: Colors.white,
@@ -29,7 +29,7 @@ class VoidAppTheme {
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins',
+    fontFamily: 'Almarai',
     brightness: Brightness.dark,
     primaryColor: VoidColors.pink,
     scaffoldBackgroundColor: Colors.black,

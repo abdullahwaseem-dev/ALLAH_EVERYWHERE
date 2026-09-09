@@ -2,6 +2,7 @@ import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
   @override
@@ -39,6 +40,12 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
 
     if (newPassword != retypeNewPassword) {
       _showSnackbar('New password and retype password do not match');
+      return;
+    }
+
+    final passwordError = VoidValidator.validatePassword(newPassword);
+    if (passwordError != null) {
+      _showSnackbar(passwordError);
       return;
     }
 

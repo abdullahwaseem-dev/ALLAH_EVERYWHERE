@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allah Everywhere uses your location to calculate accurate prayer times and point you toward the Qibla.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allah Everywhere needs access to your photo library so you can choose a profile picture.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Allah Everywhere uses motion sensors to keep the Qibla compass accurate as you turn.</string>
 </dict>
 </plist>

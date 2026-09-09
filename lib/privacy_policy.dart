@@ -54,9 +54,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15.h),
-                // Privacy policy description
                 Text(
-                  'At Allah EveryWhere, we value your privacy. This privacy policy outlines how we collect, use, and protect your personal data while using our app. We do not share your personal information with third parties without your consent.',
+                  'At Allah Everywhere, we value your privacy. This policy explains what data the app actually collects and why, and who it is shared with. We do not sell your data or share it with advertisers.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
@@ -65,9 +64,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30.h),
-                // Data Collection section
                 Text(
-                  'Data Collection',
+                  'What We Collect',
                   style: TextStyle(
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
@@ -76,7 +74,11 @@ class PrivacyPolicyScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15.h),
                 Text(
-                  'We may collect information such as your device details, usage patterns, and location data to improve the functionality of the app. All data is anonymized to protect your privacy.',
+                  '• Account data: your email address and display name, via Firebase Authentication.\n'
+                  '• Profile data stored in Firebase Cloud Firestore: your name, optional profile picture (Firebase Storage), reading/Tasbeeh activity counters, and questions you ask in Ask AI (with the AI-generated answers).\n'
+                  '• Device location: used only on-device to calculate accurate prayer times and Qibla direction. We do not store a history of your locations.\n'
+                  '• Push notification token: stored so we can deliver in-app notifications to your device via Firebase Cloud Messaging.\n'
+                  '• Crash and error reports: sent to Firebase Crashlytics to help us fix bugs.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
@@ -85,9 +87,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30.h),
-                // Data Security section
                 Text(
-                  'Data Security',
+                  'Third-Party Services',
                   style: TextStyle(
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
@@ -96,7 +97,26 @@ class PrivacyPolicyScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15.h),
                 Text(
-                  'We use industry-standard encryption to protect your personal data and ensure that it is safe from unauthorized access.',
+                  'Quran text is fetched from a public Quran API, and Hadith text from hadithapi.com. These requests include only the passage being viewed, not your identity. Nearby mosque lookups use the public OpenStreetMap Overpass API with your current coordinates, sent directly from your device.',
+                  style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black,
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(height: 30.h),
+                Text(
+                  'Your Choices',
+                  style: TextStyle(
+                    fontSize: 24.sp,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black,
+                  ),
+                ),
+                SizedBox(height: 15.h),
+                Text(
+                  'You can use the app as a guest without creating an account, though some features (saved Ask AI history, synced counters) require signing in. You can delete your account and associated profile data at any time from Settings > Delete Account.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
@@ -105,9 +125,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 40.h),
-                // Footer text
                 Text(
-                  'By using this app, you agree to the collection and use of information in accordance with this policy. If you have any questions, please feel free to contact us.',
+                  'By using this app, you agree to the collection and use of information as described above. If you have questions, please contact us.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,

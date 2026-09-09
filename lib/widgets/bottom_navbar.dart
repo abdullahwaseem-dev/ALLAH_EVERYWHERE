@@ -5,6 +5,7 @@ import '../profile.dart';
 import '../settings.dart';
 import '../tasbeeh.dart';
 import '../tib_e_nabwi.dart';
+import '../services/push_notification_service.dart';
 import '../utils/utils/constraints/colors.dart';
 import '../utils/utils/constraints/image_strings.dart';
 
@@ -23,6 +24,12 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
     SettingsScreen(),
     ProfileScreen(),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    PushNotificationService().init();
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -10,6 +10,7 @@ class FormSection extends StatefulWidget {
   final bool isChecked;
   final ValueChanged<bool?> onCheckboxChanged;
   final ValueChanged<String> onTextChanged;
+  final String? errorText;
 
   const FormSection({
     Key? key,
@@ -19,6 +20,7 @@ class FormSection extends StatefulWidget {
     required this.isChecked,
     required this.onCheckboxChanged,
     required this.onTextChanged,
+    this.errorText,
   }) : super(key: key);
 
   @override
@@ -100,6 +102,13 @@ class _FormSectionState extends State<FormSection> {
           ),
           onChanged: (value) => _checkFormValidity(),
         ),
+        if (widget.errorText != null) ...[
+          SizedBox(height: 8.h),
+          Text(
+            widget.errorText!,
+            style: TextStyle(color: Colors.red, fontSize: 12.sp),
+          ),
+        ],
         SizedBox(height: 20.h),
         // Terms and Conditions Checkbox
         Row(

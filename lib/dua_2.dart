@@ -2,11 +2,14 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-
+import 'data/dua_data.dart';
 import 'duadetail.dart';
 
 class Dua2Screen extends StatelessWidget {
+  final DuaCategory category;
+
+  const Dua2Screen({Key? key, required this.category}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,17 +19,11 @@ class Dua2Screen extends StatelessWidget {
         backgroundColor: VoidColors.brown,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: VoidColors.black,
-            size: 20.sp,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          icon: Icon(Icons.arrow_back_ios, color: VoidColors.black, size: 20.sp),
+          onPressed: () => Navigator.pop(context),
         ),
         title: Text(
-          'Clothes',
+          category.title,
           style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
@@ -38,65 +35,36 @@ class Dua2Screen extends StatelessWidget {
           children: [
             SizedBox(height: 10.h),
             Row(
-
               children: [
-                buildOption(
-                  context,
-                  title: 'All Duas',
-                  icon: Icons.menu_book_outlined,
-                  isSelected: true,
-                ),
-                SizedBox(width: 60.w),
-                GestureDetector(
-                  onTap: (){
-                    Get.to(()=>DuaDetailScreen());
-                  },
-                  child: buildOption(
-                    context,
-                    title: 'My Favorites',
-                    icon: Icons.bookmark_outline,
-                    isSelected: false,
-                  ),
+                Icon(Icons.menu_book_outlined, color: Colors.black, size: 20.sp),
+                SizedBox(width: 8.w),
+                Text(
+                  '${category.duas.length} duas',
+                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: Colors.black),
                 ),
               ],
             ),
             SizedBox(height: 20.h),
-            ListView(
+            ListView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              children: [
-                DuaCard(number: '1', title: 'Before removing clothes'),
-                DuaCard(number: '2', title: 'When wearing new clothes'),
-                DuaCard(number: '3', title: 'After wearing Clothes'),
-                DuaCard(
-                    number: '4', title: 'To be said to someone wearing new clothes'),
-              ],
+              itemCount: category.duas.length,
+              itemBuilder: (context, index) {
+                final dua = category.duas[index];
+                return DuaCard(
+                  number: '${index + 1}',
+                  title: dua.title,
+                  onTap: () => Get.to(() => DuaDetailScreen(
+                        dua: dua,
+                        index: index + 1,
+                        total: category.duas.length,
+                      )),
+                );
+              },
             ),
           ],
         ),
       ),
-    );
-  }
-
-  Widget buildOption(BuildContext context,
-      {required String title, required IconData icon, required bool isSelected}) {
-    return Row(
-      children: [
-        Icon(
-          icon,
-          color: isSelected ? Colors.black : Colors.grey,
-          size: 20.sp,
-        ),
-        SizedBox(width: 8.w),
-        Text(
-          title,
-          style: TextStyle(
-            fontSize: 16.sp,
-            fontWeight: FontWeight.bold,
-            color: isSelected ? Colors.black : Colors.grey,
-          ),
-        ),
-      ],
     );
   }
 }
@@ -104,11 +72,10 @@ class Dua2Screen extends StatelessWidget {
 class DuaCard extends StatelessWidget {
   final String number;
   final String title;
+  final VoidCallback onTap;
 
-  const DuaCard({
-    required this.number,
-    required this.title,
-  });
+  const DuaCard({Key? key, required this.number, required this.title, required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -119,33 +86,17 @@ class DuaCard extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(8),
           boxShadow: [
-            BoxShadow(
-              color: Colors.grey.shade300,
-              blurRadius: 4,
-              spreadRadius: 1,
-              offset: Offset(0, 2),
-            ),
+            BoxShadow(color: Colors.grey.shade300, blurRadius: 4, spreadRadius: 1, offset: Offset(0, 2)),
           ],
         ),
         child: ListTile(
           leading: CircleAvatar(
             backgroundColor: Colors.green.shade100,
-            child: Text(
-              number,
-              style: TextStyle(
-                color: Colors.green.shade800,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            child: Text(number, style: TextStyle(color: Colors.green.shade800, fontWeight: FontWeight.bold)),
           ),
-          title: Text(
-            title,
-            style: TextStyle(
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          onTap: () {},
+          title: Text(title, style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w400)),
+          trailing: Icon(Icons.chevron_right, color: Colors.grey.shade400),
+          onTap: onTap,
         ),
       ),
     );

@@ -10,6 +10,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'forget_password.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:allah_everywhere/utils/utils/validators/validate.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -45,7 +47,7 @@ class _LoginState extends State<Login> {
   void _updateLoginButtonState() {
     setState(() {
       _isLoginEnabled =
-          _emailController.text.isNotEmpty &&
+          VoidValidator.validateEmail(_emailController.text) == null &&
               _passwordController.text.isNotEmpty;
     });
   }
@@ -102,7 +104,8 @@ class _LoginState extends State<Login> {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(errorMessage)));
     } catch (e) {
-      print('Error: $e');
+      VoidLogger.error('Login failed', e);
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("An unexpected error occurred")));
     }
