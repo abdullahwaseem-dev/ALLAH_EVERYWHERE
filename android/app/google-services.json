@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "756811172734",
+    "project_id": "allah-everywhere",
+    "storage_bucket": "allah-everywhere.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756811172734:android:580889a4502864f4ddc12f",
+        "android_client_info": {
+          "package_name": "com.codecrafters.Allaheverywhere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALJr-Z9ZpPcunzT2bp-eR8kpe3N8_1I7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756811172734:android:627e07238874a3a0ddc12f",
+        "android_client_info": {
+          "package_name": "com.example.allah_everywher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALJr-Z9ZpPcunzT2bp-eR8kpe3N8_1I7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
