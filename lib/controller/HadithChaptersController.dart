@@ -9,9 +9,10 @@ class HadithChaptersController extends GetxController {
 
   final HadithChaptersService _hadithChaptersService = HadithChaptersService();
 
-  void fetchChapters(String bookSlug, String bookNameInArabic) async {
+  Future<void> fetchChapters(String bookSlug, String bookNameInArabic) async {
     try {
       isLoading(true);
+      errorMessage.value = '';
       bookNameArabic.value = bookNameInArabic;
       var fetchedChapters = await _hadithChaptersService.fetchChapters(bookSlug);
       chapters.assignAll(fetchedChapters);
@@ -20,10 +21,5 @@ class HadithChaptersController extends GetxController {
     } finally {
       isLoading(false);
     }
-  }
-
-  @override
-  void onInit() {
-    super.onInit();
   }
 }

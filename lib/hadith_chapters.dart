@@ -6,19 +6,28 @@ import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'Hadith_detail.dart';
 import 'controller/HadithChaptersController.dart';
 
-class HidthChaptersScreen extends StatelessWidget {
+class HidthChaptersScreen extends StatefulWidget {
   final String bookSlug;
   final String bookNameInArabic;
 
-  HidthChaptersScreen({required this.bookSlug, required this.bookNameInArabic});
+  const HidthChaptersScreen({Key? key, required this.bookSlug, required this.bookNameInArabic})
+      : super(key: key);
 
+  @override
+  State<HidthChaptersScreen> createState() => _HidthChaptersScreenState();
+}
+
+class _HidthChaptersScreenState extends State<HidthChaptersScreen> {
   final HadithChaptersController _controller = Get.put(HadithChaptersController());
 
   @override
-  Widget build(BuildContext context) {
-    // Fetch chapters when the screen is initialized
-    _controller.fetchChapters(bookSlug, bookNameInArabic);
+  void initState() {
+    super.initState();
+    _controller.fetchChapters(widget.bookSlug, widget.bookNameInArabic);
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: (context, child) {
         return Scaffold(
@@ -83,9 +92,23 @@ class HidthChaptersScreen extends StatelessWidget {
                       // Show error message if any
                       if (_controller.errorMessage.isNotEmpty) {
                         return Center(
-                          child: Text(
-                            _controller.errorMessage.value,
-                            style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                _controller.errorMessage.value,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                              ),
+                              SizedBox(height: 8.h),
+                              TextButton(
+                                onPressed: () => _controller.fetchChapters(
+                                  widget.bookSlug,
+                                  widget.bookNameInArabic,
+                                ),
+                                child: Text('Retry'),
+                              ),
+                            ],
                           ),
                         );
                       }

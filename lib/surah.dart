@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:quran/quran.dart' as Quran;
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 
 class SurahScreen extends StatefulWidget {
@@ -21,6 +21,7 @@ class _SurahScreenState extends State<SurahScreen> {
 
   List<String> surahText = [];
   List<String> surahTranslationEn = [];
+  String? _errorMessage;
 
   @override
   void initState() {
@@ -30,7 +31,6 @@ class _SurahScreenState extends State<SurahScreen> {
 
   void loadSurahData() {
     try {
-
       surahText.clear();
       surahTranslationEn.clear();
 
@@ -38,9 +38,10 @@ class _SurahScreenState extends State<SurahScreen> {
         surahText.add(Quran.getVerse(widget.surahId, i));
         surahTranslationEn.add(Quran.getVerseTranslation(widget.surahId, i));
       }
-      setState(() {});
+      setState(() => _errorMessage = null);
     } catch (e) {
-      print("Error fetching Surah data: $e");
+      VoidLogger.error('Error fetching Surah data', e);
+      setState(() => _errorMessage = 'Could not load this Surah. Please try again.');
     }
   }
 
@@ -109,7 +110,18 @@ class _SurahScreenState extends State<SurahScreen> {
                   SizedBox(height: 16.h),
 
                   Expanded(
-                    child: ListView.builder(
+                    child: _errorMessage != null
+                        ? Center(
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 24.w),
+                              child: Text(
+                                _errorMessage!,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 14.sp, color: Colors.white),
+                              ),
+                            ),
+                          )
+                        : ListView.builder(
                       itemCount: 3,
                       itemBuilder: (context, index) {
                         int verseIndex = currentPage * 3 + index;

@@ -179,6 +179,26 @@ class QuranScreen extends StatelessWidget {
                       return Center(child: CircularProgressIndicator());
                     }
 
+                    if (controller.errorMessage.isNotEmpty) {
+                      return Padding(
+                        padding: EdgeInsets.symmetric(vertical: 24.h),
+                        child: Column(
+                          children: [
+                            Text(
+                              controller.errorMessage.value,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 14.sp, color: Colors.red),
+                            ),
+                            SizedBox(height: 8.h),
+                            TextButton(
+                              onPressed: controller.fetchSurahs,
+                              child: Text('Retry'),
+                            ),
+                          ],
+                        ),
+                      );
+                    }
+
                     return ListView.builder(
                       shrinkWrap: true,
                       physics: NeverScrollableScrollPhysics(),

@@ -16,13 +16,13 @@ class HadithChaptersService {
         'https://hadithapi.com/api/$bookSlug/chapters?apiKey=${ApiConstant.hadithApiKey}';
 
     try {
-      final response = await http.get(Uri.parse(apiUrl));
+      final response = await http.get(Uri.parse(apiUrl)).timeout(const Duration(seconds: 15));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
         return data['chapters'];
       } else {
-        throw Exception('Failed to load chapters');
+        throw Exception('Failed to load chapters: HTTP ${response.statusCode}');
       }
     } catch (e) {
       VoidLogger.error('Error fetching Hadith chapters', e);

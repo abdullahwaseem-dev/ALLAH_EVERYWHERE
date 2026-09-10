@@ -87,9 +87,20 @@ class _HadithDetailState extends State<HadithDetail> {
 
                     if (_controller.errorMessage.isNotEmpty) {
                       return Center(
-                        child: Text(
-                          _controller.errorMessage.value,
-                          style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              _controller.errorMessage.value,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                            ),
+                            SizedBox(height: 8.h),
+                            TextButton(
+                              onPressed: () => _controller.fetchHadiths(widget.chapterId),
+                              child: Text('Retry'),
+                            ),
+                          ],
                         ),
                       );
                     }

@@ -1,5 +1,7 @@
-import 'dart:io'; // Import this for working with File
+import 'dart:io';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/logging/logger.dart';
+import 'package:allah_everywhere/utils/utils/file picking/image_picking.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
@@ -14,17 +16,27 @@ class EditProfileScreen extends StatefulWidget {
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
   String userName = 'New User';
-  String userEmail = 'abdullah@example.com';
+  String userEmail = '';
   ImageProvider? _imageProvider;
   String? _profilePicUrl;
+  bool _isUploadingImage = false;
+  bool _isSaving = false;
 
   final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     _nameController.text = userName;
     _getUserProfile();
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _emailController.dispose();
+    super.dispose();
   }
 
   Future<void> _getUserProfile() async {
@@ -50,11 +62,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   Future<void> _pickImage() async {
-    final ImagePicker picker = ImagePicker();
-    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
-
+    final XFile? image = await pickSingleImage();
     if (image != null) {
-      // Upload the new profile picture to Firebase Storage
       await _uploadProfilePicture(image);
     }
   }
@@ -63,64 +72,67 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     User? user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
 
-    // Convert the image path (String) into a File
-    File imageFile = File(image.path);
+    setState(() => _isUploadingImage = true);
+    try {
+      File imageFile = File(image.path);
+      final storageRef = FirebaseStorage.instance.ref().child('profile_pictures/${user.uid}');
 
-    // Create a reference to Firebase Storage
-    final storageRef = FirebaseStorage.instance.ref().child('profile_pictures/${user.uid}');
+      UploadTask uploadTask = storageRef.putFile(imageFile);
+      TaskSnapshot snapshot = await uploadTask;
+      String downloadUrl = await snapshot.ref.getDownloadURL();
 
-    // Upload the image
-    UploadTask uploadTask = storageRef.putFile(imageFile);  // Pass the File object here
-    TaskSnapshot snapshot = await uploadTask;
+      await FirebaseFirestore.instance.collection('users').doc(user.uid).set(
+        {'profilePicture': downloadUrl},
+        SetOptions(merge: true),
+      );
 
-    // Get the download URL after uploading
-    String downloadUrl = await snapshot.ref.getDownloadURL();
-
-    // Check if the download URL is valid
-    if (downloadUrl.isNotEmpty) {
-      // Update Firestore with the new profile picture URL
-      await FirebaseFirestore.instance.collection('users').doc(user.uid).update({
-        'profilePicture': downloadUrl,
-      });
-
+      if (!mounted) return;
       setState(() {
         _profilePicUrl = downloadUrl;
-        _imageProvider = NetworkImage(_profilePicUrl!); // Update the profile picture
+        _imageProvider = NetworkImage(downloadUrl);
       });
-    } else {
-      // Handle case where the URL is not valid
-      print("Failed to get a valid URL");
+    } catch (e) {
+      VoidLogger.error('Failed to upload profile picture', e);
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not upload profile picture. Please try again.')),
+      );
+    } finally {
+      if (mounted) setState(() => _isUploadingImage = false);
     }
   }
 
   Future<void> _saveProfile() async {
     User? user = FirebaseAuth.instance.currentUser;
-    if (user != null) {
-      // Fetch the user's document to check if it exists
-      DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+    if (user == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('You must be signed in to save your profile.')),
+      );
+      return;
+    }
 
-      if (userDoc.exists) {
-        // If the document exists, update it
-        await FirebaseFirestore.instance.collection('users').doc(user.uid).update({
-          'name': _nameController.text,
-        });
-      } else {
-        // If the document doesn't exist, create it
-        await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
+    setState(() => _isSaving = true);
+    try {
+      await FirebaseFirestore.instance.collection('users').doc(user.uid).set(
+        {
           'name': _nameController.text,
           'email': user.email,
-          'profilePicture': _profilePicUrl ?? '',  // Set profile picture URL if available
-        });
-      }
+          if (_profilePicUrl != null) 'profilePicture': _profilePicUrl,
+        },
+        SetOptions(merge: true),
+      );
 
-      setState(() {
-        userName = _nameController.text; // Update local variable
-      });
-
-      Navigator.pop(context); // Go back to previous screen
-    } else {
-      // Handle case where user is not authenticated
-      print("User not authenticated");
+      if (!mounted) return;
+      setState(() => userName = _nameController.text);
+      Navigator.pop(context);
+    } catch (e) {
+      VoidLogger.error('Failed to save profile', e);
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not save your profile. Please try again.')),
+      );
+    } finally {
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 
@@ -164,14 +176,25 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Center(
                   child: GestureDetector(
-                    onTap: _pickImage,
-                    child: CircleAvatar(
-                      radius: 60.r,
-                      backgroundColor: Colors.white,
-                      child: CircleAvatar(
-                        radius: 55.r,
-                        backgroundImage: _imageProvider ?? AssetImage(VoidImages.profile),
-                      ),
+                    onTap: _isUploadingImage ? null : _pickImage,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        CircleAvatar(
+                          radius: 60.r,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            radius: 55.r,
+                            backgroundImage: _imageProvider ?? AssetImage(VoidImages.profile),
+                          ),
+                        ),
+                        if (_isUploadingImage)
+                          CircleAvatar(
+                            radius: 60.r,
+                            backgroundColor: Colors.black.withOpacity(0.4),
+                            child: const CircularProgressIndicator(color: Colors.white),
+                          ),
+                      ],
                     ),
                   ),
                 ),
@@ -189,7 +212,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 ),
                 SizedBox(height: 20.h),
                 TextField(
-                  controller: TextEditingController(text: userEmail),
+                  controller: _emailController..text = userEmail,
                   decoration: InputDecoration(
                     labelText: 'Email',
                     border: OutlineInputBorder(),
@@ -203,12 +226,18 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 // Save Button
                 Center(
                   child: ElevatedButton(
-                    onPressed: _saveProfile,
-                    child: Text('Save',style: TextStyle(color:Colors.white),),
+                    onPressed: _isSaving ? null : _saveProfile,
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(200.w, 50.h),
                       backgroundColor: Colors.blue,
                     ),
+                    child: _isSaving
+                        ? SizedBox(
+                            width: 20.w,
+                            height: 20.w,
+                            child: const CircularProgressIndicator(color: Colors.white, strokeWidth: 2),
+                          )
+                        : const Text('Save', style: TextStyle(color: Colors.white)),
                   ),
                 ),
               ],

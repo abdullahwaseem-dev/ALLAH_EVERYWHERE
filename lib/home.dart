@@ -1,7 +1,6 @@
 import 'package:allah_everywhere/prayer_timing.dart';
 import 'package:allah_everywhere/quran.dart';
 import 'package:allah_everywhere/seerat.dart';
-import 'package:allah_everywhere/tasbeeh.dart';
 import 'package:allah_everywhere/widgets/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<NearbyMosque>? _nearbyMosques;
   bool _loadingMosques = false;
+  bool _mosqueLookupFailed = false;
 
   @override
   void initState() {
@@ -47,11 +47,15 @@ class _HomeScreenState extends State<HomeScreen> {
     final lon = controller.longitude.value;
     if (lat == null || lon == null || _loadingMosques) return;
 
-    setState(() => _loadingMosques = true);
-    final mosques = await _mosqueService.fetchNearby(lat, lon);
+    setState(() {
+      _loadingMosques = true;
+      _mosqueLookupFailed = false;
+    });
+    final result = await _mosqueService.fetchNearby(lat, lon);
     if (!mounted) return;
     setState(() {
-      _nearbyMosques = mosques;
+      _nearbyMosques = result.mosques;
+      _mosqueLookupFailed = result.hadError;
       _loadingMosques = false;
     });
   }
@@ -370,6 +374,22 @@ class _HomeScreenState extends State<HomeScreen> {
       return Text(
         'Waiting for your location…',
         style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+      );
+    }
+    if (_mosqueLookupFailed) {
+      return Row(
+        children: [
+          Expanded(
+            child: Text(
+              "Couldn't reach the mosque directory right now.",
+              style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+            ),
+          ),
+          TextButton(
+            onPressed: _maybeFetchNearbyMosques,
+            child: Text('Retry', style: TextStyle(fontSize: 13.sp)),
+          ),
+        ],
       );
     }
     if (_nearbyMosques!.isEmpty) {

@@ -2,11 +2,11 @@ import 'package:allah_everywhere/registration_success.dart';
 import 'package:allah_everywhere/widgets/buttons_section.dart';
 import 'package:allah_everywhere/widgets/form_section.dart';
 import 'package:allah_everywhere/widgets/login_link.dart';
+import 'package:allah_everywhere/widgets/bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth
-import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
@@ -137,7 +137,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       }
                     },
                     onJoinAsGuestPressed: () {
-                      // Join as guest logic goes here
+                      Get.to(() => BottomNavBarApp());
                     },
                   ),
                   SizedBox(height: 20.h),

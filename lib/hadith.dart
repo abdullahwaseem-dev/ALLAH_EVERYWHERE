@@ -75,60 +75,70 @@ class HadithScreen extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 10),
-                          child: Column(
-                            children: [
-                              Text(
-                                'Last Read',
-                                style: TextStyle(
-                                  fontSize: 12.sp,
-                                  color: VoidColors.white,
-                                ),
-                              ),
-                              SizedBox(height: 0.h),
-                              Text(
-                                'صحيح مسلم',
-                                style: TextStyle(
-                                  fontSize: 24.sp,
-                                  fontWeight: FontWeight.bold,
-                                  color: VoidColors.white,
-                                ),
-                              ),
-                              Text(
-                                'Chapters (Abwab, أبواب)',
-                                style: TextStyle(
-                                  fontSize: 12.sp,
-                                  color: VoidColors.white,
-                                ),
-                              ),
-                              SizedBox(height: 8.h),
-                              ElevatedButton(
-                                onPressed: () {},
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: VoidColors.secondary,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                          child: Obx(() {
+                            final hasLastRead = _controller.lastReadBookSlug.isNotEmpty;
+                            return Column(
+                              children: [
+                                Text(
+                                  'Last Read',
+                                  style: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: VoidColors.white,
                                   ),
-                                  elevation: 2,
                                 ),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      'Continue',
-                                      style: TextStyle(
-                                        fontSize: 12.sp,
+                                SizedBox(height: 0.h),
+                                Text(
+                                  hasLastRead ? _controller.lastReadBookName.value : 'Start Reading',
+                                  style: TextStyle(
+                                    fontSize: 24.sp,
+                                    fontWeight: FontWeight.bold,
+                                    color: VoidColors.white,
+                                  ),
+                                ),
+                                Text(
+                                  'Chapters (Abwab, أبواب)',
+                                  style: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: VoidColors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 8.h),
+                                ElevatedButton(
+                                  onPressed: hasLastRead
+                                      ? () {
+                                          Get.to(HidthChaptersScreen(
+                                            bookSlug: _controller.lastReadBookSlug.value,
+                                            bookNameInArabic: _controller.lastReadBookName.value,
+                                          ));
+                                        }
+                                      : null,
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: VoidColors.secondary,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20.r),
+                                    ),
+                                    elevation: 2,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        'Continue',
+                                        style: TextStyle(
+                                          fontSize: 12.sp,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.arrow_forward,
+                                        size: 14.sp,
                                         color: Colors.black,
                                       ),
-                                    ),
-                                    Icon(
-                                      Icons.arrow_forward,
-                                      size: 14.sp,
-                                      color: Colors.black,
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
+                              ],
+                            );
+                          }),
                         ),
                         Spacer(),
                         Image.asset(
@@ -189,9 +199,20 @@ class HadithScreen extends StatelessWidget {
 
                     if (_controller.errorMessage.isNotEmpty) {
                       return Center(
-                        child: Text(
-                          _controller.errorMessage.value,
-                          style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              _controller.errorMessage.value,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                            ),
+                            SizedBox(height: 8.h),
+                            TextButton(
+                              onPressed: _controller.fetchBooks,
+                              child: Text('Retry'),
+                            ),
+                          ],
                         ),
                       );
                     }
@@ -208,6 +229,7 @@ class HadithScreen extends StatelessWidget {
 
                             return GestureDetector(
                               onTap: () {
+                                _controller.updateLastReadBook(book['bookSlug'], book['bookName']);
                                 Get.to(HidthChaptersScreen(
                                   bookSlug: book['bookSlug'],
                                   bookNameInArabic: book['bookName'],

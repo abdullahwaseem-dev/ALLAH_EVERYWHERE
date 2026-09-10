@@ -15,12 +15,12 @@ class HadithDetailService {
         'https://hadithapi.com/api/hadiths/?apiKey=${ApiConstant.hadithApiKey}&chapterId=$chapterId';
 
     try {
-      final response = await http.get(Uri.parse(apiUrl));
+      final response = await http.get(Uri.parse(apiUrl)).timeout(const Duration(seconds: 15));
       if (response.statusCode == 200) {
         var data = jsonDecode(response.body);
         return data;
       } else {
-        throw Exception('Failed to load Hadiths');
+        throw Exception('Failed to load Hadiths: HTTP ${response.statusCode}');
       }
     } catch (e) {
       VoidLogger.error('Error fetching Hadith details', e);

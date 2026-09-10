@@ -23,11 +23,12 @@ class QuranController extends GetxController {
   Future<void> fetchSurahs() async {
     try {
       isLoading(true);
+      errorMessage.value = '';
       final List<Map<String, dynamic>> data = await _quranService.fetchSurahs();
       surahList.value = data;
       filteredSurahList.value = data; // Initially set filtered list to all surahs
     } catch (e) {
-      errorMessage.value = 'Error fetching data';
+      errorMessage.value = 'Error fetching data: $e';
     } finally {
       isLoading(false);
     }

@@ -11,10 +11,13 @@ class HadithDetailController extends GetxController {
 
   final HadithDetailService _service = HadithDetailService();
 
-  Future<void> fetchHadiths(String chapterId) async {  // Accept chapterId instead of chapterSlug
+  Future<void> fetchHadiths(String chapterId) async {
     try {
       isLoading(true);
-      var data = await _service.fetchHadithDetails(chapterId);  // Pass chapterId to the service
+      errorMessage.value = '';
+      hadithData.value = [];
+      chapterName.value = '';
+      var data = await _service.fetchHadithDetails(chapterId);
       if (data != null) {
         // Ensure hadiths data is a list
         if (data['hadiths'] != null && data['hadiths']['data'] is List) {
