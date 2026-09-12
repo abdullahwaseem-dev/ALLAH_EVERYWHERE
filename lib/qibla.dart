@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
@@ -88,7 +89,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset(VoidImages.semicircle_background, fit: BoxFit.fill),
+            child: ThemedBackground(lightImagePath: VoidImages.semicircle_background),
           ),
           _buildBody(),
         ],

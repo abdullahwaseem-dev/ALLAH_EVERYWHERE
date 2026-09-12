@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
 
 
@@ -31,14 +32,7 @@ class _HadithDetailState extends State<HadithDetail> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(VoidImages.details_background),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
+          ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.cover),
           // Content
           SafeArea(
             child: Column(

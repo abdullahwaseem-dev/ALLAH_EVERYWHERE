@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran/quran.dart' as Quran;
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
@@ -111,14 +112,7 @@ class _SurahScreenState extends State<SurahScreen> {
           body: Stack(
             children: [
               // Background Image
-              Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(VoidImages.details_background),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
+              ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.fill),
               Column(
                 children: [
                   // Header

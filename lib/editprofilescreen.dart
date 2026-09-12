@@ -138,6 +138,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -146,7 +147,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           style: TextStyle(
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
-            color: Colors.black,
+            color: textColor,
           ),
         ),
         leading: IconButton(
@@ -162,12 +163,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(VoidImages.otherscreen_background), // Update with your image
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: Theme.of(context).brightness == Brightness.dark
+            ? const BoxDecoration(color: Colors.black)
+            : BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(VoidImages.otherscreen_background),
+                  fit: BoxFit.cover,
+                ),
+              ),
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w,vertical: 50.h),

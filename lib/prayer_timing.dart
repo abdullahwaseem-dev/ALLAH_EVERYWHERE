@@ -1,5 +1,6 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -17,27 +18,13 @@ class PrayerTimingScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(VoidImages.details_background),
-                fit: BoxFit.fill,
-              ),
-            ),
-          ),
+          ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.fill),
           Positioned(
             top: 120.h,
             left: 0,
             right: 0,
             bottom: 0,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(VoidImages.prayer_timing_background),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
+            child: ThemedBackground(lightImagePath: VoidImages.prayer_timing_background, fit: BoxFit.cover),
           ),
           Positioned(
             top: 40.h,

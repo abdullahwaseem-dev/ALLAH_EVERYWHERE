@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/controllers/notifications_controller.dart';
 
 class NotificationsScreen extends StatefulWidget {
@@ -22,11 +23,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(VoidImages.otherscreen_background), fit: BoxFit.cover),
-            ),
-          ),
+          ThemedBackground(lightImagePath: VoidImages.otherscreen_background, fit: BoxFit.cover),
           if (isSearchMode)
             _buildSearchBar()
           else

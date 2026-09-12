@@ -1,5 +1,6 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/data/seerah_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +27,7 @@ class SeeratScreen extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Image.asset(width: double.infinity, VoidImages.quran_background, fit: BoxFit.fill),
+          ThemedBackground(lightImagePath: VoidImages.quran_background),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 90.h),
             child: SingleChildScrollView(

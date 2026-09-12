@@ -1,6 +1,7 @@
 import 'package:adhan/adhan.dart';
 import 'package:allah_everywhere/privacy_policy.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/controllers/theme_controller.dart';
 import 'package:allah_everywhere/controllers/language_controller.dart';
@@ -166,11 +167,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(VoidImages.otherscreen_background), fit: BoxFit.cover),
-            ),
-          ),
+          ThemedBackground(lightImagePath: VoidImages.otherscreen_background, fit: BoxFit.cover),
           SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

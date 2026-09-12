@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'Hadith_detail.dart';
@@ -56,14 +57,7 @@ class _HidthChaptersScreenState extends State<HidthChaptersScreen> {
           body: Stack(
             children: [
               // Background image
-              Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(VoidImages.details_background),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
+              ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.cover),
               Column(
                 children: [
                   // Header

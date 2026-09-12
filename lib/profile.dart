@@ -85,6 +85,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -93,7 +94,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           style: TextStyle(
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
-            color: Colors.black,
+            color: textColor,
           ),
         ),
         centerTitle: true,
@@ -114,12 +115,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             return Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(VoidImages.otherscreen_background),
-                  fit: BoxFit.cover,
-                ),
-              ),
+              decoration: Theme.of(context).brightness == Brightness.dark
+                  ? const BoxDecoration(color: Colors.black)
+                  : BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(VoidImages.otherscreen_background),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
               child: RefreshIndicator(
                 onRefresh: _refresh,
                 child: ListView(
@@ -143,7 +146,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       style: TextStyle(
                         fontSize: 20.sp,
                         fontWeight: FontWeight.w700,
-                        color: Colors.black,
+                        color: textColor,
                       ),
                     ),
                     SizedBox(height: 10.h),
@@ -156,7 +159,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               '${userProfile.hadithRead}',
                               style: TextStyle(
                                 fontSize: 14.sp,
-                                color: Colors.black,
+                                color: textColor,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -164,7 +167,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               'Hadith Read',
                               style: TextStyle(
                                 fontSize: 14.sp,
-                                color: Colors.black,
+                                color: textColor,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -177,7 +180,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               '${userProfile.tasbeehTotal}',
                               style: TextStyle(
                                 fontSize: 14.sp,
-                                color: Colors.black,
+                                color: textColor,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -185,7 +188,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               'Tasbeeh Count',
                               style: TextStyle(
                                 fontSize: 14.sp,
-                                color: Colors.black,
+                                color: textColor,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -253,7 +256,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       leading: Icon(icon, color: iconColor ?? Colors.blue, size: 28.sp),
       title: Text(
         text,
-        style: TextStyle(fontSize: 18.sp, color: iconColor ?? Colors.black),
+        style: TextStyle(fontSize: 18.sp, color: iconColor),
       ),
       onTap: onTap,
     );

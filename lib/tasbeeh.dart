@@ -116,9 +116,12 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     final progress = (tasbeehCount % target) / target;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textColor = isDark ? Colors.white : VoidColors.black;
+    final cardColor = isDark ? const Color(0xFF1E1E1E) : Colors.white;
 
     return Scaffold(
-      backgroundColor: VoidColors.secondary,
+      backgroundColor: isDark ? Colors.black : VoidColors.secondary,
       body: SafeArea(
         child: Column(
           children: [
@@ -126,7 +129,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
               padding: EdgeInsets.symmetric(vertical: 16.h),
               child: Text(
                 'Tasbeeh',
-                style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: VoidColors.black),
+                style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: textColor),
               ),
             ),
             Wrap(
@@ -160,7 +163,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
                       height: 220.w,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.white,
+                        color: cardColor,
                         boxShadow: [
                           BoxShadow(color: beadColor.withOpacity(0.3), blurRadius: 24, spreadRadius: 4),
                         ],
@@ -186,7 +189,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
                                 style: TextStyle(
                                   fontSize: 56.sp,
                                   fontWeight: FontWeight.bold,
-                                  color: VoidColors.black,
+                                  color: textColor,
                                 ),
                               ),
                               Text(
@@ -215,7 +218,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
             Container(
               padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: cardColor,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(16.r)),
                 boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 10, offset: Offset(0, -2))],
               ),

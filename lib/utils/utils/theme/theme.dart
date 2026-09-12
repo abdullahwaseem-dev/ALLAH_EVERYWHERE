@@ -18,6 +18,10 @@ class VoidAppTheme {
     brightness: Brightness.light,
     primaryColor: VoidColors.primary,
     scaffoldBackgroundColor: Colors.white,
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: VoidColors.brown,
+      brightness: Brightness.light,
+    ),
     textTheme: VoidTextTheme.lightTextTheme,
     chipTheme: VoidChipTheme.lightChipTheme,
     appBarTheme: VoidAppBarTheme.lightAppBarTheme,
@@ -33,6 +37,10 @@ class VoidAppTheme {
     brightness: Brightness.dark,
     primaryColor: VoidColors.pink,
     scaffoldBackgroundColor: Colors.black,
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: VoidColors.pink,
+      brightness: Brightness.dark,
+    ),
     textTheme: VoidTextTheme.darkTextTheme,
     chipTheme: VoidChipTheme.darkChipTheme,
     appBarTheme: VoidAppBarTheme.darkAppBarTheme,

@@ -37,8 +37,9 @@ class _AskAiScreenState extends State<AskAiScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
-      backgroundColor: VoidColors.secondary,
+      backgroundColor: isDark ? Colors.black : VoidColors.secondary,
       appBar: AppBar(
         backgroundColor: VoidColors.brown,
         elevation: 0,
@@ -142,11 +143,14 @@ class _AskAiScreenState extends State<AskAiScreen> {
   }
 
   Widget _buildQaCard(AiAnswer answer) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final cardColor = isDark ? const Color(0xFF1E1E1E) : Colors.white;
+    final textColor = isDark ? Colors.white70 : Colors.black87;
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8.h),
       padding: EdgeInsets.all(14.w),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cardColor,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
           BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 6.r, offset: Offset(0, 2)),
@@ -162,7 +166,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
               Expanded(
                 child: Text(
                   answer.question,
-                  style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
+                  style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600, color: textColor),
                 ),
               ),
             ],
@@ -176,7 +180,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
               Expanded(
                 child: Text(
                   answer.answer,
-                  style: TextStyle(fontSize: 13.sp, color: Colors.black87, height: 1.4),
+                  style: TextStyle(fontSize: 13.sp, color: textColor, height: 1.4),
                 ),
               ),
             ],
@@ -187,6 +191,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
   }
 
   Widget _buildInput() {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.all(12.w),
@@ -199,10 +204,11 @@ class _AskAiScreenState extends State<AskAiScreen> {
                 maxLines: 4,
                 textInputAction: TextInputAction.send,
                 onSubmitted: (_) => _submit(),
+                style: TextStyle(color: isDark ? Colors.white : Colors.black),
                 decoration: InputDecoration(
                   hintText: 'Ask your question…',
                   filled: true,
-                  fillColor: Colors.white,
+                  fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                   contentPadding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24.r),

@@ -5,6 +5,7 @@ import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 class AboutUsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -13,7 +14,7 @@ class AboutUsScreen extends StatelessWidget {
           style: TextStyle(
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
-            color: Colors.black,
+            color: textColor,
           ),
         ),
         centerTitle: true,
@@ -24,12 +25,14 @@ class AboutUsScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(VoidImages.otherscreen_background),
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: Theme.of(context).brightness == Brightness.dark
+            ? const BoxDecoration(color: Colors.black)
+            : BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(VoidImages.otherscreen_background),
+                  fit: BoxFit.cover,
+                ),
+              ),
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 50.h),
           child: SingleChildScrollView(
@@ -42,7 +45,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
-                    color: Colors.black,
+                    color: textColor,
                   ),
                 ),
                 SizedBox(height: 15.h),
@@ -51,7 +54,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
-                    color: Colors.black,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),
@@ -61,7 +64,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
-                    color: Colors.black,
+                    color: textColor,
                   ),
                 ),
                 SizedBox(height: 15.h),
@@ -70,7 +73,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
-                    color: Colors.black,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),
@@ -81,7 +84,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 24.sp,
                     fontWeight: FontWeight.w700,
-                    color: Colors.black,
+                    color: textColor,
                   ),
                 ),
                 SizedBox(height: 15.h),
@@ -90,7 +93,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
-                    color: Colors.black,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),
@@ -103,7 +106,7 @@ class AboutUsScreen extends StatelessWidget {
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.italic,
-                      color: Colors.black,
+                      color: textColor,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -115,7 +118,7 @@ class AboutUsScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
-                    color: Colors.black,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),

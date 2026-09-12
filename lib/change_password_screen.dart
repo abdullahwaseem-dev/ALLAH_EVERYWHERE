@@ -80,6 +80,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
     return Scaffold(
       key: _scaffoldKey,
       extendBodyBehindAppBar: true,
@@ -89,7 +90,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
           style: TextStyle(
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
-            color: Colors.black,
+            color: textColor,
           ),
         ),
         leading: IconButton(
@@ -105,12 +106,14 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(VoidImages.otherscreen_background),
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: Theme.of(context).brightness == Brightness.dark
+            ? const BoxDecoration(color: Colors.black)
+            : BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(VoidImages.otherscreen_background),
+                  fit: BoxFit.cover,
+                ),
+              ),
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 170.h),

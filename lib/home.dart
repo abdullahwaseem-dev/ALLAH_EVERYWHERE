@@ -62,9 +62,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       body: Container(
-        color: VoidColors.secondary,
+        color: isDark ? Colors.black : VoidColors.secondary,
         child: RefreshIndicator(
           onRefresh: () => controller.fetchLocationAndTimes(),
           child: SingleChildScrollView(
@@ -212,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: VoidColors.whitish,
+                      color: isDark ? const Color(0xFF1E1E1E) : VoidColors.whitish,
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Color(0xFF5D8082), width: 2),
                     ),

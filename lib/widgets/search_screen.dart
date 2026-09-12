@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/controller/QuranController.dart';
 import 'package:allah_everywhere/controller/HadithController.dart';
@@ -83,11 +84,7 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(VoidImages.otherscreen_background), fit: BoxFit.cover),
-            ),
-          ),
+          ThemedBackground(lightImagePath: VoidImages.otherscreen_background, fit: BoxFit.cover),
           SafeArea(
             child: Column(
               children: [

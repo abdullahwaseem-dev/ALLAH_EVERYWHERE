@@ -1,6 +1,7 @@
 import 'package:allah_everywhere/surah.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -36,10 +37,7 @@ class QuranScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset(
-              VoidImages.quran_background,
-              fit: BoxFit.fill,
-            ),
+            child: ThemedBackground(lightImagePath: VoidImages.quran_background),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 48.h),
