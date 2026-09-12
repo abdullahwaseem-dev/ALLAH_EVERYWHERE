@@ -83,13 +83,21 @@ class _BookmarksScreenState extends State<BookmarksScreen> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
+
     return Scaffold(
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
-        title: Text(t.bookmarksTitle, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t.bookmarksTitle, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700, color: textColor)),
         centerTitle: true,
       ),
       body: _bookmarks == null
-          ? const Center(child: CircularProgressIndicator())
+          ? Center(child: CircularProgressIndicator(color: accent))
           : _bookmarks!.isEmpty
               ? Center(
                   child: Padding(
@@ -97,23 +105,27 @@ class _BookmarksScreenState extends State<BookmarksScreen> {
                     child: Text(
                       t.noBookmarksYet,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 14.sp, color: Colors.grey.shade600),
+                      style: TextStyle(fontSize: 14.sp, color: isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600),
                     ),
                   ),
                 )
               : RefreshIndicator(
                   onRefresh: _load,
+                  color: accent,
                   child: ListView.builder(
                     padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                     itemCount: _bookmarks!.length,
                     itemBuilder: (context, index) {
                       final bookmark = _bookmarks![index];
                       return Card(
+                        color: cardColor,
                         margin: EdgeInsets.symmetric(vertical: 4.h),
                         child: ListTile(
-                          leading: Icon(_iconFor(bookmark.type), color: VoidColors.brown),
-                          title: Text(bookmark.title, style: TextStyle(fontWeight: FontWeight.w600)),
-                          subtitle: bookmark.subtitle.isNotEmpty ? Text(bookmark.subtitle) : null,
+                          leading: Icon(_iconFor(bookmark.type), color: accent),
+                          title: Text(bookmark.title, style: TextStyle(fontWeight: FontWeight.w600, color: textColor)),
+                          subtitle: bookmark.subtitle.isNotEmpty
+                              ? Text(bookmark.subtitle, style: TextStyle(color: isDark ? VoidColors.textDarkSecondary : null))
+                              : null,
                           trailing: IconButton(
                             icon: const Icon(Icons.delete_outline, color: Colors.red),
                             onPressed: () async {

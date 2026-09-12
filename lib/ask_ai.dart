@@ -40,20 +40,22 @@ class _AskAiScreenState extends State<AskAiScreen> {
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
-      backgroundColor: isDark ? Colors.black : VoidColors.secondary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
-        backgroundColor: VoidColors.brown,
+        backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: VoidColors.black, size: 20.sp),
+          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
           widget.initialCategory != null
               ? '${t.askAi} • ${widget.initialCategory}'
               : t.askAi,
-          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),
         ),
         centerTitle: true,
       ),
@@ -102,11 +104,11 @@ class _AskAiScreenState extends State<AskAiScreen> {
                 itemCount: controller.history.length + (controller.isLoading.value ? 1 : 0),
                 itemBuilder: (context, index) {
                   if (controller.isLoading.value && index == 0) {
-                    return _buildLoadingBubble();
+                    return _buildLoadingBubble(accent);
                   }
                   final answer = controller
                       .history[index - (controller.isLoading.value ? 1 : 0)];
-                  return _buildQaCard(answer);
+                  return _buildQaCard(answer, accent);
                 },
               );
             }),
@@ -120,13 +122,13 @@ class _AskAiScreenState extends State<AskAiScreen> {
                   ),
                 )
               : const SizedBox.shrink()),
-          _buildInput(),
+          _buildInput(accent),
         ],
       ),
     );
   }
 
-  Widget _buildLoadingBubble() {
+  Widget _buildLoadingBubble(Color accent) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.h),
       child: Row(
@@ -134,7 +136,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
           SizedBox(
             width: 16.w,
             height: 16.w,
-            child: const CircularProgressIndicator(strokeWidth: 2),
+            child: CircularProgressIndicator(strokeWidth: 2, color: accent),
           ),
           SizedBox(width: 8.w),
           Text(AppLocalizations.of(context)!.researching, style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade600)),
@@ -143,10 +145,10 @@ class _AskAiScreenState extends State<AskAiScreen> {
     );
   }
 
-  Widget _buildQaCard(AiAnswer answer) {
+  Widget _buildQaCard(AiAnswer answer, Color accent) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final cardColor = isDark ? const Color(0xFF1E1E1E) : Colors.white;
-    final textColor = isDark ? Colors.white70 : Colors.black87;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8.h),
       padding: EdgeInsets.all(14.w),
@@ -154,7 +156,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
         color: cardColor,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 6.r, offset: Offset(0, 2)),
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 6.r, offset: const Offset(0, 2)),
         ],
       ),
       child: Column(
@@ -162,7 +164,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
         children: [
           Row(
             children: [
-              Icon(Icons.person, size: 16.sp, color: VoidColors.brown),
+              Icon(Icons.person, size: 16.sp, color: accent),
               SizedBox(width: 6.w),
               Expanded(
                 child: Text(
@@ -176,7 +178,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.smart_toy_outlined, size: 16.sp, color: VoidColors.darkBlue),
+              Icon(Icons.smart_toy_outlined, size: 16.sp, color: accent),
               SizedBox(width: 6.w),
               Expanded(
                 child: Text(
@@ -191,7 +193,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
     );
   }
 
-  Widget _buildInput() {
+  Widget _buildInput(Color accent) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return SafeArea(
       child: Padding(
@@ -205,11 +207,11 @@ class _AskAiScreenState extends State<AskAiScreen> {
                 maxLines: 4,
                 textInputAction: TextInputAction.send,
                 onSubmitted: (_) => _submit(),
-                style: TextStyle(color: isDark ? Colors.white : Colors.black),
+                style: TextStyle(color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep),
                 decoration: InputDecoration(
                   hintText: AppLocalizations.of(context)!.askAiHint,
                   filled: true,
-                  fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                  fillColor: isDark ? VoidColors.cardDark : VoidColors.cardLight,
                   contentPadding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24.r),
@@ -220,7 +222,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
             ),
             SizedBox(width: 8.w),
             Obx(() => IconButton(
-                  icon: Icon(Icons.send, color: VoidColors.brown),
+                  icon: Icon(Icons.send, color: accent),
                   onPressed: controller.isLoading.value ? null : _submit,
                 )),
           ],
