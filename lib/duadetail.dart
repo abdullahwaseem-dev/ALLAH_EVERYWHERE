@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 import 'data/dua_data.dart';
 
 class DuaDetailScreen extends StatefulWidget {
@@ -60,10 +61,7 @@ class _DuaDetailScreenState extends State<DuaDetailScreen> {
         toolbarHeight: 60.h,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
-          onPressed: () => Navigator.pop(context),
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           dua.title,
           style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),

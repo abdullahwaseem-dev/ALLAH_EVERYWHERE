@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 import 'package:http/http.dart' as http;
+import 'package:geocoding/geocoding.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 class NearbyMosque {
@@ -35,6 +36,11 @@ class NearbyMosqueResult {
 /// Masjid" cards that used to show regardless of the user's actual location.
 class NearbyMosqueService {
   static const _endpoint = 'https://overpass-api.de/api/interpreter';
+  static const _unnamed = 'Unnamed Mosque';
+  // Reverse-geocoding is one network call per mosque, so it's capped to
+  // keep the list responsive - only the closest unnamed results (the ones
+  // the user is most likely to actually look at) get enriched.
+  static const _maxReverseGeocode = 8;
 
   Future<NearbyMosqueResult> fetchNearby(
     double latitude,
@@ -101,7 +107,7 @@ class NearbyMosqueService {
           final tags = e['tags'] as Map<String, dynamic>? ?? {};
           final name = (tags['name'] ?? tags['name:en'] ?? tags['alt_name'] ?? tags['official_name'])
                   as String? ??
-              'Unnamed Mosque';
+              _unnamed;
 
           // Nodes carry lat/lon directly; ways and relations only get a
           // `center` from `out center`.
@@ -123,7 +129,57 @@ class NearbyMosqueService {
         .toList()
       ..sort((a, b) => a.distanceKm.compareTo(b.distanceKm));
 
-    return _dedupe(mosques);
+    return _enrichUnnamed(_dedupe(mosques));
+  }
+
+  /// OpenStreetMap frequently has no `name` tag at all for smaller mosques -
+  /// that's missing source data, not a bug, and no query change can invent
+  /// a name that was never mapped. Instead of showing a bare "Unnamed
+  /// Mosque" (which reads as broken), reverse-geocode the closest few to at
+  /// least show the neighbourhood/street, the way Google Maps labels an
+  /// unnamed POI - e.g. "Mosque, Al Aziziyah" instead of nothing useful.
+  Future<List<NearbyMosque>> _enrichUnnamed(List<NearbyMosque> mosques) async {
+    final unnamedIndexes = [
+      for (var i = 0; i < mosques.length; i++)
+        if (mosques[i].name == _unnamed) i,
+    ];
+    if (unnamedIndexes.isEmpty) return mosques;
+
+    final toGeocode = unnamedIndexes.take(_maxReverseGeocode);
+    final result = List<NearbyMosque>.from(mosques);
+
+    await Future.wait(toGeocode.map((i) async {
+      final m = mosques[i];
+      try {
+        final placemarks = await placemarkFromCoordinates(m.latitude, m.longitude)
+            .timeout(const Duration(seconds: 8));
+        final area = placemarks.isEmpty
+            ? null
+            : (placemarks.first.subLocality?.isNotEmpty == true
+                ? placemarks.first.subLocality
+                : (placemarks.first.thoroughfare?.isNotEmpty == true
+                    ? placemarks.first.thoroughfare
+                    : placemarks.first.locality));
+        result[i] = NearbyMosque(
+          name: (area == null || area.isEmpty) ? 'Mosque' : 'Mosque, $area',
+          distanceKm: m.distanceKm,
+          latitude: m.latitude,
+          longitude: m.longitude,
+        );
+      } catch (e) {
+        VoidLogger.error('Reverse geocoding failed for unnamed mosque', e);
+        result[i] = NearbyMosque(name: 'Mosque', distanceKm: m.distanceKm, latitude: m.latitude, longitude: m.longitude);
+      }
+    }));
+
+    // Anything beyond the reverse-geocode cap still shouldn't show the
+    // more alarming-sounding "Unnamed Mosque" label.
+    for (final i in unnamedIndexes.skip(_maxReverseGeocode)) {
+      final m = mosques[i];
+      result[i] = NearbyMosque(name: 'Mosque', distanceKm: m.distanceKm, latitude: m.latitude, longitude: m.longitude);
+    }
+
+    return result;
   }
 
   /// Querying both points and building outlines (see `_query`) means the
@@ -142,7 +198,7 @@ class NearbyMosqueService {
         continue;
       }
       final existing = accepted[duplicateIndex];
-      if (existing.name == 'Unnamed Mosque' && candidate.name != 'Unnamed Mosque') {
+      if (existing.name == _unnamed && candidate.name != _unnamed) {
         accepted[duplicateIndex] = candidate;
       }
     }

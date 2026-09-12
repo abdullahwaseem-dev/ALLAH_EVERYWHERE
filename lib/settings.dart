@@ -6,11 +6,14 @@ import 'package:allah_everywhere/controllers/theme_controller.dart';
 import 'package:allah_everywhere/controllers/language_controller.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/services/quran_audio_service.dart';
+import 'package:allah_everywhere/data/reciters_data.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'change_password_screen.dart';
 import 'editprofilescreen.dart';
@@ -41,6 +44,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _updatesEnabled = false;
   bool _quranReminderEnabled = false;
   TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
+  String _selectedReciterId = 'ar.alafasy';
 
   @override
   void initState() {
@@ -50,6 +54,51 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _quranReminderEnabled = _notificationsService.quranReminderEnabled;
     _reminderTime = _notificationsService.reminderTime;
     _updatesEnabled = VoidStorage().readData<bool>(_updatesKey) ?? false;
+    _selectedReciterId = QuranAudioService.selectedReciterId;
+  }
+
+  void _showReciterDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Select Reciter'),
+          content: SizedBox(
+            width: double.maxFinite,
+            child: ListView(
+              shrinkWrap: true,
+              children: availableReciters.map((reciter) {
+                final selected = reciter.editionId == _selectedReciterId;
+                return ListTile(
+                  title: Text(reciter.name),
+                  subtitle: Text(reciter.arabicName),
+                  trailing: selected ? const Icon(Icons.check, color: Colors.green) : null,
+                  onTap: () async {
+                    setState(() => _selectedReciterId = reciter.editionId);
+                    await QuranAudioService.setSelectedReciter(reciter.editionId);
+                    if (context.mounted) Navigator.pop(context);
+                  },
+                );
+              }).toList(),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> _contactForAppreciation(BuildContext context) async {
+    final uri = Uri(
+      scheme: 'mailto',
+      path: 'maw112266@gmail.com',
+      query: 'subject=${Uri.encodeComponent('Appreciation for Allah Everywhere')}',
+    );
+    final launched = await launchUrl(uri);
+    if (!launched && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open an email app. Please email maw112266@gmail.com directly.')),
+      );
+    }
   }
 
   void _showLanguageDialog(BuildContext context) {
@@ -310,6 +359,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     _SectionCard(
                       isDark: isDark,
                       accent: accent,
+                      icon: Iconsax.book_1,
+                      title: 'Quran',
+                      children: [
+                        _NavRow(
+                          label: 'Reciter',
+                          trailing: reciterFor(_selectedReciterId).name,
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => _showReciterDialog(context),
+                          isLast: true,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16.h),
+                    _SectionCard(
+                      isDark: isDark,
+                      accent: accent,
                       icon: Iconsax.setting_2,
                       title: t.otherSection,
                       children: [
@@ -338,6 +404,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           trailing: _selectedRegion ?? t.selectRegion,
                           textColor: textColor,
                           onTap: () => _showRegionDialog(context),
+                          isLast: true,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16.h),
+                    _SectionCard(
+                      isDark: isDark,
+                      accent: accent,
+                      icon: Iconsax.heart,
+                      title: 'Support',
+                      children: [
+                        _NavRow(
+                          label: 'Support the Developer',
+                          subtitle: 'If this app has benefited you and you\'d like to give '
+                              'something back, reach out by email - no in-app purchase needed.',
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => _contactForAppreciation(context),
                           isLast: true,
                         ),
                       ],

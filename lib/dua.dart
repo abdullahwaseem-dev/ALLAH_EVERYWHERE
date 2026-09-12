@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'ask_ai.dart';
 import 'data/dua_data.dart';
 import 'dua_2.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class DuaScreen extends StatelessWidget {
   @override
@@ -24,10 +25,7 @@ class DuaScreen extends StatelessWidget {
         title: Text("Dua", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19.sp, color: textColor)),
         centerTitle: true,
         automaticallyImplyLeading: false,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
-          onPressed: () => Navigator.pop(context),
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
       ),
       body: Column(
         children: [

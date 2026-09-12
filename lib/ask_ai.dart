@@ -5,6 +5,7 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/controllers/ai_qa_controller.dart';
 import 'package:allah_everywhere/services/ai_fatwa_service.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 /// Replaces the old Aalim (human scholar) flow: users ask an Islamic
 /// question here and get an AI-generated answer instead of waiting for a
@@ -47,10 +48,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
-          onPressed: () => Navigator.pop(context),
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           widget.initialCategory != null
               ? '${t.askAi} • ${widget.initialCategory}'

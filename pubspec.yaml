@@ -70,7 +70,9 @@ dependencies:
   audio_service: ^0.18.15
   flutter_localizations:
     sdk: flutter
-
+  google_mobile_ads: ^9.1.0
+  flutter_islamic_icons: ^1.0.2
+  flutter_compass_v2: ^1.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

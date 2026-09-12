@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 
 import 'controller/HadithDetailController.dart';
@@ -53,10 +54,7 @@ class _HadithDetailState extends State<HadithDetail> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(
-                    icon: Icon(Icons.arrow_back, color: Colors.white),
-                    onPressed: () => Get.back(),
-                  ),
+                  VoidBackButton(color: Colors.white),
                   Expanded(
                     child: Obx(() {
                       return Column(

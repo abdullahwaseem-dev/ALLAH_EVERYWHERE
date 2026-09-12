@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
 
     <application
-        android:label="allah_everywhere"
+        android:label="Allah Everywhere"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -41,6 +41,15 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <!-- Google Mobile Ads. This is Google's published TEST App ID
+             (https://developers.google.com/admob/android/test-ads) - it only
+             ever serves test ads and is safe to ship as a placeholder, but it
+             MUST be swapped for the app's real AdMob App ID before release,
+             or no real ads will ever show. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <!-- Required by flutter_local_notifications for scheduled (Adhan / daily
              reminder) notifications to actually fire and to survive device reboot. -->

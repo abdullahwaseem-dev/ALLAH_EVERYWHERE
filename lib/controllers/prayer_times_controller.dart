@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:adhan/adhan.dart';
-import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
@@ -12,7 +11,7 @@ import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/services/local_notifications_service.dart';
 import 'package:allah_everywhere/data/prayer_reminders_data.dart';
-import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/widgets/prayer_reminder_dialog.dart';
 
 /// Single source of truth for prayer times, shared by the Home screen and
 /// the standalone Prayer Timing screen so they never show different times
@@ -218,7 +217,8 @@ class PrayerTimesController extends GetxController {
     if (_remainingDuration!.isNegative) {
       _timer?.cancel();
       justReachedPrayer.value = nextPrayerName.value;
-      _showPrayerReminderDialog(nextPrayerName.value);
+      final reminder = prayerReminders[Random().nextInt(prayerReminders.length)];
+      showPrayerReminderDialog(reminder, prayerName: nextPrayerName.value);
       // Prayer window passed - recompute for the next one.
       fetchLocationAndTimes();
       return;
@@ -237,42 +237,4 @@ class PrayerTimesController extends GetxController {
     gregorianDate.value = DateFormat('EEE, dd MMM yyyy').format(DateTime.now());
   }
 
-  /// Shown while the app is in the foreground at the moment a prayer time
-  /// is reached - a reminder of why prayer matters, with a fresh
-  /// Quran/Hadith citation each time. Uses Get.dialog so it doesn't need a
-  /// BuildContext from whichever screen happens to be visible.
-  void _showPrayerReminderDialog(String prayerName) {
-    if (Get.overlayContext == null) return;
-    final reminder = prayerReminders[Random().nextInt(prayerReminders.length)];
-    Get.dialog(
-      AlertDialog(
-        title: Text("It's time for $prayerName"),
-        content: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                reminder.arabic,
-                textAlign: TextAlign.right,
-                textDirection: TextDirection.rtl,
-                style: const TextStyle(fontSize: 18, fontFamily: 'NotoNaskhArabic', height: 1.6),
-              ),
-              const SizedBox(height: 12),
-              Text(reminder.translation, style: const TextStyle(fontSize: 14, height: 1.4)),
-              const SizedBox(height: 8),
-              Text(
-                reminder.reference,
-                style: TextStyle(fontSize: 12, color: VoidColors.brown, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
-        ),
-        actions: [
-          TextButton(onPressed: () => Get.back(), child: const Text('Ameen')),
-        ],
-      ),
-      barrierDismissible: true,
-    );
-  }
 }

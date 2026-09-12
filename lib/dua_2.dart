@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'data/dua_data.dart';
 import 'duadetail.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class Dua2Screen extends StatelessWidget {
   final DuaCategory category;
@@ -23,10 +24,7 @@ class Dua2Screen extends StatelessWidget {
         toolbarHeight: 60.h,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
-          onPressed: () => Navigator.pop(context),
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           category.title,
           style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),

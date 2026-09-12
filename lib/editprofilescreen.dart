@@ -9,6 +9,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class EditProfileScreen extends StatefulWidget {
   @override
@@ -161,12 +162,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             color: textColor,
           ),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: const VoidBackButton(),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,

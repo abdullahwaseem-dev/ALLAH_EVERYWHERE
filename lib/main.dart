@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
@@ -6,6 +8,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'splash_screen.dart';
 import 'package:flutter/services.dart';
 import 'firebase_options.dart';
@@ -13,6 +16,7 @@ import 'controllers/theme_controller.dart';
 import 'controllers/language_controller.dart';
 import 'services/local_notifications_service.dart';
 import 'services/quran_audio_service.dart';
+import 'services/ai_fatwa_service.dart';
 import 'utils/utils/theme/theme.dart';
 import 'l10n/generated/app_localizations.dart';
 
@@ -43,6 +47,8 @@ void main() async {
   Get.put(LanguageController());
   await LocalNotificationsService().init();
   await QuranAudioService.init();
+  unawaited(MobileAds.instance.initialize());
+  AiFatwaService.instance = GeminiAiFatwaService();
 
   runApp(const MyApp());
 }

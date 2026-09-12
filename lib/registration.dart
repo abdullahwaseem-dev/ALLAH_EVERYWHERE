@@ -11,6 +11,7 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -101,12 +102,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 50.h),
-                  IconButton(
-                    icon: const Icon(Icons.arrow_back),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+                  VoidBackButton(onPressed: () => Navigator.pop(context)),
                   SizedBox(height: 20.h),
                   Text(
                     t.register,

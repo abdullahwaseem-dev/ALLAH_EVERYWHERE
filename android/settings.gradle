@@ -22,7 +22,11 @@ plugins {
     // START: FlutterFire Configuration
     id "com.google.gms.google-services" version "4.4.2" apply false
     // END: FlutterFire Configuration
-    id "org.jetbrains.kotlin.android" version "2.0.20" apply false
+    // Bumped from 2.0.20: google_mobile_ads pulls in play-services-ads,
+    // whose AAR is compiled with Kotlin 2.3.0 metadata - an older compiler
+    // can't read it ("Module was compiled with an incompatible version of
+    // Kotlin"). Matching that version guarantees compatibility.
+    id "org.jetbrains.kotlin.android" version "2.3.0" apply false
 }
 
 include ":app"

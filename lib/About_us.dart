@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class AboutUsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(
           'About Us',
@@ -20,20 +21,19 @@ class AboutUsScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        automaticallyImplyLeading: true,
+        leading: const VoidBackButton(),
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Theme.of(context).brightness == Brightness.dark
-            ? VoidColors.bgDark
-            : VoidColors.bgLight,
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 50.h),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+        color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
+        child: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                 // Heading
                 Text(
                   'The Developer',
@@ -64,7 +64,7 @@ class AboutUsScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15.h),
                 Text(
-                  'This app exists to ease the journey of Muslims in learning, reflecting, and growing as better Muslims. Its purpose is to make my Akhirah (Hereafter) better. It is built as a form of Sadaqah Jariyah, where your benefit is my reward, and you will never be interrupted by ads or any distractions. There are no materialistic intentions here - only a request for your prayers.',
+                  'This app exists to ease the journey of Muslims in learning, reflecting, and growing as better Muslims. Its purpose is to make my Akhirah (Hereafter) better. It is built as a form of Sadaqah Jariyah, where your benefit is my reward. There are no paywalls, subscriptions or intrusive pop-up ads here - just a single small banner to keep the app sustainable, and a request for your prayers.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
@@ -122,6 +122,7 @@ class AboutUsScreen extends StatelessWidget {
           ),
         ),
       ),
+    ),
     );
   }
 }

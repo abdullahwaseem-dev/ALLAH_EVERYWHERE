@@ -7,6 +7,7 @@ import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'Hadith_detail.dart';
 import 'controller/HadithChaptersController.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class HidthChaptersScreen extends StatefulWidget {
   final String bookSlug;
@@ -81,10 +82,7 @@ class _HidthChaptersScreenState extends State<HidthChaptersScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        GestureDetector(
-                          onTap: () => Navigator.pop(context),
-                          child: Icon(Icons.arrow_back, size: 22.w, color: Colors.white),
-                        ),
+                        VoidBackButton(onPressed: () => Navigator.pop(context), color: Colors.white),
                         Expanded(
                           child: Obx(() {
                             return Text(

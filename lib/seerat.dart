@@ -1,6 +1,7 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/data/seerah_data.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,12 +18,7 @@ class SeeratScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           'SEERAT E NABWI',
           style: TextStyle(color: textColor, fontWeight: FontWeight.bold, fontSize: 18.sp),

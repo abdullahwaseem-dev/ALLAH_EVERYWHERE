@@ -17,6 +17,7 @@ import 'package:allah_everywhere/data/daily_reminder_data.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:allah_everywhere/widgets/banner_ad_widget.dart';
 
 import 'ask_ai.dart';
 import 'dua.dart';
@@ -190,6 +191,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
+                SizedBox(height: 18.h),
+                const Center(child: BannerAdWidget()),
                 // Extra clearance so content can't end up hidden behind the
                 // floating glass nav bar (Scaffold uses extendBody: true).
                 SizedBox(height: 110.h),

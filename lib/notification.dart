@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:allah_everywhere/controllers/notifications_controller.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class NotificationsScreen extends StatefulWidget {
   @override
@@ -38,10 +39,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(
-                          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor, size: 24.sp),
-                          onPressed: () => Navigator.pop(context),
-                        ),
+                        VoidBackButton(onPressed: () => Navigator.pop(context)),
                         Text(
                           t.notificationsTitle,
                           style: TextStyle(color: textColor, fontSize: 18.sp, fontWeight: FontWeight.bold),

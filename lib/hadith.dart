@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'controller/HadithController.dart';
 import 'hadith_chapters.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class HadithScreen extends StatelessWidget {
   final HadithController _controller = Get.put(HadithController());
@@ -35,12 +36,7 @@ class HadithScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           'Hadith',
           style: TextStyle(

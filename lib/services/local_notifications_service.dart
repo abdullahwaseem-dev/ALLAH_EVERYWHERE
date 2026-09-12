@@ -5,6 +5,8 @@ import 'package:timezone/data/latest_all.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
+import 'package:allah_everywhere/data/prayer_reminders_data.dart';
+import 'package:allah_everywhere/widgets/prayer_reminder_dialog.dart';
 
 /// Schedules the two kinds of local notifications this app sends:
 /// - The 5 daily prayer-time (Adhan) alerts, rescheduled every time
@@ -69,6 +71,7 @@ class LocalNotificationsService {
       );
       await _plugin.initialize(
         const InitializationSettings(android: androidInit, iOS: iosInit),
+        onDidReceiveNotificationResponse: _onNotificationTapped,
       );
 
       final android = _plugin
@@ -113,26 +116,36 @@ class LocalNotificationsService {
       if (scheduledTime.isBefore(DateTime.now())) {
         continue; // that prayer already passed today - nothing to schedule
       }
+      // Rotates through the curated reminders by day-of-year and prayer
+      // slot, so the 5 daily notifications each carry a different
+      // ayah/hadith, and the set changes from day to day.
+      final dayOfYear = scheduledTime.difference(DateTime(scheduledTime.year)).inDays;
+      final reminderIndex = (dayOfYear + (id - _prayerIds.first)) % prayerReminders.length;
+      final reminder = prayerReminders[reminderIndex];
+      final body = '${reminder.translation} — ${reminder.reference}';
+      final title = '${entry.key} - it is time to pray';
       try {
         await _plugin.zonedSchedule(
           id,
-          '${entry.key} - it is time to pray',
-          'The time for ${entry.key} has begun. Establish the prayer.',
+          title,
+          body,
           tz.TZDateTime.from(scheduledTime, tz.local),
-          const NotificationDetails(
+          NotificationDetails(
             android: AndroidNotificationDetails(
               _prayerChannelId,
               'Prayer Times',
               channelDescription: 'Adhan alerts for the 5 daily prayers',
               importance: Importance.max,
               priority: Priority.high,
-              sound: RawResourceAndroidNotificationSound('adhan'),
+              sound: const RawResourceAndroidNotificationSound('adhan'),
               audioAttributesUsage: AudioAttributesUsage.alarm,
+              styleInformation: BigTextStyleInformation(body, contentTitle: title),
             ),
-            iOS: DarwinNotificationDetails(presentSound: true),
+            iOS: const DarwinNotificationDetails(presentSound: true),
           ),
           androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
           uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
+          payload: 'reminder:$reminderIndex',
         );
       } catch (e) {
         VoidLogger.error('Failed to schedule ${entry.key} notification', e);
@@ -174,6 +187,18 @@ class LocalNotificationsService {
     } catch (e) {
       VoidLogger.error('Failed to schedule daily Quran reminder', e);
     }
+  }
+
+  /// Tapping a prayer-time notification reopens the full reminder as an
+  /// in-app dialog (Arabic text + reference, which doesn't fit in the
+  /// notification body itself). Static because it's registered once with
+  /// the plugin and may run before any screen is on-screen.
+  static void _onNotificationTapped(NotificationResponse response) {
+    final payload = response.payload;
+    if (payload == null || !payload.startsWith('reminder:')) return;
+    final index = int.tryParse(payload.substring('reminder:'.length));
+    if (index == null || index < 0 || index >= prayerReminders.length) return;
+    showPrayerReminderDialog(prayerReminders[index]);
   }
 
   /// Cancels every scheduled notification this service owns - called when

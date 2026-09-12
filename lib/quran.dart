@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import 'controller/QuranController.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class QuranScreen extends StatelessWidget {
   @override
@@ -22,12 +23,7 @@ class QuranScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           'Quran',
           style: TextStyle(

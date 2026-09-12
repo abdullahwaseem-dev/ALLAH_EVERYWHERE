@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
   @override
@@ -96,12 +97,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             color: textColor,
           ),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: const VoidBackButton(),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,

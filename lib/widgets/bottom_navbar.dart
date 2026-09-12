@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:flutter_islamic_icons/flutter_islamic_icons.dart';
 import '../home.dart';
 import '../profile.dart';
 import '../settings.dart';
@@ -27,10 +28,10 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
 
   static const _items = [
     (icon: Iconsax.home_2, activeIcon: Iconsax.home_25),
-    (icon: Iconsax.health, activeIcon: Iconsax.health5),
-    (icon: Iconsax.activity, activeIcon: Iconsax.activity5),
-    (icon: Iconsax.setting_2, activeIcon: Iconsax.setting_25),
-    (icon: Iconsax.user, activeIcon: Iconsax.user5),
+    (icon: FlutterIslamicIcons.mohammad, activeIcon: FlutterIslamicIcons.solidMohammad),
+    (icon: FlutterIslamicIcons.tasbih, activeIcon: FlutterIslamicIcons.solidTasbih),
+    (icon: Iconsax.settings, activeIcon: Iconsax.settings5),
+    (icon: Iconsax.profile_circle, activeIcon: Iconsax.profile_circle5),
   ];
 
   @override
@@ -101,6 +102,7 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
         curve: Curves.easeOut,
         width: isSelected ? 48 : 40,
         height: isSelected ? 48 : 40,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: isSelected ? accent.withOpacity(isDark ? 0.9 : 1) : Colors.transparent,

@@ -7,9 +7,11 @@ class QuranController extends GetxController {
   var isLoading = true.obs;
   var errorMessage = ''.obs;
 
-  // Variables for last read Surah
-  var lastReadSurahName = ''.obs;
-  var lastReadSurahId = 0.obs;
+  // Variables for last read Surah. Default to Al-Faatiha (Surah 1) rather
+  // than 0 - 0 isn't a valid Surah number and crashed the reader the first
+  // time a new user (who hasn't read anything yet) tapped "Continue".
+  var lastReadSurahName = 'الفاتحة'.obs;
+  var lastReadSurahId = 1.obs;
   var lastReadAyah = 1.obs; // Default to Ayah 1
 
   final QuranService _quranService = QuranService();

@@ -9,6 +9,7 @@ import 'package:allah_everywhere/surah.dart';
 import 'package:allah_everywhere/hadith_chapters.dart';
 import 'package:allah_everywhere/dua_2.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -95,10 +96,7 @@ class _SearchScreenState extends State<SearchScreen> {
               padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
               child: Row(
                 children: [
-                  IconButton(
-                    icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor, size: 24.sp),
-                    onPressed: () => Navigator.pop(context),
-                  ),
+                  VoidBackButton(onPressed: () => Navigator.pop(context)),
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.only(left: 8.w),

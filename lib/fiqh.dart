@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'ask_ai.dart';
+import 'package:allah_everywhere/widgets/void_back_button.dart';
 
 class FiqhScreen extends StatefulWidget {
   @override
@@ -79,12 +80,7 @@ class _FiqhScreenState extends State<FiqhScreen> {
               Positioned(
                 top: 42.h,
                 left: 16.w,
-                child: IconButton(
-                  icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.white),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
+                child: VoidBackButton(onPressed: () => Navigator.pop(context), color: Colors.white),
               ),
             ],
           ),
