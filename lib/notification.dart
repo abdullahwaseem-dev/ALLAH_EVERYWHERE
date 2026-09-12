@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/controllers/notifications_controller.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class NotificationsScreen extends StatefulWidget {
   @override
@@ -20,6 +21,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       body: Stack(
         children: [
@@ -40,7 +42,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                           onPressed: () => Navigator.pop(context),
                         ),
                         Text(
-                          'Notifications',
+                          t.notificationsTitle,
                           style: TextStyle(color: Colors.black, fontSize: 18.sp, fontWeight: FontWeight.bold),
                         ),
                         IconButton(
@@ -70,7 +72,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                         if (items.isEmpty) {
                           return Center(
                             child: Text(
-                              'No notifications yet',
+                              t.noNotificationsYet,
                               style: TextStyle(color: Colors.black54, fontSize: 16.sp, fontWeight: FontWeight.w500),
                             ),
                           );
@@ -110,7 +112,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                   autofocus: true,
                   onChanged: (value) => setState(() => _query = value),
                   decoration: InputDecoration(
-                    hintText: 'Enter your keyword',
+                    hintText: AppLocalizations.of(context)!.enterKeyword,
                     hintStyle: TextStyle(color: Colors.grey, fontSize: 16.sp),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(35.0),

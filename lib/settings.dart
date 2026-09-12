@@ -7,6 +7,7 @@ import 'package:allah_everywhere/controllers/theme_controller.dart';
 import 'package:allah_everywhere/controllers/language_controller.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -52,11 +53,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void _showLanguageDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Select Language'),
+          title: Text(t.selectLanguage),
           content: SizedBox(
             width: double.maxFinite,
             child: Obx(() => ListView(
@@ -81,14 +83,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void _showRegionDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("Select Region"),
+          title: Text(t.selectRegion),
           content: DropdownButton<String>(
             isExpanded: true,
-            hint: Text("Choose your region"),
+            hint: Text(t.selectRegion),
             value: _selectedRegion,
             onChanged: (String? newValue) {
               setState(() => _selectedRegion = newValue);
@@ -105,6 +108,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void _showCalculationDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final prayerController = Get.isRegistered<PrayerTimesController>()
         ? Get.find<PrayerTimesController>()
         : Get.put(PrayerTimesController());
@@ -117,7 +121,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
-              title: Text('Prayer Calculation'),
+              title: Text(t.calculationMethodAndMadhab),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,7 +156,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     prayerController.madhab = madhab;
                     Navigator.pop(context);
                   },
-                  child: Text('Save'),
+                  child: Text(t.save),
                 ),
               ],
             );
@@ -164,6 +168,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       body: Stack(
         children: [
@@ -177,7 +182,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   decoration: BoxDecoration(color: Colors.transparent),
                   child: Center(
                     child: Text(
-                      'Settings',
+                      t.settingsTitle,
                       style: TextStyle(color: Colors.black, fontSize: 18.sp, fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -189,33 +194,33 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SectionTitle(title: 'Account', icon: Icons.account_circle),
+                        SectionTitle(title: t.account, icon: Icons.account_circle),
                         ListTile(
-                          title: Text('Edit Profile'),
+                          title: Text(t.editProfile),
                           onTap: () => Get.to(EditProfileScreen()),
                         ),
                         ListTile(
-                          title: Text('Change Password'),
+                          title: Text(t.changePassword),
                           onTap: () => Get.to(() => ChangePasswordScreen()),
                         ),
                         ListTile(
-                          title: Text('Privacy'),
+                          title: Text(t.privacy),
                           onTap: () => Get.to(() => PrivacyPolicyScreen()),
                         ),
                         Divider(),
 
-                        SectionTitle(title: 'Prayer', icon: Icons.access_time),
+                        SectionTitle(title: t.prayerSection, icon: Icons.access_time),
                         ListTile(
-                          title: Text('Calculation Method & Madhab'),
-                          subtitle: Text('Affects Fajr/Isha angle and Asr timing'),
+                          title: Text(t.calculationMethodAndMadhab),
+                          subtitle: Text(t.calculationMethodSubtitle),
                           onTap: () => _showCalculationDialog(context),
                         ),
                         Divider(),
 
-                        SectionTitle(title: 'Notification', icon: Icons.notifications),
+                        SectionTitle(title: t.notificationSection, icon: Icons.notifications),
                         SwitchListTile(
-                          title: Text('Notification'),
-                          subtitle: Text('Prayer-time (Adhan) alerts and the daily reminder'),
+                          title: Text(t.notification),
+                          subtitle: Text(t.notificationSubtitle),
                           value: _notificationsEnabled,
                           onChanged: (value) async {
                             setState(() => _notificationsEnabled = value);
@@ -238,8 +243,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           },
                         ),
                         SwitchListTile(
-                          title: Text('Daily Quran Reading Reminder'),
-                          subtitle: Text('Reminds you at ${_reminderTime.format(context)}'),
+                          title: Text(t.dailyQuranReminder),
+                          subtitle: Text('${t.reminderTime}: ${_reminderTime.format(context)}'),
                           value: _quranReminderEnabled,
                           onChanged: !_notificationsEnabled
                               ? null
@@ -249,7 +254,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 },
                         ),
                         ListTile(
-                          title: Text('Reminder Time'),
+                          title: Text(t.reminderTime),
                           trailing: Text(_reminderTime.format(context)),
                           enabled: _notificationsEnabled && _quranReminderEnabled,
                           onTap: () async {
@@ -261,8 +266,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           },
                         ),
                         SwitchListTile(
-                          title: Text('Updates'),
-                          subtitle: Text('Notifications about new content and app updates'),
+                          title: Text(t.updates),
+                          subtitle: Text(t.updatesSubtitle),
                           value: _updatesEnabled,
                           onChanged: (value) {
                             setState(() => _updatesEnabled = value);
@@ -271,9 +276,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                         Divider(),
 
-                        SectionTitle(title: 'Other', icon: Icons.settings),
+                        SectionTitle(title: t.otherSection, icon: Icons.settings),
                         Obx(() => SwitchListTile(
-                              title: Text('Dark Mode'),
+                              title: Text(t.darkMode),
                               value: _themeController.isDarkMode,
                               onChanged: (value) => _themeController.setDarkMode(value),
                             )),
@@ -283,14 +288,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             orElse: () => supportedAppLanguages.first,
                           );
                           return ListTile(
-                            title: Text('Language'),
+                            title: Text(t.language),
                             trailing: Text(current.nativeName),
                             onTap: () => _showLanguageDialog(context),
                           );
                         }),
                         ListTile(
-                          title: Text('Region'),
-                          trailing: Text(_selectedRegion ?? 'Select Region'),
+                          title: Text(t.region),
+                          trailing: Text(_selectedRegion ?? t.selectRegion),
                           onTap: () => _showRegionDialog(context),
                         ),
                       ],

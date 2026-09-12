@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class FormSection extends StatefulWidget {
   final TextEditingController emailController;
@@ -36,6 +37,7 @@ class _FormSectionState extends State<FormSection> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -43,7 +45,7 @@ class _FormSectionState extends State<FormSection> {
         TextField(
           controller: widget.emailController,
           decoration: InputDecoration(
-            labelText: "Email",
+            labelText: t.email,
             prefixIcon: const Icon(Icons.email_outlined),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8.r),
@@ -57,7 +59,7 @@ class _FormSectionState extends State<FormSection> {
           controller: widget.passwordController,
           obscureText: !_isPasswordVisible,
           decoration: InputDecoration(
-            labelText: "Password",
+            labelText: t.password,
             prefixIcon: const Icon(Icons.lock_outline),
             suffixIcon: IconButton(
               icon: Icon(
@@ -82,7 +84,7 @@ class _FormSectionState extends State<FormSection> {
           controller: widget.confirmPasswordController,
           obscureText: !_isConfirmPasswordVisible,
           decoration: InputDecoration(
-            labelText: "Confirm Password",
+            labelText: t.confirmPassword,
             prefixIcon: const Icon(Icons.lock_outline),
             suffixIcon: IconButton(
               icon: Icon(
@@ -119,23 +121,23 @@ class _FormSectionState extends State<FormSection> {
             Expanded(
               child: RichText(
                 text: TextSpan(
-                  text: "I agree to ",
+                  text: t.agreeToTermsPrefix,
                   style: TextStyle(
                     fontSize: 14.sp,
                     color: Colors.black,
                   ),
                   children: [
                     TextSpan(
-                      text: "Terms of Service",
+                      text: t.termsOfService,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Colors.pinkAccent,
                         decoration: TextDecoration.underline,
                       ),
                     ),
-                    const TextSpan(text: " and "),
+                    TextSpan(text: ' ${t.and} '),
                     TextSpan(
-                      text: "Privacy Policy",
+                      text: t.privacyPolicy,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Colors.pinkAccent,

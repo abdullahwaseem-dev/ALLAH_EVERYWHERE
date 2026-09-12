@@ -12,6 +12,7 @@ import 'forget_password.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -113,6 +114,7 @@ class _LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: VoidColors.primary,
       body: SingleChildScrollView(
@@ -136,14 +138,14 @@ class _LoginState extends State<Login> {
               ),
               SizedBox(height: 10.h),
               buildInputField(
-                'Email',
+                t.email,
                 TextInputType.emailAddress,
                 _emailController,
                 icon: Icons.email,
               ),
               SizedBox(height: 10.h),
               buildInputField(
-                'Password',
+                t.password,
                 TextInputType.text,
                 _passwordController,
                 obscureText: _isPasswordObscured,
@@ -176,7 +178,7 @@ class _LoginState extends State<Login> {
                         },
                       ),
                       Text(
-                        'Keep me logged in',
+                        t.keepMeLoggedIn,
                         style: TextStyle(
                           fontSize: 14.sp,
                           color: Colors.black87,
@@ -189,7 +191,7 @@ class _LoginState extends State<Login> {
                       Get.to(() => ForgetPassword());
                     },
                     child: Text(
-                      'Forgot Password?',
+                      t.forgotPassword,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Colors.pinkAccent,
@@ -203,7 +205,7 @@ class _LoginState extends State<Login> {
              
               buildLoginButton(_isLoginEnabled, () {
                 _loginWithEmailPassword();
-              }),
+              }, label: t.loginTitle),
               SizedBox(height: 10.h),
               Row(
                 children: [
@@ -211,7 +213,7 @@ class _LoginState extends State<Login> {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.w),
                     child: Text(
-                      'OR',
+                      t.or,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Colors.black54,
@@ -222,18 +224,18 @@ class _LoginState extends State<Login> {
                 ],
               ),
               SizedBox(height: 10.h),
-              buildGuestButton(),
+              buildGuestButton(label: t.joinAsGuest),
               SizedBox(height: 20.h),
               RichText(
                 text: TextSpan(
-                  text: "Don't have an account? ",
+                  text: t.dontHaveAccount,
                   style: TextStyle(
                     fontSize: 14.sp,
                     color: Colors.black87,
                   ),
                   children: [
                     TextSpan(
-                      text: 'Register',
+                      text: t.register,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Colors.pinkAccent,

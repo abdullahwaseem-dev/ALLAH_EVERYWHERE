@@ -13,6 +13,7 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/nearby_mosque_service.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 
 import 'ask_ai.dart';
@@ -63,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       body: Container(
         color: isDark ? Colors.black : VoidColors.secondary,
@@ -148,44 +150,44 @@ class _HomeScreenState extends State<HomeScreen> {
                             onTap: () {
                               Get.to(() => QuranScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.quran, title: "Quran")),
+                            child: IconButtonWidget(imagePath: VoidImages.quran, title: t.quran)),
                         GestureDetector(
                             onTap: () {
                               Get.to(() => HadithScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.hadith, title: "Hadith")),
+                            child: IconButtonWidget(imagePath: VoidImages.hadith, title: t.hadith)),
                         GestureDetector(
                           onTap: () {
                             Get.to(() => DuaScreen());
                           },
-                          child: IconButtonWidget(imagePath: VoidImages.dua, title: "Dua"),
+                          child: IconButtonWidget(imagePath: VoidImages.dua, title: t.dua),
                         ),
                         GestureDetector(
                             onTap: () {
                               Get.to(() => QiblaScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.qibla, title: "Qibla")),
+                            child: IconButtonWidget(imagePath: VoidImages.qibla, title: t.qibla)),
                         GestureDetector(
                           onTap: () {
                             Get.to(() => FiqhScreen());
                           },
-                          child: IconButtonWidget(imagePath: VoidImages.fiqh, title: "Fiqh"),
+                          child: IconButtonWidget(imagePath: VoidImages.fiqh, title: t.fiqh),
                         ),
                         GestureDetector(
                             onTap: () {
                               Get.to(() => SeeratScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.seerat_nabwi, title: "Seerat")),
+                            child: IconButtonWidget(imagePath: VoidImages.seerat_nabwi, title: t.seerat)),
                         GestureDetector(
                             onTap: () {
                               Get.to(() => PrayerTimingScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.prayer_time, title: "Prayer")),
+                            child: IconButtonWidget(imagePath: VoidImages.prayer_time, title: t.prayer)),
                         GestureDetector(
                             onTap: () {
                               Get.to(() => AskAiScreen());
                             },
-                            child: IconButtonWidget(imagePath: VoidImages.alim, title: "Ask AI")),
+                            child: IconButtonWidget(imagePath: VoidImages.alim, title: t.askAi)),
                       ],
                     ),
                   ),
@@ -198,7 +200,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Nearby Masjid's",
+                        t.nearbyMasjids,
                         style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 15.h),
@@ -256,6 +258,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildPrayerSummary() {
+    final t = AppLocalizations.of(context)!;
     if (controller.locationError.value.isNotEmpty) {
       return Container(
         padding: EdgeInsets.all(12.w),
@@ -276,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ? Geolocator.openAppSettings
                   : controller.fetchLocationAndTimes,
               child: Text(
-                controller.permissionPermanentlyDenied.value ? 'Open Settings' : 'Retry',
+                controller.permissionPermanentlyDenied.value ? t.openSettings : t.retry,
                 style: TextStyle(
                   fontSize: 12.sp,
                   color: Colors.blue,
@@ -293,7 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Your Location:',
+          t.yourLocation,
           style: TextStyle(color: Colors.white, fontSize: 12.sp, fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 5.h),
@@ -352,7 +355,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   SizedBox(height: 10.h),
                   Text(
-                    'Next Prayer In: \n${controller.remainingTime.value}',
+                    '${t.nextPrayerIn} \n${controller.remainingTime.value}',
                     style: TextStyle(color: VoidColors.secondary, fontSize: 15.sp, fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -365,6 +368,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildNearbyMosques() {
+    final t = AppLocalizations.of(context)!;
     if (_loadingMosques) {
       return SizedBox(
         height: 60.h,
@@ -386,7 +390,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ? Geolocator.openAppSettings
                   : controller.fetchLocationAndTimes,
               child: Text(
-                controller.permissionPermanentlyDenied.value ? 'Open Settings' : 'Retry',
+                controller.permissionPermanentlyDenied.value ? t.openSettings : t.retry,
                 style: TextStyle(fontSize: 13.sp),
               ),
             ),
@@ -394,7 +398,7 @@ class _HomeScreenState extends State<HomeScreen> {
         );
       }
       return Text(
-        'Waiting for your location…',
+        t.waitingForLocation,
         style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
       );
     }
@@ -403,20 +407,20 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Expanded(
             child: Text(
-              "Couldn't reach the mosque directory right now.",
+              t.couldNotReachMosqueDirectory,
               style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
             ),
           ),
           TextButton(
             onPressed: _maybeFetchNearbyMosques,
-            child: Text('Retry', style: TextStyle(fontSize: 13.sp)),
+            child: Text(t.retry, style: TextStyle(fontSize: 13.sp)),
           ),
         ],
       );
     }
     if (_nearbyMosques!.isEmpty) {
       return Text(
-        'No nearby mosques found within 5 km.',
+        t.noMosquesFound,
         style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
       );
     }

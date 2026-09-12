@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/controllers/ai_qa_controller.dart';
 import 'package:allah_everywhere/services/ai_fatwa_service.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 /// Replaces the old Aalim (human scholar) flow: users ask an Islamic
 /// question here and get an AI-generated answer instead of waiting for a
@@ -37,6 +38,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       backgroundColor: isDark ? Colors.black : VoidColors.secondary,
@@ -49,8 +51,8 @@ class _AskAiScreenState extends State<AskAiScreen> {
         ),
         title: Text(
           widget.initialCategory != null
-              ? 'Ask AI • ${widget.initialCategory}'
-              : 'Ask AI',
+              ? '${t.askAi} • ${widget.initialCategory}'
+              : t.askAi,
           style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
@@ -73,7 +75,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
                 SizedBox(width: 8.w),
                 Expanded(
                   child: Text(
-                    'AI-generated guidance — always verify important rulings with a qualified scholar.',
+                    t.askAiDisclaimer,
                     style: TextStyle(fontSize: 12.sp, color: Colors.brown.shade800),
                   ),
                 ),
@@ -87,8 +89,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
                   child: Padding(
                     padding: EdgeInsets.all(24.w),
                     child: Text(
-                      'Ask any Islamic question below — an AI model will '
-                      'research it and reply here.',
+                      t.askAiEmptyState,
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 14.sp, color: Colors.grey.shade600),
                     ),
@@ -136,7 +137,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
             child: const CircularProgressIndicator(strokeWidth: 2),
           ),
           SizedBox(width: 8.w),
-          Text('Researching your question…', style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade600)),
+          Text(AppLocalizations.of(context)!.researching, style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade600)),
         ],
       ),
     );
@@ -206,7 +207,7 @@ class _AskAiScreenState extends State<AskAiScreen> {
                 onSubmitted: (_) => _submit(),
                 style: TextStyle(color: isDark ? Colors.white : Colors.black),
                 decoration: InputDecoration(
-                  hintText: 'Ask your question…',
+                  hintText: AppLocalizations.of(context)!.askAiHint,
                   filled: true,
                   fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                   contentPadding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),

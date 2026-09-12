@@ -7,6 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';  // Firebase import
 
 import 'forget_password_success.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);
@@ -59,6 +60,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text('Back', style: TextStyle(color: VoidColors.black, fontSize: 18)),
@@ -82,8 +84,8 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 width: 200.w,
               ),
             ),
-            const Text(
-              'Forgot Password?',
+            Text(
+              t.forgotPassword,
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w600,
@@ -91,8 +93,8 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               ),
             ),
             const SizedBox(height: 10), // Reduced space between image and text
-            const Text(
-              'Don’t worry! It happens. Please enter the email associated with your account.',
+            Text(
+              t.forgotPasswordDescription,
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey,
@@ -108,7 +110,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   TextField(
                     controller: _emailController,
                     decoration: InputDecoration(
-                      hintText: 'Email',
+                      hintText: t.email,
                       hintStyle: TextStyle(color: Colors.grey),
                       filled: true,
                       fillColor: Colors.white,
@@ -127,7 +129,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     }
                         : null,
                     child: Text(
-                      'Send',
+                      t.send,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,

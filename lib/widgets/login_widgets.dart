@@ -26,7 +26,7 @@ Widget buildInputField(
   );
 }
 
-Widget buildLoginButton(bool isLoginEnabled, Function onTap) {
+Widget buildLoginButton(bool isLoginEnabled, Function onTap, {String label = 'Login'}) {
   return GestureDetector(
     onTap: isLoginEnabled ? () => onTap() : null,
     child: Container(
@@ -38,7 +38,7 @@ Widget buildLoginButton(bool isLoginEnabled, Function onTap) {
       ),
       child: Center(
         child: Text(
-          'Login',
+          label,
           style: TextStyle(
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
@@ -50,7 +50,7 @@ Widget buildLoginButton(bool isLoginEnabled, Function onTap) {
   );
 }
 
-Widget buildGuestButton() {
+Widget buildGuestButton({String label = 'Join as a Guest'}) {
   return GestureDetector(
     onTap: () {
       Get.to(() => BottomNavBarApp());
@@ -65,7 +65,7 @@ Widget buildGuestButton() {
       ),
       child: Center(
         child: Text(
-          'Join as a Guest',
+          label,
           style: TextStyle(
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,

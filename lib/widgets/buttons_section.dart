@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class ButtonsSection extends StatelessWidget {
   final bool isFormValid;
@@ -16,6 +17,7 @@ class ButtonsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Column(
       children: [
         SizedBox(
@@ -30,7 +32,7 @@ class ButtonsSection extends StatelessWidget {
               ),
             ),
             child: Text(
-              "Register",
+              t.register,
               style: TextStyle(fontSize: 16.sp, color: Colors.white),
             ),
           ),
@@ -50,7 +52,7 @@ class ButtonsSection extends StatelessWidget {
               ),
             ),
             child: Text(
-              "Join as a Guest",
+              t.joinAsGuest,
               style: TextStyle(fontSize: 16.sp),
             ),
           ),

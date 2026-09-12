@@ -9,6 +9,7 @@ import 'package:allah_everywhere/hadith_chapters.dart';
 import 'package:allah_everywhere/data/dua_data.dart';
 import 'package:allah_everywhere/dua_2.dart';
 import 'package:allah_everywhere/duadetail.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class BookmarksScreen extends StatefulWidget {
   const BookmarksScreen({Key? key}) : super(key: key);
@@ -81,9 +82,10 @@ class _BookmarksScreenState extends State<BookmarksScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bookmarks', style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+        title: Text(t.bookmarksTitle, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
         centerTitle: true,
       ),
       body: _bookmarks == null
@@ -93,7 +95,7 @@ class _BookmarksScreenState extends State<BookmarksScreen> {
                   child: Padding(
                     padding: EdgeInsets.all(24.w),
                     child: Text(
-                      'No bookmarks yet. Tap the bookmark icon on a Surah, Hadith, or Dua to save it here.',
+                      t.noBookmarksYet,
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 14.sp, color: Colors.grey.shade600),
                     ),

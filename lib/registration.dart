@@ -10,6 +10,7 @@ import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -32,7 +33,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       _formError = VoidValidator.validateEmail(_emailController.text) ??
           VoidValidator.validatePassword(_passwordController.text);
       if (_formError == null && _passwordController.text != _confirmPasswordController.text) {
-        _formError = 'Passwords do not match.';
+        _formError = AppLocalizations.of(context)!.passwordsDoNotMatch;
       }
       _isFormValid = _formError == null && _isChecked;
     });
@@ -77,6 +78,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: VoidColors.primary,
       body: Stack(
@@ -105,7 +107,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   SizedBox(height: 20.h),
                   Text(
-                    "Register",
+                    t.register,
                     style: TextStyle(
                       fontSize: 32.sp,
                       fontWeight: FontWeight.bold,

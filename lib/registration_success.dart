@@ -4,6 +4,7 @@ import 'package:allah_everywhere/widgets/bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 
 
@@ -12,6 +13,7 @@ class RegistrationSuccess extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: VoidColors.primary,
       body: Padding(
@@ -29,7 +31,7 @@ class RegistrationSuccess extends StatelessWidget {
             ),
             const SizedBox(height: 150),
             Text(
-              'Welcome To \nAllah Everywhere',
+              t.welcomeTitle,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: VoidColors.black,
@@ -39,7 +41,7 @@ class RegistrationSuccess extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'You have successfully registered, strengthening your faith journey is now easier with ALLAH Everywhere',
+              t.registrationSuccessMessage,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: VoidColors.black,
@@ -52,7 +54,7 @@ class RegistrationSuccess extends StatelessWidget {
                 Get.to(() =>  BottomNavBarApp());
               },
               child: Text(
-                'Finish',
+                t.finish,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16.sp,

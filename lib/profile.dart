@@ -8,6 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
 import 'package:allah_everywhere/services/account_service.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'About_us.dart';
 import 'bookmarks_screen.dart';
 import 'login.dart';
@@ -85,12 +86,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(
-          'Profile',
+          t.profileTitle,
           style: TextStyle(
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
@@ -164,7 +166,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                             ),
                             Text(
-                              'Hadith Read',
+                              t.hadithRead,
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 color: textColor,
@@ -185,7 +187,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                             ),
                             Text(
-                              'Tasbeeh Count',
+                              t.tasbeehCount,
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 color: textColor,
@@ -199,12 +201,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     SizedBox(height: 30.h),
                     _buildMenuItem(
                       icon: Icons.bookmark_outline,
-                      text: 'Bookmarks',
+                      text: t.bookmarks,
                       onTap: () => Get.to(() => const BookmarksScreen()),
                     ),
                     _buildMenuItem(
                       icon: Icons.edit_outlined,
-                      text: 'Edit Profile',
+                      text: t.editProfile,
                       onTap: () async {
                         await Get.to(() => EditProfileScreen());
                         _refresh();
@@ -212,21 +214,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     _buildMenuItem(
                       icon: Icons.account_circle_outlined,
-                      text: 'About Us',
+                      text: t.aboutUs,
                       onTap: () {
                         Get.to(() => AboutUsScreen());
                       },
                     ),
                     _buildMenuItem(
                       icon: Icons.notifications,
-                      text: 'Notification',
+                      text: t.notification,
                       onTap: () {
                         Get.to(() => NotificationsScreen());
                       },
                     ),
                     _buildMenuItem(
                       icon: Icons.logout,
-                      text: 'Log Out',
+                      text: t.logOut,
                       onTap: () {
                         _showLogoutDialog(context);
                       },
@@ -234,7 +236,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     if (FirebaseAuth.instance.currentUser != null)
                       _buildMenuItem(
                         icon: Icons.delete_forever,
-                        text: 'Delete Account',
+                        text: t.deleteAccount,
                         iconColor: Colors.red,
                         onTap: () => _showDeleteAccountDialog(context),
                       ),
@@ -263,6 +265,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   void _showDeleteAccountDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final passwordController = TextEditingController();
     showDialog(
       context: context,
@@ -280,14 +283,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
               TextField(
                 controller: passwordController,
                 obscureText: true,
-                decoration: const InputDecoration(labelText: 'Password'),
+                decoration: InputDecoration(labelText: t.password),
               ),
             ],
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(dialogContext),
-              child: const Text('Cancel'),
+              child: Text(t.cancel),
             ),
             TextButton(
               onPressed: () async {
@@ -310,11 +313,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   void _showLogoutDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("Are you sure you want to log out?",style: TextStyle(fontSize: 15.sp),),
+          title: Text(t.logOutConfirm,style: TextStyle(fontSize: 15.sp),),
           actions: [
             TextButton(
               onPressed: () async {
@@ -328,13 +332,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Get.to(() => Login());
 
               },
-              child: Text("Yes",style: TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold),),
+              child: Text(t.yes,style: TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold),),
             ),
             TextButton(
               onPressed: () {
                 Get.back();
               },
-              child: Text("No",style: TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold),),
+              child: Text(t.no,style: TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold),),
             ),
           ],
         );

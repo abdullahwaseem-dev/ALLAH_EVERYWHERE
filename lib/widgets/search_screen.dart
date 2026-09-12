@@ -10,6 +10,7 @@ import 'package:allah_everywhere/data/dua_data.dart';
 import 'package:allah_everywhere/surah.dart';
 import 'package:allah_everywhere/hadith_chapters.dart';
 import 'package:allah_everywhere/dua_2.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -76,6 +77,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final surahs = _matchingSurahs;
     final books = _matchingBooks;
     final duas = _matchingDuas;
@@ -104,7 +106,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             autofocus: true,
                             onChanged: (value) => setState(() => _query = value.trim()),
                             decoration: InputDecoration(
-                              hintText: 'Search Surahs, Hadith books, Duas…',
+                              hintText: t.searchHint,
                               hintStyle: TextStyle(color: Colors.grey, fontSize: 16.sp),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(35.0),
@@ -125,14 +127,14 @@ class _SearchScreenState extends State<SearchScreen> {
                   child: _query.isEmpty
                       ? Center(
                           child: Text(
-                            'Start typing to search',
+                            t.startTypingToSearch,
                             style: TextStyle(fontSize: 16.sp, color: Colors.black54),
                           ),
                         )
                       : !hasResults
                           ? Center(
                               child: Text(
-                                'No results for "$_query"',
+                                t.noResultsFor(_query),
                                 style: TextStyle(fontSize: 16.sp, color: Colors.black54),
                               ),
                             )
@@ -140,7 +142,7 @@ class _SearchScreenState extends State<SearchScreen> {
                               padding: EdgeInsets.symmetric(horizontal: 16.w),
                               children: [
                                 if (surahs.isNotEmpty) ...[
-                                  _sectionHeader('Quran - Surahs'),
+                                  _sectionHeader(t.quran),
                                   ...surahs.map((surah) => _resultTile(
                                         title: surah['surahName'] as String,
                                         subtitle: surah['surahNameTranslation'] as String,
@@ -151,7 +153,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                       )),
                                 ],
                                 if (books.isNotEmpty) ...[
-                                  _sectionHeader('Hadith Books'),
+                                  _sectionHeader(t.hadith),
                                   ...books.map((book) => _resultTile(
                                         title: book['bookName'] as String,
                                         subtitle: 'by ${book['writerName']}',
@@ -162,7 +164,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                       )),
                                 ],
                                 if (duas.isNotEmpty) ...[
-                                  _sectionHeader('Duas'),
+                                  _sectionHeader(t.dua),
                                   ...duas.map((entry) => _resultTile(
                                         title: entry.value.title,
                                         subtitle: entry.key.title,

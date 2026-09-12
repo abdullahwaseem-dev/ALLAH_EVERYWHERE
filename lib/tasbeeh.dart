@@ -4,6 +4,7 @@ import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 
 const List<int> _targetOptions = [33, 99, 100];
 
@@ -90,7 +91,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
     final value = await showDialog<int>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Custom target'),
+        title: Text(AppLocalizations.of(context)!.customTarget),
         content: TextField(
           controller: controller,
           keyboardType: TextInputType.number,
@@ -98,10 +99,10 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
           decoration: const InputDecoration(hintText: 'e.g. 500'),
         ),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
+          TextButton(onPressed: () => Navigator.pop(context), child: Text(AppLocalizations.of(context)!.cancel)),
           TextButton(
             onPressed: () => Navigator.pop(context, int.tryParse(controller.text)),
-            child: const Text('Set'),
+            child: Text(AppLocalizations.of(context)!.set),
           ),
         ],
       ),
@@ -115,6 +116,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
     final progress = (tasbeehCount % target) / target;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final textColor = isDark ? Colors.white : VoidColors.black;
@@ -128,7 +130,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.h),
               child: Text(
-                'Tasbeeh',
+                t.tasbeehTitle,
                 style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: textColor),
               ),
             ),
@@ -136,13 +138,13 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
               alignment: WrapAlignment.center,
               spacing: 8.w,
               children: [
-                ..._targetOptions.map((t) => ChoiceChip(
-                      label: Text('$t'),
-                      selected: target == t,
-                      onSelected: (_) => _setTarget(t),
+                ..._targetOptions.map((opt) => ChoiceChip(
+                      label: Text('$opt'),
+                      selected: target == opt,
+                      onSelected: (_) => _setTarget(opt),
                     )),
                 ChoiceChip(
-                  label: Text(_targetOptions.contains(target) ? 'Custom' : 'Custom ($target)'),
+                  label: Text(_targetOptions.contains(target) ? t.customTarget : '${t.customTarget} ($target)'),
                   selected: !_targetOptions.contains(target),
                   onSelected: (_) => _pickCustomTarget(),
                 ),
@@ -206,14 +208,14 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
               ),
             ),
             Text(
-              'Tap the circle to count. Laps completed: $lapCount',
+              '${t.tapToCount} ${t.lapsCompleted}: $lapCount',
               style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
             ),
             SizedBox(height: 12.h),
             TextButton.icon(
               onPressed: resetTasbeeh,
               icon: const Icon(Icons.refresh, color: Colors.red),
-              label: Text('Reset', style: TextStyle(color: Colors.red, fontSize: 14.sp)),
+              label: Text(t.reset, style: TextStyle(color: Colors.red, fontSize: 14.sp)),
             ),
             Container(
               padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
