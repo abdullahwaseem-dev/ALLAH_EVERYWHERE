@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
-import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'controller/HadithController.dart';
 import 'hadith_chapters.dart';
 
@@ -26,13 +24,19 @@ class HadithScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
+
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.black),
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -40,226 +44,170 @@ class HadithScreen extends StatelessWidget {
         title: Text(
           'Hadith',
           style: TextStyle(
-            color: Colors.black,
+            color: textColor,
             fontWeight: FontWeight.bold,
             fontSize: 18.sp,
           ),
         ),
         centerTitle: true,
       ),
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: ThemedBackground(lightImagePath: VoidImages.quran_background),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 47.h),
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Continue Banner Container (as before)
-                  Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(VoidImages.quran_banner),
-                        fit: BoxFit.fill,
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: isDark
+                        ? [VoidColors.cardDark, VoidColors.oliveDeep]
+                        : [VoidColors.oliveDeep, VoidColors.dustyRose],
+                  ),
+                  borderRadius: BorderRadius.circular(20.r),
+                ),
+                child: Obx(() {
+                  final hasLastRead = _controller.lastReadBookSlug.isNotEmpty;
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Last Read', style: TextStyle(fontSize: 12.sp, color: Colors.white70)),
+                      SizedBox(height: 4.h),
+                      Text(
+                        hasLastRead ? _controller.lastReadBookName.value : 'Start Reading',
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: Colors.white),
                       ),
-                      borderRadius: BorderRadius.circular(12.r),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Padding(
-                          padding: const EdgeInsets.only(left: 10),
-                          child: Obx(() {
-                            final hasLastRead = _controller.lastReadBookSlug.isNotEmpty;
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Last Read',
-                                  style: TextStyle(
-                                    fontSize: 12.sp,
-                                    color: VoidColors.white,
-                                  ),
-                                ),
-                                SizedBox(height: 0.h),
-                                Text(
-                                  hasLastRead ? _controller.lastReadBookName.value : 'Start Reading',
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    fontSize: 24.sp,
-                                    fontWeight: FontWeight.bold,
-                                    color: VoidColors.white,
-                                  ),
-                                ),
-                                Text(
-                                  'Chapters (Abwab, أبواب)',
-                                  style: TextStyle(
-                                    fontSize: 12.sp,
-                                    color: VoidColors.white,
-                                  ),
-                                ),
-                                SizedBox(height: 8.h),
-                                ElevatedButton(
-                                  onPressed: hasLastRead
-                                      ? () {
-                                          Get.to(HidthChaptersScreen(
-                                            bookSlug: _controller.lastReadBookSlug.value,
-                                            bookNameInArabic: _controller.lastReadBookName.value,
-                                          ));
-                                        }
-                                      : null,
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: VoidColors.secondary,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20.r),
-                                    ),
-                                    elevation: 2,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'Continue',
-                                        style: TextStyle(
-                                          fontSize: 12.sp,
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                      Icon(
-                                        Icons.arrow_forward,
-                                        size: 14.sp,
-                                        color: Colors.black,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            );
-                          }),
-                          ),
+                      Text('Chapters (Abwab, أبواب)', style: TextStyle(fontSize: 12.sp, color: Colors.white70)),
+                      SizedBox(height: 8.h),
+                      ElevatedButton(
+                        onPressed: hasLastRead
+                            ? () {
+                                Get.to(HidthChaptersScreen(
+                                  bookSlug: _controller.lastReadBookSlug.value,
+                                  bookNameInArabic: _controller.lastReadBookName.value,
+                                ));
+                              }
+                            : null,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: accent,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
+                          elevation: 0,
                         ),
-                        Image.asset(
-                          VoidImages.MUHAMMAD_1,
-                          height: 150.h,
-                          width: 150.w,
-                          fit: BoxFit.contain,
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 20.h),
-
-                  // Search bar
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 28.w, vertical: 16.h),
-                    decoration: BoxDecoration(
-                      color: Color(0XFF9B9A99),
-                      borderRadius: BorderRadius.circular(14.r),
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8.w),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(20.r),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(Icons.search, color: Colors.grey),
-                              SizedBox(width: 8.w),
-                              Expanded(
-                                child: TextField(
-                                  onChanged: (query) {
-                                    _controller.searchBooks(query);
-                                  },
-                                  decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: 'Search For Hadith Book',
-                                    hintStyle: TextStyle(fontSize: 14.sp, color: Colors.grey),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(height: 4.h),
-                      ],
-                    ),
-                  ),
-                  Obx(() {
-                    if (_controller.isLoading.value) {
-                      return Center(
-                        child: CircularProgressIndicator(),
-                      );
-                    }
-
-                    if (_controller.errorMessage.isNotEmpty) {
-                      return Center(
-                        child: Column(
+                        child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Text(
-                              _controller.errorMessage.value,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 16.sp, color: Colors.red),
-                            ),
-                            SizedBox(height: 8.h),
-                            TextButton(
-                              onPressed: _controller.fetchBooks,
-                              child: Text('Retry'),
-                            ),
+                            Text('Continue', style: TextStyle(fontSize: 12.sp, color: Colors.white)),
+                            Icon(Icons.arrow_forward, size: 14.sp, color: Colors.white),
                           ],
                         ),
-                      );
-                    }
+                      ),
+                    ],
+                  );
+                }),
+              ),
+              SizedBox(height: 16.h),
 
-                    return Column(
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
+                decoration: BoxDecoration(
+                  color: cardColor,
+                  borderRadius: BorderRadius.circular(14.r),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+                  ],
+                ),
+                child: TextField(
+                  onChanged: (query) => _controller.searchBooks(query),
+                  style: TextStyle(color: textColor),
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    icon: Icon(Icons.search, color: subColor),
+                    hintText: 'Search For Hadith Book',
+                    hintStyle: TextStyle(fontSize: 14.sp, color: subColor),
+                  ),
+                ),
+              ),
+              SizedBox(height: 8.h),
+              Obx(() {
+                if (_controller.isLoading.value) {
+                  return Center(child: CircularProgressIndicator(color: accent));
+                }
+
+                if (_controller.errorMessage.isNotEmpty) {
+                  return Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        ListView.builder(
-                          shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
-                          itemCount: _controller.filteredBooks.length,
-                          itemBuilder: (context, index) {
-                            final book = _controller.filteredBooks[index];
-                            String bookNameInUrdu = bookNamesInUrdu[book['bookName']] ?? '';  
-
-                            return GestureDetector(
-                              onTap: () {
-                                _controller.updateLastReadBook(book['bookSlug'], book['bookName']);
-                                Get.to(HidthChaptersScreen(
-                                  bookSlug: book['bookSlug'],
-                                  bookNameInArabic: book['bookName'],
-                                ));
-                              },
-                              child: buildSurahTile(
-                                book['id'].toString(),
-                                book['bookName'],
-                                book['writerName'],
-                                book['chapters_count']?.toString(),
-                                bookNameInUrdu,
-                              ),
-                            );
-                          },
+                        Text(
+                          _controller.errorMessage.value,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                        ),
+                        SizedBox(height: 8.h),
+                        TextButton(
+                          onPressed: _controller.fetchBooks,
+                          child: Text('Retry'),
                         ),
                       ],
+                    ),
+                  );
+                }
+
+                return ListView.builder(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemCount: _controller.filteredBooks.length,
+                  itemBuilder: (context, index) {
+                    final book = _controller.filteredBooks[index];
+                    String bookNameInUrdu = bookNamesInUrdu[book['bookName']] ?? '';
+
+                    return GestureDetector(
+                      onTap: () {
+                        _controller.updateLastReadBook(book['bookSlug'], book['bookName']);
+                        Get.to(HidthChaptersScreen(
+                          bookSlug: book['bookSlug'],
+                          bookNameInArabic: book['bookName'],
+                        ));
+                      },
+                      child: buildSurahTile(
+                        book['id'].toString(),
+                        book['bookName'],
+                        book['writerName'],
+                        book['chapters_count']?.toString(),
+                        bookNameInUrdu,
+                        isDark,
+                        accent,
+                        textColor,
+                        subColor,
+                      ),
                     );
-                  }),
-                ],
-              ),
-            ),
+                  },
+                );
+              }),
+              SizedBox(height: 110.h),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
 
   Widget buildSurahTile(
-      String? id, String? bookName, String? writerName, String? chaptersCount, String? bookNameInUrdu) {
+    String? id,
+    String? bookName,
+    String? writerName,
+    String? chaptersCount,
+    String? bookNameInUrdu,
+    bool isDark,
+    Color accent,
+    Color textColor,
+    Color subColor,
+  ) {
     String safeId = id ?? "N/A";
     String safeBookName = bookName ?? "Unknown Book";
     String safeWriterName = writerName ?? "Unknown Writer";
@@ -269,55 +217,48 @@ class HadithScreen extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(vertical: 4.h),
+          padding: EdgeInsets.symmetric(vertical: 8.h),
           child: Row(
             children: [
               CircleAvatar(
-                radius: 20.r,
-                backgroundColor: Color(0XFF9B9A99),
+                radius: 18.r,
+                backgroundColor: accent.withOpacity(isDark ? 0.25 : 0.14),
                 child: Text(
                   safeId,
-                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: Colors.black),
+                  style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: accent),
                 ),
               ),
-              SizedBox(width: 20.w),
+              SizedBox(width: 16.w),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        Text(
-                          safeBookName,
-                          style: TextStyle(
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                        Flexible(
+                          child: Text(
+                            safeBookName,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: textColor),
                           ),
                         ),
-                        SizedBox(width: 20.w),
+                        SizedBox(width: 12.w),
                         Directionality(
                           textDirection: TextDirection.rtl,
                           child: Text(
                             safeBookNameInUrdu,
                             style: TextStyle(
-                              fontSize: 16.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                              color: textColor,
                               fontFamily: 'Noto Nastaliq Urdu',
                             ),
                           ),
                         ),
                       ],
                     ),
-                    Text(
-                      'Writer: $safeWriterName',
-                      style: TextStyle(fontSize: 12.sp, color: Colors.grey[600]),
-                    ),
-                    Text(
-                      'Chapters: $safeChaptersCount',
-                      style: TextStyle(fontSize: 12.sp, color: Colors.grey[600]),
-                    ),
+                    Text('Writer: $safeWriterName', style: TextStyle(fontSize: 12.sp, color: subColor)),
+                    Text('Chapters: $safeChaptersCount', style: TextStyle(fontSize: 12.sp, color: subColor)),
                   ],
                 ),
               ),
@@ -326,11 +267,10 @@ class HadithScreen extends StatelessWidget {
         ),
         Divider(
           thickness: 1.h,
-          color: Colors.grey[400],
+          color: textColor.withOpacity(0.08),
           height: 16.h,
         ),
       ],
     );
   }
 }
-

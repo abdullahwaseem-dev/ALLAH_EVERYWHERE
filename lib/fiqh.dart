@@ -36,8 +36,17 @@ class _FiqhScreenState extends State<FiqhScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
+    final headerGradient = isDark
+        ? [VoidColors.cardDark, VoidColors.oliveDeep]
+        : [VoidColors.oliveDeep, VoidColors.dustyRose];
+
     return Scaffold(
-      backgroundColor: VoidColors.secondary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: Column(
         children: [
           Stack(
@@ -48,7 +57,7 @@ class _FiqhScreenState extends State<FiqhScreen> {
                   height: 120.h,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: [Color(0xFFC6AC9F), Color(0xFF60534D)],
+                      colors: headerGradient,
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                     ),
@@ -61,7 +70,7 @@ class _FiqhScreenState extends State<FiqhScreen> {
                       style: TextStyle(
                         fontSize: 18.sp,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   ),
@@ -71,55 +80,38 @@ class _FiqhScreenState extends State<FiqhScreen> {
                 top: 42.h,
                 left: 16.w,
                 child: IconButton(
-                  icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.black),
+                  icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.white),
                   onPressed: () {
                     Navigator.pop(context);
                   },
                 ),
               ),
-
             ],
           ),
 
           SizedBox(height: 20.h),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Color(0xFFC6AC9F), Color(0xFF60534D)],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
+              decoration: BoxDecoration(
+                color: cardColor,
+                borderRadius: BorderRadius.circular(14.r),
+                boxShadow: [
+                  BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+                ],
               ),
-              borderRadius: BorderRadius.circular(12.r),
-            ),
-            child: Column(
-              children: [
-
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10.w),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20.r),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.search, color: Colors.grey),
-                      SizedBox(width: 8.w),
-                      Expanded(
-                        child: TextField(
-                          controller: _searchController,
-                          onChanged: (value) => setState(() => _query = value),
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'Search For Fiqh',
-                            hintStyle: TextStyle(fontSize: 14.sp, color: Colors.grey),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+              child: TextField(
+                controller: _searchController,
+                onChanged: (value) => setState(() => _query = value),
+                style: TextStyle(color: textColor),
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  icon: Icon(Icons.search, color: subColor),
+                  hintText: 'Search For Fiqh',
+                  hintStyle: TextStyle(fontSize: 14.sp, color: subColor),
                 ),
-              ],
+              ),
             ),
           ),
           SizedBox(height: 20.h),
@@ -129,14 +121,14 @@ class _FiqhScreenState extends State<FiqhScreen> {
               alignment: Alignment.centerLeft,
               child: Text(
                 'Tap a topic to ask AI about it',
-                style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade600),
+                style: TextStyle(fontSize: 13.sp, color: subColor),
               ),
             ),
           ),
           SizedBox(height: 8.h),
           Expanded(
             child: GridView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 16.w),
+              padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 110.h),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 16.w,
@@ -152,17 +144,20 @@ class _FiqhScreenState extends State<FiqhScreen> {
                     padding: EdgeInsets.all(12.w),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16.r),
-                      color: Colors.white,
+                      color: cardColor,
+                      boxShadow: [
+                        BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+                      ],
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.smart_toy_outlined, size: 32.sp, color: VoidColors.brown),
+                        Icon(Icons.smart_toy_outlined, size: 32.sp, color: accent),
                         SizedBox(height: 10.h),
                         Text(
                           topic,
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600),
+                          style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600, color: textColor),
                         ),
                       ],
                     ),

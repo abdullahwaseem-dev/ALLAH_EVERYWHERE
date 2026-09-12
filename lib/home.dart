@@ -190,7 +190,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                SizedBox(height: 24.h),
+                // Extra clearance so content can't end up hidden behind the
+                // floating glass nav bar (Scaffold uses extendBody: true).
+                SizedBox(height: 110.h),
               ],
             ),
           ),

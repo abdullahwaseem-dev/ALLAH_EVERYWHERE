@@ -40,7 +40,7 @@ class NearbyMosqueService {
     double latitude,
     double longitude, {
     int radiusMeters = 5000,
-    int limit = 10,
+    int limit = 16,
   }) async {
     try {
       final mosques = await _query(latitude, longitude, radiusMeters, limit);
@@ -69,10 +69,16 @@ class NearbyMosqueService {
     int radiusMeters,
     int limit,
   ) async {
+    // `nwr` (not just `node`) because most mapped mosques are the building
+    // outline (a way) or a multipolygon (a relation) with the name tag on
+    // that feature - a node-only query mostly hits unnamed minor points
+    // (entrances, minarets) and misses the named building entirely.
+    // `out center` gives a representative lat/lon for those way/relation
+    // results (they have no lat/lon of their own).
     final query = '''
       [out:json][timeout:20];
-      node["amenity"="place_of_worship"]["religion"="muslim"](around:$radiusMeters,$latitude,$longitude);
-      out body $limit;
+      nwr["amenity"="place_of_worship"]["religion"="muslim"](around:$radiusMeters,$latitude,$longitude);
+      out center $limit;
     ''';
 
     final response = await http
@@ -93,16 +99,54 @@ class NearbyMosqueService {
     final mosques = elements
         .map((e) {
           final tags = e['tags'] as Map<String, dynamic>? ?? {};
-          final name = tags['name'] as String? ?? 'Unnamed Mosque';
-          final lat = (e['lat'] as num).toDouble();
-          final lon = (e['lon'] as num).toDouble();
+          final name = (tags['name'] ?? tags['name:en'] ?? tags['alt_name'] ?? tags['official_name'])
+                  as String? ??
+              'Unnamed Mosque';
+
+          // Nodes carry lat/lon directly; ways and relations only get a
+          // `center` from `out center`.
+          double lat, lon;
+          if (e['type'] == 'node') {
+            lat = (e['lat'] as num).toDouble();
+            lon = (e['lon'] as num).toDouble();
+          } else {
+            final center = e['center'] as Map<String, dynamic>?;
+            if (center == null) return null;
+            lat = (center['lat'] as num).toDouble();
+            lon = (center['lon'] as num).toDouble();
+          }
+
           final distance = _haversineKm(latitude, longitude, lat, lon);
           return NearbyMosque(name: name, distanceKm: distance, latitude: lat, longitude: lon);
         })
+        .whereType<NearbyMosque>()
         .toList()
       ..sort((a, b) => a.distanceKm.compareTo(b.distanceKm));
 
-    return mosques;
+    return _dedupe(mosques);
+  }
+
+  /// Querying both points and building outlines (see `_query`) means the
+  /// same physical mosque can come back twice - e.g. an unnamed entrance
+  /// node plus the named building way. Collapses anything within ~40m of
+  /// an already-accepted mosque into a single entry, preferring whichever
+  /// one actually has a name.
+  List<NearbyMosque> _dedupe(List<NearbyMosque> sorted) {
+    final accepted = <NearbyMosque>[];
+    for (final candidate in sorted) {
+      final duplicateIndex = accepted.indexWhere(
+        (m) => _haversineKm(m.latitude, m.longitude, candidate.latitude, candidate.longitude) < 0.04,
+      );
+      if (duplicateIndex == -1) {
+        accepted.add(candidate);
+        continue;
+      }
+      final existing = accepted[duplicateIndex];
+      if (existing.name == 'Unnamed Mosque' && candidate.name != 'Unnamed Mosque') {
+        accepted[duplicateIndex] = candidate;
+      }
+    }
+    return accepted;
   }
 
   double _haversineKm(double lat1, double lon1, double lat2, double lon2) {

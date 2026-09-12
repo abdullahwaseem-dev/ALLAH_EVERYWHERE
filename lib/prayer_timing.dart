@@ -1,6 +1,5 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
-import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -14,90 +13,77 @@ class PrayerTimingScreen extends StatelessWidget {
     final controller = Get.isRegistered<PrayerTimesController>()
         ? Get.find<PrayerTimesController>()
         : Get.put(PrayerTimesController());
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
 
     return Scaffold(
-      body: Stack(
-        children: [
-          ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.fill),
-          Positioned(
-            top: 120.h,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: ThemedBackground(lightImagePath: VoidImages.prayer_timing_background, fit: BoxFit.cover),
-          ),
-          Positioned(
-            top: 40.h,
-            left: 16.w,
-            right: 16.w,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.white),
-                  onPressed: () {
-                    Get.back();
-                  },
-                ),
-                Column(
-                  children: [
-                    Text(
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
+                    onPressed: () => Get.back(),
+                  ),
+                  Expanded(
+                    child: Text(
                       'Prayer Timing',
-                      style: TextStyle(color: Colors.white, fontSize: 16.sp, fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: textColor, fontSize: 16.sp, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8.h),
-                    Image.asset(VoidImages.bismillah, height: 30.h),
-                  ],
-                ),
-                SizedBox(width: 40.w),
-              ],
-            ),
-          ),
-          Positioned(
-            top: 400.h,
-            left: -10.w,
-            right: -10.w,
-            bottom: 0,
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.w),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 12.w),
-                      decoration: BoxDecoration(
-                        color: VoidColors.secondary,
-                        borderRadius: BorderRadius.circular(16.r),
-                      ),
-                      child: Obx(() {
-                        if (controller.locationError.value.isNotEmpty) {
-                          return Padding(
-                            padding: EdgeInsets.symmetric(vertical: 20.h),
-                            child: Text(
-                              controller.locationError.value,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 14.sp),
-                            ),
-                          );
-                        }
-                        return Column(
-                          children: [
-                            PrayerTimingRow(time: controller.fajrTime.value, label: 'Fajr'),
-                            PrayerTimingRow(time: controller.dhuhrTime.value, label: 'Dhuhr'),
-                            PrayerTimingRow(time: controller.asrTime.value, label: 'Asr'),
-                            PrayerTimingRow(time: controller.maghribTime.value, label: 'Maghrib'),
-                            PrayerTimingRow(time: controller.ishaTime.value, label: 'Isha'),
-                          ],
-                        );
-                      }),
-                    ),
-                  ],
-                ),
+                  ),
+                  SizedBox(width: 48.w),
+                ],
               ),
-            ),
+              SizedBox(height: 8.h),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.symmetric(vertical: 24.h),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: isDark
+                        ? [VoidColors.cardDark, VoidColors.oliveDeep]
+                        : [VoidColors.oliveDeep, VoidColors.dustyRose],
+                  ),
+                  borderRadius: BorderRadius.circular(20.r),
+                ),
+                alignment: Alignment.center,
+                child: Image.asset(VoidImages.bismillah, height: 30.h, color: Colors.white),
+              ),
+              SizedBox(height: 20.h),
+              Obx(() {
+                if (controller.locationError.value.isNotEmpty) {
+                  return Padding(
+                    padding: EdgeInsets.symmetric(vertical: 20.h),
+                    child: Text(
+                      controller.locationError.value,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 14.sp, color: textColor),
+                    ),
+                  );
+                }
+                return Column(
+                  children: [
+                    PrayerTimingRow(time: controller.fajrTime.value, label: 'Fajr', isDark: isDark, accent: accent),
+                    PrayerTimingRow(time: controller.dhuhrTime.value, label: 'Dhuhr', isDark: isDark, accent: accent),
+                    PrayerTimingRow(time: controller.asrTime.value, label: 'Asr', isDark: isDark, accent: accent),
+                    PrayerTimingRow(time: controller.maghribTime.value, label: 'Maghrib', isDark: isDark, accent: accent),
+                    PrayerTimingRow(time: controller.ishaTime.value, label: 'Isha', isDark: isDark, accent: accent),
+                  ],
+                );
+              }),
+              SizedBox(height: 110.h),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -106,33 +92,40 @@ class PrayerTimingScreen extends StatelessWidget {
 class PrayerTimingRow extends StatelessWidget {
   final String time;
   final String label;
+  final bool isDark;
+  final Color accent;
   final ValueNotifier<bool> isChecked = ValueNotifier(false);
 
-  PrayerTimingRow({required this.time, required this.label});
+  PrayerTimingRow({required this.time, required this.label, required this.isDark, required this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8.0.h),
+      padding: EdgeInsets.symmetric(vertical: 6.0.h),
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 12.w),
+        padding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 14.w),
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12.r),
+          color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+          borderRadius: BorderRadius.circular(14.r),
+          boxShadow: [
+            BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+          ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(label, style: TextStyle(color: Colors.black, fontSize: 16.sp)),
+            Text(label, style: TextStyle(color: textColor, fontSize: 15.sp, fontWeight: FontWeight.w600)),
             Row(
               children: [
-                Text(time, style: TextStyle(color: Colors.black, fontSize: 16.sp)),
-                SizedBox(width: 8.w),
+                Text(time, style: TextStyle(color: textColor, fontSize: 15.sp, fontWeight: FontWeight.w600)),
+                SizedBox(width: 4.w),
                 ValueListenableBuilder<bool>(
                   valueListenable: isChecked,
                   builder: (context, checked, child) {
                     return Checkbox(
                       value: checked,
+                      activeColor: accent,
                       onChanged: (bool? value) {
                         if (value != null) {
                           isChecked.value = value;

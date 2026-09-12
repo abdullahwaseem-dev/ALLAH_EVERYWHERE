@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
@@ -87,17 +89,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
-    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
+
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         title: Text(
           t.profileTitle,
-          style: TextStyle(
-            fontSize: 18.sp,
-            fontWeight: FontWeight.w700,
-            color: textColor,
-          ),
+          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700, color: textColor),
         ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
@@ -108,141 +110,132 @@ class _ProfileScreenState extends State<ProfileScreen> {
         future: _profileFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
+            return Center(child: CircularProgressIndicator(color: accent));
           } else if (snapshot.hasError) {
-            return Center(child: Text('Failed to load profile'));
+            return Center(child: Text('Failed to load profile', style: TextStyle(color: textColor)));
           } else if (snapshot.hasData) {
             final userProfile = snapshot.data!;
 
-            return Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: Theme.of(context).brightness == Brightness.dark
-                  ? const BoxDecoration(color: Colors.black)
-                  : BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(VoidImages.otherscreen_background),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-              child: RefreshIndicator(
-                onRefresh: _refresh,
-                child: ListView(
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  children: [
-                    SizedBox(height: 50.h),
-                    CircleAvatar(
-                      radius: 60.r,
-                      backgroundColor: Colors.white,
+            return RefreshIndicator(
+              onRefresh: _refresh,
+              color: accent,
+              child: ListView(
+                padding: EdgeInsets.symmetric(horizontal: 16.w),
+                physics: const AlwaysScrollableScrollPhysics(),
+                children: [
+                  SizedBox(height: 24.h),
+                  Center(
+                    child: Container(
+                      padding: EdgeInsets.all(4.w),
+                      decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: accent, width: 2.5)),
                       child: CircleAvatar(
-                        radius: 55.r,
+                        radius: 52.r,
+                        backgroundColor: isDark ? VoidColors.cardDark : VoidColors.cardLight,
                         backgroundImage: userProfile.profilePicUrl != null
                             ? NetworkImage(userProfile.profilePicUrl!)
                             : AssetImage(VoidImages.profile) as ImageProvider,
                       ),
                     ),
-                    SizedBox(height: 10.h),
-                    Text(
-                      userProfile.name,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w700,
-                        color: textColor,
+                  ),
+                  SizedBox(height: 12.h),
+                  Text(
+                    userProfile.name,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 19.sp, fontWeight: FontWeight.w700, color: textColor),
+                  ),
+                  SizedBox(height: 20.h),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _StatCard(
+                          isDark: isDark,
+                          accent: accent,
+                          textColor: textColor,
+                          subColor: subColor,
+                          icon: Iconsax.book_1,
+                          value: '${userProfile.hadithRead}',
+                          label: t.hadithRead,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 10.h),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Column(
-                          children: [
-                            Text(
-                              '${userProfile.hadithRead}',
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                color: textColor,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            Text(
-                              t.hadithRead,
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                color: textColor,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
+                      SizedBox(width: 12.w),
+                      Expanded(
+                        child: _StatCard(
+                          isDark: isDark,
+                          accent: accent,
+                          textColor: textColor,
+                          subColor: subColor,
+                          icon: Iconsax.activity,
+                          value: '${userProfile.tasbeehTotal}',
+                          label: t.tasbeehCount,
                         ),
-                        SizedBox(width: 50.w),
-                        Column(
-                          children: [
-                            Text(
-                              '${userProfile.tasbeehTotal}',
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                color: textColor,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            Text(
-                              t.tasbeehCount,
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                color: textColor,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20.h),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 14.w),
+                    decoration: BoxDecoration(
+                      color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+                      borderRadius: BorderRadius.circular(18.r),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
                       ],
                     ),
-                    SizedBox(height: 30.h),
-                    _buildMenuItem(
-                      icon: Icons.bookmark_outline,
-                      text: t.bookmarks,
-                      onTap: () => Get.to(() => const BookmarksScreen()),
+                    child: Column(
+                      children: [
+                        _buildMenuItem(
+                          icon: Iconsax.bookmark,
+                          text: t.bookmarks,
+                          textColor: textColor,
+                          onTap: () => Get.to(() => const BookmarksScreen()),
+                        ),
+                        _buildMenuItem(
+                          icon: Iconsax.edit,
+                          text: t.editProfile,
+                          textColor: textColor,
+                          onTap: () async {
+                            await Get.to(() => EditProfileScreen());
+                            _refresh();
+                          },
+                        ),
+                        _buildMenuItem(
+                          icon: Iconsax.info_circle,
+                          text: t.aboutUs,
+                          textColor: textColor,
+                          onTap: () {
+                            Get.to(() => AboutUsScreen());
+                          },
+                        ),
+                        _buildMenuItem(
+                          icon: Iconsax.notification,
+                          text: t.notification,
+                          textColor: textColor,
+                          onTap: () {
+                            Get.to(() => NotificationsScreen());
+                          },
+                        ),
+                        _buildMenuItem(
+                          icon: Iconsax.logout,
+                          text: t.logOut,
+                          textColor: textColor,
+                          onTap: () {
+                            _showLogoutDialog(context);
+                          },
+                        ),
+                        if (FirebaseAuth.instance.currentUser != null)
+                          _buildMenuItem(
+                            icon: Iconsax.trash,
+                            text: t.deleteAccount,
+                            textColor: Colors.red,
+                            isLast: true,
+                            onTap: () => _showDeleteAccountDialog(context),
+                          ),
+                      ],
                     ),
-                    _buildMenuItem(
-                      icon: Icons.edit_outlined,
-                      text: t.editProfile,
-                      onTap: () async {
-                        await Get.to(() => EditProfileScreen());
-                        _refresh();
-                      },
-                    ),
-                    _buildMenuItem(
-                      icon: Icons.account_circle_outlined,
-                      text: t.aboutUs,
-                      onTap: () {
-                        Get.to(() => AboutUsScreen());
-                      },
-                    ),
-                    _buildMenuItem(
-                      icon: Icons.notifications,
-                      text: t.notification,
-                      onTap: () {
-                        Get.to(() => NotificationsScreen());
-                      },
-                    ),
-                    _buildMenuItem(
-                      icon: Icons.logout,
-                      text: t.logOut,
-                      onTap: () {
-                        _showLogoutDialog(context);
-                      },
-                    ),
-                    if (FirebaseAuth.instance.currentUser != null)
-                      _buildMenuItem(
-                        icon: Icons.delete_forever,
-                        text: t.deleteAccount,
-                        iconColor: Colors.red,
-                        onTap: () => _showDeleteAccountDialog(context),
-                      ),
-                    SizedBox(height: 24.h),
-                  ],
-                ),
+                  ),
+                  SizedBox(height: 130.h),
+                ],
               ),
             );
           }
@@ -252,15 +245,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Widget _buildMenuItem(
-      {required IconData icon, required String text, required VoidCallback onTap, Color? iconColor}) {
-    return ListTile(
-      leading: Icon(icon, color: iconColor ?? Colors.blue, size: 28.sp),
-      title: Text(
-        text,
-        style: TextStyle(fontSize: 18.sp, color: iconColor),
-      ),
+  Widget _buildMenuItem({
+    required IconData icon,
+    required String text,
+    required Color textColor,
+    required VoidCallback onTap,
+    bool isLast = false,
+  }) {
+    return InkWell(
       onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 13.h),
+        decoration: isLast
+            ? null
+            : BoxDecoration(border: Border(bottom: BorderSide(color: textColor.withOpacity(0.08)))),
+        child: Row(
+          children: [
+            Icon(icon, color: textColor, size: 20.sp),
+            SizedBox(width: 14.w),
+            Expanded(
+              child: Text(text, style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600, color: textColor)),
+            ),
+            Icon(Iconsax.arrow_right_3, size: 14.sp, color: textColor.withOpacity(0.5)),
+          ],
+        ),
+      ),
     );
   }
 
@@ -343,6 +352,49 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ],
         );
       },
+    );
+  }
+}
+
+class _StatCard extends StatelessWidget {
+  final bool isDark;
+  final Color accent;
+  final Color textColor;
+  final Color subColor;
+  final IconData icon;
+  final String value;
+  final String label;
+
+  const _StatCard({
+    required this.isDark,
+    required this.accent,
+    required this.textColor,
+    required this.subColor,
+    required this.icon,
+    required this.value,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 12.w),
+      decoration: BoxDecoration(
+        color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+        borderRadius: BorderRadius.circular(16.r),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+        ],
+      ),
+      child: Column(
+        children: [
+          Icon(icon, color: accent, size: 20.sp),
+          SizedBox(height: 8.h),
+          Text(value, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold, color: textColor)),
+          SizedBox(height: 2.h),
+          Text(label, style: TextStyle(fontSize: 11.sp, color: subColor)),
+        ],
+      ),
     );
   }
 }

@@ -23,7 +23,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
   int lapCount = 0;
   int target = 33;
   int _unsyncedTaps = 0;
-  Color beadColor = VoidColors.brown;
+  Color beadColor = VoidColors.gold;
 
   late final AnimationController _pulseController;
 
@@ -119,11 +119,12 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
     final t = AppLocalizations.of(context)!;
     final progress = (tasbeehCount % target) / target;
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final textColor = isDark ? Colors.white : VoidColors.black;
-    final cardColor = isDark ? const Color(0xFF1E1E1E) : Colors.white;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
     return Scaffold(
-      backgroundColor: isDark ? Colors.black : VoidColors.secondary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: SafeArea(
         child: Column(
           children: [
@@ -141,11 +142,17 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
                 ..._targetOptions.map((opt) => ChoiceChip(
                       label: Text('$opt'),
                       selected: target == opt,
+                      selectedColor: accent,
+                      backgroundColor: cardColor,
+                      labelStyle: TextStyle(color: target == opt ? Colors.white : textColor),
                       onSelected: (_) => _setTarget(opt),
                     )),
                 ChoiceChip(
                   label: Text(_targetOptions.contains(target) ? t.customTarget : '${t.customTarget} ($target)'),
                   selected: !_targetOptions.contains(target),
+                  selectedColor: accent,
+                  backgroundColor: cardColor,
+                  labelStyle: TextStyle(color: !_targetOptions.contains(target) ? Colors.white : textColor),
                   onSelected: (_) => _pickCustomTarget(),
                 ),
               ],
@@ -209,7 +216,7 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
             ),
             Text(
               '${t.tapToCount} ${t.lapsCompleted}: $lapCount',
-              style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+              style: TextStyle(fontSize: 13.sp, color: isDark ? VoidColors.textDarkSecondary : Colors.grey.shade700),
             ),
             SizedBox(height: 12.h),
             TextButton.icon(
@@ -227,7 +234,8 @@ class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProvider
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _ColorDot(color: VoidColors.brown, onTap: () => changeBeadColor(VoidColors.brown)),
+                  _ColorDot(color: VoidColors.gold, onTap: () => changeBeadColor(VoidColors.gold)),
+                  _ColorDot(color: VoidColors.oliveDeep, onTap: () => changeBeadColor(VoidColors.oliveDeep)),
                   _ColorDot(color: Colors.green, onTap: () => changeBeadColor(Colors.green)),
                   _ColorDot(color: Colors.red, onTap: () => changeBeadColor(Colors.red)),
                   _ColorDot(color: Colors.purple, onTap: () => changeBeadColor(Colors.purple)),

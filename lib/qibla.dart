@@ -7,8 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
-import 'package:allah_everywhere/widgets/themed_background.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
@@ -70,51 +69,50 @@ class _QiblaScreenState extends State<QiblaScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
-          child: Icon(Icons.arrow_back_ios, color: Colors.black),
+          child: Icon(Icons.arrow_back_ios, color: textColor),
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
           "Qibla",
-          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: Colors.black),
+          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),
         ),
         centerTitle: true,
       ),
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: ThemedBackground(lightImagePath: VoidImages.semicircle_background),
-          ),
-          _buildBody(),
-        ],
-      ),
+      body: _buildBody(isDark),
     );
   }
 
-  Widget _buildBody() {
+  Widget _buildBody(bool isDark) {
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     final status = _locationStatus;
     if (status == null) {
-      return const Center(child: CircularProgressIndicator());
+      return Center(child: CircularProgressIndicator(color: accent));
     }
     if (!status.enabled) {
       return _buildLocationError(
         "Location services are turned off. Please enable them to find the Qibla direction.",
+        isDark,
       );
     }
     if (status.status == LocationPermission.denied) {
       return _buildLocationError(
         "Location permission is required to find the Qibla direction.",
+        isDark,
       );
     }
     if (status.status == LocationPermission.deniedForever) {
       return _buildLocationError(
         "Location permission was permanently denied. Please enable it from app settings.",
+        isDark,
         showSettingsButton: true,
       );
     }
@@ -149,16 +147,18 @@ class _QiblaScreenState extends State<QiblaScreen> {
     );
   }
 
-  Widget _buildLocationError(String message, {bool showSettingsButton = false}) {
+  Widget _buildLocationError(String message, bool isDark, {bool showSettingsButton = false}) {
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.black54;
     return Center(
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 32.w),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.location_off, size: 48.sp, color: Colors.black54),
+            Icon(Icons.location_off, size: 48.sp, color: subColor),
             SizedBox(height: 16.h),
-            Text(message, textAlign: TextAlign.center, style: TextStyle(fontSize: 14.sp)),
+            Text(message, textAlign: TextAlign.center, style: TextStyle(fontSize: 14.sp, color: textColor)),
             SizedBox(height: 16.h),
             ElevatedButton(
               onPressed: showSettingsButton ? Geolocator.openAppSettings : _checkLocationStatus,

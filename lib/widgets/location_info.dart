@@ -8,10 +8,11 @@ class LocationInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).textTheme.bodyLarge?.color;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(Icons.location_on, color: Colors.black),
+        Icon(Icons.location_on, color: textColor),
         SizedBox(width: 10.w),
         Flexible(
           child: Text(
@@ -19,6 +20,7 @@ class LocationInfo extends StatelessWidget {
             style: TextStyle(
               fontSize: 14.sp,
               fontWeight: FontWeight.w600,
+              color: textColor,
             ),
             overflow: TextOverflow.ellipsis,
           ),

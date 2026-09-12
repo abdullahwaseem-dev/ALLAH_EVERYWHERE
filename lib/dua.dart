@@ -10,15 +10,22 @@ import 'dua_2.dart';
 class DuaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
+
     return Scaffold(
-      backgroundColor: VoidColors.secondary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
-        backgroundColor: VoidColors.brown,
-        title: Text("Dua", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19.sp)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text("Dua", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19.sp, color: textColor)),
         centerTitle: true,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, color: VoidColors.black, size: 20.sp),
+          icon: Icon(Icons.arrow_back_ios, color: textColor, size: 20.sp),
           onPressed: () => Navigator.pop(context),
         ),
       ),
@@ -43,9 +50,9 @@ class DuaScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 15.w),
                     children: [
                       buildCard("Guidance and Righteousness",
-                          "O Allah, guide me, make me steadfast, and set my affairs right."),
-                      buildCard("Forgiveness", "O Allah, You are the Most Forgiving, so forgive me."),
-                      buildCard("Gratitude", "O Allah, I thank You for Your countless blessings."),
+                          "O Allah, guide me, make me steadfast, and set my affairs right.", cardColor, textColor, subColor),
+                      buildCard("Forgiveness", "O Allah, You are the Most Forgiving, so forgive me.", cardColor, textColor, subColor),
+                      buildCard("Gratitude", "O Allah, I thank You for Your countless blessings.", cardColor, textColor, subColor),
                     ],
                   ),
                 ),
@@ -59,16 +66,16 @@ class DuaScreen extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(11.w),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: cardColor,
                 borderRadius: BorderRadius.circular(14.r),
                 boxShadow: [
-                  BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 8.r, offset: Offset(0, 2)),
+                  BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.1), blurRadius: 8.r, offset: const Offset(0, 2)),
                 ],
               ),
               child: Center(
                 child: GestureDetector(
                   onTap: () => Get.to(() => AskAiScreen(initialCategory: 'Dua')),
-                  child: buildIconMenuItem(VoidImages.Question, "Ask AI about a Dua"),
+                  child: buildIconMenuItem(accent, textColor, "Ask AI about a Dua"),
                 ),
               ),
             ),
@@ -80,7 +87,7 @@ class DuaScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("All Duas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp)),
+                  Text("All Duas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp, color: textColor)),
                   SizedBox(height: 8.h),
                   Expanded(
                     child: ListView(
@@ -88,9 +95,16 @@ class DuaScreen extends StatelessWidget {
                         for (final category in duaCategories)
                           GestureDetector(
                             onTap: () => Get.to(() => Dua2Screen(category: category)),
-                            child: buildDuaCard(title: category.title, duaCount: category.duas.length),
+                            child: buildDuaCard(
+                              title: category.title,
+                              duaCount: category.duas.length,
+                              cardColor: cardColor,
+                              textColor: textColor,
+                              subColor: subColor,
+                              isDark: isDark,
+                            ),
                           ),
-                        SizedBox(height: 40.h),
+                        SizedBox(height: 130.h),
                       ],
                     ),
                   ),
@@ -103,71 +117,80 @@ class DuaScreen extends StatelessWidget {
     );
   }
 
-  Widget buildCard(String title, String subtitle) {
+  Widget buildCard(String title, String subtitle, Color cardColor, Color textColor, Color subColor) {
     return Container(
       width: 300.w,
       margin: EdgeInsets.only(right: 16.w),
       padding: EdgeInsets.all(16.w),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cardColor,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 8.r, offset: Offset(0, 2)),
+          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 8.r, offset: const Offset(0, 2)),
         ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
+          Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp, color: textColor)),
           SizedBox(height: 8.h),
           Text(
             subtitle,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: Colors.grey[700], fontSize: 14.sp),
+            style: TextStyle(color: subColor, fontSize: 14.sp),
           ),
         ],
       ),
     );
   }
 
-  Widget buildIconMenuItem(String iconPath, String title) {
+  Widget buildIconMenuItem(Color accent, Color textColor, String title) {
     return Column(
       children: [
-        Image.asset(iconPath, height: 25.h, width: 35.w),
+        Icon(Icons.auto_awesome, color: accent, size: 26.h),
         SizedBox(height: 8.h),
-        Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp)),
+        Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp, color: textColor)),
       ],
     );
   }
 
-  Widget buildDuaCard({required String title, required int duaCount}) {
+  Widget buildDuaCard({
+    required String title,
+    required int duaCount,
+    required Color cardColor,
+    required Color textColor,
+    required Color subColor,
+    required bool isDark,
+  }) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.h),
       child: Container(
         padding: EdgeInsets.all(16.w),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: cardColor,
           borderRadius: BorderRadius.circular(12.r),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 6.r, offset: Offset(0, 2)),
+            BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 6.r, offset: const Offset(0, 2)),
           ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.sp)),
+            Expanded(
+              child: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.sp, color: textColor)),
+            ),
             Row(
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text("$duaCount", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp)),
-                    Text("Duas", style: TextStyle(fontSize: 14.sp, color: Colors.grey[600])),
+                    Text("$duaCount", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp, color: textColor)),
+                    Text("Duas", style: TextStyle(fontSize: 14.sp, color: subColor)),
                   ],
                 ),
                 SizedBox(width: 8.w),
-                Icon(Icons.chevron_right, color: Colors.grey.shade400),
+                Icon(Icons.chevron_right, color: subColor),
               ],
             ),
           ],
