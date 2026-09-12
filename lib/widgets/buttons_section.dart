@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 
 class ButtonsSection extends StatelessWidget {
   final bool isFormValid;
@@ -18,6 +19,8 @@ class ButtonsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     return Column(
       children: [
         SizedBox(
@@ -26,7 +29,7 @@ class ButtonsSection extends StatelessWidget {
             onPressed: isFormValid ? onRegisterPressed : null,
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.symmetric(vertical: 15.h),
-              backgroundColor: Colors.pinkAccent,
+              backgroundColor: accent,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.r),
               ),
@@ -46,7 +49,7 @@ class ButtonsSection extends StatelessWidget {
             style: TextButton.styleFrom(
               foregroundColor: Colors.white,
               padding: EdgeInsets.symmetric(vertical: 15.h),
-              backgroundColor: Colors.pinkAccent,
+              backgroundColor: accent,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.r),
               ),

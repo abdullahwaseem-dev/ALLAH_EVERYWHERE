@@ -79,19 +79,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
-      backgroundColor: VoidColors.primary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: Stack(
         children: [
-          Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: Image.asset(
-              'assets/images/blur_top.png',
-              fit: BoxFit.cover,
+          if (!isDark)
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: Image.asset(
+                'assets/images/blur_top.png',
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
           SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),

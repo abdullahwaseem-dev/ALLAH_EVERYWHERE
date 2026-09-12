@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 
 class FormSection extends StatefulWidget {
   final TextEditingController emailController;
@@ -38,15 +39,20 @@ class _FormSectionState extends State<FormSection> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final iconColor = isDark ? VoidColors.textDarkSecondary : Colors.black;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
 
         TextField(
           controller: widget.emailController,
+          style: TextStyle(color: textColor),
           decoration: InputDecoration(
             labelText: t.email,
-            prefixIcon: const Icon(Icons.email_outlined),
+            prefixIcon: Icon(Icons.email_outlined, color: iconColor),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8.r),
             ),
@@ -58,13 +64,14 @@ class _FormSectionState extends State<FormSection> {
         TextField(
           controller: widget.passwordController,
           obscureText: !_isPasswordVisible,
+          style: TextStyle(color: textColor),
           decoration: InputDecoration(
             labelText: t.password,
-            prefixIcon: const Icon(Icons.lock_outline),
+            prefixIcon: Icon(Icons.lock_outline, color: iconColor),
             suffixIcon: IconButton(
               icon: Icon(
                 _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
-                color: Colors.black,
+                color: iconColor,
               ),
               onPressed: () {
                 setState(() {
@@ -83,13 +90,14 @@ class _FormSectionState extends State<FormSection> {
         TextField(
           controller: widget.confirmPasswordController,
           obscureText: !_isConfirmPasswordVisible,
+          style: TextStyle(color: textColor),
           decoration: InputDecoration(
             labelText: t.confirmPassword,
-            prefixIcon: const Icon(Icons.lock_outline),
+            prefixIcon: Icon(Icons.lock_outline, color: iconColor),
             suffixIcon: IconButton(
               icon: Icon(
                 _isConfirmPasswordVisible ? Icons.visibility : Icons.visibility_off,
-                color: Colors.black,
+                color: iconColor,
               ),
               onPressed: () {
                 setState(() {
@@ -116,6 +124,7 @@ class _FormSectionState extends State<FormSection> {
           children: [
             Checkbox(
               value: widget.isChecked,
+              activeColor: accent,
               onChanged: widget.onCheckboxChanged,
             ),
             Expanded(
@@ -124,14 +133,14 @@ class _FormSectionState extends State<FormSection> {
                   text: t.agreeToTermsPrefix,
                   style: TextStyle(
                     fontSize: 14.sp,
-                    color: Colors.black,
+                    color: textColor,
                   ),
                   children: [
                     TextSpan(
                       text: t.termsOfService,
                       style: TextStyle(
                         fontSize: 14.sp,
-                        color: Colors.pinkAccent,
+                        color: accent,
                         decoration: TextDecoration.underline,
                       ),
                     ),
@@ -140,7 +149,7 @@ class _FormSectionState extends State<FormSection> {
                       text: t.privacyPolicy,
                       style: TextStyle(
                         fontSize: 14.sp,
-                        color: Colors.pinkAccent,
+                        color: accent,
                         decoration: TextDecoration.underline,
                       ),
                     ),

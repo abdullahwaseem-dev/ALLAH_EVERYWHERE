@@ -61,18 +61,23 @@ class _ForgetPasswordState extends State<ForgetPassword> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Back', style: TextStyle(color: VoidColors.black, fontSize: 18)),
-        backgroundColor: VoidColors.primary,
+        title: Text('Back', style: TextStyle(color: textColor, fontSize: 18)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: VoidColors.black),
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
           onPressed: () {
             Get.back();
           },
         ),
       ),
-      backgroundColor: VoidColors.primary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: SingleChildScrollView( // Make the body scrollable
         child: Column(
           children: [
@@ -89,7 +94,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w600,
-                color: Colors.black,
+                color: textColor,
               ),
             ),
             const SizedBox(height: 10), // Reduced space between image and text
@@ -97,7 +102,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               t.forgotPasswordDescription,
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey,
+                color: subColor,
               ),
               textAlign: TextAlign.center,
             ),
@@ -109,14 +114,15 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   // Email TextField with border and validation
                   TextField(
                     controller: _emailController,
+                    style: TextStyle(color: textColor),
                     decoration: InputDecoration(
                       hintText: t.email,
-                      hintStyle: TextStyle(color: Colors.grey),
+                      hintStyle: TextStyle(color: subColor),
                       filled: true,
-                      fillColor: Colors.white,
+                      fillColor: isDark ? VoidColors.cardDark : Colors.white,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.grey, width: 1.5),
+                        borderSide: BorderSide(color: subColor, width: 1.5),
                       ),
                     ),
                   ),
@@ -136,11 +142,11 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       ),
                     ),
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                          _isButtonEnabled ? Colors.pinkAccent : Colors.grey),
-                      padding: MaterialStateProperty.all(
+                      backgroundColor: WidgetStateProperty.all(
+                          _isButtonEnabled ? accent : Colors.grey),
+                      padding: WidgetStateProperty.all(
                           EdgeInsets.symmetric(vertical: 15, horizontal: 150)),
-                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      shape: WidgetStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       )),
                     ),

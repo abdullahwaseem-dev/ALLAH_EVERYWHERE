@@ -14,8 +14,11 @@ class RegistrationSuccess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
-      backgroundColor: VoidColors.primary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.w),
         child: Column(
@@ -27,6 +30,7 @@ class RegistrationSuccess extends StatelessWidget {
                 VoidImages.ALLAH,
                 width: 320.w,
                 height: 220.h,
+                color: isDark ? Colors.white : null,
               ),
             ),
             const SizedBox(height: 150),
@@ -34,7 +38,7 @@ class RegistrationSuccess extends StatelessWidget {
               t.welcomeTitle,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: VoidColors.black,
+                color: textColor,
                 fontSize: 24.sp,
                 fontWeight: FontWeight.w600,
               ),
@@ -44,7 +48,7 @@ class RegistrationSuccess extends StatelessWidget {
               t.registrationSuccessMessage,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: VoidColors.black,
+                color: textColor,
                 fontSize: 16.sp,
               ),
             ),
@@ -53,6 +57,20 @@ class RegistrationSuccess extends StatelessWidget {
               onPressed: () {
                 Get.to(() =>  BottomNavBarApp());
               },
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(accent),
+                padding: WidgetStateProperty.all(
+                  EdgeInsets.symmetric(
+                    horizontal: 130.w,
+                    vertical: 15.h,
+                  ),
+                ),
+                shape: WidgetStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.r),
+                  ),
+                ),
+              ),
               child: Text(
                 t.finish,
                 style: TextStyle(
@@ -60,24 +78,6 @@ class RegistrationSuccess extends StatelessWidget {
                   fontSize: 16.sp,
                 ),
               ),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.pinkAccent),
-
-                padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(
-                    horizontal: 130.w,
-                    vertical: 15.h,
-
-                  ),
-
-                ),
-                shape: MaterialStateProperty.all(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.r),
-                  ),
-                ),
-              ),
-
             ),
           ],
         ),

@@ -115,8 +115,13 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.black54;
+
     return Scaffold(
-      backgroundColor: VoidColors.primary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
@@ -127,6 +132,7 @@ class _LoginState extends State<Login> {
                 VoidImages.logo,
                 width: 200.w,
                 height: 200.h,
+                color: isDark ? Colors.white : null,
               ),
               Transform.translate(
                 offset: Offset(0, -40.h),
@@ -134,10 +140,12 @@ class _LoginState extends State<Login> {
                   VoidImages.ALLAH,
                   width: 320.w,
                   height: 210.h,
+                  color: isDark ? Colors.white : null,
                 ),
               ),
               SizedBox(height: 10.h),
               buildInputField(
+                context,
                 t.email,
                 TextInputType.emailAddress,
                 _emailController,
@@ -145,6 +153,7 @@ class _LoginState extends State<Login> {
               ),
               SizedBox(height: 10.h),
               buildInputField(
+                context,
                 t.password,
                 TextInputType.text,
                 _passwordController,
@@ -154,7 +163,7 @@ class _LoginState extends State<Login> {
                   icon: Icon(
                     _isPasswordObscured ? Icons.visibility : Icons
                         .visibility_off,
-                    color: Colors.black54,
+                    color: subColor,
                   ),
                   onPressed: () {
                     setState(() {
@@ -171,6 +180,7 @@ class _LoginState extends State<Login> {
                     children: [
                       Checkbox(
                         value: _keepLoggedIn,
+                        activeColor: accent,
                         onChanged: (value) {
                           setState(() {
                             _keepLoggedIn = value ?? false;
@@ -181,7 +191,7 @@ class _LoginState extends State<Login> {
                         t.keepMeLoggedIn,
                         style: TextStyle(
                           fontSize: 14.sp,
-                          color: Colors.black87,
+                          color: textColor,
                         ),
                       ),
                     ],
@@ -194,7 +204,7 @@ class _LoginState extends State<Login> {
                       t.forgotPassword,
                       style: TextStyle(
                         fontSize: 14.sp,
-                        color: Colors.pinkAccent,
+                        color: accent,
                         decoration: TextDecoration.underline,
                       ),
                     ),
@@ -202,43 +212,43 @@ class _LoginState extends State<Login> {
                 ],
               ),
               SizedBox(height: 20.h),
-             
-              buildLoginButton(_isLoginEnabled, () {
+
+              buildLoginButton(context, _isLoginEnabled, () {
                 _loginWithEmailPassword();
               }, label: t.loginTitle),
               SizedBox(height: 10.h),
               Row(
                 children: [
-                  Expanded(child: Divider(color: Colors.black54)),
+                  Expanded(child: Divider(color: subColor)),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.w),
                     child: Text(
                       t.or,
                       style: TextStyle(
                         fontSize: 14.sp,
-                        color: Colors.black54,
+                        color: subColor,
                       ),
                     ),
                   ),
-                  Expanded(child: Divider(color: Colors.black54)),
+                  Expanded(child: Divider(color: subColor)),
                 ],
               ),
               SizedBox(height: 10.h),
-              buildGuestButton(label: t.joinAsGuest),
+              buildGuestButton(context, label: t.joinAsGuest),
               SizedBox(height: 20.h),
               RichText(
                 text: TextSpan(
                   text: t.dontHaveAccount,
                   style: TextStyle(
                     fontSize: 14.sp,
-                    color: Colors.black87,
+                    color: textColor,
                   ),
                   children: [
                     TextSpan(
                       text: t.register,
                       style: TextStyle(
                         fontSize: 14.sp,
-                        color: Colors.pinkAccent,
+                        color: accent,
                         fontWeight: FontWeight.w600,
                       ),
                       recognizer: TapGestureRecognizer()
