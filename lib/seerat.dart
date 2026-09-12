@@ -1,65 +1,8 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/data/seerah_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-class _SeeratEvent {
-  final String year;
-  final String title;
-  final String description;
-  const _SeeratEvent({required this.year, required this.title, required this.description});
-}
-
-const List<_SeeratEvent> _timeline = [
-  _SeeratEvent(
-    year: '570 CE',
-    title: 'Birth in Makkah',
-    description: 'Prophet Muhammad (peace be upon him) was born in Makkah in the Year of the Elephant.',
-  ),
-  _SeeratEvent(
-    year: '610 CE',
-    title: 'First Revelation',
-    description:
-        'At age 40, in the Cave of Hira, the angel Jibril (Gabriel) brought the first verses of the Quran, beginning with "Iqra" (Read).',
-  ),
-  _SeeratEvent(
-    year: '613 CE',
-    title: 'Public Preaching Begins',
-    description: 'After three years of private invitation, the message of Islam was proclaimed publicly in Makkah.',
-  ),
-  _SeeratEvent(
-    year: '622 CE',
-    title: 'The Hijrah (Migration to Madinah)',
-    description:
-        'Facing persecution, the Prophet and his companions migrated to Madinah. This migration marks the start of the Islamic calendar.',
-  ),
-  _SeeratEvent(
-    year: '624 CE',
-    title: 'Battle of Badr',
-    description: 'The first major battle between the Muslims of Madinah and the Quraysh of Makkah.',
-  ),
-  _SeeratEvent(
-    year: '628 CE',
-    title: 'Treaty of Hudaybiyyah',
-    description: 'A peace treaty with the Quraysh that allowed Islam to spread rapidly across Arabia.',
-  ),
-  _SeeratEvent(
-    year: '630 CE',
-    title: 'Conquest of Makkah',
-    description: 'Makkah was peacefully retaken, and the Kaaba was cleared of idols and rededicated to the worship of Allah alone.',
-  ),
-  _SeeratEvent(
-    year: '632 CE',
-    title: 'The Farewell Sermon',
-    description:
-        'Delivered at Arafah during his final pilgrimage, summarizing the core principles of Islam - justice, equality, and the sanctity of life.',
-  ),
-  _SeeratEvent(
-    year: '632 CE',
-    title: 'Passing in Madinah',
-    description: 'The Prophet passed away in Madinah, leaving behind the Quran and his Sunnah as guidance.',
-  ),
-];
 
 class SeeratScreen extends StatelessWidget {
   @override
@@ -113,11 +56,12 @@ class SeeratScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20.h),
                   Text(
-                    'A brief timeline of the life of Prophet Muhammad (صلى الله عليه وسلم)',
+                    'The life of Prophet Muhammad (صلى الله عليه وسلم), from birth to his passing',
                     style: TextStyle(fontSize: 14.sp, color: Colors.black87, fontWeight: FontWeight.w600),
                   ),
                   SizedBox(height: 16.h),
-                  for (final event in _timeline) _buildEventCard(event),
+                  for (int i = 0; i < seerahChapters.length; i++) _buildChapterCard(seerahChapters[i], i),
+                  SizedBox(height: 16.h),
                 ],
               ),
             ),
@@ -127,24 +71,48 @@ class SeeratScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildEventCard(_SeeratEvent event) {
+  Widget _buildChapterCard(SeerahChapter chapter, int index) {
     return Container(
       margin: EdgeInsets.only(bottom: 12.h),
-      padding: EdgeInsets.all(14.w),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 6.r, offset: Offset(0, 2))],
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(event.year, style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: VoidColors.brown)),
-          SizedBox(height: 4.h),
-          Text(event.title, style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold)),
-          SizedBox(height: 6.h),
-          Text(event.description, style: TextStyle(fontSize: 13.sp, color: Colors.black87, height: 1.4)),
-        ],
+      child: Theme(
+        data: ThemeData(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          initiallyExpanded: index == 0,
+          title: Text(
+            '${index + 1}. ${chapter.title}',
+            style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold),
+          ),
+          subtitle: Text(
+            chapter.period,
+            style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: VoidColors.brown),
+          ),
+          childrenPadding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 16.h),
+          expandedCrossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final paragraph in chapter.paragraphs) ...[
+              Text(paragraph, style: TextStyle(fontSize: 13.sp, color: Colors.black87, height: 1.5)),
+              SizedBox(height: 10.h),
+            ],
+            if (chapter.reference != null)
+              Row(
+                children: [
+                  Icon(Icons.book, size: 14.sp, color: VoidColors.brown),
+                  SizedBox(width: 6.w),
+                  Expanded(
+                    child: Text(
+                      chapter.reference!,
+                      style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold, color: VoidColors.brown),
+                    ),
+                  ),
+                ],
+              ),
+          ],
+        ),
       ),
     );
   }
