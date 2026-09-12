@@ -19,9 +19,17 @@ import 'l10n/generated/app_localizations.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    // On some Android devices the native FirebaseInitProvider races our
+    // own initializeApp call and wins, so the [DEFAULT] app already
+    // exists by the time we get here. That's harmless - fall through and
+    // use the app it already created. Anything else is a real failure.
+    if (!e.toString().contains('already exists')) rethrow;
+  }
 
   // Route uncaught errors to Crashlytics instead of only the console, so
   // crashes are visible after release instead of silently disappearing.
