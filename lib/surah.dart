@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:quran/quran.dart' as Quran;
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
@@ -9,6 +10,26 @@ import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'package:allah_everywhere/services/quran_audio_service.dart';
+import 'package:allah_everywhere/controllers/language_controller.dart';
+
+/// Maps the app's UI language to one of the offline translations bundled in
+/// the `quran` package. Not every app language has a dedicated translation
+/// there (no Hindi or German edition exists), so those fall back to English
+/// rather than showing nothing.
+Quran.Translation _translationForLanguage(String code) {
+  switch (code) {
+    case 'ur':
+      return Quran.Translation.urdu;
+    case 'zh':
+      return Quran.Translation.chinese;
+    case 'fr':
+      return Quran.Translation.frHamidullah;
+    case 'tr':
+      return Quran.Translation.trSaheeh;
+    default:
+      return Quran.Translation.enSaheeh;
+  }
+}
 
 class SurahScreen extends StatefulWidget {
   final String surahName;
@@ -34,6 +55,9 @@ class _SurahScreenState extends State<SurahScreen> {
   bool _audioPlaying = false;
   StreamSubscription<bool>? _playingSub;
 
+  final LanguageController _languageController = Get.find<LanguageController>();
+  Worker? _localeWorker;
+
   String get _refId => '${widget.surahId}';
 
   @override
@@ -44,11 +68,16 @@ class _SurahScreenState extends State<SurahScreen> {
     _playingSub = QuranAudioService.handler.playingStream.listen((playing) {
       if (mounted) setState(() => _audioPlaying = playing);
     });
+    // Re-translate in place if the user switches language while this
+    // Surah is open, instead of only picking up the new language the next
+    // time the screen is opened.
+    _localeWorker = ever(_languageController.locale, (_) => loadSurahData());
   }
 
   @override
   void dispose() {
     _playingSub?.cancel();
+    _localeWorker?.dispose();
     super.dispose();
   }
 
@@ -92,10 +121,11 @@ class _SurahScreenState extends State<SurahScreen> {
     try {
       surahText.clear();
       surahTranslationEn.clear();
+      final translation = _translationForLanguage(_languageController.locale.value.languageCode);
 
       for (int i = 1; i <= Quran.getVerseCount(widget.surahId); i++) {
         surahText.add(Quran.getVerse(widget.surahId, i));
-        surahTranslationEn.add(Quran.getVerseTranslation(widget.surahId, i));
+        surahTranslationEn.add(Quran.getVerseTranslation(widget.surahId, i, translation: translation));
       }
       setState(() => _errorMessage = null);
     } catch (e) {

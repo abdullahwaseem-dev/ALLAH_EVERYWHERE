@@ -20,6 +20,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   ImageProvider? _imageProvider;
   String? _profilePicUrl;
   bool _isUploadingImage = false;
+  bool _isPickingImage = false;
   bool _isSaving = false;
 
   final TextEditingController _nameController = TextEditingController();
@@ -62,9 +63,15 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   Future<void> _pickImage() async {
-    final XFile? image = await pickSingleImage();
-    if (image != null) {
-      await _uploadProfilePicture(image);
+    if (_isPickingImage) return;
+    setState(() => _isPickingImage = true);
+    try {
+      final XFile? image = await pickSingleImage();
+      if (image != null) {
+        await _uploadProfilePicture(image);
+      }
+    } finally {
+      if (mounted) setState(() => _isPickingImage = false);
     }
   }
 
@@ -179,7 +186,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Center(
                   child: GestureDetector(
-                    onTap: _isUploadingImage ? null : _pickImage,
+                    onTap: (_isUploadingImage || _isPickingImage) ? null : _pickImage,
                     child: Stack(
                       alignment: Alignment.center,
                       children: [

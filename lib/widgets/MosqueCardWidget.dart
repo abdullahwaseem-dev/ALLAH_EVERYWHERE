@@ -6,12 +6,21 @@ class MosqueCardWidget extends StatelessWidget {
   final String name;
   final String location;
   final String imagePath;
+  final VoidCallback? onTap;
 
-  const MosqueCardWidget({Key? key, required this.name, required this.location, required this.imagePath}) : super(key: key);
+  const MosqueCardWidget({
+    Key? key,
+    required this.name,
+    required this.location,
+    required this.imagePath,
+    this.onTap,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
       width: 170.w,
       margin: EdgeInsets.only(right: 10.w),
       decoration: BoxDecoration(
@@ -72,6 +81,7 @@ class MosqueCardWidget extends StatelessWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }

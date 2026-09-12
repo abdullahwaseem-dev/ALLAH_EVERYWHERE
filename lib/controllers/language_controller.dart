@@ -40,7 +40,12 @@ class LanguageController extends GetxController {
   }
 
   Future<void> setLanguage(String code) async {
-    locale.value = Locale(code);
+    final newLocale = Locale(code);
+    locale.value = newLocale;
+    // GetMaterialApp resolves Localizations from Get.locale, not just the
+    // `locale:` constructor param - without this call the app keeps
+    // rendering in the old language until it's fully restarted.
+    Get.updateLocale(newLocale);
     await VoidStorage().saveData(_key, code);
   }
 }

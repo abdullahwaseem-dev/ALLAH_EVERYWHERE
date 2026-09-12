@@ -71,11 +71,13 @@ class HadithScreen extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Padding(
+                        Expanded(
+                          child: Padding(
                           padding: const EdgeInsets.only(left: 10),
                           child: Obx(() {
                             final hasLastRead = _controller.lastReadBookSlug.isNotEmpty;
                             return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'Last Read',
@@ -87,6 +89,7 @@ class HadithScreen extends StatelessWidget {
                                 SizedBox(height: 0.h),
                                 Text(
                                   hasLastRead ? _controller.lastReadBookName.value : 'Start Reading',
+                                  overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
                                     fontSize: 24.sp,
                                     fontWeight: FontWeight.bold,
@@ -137,8 +140,8 @@ class HadithScreen extends StatelessWidget {
                               ],
                             );
                           }),
+                          ),
                         ),
-                        Spacer(),
                         Image.asset(
                           VoidImages.MUHAMMAD_1,
                           height: 150.h,
@@ -237,7 +240,7 @@ class HadithScreen extends StatelessWidget {
                                 book['id'].toString(),
                                 book['bookName'],
                                 book['writerName'],
-                                book['chapters_count'],
+                                book['chapters_count']?.toString(),
                                 bookNameInUrdu,
                               ),
                             );

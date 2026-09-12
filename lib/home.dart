@@ -13,8 +13,10 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/nearby_mosque_service.dart';
+import 'package:allah_everywhere/data/daily_reminder_data.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'ask_ai.dart';
 import 'dua.dart';
@@ -193,6 +195,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                  child: _buildDailyReminderBanner(isDark, t),
+                ),
+
                 // Nearby Masjid Section
                 Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -253,6 +260,54 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildDailyReminderBanner(bool isDark, AppLocalizations t) {
+    final reminder = reminderForDay(DateTime.now());
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(16.w),
+      decoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E1E1E) : VoidColors.brown,
+        borderRadius: BorderRadius.circular(14.r),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                reminder.isHadith ? Icons.menu_book : Icons.auto_stories,
+                size: 16.sp,
+                color: VoidColors.secondary,
+              ),
+              SizedBox(width: 6.w),
+              Text(
+                reminder.isHadith ? t.hadithOfTheDay : t.verseOfTheDay,
+                style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: VoidColors.secondary),
+              ),
+            ],
+          ),
+          SizedBox(height: 10.h),
+          Text(
+            reminder.arabic,
+            textAlign: TextAlign.right,
+            textDirection: TextDirection.rtl,
+            style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: Colors.white, height: 1.6),
+          ),
+          SizedBox(height: 8.h),
+          Text(
+            reminder.translation,
+            style: TextStyle(fontSize: 13.sp, color: Colors.white, height: 1.4),
+          ),
+          SizedBox(height: 6.h),
+          Text(
+            reminder.reference,
+            style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold, color: VoidColors.secondary),
+          ),
+        ],
       ),
     );
   }
@@ -432,9 +487,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   name: mosque.name,
                   location: '${mosque.distanceKm.toStringAsFixed(1)} km away',
                   imagePath: VoidImages.masjid_vector,
+                  onTap: () => _openMosqueInMaps(mosque),
                 ))
             .toList(),
       ),
     );
+  }
+
+  Future<void> _openMosqueInMaps(NearbyMosque mosque) async {
+    final uri = Uri.parse(
+      'https://www.google.com/maps/search/?api=1&query=${mosque.latitude},${mosque.longitude}',
+    );
+    final launched = await launchUrl(uri, mode: LaunchMode.externalApplication);
+    if (!launched && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open maps app.')),
+      );
+    }
   }
 }

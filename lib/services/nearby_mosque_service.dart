@@ -6,8 +6,15 @@ import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 class NearbyMosque {
   final String name;
   final double distanceKm;
+  final double latitude;
+  final double longitude;
 
-  NearbyMosque({required this.name, required this.distanceKm});
+  NearbyMosque({
+    required this.name,
+    required this.distanceKm,
+    required this.latitude,
+    required this.longitude,
+  });
 }
 
 /// Result of a nearby-mosque lookup. Distinguishes "the server told us
@@ -90,7 +97,7 @@ class NearbyMosqueService {
           final lat = (e['lat'] as num).toDouble();
           final lon = (e['lon'] as num).toDouble();
           final distance = _haversineKm(latitude, longitude, lat, lon);
-          return NearbyMosque(name: name, distanceKm: distance);
+          return NearbyMosque(name: name, distanceKm: distance, latitude: lat, longitude: lon);
         })
         .toList()
       ..sort((a, b) => a.distanceKm.compareTo(b.distanceKm));
