@@ -1,4 +1,4 @@
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -80,7 +80,10 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
     return Scaffold(
       key: _scaffoldKey,
       extendBodyBehindAppBar: true,
@@ -94,7 +97,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -106,14 +109,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: Theme.of(context).brightness == Brightness.dark
-            ? const BoxDecoration(color: Colors.black)
-            : BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(VoidImages.otherscreen_background),
-                  fit: BoxFit.cover,
-                ),
-              ),
+        color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 170.h),
@@ -125,6 +121,8 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   controller: _currentPasswordController,
                   label: 'Current Password',
                   isVisible: _isCurrentPasswordVisible,
+                  textColor: textColor,
+                  cardColor: cardColor,
                   toggleVisibility: () {
                     setState(() {
                       _isCurrentPasswordVisible = !_isCurrentPasswordVisible;
@@ -137,6 +135,8 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   controller: _newPasswordController,
                   label: 'New Password',
                   isVisible: _isNewPasswordVisible,
+                  textColor: textColor,
+                  cardColor: cardColor,
                   toggleVisibility: () {
                     setState(() {
                       _isNewPasswordVisible = !_isNewPasswordVisible;
@@ -150,6 +150,8 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   controller: _retypeNewPasswordController,
                   label: 'Retype New Password',
                   isVisible: _isRetypeNewPasswordVisible,
+                  textColor: textColor,
+                  cardColor: cardColor,
                   toggleVisibility: () {
                     setState(() {
                       _isRetypeNewPasswordVisible = !_isRetypeNewPasswordVisible;
@@ -165,7 +167,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     child: Text('Save', style: TextStyle(color: Colors.white)),
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(200.w, 50.h),
-                      backgroundColor: Colors.blue,
+                      backgroundColor: accent,
                     ),
                   ),
                 ),
@@ -181,16 +183,20 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
     required TextEditingController controller,
     required String label,
     required bool isVisible,
+    required Color textColor,
+    required Color cardColor,
     required VoidCallback toggleVisibility,
   }) {
     return TextField(
       controller: controller,
       obscureText: !isVisible,
+      style: TextStyle(color: textColor),
       decoration: InputDecoration(
         labelText: label,
-        border: OutlineInputBorder(),
+        labelStyle: TextStyle(color: textColor.withOpacity(0.7)),
+        border: const OutlineInputBorder(),
         filled: true,
-        fillColor: Colors.white.withOpacity(0.8),
+        fillColor: cardColor,
         suffixIcon: IconButton(
           icon: Icon(
             isVisible ? Icons.visibility_off : Icons.visibility,

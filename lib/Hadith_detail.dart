@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
-import 'package:allah_everywhere/widgets/themed_background.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
 
 
@@ -29,99 +28,112 @@ class _HadithDetailState extends State<HadithDetail> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+
     return Scaffold(
-      body: Stack(
-        children: [
-          ThemedBackground(lightImagePath: VoidImages.details_background, fit: BoxFit.cover),
-          // Content
-          SafeArea(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 30.h),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.arrow_back, color: Colors.white),
-                        onPressed: () => Get.back(),
-                      ),
-                      Obx(() {
-                        return Column(
-                          children: [
-                            Text(
-                              _controller.chapterName.value,  // Dynamically show chapter name
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 20.sp,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            SizedBox(height: 8.h),
-                            Image.asset(
-                              VoidImages.bismillah,
-                              height: 40.h,
-                              fit: BoxFit.contain,
-                            ),
-                          ],
-                        );
-                      }),
-                      SizedBox(width: 48.w),
-                    ],
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              margin: EdgeInsets.fromLTRB(16.w, 8.h, 16.w, 0),
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: isDark
+                      ? [VoidColors.cardDark, VoidColors.oliveDeep]
+                      : [VoidColors.oliveDeep, VoidColors.dustyRose],
+                ),
+                borderRadius: BorderRadius.circular(20.r),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.arrow_back, color: Colors.white),
+                    onPressed: () => Get.back(),
                   ),
-                ),
-                // Scrollable Body
-                Expanded(
-                  child: Obx(() {
-                    if (_controller.isLoading.value) {
-                      return Center(child: CircularProgressIndicator());
-                    }
-
-                    if (_controller.errorMessage.isNotEmpty) {
-                      return Center(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              _controller.errorMessage.value,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                  Expanded(
+                    child: Obx(() {
+                      return Column(
+                        children: [
+                          Text(
+                            _controller.chapterName.value,
+                            textAlign: TextAlign.center,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontSize: 17.sp,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
                             ),
-                            SizedBox(height: 8.h),
-                            TextButton(
-                              onPressed: () => _controller.fetchHadiths(widget.chapterId),
-                              child: Text('Retry'),
-                            ),
-                          ],
-                        ),
+                          ),
+                          SizedBox(height: 6.h),
+                          Image.asset(
+                            VoidImages.bismillah,
+                            height: 30.h,
+                            fit: BoxFit.contain,
+                            color: Colors.white,
+                          ),
+                        ],
                       );
-                    }
-
-                    return SingleChildScrollView(
-                      padding: EdgeInsets.all(16.w),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: List.generate(_controller.hadithData.length, (index) {
-                          final hadith = _controller.hadithData[index];
-                          return HadithCard(
-                            arabicText: hadith['hadithArabic'] ?? '',
-                            urduText: hadith['hadithUrdu'] ?? '',
-                            englishText: hadith['hadithEnglish'] ?? '',
-                            hadithNumber: hadith['hadithNumber'].toString(),
-                            bookName: hadith['book']['bookName'] ?? 'Unknown Book',
-                            narrationSource: hadith['urduNarrator'] ?? 'Unknown Narrator',
-                          );
-                        }),
-                      ),
-                    );
-                  }),
-                ),
-              ],
+                    }),
+                  ),
+                  SizedBox(width: 48.w),
+                ],
+              ),
             ),
-          ),
-        ],
+            // Scrollable Body
+            Expanded(
+              child: Obx(() {
+                if (_controller.isLoading.value) {
+                  return Center(child: CircularProgressIndicator(color: accent));
+                }
+
+                if (_controller.errorMessage.isNotEmpty) {
+                  return Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          _controller.errorMessage.value,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 16.sp, color: Colors.red),
+                        ),
+                        SizedBox(height: 8.h),
+                        TextButton(
+                          onPressed: () => _controller.fetchHadiths(widget.chapterId),
+                          child: Text('Retry'),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+
+                return SingleChildScrollView(
+                  padding: EdgeInsets.fromLTRB(16.w, 16.h, 16.w, 110.h),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: List.generate(_controller.hadithData.length, (index) {
+                      final hadith = _controller.hadithData[index];
+                      return HadithCard(
+                        arabicText: hadith['hadithArabic'] ?? '',
+                        urduText: hadith['hadithUrdu'] ?? '',
+                        englishText: hadith['hadithEnglish'] ?? '',
+                        hadithNumber: hadith['hadithNumber'].toString(),
+                        bookName: hadith['book']['bookName'] ?? 'Unknown Book',
+                        narrationSource: hadith['urduNarrator'] ?? 'Unknown Narrator',
+                      );
+                    }),
+                  ),
+                );
+              }),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -145,87 +157,87 @@ class HadithCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.r),
-      ),
-      elevation: 4,
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade700;
+    return Container(
       margin: EdgeInsets.symmetric(vertical: 8.h),
-      child: Container(
-        decoration: BoxDecoration(
-          color: VoidColors.secondary.withOpacity(0.9),
-          borderRadius: BorderRadius.circular(12.r),
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(16.w),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Hadith #$hadithNumber',
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey[700],
-                    ),
+      decoration: BoxDecoration(
+        color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+        borderRadius: BorderRadius.circular(12.r),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.08), blurRadius: 8, offset: const Offset(0, 3)),
+        ],
+      ),
+      child: Padding(
+        padding: EdgeInsets.all(16.w),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Hadith #$hadithNumber',
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.bold,
+                    color: subColor,
                   ),
-                  Text(
-                    bookName,
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      fontStyle: FontStyle.italic,
-                      color: Colors.grey[700],
-                    ),
+                ),
+                Text(
+                  bookName,
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontStyle: FontStyle.italic,
+                    color: subColor,
                   ),
-                ],
-              ),
-              SizedBox(height: 8.h),
-              // Arabic Text
-              Text(
-                arabicText,
-                style: TextStyle(
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
                 ),
-                textAlign: TextAlign.right,
+              ],
+            ),
+            SizedBox(height: 8.h),
+            // Arabic Text
+            Text(
+              arabicText,
+              style: TextStyle(
+                fontSize: 18.sp,
+                fontWeight: FontWeight.bold,
+                color: textColor,
               ),
-              SizedBox(height: 8.h),
-              // Urdu Text
-              Text(
-                urduText,
-                style: TextStyle(
-                  fontSize: 16.sp,
-                  color: Colors.black,
-                ),
-                textAlign: TextAlign.right,
+              textAlign: TextAlign.right,
+            ),
+            SizedBox(height: 8.h),
+            // Urdu Text
+            Text(
+              urduText,
+              style: TextStyle(
+                fontSize: 16.sp,
+                color: textColor,
               ),
-              SizedBox(height: 8.h),
-              // English Text
-              Text(
-                englishText,
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.grey[800],
-                ),
-                textAlign: TextAlign.left,
+              textAlign: TextAlign.right,
+            ),
+            SizedBox(height: 8.h),
+            // English Text
+            Text(
+              englishText,
+              style: TextStyle(
+                fontSize: 14.sp,
+                fontStyle: FontStyle.italic,
+                color: subColor,
               ),
-              SizedBox(height: 8.h),
-              // Narration Source
-              Text(
-                narrationSource,
-                style: TextStyle(
-                  fontSize: 12.sp,
-                  color: Colors.grey[600],
-                ),
-                textAlign: TextAlign.left,
+              textAlign: TextAlign.left,
+            ),
+            SizedBox(height: 8.h),
+            // Narration Source
+            Text(
+              narrationSource,
+              style: TextStyle(
+                fontSize: 12.sp,
+                color: subColor,
               ),
-            ],
-          ),
+              textAlign: TextAlign.left,
+            ),
+          ],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/utils/utils/file picking/image_picking.dart';
 import 'package:flutter/material.dart';
@@ -145,7 +146,10 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -158,7 +162,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined),
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: textColor),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -170,14 +174,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: Theme.of(context).brightness == Brightness.dark
-            ? const BoxDecoration(color: Colors.black)
-            : BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(VoidImages.otherscreen_background),
-                  fit: BoxFit.cover,
-                ),
-              ),
+        color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w,vertical: 50.h),
@@ -190,11 +187,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
-                        CircleAvatar(
-                          radius: 60.r,
-                          backgroundColor: Colors.white,
+                        Container(
+                          padding: EdgeInsets.all(4.w),
+                          decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: accent, width: 2.5)),
                           child: CircleAvatar(
                             radius: 55.r,
+                            backgroundColor: cardColor,
                             backgroundImage: _imageProvider ?? AssetImage(VoidImages.profile),
                           ),
                         ),
@@ -213,21 +211,25 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 // Name TextField
                 TextField(
                   controller: _nameController,
+                  style: TextStyle(color: textColor),
                   decoration: InputDecoration(
                     labelText: 'Name',
-                    border: OutlineInputBorder(),
+                    labelStyle: TextStyle(color: isDark ? VoidColors.textDarkSecondary : null),
+                    border: const OutlineInputBorder(),
                     filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
+                    fillColor: cardColor,
                   ),
                 ),
                 SizedBox(height: 20.h),
                 TextField(
                   controller: _emailController..text = userEmail,
+                  style: TextStyle(color: textColor),
                   decoration: InputDecoration(
                     labelText: 'Email',
-                    border: OutlineInputBorder(),
+                    labelStyle: TextStyle(color: isDark ? VoidColors.textDarkSecondary : null),
+                    border: const OutlineInputBorder(),
                     filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
+                    fillColor: cardColor,
                   ),
                   readOnly: true,
                 ),
@@ -239,7 +241,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     onPressed: _isSaving ? null : _saveProfile,
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(200.w, 50.h),
-                      backgroundColor: Colors.blue,
+                      backgroundColor: accent,
                     ),
                     child: _isSaving
                         ? SizedBox(

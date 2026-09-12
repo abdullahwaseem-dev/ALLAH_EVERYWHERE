@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 
 class AboutUsScreen extends StatelessWidget {
   @override
@@ -25,14 +25,9 @@ class AboutUsScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: Theme.of(context).brightness == Brightness.dark
-            ? const BoxDecoration(color: Colors.black)
-            : BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(VoidImages.otherscreen_background),
-                  fit: BoxFit.cover,
-                ),
-              ),
+        color: Theme.of(context).brightness == Brightness.dark
+            ? VoidColors.bgDark
+            : VoidColors.bgLight,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 50.h),
           child: SingleChildScrollView(
