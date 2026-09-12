@@ -9,11 +9,48 @@ import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
 import 'package:allah_everywhere/services/account_service.dart';
 import 'About_us.dart';
+import 'bookmarks_screen.dart';
 import 'login.dart';
 import 'notification.dart';
+import 'editprofilescreen.dart';
 
-class ProfileScreen extends StatelessWidget {
-  Future<Map<String, dynamic>> _getUserProfile() async {
+class _ProfileData {
+  final String name;
+  final String? profilePicUrl;
+  final int tasbeehTotal;
+  final int hadithRead;
+
+  _ProfileData({
+    required this.name,
+    required this.profilePicUrl,
+    required this.tasbeehTotal,
+    required this.hadithRead,
+  });
+}
+
+class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  late Future<_ProfileData> _profileFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _profileFuture = _getUserProfile();
+  }
+
+  Future<_ProfileData> _refresh() async {
+    final future = _getUserProfile();
+    setState(() => _profileFuture = future);
+    return future;
+  }
+
+  Future<_ProfileData> _getUserProfile() async {
     User? user = FirebaseAuth.instance.currentUser;
 
     int tasbeehTotal = TasbeehService().lifetimeTotal;
@@ -24,26 +61,26 @@ class ProfileScreen extends StatelessWidget {
 
       if (userDoc.exists) {
         final data = userDoc.data() as Map<String, dynamic>? ?? {};
-        String name = data['name'] ?? 'No Name';
-        String profilePicUrl = VoidImages.profile;
+        final name = data['name'] as String? ?? 'No Name';
+        final profilePicUrl = data['profilePicture'] as String?;
         // Firestore may hold a higher total synced from another device.
         tasbeehTotal = (data['tasbeehTotal'] as num?)?.toInt() ?? tasbeehTotal;
         hadithRead = (data['hadithReadCount'] as num?)?.toInt() ?? hadithRead;
-        return {
-          'name': name,
-          'profilePicUrl': profilePicUrl,
-          'tasbeehTotal': tasbeehTotal,
-          'hadithRead': hadithRead,
-        };
+        return _ProfileData(
+          name: name,
+          profilePicUrl: (profilePicUrl != null && profilePicUrl.isNotEmpty) ? profilePicUrl : null,
+          tasbeehTotal: tasbeehTotal,
+          hadithRead: hadithRead,
+        );
       }
     }
 
-    return {
-      'name': 'Guest',
-      'profilePicUrl': VoidImages.profile,
-      'tasbeehTotal': tasbeehTotal,
-      'hadithRead': hadithRead,
-    };
+    return _ProfileData(
+      name: 'Guest',
+      profilePicUrl: null,
+      tasbeehTotal: tasbeehTotal,
+      hadithRead: hadithRead,
+    );
   }
 
   @override
@@ -64,15 +101,15 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
-      body: FutureBuilder<Map<String, dynamic>>(
-        future: _getUserProfile(),
+      body: FutureBuilder<_ProfileData>(
+        future: _profileFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Center(child: Text('Failed to load profile'));
           } else if (snapshot.hasData) {
-            Map<String, dynamic> userProfile = snapshot.data!;
+            final userProfile = snapshot.data!;
 
             return Container(
               width: double.infinity,
@@ -83,117 +120,130 @@ class ProfileScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Column(
-                children: [
-                  SizedBox(height: 50.h),
-                  CircleAvatar(
-                    radius: 60.r,
-                    backgroundColor: Colors.white,
-                    child: CircleAvatar(
-                      radius: 55.r,
-                      backgroundImage: AssetImage(VoidImages.profile), // Use the placeholder image here
-                    ),
-                  ),
-                  SizedBox(height: 10.h),
-                  Text(
-                    userProfile['name'] as String,
-                    style: TextStyle(
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.black,
-                    ),
-                  ),
-                  SizedBox(height: 10.h),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        children: [
-                          Text(
-                            '${userProfile['hadithRead']}',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            'Hadith Read',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ],
+              child: RefreshIndicator(
+                onRefresh: _refresh,
+                child: ListView(
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  children: [
+                    SizedBox(height: 50.h),
+                    CircleAvatar(
+                      radius: 60.r,
+                      backgroundColor: Colors.white,
+                      child: CircleAvatar(
+                        radius: 55.r,
+                        backgroundImage: userProfile.profilePicUrl != null
+                            ? NetworkImage(userProfile.profilePicUrl!)
+                            : AssetImage(VoidImages.profile) as ImageProvider,
                       ),
-                      SizedBox(width: 50.w),
-                      Column(
-                        children: [
-                          Text(
-                            '${userProfile['tasbeehTotal']}',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            'Tasbeeh Count',
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ],
+                    ),
+                    SizedBox(height: 10.h),
+                    Text(
+                      userProfile.name,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black,
                       ),
-                    ],
-                  ),
-                  SizedBox(height: 30.h),
-                  Expanded(
-                    child: ListView(
-                      physics: BouncingScrollPhysics(),
+                    ),
+                    SizedBox(height: 10.h),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _buildMenuItem(
-                          icon: Icons.account_circle_outlined,
-                          text: 'About Us',
-                          onTap: () {
-                            Get.to(() => AboutUsScreen());
-                          },
+                        Column(
+                          children: [
+                            Text(
+                              '${userProfile.hadithRead}',
+                              style: TextStyle(
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            Text(
+                              'Hadith Read',
+                              style: TextStyle(
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
                         ),
-                        _buildMenuItem(
-                          icon: Icons.notifications,
-                          text: 'Notification',
-                          onTap: () {
-                            Get.to(() => NotificationsScreen());
-                          },
+                        SizedBox(width: 50.w),
+                        Column(
+                          children: [
+                            Text(
+                              '${userProfile.tasbeehTotal}',
+                              style: TextStyle(
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            Text(
+                              'Tasbeeh Count',
+                              style: TextStyle(
+                                fontSize: 14.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
                         ),
-                        _buildMenuItem(
-                          icon: Icons.logout,
-                          text: 'Log Out',
-                          onTap: () {
-                            _showLogoutDialog(context);
-                          },
-                        ),
-                        if (FirebaseAuth.instance.currentUser != null)
-                          _buildMenuItem(
-                            icon: Icons.delete_forever,
-                            text: 'Delete Account',
-                            iconColor: Colors.red,
-                            onTap: () => _showDeleteAccountDialog(context),
-                          ),
                       ],
                     ),
-                  ),
-                ],
+                    SizedBox(height: 30.h),
+                    _buildMenuItem(
+                      icon: Icons.bookmark_outline,
+                      text: 'Bookmarks',
+                      onTap: () => Get.to(() => const BookmarksScreen()),
+                    ),
+                    _buildMenuItem(
+                      icon: Icons.edit_outlined,
+                      text: 'Edit Profile',
+                      onTap: () async {
+                        await Get.to(() => EditProfileScreen());
+                        _refresh();
+                      },
+                    ),
+                    _buildMenuItem(
+                      icon: Icons.account_circle_outlined,
+                      text: 'About Us',
+                      onTap: () {
+                        Get.to(() => AboutUsScreen());
+                      },
+                    ),
+                    _buildMenuItem(
+                      icon: Icons.notifications,
+                      text: 'Notification',
+                      onTap: () {
+                        Get.to(() => NotificationsScreen());
+                      },
+                    ),
+                    _buildMenuItem(
+                      icon: Icons.logout,
+                      text: 'Log Out',
+                      onTap: () {
+                        _showLogoutDialog(context);
+                      },
+                    ),
+                    if (FirebaseAuth.instance.currentUser != null)
+                      _buildMenuItem(
+                        icon: Icons.delete_forever,
+                        text: 'Delete Account',
+                        iconColor: Colors.red,
+                        onTap: () => _showDeleteAccountDialog(context),
+                      ),
+                    SizedBox(height: 24.h),
+                  ],
+                ),
               ),
             );
           }
           return Container(); // Default return for any unexpected case
         },
       ),
-
     );
   }
 

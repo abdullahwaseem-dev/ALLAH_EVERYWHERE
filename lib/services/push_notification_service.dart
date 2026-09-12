@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 
 /// Push notification plumbing: requests permission, stores the device's
@@ -47,6 +48,10 @@ class PushNotificationService {
   Future<void> _storeIncomingMessage(RemoteMessage message) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
+    // Respect the Settings "Updates" toggle - content/app-update pushes are
+    // opt-in, separate from the local prayer/reminder notifications.
+    final updatesEnabled = VoidStorage().readData<bool>('updates_enabled') ?? false;
+    if (!updatesEnabled) return;
     final title = message.notification?.title ?? message.data['title'] as String? ?? 'Notification';
     try {
       await FirebaseFirestore.instance

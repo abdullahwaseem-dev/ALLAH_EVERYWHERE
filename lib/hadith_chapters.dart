@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
+import 'package:allah_everywhere/models/bookmark.dart';
+import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'Hadith_detail.dart';
 import 'controller/HadithChaptersController.dart';
 
@@ -19,11 +21,31 @@ class HidthChaptersScreen extends StatefulWidget {
 
 class _HidthChaptersScreenState extends State<HidthChaptersScreen> {
   final HadithChaptersController _controller = Get.put(HadithChaptersController());
+  final BookmarkService _bookmarkService = BookmarkService();
+  bool _isBookmarked = false;
+
+  String get _refId => '${widget.bookSlug}|${widget.bookNameInArabic}';
 
   @override
   void initState() {
     super.initState();
     _controller.fetchChapters(widget.bookSlug, widget.bookNameInArabic);
+    _loadBookmarkState();
+  }
+
+  Future<void> _loadBookmarkState() async {
+    final bookmarked = await _bookmarkService.isBookmarked(BookmarkType.hadith, _refId);
+    if (mounted) setState(() => _isBookmarked = bookmarked);
+  }
+
+  Future<void> _toggleBookmark() async {
+    await _bookmarkService.toggle(
+      BookmarkType.hadith,
+      _refId,
+      widget.bookNameInArabic,
+      'Hadith book',
+    );
+    if (mounted) setState(() => _isBookmarked = !_isBookmarked);
   }
 
   @override
@@ -67,7 +89,14 @@ class _HidthChaptersScreenState extends State<HidthChaptersScreen> {
                                 ),
                               );
                             }),
-                            Icon(Icons.more_vert, size: 24.w, color: Colors.white),
+                            GestureDetector(
+                              onTap: _toggleBookmark,
+                              child: Icon(
+                                _isBookmarked ? Icons.bookmark : Icons.bookmark_outline,
+                                size: 24.w,
+                                color: Colors.white,
+                              ),
+                            ),
                           ],
                         ),
                         SizedBox(height: 10.h),

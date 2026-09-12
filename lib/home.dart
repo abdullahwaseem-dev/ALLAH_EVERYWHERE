@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 15.h),
-                      _buildNearbyMosques(),
+                      Obx(() => _buildNearbyMosques()),
                     ],
                   ),
                 ),
@@ -371,6 +371,27 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
     if (_nearbyMosques == null) {
+      if (controller.locationError.value.isNotEmpty) {
+        return Row(
+          children: [
+            Expanded(
+              child: Text(
+                controller.locationError.value,
+                style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+              ),
+            ),
+            TextButton(
+              onPressed: controller.permissionPermanentlyDenied.value
+                  ? Geolocator.openAppSettings
+                  : controller.fetchLocationAndTimes,
+              child: Text(
+                controller.permissionPermanentlyDenied.value ? 'Open Settings' : 'Retry',
+                style: TextStyle(fontSize: 13.sp),
+              ),
+            ),
+          ],
+        );
+      }
       return Text(
         'Waiting for your location…',
         style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),

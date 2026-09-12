@@ -38,6 +38,25 @@ class AboutUsScreen extends StatelessWidget {
               children: [
                 // Heading
                 Text(
+                  'The Developer',
+                  style: TextStyle(
+                    fontSize: 24.sp,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black,
+                  ),
+                ),
+                SizedBox(height: 15.h),
+                Text(
+                  'Allah Everywhere is built and maintained by a single solo developer - Muhammad Abdullah Waseem. There is no company or team behind it: every feature, every line of code, and every bit of content in this app is his own work.',
+                  style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black,
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(height: 30.h),
+                Text(
                   'Our Mission',
                   style: TextStyle(
                     fontSize: 24.sp,
@@ -46,9 +65,8 @@ class AboutUsScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15.h),
-                // Mission description
                 Text(
-                  'We are a team who have developed this application to ease the journey of Muslims in learning, reflecting, and growing as better Muslims. Our primary purpose is to make our Akhirah (Hereafter) better. This app is designed as a form of Sadqa Jariya, where your progress is our reward, and you will never be interrupted by ads or any distractions. We have no materialistic intentions but only seek your prayers.',
+                  'This app exists to ease the journey of Muslims in learning, reflecting, and growing as better Muslims. Its purpose is to make my Akhirah (Hereafter) better. It is built as a form of Sadaqah Jariyah, where your benefit is my reward, and you will never be interrupted by ads or any distractions. There are no materialistic intentions here - only a request for your prayers.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
@@ -93,7 +111,7 @@ class AboutUsScreen extends StatelessWidget {
                 SizedBox(height: 30.h),
                 // Footer text
                 Text(
-                  'Alhamdulillah, we have come this far, and it’s all because of Allah’s blessing. May He accept our efforts and make this app a means of guidance for everyone.',
+                  'Alhamdulillah, I have come this far, and it’s all because of Allah’s blessing. May He accept this effort and make this app a means of guidance for everyone.',
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w400,

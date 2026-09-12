@@ -3,7 +3,9 @@ import 'package:allah_everywhere/privacy_policy.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/controllers/theme_controller.dart';
+import 'package:allah_everywhere/controllers/language_controller.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
+import 'package:allah_everywhere/services/local_notifications_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -17,11 +19,12 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  static const _notificationsKey = 'notifications_enabled';
   static const _updatesKey = 'updates_enabled';
   static const _regionKey = 'selected_region';
 
   final ThemeController _themeController = Get.find<ThemeController>();
+  final LanguageController _languageController = Get.find<LanguageController>();
+  final LocalNotificationsService _notificationsService = LocalNotificationsService();
   final List<String> countries = [
     'Pakistan', 'India', 'United States', 'Canada', 'Brazil', 'Australia', 'China', 'Russia', 'Japan', 'South Korea',
     'United Kingdom', 'Germany', 'France', 'Italy', 'Mexico', 'Indonesia', 'Turkey', 'Spain', 'Saudi Arabia', 'Argentina',
@@ -34,13 +37,46 @@ class _SettingsScreenState extends State<SettingsScreen> {
   String? _selectedRegion;
   bool _notificationsEnabled = true;
   bool _updatesEnabled = false;
+  bool _quranReminderEnabled = false;
+  TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
   void initState() {
     super.initState();
     _selectedRegion = VoidStorage().readData<String>(_regionKey);
-    _notificationsEnabled = VoidStorage().readData<bool>(_notificationsKey) ?? true;
+    _notificationsEnabled = _notificationsService.notificationsEnabled;
+    _quranReminderEnabled = _notificationsService.quranReminderEnabled;
+    _reminderTime = _notificationsService.reminderTime;
     _updatesEnabled = VoidStorage().readData<bool>(_updatesKey) ?? false;
+  }
+
+  void _showLanguageDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Select Language'),
+          content: SizedBox(
+            width: double.maxFinite,
+            child: Obx(() => ListView(
+                  shrinkWrap: true,
+                  children: supportedAppLanguages.map((lang) {
+                    final selected = _languageController.locale.value.languageCode == lang.code;
+                    return ListTile(
+                      title: Text(lang.nativeName),
+                      subtitle: Text(lang.englishName),
+                      trailing: selected ? const Icon(Icons.check, color: Colors.green) : null,
+                      onTap: () {
+                        _languageController.setLanguage(lang.code);
+                        Navigator.pop(context);
+                      },
+                    );
+                  }).toList(),
+                )),
+          ),
+        );
+      },
+    );
   }
 
   void _showRegionDialog(BuildContext context) {
@@ -182,14 +218,54 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         SectionTitle(title: 'Notification', icon: Icons.notifications),
                         SwitchListTile(
                           title: Text('Notification'),
+                          subtitle: Text('Prayer-time (Adhan) alerts and the daily reminder'),
                           value: _notificationsEnabled,
-                          onChanged: (value) {
+                          onChanged: (value) async {
                             setState(() => _notificationsEnabled = value);
-                            VoidStorage().saveData(_notificationsKey, value);
+                            await VoidStorage().saveData(
+                              LocalNotificationsService.notificationsEnabledKey,
+                              value,
+                            );
+                            if (value) {
+                              final prayerController = Get.isRegistered<PrayerTimesController>()
+                                  ? Get.find<PrayerTimesController>()
+                                  : null;
+                              if (prayerController != null) {
+                                await _notificationsService
+                                    .reschedulePrayerNotifications(prayerController.prayerDateTimes.value);
+                              }
+                              await _notificationsService.scheduleDailyQuranReminder();
+                            } else {
+                              await _notificationsService.cancelAll();
+                            }
+                          },
+                        ),
+                        SwitchListTile(
+                          title: Text('Daily Quran Reading Reminder'),
+                          subtitle: Text('Reminds you at ${_reminderTime.format(context)}'),
+                          value: _quranReminderEnabled,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) async {
+                                  setState(() => _quranReminderEnabled = value);
+                                  await _notificationsService.setQuranReminderEnabled(value);
+                                },
+                        ),
+                        ListTile(
+                          title: Text('Reminder Time'),
+                          trailing: Text(_reminderTime.format(context)),
+                          enabled: _notificationsEnabled && _quranReminderEnabled,
+                          onTap: () async {
+                            final picked = await showTimePicker(context: context, initialTime: _reminderTime);
+                            if (picked != null) {
+                              setState(() => _reminderTime = picked);
+                              await _notificationsService.setReminderTime(picked);
+                            }
                           },
                         ),
                         SwitchListTile(
                           title: Text('Updates'),
+                          subtitle: Text('Notifications about new content and app updates'),
                           value: _updatesEnabled,
                           onChanged: (value) {
                             setState(() => _updatesEnabled = value);
@@ -204,11 +280,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               value: _themeController.isDarkMode,
                               onChanged: (value) => _themeController.setDarkMode(value),
                             )),
-                        ListTile(
-                          title: Text('Language'),
-                          trailing: Text('English (more coming soon)', style: TextStyle(color: Colors.grey)),
-                          enabled: false,
-                        ),
+                        Obx(() {
+                          final current = supportedAppLanguages.firstWhere(
+                            (l) => l.code == _languageController.locale.value.languageCode,
+                            orElse: () => supportedAppLanguages.first,
+                          );
+                          return ListTile(
+                            title: Text('Language'),
+                            trailing: Text(current.nativeName),
+                            onTap: () => _showLanguageDialog(context),
+                          );
+                        }),
                         ListTile(
                           title: Text('Region'),
                           trailing: Text(_selectedRegion ?? 'Select Region'),

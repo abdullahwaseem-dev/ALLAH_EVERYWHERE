@@ -2,38 +2,48 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'dart:math';
 
+const List<int> _targetOptions = [33, 99, 100];
 
 class TasbeehScreen extends StatefulWidget {
   @override
   _TasbeehScreenState createState() => _TasbeehScreenState();
 }
 
-class _TasbeehScreenState extends State<TasbeehScreen> {
+class _TasbeehScreenState extends State<TasbeehScreen> with SingleTickerProviderStateMixin {
   static const _countKey = 'tasbeeh_session_count';
   static const _lapKey = 'tasbeeh_session_laps';
+  static const _targetKey = 'tasbeeh_target';
 
   final TasbeehService _service = TasbeehService();
   int tasbeehCount = 0;
   int lapCount = 0;
+  int target = 33;
   int _unsyncedTaps = 0;
-  Color beadColor = Colors.blue;
-  List<bool> beadStates = List.generate(33, (index) => false);
+  Color beadColor = VoidColors.brown;
+
+  late final AnimationController _pulseController;
 
   @override
   void initState() {
     super.initState();
     tasbeehCount = VoidStorage().readData<int>(_countKey) ?? 0;
     lapCount = VoidStorage().readData<int>(_lapKey) ?? 0;
-    final remainder = tasbeehCount % 33;
-    beadStates = List.generate(33, (index) => index < remainder);
+    target = VoidStorage().readData<int>(_targetKey) ?? 33;
+    _pulseController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 150),
+      lowerBound: 0.0,
+      upperBound: 0.08,
+    );
   }
 
   @override
   void dispose() {
     _syncPendingTaps();
+    _pulseController.dispose();
     super.dispose();
   }
 
@@ -44,17 +54,16 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
     }
   }
 
-  void incrementTasbeeh(int index) {
+  void _increment() {
+    HapticFeedback.lightImpact();
+    _pulseController.forward(from: 0).then((_) => _pulseController.reverse());
     setState(() {
-      if (!beadStates[index]) {
-        tasbeehCount++;
-        _unsyncedTaps++;
-        beadStates[index] = true;
-        if (tasbeehCount % 33 == 0) {
-          lapCount++;
-          beadStates = List.generate(33, (index) => false);
-          _syncPendingTaps();
-        }
+      tasbeehCount++;
+      _unsyncedTaps++;
+      if (tasbeehCount % target == 0) {
+        lapCount++;
+        HapticFeedback.mediumImpact();
+        _syncPendingTaps();
       }
     });
     VoidStorage().saveData(_countKey, tasbeehCount);
@@ -66,178 +75,181 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
     setState(() {
       tasbeehCount = 0;
       lapCount = 0;
-      beadStates = List.generate(33, (index) => false);
     });
     VoidStorage().saveData(_countKey, 0);
     VoidStorage().saveData(_lapKey, 0);
   }
 
+  void _setTarget(int value) {
+    setState(() => target = value);
+    VoidStorage().saveData(_targetKey, value);
+  }
+
+  void _pickCustomTarget() async {
+    final controller = TextEditingController();
+    final value = await showDialog<int>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Custom target'),
+        content: TextField(
+          controller: controller,
+          keyboardType: TextInputType.number,
+          autofocus: true,
+          decoration: const InputDecoration(hintText: 'e.g. 500'),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
+          TextButton(
+            onPressed: () => Navigator.pop(context, int.tryParse(controller.text)),
+            child: const Text('Set'),
+          ),
+        ],
+      ),
+    );
+    if (value != null && value > 0) _setTarget(value);
+  }
+
   void changeBeadColor(Color color) {
-    setState(() {
-      beadColor = color;
-    });
+    setState(() => beadColor = color);
   }
 
   @override
   Widget build(BuildContext context) {
+    final progress = (tasbeehCount % target) / target;
+
     return Scaffold(
       backgroundColor: VoidColors.secondary,
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              ClipPath(
-                clipper: CustomAppBarClipper(),
-                child: Container(
-                  height: 120.h,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Color(0xFFC6AC9F), Color(0xFF60534D)],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 16.h),
+              child: Text(
+                'Tasbeeh',
+                style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: VoidColors.black),
+              ),
+            ),
+            Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8.w,
+              children: [
+                ..._targetOptions.map((t) => ChoiceChip(
+                      label: Text('$t'),
+                      selected: target == t,
+                      onSelected: (_) => _setTarget(t),
+                    )),
+                ChoiceChip(
+                  label: Text(_targetOptions.contains(target) ? 'Custom' : 'Custom ($target)'),
+                  selected: !_targetOptions.contains(target),
+                  onSelected: (_) => _pickCustomTarget(),
+                ),
+              ],
+            ),
+            Expanded(
+              child: Center(
+                child: GestureDetector(
+                  onTap: _increment,
+                  child: AnimatedBuilder(
+                    animation: _pulseController,
+                    builder: (context, child) => Transform.scale(
+                      scale: 1 + _pulseController.value,
+                      child: child,
                     ),
-                  ),
-                  alignment: Alignment.center,
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 10.h),
-                    child: Text(
-                      'Tasbeeh',
-                      style: TextStyle(
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                    child: Container(
+                      width: 220.w,
+                      height: 220.w,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(color: beadColor.withOpacity(0.3), blurRadius: 24, spreadRadius: 4),
+                        ],
+                      ),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SizedBox(
+                            width: 220.w,
+                            height: 220.w,
+                            child: CircularProgressIndicator(
+                              value: progress == 0 && tasbeehCount > 0 ? 1 : progress,
+                              strokeWidth: 8,
+                              backgroundColor: beadColor.withOpacity(0.15),
+                              valueColor: AlwaysStoppedAnimation(beadColor),
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '$tasbeehCount',
+                                style: TextStyle(
+                                  fontSize: 56.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: VoidColors.black,
+                                ),
+                              ),
+                              Text(
+                                '${tasbeehCount % target} / $target',
+                                style: TextStyle(fontSize: 14.sp, color: Colors.grey.shade600),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
               ),
-            ],
-          ),
-          SizedBox(height: 20.h),
-          // Beads Section
-          Expanded(
-            child: Center(
-              child: Stack(
-                alignment: Alignment.center,
+            ),
+            Text(
+              'Tap the circle to count. Laps completed: $lapCount',
+              style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+            ),
+            SizedBox(height: 12.h),
+            TextButton.icon(
+              onPressed: resetTasbeeh,
+              icon: const Icon(Icons.refresh, color: Colors.red),
+              label: Text('Reset', style: TextStyle(color: Colors.red, fontSize: 14.sp)),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(16.r)),
+                boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 10, offset: Offset(0, -2))],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  for (int i = 0; i < 33; i++)
-                    Positioned(
-                      left: 160.w + 150.w * cos((i * 360 / 33) * 3.1415926535 / 180),
-                      top: 135.h + 130.h * sin((i * 360 / 33) * 3.1415926535 / 180),
-                      child: GestureDetector(
-                        onTap: () => incrementTasbeeh(i),
-                        child: Container(
-                          width: 40.w,
-                          height: 25.h,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: beadStates[i] ? beadColor : beadColor.withOpacity(0.3),
-                          ),
-                        ),
-                      ),
-                    ),
+                  _ColorDot(color: VoidColors.brown, onTap: () => changeBeadColor(VoidColors.brown)),
+                  _ColorDot(color: Colors.green, onTap: () => changeBeadColor(Colors.green)),
+                  _ColorDot(color: Colors.red, onTap: () => changeBeadColor(Colors.red)),
+                  _ColorDot(color: Colors.purple, onTap: () => changeBeadColor(Colors.purple)),
+                  _ColorDot(color: Colors.orange, onTap: () => changeBeadColor(Colors.orange)),
                 ],
               ),
             ),
-          ),
-          // Counter Section
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 16.h),
-            child: Column(
-              children: [
-                Text(
-                  'Tasbeeh Count: $tasbeehCount',
-                  style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
-                ),
-                if (lapCount > 0)
-                  Text(
-                    'Laps Completed: $lapCount',
-                    style: TextStyle(fontSize: 16.sp, color: Colors.grey),
-                  ),
-              ],
-            ),
-          ),
-          // Reset Button
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 16.h),
-            child: ElevatedButton(
-              onPressed: resetTasbeeh,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-              ),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 12.h),
-                child: Text(
-                  'Reset',
-                  style: TextStyle(fontSize: 16.sp, color: Colors.white),
-                ),
-              ),
-            ),
-          ),
-          // Bead Color Selector
-          Container(
-            padding: EdgeInsets.all(16.w),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.vertical(top: Radius.circular(16.r)),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black12,
-                  blurRadius: 10,
-                  offset: Offset(0, -2),
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ColorPicker(color: Colors.blue, onTap: () => changeBeadColor(Colors.blue)),
-                ColorPicker(color: Colors.green, onTap: () => changeBeadColor(Colors.green)),
-                ColorPicker(color: Colors.red, onTap: () => changeBeadColor(Colors.red)),
-                ColorPicker(color: Colors.purple, onTap: () => changeBeadColor(Colors.purple)),
-                ColorPicker(color: Colors.orange, onTap: () => changeBeadColor(Colors.orange)),
-              ],
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
 }
 
-class CustomAppBarClipper extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    Path path = Path();
-    path.lineTo(0, size.height - 50);
-    path.quadraticBezierTo(
-        size.width / 2, size.height, size.width, size.height - 50);
-    path.lineTo(size.width, 0);
-    path.close();
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
-}
-
-
-class ColorPicker extends StatelessWidget {
+class _ColorDot extends StatelessWidget {
   final Color color;
   final VoidCallback onTap;
 
-  const ColorPicker({required this.color, required this.onTap});
+  const _ColorDot({required this.color, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 40.w,
-        height: 40.h,
+        width: 36.w,
+        height: 36.w,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: color,

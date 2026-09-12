@@ -1,10 +1,13 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran/quran.dart' as Quran;
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
-
+import 'package:allah_everywhere/models/bookmark.dart';
+import 'package:allah_everywhere/services/bookmark_service.dart';
+import 'package:allah_everywhere/services/quran_audio_service.dart';
 
 class SurahScreen extends StatefulWidget {
   final String surahName;
@@ -23,10 +26,65 @@ class _SurahScreenState extends State<SurahScreen> {
   List<String> surahTranslationEn = [];
   String? _errorMessage;
 
+  final BookmarkService _bookmarkService = BookmarkService();
+  bool _isBookmarked = false;
+
+  bool _audioLoading = false;
+  bool _audioPlaying = false;
+  StreamSubscription<bool>? _playingSub;
+
+  String get _refId => '${widget.surahId}';
+
   @override
   void initState() {
     super.initState();
     loadSurahData();
+    _loadBookmarkState();
+    _playingSub = QuranAudioService.handler.playingStream.listen((playing) {
+      if (mounted) setState(() => _audioPlaying = playing);
+    });
+  }
+
+  @override
+  void dispose() {
+    _playingSub?.cancel();
+    super.dispose();
+  }
+
+  Future<void> _loadBookmarkState() async {
+    final bookmarked = await _bookmarkService.isBookmarked(BookmarkType.surah, _refId);
+    if (mounted) setState(() => _isBookmarked = bookmarked);
+  }
+
+  Future<void> _toggleBookmark() async {
+    await _bookmarkService.toggle(BookmarkType.surah, _refId, widget.surahName, 'Surah ${widget.surahId}');
+    if (mounted) setState(() => _isBookmarked = !_isBookmarked);
+  }
+
+  Future<void> _toggleAudio() async {
+    final handler = QuranAudioService.handler;
+    if (_audioPlaying) {
+      await handler.pause();
+      return;
+    }
+    if (handler.loadedSurahId == widget.surahId) {
+      await handler.play();
+      return;
+    }
+    setState(() => _audioLoading = true);
+    try {
+      await handler.loadSurah(widget.surahId);
+      await handler.play();
+    } catch (e) {
+      VoidLogger.error('Failed to load Surah audio', e);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Could not load recitation audio. Please try again.')),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _audioLoading = false);
+    }
   }
 
   void loadSurahData() {
@@ -88,7 +146,34 @@ class _SurahScreenState extends State<SurahScreen> {
                                 ),
                               ],
                             ),
-                            Icon(Icons.more_vert, size: 24.w, color: Colors.white),
+                            Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: _audioLoading ? null : _toggleAudio,
+                                  child: _audioLoading
+                                      ? SizedBox(
+                                          width: 22.w,
+                                          height: 22.w,
+                                          child: const CircularProgressIndicator(
+                                              strokeWidth: 2, color: Colors.white),
+                                        )
+                                      : Icon(
+                                          _audioPlaying ? Icons.pause_circle_filled : Icons.play_circle_fill,
+                                          size: 26.w,
+                                          color: Colors.white,
+                                        ),
+                                ),
+                                SizedBox(width: 12.w),
+                                GestureDetector(
+                                  onTap: _toggleBookmark,
+                                  child: Icon(
+                                    _isBookmarked ? Icons.bookmark : Icons.bookmark_outline,
+                                    size: 24.w,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                         SizedBox(height: 2.h),

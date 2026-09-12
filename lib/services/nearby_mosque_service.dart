@@ -69,7 +69,11 @@ class NearbyMosqueService {
     ''';
 
     final response = await http
-        .post(Uri.parse(_endpoint), body: {'data': query})
+        .post(
+          Uri.parse(_endpoint),
+          headers: {'User-Agent': 'AllahEverywhereApp/1.0 (Flutter; Islamic prayer app)'},
+          body: {'data': query},
+        )
         .timeout(const Duration(seconds: 20));
 
     if (response.statusCode != 200) {

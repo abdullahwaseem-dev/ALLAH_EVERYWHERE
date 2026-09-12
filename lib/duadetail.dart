@@ -1,22 +1,53 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:allah_everywhere/models/bookmark.dart';
+import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'data/dua_data.dart';
 
-class DuaDetailScreen extends StatelessWidget {
+class DuaDetailScreen extends StatefulWidget {
   final DuaItem dua;
   final int index;
   final int total;
+  final String categoryTitle;
 
   const DuaDetailScreen({
     Key? key,
     required this.dua,
     required this.index,
     required this.total,
+    this.categoryTitle = '',
   }) : super(key: key);
 
   @override
+  State<DuaDetailScreen> createState() => _DuaDetailScreenState();
+}
+
+class _DuaDetailScreenState extends State<DuaDetailScreen> {
+  final BookmarkService _bookmarkService = BookmarkService();
+  bool _isBookmarked = false;
+
+  String get _refId => '${widget.categoryTitle}|${widget.dua.title}';
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.categoryTitle.isNotEmpty) _loadBookmarkState();
+  }
+
+  Future<void> _loadBookmarkState() async {
+    final bookmarked = await _bookmarkService.isBookmarked(BookmarkType.dua, _refId);
+    if (mounted) setState(() => _isBookmarked = bookmarked);
+  }
+
+  Future<void> _toggleBookmark() async {
+    await _bookmarkService.toggle(BookmarkType.dua, _refId, widget.dua.title, widget.categoryTitle);
+    if (mounted) setState(() => _isBookmarked = !_isBookmarked);
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final dua = widget.dua;
     return Scaffold(
       backgroundColor: VoidColors.secondary,
       appBar: AppBar(
@@ -32,6 +63,16 @@ class DuaDetailScreen extends StatelessWidget {
           style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
+        actions: [
+          if (widget.categoryTitle.isNotEmpty)
+            IconButton(
+              icon: Icon(
+                _isBookmarked ? Icons.bookmark : Icons.bookmark_outline,
+                color: VoidColors.black,
+              ),
+              onPressed: _toggleBookmark,
+            ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
@@ -41,11 +82,11 @@ class DuaDetailScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('$index/$total', style: TextStyle(fontSize: 14.sp, color: Colors.black)),
+                Text('${widget.index}/${widget.total}', style: TextStyle(fontSize: 14.sp, color: Colors.black)),
                 SizedBox(width: 8.w),
                 Expanded(
                   child: LinearProgressIndicator(
-                    value: total == 0 ? 0 : index / total,
+                    value: widget.total == 0 ? 0 : widget.index / widget.total,
                     backgroundColor: Colors.black12,
                     color: Colors.green,
                   ),

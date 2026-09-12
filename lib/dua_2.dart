@@ -58,6 +58,7 @@ class Dua2Screen extends StatelessWidget {
                         dua: dua,
                         index: index + 1,
                         total: category.duas.length,
+                        categoryTitle: category.title,
                       )),
                 );
               },
