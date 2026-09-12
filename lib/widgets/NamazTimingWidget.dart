@@ -1,61 +1,56 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 
 class NamazTimingWidget extends StatelessWidget {
   final String name;
   final String time;
+  final IconData icon;
+  final bool isNext;
 
-  const NamazTimingWidget({Key? key, required this.name, required this.time}) : super(key: key);
+  const NamazTimingWidget({
+    Key? key,
+    required this.name,
+    required this.time,
+    required this.icon,
+    this.isNext = false,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final cardColor = isNext
+        ? accent
+        : (isDark ? VoidColors.cardDark : VoidColors.cardLight);
+    final contentColor = isNext
+        ? (isDark ? VoidColors.oliveDeep : Colors.white)
+        : (isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep);
+
     return Container(
-      padding: const EdgeInsets.all(12),
+      width: 68.w,
+      padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 8.w),
       decoration: BoxDecoration(
-        color: Colors.brown,
-        borderRadius: BorderRadius.circular(10),
+        color: cardColor,
+        borderRadius: BorderRadius.circular(16.r),
+        border: isNext ? null : Border.all(color: accent.withOpacity(0.25)),
         boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 4,
-            offset: Offset(2, 2),
-          ),
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 6, offset: const Offset(0, 2)),
         ],
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Text(
-              time,
-              style: TextStyle(
-                color: VoidColors.white,
-                fontSize: 10.sp,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          SizedBox(height: 6.h),
-          Image.asset(
-            VoidImages.masjid_icon,
-            color: VoidColors.white,
-            height: 35.h,
-          ),
-          SizedBox(height: 8),
-          // Display the prayer name below the icon
+          Icon(icon, color: isNext ? contentColor : accent, size: 20.sp),
+          SizedBox(height: 8.h),
           Text(
             name,
-            style: TextStyle(
-              color: VoidColors.white,
-              fontSize: 10.sp,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(color: contentColor, fontSize: 11.sp, fontWeight: FontWeight.w700),
+          ),
+          SizedBox(height: 2.h),
+          Text(
+            time,
+            style: TextStyle(color: contentColor, fontSize: 10.sp, fontWeight: FontWeight.w500),
           ),
         ],
       ),

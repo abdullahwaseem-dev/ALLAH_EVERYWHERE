@@ -60,4 +60,19 @@ class VoidColors {
   static const Color softGrey = Color(0xFFf4f4f4);
   //static const Color lightGrey = Color(0xFFf9f9f9);
   static const Color white = Color(0xFFffffff);
+
+  // Brand palette for the card-based redesign - taken from the app's own
+  // logo (olive green + gold + dusty rose), not a generic template.
+  static const Color gold = Color(0xFFCB9B3F);
+  static const Color goldDark = Color(0xFFE8C165);
+  static const Color oliveDeep = Color(0xFF4B4B32);
+  static const Color oliveDeepLight = Color(0xFF6E6E48);
+  static const Color dustyRose = Color(0xFFD9B8A8);
+
+  static const Color bgLight = Color(0xFFFBF6EE);
+  static const Color bgDark = Color(0xFF15140F);
+  static const Color cardLight = Color(0xFFFFFFFF);
+  static const Color cardDark = Color(0xFF211F17);
+  static const Color textDarkPrimary = Color(0xFFF3EEE4);
+  static const Color textDarkSecondary = Color(0xFFB9B3A4);
 }

@@ -5,12 +5,12 @@ import 'package:allah_everywhere/widgets/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:allah_everywhere/widgets/IconButtonWidget.dart';
 import 'package:allah_everywhere/widgets/MosqueCardWidget.dart';
 import 'package:allah_everywhere/widgets/NamazTimingWidget.dart';
 import 'package:allah_everywhere/qibla.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
-import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/nearby_mosque_service.dart';
 import 'package:allah_everywhere/data/daily_reminder_data.dart';
@@ -42,7 +42,21 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    // PrayerTimesController sets latitude then longitude as two separate
+    // Rx assignments, so listening to only one of them can fire while the
+    // other is still null (e.g. latitude changes, its listener runs
+    // immediately, but longitude hasn't been assigned yet on the next
+    // line) - the guard below then bails and nothing ever retries.
+    // Listening to both means whichever assignment happens *second* will
+    // always see both values already set.
     ever(controller.latitude, (_) => _maybeFetchNearbyMosques());
+    ever(controller.longitude, (_) => _maybeFetchNearbyMosques());
+    // Also covers the case where the location already resolved before this
+    // screen (and these listeners) existed - PrayerTimesController is a
+    // persistent singleton that starts fetching on app start, while Home
+    // only mounts once inside the bottom nav's IndexedStack, so `ever`
+    // alone would miss an assignment that already happened.
+    _maybeFetchNearbyMosques();
   }
 
   Future<void> _maybeFetchNearbyMosques() async {
@@ -68,8 +82,9 @@ class _HomeScreenState extends State<HomeScreen> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final t = AppLocalizations.of(context)!;
     return Scaffold(
-      body: Container(
-        color: isDark ? Colors.black : VoidColors.secondary,
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
+      body: SafeArea(
+        bottom: false,
         child: RefreshIndicator(
           onRefresh: () => controller.fetchLocationAndTimes(),
           child: SingleChildScrollView(
@@ -77,185 +92,105 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(VoidImages.home_logo),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      height: 510.h,
-                    ),
-                    Positioned(
-                      top: 200.h,
-                      left: 22.w,
-                      right: 26.w,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              Get.to(() => SearchScreen());
-                            },
-                            child: Container(
-                              height: 40.h,
-                              width: 260.w,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage(VoidImages.search_bar),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Get.to(() => NotificationsScreen());
-                            },
-                            child: Image.asset(
-                              VoidImages.notification_icon,
-                              height: 40.h,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Positioned(
-                      top: 250.h,
-                      left: 35.w,
-                      right: 35.w,
-                      child: Obx(() => _buildPrayerSummary()),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 35.h),
-
-                // Grid with icons
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Container(
-                    height: 200,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(VoidImages.banner_2),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
+                  padding: EdgeInsets.fromLTRB(16.w, 12.h, 16.w, 0),
+                  child: _buildHeaderCard(isDark, t),
+                ),
+                SizedBox(height: 18.h),
+
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
+                  child: _buildSectionCard(
+                    isDark: isDark,
+                    child: Obx(() => SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              _prayerChip('Fajr', controller.fajrTime.value, Iconsax.cloud_sunny),
+                              SizedBox(width: 8.w),
+                              _prayerChip('Dhuhr', controller.dhuhrTime.value, Iconsax.sun),
+                              SizedBox(width: 8.w),
+                              _prayerChip('Asr', controller.asrTime.value, Iconsax.sun_1),
+                              SizedBox(width: 8.w),
+                              _prayerChip('Maghrib', controller.maghribTime.value, Iconsax.sun_fog),
+                              SizedBox(width: 8.w),
+                              _prayerChip('Isha', controller.ishaTime.value, Iconsax.moon),
+                            ],
+                          ),
+                        )),
+                  ),
+                ),
+                SizedBox(height: 18.h),
+
+                // Quick access grid
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
+                  child: _buildSectionCard(
+                    isDark: isDark,
                     child: GridView.count(
                       crossAxisCount: 4,
-                      padding: const EdgeInsets.all(10),
-                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      mainAxisSpacing: 14.h,
+                      physics: const NeverScrollableScrollPhysics(),
                       children: [
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => QuranScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.quran, title: t.quran)),
+                            onTap: () => Get.to(() => QuranScreen()),
+                            child: IconButtonWidget(icon: Iconsax.book_saved, title: t.quran)),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => HadithScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.hadith, title: t.hadith)),
+                            onTap: () => Get.to(() => HadithScreen()),
+                            child: IconButtonWidget(icon: Iconsax.book_1, title: t.hadith)),
                         GestureDetector(
-                          onTap: () {
-                            Get.to(() => DuaScreen());
-                          },
-                          child: IconButtonWidget(imagePath: VoidImages.dua, title: t.dua),
+                          onTap: () => Get.to(() => DuaScreen()),
+                          child: IconButtonWidget(icon: Iconsax.heart, title: t.dua),
                         ),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => QiblaScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.qibla, title: t.qibla)),
+                            onTap: () => Get.to(() => QiblaScreen()),
+                            child: IconButtonWidget(icon: Iconsax.discover, title: t.qibla)),
                         GestureDetector(
-                          onTap: () {
-                            Get.to(() => FiqhScreen());
-                          },
-                          child: IconButtonWidget(imagePath: VoidImages.fiqh, title: t.fiqh),
+                          onTap: () => Get.to(() => FiqhScreen()),
+                          child: IconButtonWidget(icon: Iconsax.judge, title: t.fiqh),
                         ),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => SeeratScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.seerat_nabwi, title: t.seerat)),
+                            onTap: () => Get.to(() => SeeratScreen()),
+                            child: IconButtonWidget(icon: Iconsax.book_square, title: t.seerat)),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => PrayerTimingScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.prayer_time, title: t.prayer)),
+                            onTap: () => Get.to(() => PrayerTimingScreen()),
+                            child: IconButtonWidget(icon: Iconsax.clock, title: t.prayer)),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(() => AskAiScreen());
-                            },
-                            child: IconButtonWidget(imagePath: VoidImages.alim, title: t.askAi)),
+                            onTap: () => Get.to(() => AskAiScreen()),
+                            child: IconButtonWidget(icon: Iconsax.message_question, title: t.askAi)),
                       ],
                     ),
                   ),
                 ),
+                SizedBox(height: 18.h),
 
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
                   child: _buildDailyReminderBanner(isDark, t),
                 ),
+                SizedBox(height: 18.h),
 
                 // Nearby Masjid Section
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         t.nearbyMasjids,
-                        style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.bold,
+                          color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep,
+                        ),
                       ),
-                      SizedBox(height: 15.h),
-                      Obx(() => _buildNearbyMosques()),
+                      SizedBox(height: 12.h),
+                      Obx(() => _buildNearbyMosques(isDark)),
                     ],
                   ),
                 ),
-
-                // Namaz Timing Section
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: isDark ? const Color(0xFF1E1E1E) : VoidColors.whitish,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xFF5D8082), width: 2),
-                    ),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Obx(() => Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.only(left: 6.0),
-                                child: NamazTimingWidget(name: 'Fajr', time: controller.fajrTime.value),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 6.0),
-                                child: NamazTimingWidget(name: 'Dhuhr', time: controller.dhuhrTime.value),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 6.0),
-                                child: NamazTimingWidget(name: 'Asr', time: controller.asrTime.value),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 6.0),
-                                child: NamazTimingWidget(name: 'Maghrib', time: controller.maghribTime.value),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 6.0),
-                                child: NamazTimingWidget(name: 'Isha', time: controller.ishaTime.value),
-                              ),
-                            ],
-                          )),
-                    ),
-                  ),
-                ),
+                SizedBox(height: 24.h),
               ],
             ),
           ),
@@ -264,14 +199,83 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  Widget _buildSectionCard({required bool isDark, required Widget child}) {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(14.w),
+      decoration: BoxDecoration(
+        color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+        borderRadius: BorderRadius.circular(18.r),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+        ],
+      ),
+      child: child,
+    );
+  }
+
+  Widget _prayerChip(String name, String time, IconData icon) {
+    final isNext = controller.nextPrayerName.value == name;
+    return NamazTimingWidget(name: name, time: time, icon: icon, isNext: isNext);
+  }
+
+  Widget _buildHeaderCard(bool isDark, AppLocalizations t) {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(18.w),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: isDark
+              ? [VoidColors.cardDark, VoidColors.oliveDeep]
+              : [VoidColors.oliveDeep, VoidColors.dustyRose],
+        ),
+        borderRadius: BorderRadius.circular(24.r),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.mosque, color: Colors.white70, size: 18.sp),
+              SizedBox(width: 6.w),
+              Text(
+                'Allah Everywhere',
+                style: TextStyle(color: Colors.white, fontSize: 13.sp, fontWeight: FontWeight.w600),
+              ),
+              const Spacer(),
+              GestureDetector(
+                onTap: () => Get.to(() => SearchScreen()),
+                child: Icon(Iconsax.search_normal, color: Colors.white, size: 20.sp),
+              ),
+              SizedBox(width: 16.w),
+              GestureDetector(
+                onTap: () => Get.to(() => NotificationsScreen()),
+                child: Icon(Iconsax.notification, color: Colors.white, size: 20.sp),
+              ),
+            ],
+          ),
+          SizedBox(height: 20.h),
+          Obx(() => _buildPrayerSummary(t)),
+        ],
+      ),
+    );
+  }
+
   Widget _buildDailyReminderBanner(bool isDark, AppLocalizations t) {
     final reminder = reminderForDay(DateTime.now());
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     return Container(
       width: double.infinity,
       padding: EdgeInsets.all(16.w),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E1E1E) : VoidColors.brown,
-        borderRadius: BorderRadius.circular(14.r),
+        color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+        borderRadius: BorderRadius.circular(18.r),
+        border: Border.all(color: accent.withOpacity(0.35)),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -279,14 +283,14 @@ class _HomeScreenState extends State<HomeScreen> {
           Row(
             children: [
               Icon(
-                reminder.isHadith ? Icons.menu_book : Icons.auto_stories,
+                reminder.isHadith ? Iconsax.book_1 : Iconsax.book_saved,
                 size: 16.sp,
-                color: VoidColors.secondary,
+                color: accent,
               ),
               SizedBox(width: 6.w),
               Text(
                 reminder.isHadith ? t.hadithOfTheDay : t.verseOfTheDay,
-                style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: VoidColors.secondary),
+                style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: accent),
               ),
             ],
           ),
@@ -295,55 +299,56 @@ class _HomeScreenState extends State<HomeScreen> {
             reminder.arabic,
             textAlign: TextAlign.right,
             textDirection: TextDirection.rtl,
-            style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: Colors.white, height: 1.6),
+            style: TextStyle(
+              fontSize: 16.sp,
+              fontWeight: FontWeight.w700,
+              height: 1.6,
+              color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep,
+            ),
           ),
           SizedBox(height: 8.h),
           Text(
             reminder.translation,
-            style: TextStyle(fontSize: 13.sp, color: Colors.white, height: 1.4),
+            style: TextStyle(
+              fontSize: 13.sp,
+              height: 1.4,
+              color: isDark ? VoidColors.textDarkSecondary : VoidColors.oliveDeep.withOpacity(0.85),
+            ),
           ),
           SizedBox(height: 6.h),
           Text(
             reminder.reference,
-            style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold, color: VoidColors.secondary),
+            style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold, color: accent),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildPrayerSummary() {
-    final t = AppLocalizations.of(context)!;
+  Widget _buildPrayerSummary(AppLocalizations t) {
     if (controller.locationError.value.isNotEmpty) {
-      return Container(
-        padding: EdgeInsets.all(12.w),
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.9),
-          borderRadius: BorderRadius.circular(12.r),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              controller.locationError.value,
-              style: TextStyle(fontSize: 12.sp, color: Colors.black87),
-            ),
-            SizedBox(height: 8.h),
-            GestureDetector(
-              onTap: controller.permissionPermanentlyDenied.value
-                  ? Geolocator.openAppSettings
-                  : controller.fetchLocationAndTimes,
-              child: Text(
-                controller.permissionPermanentlyDenied.value ? t.openSettings : t.retry,
-                style: TextStyle(
-                  fontSize: 12.sp,
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
-                ),
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            controller.locationError.value,
+            style: TextStyle(fontSize: 12.sp, color: Colors.white),
+          ),
+          SizedBox(height: 8.h),
+          GestureDetector(
+            onTap: controller.permissionPermanentlyDenied.value
+                ? Geolocator.openAppSettings
+                : controller.fetchLocationAndTimes,
+            child: Text(
+              controller.permissionPermanentlyDenied.value ? t.openSettings : t.retry,
+              style: TextStyle(
+                fontSize: 12.sp,
+                color: VoidColors.goldDark,
+                fontWeight: FontWeight.bold,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       );
     }
 
@@ -352,69 +357,46 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         Text(
           t.yourLocation,
-          style: TextStyle(color: Colors.white, fontSize: 12.sp, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white70, fontSize: 11.sp, fontWeight: FontWeight.w600),
         ),
-        SizedBox(height: 5.h),
+        SizedBox(height: 3.h),
         Text(
           controller.location.value,
-          style: TextStyle(color: Colors.black, fontSize: 13.sp, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontSize: 13.sp, fontWeight: FontWeight.bold),
+        ),
+        SizedBox(height: 16.h),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text(
+              controller.nextPrayerName.value.isEmpty ? '...' : controller.nextPrayerName.value,
+              style: TextStyle(color: VoidColors.goldDark, fontSize: 15.sp, fontWeight: FontWeight.w700),
+            ),
+            SizedBox(width: 10.w),
+            Text(
+              controller.nextPrayerTime.value,
+              style: TextStyle(color: Colors.white, fontSize: 32.sp, fontWeight: FontWeight.w800),
+            ),
+          ],
+        ),
+        SizedBox(height: 4.h),
+        Text(
+          '${t.nextPrayerIn} ${controller.remainingTime.value}',
+          style: TextStyle(color: Colors.white70, fontSize: 12.sp, fontWeight: FontWeight.w600),
         ),
         SizedBox(height: 10.h),
-        Stack(
+        Row(
           children: [
-            Image.asset(
-              alignment: Alignment.center,
-              VoidImages.banner,
-              width: 300.w,
-              height: 180.h,
-              fit: BoxFit.fill,
+            Icon(Iconsax.calendar_1, size: 13.sp, color: Colors.white70),
+            SizedBox(width: 6.w),
+            Text(
+              controller.islamicDate.value.isEmpty ? '...' : controller.islamicDate.value,
+              style: TextStyle(color: Colors.white, fontSize: 12.sp, fontWeight: FontWeight.w600),
             ),
-            Positioned(
-              top: 10.h,
-              left: 10.w,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        controller.nextPrayerName.value.isEmpty
-                            ? 'Loading...'
-                            : controller.nextPrayerName.value,
-                        style: TextStyle(
-                          color: VoidColors.secondary,
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      SizedBox(width: 10.w),
-                      Text(
-                        controller.nextPrayerTime.value,
-                        style: TextStyle(
-                          color: VoidColors.secondary,
-                          fontSize: 38.sp,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 4.h),
-                  Text(
-                    controller.islamicDate.value.isEmpty ? 'Loading Islamic date...' : controller.islamicDate.value,
-                    style: TextStyle(color: VoidColors.white, fontSize: 17.sp, fontWeight: FontWeight.w700),
-                  ),
-                  SizedBox(height: 10.h),
-                  Text(
-                    controller.gregorianDate.value.isEmpty ? 'Loading date...' : controller.gregorianDate.value,
-                    style: TextStyle(color: VoidColors.white, fontSize: 15.sp, fontWeight: FontWeight.w700),
-                  ),
-                  SizedBox(height: 10.h),
-                  Text(
-                    '${t.nextPrayerIn} \n${controller.remainingTime.value}',
-                    style: TextStyle(color: VoidColors.secondary, fontSize: 15.sp, fontWeight: FontWeight.w700),
-                  ),
-                ],
-              ),
+            SizedBox(width: 10.w),
+            Text(
+              controller.gregorianDate.value.isEmpty ? '' : '· ${controller.gregorianDate.value}',
+              style: TextStyle(color: Colors.white70, fontSize: 12.sp),
             ),
           ],
         ),
@@ -422,8 +404,9 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildNearbyMosques() {
+  Widget _buildNearbyMosques(bool isDark) {
     final t = AppLocalizations.of(context)!;
+    final mutedColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade700;
     if (_loadingMosques) {
       return SizedBox(
         height: 60.h,
@@ -437,7 +420,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Expanded(
               child: Text(
                 controller.locationError.value,
-                style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+                style: TextStyle(fontSize: 13.sp, color: mutedColor),
               ),
             ),
             TextButton(
@@ -454,7 +437,7 @@ class _HomeScreenState extends State<HomeScreen> {
       }
       return Text(
         t.waitingForLocation,
-        style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+        style: TextStyle(fontSize: 13.sp, color: mutedColor),
       );
     }
     if (_mosqueLookupFailed) {
@@ -463,7 +446,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(
             child: Text(
               t.couldNotReachMosqueDirectory,
-              style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+              style: TextStyle(fontSize: 13.sp, color: mutedColor),
             ),
           ),
           TextButton(
@@ -476,7 +459,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (_nearbyMosques!.isEmpty) {
       return Text(
         t.noMosquesFound,
-        style: TextStyle(fontSize: 13.sp, color: Colors.grey.shade700),
+        style: TextStyle(fontSize: 13.sp, color: mutedColor),
       );
     }
     return SingleChildScrollView(
@@ -486,7 +469,6 @@ class _HomeScreenState extends State<HomeScreen> {
             .map((mosque) => MosqueCardWidget(
                   name: mosque.name,
                   location: '${mosque.distanceKm.toStringAsFixed(1)} km away',
-                  imagePath: VoidImages.masjid_vector,
                   onTap: () => _openMosqueInMaps(mosque),
                 ))
             .toList(),

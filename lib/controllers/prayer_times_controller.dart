@@ -120,9 +120,20 @@ class PrayerTimesController extends GetxController {
         return;
       }
 
-      final position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high,
-      );
+      Position position;
+      try {
+        position = await Geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.high,
+          timeLimit: const Duration(seconds: 12),
+        );
+      } on TimeoutException {
+        // A fresh GPS fix can take a long time (or never arrive) with a
+        // weak signal - fall back to the last known fix rather than
+        // leaving the user staring at an infinite spinner.
+        final lastKnown = await Geolocator.getLastKnownPosition();
+        if (lastKnown == null) rethrow;
+        position = lastKnown;
+      }
       latitude.value = position.latitude;
       longitude.value = position.longitude;
       _computePrayerTimes(position.latitude, position.longitude);
