@@ -1,0 +1,100 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "dhulkifl",
+  "language": "en",
+  "name": "Dhul-Kifl",
+  "title": "One of the patient and the outstanding",
+  "sentTo": "His people; the Quran does not name them",
+  "era": "Uncertain. Scholars differ on when he lived; his place in this order is approximate.",
+  "places": [
+    {
+      "name": "Not known. Some reports place him in Iraq; others identify him with Ezekiel (Hizqil).",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Dhul-Kifl is mentioned twice in the Quran, among the patient, the righteous and the outstanding. The Quran tells us nothing more about his life, and scholars differ even on whether he was a Prophet or a righteous man.",
+  "notes": [
+    "Was Dhul-Kifl a Prophet? Most scholars say yes, because the Quran names him among the Prophets. Some early scholars said he was a righteous man, not a Prophet.",
+    "His name means “the one with the share” or “the one who took on a responsibility”. Reports explain it with a story of a man who promised to fast by day, pray by night and judge without anger; these reports are not in the Quran or authentic hadith.",
+    "Some identify him with the Prophet Ezekiel (Hizqil) of the Bible, others with other figures; none of this is certain."
+  ],
+  "chapters": [
+    {
+      "id": "dhulkifl-1",
+      "title": "Named among the patient",
+      "paragraphs": [
+        "Allah says in the Quran: “And Ismail, Idris and Dhul-Kifl: all were among the patient. And We admitted them into Our mercy; they were among the righteous.”",
+        "In another place Allah asks us to remember Ismail, al-Yasa' and Dhul-Kifl, “and all are among the outstanding.”",
+        "This is all that Allah has told us about him. It is enough to know that Allah Himself praised him for patience and righteousness, and placed him among the best of His servants. Some things Allah has kept hidden from us, and we do not invent what He has not told us."
+      ],
+      "kidsParagraphs": [
+        "Dhul-Kifl is named in the Quran with Ismail and Idris as one of the patient and the good.",
+        "Allah told us only a little about him, and that little is great praise!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "A popular story says Dhul-Kifl promised his people to fast every day, pray every night and judge without anger, and that Iblis tried to make him angry but failed."
+        }
+      ],
+      "lessons": [
+        "Patience is praised by Allah again and again.",
+        "We say only what Allah and His Messenger ﷺ have told us about the unseen past.",
+        "Allah's praise is the greatest honour, whether people know your story or not."
+      ],
+      "quiz": [
+        {
+          "question": "With which Prophets is Dhul-Kifl named as one of the patient?",
+          "options": [
+            "Ismail and Idris",
+            "Musa and Harun",
+            "Dawud and Sulayman",
+            "Yunus and Ayyub"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:85"
+        },
+        {
+          "question": "How does Quran 38:48 describe Dhul-Kifl, Ismail and al-Yasa'?",
+          "options": [
+            "Among the outstanding",
+            "Kings",
+            "Merchants",
+            "Warriors"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Into what did Allah admit them?",
+          "options": [
+            "A palace",
+            "His mercy",
+            "A ship",
+            "A city"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:86"
+        }
+      ]
+    }
+  ]
+}

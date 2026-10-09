@@ -1,0 +1,180 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "yahya",
+  "language": "en",
+  "name": "Yahya",
+  "title": "Pure, gentle and dutiful from his youth",
+  "sentTo": "The Children of Israel",
+  "era": "The time of Isa (AS), his cousin, in the 1st century CE; the Quran gives no date.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds), around the Temple where Zakariya served.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "The son granted to Zakariya (AS) in his old age, with a name no one had been given before. Allah gave him wisdom as a child, gentleness, purity and dutifulness to his parents. He confirmed the coming of Isa (AS), his cousin, and Allah sent peace upon him on the day he was born, the day he died and the day he will be raised.",
+  "notes": [
+    "Most scholars identify Yahya with John the Baptist of the Bible.",
+    "The story of his death (that he was killed by a king, with his head brought on a platter) comes from Christian sources and later reports, not from the Quran or authentic hadith.",
+    "“Confirming a word from Allah” (3:39) is explained by most scholars as confirming Isa (AS), who is called “a word from Allah”."
+  ],
+  "chapters": [
+    {
+      "id": "yahya-1",
+      "title": "Wisdom as a child",
+      "paragraphs": [
+        "Allah called to him: “O Yahya, hold firmly to the Scripture.” Allah gave him wisdom while he was still a child, along with tenderness from Allah and purity, and he was mindful of Allah.",
+        "He was dutiful to his parents, and was never arrogant or disobedient. The angels had described him to his father as a leader, chaste, a Prophet from among the righteous, who would confirm a word from Allah: Isa (AS).",
+        "Allah says: “Peace be upon him the day he was born, the day he dies, and the day he is raised alive.”"
+      ],
+      "kidsParagraphs": [
+        "Yahya was wise even as a child. He was kind and pure, and he loved and obeyed his parents.",
+        "Allah sends peace upon Yahya: when he was born, when he died, and when he will be raised again."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 12,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        }
+      ],
+      "lessons": [
+        "Children can be wise and close to Allah.",
+        "Kindness to parents is a quality of the Prophets.",
+        "Hold firmly to the Book of Allah."
+      ],
+      "quiz": [
+        {
+          "question": "What was Yahya told to hold firmly?",
+          "options": [
+            "The Scripture",
+            "A sword",
+            "A staff",
+            "The keys of the Temple"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "When did Allah give Yahya wisdom?",
+          "options": [
+            "As a child",
+            "In old age",
+            "Never",
+            "After he died"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "How was Yahya towards his parents?",
+          "options": [
+            "Dutiful",
+            "Disobedient",
+            "Distant",
+            "Proud"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:14"
+        }
+      ]
+    },
+    {
+      "id": "yahya-2",
+      "title": "Cousins in the second heaven",
+      "paragraphs": [
+        "On the night of the Mi'raj, the Prophet Muhammad ﷺ reached the second heaven and found two cousins there: Yahya and Isa (AS). Jibril said: “This is Yahya and Isa; greet them.” They returned his greeting and said: “Welcome to the righteous brother and the righteous Prophet.”",
+        "Yahya and Isa were sons of two women of the same family, and both were Prophets sent to the Children of Israel at the same time."
+      ],
+      "kidsParagraphs": [
+        "On the night of the Mi'raj, our Prophet ﷺ met Yahya and Isa in the second heaven.",
+        "Yahya and Isa were cousins! They welcomed him as a brother."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3430",
+          "narrator": "Malik ibn Sa'sa'ah",
+          "translation": "The Prophet ﷺ told them about the night he was taken up: “…Then he went up until he reached the second heaven and asked for it to be opened. It was said: ‘Who is this?’ He said: ‘Jibril.’ It was said: ‘And who is with you?’ He said: ‘Muhammad.’ It was said: ‘Has he been sent for?’ He said: ‘Yes.’ When I passed through, there were Yahya and Isa, who are cousins. He said: ‘This is Yahya and Isa, so greet them.’ I greeted them, and they returned the greeting and said: ‘Welcome to the righteous brother and the righteous Prophet.’”",
+          "match": "فاذا يحيى وعيسى وهما ابنا خالة",
+          "shortened": true
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "A famous story says Yahya was killed by a king, and his head was brought on a platter."
+        }
+      ],
+      "lessons": [
+        "The Prophets love and welcome each other.",
+        "Righteous family ties are a blessing.",
+        "The Mi'raj honours all the Prophets."
+      ],
+      "quiz": [
+        {
+          "question": "In which heaven did the Prophet ﷺ meet Yahya and Isa?",
+          "options": [
+            "The first",
+            "The second",
+            "The fourth",
+            "The seventh"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "How were Yahya and Isa related?",
+          "options": [
+            "Brothers",
+            "Cousins",
+            "Father and son",
+            "Not related"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "What did they call the Prophet ﷺ?",
+          "options": [
+            "The righteous brother and the righteous Prophet",
+            "Our king",
+            "Our son",
+            "A stranger"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3430"
+        }
+      ]
+    }
+  ]
+}

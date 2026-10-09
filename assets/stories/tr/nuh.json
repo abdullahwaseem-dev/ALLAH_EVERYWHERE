@@ -1,0 +1,636 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "nuh",
+  "language": "tr",
+  "name": "Nuh",
+  "title": "Şükreden bir kul, yeryüzü halkına gönderilen ilk resul",
+  "sentTo": "Putlara tapmaya başlamış olan kavmi",
+  "era": "Hz. Âdem'den (a.s.) çok sonra. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Gemi'nin oturduğu Cûdî Dağı (11:44). Klasik âlimler onu Musul yakınlarındaki Cezire bölgesine yerleştirir; bugün genellikle Türkiye'nin güneydoğusundaki Cudi Dağı olarak bilinir.",
+      "lat": 37.37,
+      "lng": 42.35,
+      "approximate": true
+    },
+    {
+      "name": "Tarihçilerin çoğunun Nuh kavmini yerleştirdiği Mezopotamya (Irak). Kur'an onların ülkesinin adını vermez.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    }
+  ],
+  "summary": "Allah'ın putperestliğe düşmüş bir kavme gönderdiği ilk resul. Onları sonsuz bir sabırla 950 yıl davet etti. Reddettiklerinde Allah onu ve müminleri gemide kurtardı, yalanlayanları boğdu. Allah onu şükreden bir kul olarak övdü ve sonraki bütün nesiller arasında ona selam bıraktı.",
+  "notes": [
+    "Âdem ile Nuh arasında ne kadar zaman geçti? Buhârî ve Müslim dışındaki bazı rivayetler on nesilden söz eder. Eklenmeden önce bir âlim bunları incelemelidir.",
+    "950 yıl (29:14), Nuh'un kavmi arasında kaldığı süredir. Toplam ne kadar yaşadığı kesin olarak bilinmiyor.",
+    "Âlimler, Tufan'ın bütün yeryüzünü mü yoksa sadece Nuh kavminin bölgesini mi kapladığı konusunda farklı görüştedir.",
+    "\"Tandır kaynadı\" (11:40, 23:27) farklı şekillerde açıklanır: gerçek bir tandır, yeryüzünden fışkıran su veya şafağın sökmesi.",
+    "Oğlun adı (bazı kitaplarda Ken'an veya Yam), gemideki insan sayısı, geminin boyutu ve ağacı, Kur'an'dan veya sahih hadislerden değil, sonraki rivayetlerden gelir.",
+    "Cûdî'nin yeri ve Nuh'un vatanı, Kur'an ve Sünnet'e değil, klasik coğrafyacılara ve tarihçilere dayanır."
+  ],
+  "chapters": [
+    {
+      "id": "nuh-1",
+      "title": "Putperestlik nasıl başladı",
+      "paragraphs": [
+        "Hz. Âdem'den (a.s.) sonra çocukları nesiller boyunca yalnızca Allah'a ibadet ettiler. Sonra yavaş yavaş bir şeyler değişti.",
+        "Kur'an'ın büyük âlimi sahabi İbn Abbas bunun nasıl olduğunu açıkladı. Nuh'un kavmi arasında Vedd, Süvâ', Yeğûs, Ye'ûk ve Nesr adında salih insanlar vardı. Onlar ölünce şeytan, insanlara bu kişilerin oturdukları yerlere heykeller dikmelerini ve onlara bu isimleri vermelerini fısıldadı. İnsanlar bunu yaptı ama heykellere tapan olmadı. Sonra o nesil öldü, heykellerin neden yapıldığı bilgisi unutuldu ve sonra gelenler onlara tapmaya başladı.",
+        "İnsanlar arasında şirk böyle başladı: bir anda değil, adım adım; salih insanlara aşırı sevgi ve ilmin unutulmasıyla."
+      ],
+      "kidsParagraphs": [
+        "Âdem'den sonra insanlar çok uzun süre yalnızca Allah'a ibadet ettiler.",
+        "Sonra iyi insanları hatırlamak için onların heykellerini yaptılar. Yıllar sonra nedenini unutup heykellere tapmaya başladılar. Şeytan onları adım adım kandırdı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4920",
+          "narrator": "İbn Abbas",
+          "translation": "İbn Abbas şöyle dedi: \"Nuh kavmindeki putlar sonradan Araplara geçti… Bunlar Nuh kavminden salih kişilerin isimleriydi. Onlar ölünce şeytan kavimlerine, oturdukları yerlere dikili taşlar dikmelerini ve onları kendi isimleriyle adlandırmalarını telkin etti. Onlar da bunu yaptılar; bu dikili taşlara, o kimseler ölüp ilim unutulana kadar tapılmadı; sonra tapılmaya başlandı.\"",
+          "match": "اسماء رجال صالحين من قوم نوح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Şeytan insanları azar azar saptırır; bu yüzden küçük şeylere bile dikkat etmeliyiz.",
+        "Salih insanlara sevgi asla onlara ibadete dönüşmemelidir.",
+        "İlmin unutulması sapıklığın kapısını açar; dini öğrenmek bizi korur."
+      ],
+      "quiz": [
+        {
+          "question": "Bunlardan hangisi Kur'an'da Nuh kavminin putlarından biri olarak geçer?",
+          "options": [
+            "Hübel",
+            "Vedd",
+            "Lât",
+            "Ba'l"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:23"
+        },
+        {
+          "question": "İbn Abbas'a göre Vedd, Süvâ', Yeğûs, Ye'ûk ve Nesr aslında kimdi?",
+          "options": [
+            "Salih insanlar",
+            "Krallar",
+            "Melekler",
+            "Yıldızlar"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4920"
+        },
+        {
+          "question": "İnsanlar heykellere ne zaman tapmaya başladı?",
+          "options": [
+            "Yapılır yapılmaz",
+            "Nuh emrettiğinde",
+            "Neden yapıldıkları unutulduktan sonra",
+            "Hiçbir zaman"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 4920"
+        }
+      ]
+    },
+    {
+      "id": "nuh-2",
+      "title": "Nuh gönderiliyor",
+      "paragraphs": [
+        "Sonra Allah Hz. Nuh'u (a.s.) kavmine gönderdi. O da onlardan biri, tanıdıkları bir adamdı. Mesajı basit ve açıktı: \"Ey kavmim! Allah'a ibadet edin; sizin O'ndan başka ilahınız yoktur. Sizin için büyük bir günün azabından korkuyorum.\"",
+        "Kıyamet Günü ile ilgili uzun hadiste Peygamber ﷺ, insanların Nuh'a gelip şöyle diyeceklerini bildirir: \"Sen yeryüzü halkına gönderilen resullerin ilkisin ve Allah seni şükreden bir kul diye adlandırdı.\" Kur'an da onun hakkında \"O gerçekten çok şükreden bir kuldu\" der.",
+        "Nuh kavmine, Allah'a ibadet eder, O'ndan korkar ve resulüne itaat ederlerse Allah'ın günahlarını bağışlayıp onlara mühlet vereceğini vaat etti. Onlardan ne para ne de ücret istedi. Ücretinin yalnızca âlemlerin Rabbine ait olduğunu söyledi."
+      ],
+      "kidsParagraphs": [
+        "Allah Nuh'u kavmine resul olarak seçti. Onlara: \"Sadece Allah'a ibadet edin!\" dedi.",
+        "Nuh hiç para istemedi. Sadece kavminin kurtulmasını istiyordu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4712",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Peygamber'in ﷺ Kıyamet Günü'nü anlatmasından: \"…Nuh'a gelip şöyle diyecekler: 'Ey Nuh! Sen yeryüzü halkına gönderilen resullerin ilkisin; Allah sana şükreden kul adını verdi. Rabbinin katında bize şefaat et…'\"",
+          "match": "انك انت اول الرسل الى اهل الارض",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 17,
+          "ayahStart": 3,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 2,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 109,
+          "ayahEnd": 109
+        }
+      ],
+      "lessons": [
+        "Her peygamberin daveti yalnızca Allah'a ibadetle başladı.",
+        "İyiliğe davet eden samimi olmalı, ücret veya şöhret peşinde koşmamalıdır.",
+        "Şükreden bir kul olmak Allah'ın övdüğü bir özelliktir."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an Hz. Nuh'u (a.s.) nasıl anar?",
+          "options": [
+            "Bir kral",
+            "Şükreden bir kul",
+            "Bir savaşçı",
+            "Bir şair"
+          ],
+          "answer": 1,
+          "reference": "Quran 17:3"
+        },
+        {
+          "question": "Nuh kavminden ilk olarak ne yapmasını istedi?",
+          "options": [
+            "Gemi yapmalarını",
+            "Şehirlerini terk etmelerini",
+            "Ona para vermelerini",
+            "Yalnızca Allah'a ibadet etmelerini"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:59"
+        },
+        {
+          "question": "Kıyamet Günü hadisinde Nuh, yeryüzü halkına gönderilen ilk … olarak anılır.",
+          "options": [
+            "Resul",
+            "Kral",
+            "Öğretmen",
+            "Usta"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4712"
+        }
+      ]
+    },
+    {
+      "id": "nuh-3",
+      "title": "Gece gündüz davet",
+      "paragraphs": [
+        "Nuh kavmini son derece uzun bir süre davet etti. Kur'an bize onun aralarında bin yıldan elli eksik, yani dokuz yüz elli yıl kaldığını bildirir.",
+        "Her yolu denedi. Onları gece de gündüz de, açıktan da gizlice de davet etti. Ama davet ettikçe daha çok kaçtılar. Onu duymamak için parmaklarını kulaklarına tıkadılar, görmemek için elbiselerine büründüler.",
+        "Kalplerine ve akıllarına seslendi: \"Rabbinizden bağışlanma dileyin, O çok bağışlayandır. Size bol bol yağmur gönderir, mal ve evlat verir, bahçeler ve ırmaklar ihsan eder.\" Allah'ın onları nasıl aşama aşama yarattığını, yedi göğü nasıl yaptığını, ayı bir nur ve güneşi bir kandil kıldığını düşünmelerini istedi. Neden Allah'a layık olduğu saygıyı göstermiyorlardı?"
+      ],
+      "kidsParagraphs": [
+        "Nuh kavmini 950 yıl boyunca davet etti! Gündüz de gece de onlarla konuştu.",
+        "İnsanlar duymamak için parmaklarını kulaklarına tıkadılar. Ama Nuh asla vazgeçmedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 5,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 10,
+          "ayahEnd": 16
+        }
+      ],
+      "lessons": [
+        "Sonuçlar gecikse bile iyiliğe davette sabırlı olmak.",
+        "İstiğfar, yağmur, mal ve evlat gibi bereketler getirir.",
+        "Yaratılışı düşünmek kalbi Yaratıcısına götürür."
+      ],
+      "quiz": [
+        {
+          "question": "Hz. Nuh (a.s.) kavmi arasında ne kadar kaldı?",
+          "options": [
+            "100 yıl",
+            "40 yıl",
+            "950 yıl",
+            "Tam 1000 yıl"
+          ],
+          "answer": 2,
+          "reference": "Quran 29:14"
+        },
+        {
+          "question": "Nuh'un kavmi onu duymamak için ne yaptı?",
+          "options": [
+            "Parmaklarını kulaklarına tıkadılar",
+            "Dağlara kaçtılar",
+            "Kapılarını kapattılar",
+            "Yüksek sesle şarkı söylediler"
+          ],
+          "answer": 0,
+          "reference": "Quran 71:7"
+        },
+        {
+          "question": "Nuh, bağışlanma dilerlerse Allah'ın onlara ne vereceğini söyledi?",
+          "options": [
+            "Sadece altın ve gümüş",
+            "Bol yağmur, mal ve evlat",
+            "Yeni bir kral",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:10-12"
+        }
+      ]
+    },
+    {
+      "id": "nuh-4",
+      "title": "İleri gelenler reddediyor",
+      "paragraphs": [
+        "Kavminin önderlerinin birçok bahanesi vardı. \"O sadece sizin gibi bir insan\" dediler. \"Allah bir resul göndermek isteseydi melekler gönderirdi. Biz bunu atalarımızdan hiç duymadık.\" Hatta ona deli dediler.",
+        "Hepsinden önemlisi, ona uyanları küçümsediler. \"Sana ancak en düşüklerimizin uyduğunu görüyoruz\" dediler. Nuh'u dinlemeden önce fakir müminleri kovmasını istediler.",
+        "Nuh reddetti. Müminleri kovmayacaktı: Onlar Rablerine kavuşacaklardı ve onları kovarsa onu Allah'a karşı kim koruyabilirdi? Allah'ın hazinelerine sahip olduğunu, gaybı bildiğini veya melek olduğunu iddia etmedi.",
+        "Sonunda ona meydan okudular: \"Doğru söyleyenlerdensen bizi tehdit ettiğin şeyi getir.\" Nuh, onu ancak Allah'ın dilerse getireceğini ve kimsenin ondan kaçamayacağını söyledi."
+      ],
+      "kidsParagraphs": [
+        "Zengin önderler: \"Sana sadece fakirler uyuyor!\" dediler. Nuh'un fakir müminleri göndermesini istediler.",
+        "Nuh hayır dedi. Zengin de olsa fakir de olsa her mümin Allah katında değerlidir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 23,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 29,
+          "ayahEnd": 31
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 11,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Makam ve servet kimseyi Allah katında daha üstün yapmaz.",
+        "Samimi insanları fakir veya zayıf oldukları için asla uzaklaştırmayın.",
+        "Kibir insanları hakkı kabul etmekten alıkoyar."
+      ],
+      "quiz": [
+        {
+          "question": "Önderler Nuh'un fakir takipçilerine ne yapmasını istedi?",
+          "options": [
+            "Onları lider yapmasını",
+            "Onlara para vermesini",
+            "Onları kovmasını",
+            "Onlara daha çok öğretmesini"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:27-29"
+        },
+        {
+          "question": "Önderlere göre Allah bir insan yerine ne gönderirdi?",
+          "options": [
+            "Melekler",
+            "Krallar",
+            "Cinler",
+            "Kuşlar"
+          ],
+          "answer": 0,
+          "reference": "Quran 23:24"
+        },
+        {
+          "question": "Nuh ücretinin kimden geleceğini söyledi?",
+          "options": [
+            "Önderlerden",
+            "Takipçilerinden",
+            "Ailesinden",
+            "Yalnızca Allah'tan"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:29"
+        }
+      ]
+    },
+    {
+      "id": "nuh-5",
+      "title": "Geminin yapılması",
+      "paragraphs": [
+        "Yüzlerce yıl sonra Allah, Nuh'a kavminden daha önce inananlar dışında kimsenin inanmayacağını vahyetti. Nuh Rabbine yalvardı: \"Ben yenik düştüm, bana yardım et.\"",
+        "Allah ona, Kendi gözetimi altında ve vahyine göre bir gemi yapmasını emretti. Nuh tahtalar ve çivilerle işe koyuldu.",
+        "Kavminin ileri gelenleri her yanından geçtiğinde onunla alay ettiler. Nuh sakince cevap verdi: \"Bizimle alay ediyorsanız, siz nasıl alay ediyorsanız biz de sizinle öyle alay edeceğiz. Kime rezil edici bir azabın geleceğini yakında bileceksiniz.\""
+      ],
+      "kidsParagraphs": [
+        "Allah Nuh'a büyük bir gemi yapmasını söyledi.",
+        "İnsanlar o gemiyi yaparken ona güldüler. Ama Nuh Allah'a güvendi ve çalışmaya devam etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 54,
+          "ayahStart": 13,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 38,
+          "ayahEnd": 39
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Bazı kitaplar geminin tam ölçülerini verir, yapıldığı ağacın adını söyler ya da Nuh'un onun için ağaçları yüz yıl önce diktiğini anlatır."
+        }
+      ],
+      "lessons": [
+        "Başkaları alay etse bile Allah'a itaat etmek doğrudur.",
+        "Alay, delili olmayanların silahıdır.",
+        "Her şey zor göründüğünde dua müminin gücüdür."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an'a göre gemi neyden yapılmıştı?",
+          "options": [
+            "Taştan",
+            "Tahtalar ve çivilerden",
+            "Sadece sazlardan",
+            "Demirden"
+          ],
+          "answer": 1,
+          "reference": "Quran 54:13"
+        },
+        {
+          "question": "İleri gelenler geminin yanından geçerken ne yaptılar?",
+          "options": [
+            "Nuh'a yardım ettiler",
+            "Onunla namaz kıldılar",
+            "Onunla alay ettiler",
+            "Gemide yer satın aldılar"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:38"
+        },
+        {
+          "question": "Nuh yardım için dua ederken ne dedi?",
+          "options": [
+            "Ben yenik düştüm, bana yardım et",
+            "Gemiyi yık",
+            "Bana altın ver",
+            "Beni dinlendir"
+          ],
+          "answer": 0,
+          "reference": "Quran 54:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-6",
+      "title": "Tufan",
+      "paragraphs": [
+        "Sonra Allah'ın emri geldi. \"Tandır\" kaynadı, göğün kapıları boşanan yağmurla açıldı ve yerden kaynaklar fışkırdı; sonunda sular önceden takdir edilmiş bir iş için birleşti.",
+        "Allah Nuh'a gemiye her türden birer çift, hakkında hüküm verilmiş olanlar dışında ailesini ve iman edenleri yüklemesini emretti. Onunla birlikte pek az kişi iman etmişti. Nuh şöyle dedi: \"Binin ona. Onun yüzmesi de durması da Allah'ın adıyladır. Şüphesiz Rabbim bağışlayandır, merhamet edendir.\"",
+        "Gemi dağlar gibi dalgalar arasında yüzdü. Nuh, ayrı duran oğlunu gördü ve bir babanın sevgisiyle seslendi: \"Yavrum! Bizimle birlikte bin, kâfirlerle beraber olma!\" Oğlu cevap verdi: \"Beni sudan koruyacak bir dağa sığınacağım.\" Nuh dedi ki: \"Bugün Allah'ın emrinden, O'nun merhamet ettiği kimse dışında, koruyacak hiçbir şey yoktur.\" Sonra aralarına bir dalga girdi ve oğlu boğulanlardan oldu.",
+        "Nuh'un eşi de kurtulanlar arasında değildi. Kur'an onu, Lut'un eşiyle birlikte, salih peygamberlerle yaşadıkları hâlde inkâr edenlere örnek olarak anar."
+      ],
+      "kidsParagraphs": [
+        "Gökten yağmur yağdı, yerden su fışkırdı. Nuh ve müminler hayvan çiftleriyle birlikte gemiye bindiler.",
+        "Nuh oğluna seslendi: \"Bizimle gel!\" Ama oğlu reddetti ve bir dağa doğru gitti; su onu kapladı. Bizi yalnızca Allah kurtarabilir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 11,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 40,
+          "ayahEnd": 41
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 66,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        }
+      ],
+      "lessons": [
+        "Allah'ın takdirinden O'nun rahmetinden başka hiçbir şey koruyamaz.",
+        "Bir peygamberin akrabası olmak kurtarmaz; iman ve amel kurtarır.",
+        "Yolculuklarımıza Nuh gibi Allah'ın adıyla başlarız."
+      ],
+      "quiz": [
+        {
+          "question": "Müminler gemiye binerken Nuh ne dedi?",
+          "options": [
+            "Acele edin",
+            "Onun yüzmesi de durması da Allah'ın adıyladır",
+            "Elveda",
+            "Hazineyi getirin"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:41"
+        },
+        {
+          "question": "Nuh'un oğlu nereye sığınacağını söyledi?",
+          "options": [
+            "Bir mağaraya",
+            "Gemiye",
+            "Bir kuleye",
+            "Bir dağa"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:43"
+        },
+        {
+          "question": "Kur'an inkâr edenlere örnek olarak hangi iki kadını gösterir?",
+          "options": [
+            "Nuh'un ve Lut'un eşlerini",
+            "İbrahim'in ve Musa'nın eşlerini",
+            "Meryem'i ve Âsiye'yi",
+            "Hiç kimseyi"
+          ],
+          "answer": 0,
+          "reference": "Quran 66:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-7",
+      "title": "Nuh'a selam olsun",
+      "paragraphs": [
+        "Sonunda Allah emretti: \"Ey yer, suyunu yut! Ey gök, yağmurunu tut!\" Su çekildi, iş bitirildi ve gemi Cûdî'nin üzerine oturdu.",
+        "Nuh, oğlu için üzülerek Rabbine seslendi: \"Rabbim! Oğlum benim ailemdendir ve senin vaadin haktır.\" Allah ona, oğlunun amelleri salih olmadığı için ailesinden olmadığını bildirdi. Nuh hemen bilmediği bir şeyi istemekten Allah'a sığındı ve bağışlanma ve rahmet diledi.",
+        "Sonra şöyle denildi: \"Ey Nuh! Bizden bir selametle, sana ve seninle beraber olanlardan gelecek ümmetlere bereketlerle in.\" Allah sonraki nesiller arasında onun için kalıcı bir anma bıraktı: \"Bütün âlemler içinde Nuh'a selam olsun.\"",
+        "Peygamber ﷺ bize Kıyamet Günü'nde Nuh'un ve kavminin getirileceğini bildirdi. Allah Nuh'a tebliğ edip etmediğini soracak, o da evet diyecek. Kavmi bunu inkâr edecek. O zaman Nuh şahitlerini söyleyecek: Muhammed ﷺ ve ümmeti; onlar da Nuh'un mesajı tebliğ ettiğine şahitlik edecekler."
+      ],
+      "kidsParagraphs": [
+        "Allah yere suyu yutmasını, göğe yağmuru durdurmasını emretti. Gemi Cûdî adındaki bir dağa güvenle oturdu.",
+        "Allah Nuh'a selam gönderdi. Ve Kıyamet Günü Muhammed'in ﷺ ümmeti Nuh'un mesajını tebliğ ettiğine şahitlik edecek!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 78,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3339",
+          "narrator": "Ebû Saîd el-Hudrî",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Nuh ve ümmeti gelir. Yüce Allah: 'Tebliğ ettin mi?' buyurur. O: 'Evet, Rabbim' der. Sonra ümmetine: 'Size tebliğ etti mi?' buyurur. Onlar: 'Hayır, bize hiçbir peygamber gelmedi' derler. Bunun üzerine Nuh'a: 'Senin için kim şahitlik eder?' buyurur. O: 'Muhammed ﷺ ve ümmeti' der. Biz de onun tebliğ ettiğine şahitlik ederiz.\" Peygamber ﷺ bunun Kur'an 2:143'ün anlamı olduğunu açıkladı.",
+          "match": "يجيء نوح وامته"
+        }
+      ],
+      "lessons": [
+        "Her sıkıntıdan sonra sabredenlere Allah'ın yardımı gelir.",
+        "Mümin, acı verse bile Allah'ın kararını kabul eder.",
+        "Muhammed'in ﷺ ümmeti, önceki peygamberlere şahitlik etme şerefine sahiptir."
+      ],
+      "quiz": [
+        {
+          "question": "Gemi nereye oturdu?",
+          "options": [
+            "Sina Dağı'na",
+            "Uhud Dağı'na",
+            "Cûdî'ye",
+            "Arafat Dağı'na"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:44"
+        },
+        {
+          "question": "Kıyamet Günü Nuh için kim şahitlik edecek?",
+          "options": [
+            "Muhammed ﷺ ve ümmeti",
+            "Sadece melekler",
+            "Oğlu",
+            "Hiç kimse"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3339"
+        },
+        {
+          "question": "Allah sonraki nesiller arasında Nuh için ne bıraktı?",
+          "options": [
+            "Altından bir gemi",
+            "\"Bütün âlemler içinde Nuh'a selam olsun\" sözünü",
+            "Bir krallık",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:79"
+        }
+      ]
+    }
+  ]
+}

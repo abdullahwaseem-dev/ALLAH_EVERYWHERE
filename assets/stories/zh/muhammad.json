@@ -1,0 +1,260 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "muhammad",
+  "language": "zh",
+  "name": "穆罕默德",
+  "title": "真主的使者和众先知的封印",
+  "sentTo": "直到末日的全人类和精灵",
+  "era": "公元570-632年。",
+  "places": [
+    {
+      "name": "麦加，他在那里出生，并接受了第一次启示。",
+      "lat": 21.4225,
+      "lng": 39.8262
+    },
+    {
+      "name": "麦地那，他迁徙到那里，建立了第一个穆斯林社会，并安葬在那里。",
+      "lat": 24.4672,
+      "lng": 39.6112
+    }
+  ],
+  "summary": "最后一位先知，被派来作为对众世界的慈恩。他是易卜拉欣和易司马仪的祈祷的应答，也是尔撒（愿主赐他们平安）所报的喜讯。这是一个简短的概述；他的完整生平在本应用的“先知传”部分讲述。",
+  "notes": [
+    "这个概述特意写得很简短。要了解先知ﷺ的生平，请打开“先知传”部分。"
+  ],
+  "chapters": [
+    {
+      "id": "muhammad-1",
+      "title": "众先知的封印",
+      "paragraphs": [
+        "他之前的每一位先知都为他铺平了道路。易卜拉欣和易司马仪（愿主赐他们平安）在建造克尔白时，祈求真主从他们的后代中派出一位使者。尔撒（愿主赐他平安）报告了在他之后将来临的一位名叫艾哈迈德的使者的喜讯。那位使者就是穆罕默德ﷺ，阿卜杜拉之子，来自麦加的古莱什部落。",
+        "真主说：“穆罕默德不是你们中任何男人的父亲，而是真主的使者和众先知的封印。”在他之后不会再有先知。",
+        "先知ﷺ用一个美好的比喻描述自己：他之前的众先知就像一个人建了一座精美的房子，只有一个角落缺一块砖。人们绕着它走，赞赏它，问道：“为什么不把这块砖放上去呢？”他说：“我就是那块砖，我是众先知的封印。”"
+      ],
+      "kidsParagraphs": [
+        "我们的先知穆罕默德ﷺ是最后一位先知。在他之后不会再有先知。",
+        "他说众先知就像一座缺了一块砖的美丽房子，而他就是那块砖！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 129,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 33,
+          "ayahStart": 40,
+          "ayahEnd": 40
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3535",
+          "narrator": "艾布·胡莱赖",
+          "translation": "真主的使者ﷺ说：“我和我之前的众先知，好比一个人建了一座房子，把它建得精美漂亮，只是角落里留下了一块砖的位置。人们开始绕着它走，赞赏它，说：‘为什么不把这块砖放上去呢？’我就是那块砖，我是众先知的封印。”",
+          "match": "فانا اللبنة وانا خاتم النبيين"
+        }
+      ],
+      "lessons": [
+        "所有先知的信息都由穆罕默德ﷺ完成。",
+        "相信他是最后的先知是信仰的一部分。",
+        "热爱所有的先知，追随他们中的最后一位。"
+      ],
+      "quiz": [
+        {
+          "question": "《古兰经》（33:40）怎样称呼先知穆罕默德ﷺ？",
+          "options": [
+            "众先知的封印",
+            "国王",
+            "诗人",
+            "天使"
+          ],
+          "answer": 0,
+          "reference": "Quran 33:40"
+        },
+        {
+          "question": "哪位先知报告了一位名叫艾哈迈德的使者的喜讯？",
+          "options": [
+            "尔撒",
+            "穆萨",
+            "努哈",
+            "优素福"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "在先知ﷺ的比喻中，他是什么？",
+          "options": [
+            "缺少的那块砖",
+            "门",
+            "屋顶",
+            "窗户"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3535"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-2",
+      "title": "对众世界的慈恩",
+      "paragraphs": [
+        "真主对他说：“我派遣你，只为慈恩众世界”，又说：“你确是具有一种伟大的性格的。”",
+        "他深切关怀他的族人：“你们本族中的一位使者，确已来教化你们了。他不忍心见你们受苦，他渴望你们得到引导，他对信士们是仁爱的，是慈悲的。”",
+        "他身体力行自己的教导：诚实得被称为“艾敏”（忠实者），被拒绝时坚忍，胜利回到麦加时宽恕，直到最后都谦卑。"
+      ],
+      "kidsParagraphs": [
+        "真主派我们的先知ﷺ作为对所有人的慈恩。",
+        "他仁慈、诚实、坚忍，他非常关心我们。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 107,
+          "ayahEnd": 107
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 68,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 9,
+          "ayahStart": 128,
+          "ayahEnd": 128
+        }
+      ],
+      "lessons": [
+        "慈恩是他的信息的核心。",
+        "良好的品德是追随他的最好方式。",
+        "他关心他的乌玛；我们以遵循他的圣行来表达我们的爱。"
+      ],
+      "quiz": [
+        {
+          "question": "根据21:107，真主派遣先知ﷺ作为什么？",
+          "options": [
+            "对众世界的慈恩",
+            "国王",
+            "仅仅是法官",
+            "仅仅是战士"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:107"
+        },
+        {
+          "question": "《古兰经》（68:4）怎样形容他的性格？",
+          "options": [
+            "伟大",
+            "严厉",
+            "普通",
+            "骄傲"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:4"
+        },
+        {
+          "question": "根据9:128，他对信士们怎样？",
+          "options": [
+            "仁爱和慈悲",
+            "严厉",
+            "疏远",
+            "愤怒"
+          ],
+          "answer": 0,
+          "reference": "Quran 9:128"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-3",
+      "title": "他的信息延续不断",
+      "paragraphs": [
+        "真主提醒信士们，穆罕默德ﷺ是一位使者，就像他之前的使者一样，他的去世不会是信息的终结：“穆罕默德只是一个使者，在他之前，有许多使者确已逝去了。”",
+        "他留下了《古兰经》和他的圣行，以及“对不信道的人是严厉的，对自己人是慈祥的”圣门弟子们，他们常常鞠躬叩头，寻求真主的恩惠。",
+        "他的生平，从在麦加出生，到第一次启示、迁徙，以及在麦地那的最后岁月，在本应用的“先知传”部分有详细讲述。"
+      ],
+      "kidsParagraphs": [
+        "我们的先知ﷺ给我们留下了《古兰经》和他的圣行。",
+        "你可以在“先知传”部分读到他完整的生平故事！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 144,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 48,
+          "ayahStart": 29,
+          "ayahEnd": 29
+        }
+      ],
+      "lessons": [
+        "信息通过《古兰经》和圣行延续下去。",
+        "追随先知ﷺ就是遵循他的教导。",
+        "了解他的生平是更加爱他的最好方式。"
+      ],
+      "quiz": [
+        {
+          "question": "《古兰经》（3:144）关于先知ﷺ说了什么？",
+          "options": [
+            "他只是一个使者，在他之前有许多使者已经逝去",
+            "他永远不会去世",
+            "他是天使",
+            "他是国王"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:144"
+        },
+        {
+          "question": "《古兰经》（48:29）怎样形容圣门弟子彼此之间？",
+          "options": [
+            "慈祥",
+            "严厉",
+            "分裂",
+            "骄傲"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        },
+        {
+          "question": "根据48:29，常常看见圣门弟子在做什么？",
+          "options": [
+            "鞠躬叩头",
+            "经商",
+            "睡觉",
+            "旅行"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/hijri_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/widget_preview_hijri_day"
+        android:textColor="@color/widget_accent"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hijri_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="@string/widget_preview_hijri_month"
+        android:textColor="@color/widget_text"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hijri_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/widget_preview_hijri_year"
+        android:textColor="@color/widget_text_secondary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/gregorian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/widget_preview_gregorian"
+        android:textColor="@color/widget_text_secondary"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/widget_accent"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

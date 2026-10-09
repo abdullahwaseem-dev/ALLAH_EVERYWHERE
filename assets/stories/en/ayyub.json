@@ -1,0 +1,249 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "ayyub",
+  "language": "en",
+  "name": "Ayyub",
+  "title": "The patient one, an excellent servant",
+  "sentTo": "His people; the Quran does not name them",
+  "era": "Uncertain. Many scholars place him among the descendants of Ishaq (AS), possibly before Musa (AS); the Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Not known for certain. Some reports place him in Hawran, in southern Syria.",
+      "lat": 32.75,
+      "lng": 36.3,
+      "approximate": true
+    }
+  ],
+  "summary": "A Prophet whom Allah tested with severe illness and the loss of his family and wealth. He never complained except to Allah, and Allah answered his prayer, healed him and gave him back his family and more. The Quran calls him an excellent servant, always turning back to Allah.",
+  "notes": [
+    "How long Ayyub's illness lasted (often said to be 18 years), what it was, and details such as people abandoning him, come from reports that are not in the Quran or authentic hadith. The Quran says only that harm and hardship touched him.",
+    "The oath in 38:44 and the bundle of grass: the Quran does not say what the oath was. Many commentators say he had sworn to strike his wife for something she said, and was allowed to keep the oath gently; this explanation comes from reports, not from authentic hadith.",
+    "His place in the order of Prophets is approximate."
+  ],
+  "chapters": [
+    {
+      "id": "ayyub-1",
+      "title": "A test of patience",
+      "paragraphs": [
+        "Ayyub (AS) was a Prophet whom Allah blessed, and then tested. He was afflicted with harm in his body and lost what he had, but he did not complain to people or lose hope.",
+        "He called upon his Lord with great courtesy: “Harm has touched me, and You are the Most Merciful of the merciful.” He did not ask directly to be cured; he simply described his need to the One who knows best, and mentioned His mercy.",
+        "He also said: “Shaytan has touched me with hardship and suffering.” Scholars explain that the Prophets attributed harm to Shaytan out of good manners towards Allah, while knowing that everything happens by Allah's decree."
+      ],
+      "kidsParagraphs": [
+        "Ayyub became very ill and lost many things. But he stayed patient.",
+        "He prayed softly: “Harm has touched me, and You are the Most Merciful.” He trusted Allah completely."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 83,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 41,
+          "ayahEnd": 41
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Popular stories say Ayyub was ill for eighteen years, that his body was covered with worms, and that everyone except his wife abandoned him."
+        }
+      ],
+      "lessons": [
+        "Patience means not complaining to people, while turning to Allah.",
+        "Good manners in du'a: praise Allah and mention His mercy.",
+        "Tests can come to the best of people."
+      ],
+      "quiz": [
+        {
+          "question": "What did Ayyub say in his prayer?",
+          "options": [
+            "Why me?",
+            "Harm has touched me, and You are the Most Merciful of the merciful",
+            "Give me wealth",
+            "Punish my enemies"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "To whom did Ayyub complain?",
+          "options": [
+            "His people",
+            "Allah alone",
+            "Doctors",
+            "The king"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "What did Ayyub say Shaytan had touched him with?",
+          "options": [
+            "Hardship and suffering",
+            "Wealth",
+            "Joy",
+            "Sleep"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:41"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-2",
+      "title": "A cool spring",
+      "paragraphs": [
+        "Allah answered him: “Strike the ground with your foot. Here is cool water for washing and for drinking.” Ayyub was healed.",
+        "Allah gave him back his family, and as many again with them, as a mercy from Him and a reminder for people of understanding.",
+        "Allah also gave him a way to keep an oath he had made without causing harm: to take a bundle of grass in his hand and strike with it. And Allah praised him: “We found him patient. What an excellent servant! He was always turning back to Allah.”"
+      ],
+      "kidsParagraphs": [
+        "Allah told Ayyub: “Hit the ground with your foot.” A cool spring came out, and he washed and drank and was healed!",
+        "Allah gave him back his family and even more. Allah called him “an excellent servant”."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 42,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 43,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        }
+      ],
+      "lessons": [
+        "After hardship comes relief, by Allah's mercy.",
+        "Allah gives back more than was lost to those who are patient.",
+        "Being “an excellent servant” is the greatest praise."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah tell Ayyub to do?",
+          "options": [
+            "Strike the ground with his foot",
+            "Travel to Egypt",
+            "Build a house",
+            "Climb a mountain"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "What came out of the ground?",
+          "options": [
+            "Gold",
+            "Cool water to wash and drink",
+            "Fire",
+            "Fruit"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "How did Allah describe Ayyub?",
+          "options": [
+            "Patient, an excellent servant",
+            "A great king",
+            "A rich merchant",
+            "A warrior"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:44"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-3",
+      "title": "Never in need of Allah's blessing",
+      "paragraphs": [
+        "The Prophet ﷺ told us that once, while Ayyub was bathing, golden locusts fell upon him, and he began gathering them into his garment.",
+        "His Lord called to him: “O Ayyub, have I not made you rich enough not to need what you see?” Ayyub answered: “Yes indeed, by Your might! But I can never do without Your blessing.”",
+        "Ayyub had been patient in poverty and illness, and he was grateful in wealth. He knew that every good thing comes from Allah, and that a servant always needs more of His blessing."
+      ],
+      "kidsParagraphs": [
+        "Once golden locusts fell on Ayyub, and he collected them.",
+        "Allah asked: “Did I not make you rich?” Ayyub said: “Yes! But I always need Your blessing.”"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "279",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Prophet ﷺ said: “While Ayyub was bathing, unclothed, golden locusts fell upon him, and Ayyub began scooping them into his garment. His Lord called to him: ‘O Ayyub, have I not made you rich enough not to need what you see?’ He said: ‘Yes, by Your might! But I can never do without Your blessing.’”",
+          "match": "بينا ايوب يغتسل عريانا فخر عليه جراد من ذهب"
+        }
+      ],
+      "lessons": [
+        "Be patient in hardship and grateful in ease.",
+        "We always need Allah's blessing, however much we have.",
+        "Wealth that comes from Allah is a blessing to be received with thanks."
+      ],
+      "quiz": [
+        {
+          "question": "What fell on Ayyub while he was bathing?",
+          "options": [
+            "Golden locusts",
+            "Rain",
+            "Dates",
+            "Stones"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "What did Ayyub say he could never do without?",
+          "options": [
+            "His family",
+            "Allah's blessing",
+            "Water",
+            "Gold"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Ayyub was patient in illness and … in wealth.",
+          "options": [
+            "Proud",
+            "Grateful",
+            "Careless",
+            "Afraid"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "zh",
+  "name": "艾勒叶赛",
+  "title": "优秀者之一，被真主使之超越众世界",
+  "sentTo": "大多数学者认为是以色列的后裔",
+  "era": "历史学家认为在易勒雅斯（愿主赐他平安）之后；《古兰经》和圣训都没有给出年代。他在这个顺序中的位置是大致的。",
+  "places": [
+    {
+      "name": "不确定；通常认为在以色列地（巴勒斯坦）。",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "艾勒叶赛在《古兰经》中被提到两次，列于真主使之超越众世界的先知之中，也列于优秀者之中。《古兰经》没有讲述他生平的更多内容。",
+  "notes": [
+    "大多数学者认为艾勒叶赛就是《圣经》中的以利沙，即以利亚（易勒雅斯）的继承人。这来自历史和有经人。",
+    "《古兰经》没有讲述他的故事；可靠的圣训中也没有更多的记载。"
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "超越众世界",
+      "paragraphs": [
+        "真主在《牲畜章》中把艾勒叶赛（愿主赐他平安）与易司马仪、优努斯和鲁特一同提及：“我使他们都超越了众世界。”",
+        "在《萨德章》中，真主说：“你应当记念易司马仪、艾勒叶赛和祖勒基福勒，他们都是优秀的人。”",
+        "历史学家说，他继承了易勒雅斯（愿主赐他平安），在他之后号召以色列的后裔归向真主。《古兰经》对他的故事讲得很简短，但把他列于被拣选者和最优秀者之中。"
+      ],
+      "kidsParagraphs": [
+        "艾勒叶赛是一位先知，在《古兰经》中与易司马仪、优努斯和鲁特一同被提及。",
+        "真主说，他是最优秀、最受拣选的人之一。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "真主的拣选和赞扬是最高的荣誉。",
+        "每一位先知都带来了同样的认主独一的信息。",
+        "无论故事长短，我们信仰所有的先知。"
+      ],
+      "quiz": [
+        {
+          "question": "在6:86中，艾勒叶赛和谁一同被提及？",
+          "options": [
+            "易司马仪、优努斯和鲁特",
+            "穆萨和哈伦",
+            "阿丹和努哈",
+            "尔撒和叶哈雅"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "38:48怎样形容艾勒叶赛？",
+          "options": [
+            "优秀的人",
+            "国王",
+            "商人",
+            "诗人"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "关于6:86中提到的人，真主说了什么？",
+          "options": [
+            "祂使他们超越了众世界",
+            "他们是国王",
+            "他们很富有",
+            "什么也没说"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

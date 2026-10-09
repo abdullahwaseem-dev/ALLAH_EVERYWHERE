@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "الصلاة القادمة";
+"widget.nextPrayer.description" = "عدّ تنازلي للصلاة القادمة مع مواقيت اليوم.";
+"widget.hijriDate.name" = "التاريخ الهجري";
+"widget.hijriDate.description" = "التاريخ الهجري لليوم والمناسبات الإسلامية.";
+"widget.reminder.name" = "آية اليوم";
+"widget.reminder.description" = "آية أو حديث للتأمل كل يوم.";
+"widget.nextPrayer.fallback" = "الصلاة القادمة";
+"widget.setLocation.fallback" = "افتح التطبيق لتحديد موقعك";
+"widget.openApp.fallback" = "افتح التطبيق للتحديث";

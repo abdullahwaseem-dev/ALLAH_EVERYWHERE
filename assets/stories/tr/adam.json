@@ -1,0 +1,614 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "adam",
+  "language": "tr",
+  "name": "Âdem",
+  "title": "İnsanlığın babası (Ebu'l-Beşer)",
+  "sentTo": "Kendi çocukları, ilk insan ailesi",
+  "era": "İnsanlığın başlangıcı. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Bilinmiyor. Kur'an sadece Âdem'in yeryüzüne indirildiğini söyler.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "İlk insan ve ilk peygamber. Allah onu kendi elleriyle yarattı, ona bütün varlıkların isimlerini öğretti ve onu meleklerin üstünde şereflendirdi. Bir hata yaptı, hemen tövbe etti ve affedildi; yeryüzündeki her insanın babası oldu.",
+  "notes": [
+    "Cennet neredeydi? Âlimlerin çoğu bunun ahiret cenneti olduğunu söyler. Bir kısmı ise yeryüzünde yüksek bir bahçe olduğunu söylemiştir.",
+    "İblis hiç melek miydi? Kur'an onun \"cinlerden olduğunu\" söyler (18:50). Âlimlerin çoğu onun hiçbir zaman melek olmadığını söyler; bazı selef âlimleri onun meleklerin arasında yaşayıp ibadet ettiğini söylemiştir.",
+    "Kur'an Âdem'in eşine sadece \"eşin\" der. Havva ismi hadislerden gelir (örneğin Sahîh-i Buhârî 3330).",
+    "Âdem'in ilk peygamber olması âlimlerin görüşüdür; Allah'ın onunla konuşmasına ve onu seçmesine dayanır (3:33). Buhârî ve Müslim dışındaki bazı hadisler bunu açıkça söyler; hangisinin kaynak gösterileceğine bir âlim karar vermelidir.",
+    "Ağacın türü, yılan, Âdem'in yeryüzünde indiği yer ve vefat ettiğindeki yaşı gibi meşhur ayrıntılar zayıf rivayetlerden veya Ehl-i Kitap'tan gelir. Burada ya hiç anlatılmadı ya da işaretlendi."
+  ],
+  "chapters": [
+    {
+      "id": "adam-1",
+      "title": "Meleklere verilen haber",
+      "paragraphs": [
+        "Yeryüzünde henüz tek bir insan yokken Allah, meleklere yaratacağı yeni bir varlıktan haber verdi. \"Ben yeryüzünde bir halife yaratacağım\" buyurdu: orada yaşayacak ve sorumluluk taşıyacak bir halef.",
+        "Melekler kibirden değil, hayretten bir soru sordular: Kendileri O'nu sürekli hamd ile tesbih edip takdis ederken, Allah oraya fesat çıkaracak ve kan dökecek birini mi yerleştirecekti? Allah'ın cevabı her birimize tevazu öğretir: \"Ben sizin bilmediklerinizi bilirim.\"",
+        "Sonra Allah Âdem'e bütün isimleri öğretti. O varlıkları meleklere gösterip isimlerini sordu. Melekler: \"Sen yücesin! Bize öğrettiğinden başka bilgimiz yok\" dediler. Sonra Âdem'e isimleri onlara bildirmesi emredildi, o da bildirdi. Böylece Allah, insana verdiği ilim nimetini meleklere gösterdi.",
+        "Âlimler \"halife\" kelimesini birkaç şekilde açıklar. Bazıları bunun nesilden nesile birbirinin yerine geçen insanlar anlamına geldiğini söyler. Bazıları ise insanlara Allah'ın emriyle yeryüzünü gözetme görevinin verildiğini söyler. Her iki anlamın dersi aynıdır: Yeryüzündeki hayat bir emanettir."
+      ],
+      "kidsParagraphs": [
+        "Çok uzun zaman önce, yeryüzünde hiç insan yokken Allah, meleklere oraya yeni bir varlık yerleştireceğini söyledi.",
+        "Allah Âdem'e her şeyin ismini öğretti. Melekler bu isimleri bilmiyordu ve \"Biz sadece Senin öğrettiğini biliriz\" dediler. Sonra Âdem onlara isimleri söyledi. İlim, Allah'ın bir hediyesidir!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 30,
+          "ayahEnd": 30
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 31,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Allah'ın hikmeti, planını anlamasak bile bizim aklımızdan büyüktür.",
+        "İlim Allah'ın bir hediyesidir ve insanı şerefli kılan şeylerdendir.",
+        "Bir şeyi bilmediğimizde bunu söylemek, meleklerin yaptığı gibi, güzel bir edeptir."
+      ],
+      "quiz": [
+        {
+          "question": "Allah meleklere yeryüzüne ne yerleştireceğini söyledi?",
+          "options": [
+            "Bir melek",
+            "Bir halife (halef)",
+            "Cinlerin bir kralı",
+            "Bir dağ"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:30"
+        },
+        {
+          "question": "Allah Âdem'e ne öğretti?",
+          "options": [
+            "Bütün varlıkların isimlerini",
+            "Gemi yapmayı",
+            "Sadece yıldızların isimlerini",
+            "Şiiri"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:31"
+        },
+        {
+          "question": "İsimler sorulduğunda melekler ne dedi?",
+          "options": [
+            "Biz her şeyi biliriz",
+            "İblis'e sor",
+            "Bize öğrettiğinden başka bilgimiz yok",
+            "Araştırırız"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-2",
+      "title": "Çamurdan yaratılış",
+      "paragraphs": [
+        "Allah Âdem'i başka hiçbir insana benzemeyen bir şekilde yarattı. Onun ne babası ne de annesi vardı. Allah onu çamurdan, kara ve değişmiş balçıktan şekillendirdi; şeklini tamamlayınca ona kendi yarattığı bir ruhtan üfledi ve meleklere Âdem'e secde etmelerini emretti.",
+        "Kur'an bunu Hz. İsa'nın (a.s.) yaratılışına benzetir: Âdem topraktan yaratıldı, sonra Allah ona \"Ol\" dedi ve oluverdi. Allah dilediğini aynı şekilde yaratır.",
+        "Peygamber Efendimiz Muhammed ﷺ bize Âdem'in çok uzun boylu, altmış zira olduğunu ve Allah'ın onu bir grup meleğe selam vermeye gönderdiğini haber verdi. Âdem'in söylediği sözler ve meleklerin cevabı bütün çocuklarının selamı oldu.",
+        "Yani bugün bir Müslüman her \"es-selâmu aleyküm\" dediğinde, bir insanın söylediği ilk selamı tekrar etmiş olur."
+      ],
+      "kidsParagraphs": [
+        "Allah Âdem'i annesiz ve babasız olarak çamurdan yarattı, sonra ona hayat verdi.",
+        "Âdem'in meleklere ilk sözü \"Es-selâmu aleyküm\" yani \"Selam üzerinize olsun!\" oldu. Bu yüzden bugün hâlâ böyle selamlaşıyoruz."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 28,
+          "ayahEnd": 29
+        },
+        {
+          "type": "narrationNote",
+          "after": 0,
+          "text": "Bazı kitaplar, Âdem'in yaratılması için toprak getirmek üzere birkaç meleğin gönderildiğini ve toprağın, ölüm meleği onu alana kadar vermeyi reddettiğini anlatır."
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3326",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Allah Âdem'i yarattı; boyu altmış zira idi. Sonra ona: 'Git, şu melek topluluğuna selam ver ve seni nasıl selamladıklarını dinle; çünkü o senin ve zürriyetinin selamı olacaktır' buyurdu. Âdem: 'Es-selâmu aleyküm' dedi. Onlar: 'Es-selâmu aleyke ve rahmetullah' dediler ve 've rahmetullah'ı eklediler. Cennete giren herkes Âdem'in suretinde olacaktır; insanlar o zamandan beri boyca kısalmaya devam etmektedir.\"",
+          "match": "خلق الله ادم وطوله ستون ذراعا"
+        }
+      ],
+      "lessons": [
+        "Allah dilediğini, dilediği gibi yaratır.",
+        "Selam, ilk insandan beri müminlerin selamıdır.",
+        "Rengi ve memleketi ne olursa olsun her insan aynı babadan, Âdem'den gelir."
+      ],
+      "quiz": [
+        {
+          "question": "Hz. Âdem (a.s.) neyden yaratıldı?",
+          "options": [
+            "Ateşten",
+            "Nurdan",
+            "Çamurdan",
+            "Sadece sudan"
+          ],
+          "answer": 2,
+          "reference": "Quran 15:28"
+        },
+        {
+          "question": "Kur'an Âdem'in yaratılışını hangi peygamberin yaratılışına benzetir?",
+          "options": [
+            "Hz. İsa (a.s.)",
+            "Hz. Nuh (a.s.)",
+            "Hz. Musa (a.s.)",
+            "Hz. Yusuf (a.s.)"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:59"
+        },
+        {
+          "question": "Melekler Âdem'in selamını alırken ne eklediler?",
+          "options": [
+            "Hiçbir şey",
+            "\"Ve rahmetullah\" (ve Allah'ın rahmeti)",
+            "\"Günaydın\"",
+            "\"Hoş geldin\""
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3326"
+        }
+      ]
+    },
+    {
+      "id": "adam-3",
+      "title": "İblis secdeden kaçınıyor",
+      "paragraphs": [
+        "Allah meleklere Âdem'e secde etmelerini emrettiğinde hepsi itaat etti. Sadece İblis reddetti. Kur'an bize İblis'in ateşten yaratılan cinlerden olduğunu söyler.",
+        "Allah ona itaat etmekten onu neyin alıkoyduğunu sordu. Cevabı kalbindeki hastalığı ortaya koydu: \"Ben ondan daha hayırlıyım. Beni ateşten, onu çamurdan yarattın.\" İblis aslına ve kendi kibrine göre hüküm verdi ve Rabbine isyan etti.",
+        "Allah onu kovdu. İblis tövbe etmek yerine Kıyamet Günü'ne kadar mühlet istedi. Sonra Âdemoğullarını doğru yol üzerinde gözetleyeceğine, onlara önlerinden ve arkalarından, sağlarından ve sollarından geleceğine yemin etti.",
+        "Bu, şeytan ile insanlık arasındaki düşmanlığın başlangıcıydı. Allah Âdem'i açıkça uyardı: Bu, sana ve eşine düşmandır."
+      ],
+      "kidsParagraphs": [
+        "Bütün melekler Allah'ın emrettiği gibi Âdem'e secde etti. Sadece İblis reddetti.",
+        "İblis \"Ben ondan daha iyiyim!\" dedi. Kibri onu Allah'a isyan ettirdi. O günden beri şeytan insanların düşmanıdır."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 18,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 14,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 117,
+          "ayahEnd": 117
+        }
+      ],
+      "lessons": [
+        "Kibir, Allah'a karşı işlenen ilk günahtı.",
+        "Başkalarını kökeni veya görünüşü yüzünden küçümsemek İblis'in yoludur.",
+        "Şeytan apaçık bir düşmandır; ondan Allah'a sığınırız."
+      ],
+      "quiz": [
+        {
+          "question": "Âdem'e secde etmeyi kim reddetti?",
+          "options": [
+            "Cebrail",
+            "İblis",
+            "Bütün melekler",
+            "Mikail"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:34"
+        },
+        {
+          "question": "İblis neyden yaratıldığını söyledi?",
+          "options": [
+            "Ateşten",
+            "Çamurdan",
+            "Nurdan",
+            "Sudan"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:12"
+        },
+        {
+          "question": "Kur'an'a göre İblis neydi?",
+          "options": [
+            "Meleklerden",
+            "İnsanlardan",
+            "Cinlerden",
+            "Hayvanlardan"
+          ],
+          "answer": 2,
+          "reference": "Quran 18:50"
+        }
+      ]
+    },
+    {
+      "id": "adam-4",
+      "title": "Cennet ve ağaç",
+      "paragraphs": [
+        "Allah Âdem'i ve eşini cennete yerleştirdi. Diledikleri yerden bolca yiyebilirlerdi. Orada ne acıkacak ne çıplak kalacak, ne susayacak ne de güneşin sıcağından yanacaklardı. Sadece tek bir emir vardı: Bu ağaca yaklaşmayın.",
+        "Şeytan onlara vesvese verdi. Rablerinin onlara o ağacı sadece melek olmasınlar ya da ebedî yaşamasınlar diye yasakladığını söyledi. Ona \"ebedîlik ağacı ve yok olmayan bir mülk\" dedi; hatta onlara samimi bir öğütçü olduğuna yemin etti.",
+        "Âdem verdiği sözü unuttu ve ikisi de ağaçtan yedi. Hemen avret yerleri kendilerine göründü ve cennet yapraklarıyla örtünmeye başladılar. Rableri onlara seslendi: \"Ben size o ağacı yasaklamadım mı ve şeytanın size apaçık bir düşman olduğunu söylemedim mi?\"",
+        "Kur'an'ın bu kıssayı nasıl anlattığına dikkat edin: Şeytan ikisine de vesvese verdi ve ikisi de yedi. Kur'an Âdem'in eşini onu kandırmakla suçlamaz; bu düşünce başka geleneklerden gelir, İslam'dan değil."
+      ],
+      "kidsParagraphs": [
+        "Âdem ve eşi güzel bir bahçede yaşıyordu. Bir ağaç hariç her şeyden yiyebilirlerdi.",
+        "Şeytan onları yalanlarla kandırdı ve o ağaçtan yediler. Bir hata yapmışlardı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 35,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 22,
+          "ayahEnd": 22
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Bazı kitaplar ağacın adını verir (elma, buğday, incir veya üzüm), bir yılanın İblis'i cennete soktuğunu ya da Âdem'in eşinin onu yemeye ikna ettiğini söyler."
+        }
+      ],
+      "lessons": [
+        "Şeytan yanlışı cazip gösterir, hatta iyilik öğütlüyormuş gibi davranabilir.",
+        "Hikmetini görmesek bile Allah'ın emirleri bizi korur.",
+        "Erkek de kadın da kendi yaptıklarından sorumludur."
+      ],
+      "quiz": [
+        {
+          "question": "Âdem ve eşine neye yaklaşmamaları söylendi?",
+          "options": [
+            "Nehre",
+            "Bir ağaca",
+            "Meleklere",
+            "Kapıya"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:35"
+        },
+        {
+          "question": "Şeytan yasak ağaca ne ad verdi?",
+          "options": [
+            "Nur ağacı",
+            "Meyve ağacı",
+            "Ebedîlik ağacı",
+            "Melekler ağacı"
+          ],
+          "answer": 2,
+          "reference": "Quran 20:120"
+        },
+        {
+          "question": "Kur'an'a göre ağaçtan kim yedi?",
+          "options": [
+            "Âdem ve eşi, ikisi birlikte",
+            "Sadece eşi",
+            "Sadece Âdem",
+            "İblis"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:121"
+        }
+      ]
+    },
+    {
+      "id": "adam-5",
+      "title": "Tövbe kelimeleri",
+      "paragraphs": [
+        "Âdem ve eşi, İblis'in yaptığı gibi tartışmadılar ve bahane uydurmadılar. Pişmanlıkla hemen Allah'a yöneldiler ve şöyle dediler: \"Rabbimiz! Biz kendimize zulmettik. Eğer bizi bağışlamaz ve bize merhamet etmezsen, mutlaka hüsrana uğrayanlardan oluruz.\"",
+        "Kur'an, Âdem'in Rabbinden bazı kelimeler aldığını ve Allah'ın onun tövbesini kabul ettiğini bildirir. Birçok âlim bu kelimelerin ikisinin ettiği o dua olduğunu açıklar. Tövbeleri çokça kabul eden, çok merhametli olan Allah onları affetti.",
+        "Sonra Allah onları yeryüzüne indirdi; orada kendileri ve çocukları bir süre yaşayacaklardı. Onlara bir söz verdi: Kendisinden onlara hidayet gelecekti; ona uyan kimseye korku yoktur ve o üzülmeyecektir.",
+        "Âdem ile İblis arasındaki büyük fark budur. İkisi de isyan etti; ama biri kibirlendi ve Rabbini suçladı, diğeri alçakgönüllü oldu ve af diledi. Âdem affedildi ve İslam'da kimse başkasının günahını taşımaz: Herkes sadece kendi amellerinden sorumludur."
+      ],
+      "kidsParagraphs": [
+        "Âdem ve eşi çok pişman oldular. Allah'a \"Rabbimiz, hata yaptık. Bizi affet ve bize merhamet et\" diye dua ettiler.",
+        "Allah onları affetti; çünkü O, samimi olarak özür dileyenleri sever. Sonra Allah onları yeryüzünde yaşamaları için gönderdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 38,
+          "ayahEnd": 38
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 6,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        }
+      ],
+      "lessons": [
+        "Bir hata yaptığımızda onu kabul edip hemen Allah'a dönmeliyiz.",
+        "Allah samimiyetle tövbe edenleri affetmeyi sever.",
+        "Herkes kendi amellerinden sorumludur; kimse başkasının günahını taşımaz."
+      ],
+      "quiz": [
+        {
+          "question": "Âdem ve eşi hatalarından sonra ne dediler?",
+          "options": [
+            "Bizim suçumuz değildi",
+            "Rabbimiz, biz kendimize zulmettik…",
+            "Bizi İblis yaptırdı",
+            "Hiçbir yanlış yapmadık"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:23"
+        },
+        {
+          "question": "Âdem tövbe edince Allah ne yaptı?",
+          "options": [
+            "Tövbesini kabul etti",
+            "Onu meleğe dönüştürdü",
+            "Onu cennette bıraktı",
+            "Onu cinlere gönderdi"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:37"
+        },
+        {
+          "question": "Allah hidayetine uyanlara ne vaat etti?",
+          "options": [
+            "Büyük servet",
+            "Uzun ömür",
+            "Ne korku ne de üzüntü",
+            "Başkaları üzerinde güç"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:38"
+        }
+      ]
+    },
+    {
+      "id": "adam-6",
+      "title": "Âdem'in iki oğlu",
+      "paragraphs": [
+        "Yeryüzünde Âdem ve eşinin çocukları oldu ve insan ailesi büyümeye başladı. Kur'an Âdem'in iki oğlunun kıssasını anlatır. Her biri Allah'a bir kurban sundu. Birinden kabul edildi, diğerinden edilmedi.",
+        "Kurbanı kabul edilmeyen kıskandı ve \"Seni mutlaka öldüreceğim\" dedi. Kardeşi sakince cevap verdi: \"Allah sadece takva sahiplerinden kabul eder. Beni öldürmek için elini uzatsan bile, ben seni öldürmek için elimi uzatmayacağım; çünkü ben âlemlerin Rabbi olan Allah'tan korkarım.\"",
+        "Ama kıskançlık galip geldi ve insanlık tarihinin ilk cinayeti işlendi. Sonra katil, kardeşinin cesediyle ne yapacağını bile bilemedi. Allah, ona göstermek için yeri eşeleyen bir karga gönderdi. \"Yazıklar olsun bana! Şu karga kadar bile olamadım mı?\" diye haykırdı ve pişmanlıkla doldu.",
+        "Peygamber ﷺ, haksız yere öldürülen her canın günahından Âdem'in ilk oğluna bir pay düştüğünü öğretti; çünkü öldürmeyi ilk o âdet hâline getirdi. Kur'an da bu kıssadan bütün insanlık için bir ders çıkarır: Masum bir canı öldürmek bütün insanlığı öldürmek gibidir, bir canı kurtarmak da bütün insanlığı kurtarmak gibidir."
+      ],
+      "kidsParagraphs": [
+        "Âdem'in iki oğlu Allah'a birer hediye sundu. Allah iyi oğlun hediyesini kabul etti.",
+        "Diğer oğul kıskandı ve kardeşini öldürdü, sonra çok pişman oldu. Allah bize bir canı kurtarmanın bütün insanları kurtarmak gibi olduğunu öğretir!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 30,
+          "ayahEnd": 31
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3335",
+          "narrator": "Abdullah b. Mes'ûd",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Haksız yere öldürülen hiçbir can yoktur ki onun kanından Âdem'in ilk oğluna bir pay düşmesin; çünkü öldürmeyi ilk o âdet edinmiştir.\"",
+          "match": "لا تقتل نفس ظلما الا كان على ابن ادم الاول كفل من دمها"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 5,
+          "ayahStart": 32,
+          "ayahEnd": 32
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Hâbil ve Kâbil isimleri ve kardeşlerin kiminle evlenecekleri konusunda tartıştıkları hikâyesi ne Kur'an'da ne de Buhârî ve Müslim'de vardır. Bunlar, çoğu Ehl-i Kitap'tan gelen sonraki rivayetlerdendir."
+        }
+      ],
+      "lessons": [
+        "Kontrol edilmeyen kıskançlık insanı korkunç günahlara sürükleyebilir.",
+        "Allah takva sahiplerinin amellerini kabul eder.",
+        "Her insan hayatı değerlidir: Bir canı kurtarmak bütün insanlığı kurtarmak gibidir.",
+        "Kötü bir çığır açan, ona uyan herkesin günahından pay alır."
+      ],
+      "quiz": [
+        {
+          "question": "Oğullardan biri neden kardeşini öldürmekle tehdit etti?",
+          "options": [
+            "Toprak için kavga ettiler",
+            "Kendi kurbanı kabul edilmemişti",
+            "Kardeşi ondan çalmıştı",
+            "İblis ona emretmişti"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:27"
+        },
+        {
+          "question": "Allah, katile kardeşini nasıl gömeceğini göstermek için ne gönderdi?",
+          "options": [
+            "Bir melek",
+            "Bir güvercin",
+            "Bir kurt",
+            "Bir karga"
+          ],
+          "answer": 3,
+          "reference": "Quran 5:31"
+        },
+        {
+          "question": "Kur'an'a göre bir canı kurtarmak … gibidir.",
+          "options": [
+            "Bütün insanlığı kurtarmak",
+            "Bir kabileyi kurtarmak",
+            "Bir gün oruç tutmak",
+            "Özel bir şey değildir"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-7",
+      "title": "Âdem'in mirası",
+      "paragraphs": [
+        "Hz. Âdem (a.s.) ilk insandı ve âlimler onu ilk peygamber sayar. Allah onu seçti, onunla konuştu ve ona yol gösterdi; o da çocuklarına sadece Allah'a ibadet etmeyi öğretti.",
+        "Allah bütün Âdemoğullarından bir söz de aldı. Onların zürriyetini çıkardı ve kendilerini şahit tuttu: \"Ben sizin Rabbiniz değil miyim?\" Onlar: \"Evet, şahit olduk\" dediler. Bu yüzden her insan kalbi fıtraten bir Yaratıcısı olduğunu hisseder.",
+        "Peygamber ﷺ, Âdem ile Musa (a.s.) arasındaki bir tartışmayı anlattı. Musa: \"Sen, hatası seni cennetten çıkaran Âdem'sin\" dedi. Âdem cevap verdi: \"Sen, Allah'ın risaletleri ve kelamı için seçtiği Musa'sın; yine de beni, ben yaratılmadan önce hakkımda takdir edilmiş bir şey için mi kınıyorsun?\" Peygamber ﷺ, Âdem'in tartışmada üstün geldiğini söyledi. Âlimler, Âdem'in bir günahı kaderle mazur göstermediğini açıklar: O zaten tövbe etmiş ve affedilmişti; Allah'ın takdir ettiği musibetten söz ediyordu.",
+        "Kur'an hepimize \"Ey Âdemoğulları\" diye seslenir ve bizi uyarır: Şeytan, ananızı babanızı cennetten çıkardığı gibi sizi de aldatmasın. Âdem'in kıssası her insanın kıssasıdır: Hata yapacağız ve dönüş yolu her zaman tövbedir."
+      ],
+      "kidsParagraphs": [
+        "Âdem ilk insan ve ilk peygamberdi. Çocuklarına sadece Allah'a ibadet etmeyi öğretti.",
+        "Hepimiz \"Âdemoğulları\"yız. Hata yaptığımızda, babamız Âdem gibi her zaman Allah'tan af dileyebiliriz."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 33,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 172,
+          "ayahEnd": 172
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3409",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Âdem ile Musa tartıştılar. Musa ona: 'Sen, hatası seni cennetten çıkaran Âdem'sin' dedi. Âdem ona: 'Sen, Allah'ın risaletleri ve kelamı için seçtiği Musa'sın; sonra da beni, ben yaratılmadan önce bana takdir edilmiş bir şey için mi kınıyorsun?' dedi.\" Resûlullah ﷺ iki kez: \"Böylece Âdem tartışmada Musa'ya üstün geldi\" buyurdu.",
+          "match": "احتج ادم وموسى"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 7,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        }
+      ],
+      "lessons": [
+        "Bütün insanlar tek bir ailedir: Âdemoğulları.",
+        "Her kalp Yaratıcısını tanır; bu, Allah'ın bizden aldığı sözdür.",
+        "Kader günaha mazeret değildir; ama tövbeden sonra Allah'ın takdirine sabırla razı oluruz.",
+        "Şeytan hâlâ düşmanımızdır; bu yüzden uyanık olmalıyız."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an 3:33'e göre Allah kimleri âlemlere üstün kıldı?",
+          "options": [
+            "Sadece melekleri",
+            "Âdem'i, Nuh'u, İbrahim ailesini ve İmran ailesini",
+            "Yeryüzünün krallarını",
+            "Cinleri"
+          ],
+          "answer": 1,
+          "reference": "Quran 3:33"
+        },
+        {
+          "question": "Allah, söz alırken Âdemoğullarına hangi soruyu sordu?",
+          "options": [
+            "Bana itaat edecek misiniz?",
+            "Sizi kim yarattı?",
+            "Nereye gidiyorsunuz?",
+            "Ben sizin Rabbiniz değil miyim?"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:172"
+        },
+        {
+          "question": "Hangi peygamber cennetten çıkış hakkında Âdem ile tartıştı?",
+          "options": [
+            "Hz. Musa (a.s.)",
+            "Hz. Nuh (a.s.)",
+            "Hz. İbrahim (a.s.)",
+            "Hz. İsa (a.s.)"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3409"
+        }
+      ]
+    }
+  ]
+}

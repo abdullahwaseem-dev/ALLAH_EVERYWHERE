@@ -10,6 +10,10 @@ import 'package:allah_everywhere/hadith_chapters.dart';
 import 'package:allah_everywhere/dua_2.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
+import 'package:allah_everywhere/models/prophet_story.dart';
+import 'package:allah_everywhere/services/prophet_stories_service.dart';
+import 'package:allah_everywhere/prophet_stories.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -24,11 +28,42 @@ class _SearchScreenState extends State<SearchScreen> {
   late final HadithController _hadithController;
   String _query = '';
 
+  /// Prophets' Stories in the app language, loaded from the bundled JSON.
+  List<ProphetIndexEntry> _prophets = const [];
+  Map<String, ProphetStory> _stories = const {};
+  String? _storiesLanguage;
+
   @override
   void initState() {
     super.initState();
     _quranController = Get.isRegistered<QuranController>() ? Get.find() : Get.put(QuranController());
     _hadithController = Get.isRegistered<HadithController>() ? Get.find() : Get.put(HadithController());
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final code = Localizations.localeOf(context).languageCode;
+    if (ProphetStoriesService.enabled && code != _storiesLanguage) {
+      _storiesLanguage = code;
+      _loadStories(code);
+    }
+  }
+
+  Future<void> _loadStories(String languageCode) async {
+    final service = ProphetStoriesService();
+    final prophets = await service.loadIndex();
+    final stories = <String, ProphetStory>{};
+    for (final prophet in prophets.where((p) => p.hasStory)) {
+      final story = await service.loadStory(prophet, languageCode);
+      if (story != null) stories[prophet.id] = story;
+    }
+    if (mounted) {
+      setState(() {
+        _prophets = prophets;
+        _stories = stories;
+      });
+    }
   }
 
   @override
@@ -74,13 +109,33 @@ class _SearchScreenState extends State<SearchScreen> {
     return results;
   }
 
+  /// Prophets whose name (in any language) matches, with a null chapter, and
+  /// story chapters whose title matches.
+  List<(ProphetIndexEntry, int?)> get _matchingStories {
+    if (_query.isEmpty) return [];
+    final q = _query.toLowerCase();
+    final results = <(ProphetIndexEntry, int?)>[];
+    for (final prophet in _prophets) {
+      final story = _stories[prophet.id];
+      if (story == null) continue;
+      final names = [...prophet.names.values, ...prophet.alsoKnownAs, prophet.arabicName];
+      if (names.any((n) => n.toLowerCase().contains(q))) results.add((prophet, null));
+      for (int i = 0; i < story.chapters.length; i++) {
+        if (story.chapters[i].title.toLowerCase().contains(q)) results.add((prophet, i));
+      }
+    }
+    return results;
+  }
+
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
     final surahs = _matchingSurahs;
     final books = _matchingBooks;
     final duas = _matchingDuas;
-    final hasResults = surahs.isNotEmpty || books.isNotEmpty || duas.isNotEmpty;
+    final stories = _matchingStories;
+    final languageCode = Localizations.localeOf(context).languageCode;
+    final hasResults = surahs.isNotEmpty || books.isNotEmpty || duas.isNotEmpty || stories.isNotEmpty;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
@@ -89,7 +144,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SafeArea(
+      body: ReadableWidth(child: SafeArea(
         child: Column(
           children: [
             Padding(
@@ -180,13 +235,29 @@ class _SearchScreenState extends State<SearchScreen> {
                                     subColor: subColor,
                                   )),
                             ],
+                            if (stories.isNotEmpty) ...[
+                              _sectionHeader(t.storiesTitle, accent),
+                              ...stories.map((match) {
+                                final (prophet, chapter) = match;
+                                final story = _stories[prophet.id]!;
+                                return _resultTile(
+                                  title: prophetDisplayName(prophet, languageCode, t),
+                                  subtitle: chapter == null ? story.title : story.chapters[chapter].title,
+                                  onTap: () => Get.to(
+                                      () => ProphetStoryReaderScreen(entry: prophet, initialChapter: chapter ?? 0)),
+                                  cardColor: cardColor,
+                                  textColor: textColor,
+                                  subColor: subColor,
+                                );
+                              }),
+                            ],
                             SizedBox(height: 24.h),
                           ],
                         ),
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 

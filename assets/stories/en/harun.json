@@ -1,0 +1,256 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "harun",
+  "language": "en",
+  "name": "Harun",
+  "title": "The brother and helper of Musa (AS)",
+  "sentTo": "Pharaoh and his people, and the Children of Israel, alongside Musa (AS)",
+  "era": "The time of Musa (AS), his younger brother. No date is given in the Quran or Sunnah.",
+  "places": [
+    {
+      "name": "Egypt and the wilderness of Sinai, with Musa (AS).",
+      "lat": 29.5,
+      "lng": 33.8,
+      "approximate": true
+    }
+  ],
+  "summary": "The brother of Musa (AS), made a Prophet at Musa's own request. He was more eloquent in speech, and stood beside Musa before Pharaoh. When the people worshipped the calf, he warned them and tried to keep them together. Allah sent peace upon Musa and Harun.",
+  "notes": [
+    "Whether Harun was older or younger than Musa is not stated in the Quran; the Bible says he was older.",
+    "The details of Harun's death (before Musa, in the wilderness) come from historical reports, not from the Quran or authentic hadith.",
+    "“O sister of Harun” (19:28), said to Maryam, does not mean she was the sister of this Harun: the Prophet ﷺ explained that people used to be named after their Prophets and the righteous people before them (Sahih Muslim 2135)."
+  ],
+  "chapters": [
+    {
+      "id": "harun-1",
+      "title": "A helper for his brother",
+      "paragraphs": [
+        "When Allah chose Musa (AS) at the valley of Tuwa and sent him to Pharaoh, Musa asked for a helper: “Appoint for me a minister from my family, Harun, my brother. Strengthen me through him and let him share my task, so that we may glorify You much and remember You much.”",
+        "Musa explained: “My brother Harun is more eloquent than me in speech, so send him with me as a helper to confirm me.” Allah answered: “We will strengthen your arm through your brother.” Out of His mercy, Allah made Harun a Prophet."
+      ],
+      "kidsParagraphs": [
+        "Musa asked Allah to make his brother Harun his helper, and Allah made Harun a Prophet too!",
+        "Harun spoke very well, and he helped his brother tell Pharaoh about Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 29,
+          "ayahEnd": 34
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 53,
+          "ayahEnd": 53
+        }
+      ],
+      "lessons": [
+        "Good brothers help each other in doing good.",
+        "Teamwork is a gift from Allah.",
+        "Being a helper in the truth is a great honour."
+      ],
+      "quiz": [
+        {
+          "question": "Why did Musa ask for Harun as a helper?",
+          "options": [
+            "Harun was more eloquent in speech",
+            "Harun was richer",
+            "Harun was a king",
+            "Harun knew Pharaoh"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:34"
+        },
+        {
+          "question": "What did Allah make Harun, out of His mercy?",
+          "options": [
+            "A king",
+            "A Prophet",
+            "A merchant",
+            "A soldier"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:53"
+        },
+        {
+          "question": "What did Musa say they would do together?",
+          "options": [
+            "Glorify and remember Allah much",
+            "Become rich",
+            "Build palaces",
+            "Travel the world"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:33-34"
+        }
+      ]
+    },
+    {
+      "id": "harun-2",
+      "title": "Standing firm against the calf",
+      "paragraphs": [
+        "When Musa went to meet his Lord for forty nights, he left Harun in charge: “Take my place among my people, put things right, and do not follow the way of those who cause corruption.”",
+        "When as-Samiri made the golden calf, Harun warned the people: “O my people, you are only being tested by it. Your Lord is the Most Merciful, so follow me and obey my command.” But many refused: “We will keep worshipping it until Musa returns.”",
+        "When Musa came back, angry, and took Harun by the head and beard, Harun said: “Son of my mother, the people overpowered me and almost killed me. I feared you would say: You have divided the Children of Israel.” Musa then prayed for both of them."
+      ],
+      "kidsParagraphs": [
+        "While Musa was away, people made a golden calf. Harun told them: “This is a test! Follow me and worship Allah.”",
+        "When Musa came back upset, Harun explained what had happened, and Musa prayed for them both."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 90,
+          "ayahEnd": 91
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 92,
+          "ayahEnd": 94
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 151,
+          "ayahEnd": 151
+        }
+      ],
+      "lessons": [
+        "Speak the truth even when most people refuse it.",
+        "Keeping the community together is a serious responsibility.",
+        "Misunderstandings between good people are healed by explanation and prayer."
+      ],
+      "quiz": [
+        {
+          "question": "What did Harun tell the people about the calf?",
+          "options": [
+            "You are only being tested by it",
+            "It is a gift",
+            "Worship it until Musa returns",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:90"
+        },
+        {
+          "question": "Who was left in charge when Musa went to the mountain?",
+          "options": [
+            "Harun",
+            "As-Samiri",
+            "Qarun",
+            "Yusha'"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "What did Harun call Musa when he explained himself?",
+          "options": [
+            "Son of my mother",
+            "My king",
+            "My teacher",
+            "My son"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:94"
+        }
+      ]
+    },
+    {
+      "id": "harun-3",
+      "title": "Peace upon Musa and Harun",
+      "paragraphs": [
+        "Allah granted Musa and Harun great favour: He saved them and their people from the great distress, helped them overcome, gave them the clear Scripture and guided them to the straight path. He left a lasting mention of them among later generations: “Peace be upon Musa and Harun.”",
+        "The Prophet ﷺ once said to 'Ali ibn Abi Talib: “Are you not pleased to be to me as Harun was to Musa?” In this way he honoured 'Ali, and showed how close Harun had been to his brother as a trusted helper."
+      ],
+      "kidsParagraphs": [
+        "Allah says: “Peace be upon Musa and Harun.”",
+        "Our Prophet ﷺ told 'Ali: “You are to me like Harun was to Musa”: a close and trusted helper."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 114,
+          "ayahEnd": 120
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3706",
+          "narrator": "Sa'd ibn Abi Waqqas",
+          "translation": "The Prophet ﷺ said to 'Ali: “Are you not pleased to be to me in the position of Harun to Musa?”",
+          "match": "اما ترضى ان تكون مني بمنزلة هارون من موسى"
+        }
+      ],
+      "lessons": [
+        "Allah honours those who support the truth.",
+        "A trusted helper is precious.",
+        "Peace and honour are the reward of the doers of good."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah leave for Musa and Harun among later generations?",
+          "options": [
+            "“Peace be upon Musa and Harun”",
+            "A palace",
+            "A golden calf",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:120"
+        },
+        {
+          "question": "To whom did the Prophet ﷺ say, “You are to me as Harun was to Musa”?",
+          "options": [
+            "Abu Bakr",
+            "'Ali",
+            "'Umar",
+            "'Uthman"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3706"
+        },
+        {
+          "question": "What did Allah give Musa and Harun?",
+          "options": [
+            "The clear Scripture",
+            "A kingdom in Egypt",
+            "A ship",
+            "Gold"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:117"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "hud",
+  "language": "en",
+  "name": "Hud",
+  "title": "The messenger to the people of 'Ad",
+  "sentTo": "The people of 'Ad, his own people",
+  "era": "After Nuh (AS). The Quran says 'Ad came as successors after the people of Nuh (7:69); no date is given.",
+  "places": [
+    {
+      "name": "Al-Ahqaf, “the sand dunes” (46:21), in southern Arabia. Scholars usually place it between Oman and Hadramawt (Yemen).",
+      "lat": 17.5,
+      "lng": 50.5,
+      "approximate": true
+    }
+  ],
+  "summary": "Hud was sent to 'Ad, a powerful people who built great monuments and treated others with tyranny. He called them to worship Allah alone and to ask His forgiveness. They mocked him, and a violent wind destroyed them, while Hud and the believers were saved.",
+  "notes": [
+    "The exact location of al-Ahqaf and of “Iram of the pillars” (89:7) is not known for certain.",
+    "Stories that the people of 'Ad were giants of enormous height, or that Hud's tomb is in Hadramawt, come from later reports, not from the Quran or authentic hadith.",
+    "Some say Hud was the first Arab Prophet; this comes from a report outside al-Bukhari and Muslim and needs checking."
+  ],
+  "chapters": [
+    {
+      "id": "hud-1",
+      "title": "The mighty people of 'Ad",
+      "paragraphs": [
+        "After the Flood, the descendants of those saved with Nuh (AS) spread over the earth. Among them were the people of 'Ad, who lived in al-Ahqaf, a land of sand dunes in southern Arabia.",
+        "Allah gave them great strength. Hud reminded them that Allah had made them successors after the people of Nuh and increased them in stature. They had livestock, children, gardens and springs.",
+        "But they used their blessings badly. They built a monument on every high place just to show off, built strong fortresses as if they would live forever, and when they attacked others, they attacked like tyrants."
+      ],
+      "kidsParagraphs": [
+        "The people of 'Ad were very strong and built great buildings.",
+        "But they became proud and treated others cruelly, and they forgot Allah who gave them everything."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 21,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 69,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 128,
+          "ayahEnd": 130
+        }
+      ],
+      "lessons": [
+        "Every blessing we have is from Allah, and we should use it to please Him.",
+        "Strength and wealth do not make anyone live forever.",
+        "Showing off and oppressing others destroyed great nations."
+      ],
+      "quiz": [
+        {
+          "question": "Where did the people of 'Ad live?",
+          "options": [
+            "Al-Ahqaf, the sand dunes",
+            "Egypt",
+            "Babylon",
+            "Madyan"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:21"
+        },
+        {
+          "question": "After which people did 'Ad become successors?",
+          "options": [
+            "The people of Lut",
+            "The people of Nuh",
+            "The people of Musa",
+            "Thamud"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:69"
+        },
+        {
+          "question": "What did 'Ad build on every high place?",
+          "options": [
+            "Mosques",
+            "A monument to amuse themselves",
+            "Wells",
+            "Schools"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:128"
+        }
+      ]
+    },
+    {
+      "id": "hud-2",
+      "title": "Hud calls his people",
+      "paragraphs": [
+        "Allah sent to 'Ad one of their own brothers, Hud (AS). His message was the message of every Prophet: “O my people, worship Allah; you have no god other than Him.”",
+        "He asked them for no reward; his reward was only with the One who created him. He told them that he was a sincere and trustworthy adviser, not a fool or a liar as they claimed.",
+        "He promised them that if they asked their Lord for forgiveness and turned back to Him, Allah would send them abundant rain and add strength to their strength."
+      ],
+      "kidsParagraphs": [
+        "Allah sent Hud to his people. He said: “Worship only Allah!”",
+        "Hud told them: “Ask Allah to forgive you, and He will send you rain and make you even stronger.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 51,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 52,
+          "ayahEnd": 52
+        }
+      ],
+      "lessons": [
+        "A messenger of Allah gives sincere advice without asking for payment.",
+        "Asking forgiveness brings blessings in this life too.",
+        "Do not judge a caller to good by the insults of his enemies."
+      ],
+      "quiz": [
+        {
+          "question": "What did Hud ask his people to do first?",
+          "options": [
+            "Leave their land",
+            "Worship Allah alone",
+            "Build a ship",
+            "Pay him"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:50"
+        },
+        {
+          "question": "What did Hud say Allah would send if they repented?",
+          "options": [
+            "Abundant rain and more strength",
+            "Gold",
+            "An army",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:52"
+        },
+        {
+          "question": "What did the chiefs accuse Hud of?",
+          "options": [
+            "Foolishness and lying",
+            "Stealing",
+            "Being a king",
+            "Being an angel"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:66"
+        }
+      ]
+    },
+    {
+      "id": "hud-3",
+      "title": "Trusting Allah alone",
+      "paragraphs": [
+        "'Ad refused. “You have brought us no clear proof,” they said, “and we will not leave our gods because of what you say. We think one of our gods has struck you with evil.”",
+        "Hud answered with complete trust in Allah. He declared himself free of their idols and challenged them all to plot against him without delay, for he relied on Allah, his Lord and theirs: “There is no creature except that He holds its forelock.”",
+        "They demanded the punishment he warned them of. Hud said that its time is known only to Allah, and that he only delivered what he had been sent with."
+      ],
+      "kidsParagraphs": [
+        "The people said: “Our gods have made you mad!”",
+        "Hud was not afraid of them. He said: “I trust in Allah. Every living thing is in His hands.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 53,
+          "ayahEnd": 54
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 55,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 46,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        }
+      ],
+      "lessons": [
+        "Real courage comes from trusting Allah.",
+        "Every creature is under Allah's control, so we fear no one but Him.",
+        "The timing of Allah's decree is known only to Him."
+      ],
+      "quiz": [
+        {
+          "question": "What did 'Ad say had happened to Hud?",
+          "options": [
+            "One of their gods had struck him with evil",
+            "He had become rich",
+            "He had travelled",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:54"
+        },
+        {
+          "question": "On whom did Hud rely?",
+          "options": [
+            "His tribe",
+            "Allah, his Lord and their Lord",
+            "The king",
+            "His wealth"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:56"
+        },
+        {
+          "question": "Who knows when the punishment will come?",
+          "options": [
+            "Hud",
+            "The chiefs",
+            "Allah alone",
+            "The fortune-tellers"
+          ],
+          "answer": 2,
+          "reference": "Quran 46:23"
+        }
+      ]
+    },
+    {
+      "id": "hud-4",
+      "title": "The wind",
+      "paragraphs": [
+        "One day 'Ad saw a cloud coming towards their valleys and rejoiced: “This cloud will bring us rain!” But it was what they had demanded: a wind carrying a painful punishment, destroying everything by its Lord's command.",
+        "Allah sent it upon them for seven nights and eight days without stopping, until they lay fallen like hollow trunks of palm trees. Nothing was left of them but their dwellings. Allah saved Hud and those who believed with him, by His mercy.",
+        "The Prophet ﷺ said: “I was given victory by the east wind (as-saba), and 'Ad were destroyed by the west wind (ad-dabur).” The same wind that destroyed one people helped another, by Allah's command."
+      ],
+      "kidsParagraphs": [
+        "A cloud came and the people thought it was rain. But it was a terrible wind that blew for seven nights and eight days.",
+        "Allah saved Hud and the believers. The wind obeys only Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 69,
+          "ayahStart": 6,
+          "ayahEnd": 8
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "1035",
+          "narrator": "Ibn Abbas",
+          "translation": "The Prophet ﷺ said: “I was given victory by the east wind (as-saba), and 'Ad were destroyed by the west wind (ad-dabur).”",
+          "match": "نصرت بالصبا واهلكت عاد بالدبور"
+        }
+      ],
+      "lessons": [
+        "What we wish for is not always good for us; only Allah knows.",
+        "All of creation, even the wind, obeys Allah.",
+        "Allah saves those who believe, even when their whole nation is destroyed."
+      ],
+      "quiz": [
+        {
+          "question": "What did 'Ad think the cloud would bring?",
+          "options": [
+            "Rain",
+            "Locusts",
+            "Snow",
+            "Birds"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:24"
+        },
+        {
+          "question": "For how long did the wind blow?",
+          "options": [
+            "Three days",
+            "Seven nights and eight days",
+            "Forty days",
+            "One hour"
+          ],
+          "answer": 1,
+          "reference": "Quran 69:7"
+        },
+        {
+          "question": "Which wind destroyed 'Ad, according to the Prophet ﷺ?",
+          "options": [
+            "The east wind",
+            "The west wind (ad-dabur)",
+            "The north wind",
+            "A sandstorm from Egypt"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 1035"
+        }
+      ]
+    }
+  ]
+}

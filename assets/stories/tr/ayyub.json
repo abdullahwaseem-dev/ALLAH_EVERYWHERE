@@ -1,0 +1,249 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ayyub",
+  "language": "tr",
+  "name": "Eyyûb",
+  "title": "Sabırlı, ne güzel bir kul",
+  "sentTo": "Kavmi; Kur'an onların adını vermez",
+  "era": "Kesin değil. Birçok âlim onu Hz. İshak'ın (a.s.) soyundan, belki Hz. Musa'dan (a.s.) önce sayar; Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Kesin olarak bilinmiyor. Bazı rivayetler onu güney Suriye'deki Havran bölgesine yerleştirir.",
+      "lat": 32.75,
+      "lng": 36.3,
+      "approximate": true
+    }
+  ],
+  "summary": "Allah'ın ağır bir hastalıkla, ailesini ve malını kaybetmekle imtihan ettiği bir peygamber. Allah'tan başkasına şikâyet etmedi; Allah duasını kabul etti, onu iyileştirdi ve ailesini ve onlarla birlikte bir o kadarını daha geri verdi. Kur'an onu, daima Allah'a yönelen ne güzel bir kul olarak anar.",
+  "notes": [
+    "Eyyûb'un hastalığının ne kadar sürdüğü (genellikle 18 yıl denir), ne olduğu ve insanların onu terk etmesi gibi ayrıntılar Kur'an'da ve sahih hadislerde olmayan rivayetlerden gelir. Kur'an yalnızca ona zarar ve meşakkat dokunduğunu söyler.",
+    "38:44'teki yemin ve bir demet sap: Kur'an yeminin ne olduğunu söylemez. Birçok müfessir, onun hanımını söylediği bir söz yüzünden dövmeye yemin ettiğini ve yeminini yumuşak bir şekilde yerine getirmesine izin verildiğini söyler; bu açıklama sahih hadislerden değil, rivayetlerden gelir.",
+    "Peygamberler sıralamasındaki yeri yaklaşıktır."
+  ],
+  "chapters": [
+    {
+      "id": "ayyub-1",
+      "title": "Bir sabır imtihanı",
+      "paragraphs": [
+        "Hz. Eyyûb (a.s.), Allah'ın nimet verdiği, sonra da imtihan ettiği bir peygamberdi. Bedeninde sıkıntıya uğradı ve sahip olduklarını kaybetti, ama insanlara şikâyet etmedi ve ümidini yitirmedi.",
+        "Rabbine büyük bir edeple seslendi: \"Bana bu dert dokundu; Sen ise merhametlilerin en merhametlisisin.\" Doğrudan şifa istemedi; sadece ihtiyacını en iyi bilene arz etti ve O'nun rahmetini andı.",
+        "Şöyle de dedi: \"Şeytan bana yorgunluk ve azap dokundurdu.\" Âlimler, peygamberlerin her şeyin Allah'ın takdiriyle olduğunu bildikleri hâlde, Allah'a karşı edepten dolayı kötülüğü şeytana nispet ettiklerini açıklar."
+      ],
+      "kidsParagraphs": [
+        "Eyyûb çok hastalandı ve birçok şeyini kaybetti. Ama sabırlı kaldı.",
+        "Yumuşak bir sesle dua etti: \"Bana dert dokundu; Sen en merhametlisin.\" Allah'a tamamen güveniyordu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 83,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 41,
+          "ayahEnd": 41
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Halk arasındaki hikâyeler, Eyyûb'un on sekiz yıl hasta kaldığını, bedenini kurtların sardığını ve eşi dışında herkesin onu terk ettiğini anlatır."
+        }
+      ],
+      "lessons": [
+        "Sabır, insanlara şikâyet etmeden Allah'a yönelmektir.",
+        "Duada edep: Allah'ı övmek ve O'nun rahmetini anmak.",
+        "İmtihanlar insanların en hayırlılarına da gelebilir."
+      ],
+      "quiz": [
+        {
+          "question": "Eyyûb duasında ne dedi?",
+          "options": [
+            "Neden ben?",
+            "Bana bu dert dokundu; Sen ise merhametlilerin en merhametlisisin",
+            "Bana servet ver",
+            "Düşmanlarımı cezalandır"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Eyyûb kime şikâyet ediyordu?",
+          "options": [
+            "Kavmine",
+            "Yalnız Allah'a",
+            "Hekimlere",
+            "Krala"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Eyyûb şeytanın ona ne dokundurduğunu söyledi?",
+          "options": [
+            "Yorgunluk ve azap",
+            "Servet",
+            "Sevinç",
+            "Uyku"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:41"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-2",
+      "title": "Serin bir pınar",
+      "paragraphs": [
+        "Allah ona cevap verdi: \"Ayağını yere vur. İşte yıkanmak ve içmek için serin bir su.\" Eyyûb şifa buldu.",
+        "Allah, Kendi katından bir rahmet ve akıl sahiplerine bir öğüt olarak ona ailesini ve onlarla birlikte bir o kadarını daha geri verdi.",
+        "Allah ona ettiği bir yemini kimseye zarar vermeden yerine getirmenin bir yolunu da gösterdi: Eline bir demet sap alıp onunla vurmak. Ve Allah onu övdü: \"Biz onu sabırlı bulduk. Ne güzel kul! O daima Allah'a yönelirdi.\""
+      ],
+      "kidsParagraphs": [
+        "Allah Eyyûb'a: \"Ayağını yere vur\" dedi. Serin bir pınar fışkırdı; yıkandı, içti ve iyileşti!",
+        "Allah ona ailesini, hatta daha fazlasını geri verdi. Allah onu \"ne güzel kul\" diye andı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 42,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 43,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        }
+      ],
+      "lessons": [
+        "Sıkıntının ardından, Allah'ın rahmetiyle ferahlık gelir.",
+        "Allah sabredenlere kaybettiklerinden fazlasını verir.",
+        "\"Ne güzel kul\" olmak en büyük övgüdür."
+      ],
+      "quiz": [
+        {
+          "question": "Allah Eyyûb'a ne yapmasını söyledi?",
+          "options": [
+            "Ayağını yere vurmasını",
+            "Mısır'a gitmesini",
+            "Ev yapmasını",
+            "Dağa tırmanmasını"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Yerden ne çıktı?",
+          "options": [
+            "Altın",
+            "Yıkanmak ve içmek için serin su",
+            "Ateş",
+            "Meyve"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Allah Eyyûb'u nasıl tanıttı?",
+          "options": [
+            "Sabırlı, ne güzel bir kul",
+            "Büyük bir kral",
+            "Zengin bir tüccar",
+            "Bir savaşçı"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:44"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-3",
+      "title": "Allah'ın bereketinden asla müstağni değil",
+      "paragraphs": [
+        "Peygamber ﷺ bize anlattı ki bir gün Eyyûb yıkanırken üzerine altından çekirgeler düştü ve o da onları elbisesine toplamaya başladı.",
+        "Rabbi ona seslendi: \"Ey Eyyûb! Seni gördüğün şeye ihtiyaç duymayacak kadar zengin kılmadım mı?\" Eyyûb cevap verdi: \"Evet, izzetine yemin olsun! Fakat Senin bereketinden asla müstağni olamam.\"",
+        "Eyyûb fakirlikte ve hastalıkta sabretmiş, zenginlikte de şükretmişti. Her hayrın Allah'tan geldiğini ve kulun her zaman O'nun bereketine daha fazla muhtaç olduğunu biliyordu."
+      ],
+      "kidsParagraphs": [
+        "Bir gün Eyyûb'un üzerine altından çekirgeler düştü ve o da onları topladı.",
+        "Allah sordu: \"Seni zengin kılmadım mı?\" Eyyûb dedi: \"Evet! Ama Senin bereketine hep muhtacım.\""
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "279",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Eyyûb çıplak olarak yıkanırken üzerine altından çekirgeler düştü; Eyyûb onları avuç avuç elbisesine doldurmaya başladı. Rabbi ona seslendi: 'Ey Eyyûb! Seni gördüğün şeye ihtiyaç duymayacak kadar zengin kılmadım mı?' Dedi ki: 'Evet, izzetine yemin olsun! Fakat Senin bereketinden asla müstağni olamam.'\"",
+          "match": "بينا ايوب يغتسل عريانا فخر عليه جراد من ذهب"
+        }
+      ],
+      "lessons": [
+        "Sıkıntıda sabret, bollukta şükret.",
+        "Ne kadar şeyimiz olursa olsun, her zaman Allah'ın bereketine muhtacız.",
+        "Allah'tan gelen mal, şükürle karşılanacak bir nimettir."
+      ],
+      "quiz": [
+        {
+          "question": "Eyyûb yıkanırken üzerine ne düştü?",
+          "options": [
+            "Altından çekirgeler",
+            "Yağmur",
+            "Hurma",
+            "Taşlar"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Eyyûb neyden asla müstağni olamayacağını söyledi?",
+          "options": [
+            "Ailesinden",
+            "Allah'ın bereketinden",
+            "Sudan",
+            "Altından"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Eyyûb hastalıkta sabırlı, zenginlikte ise … idi.",
+          "options": [
+            "Kibirli",
+            "Şükreden",
+            "Umursamaz",
+            "Korkak"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "sulayman",
+  "language": "de",
+  "name": "Sulaiman",
+  "title": "Der König, dem ein Reich wie kein anderes gegeben wurde",
+  "sentTo": "Die Kinder Israels und andere unter seiner Herrschaft, darunter das Volk von Saba'",
+  "era": "Der Sohn Dawuds (a.s.). Von Historikern meist ins 10. Jahrhundert v. Chr. datiert; Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds), wo er regierte.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    },
+    {
+      "name": "Saba', das Reich der Königin, meist im Jemen um Ma'rib verortet.",
+      "lat": 15.43,
+      "lng": 45.32,
+      "approximate": true
+    }
+  ],
+  "summary": "Sulaiman erbte von seinem Vater Dawud das Prophetentum und die Königsherrschaft. Allah lehrte ihn die Sprache der Vögel und unterstellte ihm den Wind und die Dschinn. Er hörte eine Ameise sprechen, schickte einen Brief an die Königin von Saba' und sah, wie sie den Islam annahm. Bei alledem blieb er ein dankbarer Diener, der sich stets Allah zuwandte.",
+  "notes": [
+    "Die Königin von Saba' wird im Koran nicht genannt; der Name Bilqis stammt aus späteren Berichten.",
+    "Die Pferde in 38:31-33: Die Gelehrten sind sich uneinig, ob Sulaiman sie (als Opfer) schlug oder ihnen über Beine und Hälse strich.",
+    "„Wir setzten auf seinen Thron einen Körper“ (38:34): Die Gelehrten erklären dies auf verschiedene Weise; einige verbinden es mit einem authentischen Hadith bei al-Buchari, in dem Sulaiman vergaß, „in scha Allah“ zu sagen. Geschichten, dass ein Teufel seinen Ring stahl und sich auf seinen Thron setzte, stammen von den Leuten der Schrift und wurden von Gelehrten wie Ibn Kathir abgelehnt.",
+    "Sulaiman übte niemals Zauberei aus: Der Koran spricht ihn davon frei (2:102)."
+  ],
+  "chapters": [
+    {
+      "id": "sulayman-1",
+      "title": "Der weise Sohn eines weisen Vaters",
+      "paragraphs": [
+        "Sulaiman (a.s.) erbte von seinem Vater Dawud Prophetentum, Wissen und Königsherrschaft. Vater und Sohn sagten gemeinsam: „Gepriesen sei Allah, Der uns vor vielen Seiner gläubigen Diener bevorzugt hat.“",
+        "Schon in jungen Jahren gab Allah Sulaiman besonderes Verständnis. Einmal geriet eine Schafherde nachts in jemandes Feld und fraß die Ernte; Allah gab Sulaiman das Verständnis, wie der Fall zu entscheiden war, während Er ihm und Dawud beiden Weisheit und Wissen gab.",
+        "Der Prophet ﷺ erzählte von zwei Frauen, die ihre Söhne bei sich hatten, als ein Wolf einen der Jungen holte. Jede beanspruchte das lebende Kind. Dawud urteilte zugunsten der Älteren. Sulaiman sagte: „Bringt mir ein Messer, ich teile ihn zwischen ihnen.“ Die Jüngere rief: „Tu es nicht! Er ist ihr Sohn!“ So wusste Sulaiman, dass sie die Mutter war, und gab ihr das Kind."
+      ],
+      "kidsParagraphs": [
+        "Sulaiman war der Sohn Dawuds. Allah gab ihnen beiden Weisheit.",
+        "Zwei Frauen stritten um ein Baby. Sulaiman sagte, er werde das Baby in zwei Teile schneiden. Die echte Mutter rief: „Nein! Gib es ihr!“ So wusste Sulaiman, dass sie die wahre Mutter war."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 15,
+          "ayahEnd": 16
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 78,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "6769",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Es waren zwei Frauen, jede mit ihrem Sohn. Ein Wolf kam und holte den Sohn einer von ihnen. Die eine sagte zur anderen: ‚Er hat deinen Sohn geholt‘, und die andere sagte: ‚Er hat deinen Sohn geholt.‘ Sie brachten den Fall vor Dawud (a.s.), der zugunsten der Älteren urteilte. Dann gingen sie zu Sulaiman, dem Sohn Dawuds (a.s.), und berichteten es ihm. Er sagte: ‚Bringt mir ein Messer, ich teile ihn zwischen ihnen.‘ Die Jüngere sagte: ‚Tu es nicht, Allah erbarme Sich deiner! Er ist ihr Sohn.‘ Da urteilte er zugunsten der Jüngeren.“",
+          "match": "كانت امراتان معهما ابناهما جاء الذئب فذهب بابن احداهما"
+        }
+      ],
+      "lessons": [
+        "Weisheit ist ein Geschenk Allahs, das manchmal sogar Jungen gegeben wird.",
+        "Ein guter Richter sucht die Wahrheit, die in den Herzen verborgen ist.",
+        "Danke Allah für jede Gunst, wie Dawud und Sulaiman es taten."
+      ],
+      "quiz": [
+        {
+          "question": "Was erbte Sulaiman von Dawud?",
+          "options": [
+            "Prophetentum, Wissen und Königsherrschaft",
+            "Nur Gold",
+            "Ein Schiff",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        },
+        {
+          "question": "Wie fand Sulaiman die wahre Mutter?",
+          "options": [
+            "Er sagte, er werde das Kind in zwei Teile schneiden",
+            "Er fragte das Kind",
+            "Er sah auf ihre Kleidung",
+            "Er fragte die Nachbarn"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 6769"
+        },
+        {
+          "question": "Was taten die Schafe im Feld?",
+          "options": [
+            "Sie gerieten nachts hinein",
+            "Sie bewachten es",
+            "Sie bewässerten es",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:78"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-2",
+      "title": "Das Tal der Ameisen",
+      "paragraphs": [
+        "Sulaiman sagte: „O ihr Menschen, uns wurde die Sprache der Vögel gelehrt, und uns wurde von allem etwas gegeben. Das ist eine offenkundige Gunst.“ Seine Heerscharen aus Dschinn, Menschen und Vögeln wurden versammelt und zogen in Reihen.",
+        "Als sie zum Tal der Ameisen kamen, sagte eine Ameise: „O ihr Ameisen, geht in eure Wohnungen, damit Sulaiman und seine Heerscharen euch nicht zertreten, ohne es zu merken.“",
+        "Sulaiman lächelte über ihre Worte. Er wurde nicht hochmütig; er betete: „Mein Herr, gib mir ein, für Deine Gunst dankbar zu sein, die Du mir und meinen Eltern erwiesen hast, und Gutes zu tun, das Dir gefällt, und lass mich durch Deine Barmherzigkeit unter Deine rechtschaffenen Diener eingehen.“"
+      ],
+      "kidsParagraphs": [
+        "Sulaiman konnte Vögel und Tiere verstehen. Eines Tages kam sein Heer in ein Tal voller Ameisen.",
+        "Eine Ameise sagte: „Lauft nach Hause, damit Sulaimans Heer nicht auf euch tritt!“ Sulaiman lächelte und dankte Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 19,
+          "ayahEnd": 19
+        }
+      ],
+      "lessons": [
+        "Dankbarkeit ist die richtige Antwort auf jede Gabe.",
+        "Selbst ein kleines Geschöpf kann sich um seine Gemeinschaft sorgen.",
+        "Ein großer König kann sanft und demütig sein."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte die Ameise den anderen Ameisen?",
+          "options": [
+            "Geht in eure Wohnungen",
+            "Greift das Heer an",
+            "Sammelt Futter",
+            "Klettert auf die Bäume"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:18"
+        },
+        {
+          "question": "Wie reagierte Sulaiman auf die Worte der Ameise?",
+          "options": [
+            "Er wurde zornig",
+            "Er lächelte und dankte Allah",
+            "Er beachtete sie nicht",
+            "Er zerstörte das Tal"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:19"
+        },
+        {
+          "question": "Was wurde Sulaiman gelehrt zu verstehen?",
+          "options": [
+            "Die Sprache der Vögel",
+            "Die Sterne",
+            "Nur menschliche Sprachen",
+            "Zauberei"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-3",
+      "title": "Die Nachricht des Wiedehopfs",
+      "paragraphs": [
+        "Sulaiman musterte die Vögel und bemerkte, dass der Wiedehopf fehlte. Er war unzufrieden, es sei denn, der Vogel hätte eine gute Entschuldigung. Der Wiedehopf kehrte bald zurück: „Ich habe etwas erfahren, das du nicht weißt. Ich bringe dir aus Saba' eine sichere Nachricht.“",
+        "„Ich fand eine Frau, die über sie herrscht, der von allem etwas gegeben wurde und die einen gewaltigen Thron hat. Ich fand sie und ihr Volk, wie sie sich statt vor Allah vor der Sonne niederwerfen. Schaitan hat ihnen ihre Taten schön erscheinen lassen.“",
+        "Sulaiman sagte: „Wir werden sehen, ob du die Wahrheit gesagt hast.“ Er schickte den Wiedehopf mit einem Brief: „Im Namen Allahs, des Allerbarmers, des Barmherzigen. Seid nicht überheblich gegen mich, sondern kommt zu mir in Ergebenheit.“"
+      ],
+      "kidsParagraphs": [
+        "Der Wiedehopf flog in ein Land namens Saba'. Die Menschen dort beteten die Sonne an!",
+        "Sulaiman schickte den Wiedehopf mit einem Brief, der begann: „Im Namen Allahs, des Allerbarmers.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 20,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 27,
+          "ayahEnd": 31
+        }
+      ],
+      "lessons": [
+        "Prüfe Nachrichten, bevor du danach handelst.",
+        "Selbst ein Vogel kann zum Tauhid aufrufen.",
+        "Beginne wichtige Dinge mit „Im Namen Allahs“."
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Vogel fehlte?",
+          "options": [
+            "Der Rabe",
+            "Der Wiedehopf",
+            "Die Taube",
+            "Der Adler"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:20"
+        },
+        {
+          "question": "Was beteten die Menschen von Saba' an?",
+          "options": [
+            "Den Mond",
+            "Die Sonne",
+            "Das Feuer",
+            "Steinerne Götzen"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:24"
+        },
+        {
+          "question": "Wie begann Sulaimans Brief?",
+          "options": [
+            "Im Namen Allahs, des Allerbarmers, des Barmherzigen",
+            "Vom König",
+            "Grüße",
+            "Gehorcht mir"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:30"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-4",
+      "title": "Die Königin nimmt den Islam an",
+      "paragraphs": [
+        "Die Königin beriet sich mit ihren Würdenträgern, die zum Kampf bereit waren. Sie war weiser: Könige, die in ein Land eindringen, verderben es, sagte sie. Stattdessen schickte sie ein Geschenk. Sulaiman lehnte es ab: „Was Allah mir gegeben hat, ist besser als das, was Er euch gegeben hat.“",
+        "Während sie zu ihm reiste, fragte Sulaiman, wer ihm ihren Thron bringen könne. Einer der Dschinn bot an, ihn zu bringen, bevor Sulaiman sich von seinem Platz erhob. Einer, der Wissen von der Schrift hatte, sagte: „Ich bringe ihn dir, bevor dein Blick zu dir zurückkehrt.“ Und da stand er. Sulaiman sagte: „Das ist von der Huld meines Herrn, um mich zu prüfen, ob ich dankbar oder undankbar bin.“",
+        "Als die Königin ankam, erkannte sie ihren Thron, obwohl er verändert worden war. Dann betrat sie einen Palast, dessen Boden aus glattem Glas war, und hielt ihn für Wasser. Als sie all dies sah, sagte sie: „Mein Herr, ich habe mir selbst Unrecht getan, und ich ergebe mich mit Sulaiman Allah, dem Herrn der Welten.“"
+      ],
+      "kidsParagraphs": [
+        "Die Königin von Saba' schickte Sulaiman ein Geschenk, aber er wollte ihren Glauben, nicht ihr Gold.",
+        "Ihr Thron wurde Sulaiman im Nu gebracht! Als sie kam, sagte sie: „Ich ergebe mich mit Sulaiman Allah.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 34,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Der Name der Königin, Bilqis, und Geschichten über ihre Familie und ihre Ehe stammen aus späteren Berichten, nicht aus dem Koran oder authentischen Hadithen."
+        }
+      ],
+      "lessons": [
+        "Weise Herrscher ziehen Frieden und guten Rat vor.",
+        "Jede Gabe ist eine Prüfung: Werden wir dankbar sein?",
+        "Die Wahrheit wird von denen angenommen, die ehrlich zu sich selbst sind."
+      ],
+      "quiz": [
+        {
+          "question": "Was schickte die Königin Sulaiman?",
+          "options": [
+            "Ein Heer",
+            "Ein Geschenk",
+            "Eine Kriegserklärung",
+            "Nichts"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:35"
+        },
+        {
+          "question": "Was sagte Sulaiman, als der Thron erschien?",
+          "options": [
+            "Das ist von der Huld meines Herrn, um mich zu prüfen",
+            "Ich bin mächtig",
+            "Danke, Dschinn",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:40"
+        },
+        {
+          "question": "Was sagte die Königin am Ende?",
+          "options": [
+            "Ich ergebe mich mit Sulaiman Allah, dem Herrn der Welten",
+            "Ich will meinen Thron zurück",
+            "Ich werde kämpfen",
+            "Ich gehe nach Hause"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:44"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-5",
+      "title": "Der Wind, die Dschinn und sein Tod",
+      "paragraphs": [
+        "Sulaiman bat um ein Reich, wie es niemand nach ihm haben würde, und Allah erhörte ihn. Der Wind wehte auf seinen Befehl sanft, wohin er wollte, eine Monatsreise am Morgen und eine Monatsreise am Abend. Die Dschinn bauten für ihn mit Allahs Erlaubnis.",
+        "Später behaupteten manche, Sulaimans Macht stamme aus Zauberei. Der Koran spricht ihn frei: „Nicht Sulaiman war ungläubig, sondern die Teufel waren ungläubig, indem sie die Menschen die Zauberei lehrten.“",
+        "Sulaiman starb stehend, auf seinen Stab gestützt, und die Dschinn arbeiteten weiter, ohne es zu wissen. Erst als ein Tier der Erde seinen Stab zernagte und er fiel, merkten sie es. Hätten die Dschinn das Verborgene gekannt, wären sie nicht in der erniedrigenden Mühsal geblieben."
+      ],
+      "kidsParagraphs": [
+        "Allah gab Sulaiman Macht über den Wind, und die Dschinn arbeiteten für ihn.",
+        "Als Sulaiman auf seinen Stab gestützt starb, wussten es die Dschinn nicht einmal! Sie merkten es erst, als ein Insekt seinen Stab fraß. Nur Allah kennt das Verborgene."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 12,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 34,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        }
+      ],
+      "lessons": [
+        "Macht ist ein Geschenk Allahs, nicht der Zauberei.",
+        "Nur Allah kennt das Verborgene; weder die Dschinn noch Wahrsager.",
+        "Der Tod kommt zu jedem, selbst zum größten König."
+      ],
+      "quiz": [
+        {
+          "question": "Was tat der Wind für Sulaiman?",
+          "options": [
+            "Er wehte auf seinen Befehl",
+            "Er vernichtete nur seine Feinde",
+            "Nichts",
+            "Er brachte Regen"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:36"
+        },
+        {
+          "question": "Wer war laut 2:102 ungläubig, indem er Zauberei lehrte?",
+          "options": [
+            "Sulaiman",
+            "Die Teufel",
+            "Dawud",
+            "Die Ameisen"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:102"
+        },
+        {
+          "question": "Was zeigte den Dschinn, dass Sulaiman gestorben war?",
+          "options": [
+            "Ein Tier der Erde fraß seinen Stab",
+            "Ein Engel sagte es ihnen",
+            "Sein Sohn sagte es ihnen",
+            "Der Wind hörte auf"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:14"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "ilyas",
+  "language": "en",
+  "name": "Ilyas",
+  "title": "A messenger who called his people away from Ba'l",
+  "sentTo": "His people, who worshipped the idol Ba'l",
+  "era": "After Musa (AS), among the Prophets of the Children of Israel, according to most scholars; the Quran and Sunnah give no date. His place in this order is approximate.",
+  "places": [
+    {
+      "name": "Not known for certain. Many place him in the northern land of Israel or in Ba'labakk (Baalbek) in Lebanon, whose name recalls the idol Ba'l.",
+      "lat": 34.0,
+      "lng": 36.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Ilyas was one of the messengers. He called his people to fear Allah and stop worshipping the idol Ba'l. Most rejected him, but Allah saved His sincere servants and left peace upon Ilyas among later generations.",
+  "notes": [
+    "Most scholars identify Ilyas with Elijah of the Bible.",
+    "“Peace upon Ilyasin” (37:130): scholars explain it as another form of the name Ilyas, or as “the family of Yasin”, depending on the recitation.",
+    "A few early scholars said Ilyas was another name of Idris; most rejected this.",
+    "Reports that Ilyas is still alive and meets al-Khidr every year are not authentic."
+  ],
+  "chapters": [
+    {
+      "id": "ilyas-1",
+      "title": "“Will you not fear Allah?”",
+      "paragraphs": [
+        "Ilyas (AS) was one of the messengers. His people had turned to an idol called Ba'l.",
+        "He said to them: “Will you not fear Allah? Do you call upon Ba'l and abandon the Best of creators: Allah, your Lord and the Lord of your forefathers?”",
+        "His argument was simple: why pray to a statue that creates nothing, and leave the One who created you and your fathers before you?"
+      ],
+      "kidsParagraphs": [
+        "Ilyas's people prayed to an idol called Ba'l.",
+        "Ilyas said: “Why do you pray to an idol and leave Allah, who created you?”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 123,
+          "ayahEnd": 123
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "Only the Creator deserves worship.",
+        "Old customs are no excuse for worshipping others besides Allah.",
+        "A short, clear question can open a heart."
+      ],
+      "quiz": [
+        {
+          "question": "Which idol did Ilyas's people worship?",
+          "options": [
+            "Wadd",
+            "Ba'l",
+            "Hubal",
+            "The calf"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "What did Ilyas call Allah?",
+          "options": [
+            "The Best of creators",
+            "The god of the city",
+            "The king",
+            "The sun"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "What did Ilyas ask his people first?",
+          "options": [
+            "Will you not fear Allah?",
+            "Where is your king?",
+            "Will you build a ship?",
+            "Will you pay me?"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:124"
+        }
+      ]
+    },
+    {
+      "id": "ilyas-2",
+      "title": "Peace upon Ilyas",
+      "paragraphs": [
+        "His people rejected him, and the Quran says they will be brought to account, except Allah's sincere, chosen servants.",
+        "Allah left a lasting mention of him among later generations: “Peace upon Ilyasin.” Allah says: “Thus do We reward the doers of good. He was one of Our believing servants.”",
+        "Allah also names Ilyas with Zakariya, Yahya and Isa, and says: “All were among the righteous.”"
+      ],
+      "kidsParagraphs": [
+        "Most people did not listen to Ilyas, but Allah saved the sincere believers.",
+        "Allah says: “Peace upon Ilyas.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 127,
+          "ayahEnd": 128
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 129,
+          "ayahEnd": 132
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        }
+      ],
+      "lessons": [
+        "Allah honours His messengers even when their people reject them.",
+        "Sincerity is what saves people.",
+        "The good word about a person after them is a reward from Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Who were saved from Ilyas's people?",
+          "options": [
+            "Allah's sincere, chosen servants",
+            "No one",
+            "The rich",
+            "The soldiers"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:128"
+        },
+        {
+          "question": "With which Prophets is Ilyas named in 6:85?",
+          "options": [
+            "Zakariya, Yahya and Isa",
+            "Musa and Harun",
+            "Nuh and Hud",
+            "Dawud and Sulayman"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:85"
+        },
+        {
+          "question": "What did Allah leave for Ilyas among later generations?",
+          "options": [
+            "Peace",
+            "A palace",
+            "A book of law",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:130"
+        }
+      ]
+    }
+  ]
+}

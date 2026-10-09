@@ -1,0 +1,173 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ilyas",
+  "language": "zh",
+  "name": "易勒雅斯",
+  "title": "号召族人离弃巴尔的使者",
+  "sentTo": "他的族人，他们崇拜偶像巴尔",
+  "era": "大多数学者认为在穆萨（愿主赐他平安）之后，属于以色列后裔的先知；《古兰经》和圣训都没有给出年代。他在这个顺序中的位置是大致的。",
+  "places": [
+    {
+      "name": "不确定。许多人认为他在以色列地的北部，或在黎巴嫩的巴勒贝克，其名字让人想起偶像巴尔。",
+      "lat": 34.0,
+      "lng": 36.2,
+      "approximate": true
+    }
+  ],
+  "summary": "易勒雅斯是众使者之一。他号召族人敬畏真主，停止崇拜偶像巴尔。大多数人否认了他，但真主拯救了祂忠诚的仆人，并在后人中为易勒雅斯留下了平安。",
+  "notes": [
+    "大多数学者认为易勒雅斯就是《圣经》中的以利亚。",
+    "“祝易勒雅辛平安”（37:130）：学者们根据不同的读法，将其解释为易勒雅斯这个名字的另一种形式，或“雅辛的家属”。",
+    "少数早期学者说易勒雅斯是易德里斯的另一个名字；大多数人否定了这一说法。",
+    "关于易勒雅斯仍然活着、每年与黑德尔相会的传述是不可靠的。"
+  ],
+  "chapters": [
+    {
+      "id": "ilyas-1",
+      "title": "“你们怎么不敬畏真主呢？”",
+      "paragraphs": [
+        "易勒雅斯（愿主赐他平安）是众使者之一。他的族人转而崇拜一个叫巴尔的偶像。",
+        "他对他们说：“你们怎么不敬畏真主呢？难道你们祈祷巴尔，而舍弃最好的创造者——真主，你们的主和你们祖先的主吗？”",
+        "他的论证很简单：为什么向一个什么也不能创造的雕像祈祷，却舍弃了创造你们和你们祖先的主呢？"
+      ],
+      "kidsParagraphs": [
+        "易勒雅斯的族人向一个叫巴尔的偶像祈祷。",
+        "易勒雅斯说：“你们为什么向偶像祈祷，却舍弃创造你们的真主呢？”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 123,
+          "ayahEnd": 123
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "只有造物主才配受崇拜。",
+        "古老的习俗不是在真主之外崇拜其他的借口。",
+        "一个简短清楚的问题可以打开一颗心。"
+      ],
+      "quiz": [
+        {
+          "question": "易勒雅斯的族人崇拜哪个偶像？",
+          "options": [
+            "旺德",
+            "巴尔",
+            "胡伯勒",
+            "牛犊"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "易勒雅斯怎样称呼真主？",
+          "options": [
+            "最好的创造者",
+            "城市之神",
+            "国王",
+            "太阳"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "易勒雅斯首先问他的族人什么？",
+          "options": [
+            "你们怎么不敬畏真主呢？",
+            "你们的国王在哪里？",
+            "你们要造船吗？",
+            "你们会付我报酬吗？"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:124"
+        }
+      ]
+    },
+    {
+      "id": "ilyas-2",
+      "title": "祝易勒雅斯平安",
+      "paragraphs": [
+        "他的族人否认了他，《古兰经》说他们将被带去受审判，只有真主忠诚的、被拣选的仆人除外。",
+        "真主在后人中为他留下了长久的美名：“祝易勒雅辛平安！”真主说：“我必定要这样报酬行善者。他确是我的信道的仆人。”",
+        "真主还把易勒雅斯与宰凯里雅、叶哈雅和尔撒一同提及，并说：“他们都是清廉的人。”"
+      ],
+      "kidsParagraphs": [
+        "大多数人不听易勒雅斯的话，但真主拯救了忠诚的信士。",
+        "真主说：“祝易勒雅斯平安！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 127,
+          "ayahEnd": 128
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 129,
+          "ayahEnd": 132
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        }
+      ],
+      "lessons": [
+        "即使族人否认，真主也尊荣祂的使者。",
+        "使人得救的是忠诚。",
+        "一个人身后留下的好名声是来自真主的报酬。"
+      ],
+      "quiz": [
+        {
+          "question": "易勒雅斯的族人中谁得救了？",
+          "options": [
+            "真主忠诚的、被拣选的仆人",
+            "没有人",
+            "富人",
+            "士兵"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:128"
+        },
+        {
+          "question": "在6:85中，易勒雅斯和哪些先知一同被提及？",
+          "options": [
+            "宰凯里雅、叶哈雅和尔撒",
+            "穆萨和哈伦",
+            "努哈和呼德",
+            "达乌德和苏莱曼"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:85"
+        },
+        {
+          "question": "真主在后人中为易勒雅斯留下了什么？",
+          "options": [
+            "平安",
+            "一座宫殿",
+            "一部法典",
+            "什么也没有"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:130"
+        }
+      ]
+    }
+  ]
+}

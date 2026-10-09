@@ -1,0 +1,279 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "zakariya",
+  "language": "fr",
+  "name": "Zakariya",
+  "title": "Le tuteur de Maryam, qui pria en secret",
+  "sentTo": "Les Enfants d'Israël",
+  "era": "Juste avant Issa (paix sur lui), vers la fin du Ier siècle av. J.-C. ; le Coran ne donne aucune date.",
+  "places": [
+    {
+      "name": "Jérusalem (al-Quds), autour du Temple où servait Zakariya.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Un prophète âgé qui servait dans le lieu de culte et prit soin de la jeune Maryam. Voyant la subsistance d'Allah lui parvenir, il pria discrètement pour un enfant vertueux, bien qu'il fût très âgé et que sa femme fût stérile. Allah lui donna Yahya.",
+  "notes": [
+    "Le nom de la mère de Maryam (Hanna) et d'autres détails familiaux viennent de sources tardives, non du Coran ni des hadiths authentiques.",
+    "Les récits sur la mort de Zakariya (certains disent qu'il fut tué) viennent de rapports absents du Coran et des hadiths authentiques.",
+    "La femme de Zakariya était-elle la sœur de Maryam ou la sœur de sa mère ? Les récits divergent."
+  ],
+  "chapters": [
+    {
+      "id": "zakariya-1",
+      "title": "Le tuteur de Maryam",
+      "paragraphs": [
+        "La femme de 'Imran avait voué l'enfant qu'elle portait au service d'Allah. Quand elle mit au monde une fille, elle la nomma Maryam et demanda à Allah de la protéger, elle et sa descendance, de Shaytan. Allah accueillit Maryam d'un bel accueil.",
+        "Les hommes qui servaient dans le lieu de culte tirèrent au sort avec leurs calames pour décider qui s'occuperait d'elle, et le sort désigna Zakariya (paix sur lui). Chaque fois qu'il entrait dans son sanctuaire, il trouvait de la nourriture auprès d'elle. « Ô Maryam, d'où cela te vient-il ? » Elle dit : « Cela vient d'Allah. Allah pourvoit qui Il veut sans compter. »",
+        "Zakariya était un prophète qui travaillait pour gagner sa vie. Le Prophète ﷺ a dit : « Zakariya était charpentier. »"
+      ],
+      "kidsParagraphs": [
+        "Zakariya s'occupait de la jeune Maryam. Chaque fois qu'il lui rendait visite, elle avait de la nourriture venant d'Allah !",
+        "Zakariya était un prophète, et il travaillait aussi comme charpentier."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2379",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Zakariya était charpentier. »",
+          "match": "كان زكرياء نجارا"
+        }
+      ],
+      "lessons": [
+        "Allah pourvoit qui Il veut, d'où l'on ne s'y attend pas.",
+        "Prendre soin des orphelins et des jeunes est une noble tâche.",
+        "Le travail honnête de ses mains est la voie des prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Qui prit soin de Maryam ?",
+          "options": [
+            "Zakariya",
+            "Yahya",
+            "Haroun",
+            "'Imran"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "Que trouva Zakariya auprès de Maryam ?",
+          "options": [
+            "De la nourriture venant d'Allah",
+            "De l'or",
+            "Un livre",
+            "Un agneau"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "Quel était le métier de Zakariya, selon le Prophète ﷺ ?",
+          "options": [
+            "Charpentier",
+            "Berger",
+            "Forgeron",
+            "Marchand"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2379"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-2",
+      "title": "Une prière discrète",
+      "paragraphs": [
+        "Voyant comment Allah pourvoyait Maryam, Zakariya se tourna vers son Seigneur par une prière discrète et intime. Il était très âgé, et sa femme n'avait jamais eu d'enfant.",
+        "« Mon Seigneur, mes os se sont affaiblis et ma tête s'est blanchie de vieillesse, et je n'ai jamais été déçu en T'invoquant. Je crains ce que feront mes proches après moi, et ma femme est stérile. Accorde-moi donc de Ta part un héritier, et fais qu'il Te soit agréable. »",
+        "Il pria aussi : « Mon Seigneur, ne me laisse pas seul, et Tu es le meilleur des héritiers. »"
+      ],
+      "kidsParagraphs": [
+        "Zakariya était très âgé et n'avait pas d'enfant. Il pria discrètement Allah pour avoir un bon enfant.",
+        "Il dit : « Je n'ai jamais été déçu quand je T'ai demandé, mon Seigneur ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 2,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 4,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 89,
+          "ayahEnd": 89
+        }
+      ],
+      "lessons": [
+        "Prie discrètement et humblement ; Allah entend la prière la plus douce.",
+        "Rappelle-toi comment Allah t'a exaucé auparavant.",
+        "Ne pense jamais que quelque chose est trop difficile pour Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Comment Zakariya pria-t-il ?",
+          "options": [
+            "À haute voix au marché",
+            "Discrètement et en privé",
+            "Il ne pria pas",
+            "Seulement en groupe"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:3"
+        },
+        {
+          "question": "Que dit Zakariya de ses prières passées ?",
+          "options": [
+            "Il n'avait jamais été déçu en invoquant Allah",
+            "Elles n'avaient jamais été exaucées",
+            "Il n'avait jamais prié",
+            "Il les avait oubliées"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:4"
+        },
+        {
+          "question": "Que demanda Zakariya ?",
+          "options": [
+            "Un héritier agréable à Allah",
+            "La richesse",
+            "Un palais",
+            "Seulement la santé"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:6"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-3",
+      "title": "La bonne nouvelle de Yahya",
+      "paragraphs": [
+        "Tandis que Zakariya se tenait debout en prière dans son sanctuaire, les anges l'appelèrent : « Allah t'annonce la bonne nouvelle de Yahya, qui confirmera une parole venant d'Allah, un chef, chaste, et un prophète parmi les vertueux. » Allah dit qu'Il n'avait donné ce nom à personne auparavant.",
+        "Zakariya fut stupéfait : « Comment aurais-je un fils alors que je suis si vieux et que ma femme est stérile ? » La réponse vint : « Ton Seigneur dit : cela M'est facile. Je t'ai créé auparavant, alors que tu n'étais rien. »",
+        "Il demanda un signe, et on lui dit qu'il ne parlerait pas aux gens pendant trois nuits, bien qu'en bonne santé. Il sortit vers son peuple et leur fit signe de glorifier Allah matin et soir. Allah dit de la famille de Zakariya : « Ils s'empressaient vers les bonnes œuvres et Nous invoquaient avec espoir et crainte, et ils étaient humbles devant Nous. »"
+      ],
+      "kidsParagraphs": [
+        "Les anges dirent à Zakariya : « Tu auras un fils nommé Yahya ! »",
+        "Comme signe, Zakariya ne put parler pendant trois nuits. Il faisait des signes aux gens pour qu'ils glorifient Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 10,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 90,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "Allah exauce les prières au moment parfait qu'Il choisit.",
+        "Empresse-toi vers les bonnes œuvres et prie avec espoir et crainte.",
+        "Ce qui semble impossible est facile pour Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Quel était le nom du fils de Zakariya ?",
+          "options": [
+            "Issa",
+            "Yahya",
+            "Yusuf",
+            "Moussa"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:7"
+        },
+        {
+          "question": "Quel fut le signe de Zakariya ?",
+          "options": [
+            "Il ne put parler aux gens pendant trois nuits",
+            "Une étoile apparut",
+            "La pluie tomba",
+            "Il fit un rêve"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:10"
+        },
+        {
+          "question": "Comment la famille de Zakariya invoquait-elle Allah ?",
+          "options": [
+            "Avec espoir et crainte",
+            "Seulement dans l'épreuve",
+            "Jamais",
+            "Avec orgueil"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:90"
+        }
+      ]
+    }
+  ]
+}

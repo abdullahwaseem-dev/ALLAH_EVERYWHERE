@@ -1,0 +1,357 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "lut",
+  "language": "en",
+  "name": "Lut",
+  "title": "The nephew of Ibrahim (AS), sent to a corrupt city",
+  "sentTo": "The people of the cities by the Dead Sea, among whom he lived",
+  "era": "The time of Ibrahim (AS), whose nephew he was. No date is given in the Quran or Sunnah.",
+  "places": [
+    {
+      "name": "The cities of Lut's people, which tradition places near the Dead Sea. The Quran says they lie on a road that people still travel (15:76).",
+      "lat": 31.3,
+      "lng": 35.45,
+      "approximate": true
+    }
+  ],
+  "summary": "Lut believed in his uncle Ibrahim (AS) and emigrated with him. Allah sent him to a people who committed a shameful sin that no one had done before them and who refused every warning. Angels came to save Lut and his family, and the cities were overturned. Only his wife, who sided with the wrongdoers, was not saved.",
+  "notes": [
+    "The names Sodom and Gomorrah are not in the Quran; they come from the Bible.",
+    "“These are my daughters” (11:78, 15:71): many scholars say Lut meant the women of his nation, since a Prophet is like a father to his people, and that he was calling them to lawful marriage. Others say he meant his own daughters in marriage.",
+    "Lut's wife: the Bible says she turned into a pillar of salt when she looked back. The Quran says only that she was among those who stayed behind and were destroyed.",
+    "The story is told here in general terms suitable for all ages; parents may explain the details as they see fit."
+  ],
+  "chapters": [
+    {
+      "id": "lut-1",
+      "title": "Lut believes and emigrates",
+      "paragraphs": [
+        "When Ibrahim (AS) called his people to Allah and was saved from the fire, one young man believed in him: his nephew Lut. Ibrahim said: “I will emigrate to my Lord,” and Allah brought them both to the blessed land.",
+        "Allah then made Lut a Prophet and sent him to the people of nearby cities. They had fallen into a shameful sin that no people in the world had done before them: men desired men instead of women. They also did evil openly in their gatherings.",
+        "Lut warned them again and again. Their answer was: “Drive them out of your town! They are people who want to keep themselves pure.”"
+      ],
+      "kidsParagraphs": [
+        "Lut believed in his uncle Ibrahim and travelled with him for the sake of Allah.",
+        "Allah sent Lut to a people who did very shameful things. When Lut warned them, they wanted to throw him out of their town."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 80,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 82,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Faith can mean leaving a familiar place for the sake of Allah.",
+        "Calling to good includes warning against what is shameful.",
+        "Wrongdoers often attack people just for wanting to be pure."
+      ],
+      "quiz": [
+        {
+          "question": "Whose nephew was Lut (AS)?",
+          "options": [
+            "Nuh (AS)",
+            "Ibrahim (AS)",
+            "Musa (AS)",
+            "Yusuf (AS)"
+          ],
+          "answer": 1,
+          "reference": "Quran 29:26"
+        },
+        {
+          "question": "What did Lut's people say about him and his family?",
+          "options": [
+            "They are people who keep themselves pure",
+            "They are rich",
+            "They are kings",
+            "They are strangers"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:82"
+        },
+        {
+          "question": "What did Lut's people want to do to him?",
+          "options": [
+            "Make him king",
+            "Drive him out of the town",
+            "Give him gifts",
+            "Follow him"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:82"
+        }
+      ]
+    },
+    {
+      "id": "lut-2",
+      "title": "The guests",
+      "paragraphs": [
+        "The angels who had brought Ibrahim the good news of Ishaq told him they were going on to the people of Lut. Ibrahim said: “But Lut is there!” They answered that they would save him and his family, except his wife.",
+        "The angels came to Lut looking like handsome young men. Lut was deeply worried for his guests, because he knew his people. “This is a hard day,” he said.",
+        "His people rushed to his house. Lut begged them to fear Allah and not to disgrace him in front of his guests, and pointed them to lawful marriage instead. They refused. Alone and without help, Lut said: “If only I had strength against you, or could take refuge in a strong support!”"
+      ],
+      "kidsParagraphs": [
+        "Angels came to Lut looking like men. Lut was worried that his people would hurt his guests.",
+        "Lut said: “Fear Allah! Do not shame me in front of my guests.” He felt alone, but Allah was with him."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 31,
+          "ayahEnd": 32
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 77,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 68,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        }
+      ],
+      "lessons": [
+        "Protecting guests is a matter of honour and faith.",
+        "A believer is never truly alone: Allah is the strongest support.",
+        "Fearing Allah should stop us before we harm others."
+      ],
+      "quiz": [
+        {
+          "question": "Who visited Lut?",
+          "options": [
+            "Merchants",
+            "Angels",
+            "Kings",
+            "Shepherds"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "What did Lut call the day his guests came?",
+          "options": [
+            "A happy day",
+            "A hard day",
+            "A holiday",
+            "A lucky day"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Whom did the angels say they would not save?",
+          "options": [
+            "Lut's wife",
+            "Lut's daughters",
+            "Lut",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Quran 29:32"
+        }
+      ]
+    },
+    {
+      "id": "lut-3",
+      "title": "Leaving by night",
+      "paragraphs": [
+        "Then the angels revealed who they were: “O Lut, we are messengers of your Lord. They will never reach you.” They told him to leave with his family during the night, to walk behind them, and that none of them should look back.",
+        "The punishment would come at dawn. Lut left with his believing family. His wife was not with the saved; she had sided with the wrongdoers.",
+        "The Prophet Muhammad ﷺ said: “May Allah have mercy on Lut; he was taking refuge in a strong support.” In other words, Lut was never really alone: his support was Allah."
+      ],
+      "kidsParagraphs": [
+        "The angels said: “Do not be afraid, Lut! Leave at night with your family, and do not look back.”",
+        "The Prophet ﷺ said Lut had a strong support: Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 81,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 65,
+          "ayahEnd": 66
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “…May Allah have mercy on Lut; he was taking refuge in a strong support…”",
+          "match": "ويرحم الله لوطا لقد كان ياوي الى ركن شديد",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah's help comes at the right time.",
+        "Obey Allah's instructions exactly, even small ones like “do not look back”.",
+        "Allah is the strongest support of the believers."
+      ],
+      "quiz": [
+        {
+          "question": "When did Lut and his family leave?",
+          "options": [
+            "At noon",
+            "During the night",
+            "After a week",
+            "They never left"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:81"
+        },
+        {
+          "question": "When was the punishment to come?",
+          "options": [
+            "At dawn",
+            "At sunset",
+            "In a year",
+            "At midnight"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:66"
+        },
+        {
+          "question": "According to the Prophet ﷺ, Lut was taking refuge in…",
+          "options": [
+            "His tribe",
+            "A strong support",
+            "A cave",
+            "A ship"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3372"
+        }
+      ]
+    },
+    {
+      "id": "lut-4",
+      "title": "A sign for those who think",
+      "paragraphs": [
+        "At sunrise a dreadful blast seized them, and Allah turned their cities upside down and rained upon them stones of baked clay, marked by their Lord.",
+        "Allah saved Lut and all his family except his wife. The Quran gives her, with the wife of Nuh, as an example of those who disbelieved even though they lived with righteous Prophets.",
+        "The Quran says the ruins of those cities lie on a road that people still travel, and that the Arabs passed by them morning and evening. “Will you not then use your reason?”"
+      ],
+      "kidsParagraphs": [
+        "Allah turned their cities upside down. Only Lut and the believers were saved.",
+        "Allah left their ruins as a lesson for people who think."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 82,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 73,
+          "ayahEnd": 74
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 133,
+          "ayahEnd": 136
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 137,
+          "ayahEnd": 138
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 76,
+          "ayahEnd": 77
+        }
+      ],
+      "lessons": [
+        "Every sin that is persisted in and spread openly invites Allah's punishment.",
+        "Family ties do not save a person; faith does.",
+        "History is full of signs for those who reflect."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah rain upon Lut's people?",
+          "options": [
+            "Water",
+            "Stones of baked clay",
+            "Fire",
+            "Snow"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:82"
+        },
+        {
+          "question": "Who from Lut's family was not saved?",
+          "options": [
+            "His wife",
+            "His daughters",
+            "Lut",
+            "No one"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:135"
+        },
+        {
+          "question": "When did the blast seize them?",
+          "options": [
+            "At sunrise",
+            "At midnight",
+            "At noon",
+            "At sunset"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:73"
+        }
+      ]
+    }
+  ]
+}

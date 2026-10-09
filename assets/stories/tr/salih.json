@@ -1,0 +1,344 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "salih",
+  "language": "tr",
+  "name": "Salih",
+  "title": "Semûd kavmine gönderilen resul",
+  "sentTo": "Kendi kavmi olan Semûd kavmi",
+  "era": "Âd'dan sonra. Kur'an Semûd'un Âd'dan sonra halef kılındığını söyler (7:74); tarih verilmez.",
+  "places": [
+    {
+      "name": "Kuzeybatı Arabistan'daki el-Hicr (15:80). Kayaya oyulmuş mezarları hâlâ görülebilen Medâin-i Salih (Hegra) olarak bilinir.",
+      "lat": 26.79,
+      "lng": 37.95,
+      "approximate": true
+    }
+  ],
+  "summary": "Salih, evlerini dağlara oyan Semûd kavmine gönderildi. Allah onlara bir mucize olarak bir dişi deve verdi ve ona zarar vermemeleri konusunda uyardı. Onu öldürdüler ve korkunç bir sayha onları helak etti; Salih ve müminler ise kurtarıldı.",
+  "notes": [
+    "Devenin ortaya çıkışına dair ayrıntılar (örneğin insanların isteğiyle bir kayadan çıkması) Kur'an'dan veya sahih hadislerden değil, tefsir ve tarih kitaplarındaki rivayetlerden gelir.",
+    "Medâin-i Salih'teki kaya mezarları, Semûd'dan sonraki Nabatî dönemine aittir; el-Hicr'in bu bölgeyle eşleştirilmesi Peygamber'in ﷺ oradan geçmesine dayanır, ama hangi kalıntıların Semûd'a ait olduğu kesin değildir.",
+    "Deveyi öldürenin adı (genellikle Kudâr olarak verilir) sonraki rivayetlerden gelir."
+  ],
+  "chapters": [
+    {
+      "id": "salih-1",
+      "title": "Dağları oyanlar",
+      "paragraphs": [
+        "Âd'dan sonra Allah yeryüzüne başka bir kavim yerleştirdi: Semûd. Kuzeybatı Arabistan'daki el-Hicr'de, bahçeler, pınarlar, ekinler ve meyvesi bol hurmalıklar arasında yaşıyorlardı.",
+        "Usta inşaatçılardı. Ovalarda saraylar kurar, dağlarda evler oyarlardı. Ama kendilerinden önceki Âd gibi, bütün bunları kendilerine verene unuttular ve aralarındaki kibirliler diğerlerine önderlik etti."
+      ],
+      "kidsParagraphs": [
+        "Semûd kavmi bahçeler ve pınarlar arasında yaşıyordu.",
+        "Dağlara evler oydular. Ama Allah'a şükretmeyi unuttular."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 146,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 74,
+          "ayahEnd": 74
+        }
+      ],
+      "lessons": [
+        "Beceri ve rahatlık Allah'ın nimetleridir, kibir sebebi değildir.",
+        "Bizden önceki milletlerden ders alın.",
+        "Rahatlık insanlara ahireti unutturabilir."
+      ],
+      "quiz": [
+        {
+          "question": "Semûd dağlara ne oydu?",
+          "options": [
+            "Heykeller",
+            "Evler",
+            "Gemiler",
+            "Kuyular"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Semûd hangi kavimden sonra geldi?",
+          "options": [
+            "Âd",
+            "Lut kavmi",
+            "Musa kavmi",
+            "Romalılar"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Kur'an 26:147-148'e göre Semûd'un neyi vardı?",
+          "options": [
+            "Bahçeler, pınarlar ve hurmalıklar",
+            "Gemiler ve limanlar",
+            "Kar ve buz",
+            "Altın madenleri"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:147-148"
+        }
+      ]
+    },
+    {
+      "id": "salih-2",
+      "title": "Allah'ın devesi",
+      "paragraphs": [
+        "Allah onlara kardeşleri Salih'i (a.s.) gönderdi: \"Ey kavmim! Allah'a ibadet edin; sizin O'ndan başka ilahınız yoktur. Sizi yerden O yarattı ve orada yaşattı; öyleyse O'ndan bağışlanma dileyin ve O'na tövbe edin.\"",
+        "Daha önce Salih'ten büyük umutlar besliyorlardı. Şimdi onun mesajından şüphe ettiklerini söylediler ve ona büyülenmiş dediler: \"Sen de bizim gibi bir insansın; doğru söylüyorsan bir mucize getir.\"",
+        "Allah onlara açık bir mucize verdi: bir dişi deve. Salih onlara: \"Bu, Allah'ın devesidir, size bir mucizedir. Bırakın Allah'ın arzında otlasın ve ona hiçbir kötülük dokundurmayın\" dedi. Su paylaşılacaktı: bir gün o içecek, bir gün onlar."
+      ],
+      "kidsParagraphs": [
+        "Salih kavmine sadece Allah'a ibadet etmelerini söyledi. Onlar bir mucize istediler.",
+        "Allah onlara özel bir deve verdi. Salih: \"Ona zarar vermeyin. Bir gün o içer, ertesi gün siz\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 61,
+          "ayahEnd": 61
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 62,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 153,
+          "ayahEnd": 154
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 64,
+          "ayahEnd": 64
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 155,
+          "ayahEnd": 156
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Bazı kitaplar, insanların tam da bu mucizeyi istemeleri üzerine devenin onların gözü önünde katı bir kayadan, hem de gebe olarak çıktığını söyler."
+        }
+      ],
+      "lessons": [
+        "Allah'ın mucizeleri hem rahmet hem imtihandır.",
+        "Adilce paylaşmak Allah'a itaatin bir parçasıdır.",
+        "Mucize istemek kolaydır; asıl imtihan, ondan sonra iman edip itaat etmektir."
+      ],
+      "quiz": [
+        {
+          "question": "Allah Semûd'a hangi mucizeyi verdi?",
+          "options": [
+            "Bir asa",
+            "Bir dişi deve",
+            "Bir gemi",
+            "Bir bulut"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:64"
+        },
+        {
+          "question": "Su nasıl paylaşıldı?",
+          "options": [
+            "Deve hiç içmezdi",
+            "Bir gün deve, bir gün onlar içerdi",
+            "Sadece önderler içerdi",
+            "Önce onlar içerdi"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:155"
+        },
+        {
+          "question": "Semûd Salih'e ne dedi?",
+          "options": [
+            "Kral",
+            "Büyülenmiş",
+            "Tüccar",
+            "Melek"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:153"
+        }
+      ]
+    },
+    {
+      "id": "salih-3",
+      "title": "Deveyi kestiler",
+      "paragraphs": [
+        "Kibirli önderler iman etmeyi reddettiler ve iman eden zayıfları küçümsediler. Sonra aralarındaki en bedbaht kişi öne çıktı; deveyi kesip öldürdüler.",
+        "Salih'e meydan okudular: \"Eğer resulsen bize vaat ettiğin şeyi getir.\" Salih onlara: \"Yurdunuzda üç gün daha yaşayın. Bu, yalanlanmayacak bir vaattir\" dedi."
+      ],
+      "kidsParagraphs": [
+        "Kibirli insanlar Allah'ın devesini öldürdüler.",
+        "Salih onları uyardı: \"Sadece üç gününüz kaldı.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 75,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 91,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 65,
+          "ayahEnd": 65
+        }
+      ],
+      "lessons": [
+        "Allah'ın emrini açıkça çiğnemek O'nun azabını getirir.",
+        "Bir suça razı olan ona ortak olur.",
+        "Bir uyarıyla alay etmek onu ortadan kaldırmaz."
+      ],
+      "quiz": [
+        {
+          "question": "Semûd deveye ne yaptı?",
+          "options": [
+            "Onu sattılar",
+            "Onu kestiler",
+            "Onu sakladılar",
+            "Onu beslediler"
+          ],
+          "answer": 1,
+          "reference": "Quran 91:14"
+        },
+        {
+          "question": "Salih bundan sonra onlara kaç gün verdi?",
+          "options": [
+            "Yedi",
+            "Üç",
+            "Kırk",
+            "On"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:65"
+        },
+        {
+          "question": "Deveyi öldürmek için kim öne çıktı?",
+          "options": [
+            "Aralarındaki en bedbaht kişi",
+            "Salih'in oğlu",
+            "Bir yabancı",
+            "Mısır kralı"
+          ],
+          "answer": 0,
+          "reference": "Quran 91:12"
+        }
+      ]
+    },
+    {
+      "id": "salih-4",
+      "title": "el-Hicr'in harabeleri",
+      "paragraphs": [
+        "Allah'ın emri gelince, rahmetiyle Salih'i ve onunla birlikte iman edenleri kurtardı. Korkunç bir sayha ve bir sarsıntı zalimleri yakaladı; sabah olduğunda evlerinde cansız yatıyorlardı, sanki orada hiç oturmamışlar gibi.",
+        "Salih onlardan yüz çevirip şöyle dedi: \"Ey kavmim! Size Rabbimin mesajını tebliğ ettim ve size öğüt verdim; ama siz öğüt verenleri sevmiyorsunuz.\"",
+        "Yüzyıllar sonra Peygamber ﷺ ashabıyla el-Hicr'den geçti. Onlara, kendilerine zulmedenlerin yurtlarına ancak ağlayarak girmelerini, ki onlara isabet edenin kendilerine de isabet etmemesi için, söyledi ve yüzünü örttü."
+      ],
+      "kidsParagraphs": [
+        "Allah Salih'i ve müminleri kurtardı. Korkunç bir sayha diğerlerini helak etti.",
+        "Peygamber ﷺ onların harabelerinin yanından geçerken: \"Oraya ancak ağlayarak girin\" dedi. Ders almamızı ve alçakgönüllü olmamızı istiyordu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3380",
+          "narrator": "Abdullah b. Ömer",
+          "translation": "Peygamber ﷺ el-Hicr'den geçerken şöyle buyurdu: \"Kendilerine zulmedenlerin yurtlarına, onlara isabet edenin size de isabet etmemesi için, ancak ağlayarak girin.\" Sonra devesinin üzerindeyken ridasıyla başını örttü.",
+          "match": "لا تدخلوا مساكن الذين ظلموا الا ان تكونوا باكين"
+        }
+      ],
+      "lessons": [
+        "Azap yerleri eğlence için değil, ibret almak içindir.",
+        "Bir peygamberin öğüdü, insanlar reddetse bile samimidir.",
+        "Allah, helak olan bir kavmin içinde bile müminleri kurtarır."
+      ],
+      "quiz": [
+        {
+          "question": "Semûd'un zalimlerini ne yakaladı?",
+          "options": [
+            "Bir sel",
+            "Korkunç bir sayha ve sarsıntı",
+            "Bir ateş",
+            "Yedi gecelik bir rüzgâr"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:67"
+        },
+        {
+          "question": "Peygamber ﷺ el-Hicr'den geçerken ne dedi?",
+          "options": [
+            "Girin ve dinlenin",
+            "Oraya ancak ağlayarak girin",
+            "Orada bir mescit yapın",
+            "Kuyularından için"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3380"
+        },
+        {
+          "question": "Salih onlardan yüz çevirirken ne dedi?",
+          "options": [
+            "Size Rabbimin mesajını tebliğ ettim ve öğüt verdim",
+            "Geri döneceğim",
+            "Siz haklıydınız",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:79"
+        }
+      ]
+    }
+  ]
+}

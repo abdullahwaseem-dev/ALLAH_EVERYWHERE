@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:adhan/adhan.dart';
 import 'package:allah_everywhere/privacy_policy.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
@@ -6,7 +8,10 @@ import 'package:allah_everywhere/controllers/theme_controller.dart';
 import 'package:allah_everywhere/controllers/language_controller.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
 import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/services/push_notification_service.dart';
 import 'package:allah_everywhere/services/quran_audio_service.dart';
+import 'package:allah_everywhere/services/islamic_calendar_service.dart';
+import 'package:allah_everywhere/services/adhkar_service.dart';
 import 'package:allah_everywhere/data/reciters_data.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +19,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:allah_everywhere/services/app_share_service.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
 
 import 'change_password_screen.dart';
 import 'editprofilescreen.dart';
+import 'help_faq.dart';
+import 'adhan_sound_settings.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class SettingsScreen extends StatefulWidget {
   @override
@@ -42,8 +52,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
   String? _selectedRegion;
   bool _notificationsEnabled = true;
   bool _updatesEnabled = false;
+  bool _challengeNotifications = PushNotificationService.challengeNotificationsEnabled;
   bool _quranReminderEnabled = false;
   TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
+  bool _jumuahReminderEnabled = true;
+  TimeOfDay _jumuahReminderTime = const TimeOfDay(hour: 9, minute: 0);
+  bool _jumuahAsrReminderEnabled = false;
+  int _hijriAdjustment = 0;
+  bool _whiteDaysReminder = false;
+  bool _mondayThursdayReminder = false;
+  bool _importantDatesReminder = true;
+  bool _morningAdhkarReminder = false;
+  bool _eveningAdhkarReminder = false;
   String _selectedReciterId = 'ar.alafasy';
 
   @override
@@ -53,6 +73,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _notificationsEnabled = _notificationsService.notificationsEnabled;
     _quranReminderEnabled = _notificationsService.quranReminderEnabled;
     _reminderTime = _notificationsService.reminderTime;
+    _jumuahReminderEnabled = _notificationsService.jumuahReminderEnabled;
+    _jumuahReminderTime = _notificationsService.jumuahReminderTime;
+    _jumuahAsrReminderEnabled = _notificationsService.jumuahAsrReminderEnabled;
+    _hijriAdjustment = IslamicCalendarService.adjustment;
+    _whiteDaysReminder = IslamicCalendarService.whiteDaysReminder;
+    _mondayThursdayReminder = IslamicCalendarService.mondayThursdayReminder;
+    _importantDatesReminder = IslamicCalendarService.importantDatesReminder;
+    _morningAdhkarReminder = AdhkarService.morningReminderEnabled;
+    _eveningAdhkarReminder = AdhkarService.eveningReminderEnabled;
     _updatesEnabled = VoidStorage().readData<bool>(_updatesKey) ?? false;
     _selectedReciterId = QuranAudioService.selectedReciterId;
   }
@@ -85,6 +114,52 @@ class _SettingsScreenState extends State<SettingsScreen> {
         );
       },
     );
+  }
+
+  String _signedDays(int days) => days > 0 ? '+$days' : '$days';
+
+  void _showHijriAdjustmentDialog(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(t.hijriAdjustment),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(t.hijriAdjustmentSubtitle),
+            SizedBox(height: 8.h),
+            for (int days = IslamicCalendarService.minAdjustment; days <= IslamicCalendarService.maxAdjustment; days++)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                title: Text(days == 0 ? t.hijriAdjustmentNone : _signedDays(days)),
+                trailing: days == _hijriAdjustment ? const Icon(Icons.check, color: Colors.green) : null,
+                onTap: () async {
+                  Navigator.pop(context);
+                  setState(() => _hijriAdjustment = days);
+                  await IslamicCalendarService.setAdjustment(days);
+                  if (Get.isRegistered<PrayerTimesController>()) {
+                    Get.find<PrayerTimesController>().refreshIslamicDate();
+                  }
+                  await _notificationsService.scheduleIslamicCalendarReminders();
+                },
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _setCalendarReminder(String key, bool value, void Function(bool) apply) async {
+    setState(() => apply(value));
+    await VoidStorage().saveData(key, value);
+    await _notificationsService.scheduleIslamicCalendarReminders();
+  }
+
+  Future<void> _setAdhkarReminder(String key, bool value, void Function(bool) apply) async {
+    setState(() => apply(value));
+    await VoidStorage().saveData(key, value);
+    await _notificationsService.scheduleAdhkarReminders();
   }
 
   Future<void> _contactForAppreciation(BuildContext context) async {
@@ -160,12 +235,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final t = AppLocalizations.of(context)!;
     final prayerController = Get.isRegistered<PrayerTimesController>()
         ? Get.find<PrayerTimesController>()
-        : Get.put(PrayerTimesController());
+        : Get.put(PrayerTimesController(), permanent: true);
 
     showDialog(
       context: context,
       builder: (context) {
-        var method = prayerController.calculationMethod;
+        CalculationMethod? method = prayerController.manualCalculationMethod;
         var madhab = prayerController.madhab;
         return StatefulBuilder(
           builder: (context, setDialogState) {
@@ -176,15 +251,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Calculation Method', style: TextStyle(fontWeight: FontWeight.bold)),
-                  DropdownButton<CalculationMethod>(
+                  DropdownButton<CalculationMethod?>(
                     isExpanded: true,
                     value: method,
-                    onChanged: (value) {
-                      if (value != null) setDialogState(() => method = value);
-                    },
-                    items: CalculationMethod.values
-                        .map((m) => DropdownMenuItem(value: m, child: Text(m.name)))
-                        .toList(),
+                    onChanged: (value) => setDialogState(() => method = value),
+                    items: [
+                      // null = pick by the user's country.
+                      DropdownMenuItem<CalculationMethod?>(
+                        value: null,
+                        child: Text(t.calculationAutomatic(prayerController.automaticCalculationMethod.name)),
+                      ),
+                      ...CalculationMethod.values
+                          .map((m) => DropdownMenuItem<CalculationMethod?>(value: m, child: Text(m.name))),
+                    ],
                   ),
                   SizedBox(height: 12.h),
                   Text('Madhab (Asr)', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -201,7 +280,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               actions: [
                 TextButton(
                   onPressed: () {
-                    prayerController.calculationMethod = method;
+                    prayerController.manualCalculationMethod = method;
                     prayerController.madhab = madhab;
                     Navigator.pop(context);
                   },
@@ -225,7 +304,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SafeArea(
+      body: ReadableWidth(child: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -275,6 +354,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           textColor: textColor,
                           subColor: subColor,
                           onTap: () => _showCalculationDialog(context),
+                        ),
+                        _NavRow(
+                          label: t.hijriAdjustment,
+                          subtitle: t.hijriAdjustmentSubtitle,
+                          trailing: _hijriAdjustment == 0 ? '0' : _signedDays(_hijriAdjustment),
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => _showHijriAdjustmentDialog(context),
                           isLast: true,
                         ),
                       ],
@@ -300,18 +387,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               value,
                             );
                             if (value) {
-                              final prayerController = Get.isRegistered<PrayerTimesController>()
-                                  ? Get.find<PrayerTimesController>()
-                                  : null;
-                              if (prayerController != null) {
-                                await _notificationsService
-                                    .reschedulePrayerNotifications(prayerController.prayerDateTimes.value);
+                              if (Get.isRegistered<PrayerTimesController>()) {
+                                await Get.find<PrayerTimesController>().rescheduleNotifications();
                               }
                               await _notificationsService.scheduleDailyQuranReminder();
+                              await _notificationsService.scheduleJumuahReminders();
+                              await _notificationsService.scheduleIslamicCalendarReminders();
+                              await _notificationsService.scheduleChallengeReminders();
                             } else {
                               await _notificationsService.cancelAll();
                             }
                           },
+                        ),
+                        _NavRow(
+                          label: t.adhanSound,
+                          subtitle: t.adhanSoundSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          enabled: _notificationsEnabled,
+                          onTap: () => Get.to(() => const AdhanSoundSettingsScreen()),
                         ),
                         _SwitchRow(
                           label: t.dailyQuranReminder,
@@ -338,6 +432,125 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               setState(() => _reminderTime = picked);
                               await _notificationsService.setReminderTime(picked);
                             }
+                          },
+                        ),
+                        _SwitchRow(
+                          label: t.jumuahReminderSetting,
+                          subtitle: t.jumuahReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _jumuahReminderEnabled,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) async {
+                                  setState(() => _jumuahReminderEnabled = value);
+                                  await _notificationsService.setJumuahReminderEnabled(value);
+                                },
+                        ),
+                        _NavRow(
+                          label: t.jumuahReminderTime,
+                          trailing: _jumuahReminderTime.format(context),
+                          textColor: textColor,
+                          enabled: _notificationsEnabled && _jumuahReminderEnabled,
+                          onTap: () async {
+                            final picked = await showTimePicker(context: context, initialTime: _jumuahReminderTime);
+                            if (picked != null) {
+                              setState(() => _jumuahReminderTime = picked);
+                              await _notificationsService.setJumuahReminderTime(picked);
+                            }
+                          },
+                        ),
+                        _SwitchRow(
+                          label: t.jumuahAsrReminderSetting,
+                          subtitle: _jumuahAsrReminderEnabled && !_notificationsService.hasPrayerLocation
+                              ? t.jumuahAsrNeedsLocation
+                              : t.jumuahAsrReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _jumuahAsrReminderEnabled,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) async {
+                                  setState(() => _jumuahAsrReminderEnabled = value);
+                                  await _notificationsService.setJumuahAsrReminderEnabled(value);
+                                },
+                        ),
+                        _SwitchRow(
+                          label: t.importantDatesReminder,
+                          subtitle: t.importantDatesReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _importantDatesReminder,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) => _setCalendarReminder(IslamicCalendarService.importantDatesReminderKey,
+                                  value, (v) => _importantDatesReminder = v),
+                        ),
+                        _SwitchRow(
+                          label: t.whiteDaysReminder,
+                          subtitle: t.whiteDaysReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _whiteDaysReminder,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) => _setCalendarReminder(IslamicCalendarService.whiteDaysReminderKey, value,
+                                  (v) => _whiteDaysReminder = v),
+                        ),
+                        _SwitchRow(
+                          label: t.mondayThursdayReminder,
+                          subtitle: t.mondayThursdayReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _mondayThursdayReminder,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) => _setCalendarReminder(IslamicCalendarService.mondayThursdayReminderKey,
+                                  value, (v) => _mondayThursdayReminder = v),
+                        ),
+                        _SwitchRow(
+                          label: t.morningAdhkarReminder,
+                          subtitle: _morningAdhkarReminder && !_notificationsService.hasPrayerLocation
+                              ? t.adhkarNeedsLocation
+                              : t.morningAdhkarReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _morningAdhkarReminder,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) => _setAdhkarReminder(
+                                  AdhkarService.morningReminderKey, value, (v) => _morningAdhkarReminder = v),
+                        ),
+                        _SwitchRow(
+                          label: t.eveningAdhkarReminder,
+                          subtitle: _eveningAdhkarReminder && !_notificationsService.hasPrayerLocation
+                              ? t.adhkarNeedsLocation
+                              : t.eveningAdhkarReminderSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _eveningAdhkarReminder,
+                          onChanged: !_notificationsEnabled
+                              ? null
+                              : (value) => _setAdhkarReminder(
+                                  AdhkarService.eveningReminderKey, value, (v) => _eveningAdhkarReminder = v),
+                        ),
+                        _SwitchRow(
+                          label: t.challengesNotificationsSetting,
+                          subtitle: t.challengesNotificationsSubtitle,
+                          textColor: textColor,
+                          subColor: subColor,
+                          accent: accent,
+                          value: _challengeNotifications,
+                          onChanged: (value) {
+                            setState(() => _challengeNotifications = value);
+                            PushNotificationService().setChallengeNotifications(value);
                           },
                         ),
                         _SwitchRow(
@@ -416,6 +629,26 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       title: 'Support',
                       children: [
                         _NavRow(
+                          label: 'Rate the App',
+                          subtitle: 'Enjoying Allah Everywhere? A rating on the ${Platform.isIOS ? 'App Store' : 'Play Store'} helps others find it.',
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => AppShareService.rateApp(context),
+                        ),
+                        _NavRow(
+                          label: 'Share the App',
+                          subtitle: 'Invite friends and family to use Allah Everywhere.',
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => AppShareService.shareApp(context),
+                        ),
+                        _NavRow(
+                          label: 'Help & FAQ',
+                          textColor: textColor,
+                          subColor: subColor,
+                          onTap: () => Get.to(() => HelpFaqScreen()),
+                        ),
+                        _NavRow(
                           label: 'Support the Developer',
                           subtitle: 'If this app has benefited you and you\'d like to give '
                               'something back, reach out by email - no in-app purchase needed.',
@@ -426,14 +659,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 110.h),
+                    SizedBox(height: navBarClearance(context)),
                   ],
                 ),
               ),
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }
@@ -515,8 +748,9 @@ class _NavRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return PressableTile(
       onTap: enabled ? onTap : null,
+      semanticLabel: label,
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 12.h),
         decoration: isLast
@@ -578,7 +812,10 @@ class _SwitchRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final enabled = onChanged != null;
-    return Container(
+    return PressableTile(
+      onTap: enabled ? () => onChanged!(!value) : null,
+      semanticLabel: label,
+      child: Container(
       padding: EdgeInsets.symmetric(vertical: 8.h),
       decoration: isLast
           ? null
@@ -606,6 +843,7 @@ class _SwitchRow extends StatelessWidget {
           ),
           Switch(value: value, onChanged: onChanged, activeColor: accent),
         ],
+      ),
       ),
     );
   }

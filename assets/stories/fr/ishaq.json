@@ -1,0 +1,181 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ishaq",
+  "language": "fr",
+  "name": "Ishaq",
+  "title": "Le fils promis d'Ibrahim (paix sur lui)",
+  "sentTo": "La famille d'Ibrahim (paix sur lui) en terre bénie (Palestine)",
+  "era": "L'époque d'Ibrahim (paix sur lui), son père. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Al-Khalil (Hébron), en Palestine, dans la terre bénie où Ibrahim s'établit. Son tombeau y est traditionnellement situé.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    }
+  ],
+  "summary": "Le fils d'Ibrahim (paix sur lui) et de Sarah, né alors que tous deux étaient âgés, comme les anges l'avaient annoncé. Allah fit de lui un prophète et bénit sa descendance : de lui vinrent Ya'qub (paix sur lui) et les prophètes des Enfants d'Israël.",
+  "notes": [
+    "Le Coran dit peu de choses sur la vie d'Ishaq lui-même. Les détails comme son mariage et ses fils jumeaux viennent de la Bible.",
+    "Ishaq ou Ismaïl, lequel était le fils à sacrifier ? La plupart des savants disent Ismaïl (voir l'histoire d'Ibrahim)."
+  ],
+  "chapters": [
+    {
+      "id": "ishaq-1",
+      "title": "Une bonne nouvelle dans la vieillesse",
+      "paragraphs": [
+        "Ibrahim (paix sur lui) et son épouse Sarah étaient âgés, et Sarah n'avait jamais eu d'enfant. Puis des anges vinrent en invités et leur annoncèrent la bonne nouvelle d'un fils, Ishaq, et après lui d'un petit-fils, Ya'qub.",
+        "Sarah fut stupéfaite : « Vais-je enfanter alors que je suis vieille et que mon mari est un vieillard ? » Les anges répondirent : « T'étonnes-tu du décret d'Allah ? Que la miséricorde d'Allah et Ses bénédictions soient sur vous, gens de cette maison. »",
+        "Le Coran décrit Ishaq comme un prophète parmi les vertueux, et dit qu'Allah bénit Ibrahim et Ishaq."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim et Sarah étaient très âgés et n'avaient pas d'enfant. Des anges leur dirent : « Vous aurez un fils, Ishaq ! »",
+        "Sarah fut étonnée. Mais rien n'est impossible pour Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 72
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 73,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        }
+      ],
+      "lessons": [
+        "Ne désespère jamais de la miséricorde d'Allah, quel que soit ton âge.",
+        "Les enfants sont un don d'Allah.",
+        "La promesse d'Allah se réalise toujours."
+      ],
+      "quiz": [
+        {
+          "question": "Qui était la mère d'Ishaq ?",
+          "options": [
+            "Hajar",
+            "Sarah",
+            "Maryam",
+            "Asiya"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Qui annonça la naissance d'Ishaq ?",
+          "options": [
+            "Des anges",
+            "Un rêve",
+            "Un roi",
+            "Un voyageur"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Quel petit-fils fut aussi annoncé ?",
+          "options": [
+            "Yusuf",
+            "Ya'qub",
+            "Moussa",
+            "Dawud"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ishaq-2",
+      "title": "Un père de prophètes",
+      "paragraphs": [
+        "Allah donna à Ibrahim Ishaq et Ya'qub et les rendit tous vertueux. Il fit d'eux des guides qui dirigeaient par Son ordre, et leur inspira de faire le bien, d'accomplir la prière et de donner la zakat.",
+        "Le Coran nous demande de nous rappeler Ibrahim, Ishaq et Ya'qub, hommes de force et de clairvoyance, choisis pour une grande qualité : se souvenir toujours de la Demeure de l'au-delà.",
+        "Le Prophète ﷺ décrivit la lignée d'Ishaq : « Le noble, fils du noble, fils du noble, fils du noble : Yusuf fils de Ya'qub fils d'Ishaq fils d'Ibrahim. » Quatre générations de prophètes, l'une après l'autre."
+      ],
+      "kidsParagraphs": [
+        "Le fils d'Ishaq était Ya'qub, et son petit-fils Yusuf. Tous étaient prophètes !",
+        "Allah dit qu'ils se souvenaient toujours de l'au-delà."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 72,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3382",
+          "narrator": "Abdallah ibn Umar",
+          "translation": "Le Prophète ﷺ a dit : « Le noble, fils du noble, fils du noble, fils du noble : Yusuf fils de Ya'qub fils d'Ishaq fils d'Ibrahim, paix sur eux. »",
+          "match": "الكريم ابن الكريم ابن الكريم ابن الكريم يوسف ابن يعقوب بن اسحاق بن ابراهيم"
+        }
+      ],
+      "lessons": [
+        "Une famille vertueuse transmet la foi d'une génération à l'autre.",
+        "Se souvenir de l'au-delà est une qualité qu'Allah aime.",
+        "Les guides en religion conduisent les autres en faisant eux-mêmes le bien."
+      ],
+      "quiz": [
+        {
+          "question": "Pour quelle qualité Ibrahim, Ishaq et Ya'qub furent-ils choisis ?",
+          "options": [
+            "La richesse",
+            "Se souvenir de la Demeure de l'au-delà",
+            "Bâtir des villes",
+            "La poésie"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:46"
+        },
+        {
+          "question": "Quel petit-fils d'Ishaq fut appelé « le noble, fils du noble » ?",
+          "options": [
+            "Yusuf",
+            "Moussa",
+            "Issa",
+            "Younous"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3382"
+        },
+        {
+          "question": "Qu'Allah leur inspira-t-Il de faire ?",
+          "options": [
+            "Les bonnes œuvres, la prière et la zakat",
+            "Bâtir des tours",
+            "Faire la guerre",
+            "Voyager par la mer"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:73"
+        }
+      ]
+    }
+  ]
+}

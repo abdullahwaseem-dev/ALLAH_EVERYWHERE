@@ -7,6 +7,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:allah_everywhere/widgets/IconButtonWidget.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/ask_ai_prompt_bar.dart';
 import 'package:allah_everywhere/widgets/MosqueCardWidget.dart';
 import 'package:allah_everywhere/widgets/NamazTimingWidget.dart';
 import 'package:allah_everywhere/qibla.dart';
@@ -18,12 +21,32 @@ import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:allah_everywhere/widgets/banner_ad_widget.dart';
+import 'package:allah_everywhere/controllers/language_controller.dart';
+import 'package:allah_everywhere/share_cards/share_strings.dart';
+import 'package:allah_everywhere/share_cards/share_studio_screen.dart';
+import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/data/jumuah_data.dart';
+import 'package:allah_everywhere/data/asma_ul_husna_data.dart';
+import 'package:allah_everywhere/asma_ul_husna.dart';
+import 'package:allah_everywhere/zakat.dart';
+import 'package:allah_everywhere/islamic_calendar.dart';
+import 'package:allah_everywhere/adhkar.dart';
+import 'package:allah_everywhere/challenges.dart';
+import 'package:allah_everywhere/hajj_umrah.dart';
+import 'package:allah_everywhere/prophet_stories.dart';
+import 'package:allah_everywhere/services/prophet_stories_service.dart';
+import 'package:home_widget/home_widget.dart';
+import 'dart:async';
+import 'package:allah_everywhere/hifz_dashboard.dart';
+import 'package:allah_everywhere/utils/utils/theme/scripture_text.dart';
+import 'package:quran/quran.dart' as quran;
 
 import 'ask_ai.dart';
 import 'dua.dart';
 import 'fiqh.dart';
 import 'hadith.dart';
 import 'notification.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -33,7 +56,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final PrayerTimesController controller = Get.put(PrayerTimesController());
+  // Permanent: this controller is the app-wide prayer clock (countdown +
+  // Adhan scheduling). Owned by a route, GetX deleted it - cancelling its
+  // timer - whenever that route was replaced, freezing the countdown at
+  // 00:00:00 for the screen that picked it up next.
+  final PrayerTimesController controller = Get.isRegistered<PrayerTimesController>()
+      ? Get.find<PrayerTimesController>()
+      : Get.put(PrayerTimesController(), permanent: true);
   final NearbyMosqueService _mosqueService = NearbyMosqueService();
 
   List<NearbyMosque>? _nearbyMosques;
@@ -58,6 +87,32 @@ class _HomeScreenState extends State<HomeScreen> {
     // only mounts once inside the bottom nav's IndexedStack, so `ever`
     // alone would miss an assignment that already happened.
     _maybeFetchNearbyMosques();
+    // If a notification (e.g. the Friday Al-Kahf reminder) launched the app,
+    // open its target now that the splash/login flow has finished.
+    WidgetsBinding.instance.addPostFrameCallback((_) => LocalNotificationsService().consumeLaunchPayload());
+    // Same for a home screen widget tap (cold start), and later taps.
+    HomeWidget.initiallyLaunchedFromHomeWidget().then(_openFromWidget).catchError((_) {});
+    _widgetClicks = HomeWidget.widgetClicked.listen(_openFromWidget, onError: (_) {});
+  }
+
+  StreamSubscription<Uri?>? _widgetClicks;
+
+  @override
+  void dispose() {
+    _widgetClicks?.cancel();
+    super.dispose();
+  }
+
+  /// Home screen widgets open allaheverywhere://prayer or ://calendar; the
+  /// Verse of the Day widget just opens the app (Home shows the same entry).
+  void _openFromWidget(Uri? uri) {
+    if (!mounted || uri == null) return;
+    switch (uri.host) {
+      case 'prayer':
+        Get.to(() => const PrayerTimingScreen());
+      case 'calendar':
+        Get.to(() => const IslamicCalendarScreen());
+    }
   }
 
   Future<void> _maybeFetchNearbyMosques() async {
@@ -82,7 +137,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final t = AppLocalizations.of(context)!;
-    return Scaffold(
+    return AskAiFabHost(
+      showFirstLaunchHint: true,
+      // The banner ad is the last thing on Home (above the nav-bar
+      // clearance). Hide the button whenever that end of the page is on
+      // screen so it never covers the ad (ads are at most ~100pt tall).
+      hideNearEndExtent: navBarClearance(context) + 130,
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       body: SafeArea(
         bottom: false,
@@ -93,115 +154,230 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: EdgeInsets.fromLTRB(16.w, 12.h, 16.w, 0),
-                  child: _buildHeaderCard(isDark, t),
-                ),
-                SizedBox(height: 18.h),
-
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.w),
-                  child: _buildSectionCard(
-                    isDark: isDark,
-                    child: Obx(() => SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              _prayerChip('Fajr', controller.fajrTime.value, Iconsax.cloud_sunny),
-                              SizedBox(width: 8.w),
-                              _prayerChip('Dhuhr', controller.dhuhrTime.value, Iconsax.sun),
-                              SizedBox(width: 8.w),
-                              _prayerChip('Asr', controller.asrTime.value, Iconsax.sun_1),
-                              SizedBox(width: 8.w),
-                              _prayerChip('Maghrib', controller.maghribTime.value, Iconsax.sun_fog),
-                              SizedBox(width: 8.w),
-                              _prayerChip('Isha', controller.ishaTime.value, Iconsax.moon),
-                            ],
-                          ),
-                        )),
-                  ),
-                ),
-                SizedBox(height: 18.h),
-
-                // Quick access grid
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.w),
-                  child: _buildSectionCard(
-                    isDark: isDark,
-                    child: GridView.count(
-                      crossAxisCount: 4,
-                      shrinkWrap: true,
-                      mainAxisSpacing: 14.h,
-                      physics: const NeverScrollableScrollPhysics(),
-                      children: [
-                        GestureDetector(
-                            onTap: () => Get.to(() => QuranScreen()),
-                            child: IconButtonWidget(icon: Iconsax.book_saved, title: t.quran)),
-                        GestureDetector(
-                            onTap: () => Get.to(() => HadithScreen()),
-                            child: IconButtonWidget(icon: Iconsax.book_1, title: t.hadith)),
-                        GestureDetector(
-                          onTap: () => Get.to(() => DuaScreen()),
-                          child: IconButtonWidget(icon: Iconsax.heart, title: t.dua),
-                        ),
-                        GestureDetector(
-                            onTap: () => Get.to(() => QiblaScreen()),
-                            child: IconButtonWidget(icon: Iconsax.discover, title: t.qibla)),
-                        GestureDetector(
-                          onTap: () => Get.to(() => FiqhScreen()),
-                          child: IconButtonWidget(icon: Iconsax.judge, title: t.fiqh),
-                        ),
-                        GestureDetector(
-                            onTap: () => Get.to(() => SeeratScreen()),
-                            child: IconButtonWidget(icon: Iconsax.book_square, title: t.seerat)),
-                        GestureDetector(
-                            onTap: () => Get.to(() => PrayerTimingScreen()),
-                            child: IconButtonWidget(icon: Iconsax.clock, title: t.prayer)),
-                        GestureDetector(
-                            onTap: () => Get.to(() => AskAiScreen()),
-                            child: IconButtonWidget(icon: Iconsax.message_question, title: t.askAi)),
-                      ],
+                // One column on phones; two side by side on iPad.
+                ..._homeColumns(
+                  left: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(16.w, 12.h, 16.w, 0),
+                      child: _buildHeaderCard(isDark, t),
                     ),
-                  ),
-                ),
-                SizedBox(height: 18.h),
-
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.w),
-                  child: _buildDailyReminderBanner(isDark, t),
-                ),
-                SizedBox(height: 18.h),
-
-                // Nearby Masjid Section
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.w),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        t.nearbyMasjids,
-                        style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.bold,
-                          color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep,
-                        ),
+                    SizedBox(height: 12.h),
+                    if (DateTime.now().weekday == DateTime.friday) ...[
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 16.w),
+                        child: _buildJumuahCard(isDark, t),
                       ),
                       SizedBox(height: 12.h),
-                      Obx(() => _buildNearbyMosques(isDark)),
                     ],
-                  ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: AskAiPromptBar(
+                        onTap: () => Get.to(() => const AskAiScreen(autofocus: true)),
+                      ),
+                    ),
+                    SizedBox(height: 18.h),
+
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: _buildSectionCard(
+                        isDark: isDark,
+                        child: Obx(() => SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: [
+                                  _prayerChip('Fajr', controller.fajrTime.value, Iconsax.cloud_sunny),
+                                  SizedBox(width: 8.w),
+                                  _prayerChip('Dhuhr', controller.dhuhrTime.value, Iconsax.sun),
+                                  SizedBox(width: 8.w),
+                                  _prayerChip('Asr', controller.asrTime.value, Iconsax.sun_1),
+                                  SizedBox(width: 8.w),
+                                  _prayerChip('Maghrib', controller.maghribTime.value, Iconsax.sun_fog),
+                                  SizedBox(width: 8.w),
+                                  _prayerChip('Isha', controller.ishaTime.value, Iconsax.moon),
+                                ],
+                              ),
+                            )),
+                      ),
+                    ),
+                    SizedBox(height: 18.h),
+
+                    // Quick access grid
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: _buildSectionCard(
+                        isDark: isDark,
+                        child: GridView.count(
+                          crossAxisCount: 4,
+                          // Taller than square so a 2-line label fits at 1.3x text.
+                          childAspectRatio: 0.8,
+                          shrinkWrap: true,
+                          mainAxisSpacing: 14.h,
+                          physics: const NeverScrollableScrollPhysics(),
+                          children: [
+                            PressableTile(
+                                onTap: () => Get.to(() => QuranScreen()),
+                                semanticLabel: t.quran,
+                                child: IconButtonWidget(icon: Iconsax.book_saved, title: t.quran)),
+                            PressableTile(
+                                onTap: () => Get.to(() => HadithScreen()),
+                                semanticLabel: t.hadith,
+                                child: IconButtonWidget(icon: Iconsax.book_1, title: t.hadith)),
+                            PressableTile(
+                              onTap: () => Get.to(() => DuaScreen()),
+                              semanticLabel: t.dua,
+                              child: IconButtonWidget(icon: Iconsax.heart, title: t.dua)),
+                            PressableTile(
+                                onTap: () => Get.to(() => QiblaScreen()),
+                                semanticLabel: t.qibla,
+                                child: IconButtonWidget(icon: Iconsax.discover, title: t.qibla)),
+                            PressableTile(
+                              onTap: () => Get.to(() => FiqhScreen()),
+                              semanticLabel: t.fiqh,
+                              child: IconButtonWidget(icon: Iconsax.judge, title: t.fiqh)),
+                            PressableTile(
+                                onTap: () => Get.to(() => SeeratScreen()),
+                                semanticLabel: t.seerat,
+                                child: IconButtonWidget(icon: Iconsax.book_square, title: t.seerat)),
+                            PressableTile(
+                                onTap: () => Get.to(() => PrayerTimingScreen()),
+                                semanticLabel: t.prayer,
+                                child: IconButtonWidget(icon: Iconsax.clock, title: t.prayer)),
+                            PressableTile(
+                                onTap: () => Get.to(() => AskAiScreen()),
+                                semanticLabel: t.askAi,
+                                child: IconButtonWidget(icon: Iconsax.message_question, title: t.askAi)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const AsmaUlHusnaScreen()),
+                                semanticLabel: t.names99,
+                                child: IconButtonWidget(icon: Iconsax.magic_star, title: t.names99)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const ZakatScreen()),
+                                semanticLabel: t.zakatTile,
+                                child: IconButtonWidget(icon: Iconsax.wallet_money, title: t.zakatTile)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const IslamicCalendarScreen()),
+                                semanticLabel: t.calendarTile,
+                                child: IconButtonWidget(icon: Iconsax.calendar_1, title: t.calendarTile)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const AdhkarScreen()),
+                                semanticLabel: t.adhkarTile,
+                                child: IconButtonWidget(icon: Iconsax.sun_1, title: t.adhkarTile)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const HifzDashboardScreen()),
+                                semanticLabel: t.hifzTile,
+                                child: IconButtonWidget(icon: Iconsax.teacher, title: t.hifzTile)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const HajjUmrahScreen()),
+                                semanticLabel: t.hajjTile,
+                                child: IconButtonWidget(icon: Iconsax.building_3, title: t.hajjTile)),
+                            if (ProphetStoriesService.enabled)
+                            PressableTile(
+                                onTap: () => Get.to(() => const ProphetStoriesScreen()),
+                                semanticLabel: t.storiesTile,
+                                child: IconButtonWidget(icon: Iconsax.archive_book, title: t.storiesTile)),
+                            PressableTile(
+                                onTap: () => Get.to(() => const ChallengesScreen()),
+                                semanticLabel: t.challengesTile,
+                                child: IconButtonWidget(icon: Iconsax.cup, title: t.challengesTile)),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 18.h),
+                  ],
+                  right: [
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: _buildShareStudioCard(isDark),
+                    ),
+                    SizedBox(height: 18.h),
+
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: _buildDailyReminderBanner(isDark, t),
+                    ),
+                    SizedBox(height: 18.h),
+                    if (ProphetStoriesService.enabled)
+                    StoryOfTheDayCard(padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 18.h)),
+                    ActiveChallengeCard(padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 18.h)),
+
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: _buildNameOfTheDayCard(isDark, t),
+                    ),
+                    SizedBox(height: 18.h),
+
+                    // Nearby Masjid Section
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            t.nearbyMasjids,
+                            style: TextStyle(
+                              fontSize: 15.sp,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep,
+                            ),
+                          ),
+                          SizedBox(height: 12.h),
+                          Obx(() {
+                            // Obx throws "improper use" if a build runs without
+                            // reading an observable. Several branches of
+                            // _buildNearbyMosques (loading, failed, loaded list)
+                            // read none, so touch the location observables here -
+                            // this both silences that error and keeps the section
+                            // rebuilding when location/permission state changes.
+                            controller.latitude.value;
+                            controller.longitude.value;
+                            controller.locationError.value;
+                            controller.permissionPermanentlyDenied.value;
+                            return _buildNearbyMosques(isDark);
+                          }),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 18.h),
                 const Center(child: BannerAdWidget()),
-                // Extra clearance so content can't end up hidden behind the
+                // Clearance so content can't end up hidden behind the
                 // floating glass nav bar (Scaffold uses extendBody: true).
-                SizedBox(height: 110.h),
+                SizedBox(height: navBarClearance(context)),
               ],
             ),
           ),
         ),
       ),
+      ),
     );
+  }
+
+  /// Phones: [left] then [right] in one column. iPad / wide windows: two
+  /// columns side by side (capped at 1100 wide) so the screen is used
+  /// instead of stretching every card across it.
+  List<Widget> _homeColumns({required List<Widget> left, required List<Widget> right}) {
+    if (!isWideLayout(context)) return [...left, ...right];
+    return [
+      Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 1100),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: left)),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [SizedBox(height: 12.h), ...right],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ];
   }
 
   Widget _buildSectionCard({required bool isDark, required Widget child}) {
@@ -264,6 +440,186 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(height: 20.h),
           Obx(() => _buildPrayerSummary(t)),
         ],
+      ),
+    );
+  }
+
+  Widget _buildShareStudioCard(bool isDark) {
+    return Obx(() {
+      final s = ShareStrings(Get.find<LanguageController>().locale.value.languageCode);
+      return PressableTile(
+        onTap: () => Get.to(() => const ShareStudioScreen()),
+        semanticLabel: s.title,
+        borderRadius: BorderRadius.circular(18.r),
+        child: Ink(
+          width: double.infinity,
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: isDark
+                  ? [const Color(0xFF0B1330), const Color(0xFF2D2A6E)]
+                  : [VoidColors.gold, VoidColors.dustyRose],
+            ),
+            borderRadius: BorderRadius.circular(18.r),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(10.w),
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.2),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Iconsax.gallery_edit, color: Colors.white, size: 22.sp),
+              ),
+              SizedBox(width: 12.w),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      s.title,
+                      style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                    ),
+                    SizedBox(height: 2.h),
+                    Text(
+                      s.homeSubtitle,
+                      style: TextStyle(fontSize: 11.5.sp, color: Colors.white.withValues(alpha: 0.9)),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.arrow_forward_ios, color: Colors.white, size: 14.sp),
+            ],
+          ),
+        ),
+      );
+    });
+  }
+
+  /// Friday-only shortcut to Surah Al-Kahf.
+  Widget _buildJumuahCard(bool isDark, AppLocalizations t) {
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    return PressableTile(
+      onTap: () => LocalNotificationsService.openSurah(jumuahSurahNumber),
+      semanticLabel: '${t.jumuahCardTitle} - ${t.jumuahCardSubtitle}',
+      borderRadius: BorderRadius.circular(18.r),
+      child: Ink(
+        width: double.infinity,
+        padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
+        decoration: BoxDecoration(
+          color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+          borderRadius: BorderRadius.circular(18.r),
+          border: Border.all(color: accent.withValues(alpha: 0.35)),
+        ),
+        child: Row(
+          children: [
+            Icon(Iconsax.book_saved, color: accent, size: 20.sp),
+            SizedBox(width: 10.w),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    t.jumuahCardTitle,
+                    style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: textColor),
+                  ),
+                  SizedBox(height: 2.h),
+                  Text(
+                    t.jumuahCardSubtitle,
+                    style: TextStyle(fontSize: 11.5.sp, color: textColor.withValues(alpha: 0.75)),
+                  ),
+                ],
+              ),
+            ),
+            Text(
+              quran.getSurahNameArabic(jumuahSurahNumber),
+              textDirection: TextDirection.rtl,
+              style: ScriptureText.arabic(fontSize: 16.sp, color: accent),
+            ),
+            SizedBox(width: 6.w),
+            Icon(Iconsax.arrow_right_3, size: 14.sp, color: accent),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// One of the 99 Names, rotating daily (day-of-year % 99).
+  Widget _buildNameOfTheDayCard(bool isDark, AppLocalizations t) {
+    final name = nameOfTheDay(DateTime.now());
+    final languageCode = Localizations.localeOf(context).languageCode;
+    final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final subColor = isDark ? VoidColors.textDarkSecondary : VoidColors.oliveDeep.withValues(alpha: 0.85);
+    final meaning = divineNameMeaning(name, languageCode);
+    return PressableTile(
+      onTap: () => Get.to(() => AsmaUlHusnaDetailScreen(name: name)),
+      semanticLabel: '${t.nameOfTheDay}: ${name.transliteration}, $meaning',
+      borderRadius: BorderRadius.circular(18.r),
+      child: Ink(
+        width: double.infinity,
+        padding: EdgeInsets.all(16.w),
+        decoration: BoxDecoration(
+          color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+          borderRadius: BorderRadius.circular(18.r),
+          border: Border.all(color: accent.withValues(alpha: 0.35)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Iconsax.magic_star, size: 16.sp, color: accent),
+                SizedBox(width: 6.w),
+                Expanded(
+                  child: Text(
+                    t.nameOfTheDay,
+                    style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: accent),
+                  ),
+                ),
+                Text('${name.number}/${asmaUlHusna.length}', style: TextStyle(fontSize: 11.sp, color: accent)),
+              ],
+            ),
+            SizedBox(height: 6.h),
+            Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        name.transliteration,
+                        style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w700, color: textColor),
+                      ),
+                      SizedBox(height: 2.h),
+                      Text(
+                        meaning,
+                        style: languageCode == 'ur'
+                            ? ScriptureText.urdu(fontSize: 12.5.sp, color: subColor)
+                            : TextStyle(fontSize: 12.5.sp, height: 1.35, color: subColor),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(width: 10.w),
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      name.arabic,
+                      textDirection: TextDirection.rtl,
+                      style: ScriptureText.arabic(fontSize: 26.sp, color: accent, fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -385,10 +741,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         SizedBox(height: 4.h),
-        Text(
-          '${t.nextPrayerIn} ${controller.remainingTime.value}',
-          style: TextStyle(color: Colors.white70, fontSize: 12.sp, fontWeight: FontWeight.w600),
-        ),
+        // Own Obx: the countdown ticks every second, and only this line
+        // should rebuild, not the whole prayer summary.
+        Obx(() => Text(
+              '${t.nextPrayerIn} ${controller.remainingTime.value}',
+              style: TextStyle(color: Colors.white70, fontSize: 12.sp, fontWeight: FontWeight.w600),
+            )),
         SizedBox(height: 10.h),
         Row(
           children: [

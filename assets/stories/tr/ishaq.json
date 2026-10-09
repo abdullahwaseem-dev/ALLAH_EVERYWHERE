@@ -1,0 +1,181 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ishaq",
+  "language": "tr",
+  "name": "İshak",
+  "title": "Hz. İbrahim'in (a.s.) müjdelenen oğlu",
+  "sentTo": "Mübarek topraklardaki (Filistin) Hz. İbrahim (a.s.) ailesi",
+  "era": "Babası Hz. İbrahim'in (a.s.) dönemi. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Filistin'de, İbrahim'in yerleştiği mübarek topraklardaki el-Halil (Hebron). Kabrinin geleneksel olarak burada olduğu kabul edilir.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    }
+  ],
+  "summary": "Hz. İbrahim (a.s.) ile Sâre'nin oğlu; meleklerin müjdelediği gibi ikisi de yaşlıyken doğdu. Allah onu peygamber yaptı ve soyunu bereketlendirdi: Ondan Hz. Yakub (a.s.) ve İsrailoğulları peygamberleri geldi.",
+  "notes": [
+    "Kur'an İshak'ın kendi hayatı hakkında az şey anlatır. Evliliği ve ikiz oğulları gibi ayrıntılar Kitab-ı Mukaddes'ten gelir.",
+    "Kurban edilecek oğul İshak mıydı, İsmâil mi? Âlimlerin çoğu İsmâil der (Hz. İbrahim kıssasına bakınız)."
+  ],
+  "chapters": [
+    {
+      "id": "ishaq-1",
+      "title": "Yaşlılıkta gelen müjde",
+      "paragraphs": [
+        "Hz. İbrahim (a.s.) ve eşi Sâre yaşlanmıştı ve Sâre'nin hiç çocuğu olmamıştı. Sonra melekler misafir olarak geldiler ve onlara bir oğul, İshak, ve ondan sonra bir torun, Yakub müjdelediler.",
+        "Sâre hayret etti: \"Ben yaşlı bir kadınken ve kocam da yaşlı bir adamken doğuracak mıyım?\" Melekler cevap verdi: \"Allah'ın emrine mi şaşırıyorsun? Ey ev halkı! Allah'ın rahmeti ve bereketleri üzerinize olsun.\"",
+        "Kur'an İshak'ı salihlerden bir peygamber olarak anlatır ve Allah'ın İbrahim'e ve İshak'a bereket verdiğini söyler."
+      ],
+      "kidsParagraphs": [
+        "İbrahim ile Sâre çok yaşlıydı ve çocukları yoktu. Melekler onlara: \"Bir oğlunuz olacak, İshak!\" dediler.",
+        "Sâre çok şaşırdı. Ama Allah için hiçbir şey imkânsız değildir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 72
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 73,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        }
+      ],
+      "lessons": [
+        "Yaşın ne olursa olsun Allah'ın rahmetinden asla ümit kesme.",
+        "Çocuklar Allah'ın bir hediyesidir.",
+        "Allah'ın vaadi her zaman gerçekleşir."
+      ],
+      "quiz": [
+        {
+          "question": "İshak'ın annesi kimdi?",
+          "options": [
+            "Hacer",
+            "Sâre",
+            "Meryem",
+            "Âsiye"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "İshak'ın doğumunu kim müjdeledi?",
+          "options": [
+            "Melekler",
+            "Bir rüya",
+            "Bir kral",
+            "Bir yolcu"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Hangi torun da müjdelendi?",
+          "options": [
+            "Yusuf",
+            "Yakub",
+            "Musa",
+            "Davud"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ishaq-2",
+      "title": "Peygamberlerin babası",
+      "paragraphs": [
+        "Allah İbrahim'e İshak'ı ve Yakub'u verdi ve hepsini salih kıldı. Onları Kendi emriyle yol gösteren önderler yaptı ve onlara hayır işlemeyi, namazı kılmayı ve zekâtı vermeyi vahyetti.",
+        "Kur'an bize güç ve basiret sahibi İbrahim, İshak ve Yakub'u anmamızı söyler; onlar büyük bir vasıf için seçilmişlerdi: Ahiret yurdunu daima hatırlamak.",
+        "Peygamber ﷺ İshak'ın soyunu şöyle anlattı: \"Kerîm oğlu kerîm oğlu kerîm oğlu kerîm: İbrahim oğlu İshak oğlu Yakub oğlu Yusuf.\" Art arda dört nesil peygamber."
+      ],
+      "kidsParagraphs": [
+        "İshak'ın oğlu Yakub, torunu da Yusuf'tu. Hepsi peygamberdi!",
+        "Allah onların ahireti hep hatırladıklarını söyler."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 72,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3382",
+          "narrator": "Abdullah b. Ömer",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Kerîm oğlu kerîm oğlu kerîm oğlu kerîm: İbrahim oğlu İshak oğlu Yakub oğlu Yusuf, onlara selam olsun.\"",
+          "match": "الكريم ابن الكريم ابن الكريم ابن الكريم يوسف ابن يعقوب بن اسحاق بن ابراهيم"
+        }
+      ],
+      "lessons": [
+        "Salih bir aile imanı nesilden nesile aktarır.",
+        "Ahireti hatırlamak Allah'ın sevdiği bir vasıftır.",
+        "Dinde önderler, önce kendileri hayır işleyerek başkalarına yol gösterir."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim, İshak ve Yakub hangi vasıf için seçildi?",
+          "options": [
+            "Zenginlik",
+            "Ahiret yurdunu hatırlamak",
+            "Şehir kurmak",
+            "Şiir"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:46"
+        },
+        {
+          "question": "İshak'ın \"kerîm oğlu kerîm\" denen torunu kimdi?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "İsa",
+            "Yunus"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3382"
+        },
+        {
+          "question": "Allah onlara neyi vahyetti?",
+          "options": [
+            "Hayır işlemeyi, namazı ve zekâtı",
+            "Kule yapmayı",
+            "Savaşmayı",
+            "Deniz yolculuğunu"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:73"
+        }
+      ]
+    }
+  ]
+}

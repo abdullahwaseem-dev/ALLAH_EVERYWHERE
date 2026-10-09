@@ -1,5 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'layout_helpers.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter_islamic_icons/flutter_islamic_icons.dart';
 import '../home.dart';
@@ -9,6 +11,7 @@ import '../tasbeeh.dart';
 import '../tib_e_nabwi.dart';
 import '../services/push_notification_service.dart';
 import '../utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/rewards.dart';
 
 class BottomNavBarApp extends StatefulWidget {
   @override
@@ -38,6 +41,7 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
   void initState() {
     super.initState();
     PushNotificationService().init();
+    RewardsWatcher.start();
   }
 
   @override
@@ -56,14 +60,20 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
 
   Widget _buildFloatingGlassBar(bool isDark) {
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
+    // Sits above the home indicator (it used to be a fixed 20 from the
+    // bottom edge, overlapping it), and stays phone-sized on iPad.
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+      padding: EdgeInsets.fromLTRB(20, 0, 20, floatingNavBarBottomGap(context)),
+      child: Center(
+      heightFactor: 1,
+      child: ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 480),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(30),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
           child: Container(
-            height: 64,
+            height: floatingNavBarHeight,
             decoration: BoxDecoration(
               color: (isDark ? Colors.black : Colors.white).withOpacity(isDark ? 0.45 : 0.55),
               borderRadius: BorderRadius.circular(30),
@@ -88,6 +98,8 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
           ),
         ),
       ),
+      ),
+      ),
     );
   }
 
@@ -96,7 +108,10 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
     final item = _items[index];
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTap: () => setState(() => _currentIndex = index),
+      onTap: () {
+        if (index != _currentIndex) HapticFeedback.selectionClick();
+        setState(() => _currentIndex = index);
+      },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 220),
         curve: Curves.easeOut,

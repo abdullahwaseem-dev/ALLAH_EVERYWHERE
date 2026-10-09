@@ -12,6 +12,7 @@ class IconButtonWidget extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: [
         Container(
           width: 46,
@@ -27,14 +28,20 @@ class IconButtonWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 6),
-        Text(
+        // Flexible + 2 lines: long labels (e.g. Arabic "Ask AI") and large
+        // text sizes shrink to fit the tile instead of overflowing it.
+        Flexible(
+          child: Text(
           title,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w600,
             color: isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep,
           ),
+        ),
         ),
       ],
     );

@@ -5,6 +5,10 @@ import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'controller/HadithController.dart';
 import 'hadith_chapters.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/utils/utils/theme/scripture_text.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class HadithScreen extends StatelessWidget {
   final HadithController _controller = Get.put(HadithController());
@@ -31,7 +35,9 @@ class HadithScreen extends StatelessWidget {
     final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Hadith',
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -47,7 +53,7 @@ class HadithScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Padding(
+      body: ReadableWidth(child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
         child: SingleChildScrollView(
           child: Column(
@@ -162,25 +168,23 @@ class HadithScreen extends StatelessWidget {
                     final book = _controller.filteredBooks[index];
                     String bookNameInUrdu = bookNamesInUrdu[book['bookName']] ?? '';
 
-                    return GestureDetector(
-                      onTap: () {
+                    return buildSurahTile(
+                      book['id'].toString(),
+                      book['bookName'],
+                      book['writerName'],
+                      book['chapters_count']?.toString(),
+                      bookNameInUrdu,
+                      isDark,
+                      accent,
+                      textColor,
+                      subColor,
+                      () {
                         _controller.updateLastReadBook(book['bookSlug'], book['bookName']);
                         Get.to(HidthChaptersScreen(
                           bookSlug: book['bookSlug'],
                           bookNameInArabic: book['bookName'],
                         ));
                       },
-                      child: buildSurahTile(
-                        book['id'].toString(),
-                        book['bookName'],
-                        book['writerName'],
-                        book['chapters_count']?.toString(),
-                        bookNameInUrdu,
-                        isDark,
-                        accent,
-                        textColor,
-                        subColor,
-                      ),
                     );
                   },
                 );
@@ -189,8 +193,8 @@ class HadithScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      )),
+    ));
   }
 
   Widget buildSurahTile(
@@ -203,6 +207,7 @@ class HadithScreen extends StatelessWidget {
     Color accent,
     Color textColor,
     Color subColor,
+    VoidCallback onTap,
   ) {
     String safeId = id ?? "N/A";
     String safeBookName = bookName ?? "Unknown Book";
@@ -212,7 +217,10 @@ class HadithScreen extends StatelessWidget {
 
     return Column(
       children: [
-        Padding(
+        PressableTile(
+          onTap: onTap,
+          semanticLabel: safeBookName,
+          child: Padding(
           padding: EdgeInsets.symmetric(vertical: 8.h),
           child: Row(
             children: [
@@ -247,7 +255,7 @@ class HadithScreen extends StatelessWidget {
                               fontSize: 15.sp,
                               fontWeight: FontWeight.bold,
                               color: textColor,
-                              fontFamily: 'Noto Nastaliq Urdu',
+                              fontFamily: ScriptureText.urduFamily,
                             ),
                           ),
                         ),
@@ -260,6 +268,7 @@ class HadithScreen extends StatelessWidget {
               ),
             ],
           ),
+        ),
         ),
         Divider(
           thickness: 1.h,

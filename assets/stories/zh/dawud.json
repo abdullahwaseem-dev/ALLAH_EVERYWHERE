@@ -1,0 +1,349 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dawud",
+  "language": "zh",
+  "name": "达乌德",
+  "title": "被赐予《宰逋尔》的国王和先知",
+  "sentTo": "以色列的后裔，他作为国王统治他们",
+  "era": "历史学家通常将其定于公元前1000年左右。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "耶路撒冷（古德斯）和巴勒斯坦地区，他在那里统治。",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "达乌德是一名年轻的士兵，奉真主的许可杀死了暴君查鲁特（歌利亚）。真主赐给他王权、先知身份、智慧和《宰逋尔》（诗篇）。群山和众鸟与他一起赞颂真主，铁也为他变得柔软。他公正地判决，只吃自己劳动所得，日夜崇拜真主。",
+  "notes": [
+    "关于达乌德想要他的一个士兵（乌利亚）的妻子的故事，来自《圣经》和有经人的传述。伊本·凯西尔等学者认为这有损先知的身份而予以否定。《古兰经》只说达乌德意识到自己受了考验，求饶恕并得到了饶恕（38:24-25）；学者们对考验是什么意见不一。",
+    "塔鲁特（扫罗）和查鲁特（歌利亚）在《古兰经》中有提到；战斗的其他细节来自历史。",
+    "赐给达乌德的《宰逋尔》通常被认为是《诗篇》，但现存的《诗篇》并不被视为未经改动的原始启示。"
+  ],
+  "chapters": [
+    {
+      "id": "dawud-1",
+      "title": "杀死查鲁特的青年",
+      "paragraphs": [
+        "在穆萨（愿主赐他平安）之后，以色列的后裔请求立一位国王，真主就任命了塔鲁特。军队出征对抗暴君查鲁特时，塔鲁特用一条河考验他们：谁饱饮河水，谁就不是他的人。大多数人喝了；只有少数人通过了考验。",
+        "这支小部队看见查鲁特和他的士兵时，信士们祈祷说：“我们的主啊！求你把坚忍倾注给我们，求你使我们步伐坚定，求你援助我们去对抗不信道的民众。”",
+        "奉真主的许可，他们打败了敌人，一个名叫达乌德的青年杀死了查鲁特。真主赐给达乌德王权和智慧，并把祂所意欲的教给他。"
+      ],
+      "kidsParagraphs": [
+        "一支信士的小部队对抗巨人战士查鲁特。",
+        "年轻的达乌德奉真主的许可杀死了查鲁特！后来真主使达乌德成为国王和先知。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 249,
+          "ayahEnd": 249
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 250,
+          "ayahEnd": 250
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 251,
+          "ayahEnd": 251
+        }
+      ],
+      "lessons": [
+        "胜利来自真主，而不在于人数。",
+        "自制，就像河边的考验那样，为人们承担大任做好准备。",
+        "面对困难时，要祈求坚忍和坚定的步伐。"
+      ],
+      "quiz": [
+        {
+          "question": "谁杀死了查鲁特（歌利亚）？",
+          "options": [
+            "塔鲁特",
+            "达乌德",
+            "苏莱曼",
+            "穆萨"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:251"
+        },
+        {
+          "question": "塔鲁特怎样考验他的军队？",
+          "options": [
+            "用一条河",
+            "用一场赛跑",
+            "用斋戒",
+            "用金子"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:249"
+        },
+        {
+          "question": "战斗前信士们祈求什么？",
+          "options": [
+            "坚忍、坚定的步伐和胜利",
+            "财富",
+            "一位国王",
+            "雨水"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:250"
+        }
+      ]
+    },
+    {
+      "id": "dawud-2",
+      "title": "群山、众鸟和铁",
+      "paragraphs": [
+        "真主赐给达乌德特别的恩惠。他赞颂真主时，群山和众鸟早晚都与他一起赞颂真主。真主赐给他《宰逋尔》，一部启示的经典。",
+        "真主使铁在他手中变得柔软，教他制作锁子甲，仔细地测量环节，以便在战斗中保护人们。真主对他和他的家人说：“你们应当行善。”",
+        "达乌德虽然是国王，却靠自己的劳动生活。先知ﷺ说：“达乌德（愿主赐他平安）只吃自己亲手劳动所得。”"
+      ],
+      "kidsParagraphs": [
+        "达乌德赞美真主时，群山和众鸟也和他一起赞美真主！",
+        "真主为他使铁变软，他制作铠甲。即使当了国王，他也自己挣饭吃。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 163,
+          "ayahEnd": 163
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 34,
+          "ayahStart": 11,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2073",
+          "narrator": "艾布·胡莱赖",
+          "translation": "真主的使者ﷺ说：“达乌德（愿主赐他平安）只吃自己亲手劳动所得。”",
+          "match": "ان داود عليه السلام كان لا ياكل الا من عمل يده"
+        }
+      ],
+      "lessons": [
+        "万物都在赞颂真主；用你的记念加入它们吧。",
+        "亲手劳动是光荣的，即使对国王也是如此。",
+        "技能和技术是应当用于行善的恩典。"
+      ],
+      "quiz": [
+        {
+          "question": "什么与达乌德一起赞颂真主？",
+          "options": [
+            "群山和众鸟",
+            "大海",
+            "星星",
+            "精灵"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "真主为达乌德使什么变软了？",
+          "options": [
+            "石头",
+            "铁",
+            "金子",
+            "木头"
+          ],
+          "answer": 1,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "根据先知ﷺ，达乌德吃的是什么？",
+          "options": [
+            "国库的钱",
+            "亲手劳动所得",
+            "礼物",
+            "税收"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 2073"
+        }
+      ]
+    },
+    {
+      "id": "dawud-3",
+      "title": "秉公判决",
+      "paragraphs": [
+        "有一天，两个人翻墙进入达乌德私人礼拜的地方，他吃了一惊。他们说：“你不要害怕。我们是两个争讼的人。请你在我们之间秉公判决。”其中一人说：“我的哥哥有九十九只母羊，我只有一只，他却坚持要我把它给他。”",
+        "达乌德判决说，那个人亏待了他的兄弟，许多合伙人都互相欺负，只有信道而且行善的人除外。随后达乌德意识到真主考验了他。他向他的主求饶恕，鞠躬倒下，并归依真主，真主就饶恕了他。",
+        "真主说：“达乌德啊！我确已任命你为大地上的代治者，你应当秉公地为众人判决，不要顺从私欲，以免它使你背离真主的道路。”"
+      ],
+      "kidsParagraphs": [
+        "两个人带着一个问题来找达乌德，他为他们作出了判决。",
+        "然后达乌德求真主饶恕，真主饶恕了他。真主对他说：“永远要公正地判决！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 21,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "有经人的一个故事说，达乌德的考验是他想要他的一个士兵的妻子。伊本·凯西尔等学者否定了这种说法。"
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "法官必须听取双方的意见，遵循真理，而不是私欲。",
+        "即使是最好的人也会以悔过转向真主。",
+        "权力是真主托付的信托。"
+      ],
+      "quiz": [
+        {
+          "question": "第一个人的哥哥有多少只母羊？",
+          "options": [
+            "十只",
+            "九十九只",
+            "一百只",
+            "七只"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:23"
+        },
+        {
+          "question": "达乌德意识到自己受了考验时，他做了什么？",
+          "options": [
+            "求饶恕并鞠躬倒下",
+            "发怒了",
+            "离开了城市",
+            "什么也没做"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:24"
+        },
+        {
+          "question": "真主告诉达乌德在判决时不要顺从什么？",
+          "options": [
+            "他的私欲",
+            "《讨拉特》",
+            "他的儿子",
+            "长老们"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:26"
+        }
+      ]
+    },
+    {
+      "id": "dawud-4",
+      "title": "达乌德的功修",
+      "paragraphs": [
+        "真主形容达乌德是一个有力量的人，时常归向祂。",
+        "先知ﷺ说：“真主最喜爱的斋戒是达乌德的斋戒：他斋戒一天，第二天不斋戒。真主最喜爱的礼拜是达乌德的礼拜：他睡半夜，礼拜三分之一夜，再睡六分之一夜。”",
+        "他是一个大国的国王，却仍然为长时间的夜间礼拜和规律的斋戒留出时间。他的功修是平衡的：有力、稳定而持久。"
+      ],
+      "kidsParagraphs": [
+        "达乌德隔一天斋戒一天，夜里起来礼拜。",
+        "先知ﷺ说，这是真主最喜爱的斋戒和礼拜。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 17,
+          "ayahEnd": 18
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3420",
+          "narrator": "阿卜杜拉·本·阿慕尔",
+          "translation": "真主的使者ﷺ对我说：“真主最喜爱的斋戒是达乌德的斋戒：他斋戒一天，不斋戒一天。真主最喜爱的礼拜是达乌德的礼拜：他睡半夜，站着礼拜三分之一夜，再睡六分之一夜。”",
+          "match": "احب الصيام الى الله صيام داود كان يصوم يوما ويفطر يوما"
+        }
+      ],
+      "lessons": [
+        "稳定而平衡的功修是真主最喜爱的。",
+        "忙碌的人仍然可以抽出时间做夜间礼拜。",
+        "常常归向真主是众先知的品质。"
+      ],
+      "quiz": [
+        {
+          "question": "达乌德怎样斋戒？",
+          "options": [
+            "每天都斋戒",
+            "斋戒一天，不斋戒一天",
+            "只在莱麦丹月斋戒",
+            "一年一次"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "达乌德夜里礼拜多长时间？",
+          "options": [
+            "三分之一夜",
+            "整夜",
+            "完全不礼拜",
+            "十分之一夜"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "《古兰经》38:17怎样形容达乌德？",
+          "options": [
+            "时常归向真主",
+            "懒惰",
+            "骄傲",
+            "胆小"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:17"
+        }
+      ]
+    }
+  ]
+}

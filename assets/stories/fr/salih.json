@@ -1,0 +1,344 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "salih",
+  "language": "fr",
+  "name": "Sâlih",
+  "title": "Le messager envoyé à Thamoud",
+  "sentTo": "Le peuple de Thamoud, son propre peuple",
+  "era": "Après 'Ad. Le Coran dit que Thamoud succéda à 'Ad (7:74) ; aucune date n'est donnée.",
+  "places": [
+    {
+      "name": "Al-Hijr (15:80), dans le nord-ouest de l'Arabie. On l'identifie à Mada'in Salih (Hégra), dont les tombeaux taillés dans la roche sont encore visibles.",
+      "lat": 26.79,
+      "lng": 37.95,
+      "approximate": true
+    }
+  ],
+  "summary": "Sâlih fut envoyé à Thamoud, qui taillait ses maisons dans les montagnes. Allah leur donna une chamelle comme signe et les avertit de ne pas lui faire de mal. Ils la tuèrent, et un cri terrible les détruisit, tandis que Sâlih et les croyants furent sauvés.",
+  "notes": [
+    "Les détails sur l'apparition de la chamelle (par exemple qu'elle sortit d'un rocher à la demande des gens) viennent de récits des livres d'exégèse et d'histoire, non du Coran ni des hadiths authentiques.",
+    "Les tombeaux rupestres de Mada'in Salih datent de l'époque nabatéenne, postérieure à Thamoud ; l'identification d'al-Hijr avec cette région vient du passage du Prophète ﷺ, mais on ne sait pas avec certitude quelles ruines appartiennent à Thamoud.",
+    "Le nom de celui qui tua la chamelle (souvent donné comme Qoudar) vient de récits tardifs."
+  ],
+  "chapters": [
+    {
+      "id": "salih-1",
+      "title": "Les tailleurs de montagnes",
+      "paragraphs": [
+        "Après 'Ad, Allah établit un autre peuple sur la terre : Thamoud. Ils vivaient à al-Hijr, dans le nord-ouest de l'Arabie, parmi les jardins, les sources, les champs et les palmiers chargés de fruits.",
+        "C'étaient d'habiles bâtisseurs. Ils construisaient des palais dans les plaines et taillaient leurs maisons dans les montagnes. Mais comme 'Ad avant eux, ils oublièrent Celui qui leur avait donné tout cela, et les arrogants parmi eux menaient les autres."
+      ],
+      "kidsParagraphs": [
+        "Le peuple de Thamoud vivait parmi les jardins et les sources.",
+        "Ils taillaient leurs maisons dans les montagnes. Mais ils oublièrent de remercier Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 146,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 74,
+          "ayahEnd": 74
+        }
+      ],
+      "lessons": [
+        "L'habileté et le confort sont des bienfaits d'Allah, non des raisons d'être orgueilleux.",
+        "Tirons les leçons des nations qui nous ont précédés.",
+        "Le confort peut faire oublier l'au-delà."
+      ],
+      "quiz": [
+        {
+          "question": "Que taillait Thamoud dans les montagnes ?",
+          "options": [
+            "Des statues",
+            "Des maisons",
+            "Des bateaux",
+            "Des puits"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Après quel peuple Thamoud vint-il ?",
+          "options": [
+            "'Ad",
+            "Le peuple de Lout",
+            "Le peuple de Moussa",
+            "Les Romains"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Lequel de ces biens Thamoud avait-il, selon le Coran 26:147-148 ?",
+          "options": [
+            "Des jardins, des sources et des palmiers",
+            "Des navires et des ports",
+            "De la neige et de la glace",
+            "Des mines d'or"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:147-148"
+        }
+      ]
+    },
+    {
+      "id": "salih-2",
+      "title": "La chamelle d'Allah",
+      "paragraphs": [
+        "Allah leur envoya leur frère Sâlih (AS) : « Ô mon peuple, adorez Allah ; vous n'avez pas d'autre divinité que Lui. C'est Lui qui vous a produits de la terre et vous y a établis ; demandez-Lui donc pardon et revenez à Lui. »",
+        "Auparavant, ils avaient placé de grands espoirs en Sâlih. Maintenant ils disaient douter de son message et le traitaient d'ensorcelé : « Tu n'es qu'un homme comme nous ; apporte donc un signe si tu es véridique. »",
+        "Allah leur donna un signe clair : une chamelle. Sâlih leur dit : « Voici la chamelle d'Allah, un signe pour vous. Laissez-la manger sur la terre d'Allah, et ne lui faites aucun mal. » L'eau devait être partagée : elle boirait un jour, et eux un autre."
+      ],
+      "kidsParagraphs": [
+        "Sâlih dit à son peuple de n'adorer qu'Allah. Ils demandèrent un signe.",
+        "Allah leur donna une chamelle spéciale. Sâlih dit : « Ne lui faites pas de mal. Elle boit un jour, et vous le jour suivant. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 61,
+          "ayahEnd": 61
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 62,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 153,
+          "ayahEnd": 154
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 64,
+          "ayahEnd": 64
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 155,
+          "ayahEnd": 156
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Certains livres disent que la chamelle sortit d'un rocher massif devant les gens, déjà pleine, après qu'ils eurent demandé exactement ce signe."
+        }
+      ],
+      "lessons": [
+        "Les signes d'Allah sont à la fois une miséricorde et une épreuve.",
+        "Partager équitablement fait partie de l'obéissance à Allah.",
+        "Demander un signe est facile ; croire et obéir ensuite, voilà la vraie épreuve."
+      ],
+      "quiz": [
+        {
+          "question": "Quel signe Allah donna-t-Il à Thamoud ?",
+          "options": [
+            "Un bâton",
+            "Une chamelle",
+            "Un bateau",
+            "Un nuage"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:64"
+        },
+        {
+          "question": "Comment l'eau était-elle partagée ?",
+          "options": [
+            "La chamelle ne buvait jamais",
+            "Elle buvait un jour et eux un autre",
+            "Seuls les chefs buvaient",
+            "Ils buvaient en premier"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:155"
+        },
+        {
+          "question": "Comment Thamoud appela-t-il Sâlih ?",
+          "options": [
+            "Un roi",
+            "Un ensorcelé",
+            "Un marchand",
+            "Un ange"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:153"
+        }
+      ]
+    },
+    {
+      "id": "salih-3",
+      "title": "Ils lui coupèrent les jarrets",
+      "paragraphs": [
+        "Les chefs arrogants refusèrent de croire et méprisèrent les faibles qui avaient cru. Puis le plus misérable d'entre eux s'avança, et ils coupèrent les jarrets de la chamelle et la tuèrent.",
+        "Ils défièrent Sâlih : « Apporte-nous ce que tu nous promets, si tu es un messager. » Sâlih leur dit : « Jouissez de vos demeures pendant trois jours. C'est une promesse qui ne sera pas démentie. »"
+      ],
+      "kidsParagraphs": [
+        "Les orgueilleux tuèrent la chamelle d'Allah.",
+        "Sâlih les avertit : « Il ne vous reste que trois jours. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 75,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 91,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 65,
+          "ayahEnd": 65
+        }
+      ],
+      "lessons": [
+        "Enfreindre ouvertement l'ordre d'Allah attire Son châtiment.",
+        "Ceux qui approuvent un crime y participent.",
+        "Se moquer d'un avertissement ne le fait pas disparaître."
+      ],
+      "quiz": [
+        {
+          "question": "Que fit Thamoud de la chamelle ?",
+          "options": [
+            "Ils la vendirent",
+            "Ils lui coupèrent les jarrets",
+            "Ils la cachèrent",
+            "Ils la nourrirent"
+          ],
+          "answer": 1,
+          "reference": "Quran 91:14"
+        },
+        {
+          "question": "Combien de jours Sâlih leur donna-t-il après cela ?",
+          "options": [
+            "Sept",
+            "Trois",
+            "Quarante",
+            "Dix"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:65"
+        },
+        {
+          "question": "Qui s'avança pour tuer la chamelle ?",
+          "options": [
+            "Le plus misérable d'entre eux",
+            "Le fils de Sâlih",
+            "Un étranger",
+            "Le roi d'Égypte"
+          ],
+          "answer": 0,
+          "reference": "Quran 91:12"
+        }
+      ]
+    },
+    {
+      "id": "salih-4",
+      "title": "Les ruines d'al-Hijr",
+      "paragraphs": [
+        "Quand l'ordre d'Allah vint, Il sauva Sâlih et ceux qui avaient cru avec lui, par Sa miséricorde. Un cri terrible et un tremblement de terre saisirent les injustes, et au matin ils gisaient sans vie dans leurs maisons, comme s'ils n'y avaient jamais habité.",
+        "Sâlih se détourna d'eux en disant : « Ô mon peuple, je vous ai transmis le message de mon Seigneur et je vous ai conseillés, mais vous n'aimez pas les conseillers sincères. »",
+        "Bien des siècles plus tard, le Prophète ﷺ passa par al-Hijr avec ses Compagnons. Il leur dit de ne pas entrer dans les demeures de ceux qui s'étaient fait du tort à eux-mêmes sans être en pleurs, afin que ce qui les avait frappés ne les frappe pas, et il se couvrit le visage."
+      ],
+      "kidsParagraphs": [
+        "Allah sauva Sâlih et les croyants. Un cri terrible détruisit les autres.",
+        "Quand le Prophète ﷺ passa près de leurs ruines, il dit : « N'y entrez qu'en pleurant. » Il voulait que nous apprenions et restions humbles."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3380",
+          "narrator": "Abdallah ibn Omar",
+          "translation": "Quand le Prophète ﷺ passa par al-Hijr, il dit : « N'entrez pas dans les demeures de ceux qui se sont fait du tort à eux-mêmes sans être en pleurs, de peur que ce qui les a frappés ne vous frappe. » Puis il se couvrit la tête de son manteau alors qu'il était sur sa selle.",
+          "match": "لا تدخلوا مساكن الذين ظلموا الا ان تكونوا باكين"
+        }
+      ],
+      "lessons": [
+        "Les lieux de châtiment sont faits pour méditer, non pour se divertir.",
+        "Le conseil d'un prophète est sincère, même quand les gens le rejettent.",
+        "Allah sauve les croyants même au milieu d'un peuple détruit."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui saisit les injustes de Thamoud ?",
+          "options": [
+            "Une inondation",
+            "Un cri terrible et un tremblement de terre",
+            "Un feu",
+            "Un vent de sept nuits"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:67"
+        },
+        {
+          "question": "Que dit le Prophète ﷺ en passant par al-Hijr ?",
+          "options": [
+            "Entrez-y et reposez-vous",
+            "N'y entrez qu'en pleurant",
+            "Construisez-y une mosquée",
+            "Buvez de ses puits"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3380"
+        },
+        {
+          "question": "Que dit Sâlih en se détournant d'eux ?",
+          "options": [
+            "Je vous ai transmis le message de mon Seigneur et je vous ai conseillés",
+            "Je reviendrai",
+            "Vous aviez raison",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:79"
+        }
+      ]
+    }
+  ]
+}

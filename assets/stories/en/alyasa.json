@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "en",
+  "name": "Al-Yasa'",
+  "title": "One of the outstanding, preferred over the worlds",
+  "sentTo": "The Children of Israel, according to most scholars",
+  "era": "After Ilyas (AS), according to historians; the Quran and Sunnah give no date. His place in this order is approximate.",
+  "places": [
+    {
+      "name": "Not known for certain; usually placed in the land of Israel (Palestine).",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Al-Yasa' is named twice in the Quran, among the Prophets whom Allah preferred over the worlds and among the outstanding. The Quran tells nothing more of his life.",
+  "notes": [
+    "Most scholars identify al-Yasa' with Elisha of the Bible, the successor of Elijah (Ilyas). This comes from history and the People of the Book.",
+    "The Quran gives no story for him; nothing more is narrated in authentic hadith."
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "Preferred over the worlds",
+      "paragraphs": [
+        "Allah mentions al-Yasa' (AS) in Surah al-An'am with Ismail, Yunus and Lut: “and all of them We preferred over the worlds.”",
+        "In Surah Sad, Allah says: “And remember Ismail, al-Yasa' and Dhul-Kifl; all are among the outstanding.”",
+        "Historians say he followed Ilyas (AS) and called the Children of Israel to Allah after him. The Quran keeps his story short, but places him among the chosen and the best."
+      ],
+      "kidsParagraphs": [
+        "Al-Yasa' is a Prophet named in the Quran with Ismail, Yunus and Lut.",
+        "Allah says he was one of the best and most chosen people."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "Allah's choice and praise are the greatest honour.",
+        "Every Prophet carried the same message of tawhid.",
+        "We believe in all the Prophets, whether their stories are long or short."
+      ],
+      "quiz": [
+        {
+          "question": "With whom is al-Yasa' named in 6:86?",
+          "options": [
+            "Ismail, Yunus and Lut",
+            "Musa and Harun",
+            "Adam and Nuh",
+            "Isa and Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "How does 38:48 describe al-Yasa'?",
+          "options": [
+            "Among the outstanding",
+            "A king",
+            "A merchant",
+            "A poet"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "What does Allah say about those named in 6:86?",
+          "options": [
+            "He preferred them over the worlds",
+            "They were kings",
+            "They were rich",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

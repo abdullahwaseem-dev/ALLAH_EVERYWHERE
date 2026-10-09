@@ -1,0 +1,165 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "idris",
+  "language": "en",
+  "name": "Idris",
+  "title": "A man of truth, raised to a high station",
+  "sentTo": "The descendants of Adam (AS) before or after Nuh (AS); the Quran does not say",
+  "era": "Very early. Most scholars place him between Adam and Nuh (AS); the Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Not known. The Quran does not say where Idris lived.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "A Prophet praised in the Quran as a man of truth, patient and righteous, whom Allah raised to a high station. Very little about his life is known for certain, and the Quran mentions him only twice.",
+  "notes": [
+    "Most scholars say Idris lived between Adam and Nuh (AS). Many identify him with Enoch (Akhnukh) of the Bible; this comes from historians and the People of the Book, not from the Quran or Sunnah.",
+    "'We raised him to a high station' (19:57): many scholars say it means a high rank of honour and prophethood; others say he was raised to one of the heavens.",
+    "Popular reports that he was the first to write with a pen, to sew clothes or to study the stars come from later sources, not from the Quran or authentic hadith."
+  ],
+  "chapters": [
+    {
+      "id": "idris-1",
+      "title": "A man of truth",
+      "paragraphs": [
+        "The Quran asks us to remember Idris (AS). Allah describes him as a man of truth and a Prophet, and says: “We raised him to a high station.”",
+        "Allah also names him with Ismail and Dhul-Kifl (AS) as being among the patient, and says that He admitted them into His mercy, for they were among the righteous.",
+        "That is almost all that we know about Idris for certain. The Quran gives us his qualities rather than his story: truthfulness, patience and righteousness. These are the qualities that raise a person in Allah's sight."
+      ],
+      "kidsParagraphs": [
+        "Idris was a Prophet who always told the truth.",
+        "Allah says he was patient and good, and raised him to a high place. We can be truthful and patient like him!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 56,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Some books say Idris was the first to write with a pen and to sew clothes, or describe how he was taken up to heaven by an angel."
+        }
+      ],
+      "lessons": [
+        "Truthfulness is one of the greatest qualities of the Prophets.",
+        "Patience brings a person into Allah's mercy.",
+        "What matters most about a person is their character, not how much is known about them."
+      ],
+      "quiz": [
+        {
+          "question": "How does the Quran describe Idris (AS)?",
+          "options": [
+            "A king",
+            "A man of truth and a Prophet",
+            "A merchant",
+            "A poet"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:56"
+        },
+        {
+          "question": "What did Allah do for Idris?",
+          "options": [
+            "Raised him to a high station",
+            "Gave him a ship",
+            "Made him a king",
+            "Gave him a staff"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:57"
+        },
+        {
+          "question": "With which two Prophets is Idris named as one of the patient?",
+          "options": [
+            "Musa and Harun",
+            "Ismail and Dhul-Kifl",
+            "Yunus and Ayyub",
+            "Dawud and Sulayman"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:85"
+        }
+      ]
+    },
+    {
+      "id": "idris-2",
+      "title": "Greeting the Prophet ﷺ in the heavens",
+      "paragraphs": [
+        "On the night of the Mi'raj, when the Prophet Muhammad ﷺ was taken up through the heavens, he met several of the earlier Prophets. One of them was Idris.",
+        "Idris welcomed him with the words: “Welcome, righteous Prophet and righteous brother.” The Prophets greeted one another as brothers, because their message was one: to worship Allah alone."
+      ],
+      "kidsParagraphs": [
+        "On the night of the Mi'raj, the Prophet Muhammad ﷺ met Idris in the heavens.",
+        "Idris said: “Welcome, righteous Prophet and righteous brother!” All the Prophets are like brothers."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3342",
+          "narrator": "Anas ibn Malik, from Abu Dharr",
+          "translation": "…Anas said: “When Jibril passed with the Prophet ﷺ by Idris, he said: ‘Welcome to the righteous Prophet and the righteous brother.’ The Prophet ﷺ said: ‘Who is this?’ Jibril said: ‘This is Idris.’”",
+          "match": "فلما مر جبريل بادريس قال مرحبا بالنبي الصالح والاخ الصالح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "All the Prophets are brothers with one message.",
+        "Welcoming others warmly is the way of the Prophets.",
+        "The Mi'raj showed the honour Allah gave to His Prophets."
+      ],
+      "quiz": [
+        {
+          "question": "When did the Prophet ﷺ meet Idris?",
+          "options": [
+            "At the Battle of Badr",
+            "On the night of the Mi'raj",
+            "In Madinah",
+            "In a dream at Hira"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "What did Idris call the Prophet ﷺ?",
+          "options": [
+            "Righteous son",
+            "Righteous brother",
+            "King",
+            "Teacher"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Who brought the Prophet ﷺ through the heavens?",
+          "options": [
+            "Jibril",
+            "Mika'il",
+            "Israfil",
+            "Idris"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3342"
+        }
+      ]
+    }
+  ]
+}

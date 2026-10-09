@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">Sıradaki Namaz</string>
+    <string name="widget_next_prayer_description">Bugünün namaz vakitleriyle sıradaki namaza geri sayım</string>
+    <string name="widget_hijri_date_name">Hicri Tarih</string>
+    <string name="widget_hijri_date_description">Bugünün hicri tarihi ve İslami günler</string>
+    <string name="widget_reminder_name">Günün Ayeti</string>
+    <string name="widget_daily_reminder_description">Her gün üzerine düşünmek için bir ayet veya hadis</string>
+    <string name="widget_next_prayer_fallback">Sıradaki namaz</string>
+    <string name="widget_set_location_fallback">Konumunuzu ayarlamak için uygulamayı açın</string>
+    <string name="widget_open_app_fallback">Güncellemek için uygulamayı açın</string>
+    <string name="widget_preview_prayer">İkindi</string>
+    <string name="widget_preview_hijri_month">Rebiülahir</string>
+</resources>

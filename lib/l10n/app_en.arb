@@ -108,5 +108,1305 @@
 
   "welcomeTitle": "Welcome To \nAllah Everywhere",
   "registrationSuccessMessage": "You have successfully registered, strengthening your faith journey is now easier with ALLAH Everywhere",
-  "finish": "Finish"
+  "finish": "Finish",
+  "fajr": "Fajr",
+  "dhuhr": "Dhuhr",
+  "asr": "Asr",
+  "maghrib": "Maghrib",
+  "isha": "Isha",
+  "prayerTimeTitle": "{prayer} — it's time to pray",
+  "quranReminderTitle": "Time to read Quran",
+  "quranReminderBody": "Take a few minutes today for your daily Quran reading.",
+  "@prayerTimeTitle": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "tawafSaiRounds": "Tawaf / Sa'i rounds",
+  "resetCounterTitle": "Reset this counter?",
+  "resetCounterMessage": "This color's count and laps go back to 0. Other colors are not changed.",
+  "resetAll": "Reset all",
+  "resetAllTitle": "Reset all counters?",
+  "resetAllMessage": "Every color's count and laps go back to 0. Targets, names and your lifetime total are kept.",
+  "nameCounter": "Name this counter",
+  "nameCounterHint": "e.g. SubhanAllah",
+  "longPressToName": "Long-press a color to name it",
+  "tasbeehCounterNumber": "Counter {number}",
+  "@tasbeehCounterNumber": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "askAiPrompt": "Ask AI: {example}",
+  "@askAiPrompt": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "askAiExampleWitr": "How do I pray Witr?",
+  "askAiExampleAnxiety": "Dua for anxiety",
+  "askAiExampleFast": "What breaks the fast?",
+  "askAiExampleTravel": "How do I shorten prayers while travelling?",
+  "askAiFirstHint": "Ask any Islamic question",
+  "askAiExplainAyah": "Explain Surah {surah}, ayah {ayah}",
+  "@askAiExplainAyah": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "int"
+      }
+    }
+  },
+  "askAiExplainAyahs": "Explain Surah {surah}, ayahs {from}–{to}",
+  "@askAiExplainAyahs": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "from": {
+        "type": "int"
+      },
+      "to": {
+        "type": "int"
+      }
+    }
+  },
+  "askAiExplainHadith": "Explain {book}, hadith #{number}",
+  "@askAiExplainHadith": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "askAiExplainHadithChapter": "Explain the hadiths in the chapter \"{chapter}\"",
+  "@askAiExplainHadithChapter": {
+    "placeholders": {
+      "chapter": {
+        "type": "String"
+      }
+    }
+  },
+  "askAiExplainDua": "Explain the dua \"{title}\" ({reference}) and when to recite it",
+  "@askAiExplainDua": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "askAiAboutHadith": "Ask AI about this hadith",
+  "aiErrorOffline": "No internet connection. Check your connection and try again.",
+  "aiErrorBusy": "The AI is very busy right now. Please try again in a minute.",
+  "aiErrorNoAnswer": "The AI couldn't answer that question. Try asking it in a different way.",
+  "aiErrorUnavailable": "Ask AI isn't available right now. Please try again later.",
+  "calculationAutomatic": "Automatic ({method})",
+  "@calculationAutomatic": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "nowPlayingAyah": "Now playing · Ayah {number}",
+  "@nowPlayingAyah": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pausedAtAyah": "Paused · Ayah {number}",
+  "@pausedAtAyah": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "followRecitation": "Follow recitation",
+  "playFromAyah": "Play from ayah {number}",
+  "@playFromAyah": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "jumuahReminderTitle": "It's Jumu'ah!",
+  "jumuahReminderBody": "Read Surah Al-Kahf and send Durood upon the Prophet ﷺ",
+  "jumuahAsrReminderTitle": "Friday: the hour of accepted duas",
+  "jumuahAsrReminderBody": "The last hour before Maghrib on Friday is a time when duas are hoped to be accepted. Scholars differ on the exact hour. ({reference})",
+  "jumuahReminderSetting": "Jumu'ah Reminder",
+  "jumuahReminderSubtitle": "Fridays: read Surah Al-Kahf and send Durood",
+  "jumuahReminderTime": "Jumu'ah Reminder Time",
+  "jumuahAsrReminderSetting": "Friday Asr Reminder",
+  "jumuahAsrReminderSubtitle": "1 hour before Asr: a reminder about the hour of accepted duas",
+  "jumuahAsrNeedsLocation": "Needs your location to know the Asr time",
+  "jumuahCardTitle": "Jumu'ah Mubarak",
+  "jumuahCardSubtitle": "Read Surah Al-Kahf",
+  "@jumuahAsrReminderBody": {
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "names99": "99 Names",
+  "asmaUlHusnaTitle": "99 Names of Allah",
+  "asmaSearchHint": "Search by name or meaning",
+  "asmaNoResults": "No names match your search",
+  "asmaSourceNote": "List and order from {listRef}. That Allah has 99 Names is authentic ({countRef}), but scholars differ on whether this list is from the Prophet ﷺ, and other lists differ in a few Names.",
+  "asmaAboutName": "About this Name",
+  "nameOfTheDay": "Name of the Day",
+  "bookmark": "Bookmark",
+  "bookmarked": "Bookmarked",
+  "share": "Share",
+  "copy": "Copy",
+  "copied": "Copied to clipboard",
+  "bookmarkUpdateFailed": "Could not update the bookmark. Please try again.",
+  "@asmaSourceNote": {
+    "placeholders": {
+      "listRef": {
+        "type": "String"
+      },
+      "countRef": {
+        "type": "String"
+      }
+    }
+  },
+  "zakatTile": "Zakat",
+  "zakatTitle": "Zakat Calculator",
+  "zakatCurrency": "Currency",
+  "zakatAssetsSection": "Your wealth",
+  "zakatCash": "Cash in hand and bank",
+  "zakatGoldGrams": "Gold (grams)",
+  "zakatSilverGrams": "Silver (grams)",
+  "zakatInvestments": "Investments, shares and crypto (current value)",
+  "zakatBusinessStock": "Business stock / inventory",
+  "zakatReceivables": "Money owed to you (expected to be repaid)",
+  "zakatDeductionsSection": "Deductions",
+  "zakatDebts": "Debts you owe that are due now",
+  "zakatNisabSection": "Nisab",
+  "zakatNisabGold": "Gold ({grams} g)",
+  "zakatNisabSilver": "Silver ({grams} g)",
+  "zakatNisabNote": "Many scholars recommend the silver nisab because it benefits more poor people. Scholars differ on which standard to use.",
+  "zakatPricesSection": "Gold and silver prices",
+  "zakatGoldPerGram": "Gold per gram",
+  "zakatSilverPerGram": "Silver per gram",
+  "zakatPriceAsOf": "Price as of {date}",
+  "zakatPriceLive": "Live price",
+  "zakatPriceManual": "Entered manually",
+  "zakatRefreshPrice": "Refresh price",
+  "zakatEnterManually": "Enter prices manually",
+  "zakatPriceFetchFailed": "Couldn't get a live price. Check your connection or enter the prices manually.",
+  "zakatNoPrice": "Add the gold and silver price to calculate the nisab.",
+  "zakatResultSection": "Result",
+  "zakatGoldValue": "Gold value",
+  "zakatSilverValue": "Silver value",
+  "zakatTotalAssets": "Total assets",
+  "zakatLessDebts": "Less debts due now",
+  "zakatZakatableWealth": "Total zakatable wealth",
+  "zakatNisabValue": "Nisab value",
+  "zakatIsDue": "Zakat is due",
+  "zakatNotDue": "Below the nisab - zakat is not due",
+  "zakatAmountDue": "Zakat due (2.5%)",
+  "zakatHowItWorks": "How Zakat works",
+  "zakatHowNisab": "Zakat becomes due when your zakatable wealth reaches the nisab and a full lunar (Hijri) year passes while you hold it.",
+  "zakatHowRate": "The rate is 2.5% (one fortieth) of your zakatable wealth.",
+  "zakatHowRecipients": "Zakat is given to the eight groups of people named in the Quran:",
+  "zakatHowDebts": "Scholars differ on deducting debts: the Hanafi school deducts debts that are due, while the Shafi'i school does not. This calculator deducts debts due now.",
+  "zakatHowJewellery": "Scholars also differ on jewellery worn for personal use: the Hanafi school requires zakat on it, while the Maliki, Shafi'i and Hanbali schools generally do not.",
+  "zakatDisclaimer": "For complex cases (business, property, pensions), consult a qualified scholar.",
+  "zakatClearAll": "Clear all",
+  "@zakatNisabGold": {
+    "placeholders": {
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "@zakatNisabSilver": {
+    "placeholders": {
+      "grams": {
+        "type": "String"
+      }
+    }
+  },
+  "@zakatPriceAsOf": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarTile": "Calendar",
+  "calendarTitle": "Islamic Calendar",
+  "calendarToday": "Today",
+  "calendarThisMonth": "This month",
+  "calendarNoEvents": "No special events on this day",
+  "calendarSource": "Source",
+  "calendarFastingForbidden": "Fasting is not permitted on this day.",
+  "calendarSunnahFast": "Sunnah fast",
+  "calendarExpectedNote": "Expected date - it depends on the moon sighting where you live.",
+  "calendarDebatedNote": "Scholars differ on this date or on how to observe it.",
+  "calendarAdjustedNote": "Dates use the Umm al-Qura calendar with your Hijri adjustment ({days} days).",
+  "hijriAdjustment": "Hijri date adjustment",
+  "hijriAdjustmentSubtitle": "Moon sighting differs by country",
+  "hijriAdjustmentNone": "None (Umm al-Qura)",
+  "whiteDaysReminder": "White Days fasting reminder",
+  "whiteDaysReminderSubtitle": "The evening before the 13th, 14th and 15th of each month",
+  "mondayThursdayReminder": "Monday/Thursday fasting reminder",
+  "mondayThursdayReminderSubtitle": "The evening before each Monday and Thursday",
+  "importantDatesReminder": "Important Islamic dates",
+  "importantDatesReminderSubtitle": "Ashura, Ramadan, Arafah, Eid and more",
+  "calendarReminderFastBody": "Plan your suhoor tonight if you intend to fast.",
+  "calendarReminderEventBody": "Tap to see it in the Islamic calendar.",
+  "calEventNewYear": "Islamic New Year",
+  "calEventNewYearDesc": "1 Muharram begins the Hijri year. The Companions dated the calendar from the Prophet's ﷺ migration to Madinah.",
+  "calEventTasua": "9th of Muharram (Tasu'a)",
+  "calEventTasuaDesc": "The Prophet ﷺ intended to fast the 9th together with Ashura. Some scholars also recommend fasting the 11th.",
+  "calEventAshura": "Day of Ashura",
+  "calEventAshuraDesc": "Fasting on Ashura is hoped to expiate the sins of the previous year. Fast the 9th with it, or the 11th according to some scholars.",
+  "calEventMawlid": "12 Rabi' al-Awwal (Mawlid)",
+  "calEventMawlidDesc": "Commonly given as the Prophet's ﷺ birthday. Historians differ on the exact date, and scholars differ on marking it. He ﷺ fasted on Mondays, saying it was the day he was born.",
+  "calEventIsraMiraj": "27 Rajab (Isra and Mi'raj)",
+  "calEventIsraMirajDesc": "The Night Journey and Ascension are mentioned in the Quran, but the exact date is debated; 27 Rajab is a common view, not a confirmed one.",
+  "calEventMidShaban": "15 Sha'ban",
+  "calEventMidShabanDesc": "Some narrations mention Allah's forgiveness on the night of mid-Sha'ban. Scholars differ on their authenticity and on singling out this night for worship.",
+  "calEventRamadanStart": "Start of Ramadan",
+  "calEventRamadanStartDesc": "The month of obligatory fasting. It begins when the new crescent is sighted, so the date where you live may differ by a day.",
+  "calEventLastTenNights": "Last ten nights of Ramadan",
+  "calEventLastTenNightsDesc": "The most blessed nights of the year, in which Laylat al-Qadr is sought.",
+  "calEventOddNight": "Odd night - seek Laylat al-Qadr",
+  "calEventOddNightDesc": "Seek Laylat al-Qadr in the odd nights of the last ten. The night begins at Maghrib on the evening before this date.",
+  "calEventEidFitr": "Eid al-Fitr",
+  "calEventEidFitrDesc": "The festival that ends Ramadan. Fasting on this day is not permitted.",
+  "calEventShawwalSix": "Six days of Shawwal",
+  "calEventShawwalSixDesc": "Fasting six days of Shawwal after Ramadan is like fasting the whole year. They can be fasted any time in Shawwal after Eid.",
+  "calEventArafah": "Day of Arafah",
+  "calEventArafahDesc": "For those not on Hajj, fasting this day is hoped to expiate the sins of the previous year and the coming year.",
+  "calEventEidAdha": "Eid al-Adha",
+  "calEventEidAdhaDesc": "The festival of sacrifice. Fasting on this day is not permitted.",
+  "calEventTashreeq": "Days of Tashreeq",
+  "calEventTashreeqDesc": "11-13 Dhul Hijjah are days of eating, drinking and remembering Allah. Fasting is not permitted, except for pilgrims who cannot offer a sacrifice.",
+  "calEventMondayThursday": "Monday/Thursday fast",
+  "calEventMondayThursdayDesc": "The Prophet ﷺ fasted on Mondays and Thursdays, the days on which deeds are presented to Allah.",
+  "calEventWhiteDays": "White Days (Ayyam al-Bid)",
+  "calEventWhiteDaysDesc": "Fasting three days each month, on the 13th, 14th and 15th, is recommended.",
+  "hijriMonthName": "{month, select, 1{Muharram} 2{Safar} 3{Rabi' al-Awwal} 4{Rabi' al-Thani} 5{Jumada al-Ula} 6{Jumada al-Akhirah} 7{Rajab} 8{Sha'ban} 9{Ramadan} 10{Shawwal} 11{Dhul Qa'dah} 12{Dhul Hijjah} other{}}",
+  "hijriYear": "{year} AH",
+  "calendarReminderTitle": "Tomorrow: {events}",
+  "@calendarAdjustedNote": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "@hijriMonthName": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "@hijriYear": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "@calendarReminderTitle": {
+    "placeholders": {
+      "events": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarTile": "Adhkar",
+  "adhkarTitle": "Morning & Evening Adhkar",
+  "adhkarMorning": "Morning",
+  "adhkarEvening": "Evening",
+  "adhkarMorningHint": "After Fajr",
+  "adhkarEveningHint": "After Asr",
+  "adhkarProgress": "{current} of {total}",
+  "adhkarTapToCount": "Tap to count",
+  "adhkarRecite": "Recite {count}×",
+  "adhkarRemaining": "{count} left",
+  "adhkarDone": "Done",
+  "adhkarVirtue": "Virtue",
+  "adhkarSource": "Source",
+  "adhkarMorningCompleted": "Morning adhkar completed",
+  "adhkarEveningCompleted": "Evening adhkar completed",
+  "adhkarCompletedBody": "May Allah accept it from you. Today is marked as completed.",
+  "adhkarCompletedToday": "Completed today",
+  "adhkarStartOver": "Start over",
+  "adhkarSourceNote": "From Hisn al-Muslim. Scholars differ on the grading of some of these narrations - see each source.",
+  "morningAdhkarReminder": "Morning adhkar reminder",
+  "morningAdhkarReminderSubtitle": "30 minutes after Fajr",
+  "eveningAdhkarReminder": "Evening adhkar reminder",
+  "eveningAdhkarReminderSubtitle": "30 minutes after Asr",
+  "adhkarNeedsLocation": "Needs your location to know the prayer times",
+  "adhkarMorningReminderTitle": "Morning adhkar",
+  "adhkarMorningReminderBody": "Begin your day with the morning remembrance of Allah.",
+  "adhkarEveningReminderTitle": "Evening adhkar",
+  "adhkarEveningReminderBody": "Take a few minutes for the evening remembrance of Allah.",
+  "tasbeehTodayTotal": "Today: {count} (including adhkar)",
+  "@adhkarProgress": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "@adhkarRecite": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@adhkarRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@tasbeehTodayTotal": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "adhanSound": "Adhan Sound",
+  "adhanSoundSubtitle": "Choose the sound for each prayer",
+  "adhanSoundPrayers": "Dhuhr, Asr, Maghrib and Isha",
+  "adhanSoundFajr": "Fajr",
+  "adhanFajrNote": "The Fajr adhan includes \"as-salatu khayrun min an-nawm\" (prayer is better than sleep).",
+  "adhanPerPrayer": "Per prayer",
+  "soundDefaultAdhan": "Default adhan",
+  "soundMakkah": "Makkah adhan",
+  "soundMadinah": "Madinah adhan",
+  "soundAlafasy": "Mishary Alafasy adhan",
+  "soundMakkahFajr": "Makkah Fajr adhan",
+  "soundMadinahFajr": "Madinah Fajr adhan",
+  "soundAlafasyFajr": "Mishary Alafasy Fajr adhan",
+  "soundGentle": "Gentle",
+  "soundGentleSubtitle": "Opening takbir only, at a lower volume",
+  "soundDefaultFajrSubtitle": "Regular adhan, without the Fajr phrase",
+  "soundBeep": "Short beep",
+  "soundBeepSubtitle": "Your phone's default notification sound",
+  "soundSilent": "Silent (notification only)",
+  "soundNotAdded": "Audio not added yet",
+  "alertAdhan": "Adhan",
+  "alertBeep": "Beep",
+  "alertSilent": "Silent",
+  "alertOff": "Off",
+  "previewPlay": "Play preview",
+  "previewStop": "Stop preview",
+  "hifzTile": "Hifz",
+  "hifzTitle": "Hifz (Memorization)",
+  "hifzMode": "Hifz mode",
+  "hifzMemorizedTotal": "{count} ayahs memorized",
+  "hifzJuzAmma": "Juz Amma",
+  "hifzProgressOf": "{done} of {total} ayahs",
+  "hifzReviewToday": "Review today",
+  "hifzReviewEmpty": "Nothing to review today",
+  "hifzAyahRange": "Ayahs {from}-{to}",
+  "hifzSurahs": "Surahs",
+  "hifzStartPractice": "Start practice",
+  "hifzFrom": "From",
+  "hifzTo": "To",
+  "hifzRangeLimit": "Up to {max} ayahs at a time",
+  "hifzRepeatEach": "Repeat each ayah",
+  "hifzRounds": "Repeat the range",
+  "hifzGap": "Pause between repeats",
+  "hifzSpeed": "Speed",
+  "hifzTimes": "{count}×",
+  "hifzSeconds": "{count} s",
+  "hifzPlay": "Play",
+  "hifzPause": "Pause",
+  "hifzStop": "Stop",
+  "hifzDownloading": "Downloading audio… {done}/{total}",
+  "hifzAudioFailed": "Couldn't download the recitation. Check your connection and try again.",
+  "hifzNowPlaying": "Ayah {ayah} · repeat {repeat}/{repeats} · round {round}/{rounds}",
+  "hifzTestYourself": "Test yourself",
+  "hideNone": "Show all",
+  "hideFirstLetters": "First letters",
+  "hideEveryOther": "Every other word",
+  "hideAll": "All hidden",
+  "hifzTapToReveal": "Tap a hidden word to reveal it",
+  "hifzRemembered": "Remembered",
+  "hifzNeedPractice": "Need practice",
+  "hifzNextReview": "Next review: {date}",
+  "hifzSettingsApplyNext": "Changes apply the next time you press play.",
+  "hifzPractice": "Practice",
+  "@hifzMemorizedTotal": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzProgressOf": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzAyahRange": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzRangeLimit": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzTimes": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzSeconds": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzDownloading": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzNowPlaying": {
+    "placeholders": {
+      "ayah": {
+        "type": "String"
+      },
+      "repeat": {
+        "type": "String"
+      },
+      "repeats": {
+        "type": "String"
+      },
+      "round": {
+        "type": "String"
+      },
+      "rounds": {
+        "type": "String"
+      }
+    }
+  },
+  "@hifzNextReview": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "quranSurahView": "Surah view",
+  "quranMushafView": "Mushaf view",
+  "mushafContinue": "Continue from page {page}",
+  "mushafOpen": "Open the Mushaf",
+  "mushafPageN": "Page {page}",
+  "mushafJuzN": "Juz {juz}",
+  "mushafHizbN": "Hizb {hizb}",
+  "mushafGoTo": "Go to",
+  "mushafJumpPage": "Page",
+  "mushafJumpJuz": "Juz",
+  "mushafJumpHizb": "Hizb",
+  "mushafJumpSurah": "Surah",
+  "mushafGo": "Go",
+  "mushafPageRange": "Enter a page from 1 to 604",
+  "mushafTextSize": "Text size",
+  "mushafBackground": "Page background",
+  "mushafBgAuto": "Follow app theme",
+  "mushafBgWhite": "White",
+  "mushafBgSepia": "Sepia",
+  "mushafBgNight": "Night",
+  "mushafPlayFromAyah": "Play from this ayah",
+  "mushafBookmarkPage": "Bookmark this page",
+  "mushafRemoveBookmark": "Remove page bookmark",
+  "mushafAyahTitle": "{surah}, ayah {ayah}",
+  "mushafPlaying": "Playing from {surah}, ayah {ayah}",
+  "mushafLongPressHint": "Long-press an ayah for its translation, audio and more",
+  "mushafAudioFailed": "Couldn't load the recitation. Check your connection.",
+  "mushafSettings": "Reading settings",
+  "@mushafContinue": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "@mushafPageN": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "@mushafJuzN": {
+    "placeholders": {
+      "juz": {
+        "type": "String"
+      }
+    }
+  },
+  "@mushafHizbN": {
+    "placeholders": {
+      "hizb": {
+        "type": "String"
+      }
+    }
+  },
+  "@mushafAyahTitle": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "@mushafPlaying": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "hajjTile": "Hajj & Umrah",
+  "hajjTitle": "Hajj & Umrah Guide",
+  "hajjScholarNote": "Follow the guidance of your group's scholar.",
+  "hajjTabUmrah": "Umrah",
+  "hajjTabHajj": "Hajj",
+  "hajjTabPacking": "Packing",
+  "hajjTabPlaces": "Places",
+  "hajjDay8": "8th Dhul Hijjah",
+  "hajjDay9": "9th Dhul Hijjah",
+  "hajjDay10": "10th Dhul Hijjah",
+  "hajjDay11to13": "11th-13th Dhul Hijjah",
+  "hajjDayDepart": "Before leaving Makkah",
+  "hajjRulingRukn": "Rukn",
+  "hajjRulingWajib": "Wajib",
+  "hajjRulingSunnah": "Sunnah",
+  "hajjRulingHelp": "Rukn (pillar): the Hajj or Umrah is not valid without it. Wajib: if missed, most scholars say a sacrifice (dam) is due. Sunnah: rewarded, nothing is due if missed.",
+  "hajjWhatToDo": "What to do",
+  "hajjRestrictions": "Ihram restrictions",
+  "hajjDuas": "Duas",
+  "hajjMistakes": "Common mistakes",
+  "hajjMadhabNote": "Where the schools differ",
+  "hajjSources": "Sources",
+  "hajjAppTransliteration": "Transliteration by the app",
+  "hajjAppTranslation": "Translation by the app",
+  "hajjMarkDone": "Mark as done",
+  "hajjProgress": "{done} of {total} done",
+  "hajjResetTitle": "Start a new trip?",
+  "hajjResetMessage": "This clears the ticked steps in both guides, the round counter and the packing ticks. Your own packing items are kept.",
+  "hajjCounterOpen": "Round counter",
+  "hajjCounterTawaf": "Tawaf",
+  "hajjCounterSai": "Sa'i",
+  "hajjCounterOf": "of 7 rounds",
+  "hajjCounterTapHint": "Tap anywhere to count a round",
+  "hajjCounterTawafHint": "Each round starts and ends at the Black Stone.",
+  "hajjCounterSaiHint": "Safa to Marwah is one round, Marwah to Safa is the next. You finish at Marwah.",
+  "hajjCounterComplete": "7 rounds complete",
+  "hajjCounterUndo": "Undo",
+  "hajjPackingAdd": "Add item",
+  "hajjPackingHint": "Item name",
+  "hajjPackingRemove": "Remove",
+  "hajjPackingEmpty": "Your packing list is empty.",
+  "hajjPacked": "{done} of {total} packed",
+  "hajjPackingRestore": "Restore default items",
+  "hajjOpenInMaps": "Open in Maps",
+  "hajjMapsFailed": "Couldn't open Maps.",
+  "hajjMapsNote": "Maps needs an internet connection. Everything else in this guide works offline.",
+  "@hajjProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@hajjPacked": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "widgetNextPrayer": "Next prayer",
+  "widgetPrayerTimes": "Prayer times",
+  "widgetSetLocation": "Open the app to set your location",
+  "widgetOpenApp": "Open the app to update",
+  "storiesTile": "Prophets' Stories",
+  "storiesOfTheDay": "Story of the day",
+  "storiesTitle": "Stories of the Prophets",
+  "storiesSubtitle": "From Adam (AS) to Muhammad ﷺ, in order",
+  "storiesHonorific": "(AS)",
+  "storiesComingSoon": "Coming soon",
+  "storiesChaptersRead": "{read} of {total} chapters read",
+  "@storiesChaptersRead": {
+    "placeholders": {
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "storiesContinue": "Continue reading",
+  "storiesStartReading": "Start reading",
+  "storiesChapterOf": "Chapter {current} of {total}",
+  "@storiesChapterOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "storiesChapters": "Chapters",
+  "storiesChapterReadLabel": "Read",
+  "storiesLessons": "Lessons",
+  "storiesNextChapter": "Next chapter",
+  "storiesPreviousChapter": "Previous chapter",
+  "storiesNextProphet": "Next Prophet",
+  "storiesOpenInQuran": "Open in Quran",
+  "storiesPlay": "Play recitation",
+  "storiesStop": "Stop recitation",
+  "storiesAudioFailed": "Couldn't play the recitation. Check your internet connection.",
+  "storiesTextSize": "Text size",
+  "storiesKidsMode": "Kids mode",
+  "storiesUnderReview": "Under review",
+  "storiesNarrationNote": "This detail is reported in some narrations and is not confirmed by the Quran or authentic hadith.",
+  "storiesOrderUncertain": "Scholars differ on when this Prophet lived, so his place in this order is approximate.",
+  "storiesEnglishOnly": "This story isn't translated into your language yet, so it is shown in English.",
+  "storiesLoadFailed": "Couldn't load this story.",
+  "storiesReadSeerah": "Read the Seerah",
+  "storiesSentTo": "Sent to",
+  "storiesPlaces": "Places",
+  "storiesEra": "Era",
+  "storiesNamedInQuran": "Named {count} times in the Quran",
+  "@storiesNamedInQuran": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storiesScholarsDiffer": "Where scholars differ",
+  "storiesApproximate": "approximate location",
+  "storiesShortened": "Shortened from a longer hadith",
+  "storiesNarratedBy": "Narrated by {name}",
+  "@storiesNarratedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storiesBukhari": "Sahih al-Bukhari",
+  "storiesMuslim": "Sahih Muslim",
+  "challengesTile": "Challenges",
+  "challengesTitle": "Challenges",
+  "challengesSubtitle": "Encourage each other in good deeds with family and friends.",
+  "challengesGuestTitle": "Sign in to join Challenges",
+  "challengesGuestBody": "Challenges are shared only with the people you invite, so they need an account. Everything else in the app works without signing in.",
+  "challengesSignIn": "Sign in",
+  "challengesCreate": "Create a challenge",
+  "challengesJoin": "Join with a code",
+  "challengesEmpty": "No challenges yet. Create one and invite your family, or join with a code.",
+  "challengesActive": "Active",
+  "challengesUpcoming": "Upcoming",
+  "challengesFinished": "Finished",
+  "challengesDaysLeft": "{count, plural, =1{1 day left} other{{count} days left}}",
+  "@challengesDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "challengesStartsIn": "{count, plural, =1{Starts in 1 day} other{Starts in {count} days}}",
+  "@challengesStartsIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "challengesEnded": "Ended",
+  "challengesMembers": "{count}/50 members",
+  "@challengesMembers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "challengesTypeKhatam": "Quran Khatam",
+  "challengesTypeReadQuran": "Read Quran",
+  "challengesTypeMemorizeSurah": "Memorize a Surah",
+  "challengesTypeMemorizeHadith": "Memorize ahadith",
+  "challengesTypeDhikr": "Dhikr / Durood",
+  "challengesTypeFasting": "Voluntary fasts",
+  "challengesTypeDailyPrayer": "Tahajjud / Fajr on time",
+  "challengesTypeCustom": "Custom",
+  "challengesUnitJuz": "Juz",
+  "challengesUnitPages": "Pages",
+  "challengesUnitAyahs": "Ayahs",
+  "challengesUnitAhadith": "Ahadith",
+  "challengesUnitCount": "Times",
+  "challengesUnitDays": "Days",
+  "challengesChooseType": "What would you like to do together?",
+  "challengesTitleLabel": "Title",
+  "challengesTarget": "Target",
+  "challengesDuration": "Duration",
+  "challengesDurationDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@challengesDurationDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "challengesStart": "Start",
+  "challengesStartNow": "Now",
+  "challengesStartOn": "Pick a date",
+  "challengesSurah": "Surah",
+  "challengesTahajjud": "Tahajjud",
+  "challengesFajrOnTime": "Fajr on time",
+  "challengesCustomUnit": "Unit (e.g. pages, rak'ahs)",
+  "challengesIntention": "Intention (niyyah), optional",
+  "challengesIntentionHint": "e.g. To grow closer to the Quran this month",
+  "challengesShowExact": "Show my exact numbers",
+  "challengesShowExactSub": "When off, others see only your percentage.",
+  "challengesPurifyIntention": "Purify your intention. This is to encourage each other, not to show off.",
+  "challengesCreateButton": "Create challenge",
+  "challengesCreated": "Challenge created",
+  "challengesInviteCode": "Invite code",
+  "challengesShareInvite": "Share invite",
+  "challengesCopyCode": "Copy code",
+  "challengesCodeCopied": "Code copied",
+  "challengesInviteHint": "Send this code to family and friends. They open Challenges, tap Join with a code and enter it.",
+  "challengesShareMessage": "Join my challenge \"{title}\" in ALLAH Everywhere. Open Challenges, tap \"Join with a code\" and enter: {code}",
+  "@challengesShareMessage": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesEnterCode": "Enter the 6-character code",
+  "challengesFind": "Find",
+  "challengesJoinButton": "Join challenge",
+  "challengesBy": "Started by {name}",
+  "@challengesBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesErrorNotFound": "No challenge was found with this code. Check the letters and try again.",
+  "challengesErrorFull": "This challenge already has 50 members.",
+  "challengesErrorEnded": "This challenge has already ended.",
+  "challengesErrorAlreadyMember": "You are already in this challenge.",
+  "challengesErrorNetwork": "Could not reach the server. Check your connection and try again.",
+  "challengesErrorTitle": "Please enter a title.",
+  "challengesErrorTarget": "Please enter a target above zero.",
+  "challengesErrorTargetDays": "The target can't be more than the number of days.",
+  "challengesErrorCreate": "Could not create the challenge. Please try again.",
+  "challengesJoined": "You joined the challenge",
+  "challengesLeave": "Leave challenge",
+  "challengesLeaveConfirm": "Leave this challenge? Your progress in it will be removed.",
+  "challengesDelete": "Delete challenge",
+  "challengesDeleteConfirm": "Delete this challenge for everyone? This can't be undone.",
+  "challengesCancel": "Cancel",
+  "challengesDefaultTitle": "{days, plural, =1{{name} in 1 day} other{{name} in {days} days}}",
+  "@challengesDefaultTitle": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesYourProgress": "Your progress: {percent}%",
+  "@challengesYourProgress": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesLogProgress": "Log progress",
+  "challengesAddMore": "Add",
+  "challengesAmount": "How much did you do?",
+  "challengesPickJuz": "Tick the Juz you finished",
+  "challengesPickPages": "Which pages did you read?",
+  "challengesPickAyahs": "Tick the ayahs you memorized",
+  "challengesFromPage": "From page",
+  "challengesToPage": "To page",
+  "challengesSave": "Save",
+  "challengesLoggedToday": "Logged today",
+  "challengesProgressOf": "{progress} of {target} {unit}",
+  "@challengesProgressOf": {
+    "placeholders": {
+      "progress": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesMembersTitle": "Members",
+  "challengesFeedTitle": "Updates",
+  "challengesFeedEmpty": "No updates yet. Log your progress or send a salaam!",
+  "challengesMessageHint": "Write a message",
+  "challengesSend": "Send",
+  "challengesNudge": "Nudge",
+  "challengesNudgeTitle": "Send a gentle reminder",
+  "challengesNudgeSub": "Members who haven't logged today. One reminder per person per day.",
+  "challengesNudgeAllDone": "Everyone has logged today. MashaAllah!",
+  "challengesNudgeSent": "Reminder sent",
+  "challengesNudgeAlready": "Already reminded today",
+  "challengesFeedJoined": "{name} joined",
+  "@challengesFeedJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedNudge": "{name} sent {target} a gentle reminder",
+  "@challengesFeedNudge": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedNudgeYou": "{name} reminded you to log today",
+  "@challengesFeedNudgeYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedJuz": "{name} finished Juz {items}",
+  "@challengesFeedJuz": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedPages": "{name} read pages {items}",
+  "@challengesFeedPages": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedAyahs": "{name} memorized ayahs {items}",
+  "@challengesFeedAyahs": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedAmount": "{name}: +{amount} {unit}",
+  "@challengesFeedAmount": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedPrivate": "{name} made progress",
+  "@challengesFeedPrivate": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesFeedCompleted": "{name} completed the challenge! MashaAllah",
+  "@challengesFeedCompleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesReactMashaAllah": "MashaAllah",
+  "challengesReactBarakAllah": "BarakAllahu feek",
+  "challengesReactAmeen": "Ameen",
+  "challengesReact": "React",
+  "challengesReport": "Report",
+  "challengesReportTitle": "Report this message?",
+  "challengesReportHint": "What's wrong? (optional)",
+  "challengesReported": "Thank you. We'll review it.",
+  "challengesDeleteItem": "Delete",
+  "challengesRemoveMember": "Remove from challenge",
+  "challengesRemoveConfirm": "Remove {name} from this challenge?",
+  "@challengesRemoveConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesMute": "Mute notifications",
+  "challengesAutoSuggest": "Suggest progress from the Quran reader and Hifz",
+  "challengesInvite": "Invite",
+  "challengesNotAvailable": "This challenge is no longer available.",
+  "challengesLoadOlder": "Load older updates",
+  "challengesCelebrationTitle": "MashaAllah!",
+  "challengesCelebrationBody": "You completed \"{title}\". May Allah accept it from you.",
+  "@challengesCelebrationBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesShareResult": "Share result",
+  "challengesBackToChallenge": "Back to the challenge",
+  "challengesSummaryCompleted": "{done} of {total} completed",
+  "@challengesSummaryCompleted": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesSummaryTitle": "Challenge complete",
+  "challengesAutoTitle": "Add this to your challenge?",
+  "challengesAutoPages": "You read pages {items}. Add them to \"{title}\"?",
+  "@challengesAutoPages": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesAutoJuz": "You finished Juz {items}. Add it to \"{title}\"?",
+  "@challengesAutoJuz": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesAutoAyahs": "You memorized ayahs {items}. Add them to \"{title}\"?",
+  "@challengesAutoAyahs": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesNotNow": "Not now",
+  "challengesAdded": "Added to your challenge",
+  "challengesEndsInHours": "Ends in {hours}h {minutes}m",
+  "@challengesEndsInHours": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesYou": "You",
+  "challengesCompletedLabel": "Completed",
+  "challengesAllItemsDone": "All done. MashaAllah!",
+  "challengesNotStarted": "You can log progress once the challenge starts.",
+  "challengesErrorSend": "Couldn't send. Check your connection and try again.",
+  "challengesPercentOnly": "Shares only %",
+  "challengesLeader": "Leading",
+  "challengesReminder": "Daily reminder",
+  "challengesReminderTurnOff": "Turn off reminder",
+  "challengesReminderOff": "Reminder turned off",
+  "challengesReminderSet": "You'll be reminded every day at {time}",
+  "@challengesReminderSet": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesReminderBody": "Log your progress in \"{title}\"",
+  "@challengesReminderBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesReminderNeedsNotifications": "Turn on Notification in Settings first.",
+  "challengesNotificationsSetting": "Challenge notifications",
+  "challengesNotificationsSubtitle": "Updates and messages from your challenges, and a reminder if you fall behind",
+  "rewardsTitle": "My Rewards",
+  "rewardsSubtitle": "Earned only by doing. Nothing here can be bought, and nothing in the app is ever locked behind it.",
+  "rewardsRealReward": "The real reward is with Allah. This is only a reminder.",
+  "rewardsGuestNote": "Sign in to earn challenge badges and certificates. Badges from Tasbeeh and Hifz are kept on this device and move to your account when you sign in.",
+  "rewardsShowBadges": "Show my badges in challenges",
+  "rewardsShowBadgesSub": "Members see them beside your name. Turn off to keep them to yourself.",
+  "rewardsGarden": "My Jannah Garden",
+  "rewardsBadges": "Badges",
+  "rewardsCertificates": "Certificates",
+  "rewardsNoCertificates": "Complete a challenge to receive a certificate.",
+  "rewardsCosmetics": "Unlocks",
+  "rewardsCosmeticsSub": "Small touches earned with badges. Choose any you have unlocked.",
+  "rewardsPlants": "{count, plural, =0{Nothing planted yet} =1{1 plant} other{{count} plants}}",
+  "@rewardsPlants": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rewardsEarnedOn": "Earned {date}",
+  "@rewardsEarnedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "rewardsLocked": "Not earned yet",
+  "rewardsUnlocks": "Unlocks: {items}",
+  "@rewardsUnlocks": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "rewardsAccent": "App colour",
+  "rewardsMushafFrame": "Mushaf page frame",
+  "rewardsBeads": "Tasbeeh bead style",
+  "rewardsAvatarFrame": "Profile photo frame",
+  "rewardsUnlockWith": "Earn \"{badge}\" to unlock this",
+  "@rewardsUnlockWith": {
+    "placeholders": {
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "rewardsNewBadge": "New badge",
+  "rewardsClose": "Close",
+  "rewardsView": "My Rewards",
+  "badgeFirstChallenge": "First Challenge",
+  "badgeFirstChallengeHow": "Complete your first challenge.",
+  "badgeKhatamFinisher": "Khatam Finisher",
+  "badgeKhatamFinisherHow": "Complete a Quran Khatam challenge.",
+  "badgeSteadfast": "Steadfast",
+  "badgeSteadfastHow": "Log progress every day of a challenge until you complete it.",
+  "badgeEarlyBird": "Early Bird",
+  "badgeEarlyBirdHow": "Complete a challenge at least one day early.",
+  "badgeEncourager": "Encourager",
+  "badgeEncouragerHow": "React to 50 updates in your challenges.",
+  "badgeFamilyBuilder": "Family Builder",
+  "badgeFamilyBuilderHow": "Have 5 people join challenges you started.",
+  "badgeComeback": "Comeback",
+  "badgeComebackHow": "Complete a challenge after falling behind.",
+  "badgeFirstSurah": "First Surah",
+  "badgeFirstSurahHow": "Memorize a whole surah in Hifz mode.",
+  "badgeDhikr1000": "1,000 Dhikr",
+  "badgeDhikr1000How": "Count 1,000 dhikr in Tasbeeh.",
+  "badgeDhikr10000": "10,000 Dhikr",
+  "badgeDhikr10000How": "Count 10,000 dhikr in Tasbeeh.",
+  "cosmeticClassicGold": "Classic Gold",
+  "cosmeticMadinahGreen": "Madinah Green",
+  "cosmeticNightOfQadr": "Night of Qadr",
+  "cosmeticDesertGold": "Desert Gold",
+  "cosmeticFrameNone": "None",
+  "cosmeticFrameArch": "Arch",
+  "cosmeticFrameStar": "Star border",
+  "cosmeticBeadClassic": "Classic",
+  "cosmeticBeadPearl": "Pearl",
+  "cosmeticBeadGlow": "Glow",
+  "cosmeticAvatarRing": "Ring",
+  "cosmeticAvatarCrescent": "Crescent",
+  "cosmeticAvatarStar": "Star",
+  "cosmeticAvatarGarden": "Garden",
+  "gardenTree": "A completed challenge",
+  "gardenFountain": "A finished Khatam",
+  "gardenFlower": "A memorized surah",
+  "gardenPalm": "1,000 dhikr",
+  "gardenMorePalms": "{count, plural, =1{and 1 more palm} other{and {count} more palms}}",
+  "@gardenMorePalms": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gardenReminder": "This garden is a reminder. The real garden is with Allah.",
+  "gardenNeverLost": "Nothing here ever wilts or is taken away.",
+  "gardenEmpty": "Your garden is waiting. Complete a challenge, memorize a surah, or count 1,000 dhikr in Tasbeeh.",
+  "gardenHadithTitle": "Why palm trees?",
+  "gardenHadithNote": "In this app a palm appears for every 1,000 dhikr counted in Tasbeeh, as a reminder of this hadith. It does not measure what Allah gives.",
+  "certTitle": "Certificate of Completion",
+  "certIntro": "This celebrates that",
+  "certCompleted": "completed",
+  "certResultPerfect": "Never missed a day",
+  "certResultEarly": "Completed early",
+  "certResultCompleted": "Completed",
+  "certDedicated": "Dedicated: {text}",
+  "@certDedicated": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "certShareImage": "Share image",
+  "certSharePdf": "Share PDF",
+  "duaWallTitle": "Dua Wall",
+  "duaWallOpen": "Open the Dua Wall",
+  "duaWallIntro": "The challenge has ended. Write a short dua for those who completed it. Only members can see these.",
+  "duaWallNone": "Nobody completed this challenge. May Allah make it easy next time.",
+  "duaWallForYou": "Duas for you",
+  "duaWallFor": "For {name}",
+  "@duaWallFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "duaWallEveryone": "For everyone",
+  "duaWallWrite": "Write a dua",
+  "duaWallWriteEveryone": "Write a dua for everyone",
+  "duaWallHint": "e.g. May Allah accept it from you and make the Quran your companion",
+  "duaWallSent": "Your dua was added",
+  "duaWallWritten": "You made a dua",
+  "duaWallCount": "{count, plural, =0{No duas yet} =1{1 dua} other{{count} duas}}",
+  "@duaWallCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "challengesDedication": "Dedicate it (optional)",
+  "challengesDedicationHint": "e.g. For my late grandmother, or For the people of Gaza",
+  "challengesDedicationNote": "Scholars differ on whether the reward of acts such as recitation reaches the deceased. Making dua for them is agreed upon.",
+  "challengesPromise": "Family Promise (optional)",
+  "challengesPromiseHint": "e.g. Winner chooses Friday dinner, or I'll gift the winner a new Mushaf",
+  "challengesPromiseLabel": "Family Promise: {text}",
+  "@challengesPromiseLabel": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "challengesCertificateSoon": "Your certificate and badges will appear in My Rewards in a moment."
 }

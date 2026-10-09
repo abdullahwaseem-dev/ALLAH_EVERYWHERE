@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:allah_everywhere/challenges.dart';
 import 'package:allah_everywhere/controllers/notifications_controller.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class NotificationsScreen extends StatefulWidget {
   @override
@@ -29,7 +32,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
 
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: isSearchMode
+      body: ReadableWidth(child: isSearchMode
           ? SafeArea(child: _buildSearchBar(isDark, textColor))
           : SafeArea(
               child: Column(
@@ -80,13 +83,22 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                           itemCount: items.length,
                           itemBuilder: (context, index) {
                             final n = items[index];
+                            final challengeId = n.challengeId;
                             return NotificationTile(
                               title: n.title,
+                              body: n.body,
+                              icon: challengeId != null ? Iconsax.cup : Icons.notifications,
                               time: DateFormat('MMM d, hh:mm a').format(n.createdAt),
                               isRead: n.isRead,
                               isDark: isDark,
                               accent: accent,
                               textColor: textColor,
+                              onTap: challengeId == null
+                                  ? null
+                                  : () {
+                                      controller.markRead(n);
+                                      openChallenge(challengeId);
+                                    },
                             );
                           },
                         );
@@ -95,7 +107,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                   ),
                 ],
               ),
-            ),
+            )),
     );
   }
 
@@ -139,14 +151,20 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
 
 class NotificationTile extends StatelessWidget {
   final String title;
+  final String body;
+  final IconData icon;
   final String time;
   final bool isRead;
   final bool isDark;
   final Color accent;
   final Color textColor;
+  final VoidCallback? onTap;
 
   const NotificationTile({
     required this.title,
+    this.body = '',
+    this.icon = Icons.notifications,
+    this.onTap,
     required this.time,
     required this.isRead,
     required this.isDark,
@@ -160,15 +178,17 @@ class NotificationTile extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ListTile(
+          onTap: onTap,
           leading: CircleAvatar(
             backgroundColor: isRead ? Colors.grey : accent,
-            child: Icon(Icons.notifications, color: Colors.white, size: 20.sp),
+            child: Icon(icon, color: Colors.white, size: 20.sp),
           ),
           title: Text(
             title,
             style: TextStyle(fontSize: 14.sp, fontWeight: isRead ? FontWeight.normal : FontWeight.bold, color: textColor),
           ),
-          subtitle: Text(time, style: TextStyle(color: isDark ? VoidColors.textDarkSecondary : Colors.grey, fontSize: 12.sp)),
+          subtitle: Text(body.isEmpty ? time : '$body\n$time',
+              style: TextStyle(color: isDark ? VoidColors.textDarkSecondary : Colors.grey, fontSize: 12.sp)),
         ),
         Divider(color: textColor.withOpacity(0.15)),
       ],

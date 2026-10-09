@@ -1,0 +1,173 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ilyas",
+  "language": "de",
+  "name": "Ilyas",
+  "title": "Ein Gesandter, der sein Volk vom Baal wegrief",
+  "sentTo": "Sein Volk, das den Götzen Baal anbetete",
+  "era": "Nach Musa (a.s.), unter den Propheten der Kinder Israels, nach Ansicht der meisten Gelehrten; Koran und Sunna nennen kein Datum. Seine Stellung in dieser Reihenfolge ist ungefähr.",
+  "places": [
+    {
+      "name": "Nicht sicher bekannt. Viele verorten ihn im Norden des Landes Israel oder in Baalbek im Libanon, dessen Name an den Götzen Baal erinnert.",
+      "lat": 34.0,
+      "lng": 36.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Ilyas war einer der Gesandten. Er rief sein Volk auf, Allah zu fürchten und aufzuhören, den Götzen Baal anzubeten. Die meisten lehnten ihn ab, aber Allah rettete Seine aufrichtigen Diener und hinterließ Frieden über Ilyas bei den späteren Generationen.",
+  "notes": [
+    "Die meisten Gelehrten setzen Ilyas mit Elia aus der Bibel gleich.",
+    "„Friede über Ilyasin“ (37:130): Die Gelehrten erklären es als eine andere Form des Namens Ilyas oder, je nach Lesart, als „die Familie Yasins“.",
+    "Einige frühe Gelehrte sagten, Ilyas sei ein anderer Name für Idris; die meisten lehnten dies ab.",
+    "Berichte, dass Ilyas noch lebt und al-Khidr jedes Jahr trifft, sind nicht authentisch."
+  ],
+  "chapters": [
+    {
+      "id": "ilyas-1",
+      "title": "„Wollt ihr Allah nicht fürchten?“",
+      "paragraphs": [
+        "Ilyas (a.s.) war einer der Gesandten. Sein Volk hatte sich einem Götzen namens Baal zugewandt.",
+        "Er sagte zu ihnen: „Wollt ihr Allah nicht fürchten? Ruft ihr Baal an und verlasst den besten der Schöpfer: Allah, euren Herrn und den Herrn eurer Vorväter?“",
+        "Sein Argument war einfach: Warum betet ihr zu einer Statue, die nichts erschafft, und verlasst Den, Der euch und eure Väter vor euch erschaffen hat?"
+      ],
+      "kidsParagraphs": [
+        "Ilyas' Volk betete zu einem Götzen namens Baal.",
+        "Ilyas sagte: „Warum betet ihr zu einem Götzen und verlasst Allah, Der euch erschaffen hat?“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 123,
+          "ayahEnd": 123
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "Nur der Schöpfer verdient Anbetung.",
+        "Alte Bräuche sind keine Entschuldigung dafür, andere neben Allah anzubeten.",
+        "Eine kurze, klare Frage kann ein Herz öffnen."
+      ],
+      "quiz": [
+        {
+          "question": "Welchen Götzen betete Ilyas' Volk an?",
+          "options": [
+            "Wadd",
+            "Baal",
+            "Hubal",
+            "Das Kalb"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "Wie nannte Ilyas Allah?",
+          "options": [
+            "Den besten der Schöpfer",
+            "Den Gott der Stadt",
+            "Den König",
+            "Die Sonne"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "Was fragte Ilyas sein Volk zuerst?",
+          "options": [
+            "Wollt ihr Allah nicht fürchten?",
+            "Wo ist euer König?",
+            "Werdet ihr ein Schiff bauen?",
+            "Werdet ihr mich bezahlen?"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:124"
+        }
+      ]
+    },
+    {
+      "id": "ilyas-2",
+      "title": "Friede über Ilyas",
+      "paragraphs": [
+        "Sein Volk lehnte ihn ab, und der Koran sagt, dass sie zur Rechenschaft vorgeführt werden, außer Allahs aufrichtigen, auserwählten Dienern.",
+        "Allah hinterließ ein bleibendes Gedenken an ihn bei den späteren Generationen: „Friede über Ilyasin.“ Allah sagt: „So belohnen Wir die Gutes Tuenden. Er war einer Unserer gläubigen Diener.“",
+        "Allah nennt Ilyas auch zusammen mit Zakariya, Yahya und Isa und sagt: „Alle gehörten zu den Rechtschaffenen.“"
+      ],
+      "kidsParagraphs": [
+        "Die meisten Menschen hörten nicht auf Ilyas, aber Allah rettete die aufrichtigen Gläubigen.",
+        "Allah sagt: „Friede über Ilyas.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 127,
+          "ayahEnd": 128
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 129,
+          "ayahEnd": 132
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        }
+      ],
+      "lessons": [
+        "Allah ehrt Seine Gesandten, auch wenn ihr Volk sie ablehnt.",
+        "Aufrichtigkeit ist es, was die Menschen rettet.",
+        "Das gute Gedenken an jemanden nach ihm ist ein Lohn von Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Wer wurde aus Ilyas' Volk gerettet?",
+          "options": [
+            "Allahs aufrichtige, auserwählte Diener",
+            "Niemand",
+            "Die Reichen",
+            "Die Soldaten"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:128"
+        },
+        {
+          "question": "Mit welchen Propheten wird Ilyas in 6:85 genannt?",
+          "options": [
+            "Zakariya, Yahya und Isa",
+            "Musa und Harun",
+            "Nuh und Hud",
+            "Dawud und Sulaiman"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:85"
+        },
+        {
+          "question": "Was hinterließ Allah für Ilyas bei den späteren Generationen?",
+          "options": [
+            "Frieden",
+            "Einen Palast",
+            "Ein Gesetzbuch",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:130"
+        }
+      ]
+    }
+  ]
+}

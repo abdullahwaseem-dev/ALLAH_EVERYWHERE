@@ -1,0 +1,100 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dhulkifl",
+  "language": "tr",
+  "name": "Zülkifl",
+  "title": "Sabredenlerden ve seçkin hayırlılardan biri",
+  "sentTo": "Kavmi; Kur'an onların adını vermez",
+  "era": "Kesin değil. Âlimler onun ne zaman yaşadığı konusunda ihtilaf eder; bu sıralamadaki yeri yaklaşıktır.",
+  "places": [
+    {
+      "name": "Bilinmiyor. Bazı rivayetler onu Irak'a yerleştirir; bazıları onu Hezekiel (Hizkîl) ile özdeşleştirir.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Zülkifl, Kur'an'da sabredenler, salihler ve seçkin hayırlılar arasında iki kez anılır. Kur'an onun hayatı hakkında başka bir şey söylemez; âlimler onun peygamber mi yoksa salih bir adam mı olduğu konusunda bile ihtilaf etmiştir.",
+  "notes": [
+    "Zülkifl peygamber miydi? Âlimlerin çoğu evet der, çünkü Kur'an onu peygamberler arasında anar. Bazı selef âlimleri onun peygamber değil, salih bir adam olduğunu söylemiştir.",
+    "Adı \"pay sahibi\" ya da \"bir sorumluluğu üstlenen\" anlamına gelir. Rivayetler bunu, gündüz oruç tutmaya, gece namaz kılmaya ve öfkelenmeden hüküm vermeye söz veren bir adamın hikâyesiyle açıklar; bu rivayetler Kur'an'da veya sahih hadislerde yoktur.",
+    "Bazıları onu Kitab-ı Mukaddes'teki Hezekiel (Hizkîl) peygamberle, bazıları başka şahsiyetlerle özdeşleştirir; bunların hiçbiri kesin değildir."
+  ],
+  "chapters": [
+    {
+      "id": "dhulkifl-1",
+      "title": "Sabredenler arasında anılan",
+      "paragraphs": [
+        "Allah Kur'an'da buyurur: \"İsmâil'i, İdris'i ve Zülkifl'i de an; hepsi sabredenlerdendi. Onları rahmetimize kattık; onlar salihlerdendi.\"",
+        "Başka bir yerde Allah bize İsmâil'i, Elyesa'ı ve Zülkifl'i anmamızı söyler, \"hepsi seçkin hayırlılardandır.\"",
+        "Allah'ın bize onun hakkında bildirdiği bu kadardır. Allah'ın bizzat onu sabır ve salahla övdüğünü ve onu kullarının en hayırlıları arasına koyduğunu bilmek yeter. Bazı şeyleri Allah bizden gizlemiştir; O'nun bize bildirmediğini biz uydurmayız."
+      ],
+      "kidsParagraphs": [
+        "Zülkifl, Kur'an'da İsmâil ve İdris ile birlikte sabredenlerden ve iyilerden biri olarak anılır.",
+        "Allah bize onun hakkında az şey anlattı; o az şey de büyük bir övgüdür!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Halk arasında yaygın bir hikâyeye göre Zülkifl kavmine her gün oruç tutacağına, her gece namaz kılacağına ve öfkelenmeden hüküm vereceğine söz vermiş; İblis onu kızdırmaya çalışmış ama başaramamış."
+        }
+      ],
+      "lessons": [
+        "Sabır, Allah tarafından defalarca övülür.",
+        "Gizli geçmiş hakkında yalnızca Allah'ın ve Resûlü'nün ﷺ bildirdiğini söyleriz.",
+        "İnsanlar hikâyeni bilsin ya da bilmesin, Allah'ın övgüsü en büyük şereftir."
+      ],
+      "quiz": [
+        {
+          "question": "Zülkifl hangi peygamberlerle birlikte sabredenlerden biri olarak anılır?",
+          "options": [
+            "İsmâil ve İdris",
+            "Musa ve Harun",
+            "Davud ve Süleyman",
+            "Yunus ve Eyyûb"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:85"
+        },
+        {
+          "question": "Kur'an (38:48) Zülkifl, İsmâil ve Elyesa'ı nasıl niteler?",
+          "options": [
+            "Seçkin hayırlılardan",
+            "Kral",
+            "Tüccar",
+            "Savaşçı"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Allah onları neye kattı?",
+          "options": [
+            "Bir saraya",
+            "Rahmetine",
+            "Bir gemiye",
+            "Bir şehre"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:86"
+        }
+      ]
+    }
+  ]
+}

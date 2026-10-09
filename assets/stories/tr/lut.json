@@ -1,0 +1,357 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "lut",
+  "language": "tr",
+  "name": "Lût",
+  "title": "Hz. İbrahim'in (a.s.) yeğeni, bozulmuş bir şehre gönderildi",
+  "sentTo": "Aralarında yaşadığı, Lut Gölü yakınındaki şehirlerin halkı",
+  "era": "Yeğeni olduğu Hz. İbrahim'in (a.s.) dönemi. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Geleneğin Lut Gölü (Ölü Deniz) yakınına yerleştirdiği Lut kavminin şehirleri. Kur'an onların insanların hâlâ kullandığı bir yol üzerinde olduğunu söyler (15:76).",
+      "lat": 31.3,
+      "lng": 35.45,
+      "approximate": true
+    }
+  ],
+  "summary": "Lût, amcası Hz. İbrahim'e (a.s.) iman etti ve onunla birlikte hicret etti. Allah onu, kendilerinden önce kimsenin yapmadığı utanç verici bir günahı işleyen ve her uyarıyı reddeden bir kavme gönderdi. Melekler Lût'u ve ailesini kurtarmaya geldi ve şehirler alt üst edildi. Yalnızca zalimlerin tarafını tutan eşi kurtulamadı.",
+  "notes": [
+    "Sodom ve Gomora isimleri Kur'an'da geçmez; bunlar Kitab-ı Mukaddes'ten gelir.",
+    "\"İşte kızlarım\" (11:78, 15:71): Birçok âlim, Lût'un kavminin kadınlarını kastettiğini söyler, çünkü peygamber ümmetinin babası gibidir ve onları helal nikâha çağırıyordu. Bazıları ise kendi kızlarını nikâh için kastettiğini söyler.",
+    "Lût'un eşi: Kitab-ı Mukaddes, onun geriye dönüp bakınca tuzdan bir sütuna dönüştüğünü söyler. Kur'an ise sadece onun geride kalıp helak olanlardan olduğunu söyler.",
+    "Kıssa burada her yaşa uygun genel ifadelerle anlatılmıştır; ayrıntıları anne babalar uygun gördükleri şekilde açıklayabilir."
+  ],
+  "chapters": [
+    {
+      "id": "lut-1",
+      "title": "Lût iman edip hicret ediyor",
+      "paragraphs": [
+        "Hz. İbrahim (a.s.) kavmini Allah'a davet edip ateşten kurtarılınca bir genç ona iman etti: yeğeni Lût. İbrahim \"Ben Rabbime hicret ediyorum\" dedi ve Allah ikisini de mübarek topraklara ulaştırdı.",
+        "Sonra Allah Lût'u peygamber yaptı ve onu yakındaki şehirlerin halkına gönderdi. Onlar, dünyada kendilerinden önce hiçbir kavmin işlemediği utanç verici bir günaha düşmüşlerdi: Erkekler kadınlar yerine erkeklere şehvet duyuyordu. Meclislerinde de açıkça kötülük yapıyorlardı.",
+        "Lût onları defalarca uyardı. Cevapları şu oldu: \"Onları şehrinizden çıkarın! Onlar temiz kalmak isteyen insanlar.\""
+      ],
+      "kidsParagraphs": [
+        "Lût amcası İbrahim'e iman etti ve Allah için onunla birlikte yolculuk yaptı.",
+        "Allah Lût'u çok utanç verici şeyler yapan bir kavme gönderdi. Lût onları uyarınca onu şehirlerinden kovmak istediler."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 80,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 82,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "İman, bazen Allah için alışılmış bir yeri terk etmeyi gerektirir.",
+        "İyiliğe davet, utanç verici olandan sakındırmayı da içerir.",
+        "Zalimler çoğu zaman insanlara sırf temiz kalmak istedikleri için saldırır."
+      ],
+      "quiz": [
+        {
+          "question": "Hz. Lût (a.s.) kimin yeğeniydi?",
+          "options": [
+            "Hz. Nuh (a.s.)",
+            "Hz. İbrahim (a.s.)",
+            "Hz. Musa (a.s.)",
+            "Hz. Yusuf (a.s.)"
+          ],
+          "answer": 1,
+          "reference": "Quran 29:26"
+        },
+        {
+          "question": "Lût kavmi onun ve ailesi hakkında ne dedi?",
+          "options": [
+            "Onlar temiz kalmak isteyen insanlar",
+            "Onlar zengin",
+            "Onlar kral",
+            "Onlar yabancı"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:82"
+        },
+        {
+          "question": "Lût kavmi ona ne yapmak istedi?",
+          "options": [
+            "Onu kral yapmak",
+            "Onu şehirden çıkarmak",
+            "Ona hediyeler vermek",
+            "Ona uymak"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:82"
+        }
+      ]
+    },
+    {
+      "id": "lut-2",
+      "title": "Misafirler",
+      "paragraphs": [
+        "İbrahim'e İshak'ı müjdeleyen melekler, Lût kavmine gideceklerini söylediler. İbrahim: \"Ama orada Lût var!\" dedi. Onlar, eşi hariç onu ve ailesini kurtaracaklarını söylediler.",
+        "Melekler Lût'a yakışıklı gençler suretinde geldiler. Lût, kavmini tanıdığı için misafirleri için çok endişelendi. \"Bu çetin bir gün\" dedi.",
+        "Kavmi koşarak evine geldi. Lût onlara Allah'tan korkmaları ve kendisini misafirlerinin önünde rezil etmemeleri için yalvardı ve onları helal nikâha yönlendirdi. Reddettiler. Yalnız ve yardımsız kalan Lût: \"Keşke size karşı bir gücüm olsaydı ya da sağlam bir dayanağa sığınabilseydim!\" dedi."
+      ],
+      "kidsParagraphs": [
+        "Melekler Lût'a erkek suretinde geldiler. Lût, kavminin misafirlerine zarar vermesinden endişelendi.",
+        "Lût: \"Allah'tan korkun! Beni misafirlerimin önünde utandırmayın\" dedi. Kendini yalnız hissediyordu, ama Allah onunlaydı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 31,
+          "ayahEnd": 32
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 77,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 68,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        }
+      ],
+      "lessons": [
+        "Misafiri korumak bir şeref ve iman meselesidir.",
+        "Mümin asla gerçekten yalnız değildir: Allah en sağlam dayanaktır.",
+        "Allah korkusu, başkalarına zarar vermeden önce bizi durdurmalıdır."
+      ],
+      "quiz": [
+        {
+          "question": "Lût'u kimler ziyaret etti?",
+          "options": [
+            "Tüccarlar",
+            "Melekler",
+            "Krallar",
+            "Çobanlar"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Lût misafirlerinin geldiği güne ne dedi?",
+          "options": [
+            "Mutlu bir gün",
+            "Çetin bir gün",
+            "Bayram günü",
+            "Şanslı bir gün"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Melekler kimi kurtarmayacaklarını söylediler?",
+          "options": [
+            "Lût'un eşini",
+            "Lût'un kızlarını",
+            "Lût'u",
+            "İbrahim'i"
+          ],
+          "answer": 0,
+          "reference": "Quran 29:32"
+        }
+      ]
+    },
+    {
+      "id": "lut-3",
+      "title": "Gece yola çıkış",
+      "paragraphs": [
+        "Sonra melekler kim olduklarını açıkladılar: \"Ey Lût! Biz Rabbinin elçileriyiz. Onlar sana asla ulaşamayacak.\" Ona, gecenin bir kısmında ailesiyle yola çıkmasını, onların arkasından yürümesini ve hiçbirinin geriye dönüp bakmamasını söylediler.",
+        "Azap sabah vakti gelecekti. Lût iman eden ailesiyle yola çıktı. Eşi kurtulanlar arasında değildi; o zalimlerin tarafını tutmuştu.",
+        "Peygamber Muhammed ﷺ şöyle buyurdu: \"Allah Lût'a rahmet etsin; o sağlam bir dayanağa sığınıyordu.\" Yani Lût aslında hiçbir zaman yalnız değildi: Dayanağı Allah'tı."
+      ],
+      "kidsParagraphs": [
+        "Melekler: \"Korkma Lût! Gece ailenle birlikte çık ve geriye dönüp bakma\" dediler.",
+        "Peygamber ﷺ, Lût'un sağlam bir dayanağı olduğunu söyledi: Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 81,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 65,
+          "ayahEnd": 66
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"…Allah Lût'a rahmet etsin; o sağlam bir dayanağa sığınıyordu…\"",
+          "match": "ويرحم الله لوطا لقد كان ياوي الى ركن شديد",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah'ın yardımı en uygun zamanda gelir.",
+        "Allah'ın talimatlarına, \"geriye bakma\" gibi küçük olanlarına bile tam uy.",
+        "Allah müminlerin en sağlam dayanağıdır."
+      ],
+      "quiz": [
+        {
+          "question": "Lût ve ailesi ne zaman yola çıktı?",
+          "options": [
+            "Öğle vakti",
+            "Gecenin bir kısmında",
+            "Bir hafta sonra",
+            "Hiç çıkmadılar"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:81"
+        },
+        {
+          "question": "Azap ne zaman gelecekti?",
+          "options": [
+            "Sabah vakti",
+            "Gün batımında",
+            "Bir yıl sonra",
+            "Gece yarısı"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:66"
+        },
+        {
+          "question": "Peygamber'e ﷺ göre Lût neye sığınıyordu?",
+          "options": [
+            "Kabilesine",
+            "Sağlam bir dayanağa",
+            "Bir mağaraya",
+            "Bir gemiye"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3372"
+        }
+      ]
+    },
+    {
+      "id": "lut-4",
+      "title": "Akıl edenler için bir ibret",
+      "paragraphs": [
+        "Güneş doğarken korkunç bir sayha onları yakaladı; Allah şehirlerini alt üst etti ve üzerlerine Rableri katında işaretlenmiş, pişmiş çamurdan taşlar yağdırdı.",
+        "Allah, eşi hariç Lût'u ve bütün ailesini kurtardı. Kur'an onu, Nuh'un eşiyle birlikte, salih peygamberlerle yaşadıkları hâlde inkâr edenlere örnek olarak anar.",
+        "Kur'an, bu şehirlerin harabelerinin insanların hâlâ kullandığı bir yol üzerinde olduğunu ve Arapların sabah akşam yanlarından geçtiğini söyler. \"Hâlâ akıl etmeyecek misiniz?\""
+      ],
+      "kidsParagraphs": [
+        "Allah onların şehirlerini alt üst etti. Sadece Lût ve müminler kurtuldu.",
+        "Allah onların harabelerini düşünenler için bir ders olarak bıraktı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 82,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 73,
+          "ayahEnd": 74
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 133,
+          "ayahEnd": 136
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 137,
+          "ayahEnd": 138
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 76,
+          "ayahEnd": 77
+        }
+      ],
+      "lessons": [
+        "Israr edilen ve açıkça yayılan her günah Allah'ın azabını davet eder.",
+        "Akrabalık kurtarmaz; iman kurtarır.",
+        "Tarih, düşünenler için ibretlerle doludur."
+      ],
+      "quiz": [
+        {
+          "question": "Allah Lût kavminin üzerine ne yağdırdı?",
+          "options": [
+            "Su",
+            "Pişmiş çamurdan taşlar",
+            "Ateş",
+            "Kar"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:82"
+        },
+        {
+          "question": "Lût'un ailesinden kim kurtulamadı?",
+          "options": [
+            "Eşi",
+            "Kızları",
+            "Lût",
+            "Hiç kimse"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:135"
+        },
+        {
+          "question": "Sayha onları ne zaman yakaladı?",
+          "options": [
+            "Güneş doğarken",
+            "Gece yarısı",
+            "Öğle vakti",
+            "Gün batımında"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:73"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "Nächstes Gebet";
+"widget.nextPrayer.description" = "Countdown zum nächsten Gebet mit den heutigen Gebetszeiten.";
+"widget.hijriDate.name" = "Islamisches Datum";
+"widget.hijriDate.description" = "Das heutige Hidschri-Datum und islamische Anlässe.";
+"widget.reminder.name" = "Vers des Tages";
+"widget.reminder.description" = "Jeden Tag ein Vers oder Hadith zum Nachdenken.";
+"widget.nextPrayer.fallback" = "Nächstes Gebet";
+"widget.setLocation.fallback" = "Öffne die App, um deinen Standort festzulegen";
+"widget.openApp.fallback" = "Öffne die App zum Aktualisieren";

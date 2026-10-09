@@ -1,0 +1,165 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "idris",
+  "language": "de",
+  "name": "Idris",
+  "title": "Ein wahrhaftiger Mann, zu hohem Rang erhoben",
+  "sentTo": "Die Nachkommen Adams (a.s.), vor oder nach Nuh (a.s.); der Koran sagt es nicht",
+  "era": "Sehr früh. Die meisten Gelehrten setzen ihn zwischen Adam und Nuh (a.s.) an; Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Unbekannt. Der Koran sagt nicht, wo Idris lebte.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Ein Prophet, den der Koran als wahrhaftigen, geduldigen und rechtschaffenen Mann lobt, den Allah zu hohem Rang erhob. Über sein Leben ist sehr wenig sicher bekannt, und der Koran erwähnt ihn nur zweimal.",
+  "notes": [
+    "Die meisten Gelehrten sagen, Idris lebte zwischen Adam und Nuh. Viele setzen ihn mit Henoch (Akhnukh) aus der Bibel gleich; das stammt von Historikern und den Leuten der Schrift, nicht aus Koran oder Sunna.",
+    "„Wir erhoben ihn zu hohem Rang“ (19:57): Viele Gelehrte sagen, es bedeutet einen hohen Rang der Ehre und des Prophetentums; andere sagen, er wurde in einen der Himmel erhoben.",
+    "Volkstümliche Berichte, er sei der Erste gewesen, der mit dem Schreibrohr schrieb, Kleider nähte oder die Sterne studierte, stammen aus späteren Quellen, nicht aus dem Koran oder authentischen Hadithen."
+  ],
+  "chapters": [
+    {
+      "id": "idris-1",
+      "title": "Ein wahrhaftiger Mann",
+      "paragraphs": [
+        "Der Koran fordert uns auf, an Idris (a.s.) zu denken. Allah beschreibt ihn als wahrhaftigen Mann und Propheten und sagt: „Wir erhoben ihn zu hohem Rang.“",
+        "Allah nennt ihn auch zusammen mit Ismail und Dhul-Kifl (a.s.) unter den Geduldigen und sagt, dass Er sie in Seine Barmherzigkeit eintreten ließ, denn sie gehörten zu den Rechtschaffenen.",
+        "Das ist fast alles, was wir sicher über Idris wissen. Der Koran gibt uns seine Eigenschaften statt seiner Geschichte: Wahrhaftigkeit, Geduld und Rechtschaffenheit. Das sind die Eigenschaften, die einen Menschen bei Allah erhöhen."
+      ],
+      "kidsParagraphs": [
+        "Idris war ein Prophet, der immer die Wahrheit sagte.",
+        "Allah sagt, er war geduldig und gut, und Er erhob ihn zu einem hohen Platz. Auch wir können wahrhaftig und geduldig sein wie er!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 56,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Manche Bücher sagen, Idris sei der Erste gewesen, der mit dem Schreibrohr schrieb und Kleider nähte, oder beschreiben, wie ein Engel ihn in den Himmel brachte."
+        }
+      ],
+      "lessons": [
+        "Wahrhaftigkeit ist eine der größten Eigenschaften der Propheten.",
+        "Geduld bringt einen Menschen in Allahs Barmherzigkeit.",
+        "Was bei einem Menschen am meisten zählt, ist sein Charakter, nicht wie viel man über ihn weiß."
+      ],
+      "quiz": [
+        {
+          "question": "Wie beschreibt der Koran Idris (a.s.)?",
+          "options": [
+            "Als König",
+            "Als wahrhaftigen Mann und Propheten",
+            "Als Händler",
+            "Als Dichter"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:56"
+        },
+        {
+          "question": "Was tat Allah für Idris?",
+          "options": [
+            "Er erhob ihn zu hohem Rang",
+            "Er gab ihm ein Schiff",
+            "Er machte ihn zum König",
+            "Er gab ihm einen Stab"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:57"
+        },
+        {
+          "question": "Mit welchen zwei Propheten wird Idris unter den Geduldigen genannt?",
+          "options": [
+            "Musa und Harun",
+            "Ismail und Dhul-Kifl",
+            "Yunus und Ayyub",
+            "Dawud und Sulayman"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:85"
+        }
+      ]
+    },
+    {
+      "id": "idris-2",
+      "title": "Der Gruß an den Propheten ﷺ in den Himmeln",
+      "paragraphs": [
+        "In der Nacht des Mi'radsch, als der Prophet Muhammad ﷺ durch die Himmel emporgehoben wurde, begegnete er mehreren der früheren Propheten. Einer von ihnen war Idris.",
+        "Idris empfing ihn mit den Worten: „Willkommen, rechtschaffener Prophet und rechtschaffener Bruder.“ Die Propheten grüßten einander als Brüder, denn ihre Botschaft war eine: Allah allein anzubeten."
+      ],
+      "kidsParagraphs": [
+        "In der Nacht des Mi'radsch traf der Prophet Muhammad ﷺ Idris in den Himmeln.",
+        "Idris sagte: „Willkommen, rechtschaffener Prophet und rechtschaffener Bruder!“ Alle Propheten sind wie Brüder."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3342",
+          "narrator": "Anas ibn Malik, von Abu Dharr",
+          "translation": "… Anas sagte: „Als Dschibril mit dem Propheten ﷺ an Idris vorüberging, sagte dieser: ‚Willkommen dem rechtschaffenen Propheten und dem rechtschaffenen Bruder.‘ Der Prophet ﷺ sagte: ‚Wer ist das?‘ Dschibril sagte: ‚Das ist Idris.‘“",
+          "match": "فلما مر جبريل بادريس قال مرحبا بالنبي الصالح والاخ الصالح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Alle Propheten sind Brüder mit einer Botschaft.",
+        "Andere herzlich willkommen zu heißen, ist der Weg der Propheten.",
+        "Der Mi'radsch zeigte die Ehre, die Allah Seinen Propheten gab."
+      ],
+      "quiz": [
+        {
+          "question": "Wann begegnete der Prophet ﷺ Idris?",
+          "options": [
+            "In der Schlacht von Badr",
+            "In der Nacht des Mi'radsch",
+            "In Medina",
+            "In einem Traum in Hira"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Wie nannte Idris den Propheten ﷺ?",
+          "options": [
+            "Rechtschaffener Sohn",
+            "Rechtschaffener Bruder",
+            "König",
+            "Lehrer"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Wer brachte den Propheten ﷺ durch die Himmel?",
+          "options": [
+            "Dschibril",
+            "Mika'il",
+            "Israfil",
+            "Idris"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3342"
+        }
+      ]
+    }
+  ]
+}

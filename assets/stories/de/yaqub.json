@@ -1,0 +1,254 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yaqub",
+  "language": "de",
+  "name": "Yaqub",
+  "title": "Israil, der Vater der zwölf Stämme",
+  "sentTo": "Seine Familie und Nachkommen, die Kinder Israels",
+  "era": "Der Enkel Ibrahims (a.s.). Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Kanaan (Palästina), wo er mit seinen Söhnen lebte.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "Ägypten, wo er am Ende seines Lebens zu Yusuf (a.s.) kam.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Der Sohn Ishaqs (a.s.) und Vater Yusufs (a.s.) und seiner Brüder, von denen die zwölf Stämme der Kinder Israels abstammen. Er ist bekannt für seine schöne Geduld, als er Yusuf verlor, und für den letzten Rat an seine Söhne: allein Allah anzubeten und nur als Muslime zu sterben.",
+  "notes": [
+    "Viele Gelehrte sagen, „Israil“ im Koran (zum Beispiel 3:93) sei ein anderer Name Yaqubs. Das ist die verbreitete Ansicht, gestützt auf den Wortlaut des Korans und Berichte der Gefährten.",
+    "Geschichten über Yaqubs Jugend, seinen Zwillingsbruder und seine Ehen stammen hauptsächlich aus der Bibel.",
+    "Was mit seinen Augen geschah (12:84): Die Gelehrten sind sich uneinig, ob er völlig erblindete oder seine Sehkraft vor Kummer sehr schwach wurde."
+  ],
+  "chapters": [
+    {
+      "id": "yaqub-1",
+      "title": "Ein Haus des Glaubens",
+      "paragraphs": [
+        "Yaqub (a.s.) war der Sohn Ishaqs und der Enkel Ibrahims (a.s.). Allah schenkte ihn Ibrahim als Gabe und machte jeden von ihnen zum Propheten.",
+        "Ibrahim hatte seinen Söhnen Rat gegeben, und Yaqub riet den seinen: „O meine Söhne, Allah hat diese Religion für euch erwählt, so sterbt nur als Muslime, Ihm ergeben.“",
+        "Yaqub hatte zwölf Söhne. Die beiden jüngsten, Yusuf und sein Bruder, standen seinem Herzen besonders nahe, und seine Liebe zu ihnen sollte der Anfang einer langen Prüfung werden."
+      ],
+      "kidsParagraphs": [
+        "Yaqub war der Sohn Ishaqs und der Enkel Ibrahims. Er hatte zwölf Söhne.",
+        "Er sagte seinen Söhnen: „Allah hat diese Religion für euch erwählt. Bleibt immer Muslime!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 49,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 132,
+          "ayahEnd": 132
+        }
+      ],
+      "lessons": [
+        "Eltern geben den Glauben durch Lehre und Vorbild weiter.",
+        "Der wichtigste Rat ist, bis zum Tod am Islam festzuhalten.",
+        "Jede Familie hat Prüfungen; der Glaube hilft hindurch."
+      ],
+      "quiz": [
+        {
+          "question": "Wer war Yaqubs Vater?",
+          "options": [
+            "Ismail",
+            "Ishaq",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:49"
+        },
+        {
+          "question": "Was sagte Yaqub seinen Söhnen?",
+          "options": [
+            "Werdet reich",
+            "Sterbt nur als Muslime",
+            "Verlasst Ägypten",
+            "Baut eine Stadt"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:132"
+        },
+        {
+          "question": "Wer von diesen war Yaqubs Sohn?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "Isa",
+            "Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-2",
+      "title": "Schöne Geduld",
+      "paragraphs": [
+        "Eines Tages nahmen Yusufs Brüder ihn mit und kamen am Abend weinend zurück, mit seinem Hemd, das mit falschem Blut befleckt war. Sie sagten, ein Wolf habe ihn gefressen. Yaqub wusste, dass sie nicht die Wahrheit sagten, aber er sprach: „Schöne Geduld! Allah ist Der, Dessen Hilfe gegen das, was ihr beschreibt, gesucht wird.“",
+        "Jahre später, als ein weiterer Sohn in Ägypten festgehalten wurde, kehrte sein Kummer zurück. Er wandte sich ab und sagte: „Ach, mein Kummer um Yusuf!“ Seine Augen wurden weiß vor Traurigkeit, doch er hielt seinen Zorn zurück.",
+        "Seine Söhne sagten, er werde sich vor Kummer zugrunde richten. Er antwortete: „Ich klage meinen Schmerz und meinen Kummer nur Allah, und ich weiß von Allah, was ihr nicht wisst. O meine Söhne, geht und sucht nach Yusuf und seinem Bruder, und gebt die Hoffnung auf Allahs Barmherzigkeit nicht auf.“"
+      ],
+      "kidsParagraphs": [
+        "Als Yusuf verschwand, war Yaqub sehr traurig. Aber er sagte: „Schöne Geduld.“",
+        "Er weinte nur vor Allah und verlor nie die Hoffnung. Er sagte: „Gebt Allahs Barmherzigkeit niemals auf!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Schöne Geduld ist Geduld ohne Klage bei den Menschen.",
+        "Es ist erlaubt, traurig zu sein und zu weinen; klagen tun wir nur Allah.",
+        "Verzweifle nie an Allahs Barmherzigkeit."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Yaqub, als man ihm sagte, ein Wolf habe Yusuf gefressen?",
+          "options": [
+            "Ich werde euch bestrafen",
+            "Schöne Geduld",
+            "Lasst uns nach Ägypten gehen",
+            "Ich glaube euch"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:18"
+        },
+        {
+          "question": "Wem klagte Yaqub seinen Kummer?",
+          "options": [
+            "Seinen Söhnen",
+            "Allah allein",
+            "Dem König",
+            "Seinen Nachbarn"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:86"
+        },
+        {
+          "question": "Woran sollten Yaqubs Söhne nicht verzweifeln?",
+          "options": [
+            "An ihrem Handel",
+            "An Allahs Barmherzigkeit",
+            "Am Regen",
+            "An der Hilfe des Königs"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:87"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-3",
+      "title": "Der Duft Yusufs",
+      "paragraphs": [
+        "Als die Karawane Ägypten mit Yusufs Hemd verließ, sagte Yaqub in Kanaan: „Ich rieche Yusuf, wenn ihr mich nicht für altersschwach haltet.“ Als der Freudenbote das Hemd auf sein Gesicht legte, kehrte seine Sehkraft zurück. „Habe ich euch nicht gesagt, dass ich von Allah weiß, was ihr nicht wisst?“",
+        "Seine Söhne baten ihn, für ihre Vergebung zu beten, und er versprach es. Dann reiste die ganze Familie nach Ägypten. Yusuf hob seine Eltern auf den Thron, und der Traum, den er als Junge gesehen hatte, wurde wahr.",
+        "Als der Tod zu Yaqub kam, fragte er seine Söhne: „Wen werdet ihr nach mir anbeten?“ Sie sagten: „Wir werden deinen Gott und den Gott deiner Väter Ibrahim, Ismail und Ishaq anbeten: einen einzigen Gott, und Ihm sind wir ergeben.“"
+      ],
+      "kidsParagraphs": [
+        "Yusuf schickte sein Hemd zu seinem Vater. Als es Yaqubs Gesicht berührte, konnte er wieder sehen!",
+        "Die ganze Familie war wieder vereint. Vor Yaqubs Tod versprachen seine Söhne, nur Allah anzubeten."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 94,
+          "ayahEnd": 96
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 97,
+          "ayahEnd": 99
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 133,
+          "ayahEnd": 133
+        }
+      ],
+      "lessons": [
+        "Nach der Geduld kommt die Erleichterung.",
+        "Vergib Familienmitgliedern, die bereuen.",
+        "Das Beste, was man hinterlassen kann, sind Kinder, die allein Allah anbeten."
+      ],
+      "quiz": [
+        {
+          "question": "Was gab Yaqub die Sehkraft zurück?",
+          "options": [
+            "Eine Arznei",
+            "Yusufs Hemd",
+            "Zamzam-Wasser",
+            "Ein Traum"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:96"
+        },
+        {
+          "question": "Was fragte Yaqub seine Söhne vor seinem Tod?",
+          "options": [
+            "Wen werdet ihr nach mir anbeten?",
+            "Wo ist mein Geld?",
+            "Wer wird König?",
+            "Wo ist Yusuf?"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        },
+        {
+          "question": "Welche drei Vorväter nannten seine Söhne?",
+          "options": [
+            "Ibrahim, Ismail und Ishaq",
+            "Adam, Nuh und Hud",
+            "Musa, Harun und Dawud",
+            "Isa, Yahya und Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        }
+      ]
+    }
+  ]
+}

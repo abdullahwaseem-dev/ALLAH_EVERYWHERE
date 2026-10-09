@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
+import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
+import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/services/push_notification_service.dart';
+import 'package:allah_everywhere/services/home_widget_service.dart';
 
 /// The 8 languages the app ships with. `nativeName` is what's shown in the
 /// picker (so a user who can't read English can still recognize their own
@@ -47,5 +51,24 @@ class LanguageController extends GetxController {
     // rendering in the old language until it's fully restarted.
     Get.updateLocale(newLocale);
     await VoidStorage().saveData(_key, code);
+
+    // Re-issue the scheduled notifications so their text switches to the new
+    // language immediately, rather than only after the next prayer-time
+    // recompute (e.g. a location refresh or app restart).
+    try {
+      if (Get.isRegistered<PrayerTimesController>()) {
+        await Get.find<PrayerTimesController>().rescheduleNotifications();
+      }
+      await LocalNotificationsService().scheduleDailyQuranReminder();
+      await HomeWidgetService.sync();
+      await LocalNotificationsService().scheduleJumuahReminders();
+      await LocalNotificationsService().scheduleIslamicCalendarReminders();
+      await LocalNotificationsService().scheduleChallengeReminders();
+      // Challenge pushes are written by the server in this language.
+      await PushNotificationService().syncProfile();
+    } catch (_) {
+      // Rescheduling is best-effort; a failure here must not block the
+      // language change itself.
+    }
   }
 }

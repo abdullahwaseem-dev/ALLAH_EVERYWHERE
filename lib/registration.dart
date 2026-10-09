@@ -12,6 +12,7 @@ import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -78,12 +79,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    _confirmPasswordController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: Stack(
+      body: ReadableWidth(child: Stack(
         children: [
           if (!isDark)
             Positioned(
@@ -147,7 +156,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
           ),
         ],
-      ),
+      )),
     );
   }
 }

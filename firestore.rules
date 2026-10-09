@@ -1,0 +1,318 @@
+rules_version = '2';
+
+// Firestore security rules for Allah Everywhere.
+//
+// IMPORTANT: deploying this file REPLACES the rules currently set in the
+// Firebase console. It covers every collection the app uses today
+// (users/{uid} and its bookmarks, hifz, notifications and ai_questions
+// subcollections) plus Challenges. Deploy with:
+//   firebase deploy --only firestore:rules,firestore:indexes
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isSelf(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    // Only these keys changed between the stored doc and the write.
+    function onlyChanges(keys) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+
+    // --- Existing user data --------------------------------------------------
+
+    match /users/{uid} {
+      allow read, write: if isSelf(uid);
+
+      // Rewards (badges, certificates) are given only by the server
+      // (Cloud Functions use the Admin SDK, which bypasses these rules).
+      match /rewards/{rewardId} {
+        allow read: if isSelf(uid);
+        allow write: if false;
+      }
+
+      // Counters and flags the server keeps for rewards and reminders
+      // (reactions sent, people invited, reminder log). Read-only here.
+      match /serverState/{docId} {
+        allow read: if isSelf(uid);
+        allow write: if false;
+      }
+
+      // bookmarks, hifz, notifications, ai_questions, localRewards (badges
+      // from Tasbeeh/Hifz on the device) and future per-user data.
+      match /{collection}/{docId} {
+        allow read, write: if isSelf(uid) && collection != 'rewards' && collection != 'serverState';
+      }
+    }
+
+    // --- Challenges -----------------------------------------------------------
+
+    function challengePath(id) {
+      return /databases/$(database)/documents/challenges/$(id);
+    }
+
+    function challenge(id) {
+      return get(challengePath(id)).data;
+    }
+
+    function isMember(id) {
+      return signedIn() && request.auth.uid in challenge(id).memberUids;
+    }
+
+    // Membership as it will be after this write (used while joining, when
+    // the challenge and the participant doc are written in the same batch).
+    function isMemberAfter(id) {
+      return signedIn() && request.auth.uid in getAfter(challengePath(id)).data.memberUids;
+    }
+
+    function isCreator(id) {
+      return signedIn() && challenge(id).creatorUid == request.auth.uid;
+    }
+
+    function validTypes() {
+      return ['khatam', 'readQuran', 'memorizeSurah', 'memorizeHadith', 'dhikr', 'fasting', 'dailyPrayer', 'custom'];
+    }
+
+    function validNewChallenge() {
+      let d = request.resource.data;
+      return d.keys().hasAll(['title', 'type', 'unit', 'target', 'startAt', 'endAt', 'creatorUid',
+                              'creatorName', 'inviteCode', 'memberUids', 'memberCount', 'status', 'createdAt'])
+        && d.creatorUid == request.auth.uid
+        && d.memberUids == [request.auth.uid]
+        && d.memberCount == 1
+        && d.type in validTypes()
+        && d.title is string && d.title.size() > 0 && d.title.size() <= 80
+        && d.unit is string && d.unit.size() > 0 && d.unit.size() <= 30
+        && d.target is int && d.target > 0 && d.target <= 1000000
+        && d.startAt is timestamp && d.endAt is timestamp && d.endAt > d.startAt
+        && d.endAt <= d.startAt + duration.value(366, 'd')
+        && d.status in ['upcoming', 'active']
+        && d.createdAt == request.time
+        && d.inviteCode is string && d.inviteCode.matches('^[A-HJ-NP-Z2-9]{6}$')
+        && d.get('intention', '').size() <= 200
+        && d.get('dedication', '').size() <= 100
+        && d.get('familyPromise', '').size() <= 100;
+    }
+
+    // A signed-in user adds only themselves, while there is room and the
+    // challenge has not finished.
+    function validJoin(id) {
+      let before = resource.data.memberUids;
+      let after = request.resource.data.memberUids;
+      return onlyChanges(['memberUids', 'memberCount'])
+        && !(request.auth.uid in before)
+        && after.hasAll(before)
+        && request.auth.uid in after
+        && after.size() == before.size() + 1
+        && after.size() <= 50
+        && request.resource.data.memberCount == after.size()
+        && resource.data.status != 'finished'
+        && request.time < resource.data.endAt
+        // The joiner's participant doc is written in the same batch.
+        && existsAfter(/databases/$(database)/documents/challenges/$(id)/participants/$(request.auth.uid));
+    }
+
+    // A member removes only themselves (leave). The creator cannot leave;
+    // they delete the challenge instead.
+    function validLeave() {
+      let before = resource.data.memberUids;
+      let after = request.resource.data.memberUids;
+      return onlyChanges(['memberUids', 'memberCount'])
+        && request.auth.uid in before
+        && !(request.auth.uid in after)
+        && before.hasAll(after)
+        && after.size() == before.size() - 1
+        && request.resource.data.memberCount == after.size()
+        && request.auth.uid != resource.data.creatorUid;
+    }
+
+    // The creator removes one other member.
+    function validRemoveMember() {
+      let before = resource.data.memberUids;
+      let after = request.resource.data.memberUids;
+      return onlyChanges(['memberUids', 'memberCount'])
+        && before.hasAll(after)
+        && after.size() == before.size() - 1
+        && request.auth.uid in after
+        && request.resource.data.memberCount == after.size();
+    }
+
+    // The creator edits the wording, never the target, dates or members.
+    function validCreatorEdit() {
+      let d = request.resource.data;
+      return onlyChanges(['title', 'intention', 'dedication', 'familyPromise'])
+        && d.title is string && d.title.size() > 0 && d.title.size() <= 80
+        && d.get('intention', '').size() <= 200
+        && d.get('dedication', '').size() <= 100
+        && d.get('familyPromise', '').size() <= 100;
+    }
+
+    match /challenges/{challengeId} {
+      // Members read; signed-in users also need `get` while joining, but they
+      // only learn the challenge id from an invite code, and the preview they
+      // see comes from inviteCodes/{code}, so a non-member get is not allowed.
+      allow get, list: if signedIn() && request.auth.uid in resource.data.memberUids;
+      allow create: if signedIn() && validNewChallenge();
+      allow update: if signedIn() && (
+          (isCreator(challengeId) && (validCreatorEdit() || validRemoveMember()))
+          || validJoin(challengeId)
+          || validLeave());
+      allow delete: if isCreator(challengeId);
+
+      match /participants/{uid} {
+        function validParticipant() {
+          let d = request.resource.data;
+          return d.keys().hasAll(['displayName', 'percent', 'showExactNumbers', 'muted', 'joinedAt', 'lastLoggedAt', 'loggedDays'])
+            && d.displayName is string && d.displayName.size() <= 60
+            && d.percent is number && d.percent >= 0 && d.percent <= 100
+            && d.showExactNumbers is bool && d.muted is bool
+            && d.loggedDays is list && d.loggedDays.size() <= 400
+            // Exact numbers are stored only when the member allows it.
+            && (d.showExactNumbers || !('progress' in d))
+            && (!('progress' in d) || (d.progress is int && d.progress >= 0
+                && d.progress <= getAfter(challengePath(challengeId)).data.target));
+        }
+
+        allow read: if isMember(challengeId);
+        allow create: if isSelf(uid) && isMemberAfter(challengeId) && validParticipant()
+          && !('wasBehind' in request.resource.data)
+          && request.resource.data.percent == 0
+          && request.resource.data.joinedAt == request.time;
+        // completedAt is set once, at the moment progress reaches 100%.
+        function validCompletion() {
+          return request.resource.data.get('completedAt', null) == resource.data.get('completedAt', null)
+            || (!('completedAt' in resource.data)
+                && request.resource.data.percent == 100
+                && request.resource.data.completedAt == request.time);
+        }
+
+        // Progress only goes up (a correction downwards is not possible).
+        allow update: if isSelf(uid) && isMember(challengeId) && validParticipant()
+          && request.resource.data.joinedAt == resource.data.joinedAt
+          // Set by the server when the member fell behind (Comeback badge).
+          && request.resource.data.get('wasBehind', false) == resource.data.get('wasBehind', false)
+          && request.resource.data.percent >= resource.data.percent
+          && (!('progress' in resource.data) || !('progress' in request.resource.data)
+              || request.resource.data.progress >= resource.data.progress)
+          && (request.resource.data.lastLoggedAt == resource.data.lastLoggedAt
+              || request.resource.data.lastLoggedAt == request.time)
+          && validCompletion();
+        // Leaving deletes your own doc; the creator can remove anyone.
+        allow delete: if isSelf(uid) || isCreator(challengeId);
+      }
+
+      match /feed/{itemId} {
+        function validItem() {
+          let d = request.resource.data;
+          return d.uid == request.auth.uid
+            && d.kind in ['joined', 'progress', 'completed', 'message', 'nudge']
+            && d.createdAt == request.time
+            && d.get('text', '').size() <= 300
+            && (!('value' in d) || d.value is number)
+            && d.get('reactions', {}).size() == 0
+            && (d.kind != 'message' || d.text.size() > 0)
+            && (d.kind != 'nudge' || (
+                  d.targetUid is string && d.targetUid != request.auth.uid
+                  && d.targetUid in challenge(challengeId).memberUids
+                  // One nudge per sender per member per (UTC) day: the doc id
+                  // is fixed, so a second nudge would be an update, which is denied.
+                  && itemId == 'nudge_' + request.auth.uid + '_' + d.targetUid + '_'
+                       + string(request.time.year()) + '-' + string(request.time.month()) + '-' + string(request.time.day())))
+            && (d.kind != 'completed'
+                || getAfter(/databases/$(database)/documents/challenges/$(challengeId)/participants/$(request.auth.uid)).data.percent == 100);
+        }
+
+        allow read: if isMember(challengeId);
+        allow create: if signedIn() && (isMember(challengeId)
+                                        || (request.resource.data.kind == 'joined' && isMemberAfter(challengeId)))
+          && validItem();
+        // Reactions: a member changes only their own entry in `reactions`
+        // (uid -> list of reaction keys).
+        allow update: if isMember(challengeId)
+          && onlyChanges(['reactions'])
+          && request.resource.data.reactions.diff(resource.data.get('reactions', {})).affectedKeys().hasOnly([request.auth.uid])
+          && (!(request.auth.uid in request.resource.data.reactions)
+              || (request.resource.data.reactions[request.auth.uid] is list
+                  && request.resource.data.reactions[request.auth.uid].size() <= 5
+                  && request.resource.data.reactions[request.auth.uid].hasOnly(['mashaallah', 'barakallah', 'ameen', 'dua', 'love'])));
+        allow delete: if isSelf(resource.data.uid) || isCreator(challengeId);
+      }
+
+      // Dua Wall: once the challenge has ended, members write one short dua
+      // (max 200 characters) for each member who completed it, and those
+      // who completed write one dua back for everyone (toUid "all"). The
+      // doc id is fixed (sender_receiver), so each dua can't be repeated.
+      match /duas/{duaId} {
+        function completedBy(memberUid) {
+          let path = /databases/$(database)/documents/challenges/$(challengeId)/participants/$(memberUid);
+          return exists(path) && get(path).data.get('completedAt', null) != null;
+        }
+
+        allow read: if isMember(challengeId);
+        allow create: if isMember(challengeId)
+          && request.time >= challenge(challengeId).endAt
+          && request.resource.data.keys().hasOnly(['fromUid', 'fromName', 'toUid', 'text', 'createdAt'])
+          && request.resource.data.fromUid == request.auth.uid
+          && request.resource.data.fromName is string && request.resource.data.fromName.size() <= 60
+          && request.resource.data.text is string
+          && request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 200
+          && request.resource.data.createdAt == request.time
+          && duaId == request.auth.uid + '_' + request.resource.data.toUid
+          && ((request.resource.data.toUid == 'all' && completedBy(request.auth.uid))
+              || (request.resource.data.toUid != request.auth.uid
+                  && request.resource.data.toUid in challenge(challengeId).memberUids
+                  && completedBy(request.resource.data.toUid)));
+        allow delete: if isSelf(resource.data.fromUid) || isCreator(challengeId);
+      }
+    }
+
+    // Each member's earned badges, shown beside their name in challenges
+    // (empty when they chose to hide them). Written only by the server.
+    match /publicProfiles/{uid} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // inviteCodes/{code}: the join preview. Anyone signed in can look up one
+    // code (get), but nobody can list codes.
+    match /inviteCodes/{code} {
+      // The preview copies these fields from the challenge, as it will be
+      // after this write.
+      function previewMatches(id) {
+        let c = getAfter(challengePath(id)).data;
+        let d = request.resource.data;
+        return d.memberCount == c.memberCount && d.title == c.title
+          && d.creatorName == c.creatorName && d.startAt == c.startAt && d.endAt == c.endAt
+          && d.type == c.type;
+      }
+
+      allow get: if signedIn();
+      allow create: if signedIn()
+        && code.matches('^[A-HJ-NP-Z2-9]{6}$')
+        && getAfter(challengePath(request.resource.data.challengeId)).data.creatorUid == request.auth.uid
+        && getAfter(challengePath(request.resource.data.challengeId)).data.inviteCode == code
+        && previewMatches(request.resource.data.challengeId);
+      // Keeps the preview (member count, title) in step with the challenge.
+      allow update: if signedIn()
+        && onlyChanges(['memberCount', 'title'])
+        && previewMatches(resource.data.challengeId);
+      allow delete: if signedIn()
+        && get(challengePath(resource.data.challengeId)).data.creatorUid == request.auth.uid;
+    }
+
+    // Reports of a feed item: members can file one; only admins (console /
+    // Admin SDK) read them.
+    match /reports/{reportId} {
+      allow create: if signedIn()
+        && request.resource.data.reporterUid == request.auth.uid
+        && isMember(request.resource.data.challengeId)
+        && request.resource.data.get('reason', '').size() <= 300
+        && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if false;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import 'package:audio_service/audio_service.dart';
+import 'package:flutter/foundation.dart';
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'quran_audio_handler.dart';
 
@@ -29,6 +30,10 @@ class QuranAudioService {
       ),
     );
   }
+
+  /// Lets widget tests supply a handler without starting audio_service.
+  @visibleForTesting
+  static set handlerForTesting(QuranAudioHandler? handler) => _handler = handler;
 
   static QuranAudioHandler get handler {
     final h = _handler;

@@ -1,0 +1,614 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "adam",
+  "language": "de",
+  "name": "Adam",
+  "title": "Der Vater der Menschheit",
+  "sentTo": "Seine eigenen Kinder, die erste menschliche Familie",
+  "era": "Der Anfang der Menschheit. Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Unbekannt. Der Koran sagt nur, dass Adam auf die Erde hinabgesandt wurde.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Der erste Mensch und der erste Prophet. Allah erschuf ihn mit Seinen Händen, lehrte ihn die Namen aller Dinge und ehrte ihn über die Engel. Er beging einen Fehler, bereute sofort und wurde vergeben, und er wurde der Vater jedes Menschen auf der Erde.",
+  "notes": [
+    "Wo war der Garten? Die meisten Gelehrten sagen, es war das Paradies des Jenseits. Eine Minderheit sagte, es sei ein hoch gelegener Garten auf der Erde gewesen.",
+    "War Iblis jemals ein Engel? Der Koran sagt, er „gehörte zu den Dschinn“ (18:50). Die meisten Gelehrten sagen, er war nie ein Engel; einige frühe Gelehrte sagten, er habe unter ihnen gelebt und angebetet.",
+    "Der Koran nennt Adams Frau nur „deine Gattin“. Der Name Hawwa (Eva) stammt aus dem Hadith (zum Beispiel Sahih al-Bukhari 3330).",
+    "Adam als erster Prophet: Das ist die Ansicht der Gelehrten, weil Allah zu ihm sprach und ihn erwählte (3:33). Einige Hadithe außerhalb von al-Bukhari und Muslim sagen es ausdrücklich; ein Gelehrter sollte bestätigen, welcher zitiert wird.",
+    "Bekannte Einzelheiten wie die Art des Baumes, die Schlange, der Ort, an dem Adam auf die Erde kam, und sein genaues Alter beim Tod stammen aus schwachen Berichten oder von den Leuten der Schrift. Sie werden hier weggelassen oder gekennzeichnet."
+  ],
+  "chapters": [
+    {
+      "id": "adam-1",
+      "title": "Die Nachricht an die Engel",
+      "paragraphs": [
+        "Bevor es einen einzigen Menschen auf der Erde gab, erzählte Allah den Engeln von einer neuen Schöpfung, die Er erschaffen würde. „Ich werde auf der Erde einen Khalifa einsetzen“, sagte Er: einen Nachfolger, jemanden, der dort leben und Verantwortung tragen würde.",
+        "Die Engel stellten eine Frage aus Staunen, nicht aus Hochmut: Würde Allah dort jemanden einsetzen, der Unheil stiften und Blut vergießen könnte, während sie Ihn stets lobten und heiligten? Allahs Antwort lehrt jeden von uns Demut: „Ich weiß, was ihr nicht wisst.“",
+        "Dann lehrte Allah Adam die Namen aller Dinge. Er zeigte diese Dinge den Engeln und bat sie, sie zu benennen. Die Engel sagten: „Preis sei Dir! Wir haben kein Wissen außer dem, was Du uns gelehrt hast.“ Dann sollte Adam ihnen die Namen sagen, und er tat es. So zeigte Allah den Engeln das Geschenk des Wissens, das Er dem Menschen gegeben hatte.",
+        "Die Gelehrten erklären das Wort Khalifa auf mehr als eine Weise. Manche sagen, es bedeutet ein Volk, das einander folgt, Generation für Generation. Andere sagen, dass den Menschen auf Allahs Befehl die Sorge für die Erde anvertraut wurde. Beide Bedeutungen tragen dieselbe Lehre: Das Leben auf der Erde ist ein anvertrautes Gut."
+      ],
+      "kidsParagraphs": [
+        "Vor langer Zeit, bevor Menschen auf der Erde lebten, erzählte Allah den Engeln, dass Er dort eine neue Schöpfung hinsetzen würde.",
+        "Allah lehrte Adam die Namen aller Dinge. Die Engel kannten sie nicht und sagten: „Wir wissen nur, was Du uns gelehrt hast.“ Dann nannte Adam ihnen die Namen. Wissen ist ein Geschenk Allahs!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 30,
+          "ayahEnd": 30
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 31,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Allahs Weisheit ist größer als unsere, auch wenn wir Seinen Plan nicht verstehen.",
+        "Wissen ist ein Geschenk Allahs und gehört zu dem, was den Menschen ehrt.",
+        "Wenn wir etwas nicht wissen, ist es gutes Benehmen, es zu sagen, wie die Engel es taten."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Allah den Engeln, das Er auf der Erde einsetzen würde?",
+          "options": [
+            "Einen Engel",
+            "Einen Khalifa (Nachfolger)",
+            "Einen König der Dschinn",
+            "Einen Berg"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:30"
+        },
+        {
+          "question": "Was lehrte Allah Adam?",
+          "options": [
+            "Die Namen aller Dinge",
+            "Schiffe bauen",
+            "Nur die Namen der Sterne",
+            "Dichtkunst"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:31"
+        },
+        {
+          "question": "Was sagten die Engel, als sie nach den Namen gefragt wurden?",
+          "options": [
+            "Wir wissen alles",
+            "Frag Iblis",
+            "Wir haben kein Wissen außer dem, was Du uns gelehrt hast",
+            "Wir finden es heraus"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-2",
+      "title": "Aus Lehm erschaffen",
+      "paragraphs": [
+        "Allah erschuf Adam auf eine Weise wie keinen anderen Menschen. Er hatte weder Vater noch Mutter. Allah formte ihn aus Lehm, aus dunklem, verändertem Schlamm, und als Er ihn gestaltet hatte, hauchte Er ihm eine von Ihm erschaffene Seele ein und befahl den Engeln, sich vor Adam niederzuwerfen.",
+        "Der Koran vergleicht dies mit der Erschaffung Jesu (Isa, a.s.). Adam wurde aus Staub gemacht, dann sagte Allah zu ihm „Sei!“, und er war. Ebenso erschafft Allah, was Er will.",
+        "Der Prophet Muhammad ﷺ berichtete uns, dass Adam sehr groß war, sechzig Ellen, und dass Allah ihn sandte, eine Gruppe von Engeln zu grüßen. Adams Worte und die Antwort der Engel wurden zum Gruß all seiner Kinder.",
+        "Jedes Mal, wenn ein Muslim heute „as-salamu alaikum“ sagt, wiederholt er also den allerersten Gruß, den je ein Mensch gesprochen hat."
+      ],
+      "kidsParagraphs": [
+        "Allah machte Adam aus Lehm, ohne Mutter und ohne Vater. Dann gab Allah ihm das Leben.",
+        "Adams erste Worte an die Engel waren „As-salamu alaikum“: Friede sei mit euch! Darum grüßen wir uns noch heute so."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 28,
+          "ayahEnd": 29
+        },
+        {
+          "type": "narrationNote",
+          "after": 0,
+          "text": "Manche Bücher erzählen, dass mehrere Engel geschickt wurden, um die Erde für Adam zu holen, und dass die Erde sich weigerte, bis der Todesengel sie nahm."
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3326",
+          "narrator": "Abu Huraira",
+          "translation": "Der Prophet ﷺ sagte: „Allah erschuf Adam, und seine Größe betrug sechzig Ellen. Dann sagte Er: ‚Geh und grüße jene Gruppe von Engeln und höre, wie sie dich grüßen, denn das wird dein Gruß und der Gruß deiner Nachkommen sein.‘ Adam sagte: ‚As-salamu alaikum (Friede sei mit euch).‘ Sie sagten: ‚As-salamu alaika wa rahmatullah (Friede sei mit dir und die Barmherzigkeit Allahs)‘ und fügten ‚und die Barmherzigkeit Allahs‘ hinzu. Jeder, der ins Paradies eingeht, wird die Gestalt Adams haben, und die Menschen sind seitdem immer kleiner geworden.“",
+          "match": "خلق الله ادم وطوله ستون ذراعا"
+        }
+      ],
+      "lessons": [
+        "Allah erschafft, was Er will, wie Er will.",
+        "Der Friedensgruß ist der Gruß der Gläubigen seit dem allerersten Menschen.",
+        "Jeder Mensch, gleich welcher Hautfarbe oder Herkunft, stammt vom selben Vater ab: Adam."
+      ],
+      "quiz": [
+        {
+          "question": "Woraus wurde Adam (a.s.) erschaffen?",
+          "options": [
+            "Aus Feuer",
+            "Aus Licht",
+            "Aus Lehm",
+            "Nur aus Wasser"
+          ],
+          "answer": 2,
+          "reference": "Quran 15:28"
+        },
+        {
+          "question": "Mit der Erschaffung welches Propheten vergleicht der Koran die Adams?",
+          "options": [
+            "Isa (Jesus, a.s.)",
+            "Nuh (Noah, a.s.)",
+            "Musa (Mose, a.s.)",
+            "Yusuf (Josef, a.s.)"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:59"
+        },
+        {
+          "question": "Was fügten die Engel hinzu, als sie Adams Gruß erwiderten?",
+          "options": [
+            "Nichts",
+            "„Und die Barmherzigkeit Allahs“ (wa rahmatullah)",
+            "„Guten Morgen“",
+            "„Willkommen“"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3326"
+        }
+      ]
+    },
+    {
+      "id": "adam-3",
+      "title": "Iblis verweigert die Niederwerfung",
+      "paragraphs": [
+        "Als Allah den Engeln befahl, sich vor Adam niederzuwerfen, gehorchten sie alle. Nur Iblis weigerte sich. Der Koran sagt uns, dass Iblis zu den Dschinn gehörte, die aus Feuer erschaffen wurden.",
+        "Allah fragte ihn, was ihn vom Gehorsam abgehalten habe. Seine Antwort zeigte die Krankheit seines Herzens: „Ich bin besser als er. Du hast mich aus Feuer erschaffen und ihn aus Lehm.“ Iblis urteilte nach der Herkunft und nach seinem eigenen Stolz, und er widersetzte sich seinem Herrn.",
+        "Allah verstieß ihn. Statt zu bereuen, bat Iblis um Aufschub bis zum Tag der Auferstehung. Dann schwor er, Adams Kindern auf dem geraden Weg aufzulauern und von vorn und von hinten, von rechts und von links über sie zu kommen.",
+        "Das war der Beginn der Feindschaft zwischen dem Satan und den Menschen. Allah warnte Adam deutlich: Dieser ist ein Feind für dich und deine Gattin."
+      ],
+      "kidsParagraphs": [
+        "Alle Engel warfen sich vor Adam nieder, wie Allah es befohlen hatte. Nur Iblis weigerte sich.",
+        "Iblis sagte: „Ich bin besser als er!“ Sein Stolz ließ ihn Allah ungehorsam werden. Seit diesem Tag ist der Satan der Feind der Menschen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 18,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 14,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 117,
+          "ayahEnd": 117
+        }
+      ],
+      "lessons": [
+        "Hochmut war die erste Sünde gegen Allah.",
+        "Andere wegen ihrer Herkunft oder ihres Aussehens zu verachten, ist der Weg Iblis'.",
+        "Der Satan ist ein offenkundiger Feind, darum suchen wir Zuflucht bei Allah vor ihm."
+      ],
+      "quiz": [
+        {
+          "question": "Wer weigerte sich, sich vor Adam niederzuwerfen?",
+          "options": [
+            "Dschibril",
+            "Iblis",
+            "Alle Engel",
+            "Mika'il"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:34"
+        },
+        {
+          "question": "Woraus, sagte Iblis, sei er erschaffen?",
+          "options": [
+            "Aus Feuer",
+            "Aus Lehm",
+            "Aus Licht",
+            "Aus Wasser"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:12"
+        },
+        {
+          "question": "Laut dem Koran gehörte Iblis zu den …",
+          "options": [
+            "Engeln",
+            "Menschen",
+            "Dschinn",
+            "Tieren"
+          ],
+          "answer": 2,
+          "reference": "Quran 18:50"
+        }
+      ]
+    },
+    {
+      "id": "adam-4",
+      "title": "Der Garten und der Baum",
+      "paragraphs": [
+        "Allah ließ Adam und seine Gattin im Garten wohnen. Sie durften frei essen, wo immer sie wollten. Dort würden sie weder hungern noch nackt sein, weder dürsten noch unter der Sonne leiden. Es gab nur ein einziges Gebot: Nähert euch nicht diesem Baum.",
+        "Der Satan kam mit Einflüsterungen zu ihnen. Er sagte, ihr Herr habe ihnen den Baum nur verboten, damit sie keine Engel würden oder ewig lebten. Er nannte ihn „den Baum der Ewigkeit und ein Königreich, das nie vergeht“, und er schwor ihnen sogar, er sei ihnen ein aufrichtiger Ratgeber.",
+        "Adam vergaß das Versprechen, und beide aßen von dem Baum. Sofort wurde ihnen ihre Blöße sichtbar, und sie begannen, sich mit Blättern des Gartens zu bedecken. Ihr Herr rief sie: „Habe Ich euch nicht diesen Baum verboten und euch gesagt, dass der Satan euch ein offenkundiger Feind ist?“",
+        "Achte darauf, wie der Koran diese Geschichte erzählt: Der Satan flüsterte beiden zu, und beide aßen. Der Koran gibt Adams Frau keine Schuld daran, ihn verführt zu haben. Diese Vorstellung stammt aus anderen Überlieferungen, nicht aus dem Islam."
+      ],
+      "kidsParagraphs": [
+        "Adam und seine Frau lebten in einem wunderschönen Garten. Sie durften alles essen, nur nicht von einem Baum.",
+        "Der Satan täuschte sie mit Lügen, und sie aßen von dem Baum. Sie hatten einen Fehler gemacht."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 35,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 22,
+          "ayahEnd": 22
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Manche Bücher nennen den Baum (Apfel, Weizen, Feige oder Weinstock), sagen, dass eine Schlange Iblis in den Garten brachte, oder dass Adams Frau ihn zum Essen überredete."
+        }
+      ],
+      "lessons": [
+        "Der Satan lässt Falsches verlockend aussehen und tut manchmal sogar so, als gebe er guten Rat.",
+        "Allahs Gebote schützen uns, auch wenn wir den Grund nicht erkennen.",
+        "Mann und Frau sind jeweils für ihre eigenen Taten verantwortlich."
+      ],
+      "quiz": [
+        {
+          "question": "Wem durften sich Adam und seine Frau nicht nähern?",
+          "options": [
+            "Dem Fluss",
+            "Einem Baum",
+            "Den Engeln",
+            "Dem Tor"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:35"
+        },
+        {
+          "question": "Wie nannte der Satan den verbotenen Baum?",
+          "options": [
+            "Baum des Lichts",
+            "Obstbaum",
+            "Baum der Ewigkeit",
+            "Baum der Engel"
+          ],
+          "answer": 2,
+          "reference": "Quran 20:120"
+        },
+        {
+          "question": "Wer aß laut dem Koran von dem Baum?",
+          "options": [
+            "Adam und seine Frau beide",
+            "Nur seine Frau",
+            "Nur Adam",
+            "Iblis"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:121"
+        }
+      ]
+    },
+    {
+      "id": "adam-5",
+      "title": "Worte der Reue",
+      "paragraphs": [
+        "Adam und seine Frau stritten nicht und suchten keine Ausreden, wie Iblis es getan hatte. Sie wandten sich sofort voller Reue Allah zu und sagten: „Unser Herr, wir haben uns selbst Unrecht getan. Wenn Du uns nicht vergibst und Dich unser nicht erbarmst, werden wir gewiss zu den Verlierern gehören.“",
+        "Der Koran berichtet, dass Adam von seinem Herrn Worte empfing und Allah seine Reue annahm. Viele Gelehrte erklären, dass diese Worte genau das Gebet waren, das die beiden sprachen. Allah, der die Reue Annehmende, der Barmherzige, vergab ihnen.",
+        "Dann sandte Allah sie auf die Erde hinab, wo sie und ihre Kinder eine Zeit lang leben würden. Er gab ihnen ein Versprechen: Rechtleitung würde von Ihm zu ihnen kommen, und wer ihr folgt, wird keine Furcht haben und nicht traurig sein.",
+        "Das ist der große Unterschied zwischen Adam und Iblis. Beide waren ungehorsam, doch der eine war hochmütig und gab seinem Herrn die Schuld, der andere war demütig und bat um Vergebung. Adam wurde vergeben, und im Islam trägt niemand die Sünde eines anderen: Jeder Mensch ist nur für seine eigenen Taten verantwortlich."
+      ],
+      "kidsParagraphs": [
+        "Adam und seine Frau taten ihren Fehler sehr leid. Sie baten Allah: „Unser Herr, wir haben Unrecht getan. Bitte vergib uns und erbarme Dich unser.“",
+        "Allah vergab ihnen, denn Er liebt die, die aufrichtig um Verzeihung bitten. Dann schickte Allah sie auf die Erde, um dort zu leben."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 38,
+          "ayahEnd": 38
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 6,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        }
+      ],
+      "lessons": [
+        "Wenn wir einen Fehler machen, sollten wir ihn zugeben und schnell zu Allah zurückkehren.",
+        "Allah vergibt gern denen, die aufrichtig bereuen.",
+        "Jeder ist für seine eigenen Taten verantwortlich; niemand trägt die Sünde eines anderen."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagten Adam und seine Frau nach ihrem Fehler?",
+          "options": [
+            "Es war nicht unsere Schuld",
+            "Unser Herr, wir haben uns selbst Unrecht getan …",
+            "Iblis hat uns dazu gebracht",
+            "Wir haben nichts falsch gemacht"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:23"
+        },
+        {
+          "question": "Was tat Allah, als Adam bereute?",
+          "options": [
+            "Er nahm seine Reue an",
+            "Er machte ihn zu einem Engel",
+            "Er ließ ihn im Garten",
+            "Er schickte ihn zu den Dschinn"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:37"
+        },
+        {
+          "question": "Was versprach Allah denen, die Seiner Rechtleitung folgen?",
+          "options": [
+            "Großen Reichtum",
+            "Ein langes Leben",
+            "Keine Furcht und keine Trauer",
+            "Macht über andere"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:38"
+        }
+      ]
+    },
+    {
+      "id": "adam-6",
+      "title": "Die beiden Söhne Adams",
+      "paragraphs": [
+        "Auf der Erde bekamen Adam und seine Frau Kinder, und die menschliche Familie begann zu wachsen. Der Koran erzählt die Geschichte von zwei Söhnen Adams. Jeder von ihnen brachte Allah ein Opfer dar. Von dem einen wurde es angenommen, von dem anderen nicht.",
+        "Der, dessen Opfer nicht angenommen wurde, wurde neidisch und sagte: „Ich werde dich gewiss töten.“ Sein Bruder antwortete ruhig: „Allah nimmt nur von den Gottesfürchtigen an. Selbst wenn du deine Hand nach mir ausstreckst, um mich zu töten, werde ich meine Hand nicht nach dir ausstrecken, um dich zu töten, denn ich fürchte Allah, den Herrn der Welten.“",
+        "Doch der Neid siegte, und der erste Mord der Menschheitsgeschichte geschah. Danach wusste der Mörder nicht einmal, was er mit dem Leichnam seines Bruders tun sollte. Da sandte Allah einen Raben, der im Boden scharrte, um es ihm zu zeigen. Er rief: „Wehe mir! War ich nicht einmal fähig, wie dieser Rabe zu sein?“ und wurde von Reue erfüllt.",
+        "Der Prophet ﷺ lehrte, dass immer dann, wenn ein Mensch zu Unrecht getötet wird, der erste Sohn Adams einen Anteil an dieser Sünde trägt, weil er als Erster das Töten zur Gewohnheit machte. Und der Koran zieht aus dieser Geschichte eine Lehre für die ganze Menschheit: Eine einzige unschuldige Seele zu töten ist, als töte man die ganze Menschheit, und ein Leben zu retten ist, als rette man die ganze Menschheit."
+      ],
+      "kidsParagraphs": [
+        "Adam hatte zwei Söhne, die beide Allah ein Geschenk darbrachten. Allah nahm das Geschenk des guten Sohnes an.",
+        "Der andere Sohn wurde neidisch und tötete seinen Bruder, und danach bereute er es sehr. Allah lehrt uns: Ein Leben zu retten ist, als rette man alle Menschen!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 30,
+          "ayahEnd": 31
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3335",
+          "narrator": "Abdullah ibn Mas'ud",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Keine Seele wird zu Unrecht getötet, ohne dass der erste Sohn Adams einen Anteil an ihrem Blut trägt, weil er als Erster das Töten eingeführt hat.“",
+          "match": "لا تقتل نفس ظلما الا كان على ابن ادم الاول كفل من دمها"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 5,
+          "ayahStart": 32,
+          "ayahEnd": 32
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Die Namen Habil (Abel) und Qabil (Kain) und die Geschichte, dass die Brüder um eine Heirat stritten, stehen weder im Koran noch bei al-Bukhari und Muslim. Sie stammen aus späteren Berichten, viele davon von den Leuten der Schrift."
+        }
+      ],
+      "lessons": [
+        "Unkontrollierter Neid kann einen Menschen zu schrecklichen Sünden führen.",
+        "Allah nimmt die Taten der Gottesfürchtigen an.",
+        "Jedes menschliche Leben ist kostbar: Ein Leben zu retten ist, als rette man die ganze Menschheit.",
+        "Wer eine schlechte Gewohnheit einführt, trägt einen Anteil an der Sünde aller, die ihr folgen."
+      ],
+      "quiz": [
+        {
+          "question": "Warum drohte ein Sohn, seinen Bruder zu töten?",
+          "options": [
+            "Sie stritten um Land",
+            "Sein eigenes Opfer war nicht angenommen worden",
+            "Sein Bruder hatte ihn bestohlen",
+            "Iblis hatte es ihm befohlen"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:27"
+        },
+        {
+          "question": "Was sandte Allah, um dem Mörder zu zeigen, wie er seinen Bruder begraben sollte?",
+          "options": [
+            "Einen Engel",
+            "Eine Taube",
+            "Einen Wolf",
+            "Einen Raben"
+          ],
+          "answer": 3,
+          "reference": "Quran 5:31"
+        },
+        {
+          "question": "Laut dem Koran ist es, ein Leben zu retten, als …",
+          "options": [
+            "rette man die ganze Menschheit",
+            "rette man einen Stamm",
+            "faste man einen Tag",
+            "nichts Besonderes"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-7",
+      "title": "Adams Vermächtnis",
+      "paragraphs": [
+        "Adam (a.s.) war der erste Mensch, und die Gelehrten zählen ihn als ersten Propheten. Allah erwählte ihn, sprach zu ihm und leitete ihn, und er lehrte seine Kinder, Allah allein anzubeten.",
+        "Allah nahm auch allen Kindern Adams ein Versprechen ab. Er brachte ihre Nachkommen hervor und ließ sie bezeugen: „Bin Ich nicht euer Herr?“ Sie antworteten: „Doch, wir bezeugen es.“ Darum spürt jedes menschliche Herz von Natur aus, dass es einen Schöpfer hat.",
+        "Der Prophet ﷺ beschrieb ein Streitgespräch zwischen Adam und Mose (Musa, a.s.). Musa sagte: „Du bist Adam, dessen Fehler dich aus dem Garten gebracht hat.“ Adam antwortete: „Du bist Musa, den Allah für Seine Botschaften und Seine Rede erwählt hat, und du tadelst mich für etwas, das für mich bestimmt war, bevor ich erschaffen wurde?“ Der Prophet ﷺ sagte, dass Adam das bessere Argument hatte. Die Gelehrten erklären, dass Adam keine Sünde mit dem Schicksal entschuldigte: Er hatte bereits bereut und war vergeben worden, und er sprach von der Prüfung, die Allah bestimmt hatte.",
+        "Der Koran nennt uns alle „Kinder Adams“ und warnt uns: Lasst euch nicht vom Satan verführen, wie er eure Eltern aus dem Garten brachte. Die Geschichte Adams ist die Geschichte jedes Menschen. Wir werden Fehler machen, und der Weg zurück führt immer über die Reue."
+      ],
+      "kidsParagraphs": [
+        "Adam war der erste Mensch und der erste Prophet. Er lehrte seine Kinder, nur Allah anzubeten.",
+        "Wir alle sind „Kinder Adams“. Wenn wir Fehler machen, können wir Allah immer um Verzeihung bitten, so wie unser Vater Adam es tat."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 33,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 172,
+          "ayahEnd": 172
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3409",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Adam und Musa stritten miteinander. Musa sagte zu ihm: ‚Du bist Adam, den sein Fehler aus dem Paradies gebracht hat.‘ Adam sagte zu ihm: ‚Du bist Musa, den Allah für Seine Botschaften und Seine Rede erwählt hat, und dann tadelst du mich für etwas, das mir bestimmt war, bevor ich erschaffen wurde?‘“ Der Gesandte Allahs ﷺ sagte zweimal: „So behielt Adam gegenüber Musa die Oberhand im Streitgespräch.“",
+          "match": "احتج ادم وموسى"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 7,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        }
+      ],
+      "lessons": [
+        "Alle Menschen sind eine Familie: die Kinder Adams.",
+        "Jedes Herz kennt seinen Schöpfer; das ist das Versprechen, das Allah uns abgenommen hat.",
+        "Das Schicksal ist keine Entschuldigung für Sünde, doch nach der Reue nehmen wir geduldig an, was Allah bestimmt hat.",
+        "Der Satan ist immer noch unser Feind, darum müssen wir wachsam bleiben."
+      ],
+      "quiz": [
+        {
+          "question": "Wen hat Allah laut Koran 3:33 über die Welten erwählt?",
+          "options": [
+            "Nur die Engel",
+            "Adam, Nuh, die Familie Ibrahims und die Familie Imrans",
+            "Die Könige der Erde",
+            "Die Dschinn"
+          ],
+          "answer": 1,
+          "reference": "Quran 3:33"
+        },
+        {
+          "question": "Welche Frage stellte Allah den Kindern Adams beim Versprechen?",
+          "options": [
+            "Werdet ihr Mir gehorchen?",
+            "Wer hat euch erschaffen?",
+            "Wohin geht ihr?",
+            "Bin Ich nicht euer Herr?"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:172"
+        },
+        {
+          "question": "Welcher Prophet stritt mit Adam über das Verlassen des Gartens?",
+          "options": [
+            "Musa (Mose, a.s.)",
+            "Nuh (Noah, a.s.)",
+            "Ibrahim (Abraham, a.s.)",
+            "Isa (Jesus, a.s.)"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3409"
+        }
+      ]
+    }
+  ]
+}

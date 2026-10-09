@@ -1,0 +1,260 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "muhammad",
+  "language": "en",
+  "name": "Muhammad",
+  "title": "The Messenger of Allah and the Seal of the Prophets",
+  "sentTo": "All of humanity and the jinn, until the end of time",
+  "era": "570-632 CE.",
+  "places": [
+    {
+      "name": "Makkah, where he was born and received the first revelation.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    },
+    {
+      "name": "Madinah, where he migrated, built the first Muslim community and is buried.",
+      "lat": 24.4672,
+      "lng": 39.6112
+    }
+  ],
+  "summary": "The last of the Prophets, sent as a mercy to the worlds. He is the answer to the prayer of Ibrahim and Ismail and the good news given by Isa (AS). This is a short overview; his full life is told in the Seerah section of the app.",
+  "notes": [
+    "This overview is deliberately short. For the Prophet's ﷺ life, open the Seerah section."
+  ],
+  "chapters": [
+    {
+      "id": "muhammad-1",
+      "title": "The Seal of the Prophets",
+      "paragraphs": [
+        "Every Prophet before him prepared the way. Ibrahim and Ismail (AS), raising the Kaaba, prayed for a messenger from among their descendants. Isa (AS) gave good news of a messenger to come after him, named Ahmad. That messenger was Muhammad ﷺ, son of 'Abdullah, from the tribe of Quraysh in Makkah.",
+        "Allah says: “Muhammad is not the father of any of your men, but he is the Messenger of Allah and the Seal of the Prophets.” No Prophet will come after him.",
+        "The Prophet ﷺ described himself with a beautiful example: the Prophets before him were like a man who built a fine house, complete except for one brick in a corner. People walked around it, admired it, and asked: “Why has this brick not been put in place?” He said: “I am that brick, and I am the Seal of the Prophets.”"
+      ],
+      "kidsParagraphs": [
+        "Our Prophet Muhammad ﷺ is the last Prophet. No Prophet will come after him.",
+        "He said the Prophets were like a beautiful house with one missing brick, and he is that brick!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 129,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 33,
+          "ayahStart": 40,
+          "ayahEnd": 40
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3535",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “The example of me and the Prophets before me is that of a man who built a house and made it fine and beautiful, except for the place of one brick in a corner. People began to walk around it, admiring it and saying: ‘Why has this brick not been put in place?’ I am that brick, and I am the Seal of the Prophets.”",
+          "match": "فانا اللبنة وانا خاتم النبيين"
+        }
+      ],
+      "lessons": [
+        "The message of all the Prophets was completed by Muhammad ﷺ.",
+        "Believing that he is the last Prophet is part of faith.",
+        "Love all the Prophets, and follow the last of them."
+      ],
+      "quiz": [
+        {
+          "question": "What does Quran 33:40 call the Prophet Muhammad ﷺ?",
+          "options": [
+            "The Seal of the Prophets",
+            "A king",
+            "A poet",
+            "An angel"
+          ],
+          "answer": 0,
+          "reference": "Quran 33:40"
+        },
+        {
+          "question": "Which Prophet gave good news of a messenger named Ahmad?",
+          "options": [
+            "Isa",
+            "Musa",
+            "Nuh",
+            "Yusuf"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "In the Prophet's ﷺ example, what was he?",
+          "options": [
+            "The missing brick",
+            "The door",
+            "The roof",
+            "The window"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3535"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-2",
+      "title": "A mercy to the worlds",
+      "paragraphs": [
+        "Allah says to him: “We have not sent you except as a mercy to the worlds,” and: “You are truly of a great character.”",
+        "He cared deeply for his people: “There has come to you a Messenger from among yourselves. It grieves him that you should suffer; he is concerned for you, and to the believers he is kind and merciful.”",
+        "He lived what he taught: honest when he was called al-Amin, patient when he was rejected, forgiving when he returned to Makkah in victory, and humble until the end."
+      ],
+      "kidsParagraphs": [
+        "Allah sent our Prophet ﷺ as a mercy to everyone.",
+        "He was kind, honest and patient, and he cared about us very much."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 107,
+          "ayahEnd": 107
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 68,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 9,
+          "ayahStart": 128,
+          "ayahEnd": 128
+        }
+      ],
+      "lessons": [
+        "Mercy is at the heart of his message.",
+        "Good character is the best way to follow him.",
+        "He cared for his Ummah; we show our love by following his Sunnah."
+      ],
+      "quiz": [
+        {
+          "question": "As what did Allah send the Prophet ﷺ, according to 21:107?",
+          "options": [
+            "A mercy to the worlds",
+            "A king",
+            "A judge only",
+            "A warrior only"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:107"
+        },
+        {
+          "question": "How does Quran 68:4 describe his character?",
+          "options": [
+            "Great",
+            "Harsh",
+            "Ordinary",
+            "Proud"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:4"
+        },
+        {
+          "question": "How is he towards the believers, according to 9:128?",
+          "options": [
+            "Kind and merciful",
+            "Harsh",
+            "Distant",
+            "Angry"
+          ],
+          "answer": 0,
+          "reference": "Quran 9:128"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-3",
+      "title": "His message continues",
+      "paragraphs": [
+        "Allah reminds the believers that Muhammad ﷺ was a messenger, like the messengers before him, and that his death would not be the end of the message: “Muhammad is only a messenger; messengers have passed away before him.”",
+        "He left behind the Quran and his Sunnah, and Companions who were “firm against the disbelievers, merciful among themselves”, always bowing and prostrating, seeking Allah's favour.",
+        "His life, from his birth in Makkah to the first revelation, the Hijrah, and his final years in Madinah, is told in detail in the Seerah section of this app."
+      ],
+      "kidsParagraphs": [
+        "Our Prophet ﷺ left us the Quran and his Sunnah.",
+        "You can read his whole life story in the Seerah section!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 144,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 48,
+          "ayahStart": 29,
+          "ayahEnd": 29
+        }
+      ],
+      "lessons": [
+        "The message lives on through the Quran and the Sunnah.",
+        "Following the Prophet ﷺ means following what he taught.",
+        "Learning his life is the best way to love him more."
+      ],
+      "quiz": [
+        {
+          "question": "What does Quran 3:144 say about the Prophet ﷺ?",
+          "options": [
+            "He is only a messenger; messengers passed away before him",
+            "He will never die",
+            "He is an angel",
+            "He is a king"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:144"
+        },
+        {
+          "question": "How does Quran 48:29 describe his companions among themselves?",
+          "options": [
+            "Merciful",
+            "Harsh",
+            "Divided",
+            "Proud"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        },
+        {
+          "question": "What does Quran 48:29 say the companions are often seen doing?",
+          "options": [
+            "Bowing and prostrating",
+            "Trading",
+            "Sleeping",
+            "Travelling"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        }
+      ]
+    }
+  ]
+}

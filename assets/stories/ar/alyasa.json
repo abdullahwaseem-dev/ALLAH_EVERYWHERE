@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "ar",
+  "name": "اليسع",
+  "title": "من الأخيار، فضّله الله على العالمين",
+  "sentTo": "بنو إسرائيل، عند أكثر العلماء",
+  "era": "بعد إلياس عليه السلام بحسب المؤرخين؛ ولم يرد في القرآن ولا في السنة تاريخ محدد. وموضعه في هذا الترتيب تقريبي.",
+  "places": [
+    {
+      "name": "غير معلوم يقينًا؛ ويُجعل عادة في أرض فلسطين.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "ذُكر اليسع في القرآن مرتين، في الأنبياء الذين فضّلهم الله على العالمين، وفي الأخيار. ولم يخبرنا القرآن بشيء آخر عن حياته.",
+  "notes": [
+    "يرى أكثر العلماء أن اليسع هو أليشع المذكور في التوراة، خليفة إيليا (إلياس). ومصدر ذلك التاريخ ومرويات أهل الكتاب.",
+    "لم يذكر القرآن له قصة، ولم يُرو عنه شيء آخر في الأحاديث الصحيحة."
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "فضّله الله على العالمين",
+      "paragraphs": [
+        "يذكر الله اليسع عليه السلام في سورة الأنعام مع إسماعيل ويونس ولوط، ويخبر أنه فضّلهم جميعًا على العالمين.",
+        "وفي سورة ص يأمرنا الله أن نذكر إسماعيل واليسع وذا الكفل، ويخبر أنهم جميعًا من الأخيار.",
+        "ويذكر المؤرخون أنه خلف إلياس عليه السلام، ودعا بني إسرائيل إلى الله من بعده. والقرآن يوجز قصته، لكنه يضعه في المصطفَين الأخيار."
+      ],
+      "kidsParagraphs": [
+        "اليسع نبي ذُكر في القرآن مع إسماعيل ويونس ولوط.",
+        "أخبرنا الله أنه من خيار الناس وأكثرهم اصطفاءً."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "اختيار الله وثناؤه أعظم الشرف.",
+        "حمل كل نبي رسالة التوحيد نفسها.",
+        "نؤمن بجميع الأنبياء، طالت قصصهم أم قصرت."
+      ],
+      "quiz": [
+        {
+          "question": "مع من ذُكر اليسع في (الأنعام ٨٦)؟",
+          "options": [
+            "إسماعيل ويونس ولوط",
+            "موسى وهارون",
+            "آدم ونوح",
+            "عيسى ويحيى"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "كيف وصفت (ص ٤٨) اليسع؟",
+          "options": [
+            "من الأخيار",
+            "ملكًا",
+            "تاجرًا",
+            "شاعرًا"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "ماذا قال الله عن المذكورين في (الأنعام ٨٦)؟",
+          "options": [
+            "فضّلهم على العالمين",
+            "كانوا ملوكًا",
+            "كانوا أغنياء",
+            "لم يقل شيئًا"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

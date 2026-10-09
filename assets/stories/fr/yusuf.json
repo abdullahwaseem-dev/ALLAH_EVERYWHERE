@@ -1,0 +1,675 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yusuf",
+  "language": "fr",
+  "name": "Yusuf",
+  "title": "Le véridique (as-Siddiq), le noble fils de nobles prophètes",
+  "sentTo": "Le peuple d'Égypte, et sa propre famille, les Enfants d'Israël",
+  "era": "L'arrière-petit-fils d'Ibrahim (paix sur lui). Les historiens suggèrent la période des souverains Hyksos en Égypte (vers 1700-1550 av. J.-C.) ; le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Canaan (Palestine), où il grandit avec son père Ya'qub.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "L'Égypte, où il fut vendu, emprisonné, puis chargé des entrepôts du pays.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Le fils de Ya'qub (paix sur lui), jeté dans un puits par ses frères jaloux, vendu comme esclave en Égypte, faussement accusé et emprisonné, puis élevé par Allah à un poste de confiance sur tout le pays. Le Coran appelle son histoire « le plus beau des récits » : une histoire de patience, de pureté, de pardon et du plan caché d'Allah.",
+  "notes": [
+    "Le nom de la femme d'al-'Aziz (souvent donné comme Zulaykha) ne figure ni dans le Coran ni dans les hadiths authentiques, et l'histoire populaire selon laquelle elle épousa plus tard Yusuf vient de récits tardifs, dont beaucoup proviennent des Gens du Livre.",
+    "Le nom du jeune frère de Yusuf (Binyamin, Benjamin) n'est pas dans le Coran ; il vient de la Bible.",
+    "« Il l'aurait désirée s'il n'avait vu la preuve de son Seigneur » (12:24) : les savants l'expliquent de plusieurs façons. Tous s'accordent à dire que Yusuf ne fit rien de mal, et le verset lui-même dit qu'Allah détourna de lui le mal.",
+    "Le Coran et la Sunna ne disent pas si le roi d'Égypte à l'époque de Yusuf devint croyant, ni l'âge exact de Yusuf à chaque étape."
+  ],
+  "chapters": [
+    {
+      "id": "yusuf-1",
+      "title": "Le rêve",
+      "paragraphs": [
+        "Allah dit au Prophète Muhammad ﷺ : « Nous te racontons le plus beau des récits. » C'est l'histoire de Yusuf, fils de Ya'qub, fils d'Ishaq, fils d'Ibrahim (paix sur eux).",
+        "Un matin, le jeune Yusuf dit à son père : « Ô mon père, j'ai vu onze étoiles, et le soleil et la lune ; je les ai vus se prosterner devant moi. »",
+        "Ya'qub comprit que ce rêve annonçait de grandes choses. Il avertit Yusuf de ne pas le raconter à ses frères, de peur qu'ils ne complotent contre lui, car Shaytan est pour l'homme un ennemi déclaré. « Ton Seigneur te choisira, lui dit-il, t'enseignera l'interprétation des événements et parachèvera Son bienfait sur toi comme Il l'a parachevé auparavant sur tes ancêtres Ibrahim et Ishaq. »"
+      ],
+      "kidsParagraphs": [
+        "Le jeune Yusuf fit un rêve : onze étoiles, le soleil et la lune se prosternaient devant lui.",
+        "Son père dit : « Ne le dis pas à tes frères. Allah te choisira pour quelque chose de grand. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 3,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 5,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Certaines bonnes nouvelles gagnent à rester discrètes, pour les protéger de l'envie.",
+        "Shaytan se sert de la jalousie pour diviser les familles.",
+        "Un parent sage guide ses enfants avec amour."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'a vu Yusuf dans son rêve ?",
+          "options": [
+            "Onze étoiles, le soleil et la lune se prosternant devant lui",
+            "Sept vaches",
+            "Un bateau",
+            "Un palais"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        },
+        {
+          "question": "Que dit Ya'qub à Yusuf de faire ?",
+          "options": [
+            "Le dire à tout le monde",
+            "Ne pas le dire à ses frères",
+            "Aller en Égypte",
+            "L'oublier"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:5"
+        },
+        {
+          "question": "Comment le Coran appelle-t-il l'histoire de Yusuf ?",
+          "options": [
+            "Un conte étrange",
+            "Le plus beau des récits",
+            "Une légende",
+            "Un poème"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:3"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-2",
+      "title": "Le puits",
+      "paragraphs": [
+        "Les frères de Yusuf étaient jaloux : « Yusuf et son frère sont plus aimés de notre père que nous, alors que nous sommes un groupe fort. » L'un d'eux dit : « Tuez Yusuf, ou abandonnez-le dans quelque contrée. » Un autre dit : « Ne le tuez pas ; jetez-le au fond d'un puits, et quelque voyageur le ramassera. »",
+        "Ils persuadèrent leur père de laisser Yusuf sortir avec eux pour jouer. Ya'qub était inquiet : « Je crains qu'un loup ne le dévore pendant que vous ne faites pas attention. » Quand ils eurent jeté Yusuf dans le puits, Allah lui inspira : un jour tu leur rappelleras ce qu'ils ont fait, sans qu'ils sachent qui tu es.",
+        "Le soir, ils revinrent en pleurant, avec sa chemise tachée d'un faux sang : « Un loup l'a dévoré. » Ya'qub dit : « Belle patience. C'est Allah dont on implore le secours. »"
+      ],
+      "kidsParagraphs": [
+        "Les frères de Yusuf étaient jaloux. Ils le jetèrent dans un puits et dirent à leur père qu'un loup l'avait mangé.",
+        "Mais Allah dit à Yusuf : « Un jour, tu leur diras ce qu'ils ont fait. » Allah était avec lui."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 8,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        }
+      ],
+      "lessons": [
+        "La jalousie peut pousser à des actes terribles.",
+        "Allah est avec l'innocent, même au fond d'un puits.",
+        "Les mensonges finissent souvent par se dévoiler ; Ya'qub ne fut pas dupe du faux sang."
+      ],
+      "quiz": [
+        {
+          "question": "Où les frères jetèrent-ils Yusuf ?",
+          "options": [
+            "Dans une rivière",
+            "Au fond d'un puits",
+            "Dans une grotte",
+            "Dans la mer"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:10"
+        },
+        {
+          "question": "Que dirent les frères au sujet de Yusuf ?",
+          "options": [
+            "Il s'est enfui",
+            "Un loup l'a dévoré",
+            "Il s'est perdu",
+            "Il est parti en Égypte"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:17"
+        },
+        {
+          "question": "Qu'Allah inspira-t-Il à Yusuf dans le puits ?",
+          "options": [
+            "Qu'un jour il leur rappellerait cela",
+            "De rester là",
+            "Qu'il deviendrait roi aussitôt",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:15"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-3",
+      "title": "Vendu en Égypte",
+      "paragraphs": [
+        "Une caravane passa et envoya un homme puiser de l'eau. Quand il descendit son seau, il s'écria : « Bonne nouvelle ! Voici un garçon ! » Ils le cachèrent comme une marchandise et le vendirent à vil prix, quelques pièces, car ils n'en faisaient aucun cas.",
+        "L'homme d'Égypte qui l'acheta dit à sa femme : « Accorde-lui une demeure honorable. Peut-être nous sera-t-il utile, ou l'adopterons-nous comme fils. » Ainsi Allah établit Yusuf dans le pays et commença à lui enseigner l'interprétation des événements. Quand il atteignit sa maturité, Allah lui donna sagesse et science.",
+        "Le Prophète ﷺ a dit que la nuit du Mi'raj il rencontra Yusuf dans les cieux, et qu'il avait reçu la moitié de la beauté."
+      ],
+      "kidsParagraphs": [
+        "Des voyageurs trouvèrent Yusuf et le vendirent en Égypte pour quelques pièces.",
+        "Un homme riche d'Égypte le prit dans sa maison. En grandissant, Allah donna à Yusuf sagesse et science."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 19,
+          "ayahEnd": 20
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 21,
+          "ayahEnd": 22
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "162 a",
+          "narrator": "Anas ibn Malik",
+          "translation": "Extrait de la description du Mi'raj par le Prophète ﷺ : « …Puis il nous fit monter au troisième ciel… et voici que j'étais avec Yusuf ﷺ, à qui avait été donnée la moitié de la beauté. Il m'accueillit et invoqua le bien pour moi… »",
+          "match": "فاذا انا بيوسف صلى الله عليه وسلم اذا هو قد اعطي شطر الحسن",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Le plan d'Allah s'accomplit même à travers les torts des gens.",
+        "Les gens peuvent te sous-estimer ; Allah connaît ta vraie valeur.",
+        "La sagesse et la science sont des dons qu'Allah accorde aux bienfaisants."
+      ],
+      "quiz": [
+        {
+          "question": "Pour combien Yusuf fut-il vendu ?",
+          "options": [
+            "Un chameau",
+            "Quelques pièces",
+            "Un palais",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:20"
+        },
+        {
+          "question": "Que dit l'homme d'Égypte à sa femme au sujet de Yusuf ?",
+          "options": [
+            "Accorde-lui une demeure honorable",
+            "Renvoie-le",
+            "Fais-en un serviteur aux champs",
+            "Revends-le"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:21"
+        },
+        {
+          "question": "Qu'avait reçu Yusuf selon le Prophète ﷺ ?",
+          "options": [
+            "La moitié de la beauté",
+            "Un grand royaume",
+            "Un bâton d'or",
+            "Le langage des oiseaux"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 162 a"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-4",
+      "title": "Choisir Allah",
+      "paragraphs": [
+        "Quand Yusuf grandit, la femme de l'homme qui le possédait tenta de le séduire. Elle ferma les portes et l'appela à elle. Yusuf refusa aussitôt : « Qu'Allah me protège ! Il est mon maître, qui m'a bien traité. Les injustes ne réussissent jamais. » Allah détourna de lui le mal, car il était l'un de Ses serviteurs élus.",
+        "Il courut vers la porte et elle courut après lui, déchirant sa chemise par derrière, et à la porte ils trouvèrent son mari. Elle accusa aussitôt Yusuf. Un témoin de sa propre famille dit : si la chemise est déchirée par devant, elle dit vrai ; si elle est déchirée par derrière, c'est lui qui est véridique. La chemise était déchirée par derrière.",
+        "Pourtant, les femmes de la ville colportèrent des rumeurs, et elle le menaçait toujours de prison. Yusuf pria : « Mon Seigneur, la prison m'est préférable à ce à quoi elles m'invitent. » Allah l'exauça, et bien que son innocence fût claire, il fut mis en prison pour un temps."
+      ],
+      "kidsParagraphs": [
+        "Une femme de la maison demanda à Yusuf de faire quelque chose de mal. Il dit : « Qu'Allah me protège ! » et courut vers la porte.",
+        "Bien qu'innocent, Yusuf fut mis en prison. Il dit : « La prison vaut mieux que désobéir à Allah. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 25,
+          "ayahEnd": 28
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 33,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Face à la tentation, cherche refuge auprès d'Allah et éloigne-toi.",
+        "La loyauté envers ceux qui nous ont fait du bien fait partie de la foi.",
+        "Mieux vaut souffrir en ce monde que désobéir à Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Yusuf quand il fut tenté ?",
+          "options": [
+            "Qu'Allah me protège",
+            "Plus tard",
+            "Je vais le dire à tout le monde",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:23"
+        },
+        {
+          "question": "Comment l'innocence de Yusuf fut-elle montrée ?",
+          "options": [
+            "Sa chemise était déchirée par derrière",
+            "Par un rêve",
+            "Par l'ordre du roi",
+            "Par une lettre"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:27-28"
+        },
+        {
+          "question": "Qu'est-ce que Yusuf dit lui être préférable ?",
+          "options": [
+            "La richesse",
+            "La prison",
+            "Rentrer chez lui",
+            "Le palais"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:33"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-5",
+      "title": "Appeler à Allah en prison",
+      "paragraphs": [
+        "Deux jeunes hommes entrèrent en prison avec Yusuf. Chacun fit un rêve : l'un se vit pressant du raisin pour le vin, l'autre portant du pain sur la tête dont mangeaient les oiseaux. Ils demandèrent à Yusuf de les expliquer, car ils voyaient qu'il était un homme de bien.",
+        "Avant d'expliquer leurs rêves, Yusuf profita de l'occasion pour les appeler à Allah : « Je suis la religion de mes pères, Ibrahim, Ishaq et Ya'qub. Ô mes deux compagnons de prison, des seigneurs multiples sont-ils meilleurs, ou Allah, l'Unique, le Dominateur suprême ? »",
+        "Puis il leur dit : l'un servirait de nouveau le vin à son maître, et l'autre serait exécuté. À celui dont il savait qu'il serait libéré, il dit : « Parle de moi auprès de ton maître. » Mais Shaytan le lui fit oublier, et Yusuf resta encore plusieurs années en prison."
+      ],
+      "kidsParagraphs": [
+        "En prison, deux hommes interrogèrent Yusuf sur leurs rêves.",
+        "D'abord Yusuf leur parla d'Allah, puis il expliqua leurs rêves. Il appelait à Allah même en prison !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 41,
+          "ayahEnd": 42
+        }
+      ],
+      "lessons": [
+        "Appelle les gens à Allah où que tu sois, même dans l'épreuve.",
+        "Commence par l'essentiel : la foi en un Dieu unique.",
+        "Compte sur Allah plus que sur les gens."
+      ],
+      "quiz": [
+        {
+          "question": "Combien de jeunes hommes entrèrent en prison avec Yusuf ?",
+          "options": [
+            "Un",
+            "Deux",
+            "Sept",
+            "Onze"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:36"
+        },
+        {
+          "question": "De qui Yusuf dit-il suivre la religion ?",
+          "options": [
+            "Du roi",
+            "De ses pères Ibrahim, Ishaq et Ya'qub",
+            "Des Égyptiens",
+            "De son maître"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:38"
+        },
+        {
+          "question": "Que demanda Yusuf à l'homme libéré ?",
+          "options": [
+            "De parler de lui à son maître",
+            "De lui apporter à manger",
+            "De prévenir son père",
+            "De l'oublier"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:42"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-6",
+      "title": "Le rêve du roi",
+      "paragraphs": [
+        "Un jour, le roi d'Égypte fit un rêve étrange : sept vaches grasses dévorées par sept maigres, et sept épis verts et sept autres secs. Ses conseillers dirent que c'était un amas de rêves confus. Alors l'ancien prisonnier libéré se souvint de Yusuf.",
+        "Yusuf expliqua : « Cultivez sept ans comme d'habitude, et laissez en épi ce que vous moissonnez, sauf le peu que vous mangez. Puis viendront sept années dures qui consommeront ce que vous aurez amassé. Ensuite viendra une année de pluie et d'abondance. »",
+        "Le roi demanda à le voir, mais Yusuf refusa de quitter la prison tant que son nom n'était pas lavé. Les femmes reconnurent : « Nous ne connaissons aucun mal sur lui », et la femme d'al-'Aziz avoua : « C'est moi qui ai tenté de le séduire, et il est véridique. » Le Prophète ﷺ loua plus tard la patience de Yusuf : « Si j'étais resté en prison aussi longtemps que Yusuf, j'aurais répondu à celui qui m'appelait. »"
+      ],
+      "kidsParagraphs": [
+        "Le roi rêva de sept vaches grasses et de sept vaches maigres. Yusuf expliqua : sept bonnes années, puis sept années dures.",
+        "Avant de quitter la prison, Yusuf voulut que tout le monde sache qu'il était innocent. Et tous le reconnurent !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 43,
+          "ayahEnd": 45
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 47,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « …Si j'étais resté en prison aussi longtemps qu'y est resté Yusuf, j'aurais répondu à celui qui est venu m'appeler. »",
+          "match": "ولو لبثت في السجن طول ما لبث يوسف لاجبت الداعي",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Se préparer aux temps difficiles est sage.",
+        "Un nom sans tache compte ; Yusuf lava le sien avant d'accepter toute fonction.",
+        "La patience jointe à la dignité est un signe de foi solide."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'a vu le roi dans son rêve ?",
+          "options": [
+            "Sept vaches grasses dévorées par sept maigres",
+            "Onze étoiles",
+            "Un buisson en feu",
+            "Un grand déluge"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:43"
+        },
+        {
+          "question": "Combien d'années dures Yusuf annonça-t-il ?",
+          "options": [
+            "Trois",
+            "Sept",
+            "Dix",
+            "Quarante"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:48"
+        },
+        {
+          "question": "Pourquoi Yusuf ne quitta-t-il pas la prison aussitôt ?",
+          "options": [
+            "Il voulait d'abord que son innocence soit établie",
+            "Il avait peur",
+            "Il aimait la prison",
+            "La porte était fermée"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:50"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-7",
+      "title": "À la tête des entrepôts",
+      "paragraphs": [
+        "Le roi dit : « Amenez-le-moi ; je me l'attacherai personnellement. » Quand il eut parlé avec Yusuf, il dit : « Désormais tu es auprès de nous, estimé et digne de confiance. » Yusuf demanda : « Confie-moi les entrepôts du pays ; je suis un gardien avisé. » Allah établit Yusuf dans le pays.",
+        "Quand vinrent les années dures, les gens arrivèrent de partout pour chercher du grain, et parmi eux vinrent les frères de Yusuf. Il les reconnut, mais eux ne le reconnurent pas. Il leur donna du grain et leur demanda d'amener leur plus jeune frère la fois suivante.",
+        "Quand ils revinrent avec lui, Yusuf révéla en secret à son frère qui il était. Puis, par un stratagème qu'Allah lui enseigna, il fit placer la coupe du roi dans le sac de son frère afin de pouvoir le garder en Égypte."
+      ],
+      "kidsParagraphs": [
+        "Yusuf fut chargé de la nourriture de l'Égypte. Pendant les années dures, ses frères vinrent acheter du grain.",
+        "Eux ne le reconnurent pas, mais lui les reconnut ! Par un plan habile, il garda son petit frère avec lui."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 54,
+          "ayahEnd": 56
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 58,
+          "ayahEnd": 60
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 69,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 76,
+          "ayahEnd": 76
+        }
+      ],
+      "lessons": [
+        "Ne demande une responsabilité que si tu as la compétence et l'honnêteté nécessaires.",
+        "Allah élève les patients après leur épreuve.",
+        "Le plan d'Allah se déploie pas à pas."
+      ],
+      "quiz": [
+        {
+          "question": "Quelle charge Yusuf demanda-t-il ?",
+          "options": [
+            "Chef de l'armée",
+            "Responsable des entrepôts",
+            "Juge suprême",
+            "Capitaine des navires"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:55"
+        },
+        {
+          "question": "Les frères reconnurent-ils Yusuf ?",
+          "options": [
+            "Oui, aussitôt",
+            "Non",
+            "Seulement le plus jeune",
+            "Seulement l'aîné"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:58"
+        },
+        {
+          "question": "Que mit-on dans le sac de son frère ?",
+          "options": [
+            "Des pièces d'or",
+            "La coupe du roi",
+            "Une lettre",
+            "Une chemise"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:70"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-8",
+      "title": "Nul reproche contre vous aujourd'hui",
+      "paragraphs": [
+        "Les frères revinrent en Égypte dans le besoin : « Ô 'Aziz, le malheur nous a frappés, nous et notre famille. » Yusuf leur demanda : « Savez-vous ce que vous avez fait de Yusuf et de son frère, quand vous étiez ignorants ? » Ils s'écrièrent : « Es-tu vraiment Yusuf ? » Il dit : « Je suis Yusuf, et voici mon frère. Allah nous a comblés de Sa grâce. »",
+        "Ils reconnurent leur faute. Yusuf, désormais puissant, ne se vengea pas : « Nul reproche contre vous aujourd'hui. Qu'Allah vous pardonne ; Il est le plus miséricordieux des miséricordieux. » Il envoya sa chemise pour rendre la vue à son père, et invita toute la famille en Égypte.",
+        "Quand ses parents arrivèrent, il les éleva sur le trône, et tous se prosternèrent devant lui : c'était le sens de son rêve d'enfance. Yusuf pria : « Mon Seigneur, Tu m'as donné le pouvoir et enseigné l'interprétation des événements. Fais-moi mourir musulman et réunis-moi aux vertueux. » Le Prophète ﷺ l'appela le plus noble des gens : un prophète, fils d'un prophète, fils d'un prophète, fils de l'Ami intime d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Les frères revinrent et Yusuf dit : « Je suis Yusuf ! » Ils eurent beaucoup de regrets.",
+        "Yusuf leur pardonna : « Nul reproche contre vous aujourd'hui. » Puis toute la famille vint en Égypte et son rêve se réalisa."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 91,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 100,
+          "ayahEnd": 101
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3353",
+          "narrator": "Abu Hurayra",
+          "translation": "On dit : « Ô Messager d'Allah, qui est le plus noble des gens ? » Il dit : « Le plus pieux d'entre eux. » Ils dirent : « Ce n'est pas ce que nous te demandons. » Il dit : « Alors Yusuf, prophète d'Allah, fils du prophète d'Allah, fils du prophète d'Allah, fils de l'Ami intime d'Allah… »",
+          "match": "فيوسف نبي الله ابن نبي الله ابن نبي الله ابن خليل الله",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Pardonner quand on a le pouvoir de punir, voilà la vraie grandeur.",
+        "La patience et la piété ne sont jamais perdues.",
+        "Demande à Allah une bonne fin : mourir musulman parmi les vertueux."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Yusuf à ses frères quand ils reconnurent leur faute ?",
+          "options": [
+            "Vous serez punis",
+            "Nul reproche contre vous aujourd'hui",
+            "Quittez l'Égypte",
+            "Remboursez-moi"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:92"
+        },
+        {
+          "question": "Qu'envoya Yusuf à son père ?",
+          "options": [
+            "De l'or",
+            "Sa chemise",
+            "Une lettre",
+            "Du grain"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:93"
+        },
+        {
+          "question": "Qui le Prophète ﷺ appela-t-il le plus noble des gens (par la lignée) ?",
+          "options": [
+            "Yusuf",
+            "Moussa",
+            "Sulayman",
+            "Dawud"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3353"
+        }
+      ]
+    }
+  ]
+}

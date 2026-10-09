@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
 
 class MosqueCardWidget extends StatelessWidget {
   final String name;
@@ -19,19 +20,22 @@ class MosqueCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 160.w,
-        margin: EdgeInsets.only(right: 10.w),
+    return Container(
+      width: 160.w,
+      margin: EdgeInsets.only(right: 10.w),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14.r),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 6, offset: const Offset(0, 2)),
+        ],
+      ),
+      child: PressableTile(
+        onTap: onTap,
+        color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
+        borderRadius: BorderRadius.circular(14.r),
+        semanticLabel: name,
+        child: Padding(
         padding: EdgeInsets.all(12.w),
-        decoration: BoxDecoration(
-          color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
-          borderRadius: BorderRadius.circular(14.r),
-          boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 6, offset: const Offset(0, 2)),
-          ],
-        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -72,6 +76,7 @@ class MosqueCardWidget extends StatelessWidget {
               ],
             ),
           ],
+        ),
         ),
       ),
     );

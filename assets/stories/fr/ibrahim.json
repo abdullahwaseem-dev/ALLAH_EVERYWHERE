@@ -1,0 +1,924 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ibrahim",
+  "language": "fr",
+  "name": "Ibrahim",
+  "title": "Khalilullah, l'ami intime d'Allah",
+  "sentTo": "Son peuple en Mésopotamie (Irak), qui adorait des idoles et les astres",
+  "era": "Souvent situé par les historiens vers 2000-1800 av. J.-C. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "La Mésopotamie (Irak), où il grandit et appela son peuple. Le Coran ne nomme pas la ville ; des récits tardifs mentionnent Babylone, Kutha ou Ur.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    },
+    {
+      "name": "Al-Khalil (Hébron), en Palestine, dans la terre bénie où il s'installa. Sa tombe y est traditionnellement située.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "La Mecque, où il laissa Hajar et Ismaël, puis éleva la Kaaba avec Ismaël.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "Le père des prophètes qui vinrent après lui et l'ami d'Allah. Il se dressa seul contre les idoles de son peuple, fut jeté dans un feu qu'Allah rendit frais, laissa sa famille dans la vallée de La Mecque sur ordre d'Allah, fut prêt à sacrifier son fils, et éleva la Kaaba avec Ismaël. Les musulmans se souviennent de lui dans chaque prière.",
+  "notes": [
+    "Azar (6:74) : la plupart des savants y voient le nom du père d'Ibrahim, comme le suggère le texte du Coran. Certains ont dit que c'était un titre ou le nom d'une idole, ou que son père s'appelait Tarikh (Térah) et qu'Azar était un oncle.",
+    "L'étoile, la lune et le soleil (6:76-78) : les savants divergent sur le fait qu'Ibrahim débattait avec son peuple en utilisant leurs propres croyances (avis d'Ibn Kathir et de beaucoup d'autres) ou décrivait sa propre réflexion de jeune homme. Tous s'accordent à dire qu'il n'a jamais adoré d'idoles.",
+    "Le fils qui devait être sacrifié (37:101-107) : la plupart des savants, dont Ibn Kathir, disent que c'était Ismaël. Certains anciens savants ont dit Isaac.",
+    "La Kaaba avant Ibrahim : certains récits disent qu'elle fut d'abord construite par les anges ou par Adam. Le Coran parle d'Ibrahim et Ismaël élevant ses fondations (2:127) et d'Allah montrant à Ibrahim son emplacement (22:26).",
+    "Le roi qui débattit avec Ibrahim (2:258) n'est pas nommé dans le Coran. Le nom Namrud (Nemrod) vient de récits tardifs.",
+    "Les détails du feu (combien de temps on rassembla le bois, une catapulte, l'offre d'aide de Jibril) viennent de récits qui ne figurent ni dans le Coran ni dans les hadiths authentiques.",
+    "Les dates et les lieux de sa vie (Ur, Babylone, Kutha, Harran) viennent de l'histoire et de récits tardifs, non du Coran ou de la Sunna."
+  ],
+  "chapters": [
+    {
+      "id": "ibrahim-1",
+      "title": "Regarder le ciel",
+      "paragraphs": [
+        "Ibrahim (AS) grandit parmi un peuple qui taillait des idoles dans la pierre et le bois pour les adorer, et qui vénérait aussi les étoiles, la lune et le soleil. Même son propre père, nommé Azar dans le Coran, adorait des idoles. Mais Allah donna à Ibrahim un jugement sain dès sa jeunesse.",
+        "Une nuit, Ibrahim regarda une étoile brillante et dit : « Voici mon seigneur. » Quand elle disparut, il dit : « Je n'aime pas ce qui disparaît. » Puis il vit la lune se lever et dit : « Voici mon seigneur. » Quand elle disparut aussi, il dit : « Si mon Seigneur ne me guide pas, je serai certainement parmi les égarés. » Puis il vit le soleil se lever, plus grand et plus brillant, et dit : « Voici mon seigneur ; il est plus grand. » Mais quand le soleil disparut à son tour, il dit à son peuple : « Je suis innocent de tout ce que vous associez à Allah. »",
+        "« Je tourne mon visage vers Celui qui a créé les cieux et la terre, en m'inclinant vers la vérité, et je ne suis pas de ceux qui Lui associent des partenaires. » Un dieu qui se lève et se couche, qui apparaît et disparaît, ne peut pas être le Seigneur de toutes choses.",
+        "Les savants comprennent cette scène de deux façons. Beaucoup, dont Ibn Kathir, disent qu'Ibrahim débattait avec son peuple, utilisant leurs propres croyances pour leur montrer leur erreur pas à pas. D'autres disent qu'elle décrit la réflexion d'un jeune homme en quête de vérité. Dans les deux cas, Ibrahim n'a jamais adoré d'idoles."
+      ],
+      "kidsParagraphs": [
+        "Le peuple d'Ibrahim adorait des idoles, les étoiles, la lune et le soleil.",
+        "Ibrahim regarda l'étoile, la lune et le soleil. Chacun disparut. Il dit : « Mon Seigneur ne disparaît jamais ! Je n'adore qu'Allah, qui a créé les cieux et la terre. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 74,
+          "ayahEnd": 75
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 6,
+          "ayahStart": 76,
+          "ayahEnd": 78
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        }
+      ],
+      "lessons": [
+        "Allah nous a donné l'intelligence pour réfléchir, et la vraie réflexion mène à Lui.",
+        "Ce qui change, se couche ou disparaît ne peut pas être Dieu.",
+        "Un bon argument se présente avec douceur, pas à pas, en partant de ce que les gens savent déjà."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Ibrahim vit-il d'abord dans le ciel nocturne ?",
+          "options": [
+            "Le soleil",
+            "Une étoile",
+            "Une comète",
+            "Des nuages"
+          ],
+          "answer": 1,
+          "reference": "Quran 6:76"
+        },
+        {
+          "question": "Que dit Ibrahim quand la lune disparut ?",
+          "options": [
+            "J'aime la lune",
+            "Elle reviendra",
+            "Si mon Seigneur ne me guide pas, je serai parmi les égarés",
+            "Rien"
+          ],
+          "answer": 2,
+          "reference": "Quran 6:77"
+        },
+        {
+          "question": "Quel nom le Coran donne-t-il au père d'Ibrahim ?",
+          "options": [
+            "Azar",
+            "Imran",
+            "Louqman",
+            "Haman"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:74"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-2",
+      "title": "Un doux appel à son père",
+      "paragraphs": [
+        "La première personne qu'Ibrahim appela à Allah fut son propre père. Le Coran rapporte ses paroles, pleines de respect et de tendresse : « Ô mon père, pourquoi adores-tu ce qui n'entend pas, ne voit pas et ne te sert à rien ? »",
+        "« Ô mon père, il m'est venu une science qui ne t'est pas venue ; suis-moi donc, je te guiderai vers un chemin droit. Ô mon père, n'adore pas Satan. Ô mon père, je crains qu'un châtiment du Tout-Miséricordieux ne te touche. » Chaque phrase commence par « Ô mon père » (ya abati), une façon affectueuse de s'adresser à un père.",
+        "Son père répondit durement : « Te détournes-tu de mes dieux, ô Ibrahim ? Si tu ne cesses pas, je te lapiderai. Éloigne-toi de moi pour longtemps. » Ibrahim ne répondit pas à la colère par la colère. Il dit : « Paix sur toi. Je demanderai pardon pour toi à mon Seigneur ; Il a toujours été bienveillant envers moi. »",
+        "Ibrahim n'avait demandé pardon pour son père qu'à cause d'une promesse qu'il lui avait faite. Quand il lui apparut clairement que son père était un ennemi d'Allah, il se désolidarisa de lui. Le Coran décrit Ibrahim comme tendre et indulgent."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim parla doucement à son père : « Ô mon père, pourquoi adores-tu des idoles qui n'entendent pas et ne voient pas ? »",
+        "Son père se mit en colère, mais Ibrahim répondit : « Paix sur toi. » Nous devons toujours parler gentiment à nos parents."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 41,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 43,
+          "ayahEnd": 45
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 46,
+          "ayahEnd": 48
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 9,
+          "ayahStart": 114,
+          "ayahEnd": 114
+        }
+      ],
+      "lessons": [
+        "Parle à tes parents avec respect et douceur, même en cas de désaccord.",
+        "Ne réponds pas à la colère par la colère.",
+        "L'appel à Allah commence par les personnes les plus proches de toi."
+      ],
+      "quiz": [
+        {
+          "question": "Comment Ibrahim commençait-il chaque phrase à son père ?",
+          "options": [
+            "Écoute-moi",
+            "Tu as tort",
+            "Ô mon père",
+            "Ô gens"
+          ],
+          "answer": 2,
+          "reference": "Quran 19:42-45"
+        },
+        {
+          "question": "Que dit Ibrahim quand son père le menaça ?",
+          "options": [
+            "Paix sur toi",
+            "Je te combattrai",
+            "Tu le regretteras",
+            "Adieu pour toujours"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:47"
+        },
+        {
+          "question": "Pourquoi Ibrahim avait-il demandé pardon pour son père ?",
+          "options": [
+            "Son père le lui avait demandé",
+            "À cause d'une promesse qu'il avait faite",
+            "Les anges le lui avaient dit",
+            "Il ne l'a jamais fait"
+          ],
+          "answer": 1,
+          "reference": "Quran 9:114"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-3",
+      "title": "Les idoles brisées",
+      "paragraphs": [
+        "Ibrahim demanda à son peuple : « Que sont ces statues auxquelles vous êtes si attachés ? » Ils n'avaient qu'une réponse : « Nous avons trouvé nos pères les adorant. » Ibrahim leur dit clairement qu'eux et leurs pères étaient dans un égarement évident, et il fit un serment : « Par Allah, je ruserai contre vos idoles une fois que vous serez partis. »",
+        "Un jour où son peuple sortit de la ville (pour une fête, comme l'expliquent beaucoup de savants), Ibrahim resta. Il alla vers leurs idoles et dit : « Ne mangez-vous pas ? Qu'avez-vous à ne pas parler ? » Puis il les frappa de sa main droite et les brisa toutes, sauf la plus grande.",
+        "Quand les gens revinrent et virent leurs dieux brisés, ils furent furieux. « Nous avons entendu un jeune homme parler d'eux, dit quelqu'un, on l'appelle Ibrahim. » Ils l'amenèrent devant tout le monde et demandèrent : « Est-ce toi qui as fait cela à nos dieux, ô Ibrahim ? » Il répondit : « C'est plutôt celui-ci, le plus grand d'entre eux, qui l'a fait. Interrogez-les, s'ils peuvent parler ! »",
+        "Un instant, la vérité les frappa, et ils se dirent : « C'est vous les injustes. » Mais ils revinrent à leur obstination : « Tu sais bien que ceux-là ne parlent pas ! » C'était exactement ce qu'Ibrahim voulait montrer. « Adorez-vous donc, en dehors d'Allah, ce qui ne peut ni vous être utile ni vous nuire ? Fi de vous et de ce que vous adorez en dehors d'Allah ! Ne raisonnez-vous pas ? »"
+      ],
+      "kidsParagraphs": [
+        "Quand le peuple d'Ibrahim sortit de la ville, Ibrahim brisa toutes leurs idoles, sauf la plus grande.",
+        "Quand on l'interrogea, Ibrahim dit : « Demandez à la grande idole, si elle peut parler ! » Ils savaient que les idoles ne parlent pas. Alors pourquoi les adorer ?"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 52,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 91,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 59,
+          "ayahEnd": 63
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 21,
+          "ayahStart": 64,
+          "ayahEnd": 67
+        }
+      ],
+      "lessons": [
+        "Faire quelque chose parce que nos ancêtres le faisaient n'est pas une preuve ; il faut suivre la vérité.",
+        "Poser la bonne question peut amener les gens à réfléchir par eux-mêmes.",
+        "Défendre la vérité demande du courage, et le courage est une qualité des prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Quelle raison les gens donnaient-ils pour adorer les idoles ?",
+          "options": [
+            "Les idoles leur parlaient",
+            "Un prophète le leur avait dit",
+            "Ils avaient trouvé leurs pères les adorant",
+            "Ils n'avaient aucune raison"
+          ],
+          "answer": 2,
+          "reference": "Quran 21:53"
+        },
+        {
+          "question": "Quelle idole Ibrahim laissa-t-il intacte ?",
+          "options": [
+            "La plus grande",
+            "La plus petite",
+            "Celle en or",
+            "Aucune"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:58"
+        },
+        {
+          "question": "Qu'Ibrahim dit-il aux gens de faire ?",
+          "options": [
+            "Réparer les idoles",
+            "Interroger les idoles, si elles peuvent parler",
+            "Quitter la ville",
+            "Fabriquer de nouvelles idoles"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:63"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-4",
+      "title": "Le feu devient frais",
+      "paragraphs": [
+        "Ayant perdu le débat, les gens recoururent à la force : « Brûlez-le et secourez vos dieux, si vous voulez agir ! » Ils construisirent une structure pour un feu énorme et y jetèrent Ibrahim.",
+        "Ibn Abbas a dit que lorsque Ibrahim fut jeté dans le feu, ses paroles furent « Hasbunallahu wa ni'mal wakil » : Allah nous suffit, et quel excellent garant Il est. Bien des siècles plus tard, le Prophète Muhammad ﷺ et ses Compagnons dirent les mêmes paroles quand on leur annonça qu'une grande armée s'était rassemblée contre eux.",
+        "Allah dit : « Ô feu, sois fraîcheur et paix pour Ibrahim. » Le feu, qui ne brûle que par la permission d'Allah, ne lui fit aucun mal. Ses ennemis voulaient lui nuire, mais Allah fit d'eux les perdants."
+      ],
+      "kidsParagraphs": [
+        "Les gens étaient en colère et jetèrent Ibrahim dans un immense feu.",
+        "Ibrahim dit : « Allah nous suffit ! » Allah dit au feu : « Sois frais et paisible pour Ibrahim. » Et le feu ne lui fit aucun mal !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 68,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 97,
+          "ayahEnd": 97
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4563",
+          "narrator": "Ibn Abbas",
+          "translation": "Ibn Abbas a dit : « “Allah nous suffit, et quel excellent garant Il est” (Hasbunallahu wa ni'mal wakil) fut dit par Ibrahim (AS) quand il fut jeté dans le feu, et fut dit par Muhammad ﷺ quand on leur dit : “Les gens se sont rassemblés contre vous, craignez-les donc.” Mais cela ne fit qu'augmenter leur foi, et ils dirent : “Allah nous suffit, et quel excellent garant Il est.” »",
+          "match": "قالها ابراهيم عليه السلام حين القي في النار"
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 69,
+          "ayahEnd": 70
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Des histoires populaires racontent que les gens rassemblèrent du bois pendant longtemps, qu'Ibrahim fut lancé avec une catapulte, et que l'ange Jibril lui offrit son aide."
+        }
+      ],
+      "lessons": [
+        "La confiance en Allah (tawakkul) est le refuge du croyant dans les moments les plus durs.",
+        "Rien dans la création ne peut nuire ou profiter sans la permission d'Allah.",
+        "Quand tu as peur, dis : Hasbunallahu wa ni'mal wakil."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Ibrahim quand il fut jeté dans le feu ?",
+          "options": [
+            "Aidez-moi, ô gens",
+            "Hasbunallahu wa ni'mal wakil (Allah nous suffit)",
+            "Je retire mes paroles",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 4563"
+        },
+        {
+          "question": "Qu'Allah ordonna-t-Il au feu ?",
+          "options": [
+            "Brûle plus fort",
+            "Sors de la ville",
+            "Deviens de l'eau",
+            "Sois fraîcheur et paix pour Ibrahim"
+          ],
+          "answer": 3,
+          "reference": "Quran 21:69"
+        },
+        {
+          "question": "Qui d'autre dit « Hasbunallahu wa ni'mal wakil » en période de danger ?",
+          "options": [
+            "Le Prophète Muhammad ﷺ et ses Compagnons",
+            "Pharaon",
+            "Le roi qui débattit avec Ibrahim",
+            "Iblis"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4563"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-5",
+      "title": "Le roi et les oiseaux",
+      "paragraphs": [
+        "Ibrahim débattit aussi avec un roi devenu arrogant parce qu'Allah lui avait donné le pouvoir. Ibrahim dit : « Mon Seigneur est Celui qui donne la vie et la mort. » Le roi répondit : « C'est moi qui donne la vie et la mort. » (Les exégètes expliquent qu'il voulait dire qu'il pouvait épargner un homme et en exécuter un autre.)",
+        "Ibrahim ne se perdit pas dans un débat secondaire. Il dit : « Allah fait venir le soleil de l'est ; fais-le donc venir de l'ouest. » Le mécréant resta sans voix.",
+        "Une autre fois, Ibrahim demanda à Allah : « Seigneur, montre-moi comment Tu redonnes la vie aux morts. » Allah dit : « Ne crois-tu pas ? » Il dit : « Si, mais pour que mon cœur soit rassuré. » Allah lui dit de prendre quatre oiseaux, de les découper et de placer une partie sur chaque colline, puis de les appeler. Ils vinrent à lui en volant à toute vitesse.",
+        "La question d'Ibrahim ne venait pas du doute. Il croyait déjà ; il voulait la certitude qui vient de voir de ses propres yeux."
+      ],
+      "kidsParagraphs": [
+        "Un roi orgueilleux disait qu'il pouvait donner la vie et la mort. Ibrahim dit : « Allah fait lever le soleil à l'est. Peux-tu le faire lever à l'ouest ? » Le roi n'eut pas de réponse !",
+        "Ibrahim demanda à Allah de lui montrer comment Il ramène les morts à la vie. Allah le lui montra avec quatre oiseaux qui revinrent vers lui en volant."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 258,
+          "ayahEnd": 258
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Le nom du roi n'est pas donné dans le Coran. Beaucoup de livres l'appellent Namrud (Nemrod), et certains racontent qu'il fut tué par un moucheron entré dans sa tête."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 260,
+          "ayahEnd": 260
+        }
+      ],
+      "lessons": [
+        "Le pouvoir et la richesse peuvent rendre les gens arrogants ; le vrai pouvoir appartient à Allah seul.",
+        "Un argument solide est clair et simple.",
+        "Il est bon de rechercher une foi plus forte et plus certaine."
+      ],
+      "quiz": [
+        {
+          "question": "Quel défi Ibrahim lança-t-il au roi ?",
+          "options": [
+            "Arrêter la pluie",
+            "Faire venir le soleil de l'ouest",
+            "Voler jusqu'au ciel",
+            "Construire une tour"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:258"
+        },
+        {
+          "question": "Combien d'oiseaux Allah dit-Il à Ibrahim de prendre ?",
+          "options": [
+            "Deux",
+            "Sept",
+            "Quatre",
+            "Dix"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:260"
+        },
+        {
+          "question": "Pourquoi Ibrahim demanda-t-il à voir comment Allah redonne la vie aux morts ?",
+          "options": [
+            "Pour que son cœur soit rassuré",
+            "Parce qu'il doutait",
+            "Pour le montrer au roi",
+            "Pour tester les oiseaux"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:260"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-6",
+      "title": "Hajar et Ismaël dans la vallée",
+      "paragraphs": [
+        "Ibrahim quitta sa patrie pour l'amour d'Allah. Son neveu Lout crut en lui, et Ibrahim dit : « J'émigre vers mon Seigneur. » Allah les conduisit vers la terre qu'Il avait bénie.",
+        "Des années plus tard, Allah accorda à Ibrahim un fils, Ismaël, de son épouse Hajar. Ibrahim emmena Hajar et le bébé Ismaël dans une vallée aride où personne ne vivait et où il n'y avait pas d'eau : la vallée de La Mecque. Il leur laissa un sac de dattes et une outre d'eau, et se retourna pour partir.",
+        "Hajar le suivit en demandant encore et encore : « Ibrahim, où vas-tu, nous laissant dans cette vallée où il n'y a personne ni rien ? » Il ne se retourna pas. Alors elle demanda : « Est-ce Allah qui t'a ordonné cela ? » Il répondit oui. Elle dit : « Alors Il ne nous laissera pas nous perdre », et elle s'en retourna. Hors de leur vue, Ibrahim se tourna vers la Maison et pria pour eux.",
+        "Quand l'eau fut épuisée et que son bébé souffrait de la soif, Hajar monta sur la colline de Safa pour chercher quelqu'un, puis traversa la vallée en courant jusqu'à la colline de Marwa. Elle le fit sept fois. Le Prophète ﷺ a dit : « C'est cela, le sa'y des gens entre elles. » Puis elle entendit une voix et vit un ange à l'endroit de Zamzam, qui creusa le sol jusqu'à ce que l'eau jaillisse. Plus tard, des voyageurs de la tribu de Jurhum virent des oiseaux tourner au-dessus de la vallée, trouvèrent l'eau et lui demandèrent la permission de s'y installer. C'est ainsi que La Mecque commença."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim laissa sa femme Hajar et le bébé Ismaël dans la vallée de La Mecque, où il n'y avait pas d'eau, parce qu'Allah le lui avait ordonné.",
+        "Hajar courut entre les collines de Safa et de Marwa pour chercher de l'aide. Puis Allah fit sortir l'eau du sol : le puits de Zamzam ! Les pèlerins marchent encore aujourd'hui entre Safa et Marwa."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 71,
+          "ayahEnd": 71
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "Ibn Abbas",
+          "translation": "…Puis Ibrahim partit, et la mère d'Ismaël le suivit et dit : « Ô Ibrahim, où vas-tu, nous laissant dans cette vallée où il n'y a personne ni rien ? » Elle le lui répéta plusieurs fois, mais il ne se tourna pas vers elle. Alors elle lui dit : « Est-ce Allah qui t'a ordonné cela ? » Il dit : « Oui. » Elle dit : « Alors Il ne nous laissera pas nous perdre », et elle s'en retourna… Elle alla de Safa à Marwa sept fois. Ibn Abbas a dit : le Prophète ﷺ a dit : « C'est cela, le sa'y des gens entre elles. »… Puis elle vit l'ange à l'endroit de Zamzam ; il creusa avec son talon (ou il dit : avec son aile) jusqu'à ce que l'eau apparaisse… L'ange lui dit : « Ne crains pas d'être abandonnée, car ici se trouve la Maison d'Allah, que ce garçon et son père construiront, et Allah n'abandonne pas les Siens. »",
+          "match": "الله الذي امرك بهذا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Avoir confiance en Allah, c'est faire ce qu'Il ordonne et Lui laisser le résultat.",
+        "Hajar chercha de toutes ses forces tout en faisant confiance à Allah : l'effort et la confiance vont ensemble.",
+        "Les rites du Hajj et de la Omra, comme le sa'y, gardent vivant le souvenir des pieux."
+      ],
+      "quiz": [
+        {
+          "question": "Que demanda Hajar à Ibrahim avant qu'il parte ?",
+          "options": [
+            "Quand reviendras-tu ?",
+            "Où est la nourriture ?",
+            "Est-ce Allah qui t'a ordonné cela ?",
+            "Qui construira une maison ?"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Combien de fois Hajar alla-t-elle entre Safa et Marwa ?",
+          "options": [
+            "Sept",
+            "Trois",
+            "Dix",
+            "Une"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Quelle tribu s'installa près de Hajar et Ismaël ?",
+          "options": [
+            "Quraych",
+            "Jurhum",
+            "Aws",
+            "Thamoud"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-7",
+      "title": "Le grand sacrifice",
+      "paragraphs": [
+        "Ibrahim avait prié : « Seigneur, accorde-moi un enfant vertueux », et Allah lui annonça la bonne nouvelle d'un garçon doux et patient. Quand le garçon fut assez grand pour travailler aux côtés de son père, Ibrahim vit en rêve qu'il le sacrifiait. Les savants expliquent que les rêves des prophètes sont une révélation.",
+        "Ibrahim n'imposa pas la chose à son fils. Il lui dit : « Ô mon fils, j'ai vu en rêve que je te sacrifie ; vois donc ce que tu en penses. » Le garçon répondit : « Ô mon père, fais ce qui t'est ordonné. Tu me trouveras, si Allah le veut, parmi les patients. »",
+        "Quand tous deux se furent soumis à Allah et qu'Ibrahim eut couché son fils sur le front, Allah l'appela : « Ô Ibrahim, tu as accompli la vision. » C'était une épreuve évidente, et Allah racheta le fils par un sacrifice immense. À chaque Aïd al-Adha, les musulmans du monde entier se souviennent de ce moment d'obéissance.",
+        "Quel fils était-ce ? La plupart des savants, dont Ibn Kathir, ont dit que c'était Ismaël, car le Coran annonce la naissance d'Isaac après la fin de ce récit. Certains anciens savants ont dit Isaac. Le Coran lui-même ne nomme pas le fils dans ce passage."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim vit en rêve qu'Allah lui ordonnait de sacrifier son fils. Son fils dit : « Ô mon père, fais ce qu'Allah ordonne. Je serai patient. »",
+        "Parce qu'ils obéirent tous les deux, Allah sauva le fils et leur donna un animal à sacrifier à sa place. Nous nous en souvenons à l'Aïd al-Adha !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 99,
+          "ayahEnd": 101
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 103,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 112
+        }
+      ],
+      "lessons": [
+        "L'amour d'Allah passe avant tout, même avant ce que nous aimons le plus.",
+        "Les parents devraient parler gentiment à leurs enfants et leur demander leur avis, comme Ibrahim.",
+        "Allah éprouve Ses serviteurs et récompense ceux qui se soumettent avec patience."
+      ],
+      "quiz": [
+        {
+          "question": "Comment Ibrahim reçut-il l'ordre de sacrifier son fils ?",
+          "options": [
+            "Par sa femme",
+            "En rêve",
+            "Par le roi",
+            "Dans un livre"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Que dit le fils à son père ?",
+          "options": [
+            "Je t'en prie, ne le fais pas",
+            "Laisse-moi demander à ma mère",
+            "Demande encore à Allah",
+            "Fais ce qui t'est ordonné"
+          ],
+          "answer": 3,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Qu'Allah donna-t-Il à la place du fils ?",
+          "options": [
+            "Un sacrifice immense",
+            "De l'or",
+            "Une nouvelle maison",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:107"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-8",
+      "title": "L'élévation de la Maison",
+      "paragraphs": [
+        "Ibrahim rendit visite plus d'une fois à sa famille à La Mecque. Lors d'une visite, il trouva Ismaël sous un arbre près de Zamzam, en train de tailler ses flèches. Quand Ismaël le vit, il se leva pour l'accueillir, et ils se saluèrent comme le font un père et un fils. Ibrahim dit : « Ô Ismaël, Allah m'a donné un ordre. » Ismaël dit : « Alors fais ce que ton Seigneur t'a ordonné. » « Et m'aideras-tu ? » « Je t'aiderai. » Ibrahim dit alors : « Allah m'a ordonné de construire une Maison ici », et il montra un monticule élevé.",
+        "Ils élevèrent donc les fondations de la Maison. Ismaël apportait les pierres et Ibrahim construisait. Quand les murs devinrent hauts, Ismaël apporta une pierre sur laquelle son père put se tenir (le Maqam Ibrahim que les pèlerins voient aujourd'hui), et tous deux priaient en travaillant : « Notre Seigneur, accepte cela de nous. Tu es Celui qui entend tout, qui sait tout. »",
+        "Leurs prières continuèrent : « Notre Seigneur, fais de nous des musulmans soumis à Toi, et de notre descendance une communauté soumise à Toi. Montre-nous nos rites et accepte notre repentir… Notre Seigneur, envoie-leur un messager d'entre eux qui leur récitera Tes versets, leur enseignera le Livre et la sagesse, et les purifiera. » Allah exauça cette prière par le Prophète Muhammad ﷺ, un descendant d'Ismaël.",
+        "Allah ordonna à Ibrahim de purifier la Maison pour ceux qui en font le tour, qui s'y tiennent debout, qui s'inclinent et se prosternent, et d'appeler tous les gens au Hajj : « Ils viendront à toi à pied et sur toute monture amaigrie, de chaque passage lointain. » Chaque année, des millions de personnes répondent à l'appel d'Ibrahim."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim et son fils Ismaël construisirent la Kaaba ensemble. Ismaël apportait les pierres et Ibrahim construisait les murs.",
+        "En travaillant, ils priaient : « Notre Seigneur, accepte cela de nous ! » Allah exauça leurs prières, et aujourd'hui des millions de personnes visitent la Kaaba chaque année."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "Ibn Abbas",
+          "translation": "…Puis il dit : « Ô Ismaël, Allah m'a donné un ordre. » Il dit : « Alors fais ce que ton Seigneur t'a ordonné. » Il dit : « Et m'aideras-tu ? » Il dit : « Je t'aiderai. » Il dit : « Allah m'a ordonné de construire une Maison ici », et il montra un monticule plus élevé que ce qui l'entourait. C'est alors qu'ils élevèrent les fondations de la Maison. Ismaël se mit à apporter les pierres et Ibrahim à construire, jusqu'à ce que, quand la construction fut élevée, il apporte cette pierre et la place pour lui. Il se tint dessus en construisant, tandis qu'Ismaël lui tendait les pierres, et tous deux disaient : « Notre Seigneur, accepte cela de nous. Tu es Celui qui entend tout, qui sait tout. »",
+          "match": "فجعل اسماعيل ياتي بالحجارة وابراهيم يبني",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 128,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 22,
+          "ayahStart": 26,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 3,
+          "ayahStart": 96,
+          "ayahEnd": 97
+        }
+      ],
+      "lessons": [
+        "Fais le bien et demande quand même à Allah de l'accepter ; ne sois jamais fier de tes actes.",
+        "Parents et enfants peuvent servir Allah ensemble.",
+        "Le Prophète Muhammad ﷺ est venu en réponse à la prière d'Ibrahim et d'Ismaël."
+      ],
+      "quiz": [
+        {
+          "question": "Qui aida Ibrahim à construire la Kaaba ?",
+          "options": [
+            "Isaac (AS)",
+            "Lout (AS)",
+            "Ismaël (AS)",
+            "Hajar"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "Que disaient-ils en construisant ?",
+          "options": [
+            "Notre Seigneur, accepte cela de nous",
+            "Dépêchons-nous",
+            "Nous sommes fatigués",
+            "Regardez notre travail"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "Qu'Ibrahim et Ismaël demandèrent-ils à Allah d'envoyer à leurs descendants ?",
+          "options": [
+            "Un roi",
+            "Un messager d'entre eux",
+            "Un trésor",
+            "Une armée"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:129"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-9",
+      "title": "Les hôtes honorés",
+      "paragraphs": [
+        "Un jour, des hôtes vinrent chez Ibrahim et le saluèrent par « Paix ». Il répondit « Paix », et sans tarder il alla discrètement vers sa famille et apporta un veau gras rôti. Ibrahim était connu pour sa générosité envers ses invités.",
+        "Mais les hôtes ne tendaient pas la main vers la nourriture, et Ibrahim eut peur d'eux. Ils dirent : « N'aie pas peur. Nous sommes envoyés au peuple de Lout. » C'étaient des anges.",
+        "Son épouse Sarah se tenait tout près, et elle rit. Les anges lui annoncèrent alors la bonne nouvelle d'un fils, Isaac, et après Isaac d'un petit-fils, Jacob. Elle s'écria, étonnée : « Vais-je enfanter alors que je suis une vieille femme, et que mon mari que voici est un vieillard ? » Les anges dirent : « T'étonnes-tu du décret d'Allah ? Que la miséricorde d'Allah et Ses bénédictions soient sur vous, gens de cette maison. »",
+        "Puis Ibrahim, indulgent et au cœur tendre, se mit à plaider auprès d'eux pour le peuple de Lout. Mais les anges lui dirent que l'ordre de son Seigneur était venu."
+      ],
+      "kidsParagraphs": [
+        "Des invités vinrent chez Ibrahim, et il leur apporta vite un grand repas rôti. Il était très généreux !",
+        "Les invités étaient des anges. Ils annoncèrent à Ibrahim et à sa femme Sarah une bonne nouvelle : un petit garçon nommé Isaac, alors qu'ils étaient très âgés."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 51,
+          "ayahStart": 24,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 70,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 11,
+          "ayahStart": 74,
+          "ayahEnd": 76
+        }
+      ],
+      "lessons": [
+        "Honore tes invités avec générosité et empressement.",
+        "Rien n'est impossible pour Allah.",
+        "La miséricorde d'Ibrahim, même envers des gens pécheurs, montre la douceur du cœur d'un prophète."
+      ],
+      "quiz": [
+        {
+          "question": "Que servit Ibrahim à ses invités ?",
+          "options": [
+            "Du pain et des dattes",
+            "Un veau rôti",
+            "Du poisson",
+            "Seulement du lait"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:69"
+        },
+        {
+          "question": "Qui étaient les invités ?",
+          "options": [
+            "Des voyageurs",
+            "Des rois",
+            "Des parents d'Ibrahim",
+            "Des anges"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:70"
+        },
+        {
+          "question": "De quel fils Ibrahim et sa femme reçurent-ils la bonne nouvelle ?",
+          "options": [
+            "Isaac",
+            "Ismaël",
+            "Youssouf",
+            "Moussa"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-10",
+      "title": "Khalilullah, l'ami d'Allah",
+      "paragraphs": [
+        "Allah prit Ibrahim comme Son khalil, Son ami intime. Le Coran le décrit comme une communauté à lui seul, dévoué à Allah, incliné vers la vérité, et reconnaissant pour les bienfaits d'Allah. Il n'était ni juif ni chrétien, mais droit et soumis à Allah.",
+        "Allah l'éprouva par des commandements et il les accomplit tous ; Allah fit donc de lui un guide pour les gens. La prophétie continua parmi ses descendants : d'Isaac vinrent Jacob et les prophètes des Enfants d'Israël, et d'Ismaël vint Muhammad ﷺ.",
+        "Le Prophète ﷺ nous a appris qu'au Jour de la Résurrection, quand tous les gens seront rassemblés, le premier à être vêtu sera Ibrahim. Et les musulmans se souviennent de lui dans chaque prière, en demandant à Allah de bénir Muhammad et sa famille comme Il a béni Ibrahim et sa famille.",
+        "Le Coran dit : « Vous avez certes eu un excellent exemple en Ibrahim et en ceux qui étaient avec lui. »"
+      ],
+      "kidsParagraphs": [
+        "Allah appela Ibrahim Son ami (Khalil). Il obéit à Allah dans chaque épreuve.",
+        "Beaucoup de prophètes vinrent de la famille d'Ibrahim, dont notre Prophète Muhammad ﷺ. Nous nous souvenons d'Ibrahim dans chaque prière !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 125,
+          "ayahEnd": 125
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 16,
+          "ayahStart": 120,
+          "ayahEnd": 121
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 67,
+          "ayahEnd": 67
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 124,
+          "ayahEnd": 124
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3349",
+          "narrator": "Ibn Abbas",
+          "translation": "Le Prophète ﷺ a dit : « Vous serez rassemblés pieds nus, nus et non circoncis. » Puis il récita (Coran 21:104). « Et le premier à être vêtu au Jour de la Résurrection sera Ibrahim… »",
+          "match": "واول من يكسى يوم القيامة ابراهيم",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3370",
+          "narrator": "Ka'b ibn 'Ujra",
+          "translation": "Nous avons demandé au Messager d'Allah ﷺ : « Ô Messager d'Allah, comment devons-nous prier sur vous, les gens de la maison ? Allah nous a appris comment adresser la salutation de paix. » Il dit : « Dites : Ô Allah, prie sur Muhammad et sur la famille de Muhammad, comme Tu as prié sur Ibrahim et sur la famille d'Ibrahim ; Tu es digne de louange, glorieux. Ô Allah, bénis Muhammad et la famille de Muhammad, comme Tu as béni Ibrahim et la famille d'Ibrahim ; Tu es digne de louange, glorieux. »",
+          "match": "كما صليت على ابراهيم وعلى ال ابراهيم",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 60,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        }
+      ],
+      "lessons": [
+        "L'obéissance complète à Allah est le chemin vers Son amour et Son amitié.",
+        "La voie d'Ibrahim est celle du monothéisme pur, suivie par tous les prophètes.",
+        "Nous avons un excellent exemple à suivre en Ibrahim (AS)."
+      ],
+      "quiz": [
+        {
+          "question": "Comment Allah prit-Il Ibrahim ?",
+          "options": [
+            "Comme roi",
+            "Comme ami intime (khalil)",
+            "Comme ange",
+            "Comme juge"
+          ],
+          "answer": 1,
+          "reference": "Quran 4:125"
+        },
+        {
+          "question": "Qui sera le premier vêtu au Jour de la Résurrection ?",
+          "options": [
+            "Adam (AS)",
+            "Moussa (AS)",
+            "Ibrahim (AS)",
+            "Nouh (AS)"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 3349"
+        },
+        {
+          "question": "Où les musulmans se souviennent-ils d'Ibrahim chaque jour ?",
+          "options": [
+            "Dans la prière (salat)",
+            "Seulement au Hajj",
+            "Seulement à l'Aïd",
+            "Ils ne le font pas"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3370"
+        }
+      ]
+    }
+  ]
+}

@@ -11,8 +11,12 @@ class QuranService {
 
       if (response.statusCode == 200) {
         final List<dynamic> data = json.decode(utf8.decode(response.bodyBytes));
-        return data.map((surah) {
+        // The API lists the 114 surahs in order, so position + 1 is the
+        // surah number. Stored on each item so it survives search filtering.
+        return data.asMap().entries.map((entry) {
+          final surah = entry.value;
           return {
+            'surahNumber': entry.key + 1,
             'surahName': surah['surahName'],
             'surahNameArabic': surah['surahNameArabic'],
             'surahNameTranslation': surah['surahNameTranslation'],

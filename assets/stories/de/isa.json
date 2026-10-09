@@ -1,0 +1,593 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "isa",
+  "language": "de",
+  "name": "Isa",
+  "title": "Der Messias, Sohn Maryams, ein Wort von Allah",
+  "sentTo": "Die Kinder Israels",
+  "era": "Geboren um den Beginn unserer Zeitrechnung. Er wurde zu Allah emporgehoben und wird vor dem Tag der Auferstehung zurückkehren.",
+  "places": [
+    {
+      "name": "Bethlehem und Jerusalem (al-Quds), Palästina, nach der Geschichtsschreibung; der Koran sagt, Maryam zog sich „an einen fernen Ort“ zurück (19:22).",
+      "lat": 31.7054,
+      "lng": 35.2024,
+      "approximate": true
+    },
+    {
+      "name": "Jerusalem (al-Quds), rund um den Tempel, in dem Zakariya diente.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Geboren von der Jungfrau Maryam ohne Vater, durch Allahs Wort „Sei“. Er sprach in der Wiege, heilte mit Allahs Erlaubnis den Blinden und den Aussätzigen und machte Tote lebendig, und er rief die Kinder Israels auf, allein Allah anzubeten. Er wurde weder getötet noch gekreuzigt; Allah hob ihn empor, und er wird vor dem Ende der Zeit zurückkehren.",
+  "notes": [
+    "Muslime glauben, dass Isa ein Prophet und der Messias ist, nicht Gott und nicht Gottes Sohn (19:35, 5:116-117).",
+    "Wie er gerettet wurde (4:157, „es erschien ihnen nur so“): Die Gelehrten sind sich über die Einzelheiten uneinig, auch darüber, ob jemand anderem sein Aussehen gegeben wurde. Der Koran ist eindeutig, dass er weder getötet noch gekreuzigt wurde.",
+    "Isas Wiederkehr ist durch authentische Hadithe bestätigt (zum Beispiel Sahih al-Buchari 3448). Einzelheiten der Endzeit stammen aus vielen Überlieferungen unterschiedlicher Stärke.",
+    "Das Evangelium (Indschil), das Isa gegeben wurde, gilt nicht als identisch mit den vier später geschriebenen Evangelien."
+  ],
+  "chapters": [
+    {
+      "id": "isa-1",
+      "title": "Maryam, erwählt vor den Frauen der Welten",
+      "paragraphs": [
+        "Maryam war die Tochter 'Imrans, dessen Frau ihr Kind dem Dienst Allahs gelobt hatte. Ihre Mutter bat Allah, Maryam und ihre Nachkommen vor Schaitan zu schützen, und der Prophet ﷺ sagte, dass jedes Kind bei seiner Geburt von Schaitan berührt wird und schreit, außer Maryam und ihrem Sohn.",
+        "Maryam wuchs in Anbetung unter der Obhut Zakariyas (a.s.) auf. Die Engel sagten zu ihr: „O Maryam, Allah hat dich erwählt und gereinigt und dich vor den Frauen der Welten erwählt. O Maryam, sei deinem Herrn demütig ergeben, wirf dich nieder und verneige dich mit denen, die sich verneigen.“"
+      ],
+      "kidsParagraphs": [
+        "Maryam war eine sehr gute und reine junge Frau, die Allah anbetete.",
+        "Die Engel sagten ihr: „Allah hat dich vor allen Frauen erwählt!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4548",
+          "narrator": "Abu Huraira",
+          "translation": "Der Prophet ﷺ sagte: „Kein Kind wird geboren, ohne dass Schaitan es bei seiner Geburt berührt, sodass es wegen der Berührung Schaitans aufschreit, außer Maryam und ihrem Sohn.“",
+          "match": "ما من مولود يولد الا والشيطان يمسه حين يولد",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        }
+      ],
+      "lessons": [
+        "Allah schützt die, die sich Ihm weihen.",
+        "Das Gebet einer Mutter für ihr Kind ist kostbar.",
+        "Maryam ist ein Vorbild der Anbetung für Frauen und Männer."
+      ],
+      "quiz": [
+        {
+          "question": "Vor wem erwählte Allah Maryam?",
+          "options": [
+            "Vor den Frauen der Welten",
+            "Vor den Engeln",
+            "Vor den Propheten",
+            "Vor den Königen"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:42"
+        },
+        {
+          "question": "Wen berührt Schaitan laut dem Hadith bei der Geburt nicht?",
+          "options": [
+            "Maryam und ihren Sohn",
+            "Alle Babys",
+            "Nur die Propheten",
+            "Niemanden"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4548"
+        },
+        {
+          "question": "Wer war Maryams Vater?",
+          "options": [
+            "'Imran",
+            "Zakariya",
+            "Yahya",
+            "Harun"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:35"
+        }
+      ]
+    },
+    {
+      "id": "isa-2",
+      "title": "Die Nachricht des Engels",
+      "paragraphs": [
+        "Eines Tages zog sich Maryam von ihrer Familie an einen Ort im Osten zurück. Allah sandte den Engel Dschibril in Gestalt eines Mannes zu ihr. Sie fürchtete sich: „Ich suche Zuflucht beim Allerbarmer vor dir, wenn du gottesfürchtig bist.“",
+        "Er sagte: „Ich bin nur ein Gesandter deines Herrn, um dir einen reinen Sohn zu schenken.“ Sie fragte: „Wie soll ich einen Sohn bekommen, wo mich kein Mann berührt hat?“ Er sagte: „Dein Herr sagt: Es ist Mir ein Leichtes. Wir werden ihn zu einem Zeichen für die Menschen machen und zu einer Barmherzigkeit von Uns.“",
+        "Die Engel nannten ihr seinen Namen: „Der Messias, Isa, Sohn Maryams, angesehen im Diesseits und im Jenseits und einer der Nahegebrachten. Er wird zu den Menschen in der Wiege sprechen und als Erwachsener.“ Wenn Allah eine Sache beschließt, sagt Er nur „Sei“, und sie ist."
+      ],
+      "kidsParagraphs": [
+        "Ein Engel kam zu Maryam und sagte ihr: „Allah wird dir einen reinen Sohn schenken.“",
+        "Maryam fragte: „Wie, wo ich doch nicht verheiratet bin?“ Der Engel sagte: „Für Allah ist das leicht!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 19,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 3,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        }
+      ],
+      "lessons": [
+        "Suche Zuflucht bei Allah, wenn du Angst hast.",
+        "Allah erschafft, wie Er will; Isas Geburt ist ein Zeichen Seiner Macht.",
+        "Keuschheit und Schamhaftigkeit werden von Allah geehrt."
+      ],
+      "quiz": [
+        {
+          "question": "Wer kam zu Maryam?",
+          "options": [
+            "Ein Engel in Gestalt eines Mannes",
+            "Zakariya",
+            "Ein Reisender",
+            "Ein König"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:17"
+        },
+        {
+          "question": "Wie hieß ihr Sohn laut den Engeln?",
+          "options": [
+            "Der Messias, Isa, Sohn Maryams",
+            "Yahya",
+            "Musa",
+            "Ahmad"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:45"
+        },
+        {
+          "question": "Was sagte der Engel über die Geburt?",
+          "options": [
+            "Es ist für Allah leicht",
+            "Es ist unmöglich",
+            "Warte zehn Jahre",
+            "Frag Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:21"
+        }
+      ]
+    },
+    {
+      "id": "isa-3",
+      "title": "Unter der Dattelpalme",
+      "paragraphs": [
+        "Maryam empfing Isa und zog sich an einen fernen Ort zurück. Die Wehen trieben sie zum Stamm einer Dattelpalme. Allein und verängstigt sagte sie: „Wäre ich doch zuvor gestorben und völlig vergessen!“",
+        "Da rief eine Stimme sie von unten: „Sei nicht traurig. Dein Herr hat unter dir ein Bächlein fließen lassen. Schüttle den Stamm der Palme zu dir, dann fallen frische, reife Datteln auf dich herab. So iss, trink und sei getrost.“",
+        "Ihr wurde gesagt, wenn sie jemanden sehe, solle sie andeuten: „Ich habe dem Allerbarmer ein Schweigefasten gelobt, daher werde ich heute mit niemandem sprechen.“"
+      ],
+      "kidsParagraphs": [
+        "Maryam bekam ihr Baby unter einer Dattelpalme. Sie war müde und hatte Angst.",
+        "Eine Stimme sagte: „Sei nicht traurig! Schüttle die Palme und iss die frischen Datteln, und trink aus dem Bach.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Allah sendet Trost in den schwersten Momenten.",
+        "Allah versorgt, aber wir ergreifen auch die Mittel: Maryam schüttelte den Baum.",
+        "Schweigen kann die beste Antwort auf Anschuldigungen sein."
+      ],
+      "quiz": [
+        {
+          "question": "Wo gebar Maryam?",
+          "options": [
+            "Am Stamm einer Dattelpalme",
+            "In einem Palast",
+            "Im Tempel",
+            "Auf einem Schiff"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:23"
+        },
+        {
+          "question": "Was fiel von der Palme?",
+          "options": [
+            "Frische, reife Datteln",
+            "Blätter",
+            "Gold",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:25"
+        },
+        {
+          "question": "Welche Art Fasten hielt Maryam?",
+          "options": [
+            "Ein Schweigefasten",
+            "Nur ein Fasten vom Essen",
+            "Kein Fasten",
+            "Ein Fasten von vierzig Tagen"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:26"
+        }
+      ]
+    },
+    {
+      "id": "isa-4",
+      "title": "Sprechen in der Wiege",
+      "paragraphs": [
+        "Maryam brachte ihr Baby zu ihrem Volk. Sie waren entsetzt: „O Maryam, du hast etwas Ungeheuerliches getan! O Schwester Haruns, dein Vater war kein schlechter Mann, und deine Mutter war nicht unkeusch.“ (Der Prophet ﷺ erklärte, dass die Menschen nach den Propheten und Rechtschaffenen vor ihnen benannt wurden.)",
+        "Maryam zeigte auf das Baby. „Wie sollen wir mit einem Baby in der Wiege sprechen?“, sagten sie. Da sprach Isa: „Ich bin der Diener Allahs. Er hat mir die Schrift gegeben und mich zum Propheten gemacht. Er hat mich gesegnet, wo immer ich bin, und mir das Gebet und die Zakat aufgetragen, solange ich lebe, und Güte gegenüber meiner Mutter. Friede sei auf mir am Tag, an dem ich geboren wurde, am Tag, an dem ich sterbe, und am Tag, an dem ich lebendig auferweckt werde.“",
+        "Allah sagt: „Das ist Isa, der Sohn Maryams: das Wort der Wahrheit, über das sie streiten. Es steht Allah nicht zu, Sich einen Sohn zu nehmen.“"
+      ],
+      "kidsParagraphs": [
+        "Die Leute sagten schlechte Dinge über Maryam. Sie zeigte auf ihr Baby.",
+        "Das Baby Isa sprach! Er sagte: „Ich bin der Diener Allahs, und Er hat mich zum Propheten gemacht.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2135",
+          "narrator": "Al-Mughira ibn Schu'ba",
+          "translation": "Als ich nach Nadschran kam, fragten sie mich: „Ihr rezitiert ‚O Schwester Haruns‘, dabei lebte Musa lange vor Isa?“ Als ich zum Gesandten Allahs ﷺ zurückkam, fragte ich ihn danach, und er sagte: „Sie gaben Namen nach ihren Propheten und den Rechtschaffenen vor ihnen.“",
+          "match": "انهم كانوا يسمون بانبيائهم والصالحين قبلهم"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 29,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Allah verteidigt den Unschuldigen.",
+        "Isas erste Worte waren: „Ich bin der Diener Allahs.“",
+        "Gebet, Spende und Güte zur Mutter stehen im Zentrum des Glaubens."
+      ],
+      "quiz": [
+        {
+          "question": "Was waren Isas erste Worte in der Wiege?",
+          "options": [
+            "Ich bin der Diener Allahs",
+            "Ich bin ein König",
+            "Ich habe Hunger",
+            "Ich bin der Sohn Gottes"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:30"
+        },
+        {
+          "question": "Wem gegenüber sollte Isa nach seinen Worten gütig sein?",
+          "options": [
+            "Seiner Mutter",
+            "Dem König",
+            "Den Priestern",
+            "Seinem Lehrer"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:32"
+        },
+        {
+          "question": "Warum wurde Maryam „Schwester Haruns“ genannt?",
+          "options": [
+            "Menschen wurden nach früheren Propheten und Rechtschaffenen benannt",
+            "Sie war Musas Schwester",
+            "Es war ihr Spitzname aus Ägypten",
+            "Ohne Grund"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2135"
+        }
+      ]
+    },
+    {
+      "id": "isa-5",
+      "title": "Zeichen mit Allahs Erlaubnis",
+      "paragraphs": [
+        "Allah lehrte Isa das Schreiben und die Weisheit, die Tora und das Evangelium, und sandte ihn als Gesandten zu den Kindern Israels. Er kam mit Zeichen, immer „mit Allahs Erlaubnis“: Er formte aus Lehm die Gestalt eines Vogels und blies hinein, und sie wurde ein Vogel; er heilte den Blinden und den Aussätzigen; er machte Tote lebendig; und er sagte den Menschen, was sie aßen und in ihren Häusern aufbewahrten.",
+        "Er bestätigte die Tora vor ihm und erlaubte ihnen manches, was ihnen verboten worden war. Seine Botschaft war klar: „Allah ist mein Herr und euer Herr, so betet Ihn an. Das ist ein gerader Weg.“",
+        "Isa verkündete auch eine frohe Botschaft: „Ich bin der Gesandte Allahs an euch, der die Tora vor mir bestätigt und einen Gesandten ankündigt, der nach mir kommen wird und dessen Name Ahmad ist.“ Das ist der Prophet Muhammad ﷺ."
+      ],
+      "kidsParagraphs": [
+        "Mit Allahs Erlaubnis ließ Isa einen Vogel aus Lehm fliegen, heilte Kranke und machte Tote wieder lebendig.",
+        "Er sagte den Menschen: „Allah ist mein Herr und euer Herr, so betet Ihn an.“ Und er kündigte einen Propheten namens Ahmad an."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 48,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Jedes Wunder geschieht mit Allahs Erlaubnis, nicht durch die eigene Kraft des Propheten.",
+        "Alle Propheten riefen dazu auf, allein Allah anzubeten.",
+        "Isa kündigte das Kommen des Propheten Muhammad ﷺ an."
+      ],
+      "quiz": [
+        {
+          "question": "Was formte Isa aus Lehm?",
+          "options": [
+            "Die Gestalt eines Vogels",
+            "Ein Haus",
+            "Einen Becher",
+            "Eine Lampe"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        },
+        {
+          "question": "Welchen Namen nannte Isa für den Gesandten nach ihm?",
+          "options": [
+            "Ahmad",
+            "Yahya",
+            "Musa",
+            "Ilyas"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "Mit wessen Erlaubnis vollbrachte Isa seine Zeichen?",
+          "options": [
+            "Mit Allahs",
+            "Mit seiner eigenen",
+            "Mit der der Engel",
+            "Mit der des Königs"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        }
+      ]
+    },
+    {
+      "id": "isa-6",
+      "title": "Die Jünger und der Tisch",
+      "paragraphs": [
+        "Allah gab den Jüngern (al-Hawariyyun) ein, an Ihn und Seinen Gesandten zu glauben. Sie sagten: „Wir glauben; bezeuge, dass wir Muslime sind.“",
+        "Die Jünger fragten: „O Isa, Sohn Maryams, kann dein Herr uns einen gedeckten Tisch vom Himmel herabsenden?“ Isa sagte ihnen, sie sollten Allah fürchten. Sie erklärten, sie wollten davon essen, ihre Herzen beruhigen und Zeugen dafür sein.",
+        "Isa betete: „O Allah, unser Herr, sende uns einen gedeckten Tisch vom Himmel herab, der ein Fest für die Ersten und die Letzten von uns sei und ein Zeichen von Dir.“ Allah antwortete, Er werde ihn herabsenden, aber wer danach ungläubig werde, den treffe eine schwere Strafe."
+      ],
+      "kidsParagraphs": [
+        "Isa hatte treue Helfer, die Jünger genannt wurden.",
+        "Sie baten um einen Tisch mit Essen vom Himmel, und Isa betete zu Allah darum."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 5,
+          "ayahStart": 111,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 114,
+          "ayahEnd": 115
+        }
+      ],
+      "lessons": [
+        "Gute Gefährten helfen, im Glauben standhaft zu bleiben.",
+        "Bitte Allah und niemand anderen um das, was du brauchst.",
+        "Größere Segnungen bringen größere Verantwortung."
+      ],
+      "quiz": [
+        {
+          "question": "Worum baten die Jünger?",
+          "options": [
+            "Um einen gedeckten Tisch vom Himmel",
+            "Um ein Königreich",
+            "Um Gold",
+            "Um ein Schiff"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:112"
+        },
+        {
+          "question": "Was sagten die Jünger über sich selbst?",
+          "options": [
+            "Wir sind Muslime",
+            "Wir sind Könige",
+            "Wir sind Engel",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:111"
+        },
+        {
+          "question": "Zu wem betete Isa um den Tisch?",
+          "options": [
+            "Zu Allah",
+            "Zu den Engeln",
+            "Zum König",
+            "Zu seiner Mutter"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:114"
+        }
+      ]
+    },
+    {
+      "id": "isa-7",
+      "title": "Emporgehoben, und er kehrt zurück",
+      "paragraphs": [
+        "Einige Feinde Isas planten, ihn zu töten. Sie behaupteten: „Wir haben den Messias, Isa, den Sohn Maryams, getötet.“ Doch der Koran sagt: „Sie haben ihn weder getötet noch gekreuzigt, sondern es erschien ihnen nur so … Vielmehr hat Allah ihn zu Sich emporgehoben.“",
+        "Am Tag der Auferstehung wird Allah Isa fragen, ob er den Menschen gesagt habe, ihn und seine Mutter neben Allah zu Göttern zu nehmen. Er wird sagen: „Gepriesen seist Du! Ich habe ihnen nur gesagt, was Du mir befohlen hast: Betet Allah an, meinen Herrn und euren Herrn.“",
+        "Der Prophet ﷺ sagte, dass Isa, der Sohn Maryams, vor der Stunde als gerechter Richter herabkommen wird. Er sagte auch: „Ich stehe Isa, dem Sohn Maryams, im Diesseits und im Jenseits von allen Menschen am nächsten. Die Propheten sind Brüder: Ihre Mütter sind verschieden, aber ihre Religion ist eine.“"
+      ],
+      "kidsParagraphs": [
+        "Isa wurde nicht getötet. Allah hob ihn zu Sich empor.",
+        "Unser Prophet ﷺ sagte uns, dass Isa vor dem Ende der Welt zurückkehren wird. Alle Propheten sind Brüder mit einer Religion!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 157,
+          "ayahEnd": 158
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 116,
+          "ayahEnd": 117
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3448",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Bei Dem, in Dessen Hand meine Seele ist, der Sohn Maryams wird bald als gerechter Richter unter euch herabkommen …“",
+          "match": "ليوشكن ان ينزل فيكم ابن مريم حكما عدلا",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3443",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Ich stehe Isa, dem Sohn Maryams, im Diesseits und im Jenseits von allen Menschen am nächsten. Die Propheten sind Brüder von einem Vater: Ihre Mütter sind verschieden, und ihre Religion ist eine.“",
+          "match": "انا اولى الناس بعيسى ابن مريم في الدنيا والاخرة"
+        }
+      ],
+      "lessons": [
+        "Isa wurde weder getötet noch gekreuzigt; Allah hob ihn empor.",
+        "Isa rief die Menschen nie dazu auf, ihn anzubeten.",
+        "Alle Propheten teilten eine Religion: den Islam, die Hingabe an Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Was geschah laut dem Koran mit Isa?",
+          "options": [
+            "Allah hob ihn zu Sich empor",
+            "Er wurde gekreuzigt",
+            "Er starb in einer Schlacht",
+            "Er ging nach Indien"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:158"
+        },
+        {
+          "question": "Was wird Isa am Tag der Auferstehung sagen?",
+          "options": [
+            "Ich sagte ihnen nur, Allah anzubeten, meinen Herrn und euren Herrn",
+            "Betet mich an",
+            "Betet meine Mutter an",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:117"
+        },
+        {
+          "question": "Wie beschrieb der Prophet ﷺ die Propheten?",
+          "options": [
+            "Brüder, deren Religion eine ist",
+            "Rivalen",
+            "Könige",
+            "Fremde"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3443"
+        }
+      ]
+    }
+  ]
+}

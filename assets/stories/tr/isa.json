@@ -1,0 +1,593 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "isa",
+  "language": "tr",
+  "name": "İsa",
+  "title": "Meryem oğlu Mesih, Allah'tan bir kelime",
+  "sentTo": "İsrailoğulları",
+  "era": "Milâdî takvimin başlangıcı civarında doğdu. Allah katına yükseltildi ve kıyamet gününden önce geri dönecek.",
+  "places": [
+    {
+      "name": "Tarihe göre Filistin'de Beytüllahim ve Kudüs; Kur'an, Meryem'in \"uzak bir yere\" çekildiğini söyler (19:22).",
+      "lat": 31.7054,
+      "lng": 35.2024,
+      "approximate": true
+    },
+    {
+      "name": "Zekeriya'nın hizmet ettiği mabedin çevresi, Kudüs.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Bakire Meryem'den, babasız olarak, Allah'ın \"Ol\" kelimesiyle doğdu. Beşikte konuştu, Allah'ın izniyle doğuştan körü ve alacalıyı iyileştirdi, ölüleri diriltti ve İsrailoğullarını yalnız Allah'a ibadete çağırdı. Öldürülmedi ve çarmıha gerilmedi; Allah onu yükseltti ve o, zamanın sonundan önce geri dönecek.",
+  "notes": [
+    "Müslümanlar İsa'nın bir peygamber ve Mesih olduğuna, Tanrı veya Tanrı'nın oğlu olmadığına inanır (19:35, 5:116-117).",
+    "Nasıl kurtarıldığı (4:157, \"onlara öyle gösterildi\"): Âlimler, onun benzerinin başkasına verilip verilmediği de dahil ayrıntılarda ihtilaf eder. Kur'an onun öldürülmediği ve çarmıha gerilmediği konusunda açıktır.",
+    "İsa'nın dönüşü sahih hadislerle sabittir (örneğin Sahih-i Buhârî 3448). Ahir zamanın ayrıntıları farklı kuvvette birçok rivayetten gelir.",
+    "İsa'ya verilen İncil, sonradan yazılan dört İncil ile aynı kabul edilmez."
+  ],
+  "chapters": [
+    {
+      "id": "isa-1",
+      "title": "Meryem, âlemlerin kadınlarına üstün kılınan",
+      "paragraphs": [
+        "Meryem, karısı çocuğunu Allah'ın hizmetine adamış olan İmrân'ın kızıydı. Annesi, Meryem'i ve soyunu şeytandan koruması için Allah'a sığındı; Peygamber ﷺ de her çocuğa doğarken şeytanın dokunduğunu ve onun ağladığını, yalnızca Meryem ve oğlunun bundan müstesna olduğunu söyledi.",
+        "Meryem, Hz. Zekeriya'nın (a.s.) himayesinde ibadet içinde büyüdü. Melekler ona dedi ki: \"Ey Meryem! Allah seni seçti, seni temizledi ve seni âlemlerin kadınlarına üstün kıldı. Ey Meryem! Rabbine itaat et, secde et ve rükû edenlerle birlikte rükû et.\""
+      ],
+      "kidsParagraphs": [
+        "Meryem, Allah'a ibadet eden çok iyi ve temiz bir genç kızdı.",
+        "Melekler ona dedi ki: \"Allah seni bütün kadınlara üstün kıldı!\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4548",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Doğan hiçbir çocuk yoktur ki doğarken şeytan ona dokunmasın ve o da şeytanın dokunuşundan dolayı bağırarak ağlamasın; Meryem ve oğlu müstesna.\"",
+          "match": "ما من مولود يولد الا والشيطان يمسه حين يولد",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        }
+      ],
+      "lessons": [
+        "Allah Kendisine adanmış olanları korur.",
+        "Annenin çocuğu için duası çok değerlidir.",
+        "Meryem kadınlar ve erkekler için ibadette bir örnektir."
+      ],
+      "quiz": [
+        {
+          "question": "Allah Meryem'i kimlere üstün kıldı?",
+          "options": [
+            "Âlemlerin kadınlarına",
+            "Meleklere",
+            "Peygamberlere",
+            "Krallara"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:42"
+        },
+        {
+          "question": "Hadise göre şeytan doğumda kime dokunmaz?",
+          "options": [
+            "Meryem'e ve oğluna",
+            "Bütün bebeklere",
+            "Sadece peygamberlere",
+            "Hiç kimseye"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4548"
+        },
+        {
+          "question": "Meryem'in babası kimdi?",
+          "options": [
+            "İmrân",
+            "Zekeriya",
+            "Yahya",
+            "Harun"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:35"
+        }
+      ]
+    },
+    {
+      "id": "isa-2",
+      "title": "Meleğin müjdesi",
+      "paragraphs": [
+        "Bir gün Meryem ailesinden ayrılıp doğu tarafında bir yere çekildi. Allah ona melek Cebrail'i insan suretinde gönderdi. Meryem korktu: \"Eğer Allah'tan korkan biriysen, senden Rahmân'a sığınırım.\"",
+        "O dedi ki: \"Ben sadece Rabbinin elçisiyim; sana tertemiz bir oğul bağışlamak için geldim.\" Meryem sordu: \"Bana hiçbir erkek dokunmamışken nasıl oğlum olur?\" Dedi ki: \"Rabbin buyuruyor ki: Bu Bana kolaydır. Onu insanlara bir ayet ve katımızdan bir rahmet kılacağız.\"",
+        "Melekler ona adını bildirdi: \"Meryem oğlu Mesih İsa; dünyada ve ahirette itibarlı ve Allah'a yakın kılınanlardan. Beşikte de, yetişkinken de insanlarla konuşacak.\" Allah bir işe karar verdiğinde ona sadece \"Ol\" der, o da oluverir."
+      ],
+      "kidsParagraphs": [
+        "Bir melek Meryem'e gelip dedi ki: \"Allah sana tertemiz bir oğul verecek.\"",
+        "Meryem sordu: \"Evli değilken nasıl olur?\" Melek dedi ki: \"Bu Allah için kolaydır!\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 19,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 3,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        }
+      ],
+      "lessons": [
+        "Korktuğunda Allah'a sığın.",
+        "Allah dilediği gibi yaratır; İsa'nın doğumu O'nun kudretinin bir ayetidir.",
+        "İffet ve hayâ Allah katında değerlidir."
+      ],
+      "quiz": [
+        {
+          "question": "Meryem'e kim geldi?",
+          "options": [
+            "İnsan suretinde bir melek",
+            "Zekeriya",
+            "Bir yolcu",
+            "Bir kral"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:17"
+        },
+        {
+          "question": "Meleklere göre oğlunun adı neydi?",
+          "options": [
+            "Meryem oğlu Mesih İsa",
+            "Yahya",
+            "Musa",
+            "Ahmed"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:45"
+        },
+        {
+          "question": "Melek doğum hakkında ne dedi?",
+          "options": [
+            "Bu Allah için kolaydır",
+            "Bu imkânsızdır",
+            "On yıl bekle",
+            "Zekeriya'ya sor"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:21"
+        }
+      ]
+    },
+    {
+      "id": "isa-3",
+      "title": "Hurma ağacının altında",
+      "paragraphs": [
+        "Meryem İsa'ya hamile kaldı ve uzak bir yere çekildi. Doğum sancısı onu bir hurma ağacının gövdesine sürükledi. Yalnız ve korkmuş hâlde dedi ki: \"Keşke bundan önce ölseydim de unutulup gitseydim!\"",
+        "Sonra altından bir ses ona seslendi: \"Üzülme. Rabbin senin altından bir dere akıttı. Hurma ağacının gövdesini kendine doğru silkele, üzerine taze, olgun hurmalar dökülsün. Ye, iç ve gözün aydın olsun.\"",
+        "Ona, birini görürse şöyle işaret etmesi söylendi: \"Ben Rahmân için susma orucu adadım; bu yüzden bugün hiç kimseyle konuşmayacağım.\""
+      ],
+      "kidsParagraphs": [
+        "Meryem bebeğini bir hurma ağacının altında doğurdu. Yorgun ve korkmuştu.",
+        "Bir ses dedi ki: \"Üzülme! Hurma ağacını silkele, taze hurmaları ye ve dereden iç.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Allah en zor anlarda teselli gönderir.",
+        "Allah rızık verir, ama biz de sebeplere sarılırız: Meryem ağacı silkeledi.",
+        "Sessizlik, insanların suçlamalarına en iyi cevap olabilir."
+      ],
+      "quiz": [
+        {
+          "question": "Meryem nerede doğum yaptı?",
+          "options": [
+            "Bir hurma ağacının gövdesinin yanında",
+            "Bir sarayda",
+            "Mabette",
+            "Bir gemide"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:23"
+        },
+        {
+          "question": "Hurma ağacından ne döküldü?",
+          "options": [
+            "Taze, olgun hurmalar",
+            "Yapraklar",
+            "Altın",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:25"
+        },
+        {
+          "question": "Meryem nasıl bir oruç tuttu?",
+          "options": [
+            "Susma orucu",
+            "Sadece yemekten oruç",
+            "Oruç tutmadı",
+            "Kırk günlük oruç"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:26"
+        }
+      ]
+    },
+    {
+      "id": "isa-4",
+      "title": "Beşikte konuşmak",
+      "paragraphs": [
+        "Meryem bebeğini kavmine getirdi. Şaşkına döndüler: \"Ey Meryem! Çok çirkin bir iş yaptın! Ey Harun'un kız kardeşi! Baban kötü bir adam değildi, annen de iffetsiz değildi.\" (Peygamber ﷺ, insanların kendilerinden önceki peygamberlerin ve salihlerin adlarıyla adlandırıldığını açıkladı.)",
+        "Meryem bebeği işaret etti. \"Beşikteki bir bebekle nasıl konuşuruz?\" dediler. O zaman İsa konuştu: \"Ben Allah'ın kuluyum. O bana Kitab'ı verdi ve beni peygamber yaptı. Nerede olursam olayım beni mübarek kıldı ve yaşadığım sürece bana namazı ve zekâtı, anneme iyilik etmeyi emretti. Doğduğum gün, öleceğim gün ve diri olarak diriltileceğim gün bana selam olsun.\"",
+        "Allah buyurur: \"İşte Meryem oğlu İsa budur: Hakkında şüpheye düştükleri hak söz. Allah'ın çocuk edinmesi olacak şey değildir.\""
+      ],
+      "kidsParagraphs": [
+        "İnsanlar Meryem hakkında kötü şeyler söyledi. O da bebeğini işaret etti.",
+        "Bebek İsa konuştu! Dedi ki: \"Ben Allah'ın kuluyum ve O beni peygamber yaptı.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2135",
+          "narrator": "Muğîre b. Şu'be",
+          "translation": "Necrân'a geldiğimde bana sordular: \"Siz 'Ey Harun'un kız kardeşi' diye okuyorsunuz, oysa Musa İsa'dan çok önce yaşadı?\" Resûlullah'ın ﷺ yanına döndüğümde bunu ona sordum; buyurdu ki: \"Onlar kendilerinden önceki peygamberlerinin ve salihlerin adlarını verirlerdi.\"",
+          "match": "انهم كانوا يسمون بانبيائهم والصالحين قبلهم"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 29,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Allah masumu savunur.",
+        "İsa'nın ilk sözleri şunlardı: \"Ben Allah'ın kuluyum.\"",
+        "Namaz, sadaka ve anneye iyilik imanın merkezindedir."
+      ],
+      "quiz": [
+        {
+          "question": "İsa'nın beşikteki ilk sözleri nelerdi?",
+          "options": [
+            "Ben Allah'ın kuluyum",
+            "Ben bir kralım",
+            "Acıktım",
+            "Ben Tanrı'nın oğluyum"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:30"
+        },
+        {
+          "question": "İsa kime iyilik etmesi gerektiğini söyledi?",
+          "options": [
+            "Annesine",
+            "Krala",
+            "Rahiplere",
+            "Hocasına"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:32"
+        },
+        {
+          "question": "Meryem'e neden \"Harun'un kız kardeşi\" dendi?",
+          "options": [
+            "İnsanlara önceki peygamberlerin ve salihlerin adları verilirdi",
+            "Musa'nın kız kardeşiydi",
+            "Mısır'dan kalma lakabıydı",
+            "Sebepsiz"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2135"
+        }
+      ]
+    },
+    {
+      "id": "isa-5",
+      "title": "Allah'ın izniyle mucizeler",
+      "paragraphs": [
+        "Allah İsa'ya yazıyı, hikmeti, Tevrat'ı ve İncil'i öğretti ve onu İsrailoğullarına resul olarak gönderdi. Mucizelerle geldi, hepsi de \"Allah'ın izniyle\": Çamurdan kuş biçiminde bir şey yapıp içine üfürür, o da kuş olurdu; doğuştan körü ve alacalıyı iyileştirirdi; ölüleri diriltirdi; insanlara ne yediklerini ve evlerinde ne biriktirdiklerini haber verirdi.",
+        "Kendinden önceki Tevrat'ı tasdik etti ve onlara haram kılınan bazı şeyleri helal kıldı. Mesajı açıktı: \"Allah benim de Rabbim, sizin de Rabbinizdir; O'na ibadet edin. Doğru yol budur.\"",
+        "İsa bir müjde de verdi: \"Ben size Allah'ın elçisiyim; benden önceki Tevrat'ı tasdik ediyor ve benden sonra gelecek, adı Ahmed olan bir elçiyi müjdeliyorum.\" Bu, Peygamber Muhammed'dir ﷺ."
+      ],
+      "kidsParagraphs": [
+        "Allah'ın izniyle İsa çamurdan bir kuşu uçurdu, hastaları iyileştirdi ve ölüleri diriltti.",
+        "İnsanlara dedi ki: \"Allah benim de Rabbim, sizin de Rabbinizdir; O'na ibadet edin.\" Ve Ahmed adında bir peygamberi müjdeledi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 48,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Her mucize peygamberin kendi gücüyle değil, Allah'ın izniyle olur.",
+        "Bütün peygamberler yalnız Allah'a ibadete çağırdı.",
+        "İsa, Peygamber Muhammed'in ﷺ gelişini haber verdi."
+      ],
+      "quiz": [
+        {
+          "question": "İsa çamurdan ne yaptı?",
+          "options": [
+            "Kuş biçiminde bir şey",
+            "Bir ev",
+            "Bir bardak",
+            "Bir lamba"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        },
+        {
+          "question": "İsa kendisinden sonraki elçinin adını ne olarak bildirdi?",
+          "options": [
+            "Ahmed",
+            "Yahya",
+            "Musa",
+            "İlyas"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "İsa mucizelerini kimin izniyle gösterirdi?",
+          "options": [
+            "Allah'ın",
+            "Kendisinin",
+            "Meleklerin",
+            "Kralın"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        }
+      ]
+    },
+    {
+      "id": "isa-6",
+      "title": "Havariler ve sofra",
+      "paragraphs": [
+        "Allah havarilere Kendisine ve elçisine iman etmelerini ilham etti. Dediler ki: \"İman ettik; Müslüman olduğumuza şahit ol.\"",
+        "Havariler sordular: \"Ey Meryem oğlu İsa! Rabbin bize gökten donatılmış bir sofra indirebilir mi?\" İsa onlara Allah'tan korkmalarını söyledi. Ondan yemek, kalplerini mutmain etmek ve ona şahit olmak istediklerini açıkladılar.",
+        "İsa dua etti: \"Allah'ım, Rabbimiz! Bize gökten, öncekilerimiz ve sonrakilerimiz için bir bayram ve Senden bir ayet olacak bir sofra indir.\" Allah onu indireceğini, ama bundan sonra inkâr edenin şiddetli bir azaba uğrayacağını bildirdi."
+      ],
+      "kidsParagraphs": [
+        "İsa'nın havari denen sadık yardımcıları vardı.",
+        "Gökten bir yemek sofrası istediler ve İsa bunun için Allah'a dua etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 5,
+          "ayahStart": 111,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 114,
+          "ayahEnd": 115
+        }
+      ],
+      "lessons": [
+        "İyi arkadaşlar imanda sebat etmeye yardım eder.",
+        "İhtiyacını başkasından değil, Allah'tan iste.",
+        "Daha büyük nimetler daha büyük sorumluluk getirir."
+      ],
+      "quiz": [
+        {
+          "question": "Havariler ne istedi?",
+          "options": [
+            "Gökten donatılmış bir sofra",
+            "Bir krallık",
+            "Altın",
+            "Bir gemi"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:112"
+        },
+        {
+          "question": "Havariler kendileri hakkında ne dedi?",
+          "options": [
+            "Biz Müslümanız",
+            "Biz kralız",
+            "Biz meleğiz",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:111"
+        },
+        {
+          "question": "İsa sofra için kime dua etti?",
+          "options": [
+            "Allah'a",
+            "Meleklere",
+            "Krala",
+            "Annesine"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:114"
+        }
+      ]
+    },
+    {
+      "id": "isa-7",
+      "title": "Yükseltildi ve geri dönecek",
+      "paragraphs": [
+        "İsa'nın bazı düşmanları onu öldürmek için tuzak kurdu. \"Meryem oğlu Mesih İsa'yı öldürdük\" diye iddia ettiler. Fakat Kur'an der ki: \"Onu ne öldürdüler ne de astılar; fakat onlara öyle gösterildi… Bilakis Allah onu Kendi katına yükseltti.\"",
+        "Kıyamet günü Allah İsa'ya, insanlara kendisini ve annesini Allah'tan başka ilahlar edinmelerini söyleyip söylemediğini soracak. O diyecek ki: \"Seni tenzih ederim! Ben onlara sadece Senin bana emrettiğini söyledim: Benim de Rabbim, sizin de Rabbiniz olan Allah'a ibadet edin.\"",
+        "Peygamber ﷺ, Meryem oğlu İsa'nın kıyametten önce adil bir hâkim olarak ineceğini söyledi. Şunu da buyurdu: \"Ben dünyada ve ahirette Meryem oğlu İsa'ya insanların en yakınıyım. Peygamberler kardeştir: anneleri ayrıdır, ama dinleri birdir.\""
+      ],
+      "kidsParagraphs": [
+        "İsa öldürülmedi. Allah onu Kendi katına yükseltti.",
+        "Peygamberimiz ﷺ bize İsa'nın dünyanın sonundan önce geri döneceğini haber verdi. Bütün peygamberler tek dinli kardeşlerdir!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 157,
+          "ayahEnd": 158
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 116,
+          "ayahEnd": 117
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3448",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Nefsim elinde olana yemin olsun ki, Meryem oğlunun aranıza adil bir hâkim olarak inmesi yakındır…\"",
+          "match": "ليوشكن ان ينزل فيكم ابن مريم حكما عدلا",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3443",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Ben dünyada ve ahirette Meryem oğlu İsa'ya insanların en yakınıyım. Peygamberler baba bir kardeşlerdir: anneleri ayrı ayrıdır, dinleri ise birdir.\"",
+          "match": "انا اولى الناس بعيسى ابن مريم في الدنيا والاخرة"
+        }
+      ],
+      "lessons": [
+        "İsa ne öldürüldü ne de çarmıha gerildi; Allah onu yükseltti.",
+        "İsa insanları asla kendisine ibadete çağırmadı.",
+        "Bütün peygamberler tek bir dini paylaştı: İslam, Allah'a teslimiyet."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an İsa'ya ne olduğunu söyler?",
+          "options": [
+            "Allah onu Kendi katına yükseltti",
+            "Çarmıha gerildi",
+            "Savaşta öldü",
+            "Hindistan'a gitti"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:158"
+        },
+        {
+          "question": "İsa kıyamet günü ne diyecek?",
+          "options": [
+            "Onlara sadece benim de Rabbim, sizin de Rabbiniz olan Allah'a ibadet edin dedim",
+            "Bana ibadet edin",
+            "Anneme ibadet edin",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:117"
+        },
+        {
+          "question": "Peygamber ﷺ peygamberleri nasıl tanıttı?",
+          "options": [
+            "Dinleri bir olan kardeşler",
+            "Rakipler",
+            "Krallar",
+            "Yabancılar"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3443"
+        }
+      ]
+    }
+  ]
+}

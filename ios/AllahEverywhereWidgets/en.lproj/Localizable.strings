@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "Next Prayer";
+"widget.nextPrayer.description" = "Countdown to the next prayer, with today's prayer times.";
+"widget.hijriDate.name" = "Islamic Date";
+"widget.hijriDate.description" = "Today's Hijri date and Islamic occasions.";
+"widget.reminder.name" = "Verse of the Day";
+"widget.reminder.description" = "A verse or hadith to reflect on each day.";
+"widget.nextPrayer.fallback" = "Next prayer";
+"widget.setLocation.fallback" = "Open the app to set your location";
+"widget.openApp.fallback" = "Open the app to update";

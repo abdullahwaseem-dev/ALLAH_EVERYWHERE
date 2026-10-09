@@ -1,0 +1,338 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "shuayb",
+  "language": "de",
+  "name": "Schuaib",
+  "title": "Der Gesandte nach Madyan, der zu ehrlichem Handel aufrief",
+  "sentTo": "Die Leute von Madyan und die „Leute des Dickichts“ (al-Aika)",
+  "era": "Vor Musa (a.s.); er erinnerte Madyan an das Schicksal des Volkes Luts, das „nicht weit“ von ihnen war (11:89). Kein Datum wird genannt.",
+  "places": [
+    {
+      "name": "Madyan im Nordwesten Arabiens, östlich des Golfs von Akaba.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    }
+  ],
+  "summary": "Schuaib wurde nach Madyan gesandt, einem Händlervolk, das bei Maß und Gewicht betrog, Reisende ausraubte und die Menschen von Allahs Weg abhielt. Er rief sie auf, Allah anzubeten und ehrlich Handel zu treiben. Die hochmütigen Anführer drohten, ihn zu vertreiben, und eine Strafe ergriff sie, während Schuaib und die Gläubigen gerettet wurden.",
+  "notes": [
+    "Waren die Leute von Madyan und die „Leute des Dickichts“ (al-Aika, 26:176) dasselbe Volk? Die Gelehrten sind sich uneinig: Einige sagen, es war ein Volk, andere, es waren zwei verschiedene Völker, zu denen Schuaib gesandt wurde.",
+    "Der alte Mann in Madyan, dessen Tochter Musa heiratete (28:23-28), wird in vielen Büchern Schuaib genannt. Viele Gelehrte, darunter Ibn Kathir, bezweifelten dies, da Schuaib lange vor Musa lebte; der Koran nennt seinen Namen nicht.",
+    "Der Koran beschreibt die Strafe als Erdbeben (7:91), als Schrei (11:94) und als „die Strafe des Tages der Schattenwolke“ (26:189); die Gelehrten erklären dies als Teile eines einzigen Ereignisses oder als Beschreibung zweier Völker."
+  ],
+  "chapters": [
+    {
+      "id": "shuayb-1",
+      "title": "Ehrliches Maß und Gewicht",
+      "paragraphs": [
+        "Madyan war eine Händlerstadt an den Karawanenwegen. Allah sandte ihnen ihren Bruder Schuaib (a.s.) mit der Botschaft jedes Propheten: „O mein Volk, betet Allah an; ihr habt keinen Gott außer Ihm.“",
+        "Er benannte auch ihre besondere Sünde: Sie betrogen im Handel. „Gebt volles Maß und Gewicht, schmälert den Menschen nicht ihre Sachen und stiftet kein Unheil auf der Erde, nachdem sie in Ordnung gebracht worden ist.“",
+        "Er erinnerte sie daran, dass ein kleinerer erlaubter Gewinn, das, was bei Allah bleibt, besser für sie ist als ein großer, durch Betrug erworbener, wenn sie doch nur glaubten."
+      ],
+      "kidsParagraphs": [
+        "Die Leute von Madyan betrogen beim Verkaufen. Sie gaben den Menschen weniger, als diese bezahlt hatten.",
+        "Schuaib sagte ihnen: „Betet nur Allah an, und seid ehrlich beim Kaufen und Verkaufen!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 84,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 181,
+          "ayahEnd": 183
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 86,
+          "ayahEnd": 86
+        }
+      ],
+      "lessons": [
+        "Ehrlichkeit im Geschäft ist Teil des Gottesdienstes.",
+        "Ein kleiner erlaubter Gewinn ist besser als ein großer unerlaubter.",
+        "Menschen zu betrügen verbreitet Verderben in der Gesellschaft."
+      ],
+      "quiz": [
+        {
+          "question": "Was machte Madyan im Handel falsch?",
+          "options": [
+            "Sie gaben zu viel",
+            "Sie betrogen bei Maß und Gewicht",
+            "Sie weigerten sich zu verkaufen",
+            "Sie verkauften nur an Reiche"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:84"
+        },
+        {
+          "question": "Was ist laut Schuaib besser für sie?",
+          "options": [
+            "Das, was (erlaubt) bei Allah bleibt",
+            "Mehr Gold",
+            "Mehr Land",
+            "Ein größerer Markt"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:86"
+        },
+        {
+          "question": "Was war der erste Teil von Schuaibs Botschaft?",
+          "options": [
+            "Allein Allah anbeten",
+            "Ein Schiff bauen",
+            "Die Stadt verlassen",
+            "Gegen den König kämpfen"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:85"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-2",
+      "title": "„Befiehlt dir dein Gebet?“",
+      "paragraphs": [
+        "Die Leute verspotteten ihn: „O Schuaib, befiehlt dir dein Gebet, dass wir verlassen, was unsere Väter anbeteten, oder aufhören, mit unserem eigenen Vermögen zu tun, was wir wollen?“ Sie verstanden nicht, warum die Religion etwas zum Geld zu sagen haben sollte.",
+        "Schuaib antwortete sanft und weise. Er wollte ihnen nichts verbieten, um es dann selbst zu tun. „Ich will nur Ordnung schaffen, so viel ich kann“, sagte er. „Mein Gelingen kommt nur von Allah. Auf Ihn vertraue ich, und Ihm wende ich mich zu.“",
+        "Er erinnerte sie daran, was den Völkern Nuhs, Huds und Salihs widerfahren war, und an das Volk Luts, das nicht weit von ihnen war, und er bat sie, ihren Herrn um Vergebung zu bitten, denn Er ist barmherzig und liebevoll."
+      ],
+      "kidsParagraphs": [
+        "Die Leute lachten: „Sagt dir dein Gebet, was wir mit unserem Geld machen sollen?“",
+        "Schuaib sagte: „Ich will nur Gutes bewirken. Mein Erfolg kommt nur von Allah.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "Der Islam leitet jeden Bereich des Lebens, auch wie wir verdienen und ausgeben.",
+        "Wer zum Guten aufruft, handelt selbst danach.",
+        "Erfolg kommt nur von Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Was fragten die Leute Schuaib spöttisch?",
+          "options": [
+            "Befiehlt dir dein Gebet …?",
+            "Wo ist dein Heer?",
+            "Wer ist dein Vater?",
+            "Warum bist du reich?"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:87"
+        },
+        {
+          "question": "Was wollte Schuaib nach seinen Worten?",
+          "options": [
+            "König werden",
+            "Nur Ordnung schaffen, so viel er konnte",
+            "Ihr Vermögen",
+            "Fortgehen"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:88"
+        },
+        {
+          "question": "Welches frühere Volk war laut Schuaib „nicht weit“ von ihnen?",
+          "options": [
+            "Das Volk Luts",
+            "Das Volk Musas",
+            "Die Römer",
+            "Das Volk Yunus'"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:89"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-3",
+      "title": "Drohungen",
+      "paragraphs": [
+        "Die hochmütigen Anführer drohten ihm: „Wir werden dich aus unserer Stadt vertreiben, o Schuaib, zusammen mit denen, die mit dir glauben, es sei denn, ihr kehrt zu unserer Religion zurück.“ Schuaib erwiderte: „Auch wenn wir sie verabscheuen? Wir würden gegen Allah eine Lüge erfinden, wenn wir zu eurer Religion zurückkehrten, nachdem Allah uns aus ihr errettet hat.“",
+        "Sie sagten auch: „Wir verstehen vieles von dem, was du sagst, nicht, und wir sehen dich schwach unter uns. Wäre deine Sippe nicht, hätten wir dich gesteinigt.“ Schuaib fragte: „Ist euch meine Sippe teurer als Allah?“",
+        "Er sagte ihnen, sie sollten weitermachen wie bisher, und er würde es ebenso tun: Bald würden sie wissen, wen eine schmachvolle Strafe trifft und wer der Lügner ist."
+      ],
+      "kidsParagraphs": [
+        "Die Anführer sagten: „Verlass unsere Stadt, oder kehr zu unserer Religion zurück!“",
+        "Schuaib war mutig. Er sagte: „Wir werden die Wahrheit, die Allah uns gab, nie verlassen.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 88,
+          "ayahEnd": 89
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 91,
+          "ayahEnd": 92
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        }
+      ],
+      "lessons": [
+        "Tausche niemals deinen Glauben gegen Sicherheit oder Bequemlichkeit.",
+        "Die Furcht vor Allah sollte größer sein als die Furcht vor Menschen.",
+        "Die Wahrheit braucht nicht die Stärke eines Stammes hinter sich."
+      ],
+      "quiz": [
+        {
+          "question": "Womit drohten die Anführer Schuaib?",
+          "options": [
+            "Ihn reich zu machen",
+            "Ihn aus der Stadt zu vertreiben",
+            "Ihn zu ihrem Anführer zu machen",
+            "Ihm Land zu geben"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:88"
+        },
+        {
+          "question": "Warum hatten die Anführer ihn nach ihren Worten nicht gesteinigt?",
+          "options": [
+            "Wegen seiner Sippe",
+            "Wegen des Königs",
+            "Weil er stark war",
+            "Wegen der Engel"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:91"
+        },
+        {
+          "question": "Was fragte Schuaib sie über seine Sippe?",
+          "options": [
+            "Ist euch meine Sippe teurer als Allah?",
+            "Wo ist meine Sippe?",
+            "Werdet ihr in meine Sippe einheiraten?",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:92"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-4",
+      "title": "Als hätten sie nie dort gewohnt",
+      "paragraphs": [
+        "Als Allahs Befehl kam, rettete Er durch Seine Barmherzigkeit Schuaib und die, die mit ihm glaubten, und ein furchtbarer Schrei und ein Erdbeben ergriffen die Ungerechten. Sie lagen leblos in ihren Häusern, als hätten sie nie dort gewohnt.",
+        "Schuaib wandte sich von ihnen ab und sagte: „O mein Volk, ich habe euch die Botschaften meines Herrn ausgerichtet und euch gut geraten. Wie sollte ich um ein ungläubiges Volk trauern?“",
+        "Der Koran beschreibt die Strafe der „Leute des Dickichts“, die Schuaib ebenfalls ablehnten, als „die Strafe des Tages der Schattenwolke“. Sie hatten ihn herausgefordert, Stücke des Himmels auf sie fallen zu lassen, und sie kam als ein schrecklicher Tag."
+      ],
+      "kidsParagraphs": [
+        "Allah rettete Schuaib und die Gläubigen. Die Betrüger, die sich weigerten, wurden vernichtet.",
+        "Ehrlichkeit und Glaube retten; Betrug und Hochmut zerstören."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 94,
+          "ayahEnd": 95
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 187,
+          "ayahEnd": 189
+        }
+      ],
+      "lessons": [
+        "Ungerechtigkeit in der Gesellschaft führt am Ende ins Verderben.",
+        "Allah rettet die Gläubigen durch Seine Barmherzigkeit.",
+        "Die Pflicht jedes Warners ist es, die Botschaft zu überbringen; Rechtleitung kommt von Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Was ergriff die Ungerechten von Madyan?",
+          "options": [
+            "Eine Flut",
+            "Ein furchtbarer Schrei",
+            "Ein Wind",
+            "Heuschrecken"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        },
+        {
+          "question": "Wie heißt die Strafe der Leute des Dickichts?",
+          "options": [
+            "Der Tag der Schattenwolke",
+            "Der Tag der Flut",
+            "Der Tag des Feuers",
+            "Der Tag des Windes"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:189"
+        },
+        {
+          "question": "Wer wurde gerettet?",
+          "options": [
+            "Niemand",
+            "Schuaib und die Gläubigen",
+            "Nur die Anführer",
+            "Nur die Händler"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        }
+      ]
+    }
+  ]
+}

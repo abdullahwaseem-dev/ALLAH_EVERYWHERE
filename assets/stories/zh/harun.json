@@ -1,0 +1,256 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "harun",
+  "language": "zh",
+  "name": "哈伦",
+  "title": "穆萨（愿主赐他平安）的兄弟和助手",
+  "sentTo": "与穆萨（愿主赐他平安）一起，被派往法老和他的百姓，以及以色列的后裔",
+  "era": "穆萨（愿主赐他平安）的时代。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "埃及和西奈旷野，与穆萨（愿主赐他平安）在一起。",
+      "lat": 29.5,
+      "lng": 33.8,
+      "approximate": true
+    }
+  ],
+  "summary": "穆萨（愿主赐他平安）的兄弟，应穆萨本人的请求成为先知。他口才更好，在法老面前站在穆萨身边。当百姓崇拜牛犊时，他警告他们，并努力使他们保持团结。真主向穆萨和哈伦致以平安。",
+  "notes": [
+    "《古兰经》没有说哈伦比穆萨年长还是年幼；《圣经》说他是哥哥。",
+    "哈伦去世的细节（在穆萨之前，在旷野中）来自历史传述，而非《古兰经》或可靠的圣训。",
+    "人们对麦尔彦说的“哈伦的妹妹啊”（19:28），并不是说她是这位哈伦的妹妹：先知ﷺ解释说，人们常用他们以前的先知和清廉之人的名字来起名（《穆斯林圣训实录》2135）。"
+  ],
+  "chapters": [
+    {
+      "id": "harun-1",
+      "title": "兄弟的助手",
+      "paragraphs": [
+        "当真主在土瓦谷拣选穆萨（愿主赐他平安）并派他去见法老时，穆萨请求一位助手：“求你从我的家人中为我任命一个助手，我的哥哥哈伦。求你借他加强我的力量，使他参与我的事业，以便我们多多地赞颂你，多多地记念你。”",
+        "穆萨解释说：“我的哥哥哈伦口齿比我伶俐，求你派他做我的助手，证实我的话。”真主回答：“我将借你的哥哥加强你的力量。”出于祂的慈恩，真主使哈伦成为先知。"
+      ],
+      "kidsParagraphs": [
+        "穆萨求真主让他的哥哥哈伦做他的助手，真主也使哈伦成为先知！",
+        "哈伦很会说话，他帮助弟弟向法老讲述真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 29,
+          "ayahEnd": 34
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 53,
+          "ayahEnd": 53
+        }
+      ],
+      "lessons": [
+        "好兄弟在行善上互相帮助。",
+        "团队合作是真主的恩赐。",
+        "成为真理的助手是莫大的荣誉。"
+      ],
+      "quiz": [
+        {
+          "question": "穆萨为什么请求让哈伦做他的助手？",
+          "options": [
+            "哈伦口齿更伶俐",
+            "哈伦更富有",
+            "哈伦是国王",
+            "哈伦认识法老"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:34"
+        },
+        {
+          "question": "真主出于慈恩使哈伦成为什么？",
+          "options": [
+            "国王",
+            "先知",
+            "商人",
+            "士兵"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:53"
+        },
+        {
+          "question": "穆萨说他们要一起做什么？",
+          "options": [
+            "多多地赞颂和记念真主",
+            "变得富有",
+            "建造宫殿",
+            "周游世界"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:33-34"
+        }
+      ]
+    },
+    {
+      "id": "harun-2",
+      "title": "坚决反对牛犊",
+      "paragraphs": [
+        "穆萨去与他的主相会四十夜时，把责任交给了哈伦：“你在我的族人中代替我，你要改善他们，不要遵循作恶者的道路。”",
+        "萨米里造了金牛犊以后，哈伦警告百姓：“我的族人啊！你们只是因它而受考验。你们的主确是至仁主，你们应当顺从我，服从我的命令。”但许多人拒绝了：“我们要继续崇拜它，直到穆萨回到我们这里来。”",
+        "穆萨生气地回来，揪住哈伦的头和胡须，哈伦说：“我的同胞弟弟啊！百姓欺负我，几乎杀了我。我怕你说：你使以色列的后裔分裂了。”于是穆萨为他们两人祈祷。"
+      ],
+      "kidsParagraphs": [
+        "穆萨不在的时候，人们做了一头金牛犊。哈伦对他们说：“这是考验！你们要跟随我，崇拜真主。”",
+        "穆萨难过地回来后，哈伦向他解释了发生的事，穆萨为他们两人祈祷。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 90,
+          "ayahEnd": 91
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 92,
+          "ayahEnd": 94
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 151,
+          "ayahEnd": 151
+        }
+      ],
+      "lessons": [
+        "即使大多数人拒绝，也要说真话。",
+        "保持群体团结是重大的责任。",
+        "好人之间的误会要靠解释和祈祷来化解。"
+      ],
+      "quiz": [
+        {
+          "question": "关于牛犊，哈伦对百姓说了什么？",
+          "options": [
+            "你们只是因它而受考验",
+            "它是一件礼物",
+            "崇拜它直到穆萨回来",
+            "什么也没说"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:90"
+        },
+        {
+          "question": "穆萨上山时，谁负责管理百姓？",
+          "options": [
+            "哈伦",
+            "萨米里",
+            "戈伦",
+            "约书亚"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "哈伦解释时怎样称呼穆萨？",
+          "options": [
+            "我的同胞弟弟",
+            "我的王",
+            "我的老师",
+            "我的儿子"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:94"
+        }
+      ]
+    },
+    {
+      "id": "harun-3",
+      "title": "祝穆萨和哈伦平安",
+      "paragraphs": [
+        "真主赐给穆萨和哈伦巨大的恩惠：祂把他们和他们的族人从大难中救出来，援助他们，使他们获胜，赐给他们明白的经典，引导他们走正路。祂在后人中为他们留下了长久的美名：“祝穆萨和哈伦平安！”",
+        "先知ﷺ有一次对阿里·本·艾比·塔利卜说：“你对我来说就像哈伦对穆萨那样，难道你不满意吗？”他以此尊敬阿里，也表明了哈伦作为可信赖的助手与他的兄弟是多么亲近。"
+      ],
+      "kidsParagraphs": [
+        "真主说：“祝穆萨和哈伦平安！”",
+        "我们的先知ﷺ对阿里说：“你对我来说就像哈伦对穆萨那样”：一个亲近而可信赖的助手。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 114,
+          "ayahEnd": 120
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3706",
+          "narrator": "赛尔德·本·艾比·宛葛斯",
+          "translation": "先知ﷺ对阿里说：“你对我来说处于哈伦对穆萨那样的地位，难道你不满意吗？”",
+          "match": "اما ترضى ان تكون مني بمنزلة هارون من موسى"
+        }
+      ],
+      "lessons": [
+        "真主使支持真理的人尊贵。",
+        "可信赖的助手是宝贵的。",
+        "平安和荣誉是行善者的报酬。"
+      ],
+      "quiz": [
+        {
+          "question": "真主在后人中为穆萨和哈伦留下了什么？",
+          "options": [
+            "“祝穆萨和哈伦平安”",
+            "一座宫殿",
+            "一头金牛犊",
+            "什么也没有"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:120"
+        },
+        {
+          "question": "先知ﷺ对谁说“你对我来说就像哈伦对穆萨那样”？",
+          "options": [
+            "艾布·伯克尔",
+            "阿里",
+            "欧麦尔",
+            "奥斯曼"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3706"
+        },
+        {
+          "question": "真主赐给穆萨和哈伦什么？",
+          "options": [
+            "明白的经典",
+            "埃及的王国",
+            "一艘船",
+            "黄金"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:117"
+        }
+      ]
+    }
+  ]
+}

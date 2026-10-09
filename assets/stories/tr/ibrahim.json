@@ -1,0 +1,924 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ibrahim",
+  "language": "tr",
+  "name": "İbrahim",
+  "title": "Halîlullah, Allah'ın dostu",
+  "sentTo": "Putlara ve gök cisimlerine tapan, Mezopotamya'daki (Irak) kavmi",
+  "era": "Tarihçiler onu genellikle MÖ 2000-1800 civarına yerleştirir. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Büyüdüğü ve kavmini davet ettiği Mezopotamya (Irak). Kur'an şehrin adını vermez; sonraki rivayetler Babil, Kûsâ veya Ur'dan söz eder.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    },
+    {
+      "name": "Yerleştiği mübarek topraklarda, Filistin'deki el-Halil (Hebron). Kabri geleneksel olarak burada kabul edilir.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "Hâcer ile İsmail'i bıraktığı ve sonra İsmail ile birlikte Kâbe'nin temellerini yükselttiği Mekke.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "Kendisinden sonraki peygamberlerin babası ve Allah'ın dostu. Kavminin putlarına karşı tek başına durdu, Allah'ın serin kıldığı bir ateşe atıldı, Allah'ın emriyle ailesini Mekke vadisinde bıraktı, oğlunu kurban etmeye hazır oldu ve İsmail ile birlikte Kâbe'yi yükseltti. Müslümanlar onu her namazda anar.",
+  "notes": [
+    "Âzer (6:74): Âlimlerin çoğu, Kur'an'ın ifadesinin gösterdiği gibi bunu İbrahim'in babasının adı kabul eder. Bazıları bunun bir lakap veya bir putun adı olduğunu ya da babasının adının Târah olup Âzer'in amcası olduğunu söylemiştir.",
+    "Yıldız, ay ve güneş (6:76-78): Âlimler, İbrahim'in kavmiyle onların kendi inançlarını kullanarak tartıştığını mı (İbn Kesîr ve birçok âlimin görüşü), yoksa genç bir adam olarak kendi tefekkürünü mü anlattığını tartışmışlardır. Hepsi onun hiçbir zaman putlara tapmadığında hemfikirdir.",
+    "Kurban edilecek oğul (37:101-107): İbn Kesîr dahil âlimlerin çoğu bunun İsmail olduğunu söyler. Bazı selef âlimleri İshak demiştir.",
+    "İbrahim'den önce Kâbe: Bazı rivayetler onu ilk önce meleklerin veya Âdem'in inşa ettiğini söyler. Kur'an İbrahim ile İsmail'in temellerini yükselttiğinden (2:127) ve Allah'ın İbrahim'e yerini gösterdiğinden (22:26) bahseder.",
+    "İbrahim ile tartışan kral (2:258) Kur'an'da adıyla geçmez. Nemrut adı sonraki rivayetlerden gelir.",
+    "Ateşle ilgili ayrıntılar (odunun ne kadar süre toplandığı, mancınık, Cebrail'in yardım teklifi) Kur'an'da veya sahih hadislerde bulunmayan rivayetlerden gelir.",
+    "Hayatının tarihleri ve yerleri (Ur, Babil, Kûsâ, Harran) Kur'an ve Sünnet'ten değil, tarihten ve sonraki rivayetlerden gelir."
+  ],
+  "chapters": [
+    {
+      "id": "ibrahim-1",
+      "title": "Gökyüzüne bakış",
+      "paragraphs": [
+        "Hz. İbrahim (a.s.), taştan ve tahtadan putlar yontup onlara tapan, ayrıca yıldızları, ayı ve güneşi kutsal sayan bir kavmin içinde büyüdü. Kur'an'da adı Âzer olarak geçen kendi babası bile putlara tapıyordu. Ama Allah İbrahim'e gençliğinden itibaren doğru bir anlayış verdi.",
+        "Bir gece İbrahim parlak bir yıldıza baktı ve \"Bu benim rabbim\" dedi. Yıldız batınca \"Ben batıp gidenleri sevmem\" dedi. Sonra ayın doğduğunu görünce \"Bu benim rabbim\" dedi. O da batınca: \"Rabbim bana yol göstermezse elbette yolunu şaşırmışlardan olurum\" dedi. Sonra daha büyük ve daha parlak olan güneşin doğduğunu görünce \"Bu benim rabbim, bu daha büyük\" dedi. Ama güneş de batınca kavmine: \"Ben sizin Allah'a ortak koştuğunuz her şeyden uzağım\" dedi.",
+        "\"Ben hakka yönelerek yüzümü gökleri ve yeri yaratana çevirdim; ben O'na ortak koşanlardan değilim.\" Doğup batan, görünüp kaybolan bir ilah her şeyin Rabbi olamaz.",
+        "Âlimler bu sahneyi iki şekilde anlar. İbn Kesîr dahil birçoğu, İbrahim'in kavmiyle tartıştığını ve onların inançlarını kullanarak hatalarını adım adım gösterdiğini söyler. Bazıları ise bunun hakikati arayan bir gencin tefekkürünü anlattığını söyler. Her iki durumda da İbrahim hiçbir zaman putlara tapmadı."
+      ],
+      "kidsParagraphs": [
+        "İbrahim'in kavmi putlara, yıldızlara, aya ve güneşe tapıyordu.",
+        "İbrahim yıldızı, ayı ve güneşi izledi. Her biri kayboldu. \"Benim Rabbim hiç kaybolmaz! Ben sadece gökleri ve yeri yaratan Allah'a ibadet ederim\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 74,
+          "ayahEnd": 75
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 6,
+          "ayahStart": 76,
+          "ayahEnd": 78
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        }
+      ],
+      "lessons": [
+        "Allah bize düşünmemiz için akıl verdi; gerçek tefekkür O'na götürür.",
+        "Değişen, batan veya kaybolan hiçbir şey ilah olamaz.",
+        "İyi bir delil, insanların zaten bildiğinden başlayarak, yumuşaklıkla ve adım adım sunulur."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim gece göğünde ilk olarak ne gördü?",
+          "options": [
+            "Güneşi",
+            "Bir yıldızı",
+            "Bir kuyruklu yıldızı",
+            "Bulutları"
+          ],
+          "answer": 1,
+          "reference": "Quran 6:76"
+        },
+        {
+          "question": "Ay batınca İbrahim ne dedi?",
+          "options": [
+            "Ben ayı severim",
+            "Geri gelecek",
+            "Rabbim bana yol göstermezse yolunu şaşırmışlardan olurum",
+            "Hiçbir şey"
+          ],
+          "answer": 2,
+          "reference": "Quran 6:77"
+        },
+        {
+          "question": "Kur'an İbrahim'in babasına hangi adı verir?",
+          "options": [
+            "Âzer",
+            "İmran",
+            "Lokman",
+            "Hâmân"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:74"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-2",
+      "title": "Babasına yumuşak bir davet",
+      "paragraphs": [
+        "İbrahim'in Allah'a davet ettiği ilk kişi kendi babasıydı. Kur'an, saygı ve şefkat dolu sözlerini aktarır: \"Babacığım! İşitmeyen, görmeyen ve sana hiçbir faydası olmayan şeylere niçin tapıyorsun?\"",
+        "\"Babacığım! Bana sana gelmeyen bir ilim geldi; öyleyse bana uy da seni düz bir yola ileteyim. Babacığım! Şeytana kulluk etme. Babacığım! Rahman'dan sana bir azap dokunmasından korkuyorum.\" Her cümle, bir babaya sevgiyle seslenmenin yolu olan \"Babacığım\" (yâ ebeti) ile başlar.",
+        "Babası sert cevap verdi: \"Ey İbrahim! Sen benim ilahlarımdan yüz mü çeviriyorsun? Vazgeçmezsen seni taşlarım. Uzun bir süre benden uzak dur.\" İbrahim öfkeye öfkeyle karşılık vermedi. \"Sana selam olsun. Rabbimden senin için bağışlanma dileyeceğim; O bana karşı hep lütufkâr olmuştur\" dedi.",
+        "İbrahim babası için sadece ona verdiği bir söz yüzünden bağışlanma dilemişti. Babasının Allah'ın düşmanı olduğu ona açıkça belli olunca ondan uzaklaştı. Kur'an İbrahim'i yufka yürekli ve yumuşak huylu olarak anlatır."
+      ],
+      "kidsParagraphs": [
+        "İbrahim babasıyla nazikçe konuştu: \"Babacığım, işitmeyen ve görmeyen putlara neden tapıyorsun?\"",
+        "Babası kızdı, ama İbrahim \"Sana selam olsun\" dedi. Anne babamızla her zaman nazik konuşmalıyız."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 41,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 43,
+          "ayahEnd": 45
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 46,
+          "ayahEnd": 48
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 9,
+          "ayahStart": 114,
+          "ayahEnd": 114
+        }
+      ],
+      "lessons": [
+        "Anlaşamasan bile anne babanla saygıyla ve yumuşaklıkla konuş.",
+        "Öfkeye öfkeyle karşılık verme.",
+        "Allah'a davet sana en yakın insanlardan başlar."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim babasına her cümleye nasıl başladı?",
+          "options": [
+            "Beni dinle",
+            "Sen yanılıyorsun",
+            "Babacığım",
+            "Ey insanlar"
+          ],
+          "answer": 2,
+          "reference": "Quran 19:42-45"
+        },
+        {
+          "question": "Babası onu tehdit edince İbrahim ne dedi?",
+          "options": [
+            "Sana selam olsun",
+            "Seninle savaşacağım",
+            "Pişman olacaksın",
+            "Elveda, sonsuza dek"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:47"
+        },
+        {
+          "question": "İbrahim babası için neden bağışlanma dilemişti?",
+          "options": [
+            "Babası istemişti",
+            "Verdiği bir söz yüzünden",
+            "Melekler söylemişti",
+            "Hiç dilemedi"
+          ],
+          "answer": 1,
+          "reference": "Quran 9:114"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-3",
+      "title": "Kırılan putlar",
+      "paragraphs": [
+        "İbrahim kavmine sordu: \"Bu kendilerine bu kadar bağlandığınız heykeller nedir?\" Tek bir cevapları vardı: \"Atalarımızı onlara tapar bulduk.\" İbrahim onlara, kendilerinin de atalarının da apaçık bir sapıklık içinde olduğunu açıkça söyledi ve yemin etti: \"Allah'a andolsun ki siz arkanızı dönüp gittikten sonra putlarınıza bir tuzak kuracağım.\"",
+        "Kavminin şehirden çıktığı bir gün (birçok âlimin açıkladığı gibi bir bayram için), İbrahim geride kaldı. Putların yanına gitti ve \"Yemiyor musunuz? Neden konuşmuyorsunuz?\" dedi. Sonra sağ eliyle onlara vurdu ve en büyüğü hariç hepsini paramparça etti.",
+        "İnsanlar geri dönüp ilahlarının kırıldığını görünce öfkeden kudurdular. Biri: \"İbrahim denilen bir gencin onlardan söz ettiğini duyduk\" dedi. Onu herkesin önüne getirip sordular: \"Bunu ilahlarımıza sen mi yaptın, ey İbrahim?\" O: \"Hayır, bunu şu büyükleri yaptı. Konuşabiliyorlarsa onlara sorun!\" dedi.",
+        "Bir anlığına hakikat onları sarstı ve birbirlerine \"Asıl zalimler sizsiniz\" dediler. Ama sonra inatlarına geri döndüler: \"Bunların konuşmadığını sen de çok iyi biliyorsun!\" İbrahim'in göstermek istediği tam da buydu. \"Allah'ı bırakıp size hiçbir fayda ve zarar veremeyen şeylere mi tapıyorsunuz? Size de, Allah'ı bırakıp taptıklarınıza da yazıklar olsun! Hâlâ akıl erdirmeyecek misiniz?\""
+      ],
+      "kidsParagraphs": [
+        "İbrahim'in kavmi şehirden çıkınca İbrahim en büyüğü hariç bütün putlarını kırdı.",
+        "Ona sorduklarında İbrahim: \"Büyük puta sorun, eğer konuşabiliyorsa!\" dedi. Putların konuşamadığını biliyorlardı. O zaman neden onlara tapıyorlardı?"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 52,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 91,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 59,
+          "ayahEnd": 63
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 21,
+          "ayahStart": 64,
+          "ayahEnd": 67
+        }
+      ],
+      "lessons": [
+        "Atalarımızın yaptığını yapmak bir delil değildir; hakka uyulmalıdır.",
+        "Doğru soru, insanları kendi başlarına düşünmeye yöneltebilir.",
+        "Hak için durmak cesaret ister; cesaret peygamberlerin bir özelliğidir."
+      ],
+      "quiz": [
+        {
+          "question": "İnsanlar putlara tapmak için hangi gerekçeyi gösterdi?",
+          "options": [
+            "Putlar onlarla konuşuyordu",
+            "Bir peygamber onlara söylemişti",
+            "Atalarını onlara tapar bulmuşlardı",
+            "Hiçbir gerekçeleri yoktu"
+          ],
+          "answer": 2,
+          "reference": "Quran 21:53"
+        },
+        {
+          "question": "İbrahim hangi putu kırmadan bıraktı?",
+          "options": [
+            "En büyüğünü",
+            "En küçüğünü",
+            "Altın olanı",
+            "Hiçbirini"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:58"
+        },
+        {
+          "question": "İbrahim insanlara ne yapmalarını söyledi?",
+          "options": [
+            "Putları onarmalarını",
+            "Konuşabiliyorlarsa putlara sormalarını",
+            "Şehri terk etmelerini",
+            "Yeni putlar yapmalarını"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:63"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-4",
+      "title": "Ateş serinliyor",
+      "paragraphs": [
+        "Tartışmayı kaybeden insanlar zora başvurdular: \"Onu yakın ve ilahlarınıza yardım edin, eğer bir şey yapacaksanız!\" Büyük bir ateş için bir yapı kurdular ve İbrahim'i içine attılar.",
+        "İbn Abbas, İbrahim ateşe atıldığında sözlerinin \"Hasbünallahu ve ni'mel vekîl\", yani \"Allah bize yeter, O ne güzel vekildir\" olduğunu söyledi. Yüzyıllar sonra Peygamber Muhammed ﷺ ve ashabı, kendilerine karşı büyük bir ordunun toplandığı söylendiğinde aynı sözleri söylediler.",
+        "Allah: \"Ey ateş! İbrahim'e karşı serin ve esenlik ol\" buyurdu. Ancak Allah'ın izniyle yakan ateş ona hiçbir zarar vermedi. Düşmanları ona kötülük yapmak istedi, ama Allah onları kaybedenlerden kıldı."
+      ],
+      "kidsParagraphs": [
+        "İnsanlar öfkelendi ve İbrahim'i kocaman bir ateşe attılar.",
+        "İbrahim \"Allah bize yeter!\" dedi. Allah ateşe: \"İbrahim'e karşı serin ve güvenli ol\" dedi. Ve ateş ona hiç zarar vermedi!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 68,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 97,
+          "ayahEnd": 97
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4563",
+          "narrator": "İbn Abbas",
+          "translation": "İbn Abbas şöyle dedi: \"'Allah bize yeter, O ne güzel vekildir' (Hasbünallahu ve ni'mel vekîl) sözünü İbrahim (a.s.) ateşe atıldığında söyledi; Muhammed ﷺ de kendilerine 'İnsanlar size karşı toplandı, onlardan korkun' dendiğinde söyledi. Bu, onların imanını artırdı ve 'Allah bize yeter, O ne güzel vekildir' dediler.\"",
+          "match": "قالها ابراهيم عليه السلام حين القي في النار"
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 69,
+          "ayahEnd": 70
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Meşhur hikâyeler, insanların uzun süre odun topladığını, İbrahim'in mancınıkla atıldığını ve Cebrail'in ona yardım teklif ettiğini anlatır."
+        }
+      ],
+      "lessons": [
+        "Allah'a tevekkül, en zor anlarda müminin sığınağıdır.",
+        "Yaratılmışlardan hiçbir şey Allah'ın izni olmadan zarar veya fayda veremez.",
+        "Korktuğunda \"Hasbünallahu ve ni'mel vekîl\" de."
+      ],
+      "quiz": [
+        {
+          "question": "Ateşe atıldığında İbrahim ne dedi?",
+          "options": [
+            "Bana yardım edin, ey insanlar",
+            "Hasbünallahu ve ni'mel vekîl",
+            "Sözlerimi geri alıyorum",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 4563"
+        },
+        {
+          "question": "Allah ateşe ne emretti?",
+          "options": [
+            "Daha çok yan",
+            "Şehirden çık",
+            "Suya dönüş",
+            "İbrahim'e karşı serin ve esenlik ol"
+          ],
+          "answer": 3,
+          "reference": "Quran 21:69"
+        },
+        {
+          "question": "Tehlike anında \"Hasbünallahu ve ni'mel vekîl\" diyen başka kim vardı?",
+          "options": [
+            "Peygamber Muhammed ﷺ ve ashabı",
+            "Firavun",
+            "İbrahim ile tartışan kral",
+            "İblis"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4563"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-5",
+      "title": "Kral ve kuşlar",
+      "paragraphs": [
+        "İbrahim, Allah ona hükümranlık verdiği için kibirlenen bir kralla da tartıştı. İbrahim: \"Benim Rabbim hayat veren ve öldürendir\" dedi. Kral: \"Ben de hayat verir ve öldürürüm\" dedi. (Müfessirler, onun bir adamı bağışlayıp diğerini idam edebileceğini kastettiğini açıklar.)",
+        "İbrahim yan bir tartışmaya dalmadı. \"Allah güneşi doğudan getirir; sen de onu batıdan getir\" dedi. İnkâr eden şaşırıp kaldı.",
+        "Başka bir sefer İbrahim Allah'a: \"Rabbim! Ölüleri nasıl dirilttiğini bana göster\" dedi. Allah: \"İnanmıyor musun?\" buyurdu. O: \"Elbette inanıyorum, ama kalbim tatmin olsun diye\" dedi. Allah ona dört kuş alıp onları parçalamasını, her tepeye bir parçasını koymasını, sonra da onları çağırmasını emretti. Kuşlar koşarak uçup ona geldiler.",
+        "İbrahim'in sorusu şüpheden kaynaklanmıyordu. O zaten inanıyordu; kendi gözüyle görmekten gelen kesinliği istiyordu."
+      ],
+      "kidsParagraphs": [
+        "Kibirli bir kral hayat ve ölüm verebildiğini söyledi. İbrahim: \"Allah güneşi doğudan doğdurur. Sen onu batıdan doğdurabilir misin?\" dedi. Kralın verecek cevabı yoktu!",
+        "İbrahim Allah'tan ölüleri nasıl dirilttiğini göstermesini istedi. Allah ona bunu, uçarak geri gelen dört kuşla gösterdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 258,
+          "ayahEnd": 258
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Kur'an'da kralın adı geçmez. Birçok kitap ona Nemrut der ve bazıları onun kafasına giren bir sivrisinek yüzünden öldüğünü anlatır."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 260,
+          "ayahEnd": 260
+        }
+      ],
+      "lessons": [
+        "Güç ve servet insanları kibirli yapabilir; gerçek güç yalnızca Allah'ındır.",
+        "Güçlü bir delil açık ve basittir.",
+        "Daha güçlü ve daha kesin bir iman istemek güzeldir."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim krala nasıl meydan okudu?",
+          "options": [
+            "Yağmuru durdurmasını istedi",
+            "Güneşi batıdan getirmesini istedi",
+            "Göğe uçmasını istedi",
+            "Bir kule yapmasını istedi"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:258"
+        },
+        {
+          "question": "Allah İbrahim'e kaç kuş almasını söyledi?",
+          "options": [
+            "İki",
+            "Yedi",
+            "Dört",
+            "On"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:260"
+        },
+        {
+          "question": "İbrahim Allah'ın ölüleri nasıl dirilttiğini görmeyi neden istedi?",
+          "options": [
+            "Kalbi tatmin olsun diye",
+            "Şüphe ettiği için",
+            "Krala göstermek için",
+            "Kuşları denemek için"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:260"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-6",
+      "title": "Vadide Hâcer ve İsmail",
+      "paragraphs": [
+        "İbrahim Allah için yurdunu terk etti. Yeğeni Lut ona iman etti ve İbrahim: \"Ben Rabbime hicret ediyorum\" dedi. Allah onları bereketli kıldığı topraklara ulaştırdı.",
+        "Yıllar sonra Allah İbrahim'e eşi Hâcer'den İsmail adında bir oğul verdi. İbrahim, Hâcer'i ve bebek İsmail'i kimsenin yaşamadığı ve suyun olmadığı kurak bir vadiye götürdü: Mekke vadisine. Onlara bir dağarcık hurma ve bir kırba su bıraktı ve dönüp gitmeye başladı.",
+        "Hâcer onun arkasından gelip defalarca sordu: \"Ey İbrahim! Bizi hiç kimsenin ve hiçbir şeyin olmadığı bu vadide bırakıp nereye gidiyorsun?\" O dönüp bakmadı. Sonra Hâcer sordu: \"Bunu sana Allah mı emretti?\" O evet dedi. Hâcer: \"Öyleyse O bizi zayi etmez\" dedi ve geri döndü. Gözden kaybolunca İbrahim Kâbe'ye yönelip onlar için dua etti.",
+        "Su bitip bebeği susuzluktan kıvranınca Hâcer, birini bulmak için Safa tepesine çıktı, sonra vadiyi koşarak Merve tepesine geçti. Bunu yedi kez yaptı. Peygamber ﷺ: \"İşte insanların bu ikisi arasındaki sa'yi budur\" buyurdu. Sonra bir ses duydu ve Zemzem'in yerinde bir melek gördü; melek yeri kazdı ve su çıktı. Daha sonra Cürhüm kabilesinden yolcular vadinin üzerinde dönen kuşlar gördüler, suyu buldular ve oraya yerleşmek için Hâcer'den izin istediler. Mekke böyle başladı."
+      ],
+      "kidsParagraphs": [
+        "İbrahim, Allah emrettiği için eşi Hâcer'i ve bebek İsmail'i suyun olmadığı Mekke vadisinde bıraktı.",
+        "Hâcer yardım bulmak için Safa ile Merve tepeleri arasında koştu. Sonra Allah yerden su çıkardı: Zemzem kuyusu! Hacılar bugün hâlâ Safa ile Merve arasında sa'y yapar."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 71,
+          "ayahEnd": 71
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "İbn Abbas",
+          "translation": "…Sonra İbrahim yola koyuldu. İsmail'in annesi onun arkasından gidip: \"Ey İbrahim! Bizi içinde ne bir insan ne de bir şey bulunan bu vadide bırakıp nereye gidiyorsun?\" dedi. Bunu ona defalarca söyledi, ama o ona dönüp bakmadı. Bunun üzerine ona: \"Bunu sana Allah mı emretti?\" dedi. O: \"Evet\" dedi. Kadın: \"Öyleyse O bizi zayi etmez\" dedi ve geri döndü… Safa ile Merve arasında yedi kez gidip geldi. İbn Abbas dedi ki: Peygamber ﷺ şöyle buyurdu: \"İşte insanların bu ikisi arasındaki sa'yi budur.\"… Sonra Zemzem'in yerinde meleği gördü; melek topuğuyla (veya: kanadıyla) yeri kazdı ve su ortaya çıktı… Melek ona dedi ki: \"Zayi olmaktan korkmayın; burada Allah'ın evi var, onu bu çocuk ve babası inşa edecek. Allah kendi ehlini zayi etmez.\"",
+          "match": "الله الذي امرك بهذا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah'a tevekkül, O'nun emrettiğini yapıp sonucu O'na bırakmaktır.",
+        "Hâcer Allah'a güvenirken bütün gücüyle aradı: Çaba ve tevekkül bir aradadır.",
+        "Sa'y gibi hac ve umre ibadetleri salih insanların hatırasını yaşatır."
+      ],
+      "quiz": [
+        {
+          "question": "Hâcer, İbrahim gitmeden önce ona ne sordu?",
+          "options": [
+            "Ne zaman döneceksin?",
+            "Yiyecek nerede?",
+            "Bunu sana Allah mı emretti?",
+            "Evi kim yapacak?"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Hâcer Safa ile Merve arasında kaç kez gidip geldi?",
+          "options": [
+            "Yedi",
+            "Üç",
+            "On",
+            "Bir"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Hâcer ve İsmail'in yanına hangi kabile yerleşti?",
+          "options": [
+            "Kureyş",
+            "Cürhüm",
+            "Evs",
+            "Semûd"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-7",
+      "title": "Büyük kurban",
+      "paragraphs": [
+        "İbrahim \"Rabbim! Bana salihlerden olacak bir çocuk bağışla\" diye dua etmişti; Allah da ona yumuşak huylu bir oğlan müjdeledi. Oğlan babasıyla birlikte çalışabilecek yaşa gelince İbrahim rüyasında onu kurban ettiğini gördü. Âlimler peygamberlerin rüyalarının vahiy olduğunu açıklar.",
+        "İbrahim bu işi oğluna zorla dayatmadı. Ona: \"Yavrum! Rüyamda seni kurban ettiğimi görüyorum; bir bak, ne düşünürsün?\" dedi. Oğlan cevap verdi: \"Babacığım! Sana ne emrediliyorsa onu yap. İnşallah beni sabredenlerden bulacaksın.\"",
+        "İkisi de Allah'a teslim olup İbrahim oğlunu alnı üzerine yatırınca Allah ona seslendi: \"Ey İbrahim! Rüyayı doğruladın.\" Bu apaçık bir imtihandı ve Allah oğlana fidye olarak büyük bir kurban verdi. Her Kurban Bayramı'nda dünyanın dört bir yanındaki Müslümanlar bu itaat anını hatırlar.",
+        "Hangi oğuldu? İbn Kesîr dahil âlimlerin çoğu, Kur'an İshak'ın müjdesini bu kıssa bittikten sonra verdiği için bunun İsmail olduğunu söyledi. Bazı selef âlimleri İshak demiştir. Kur'an bu yerde oğlun adını vermez."
+      ],
+      "kidsParagraphs": [
+        "İbrahim rüyasında Allah'ın ona oğlunu kurban etmesini emrettiğini gördü. Oğlu: \"Babacığım, Allah ne emrediyorsa yap. Sabredeceğim\" dedi.",
+        "İkisi de itaat ettiği için Allah oğlanı kurtardı ve onun yerine kesmeleri için bir hayvan verdi. Bunu Kurban Bayramı'nda hatırlarız!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 99,
+          "ayahEnd": 101
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 103,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 112
+        }
+      ],
+      "lessons": [
+        "Allah sevgisi her şeyden, en çok sevdiğimiz şeyden bile önce gelir.",
+        "Anne babalar, İbrahim'in yaptığı gibi çocuklarıyla nazikçe konuşup fikirlerini sormalıdır.",
+        "Allah kullarını imtihan eder ve sabırla teslim olanları ödüllendirir."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim oğlunu kurban etme emrini nasıl öğrendi?",
+          "options": [
+            "Eşinden",
+            "Rüyasında",
+            "Kraldan",
+            "Bir kitaptan"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Oğul babasına ne dedi?",
+          "options": [
+            "Lütfen yapma",
+            "Anneme sorayım",
+            "Allah'a tekrar sor",
+            "Sana ne emrediliyorsa onu yap"
+          ],
+          "answer": 3,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Allah oğulun yerine ne verdi?",
+          "options": [
+            "Büyük bir kurban",
+            "Altın",
+            "Yeni bir ev",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:107"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-8",
+      "title": "Beyt'in yükseltilmesi",
+      "paragraphs": [
+        "İbrahim Mekke'deki ailesini birkaç kez ziyaret etti. Bir ziyaretinde İsmail'i Zemzem'in yakınında bir ağacın altında oklarını yontarken buldu. İsmail onu görünce ayağa kalkıp karşıladı ve bir baba ile oğulun yaptığı gibi selamlaştılar. İbrahim: \"Ey İsmail! Allah bana bir şey emretti\" dedi. İsmail: \"Öyleyse Rabbinin emrettiğini yap\" dedi. \"Bana yardım eder misin?\" \"Sana yardım ederim.\" Bunun üzerine İbrahim: \"Allah bana burada bir ev yapmamı emretti\" dedi ve yüksek bir tepeciği gösterdi.",
+        "Böylece Beyt'in temellerini yükselttiler. İsmail taşları getiriyor, İbrahim de inşa ediyordu. Duvarlar yükselince İsmail babasının üzerine çıkabileceği bir taş getirdi (bugün hacıların gördüğü Makam-ı İbrahim) ve ikisi çalışırken dua ediyorlardı: \"Rabbimiz! Bizden kabul buyur. Şüphesiz sen işitensin, bilensin.\"",
+        "Duaları devam etti: \"Rabbimiz! Bizi sana teslim olanlardan kıl, soyumuzdan da sana teslim olan bir ümmet çıkar. Bize ibadet usullerimizi göster ve tövbemizi kabul et… Rabbimiz! İçlerinden onlara senin ayetlerini okuyacak, onlara Kitab'ı ve hikmeti öğretecek ve onları arındıracak bir resul gönder.\" Allah bu duayı İsmail'in soyundan gelen Peygamber Muhammed ﷺ ile kabul etti.",
+        "Allah İbrahim'e, Beyt'i tavaf edenler, orada kıyam edenler, rükû ve secde edenler için temizlemesini ve bütün insanları hacca çağırmasını emretti: \"Sana yaya olarak ve her uzak yoldan gelen arık develer üzerinde gelsinler.\" Her yıl milyonlarca insan İbrahim'in çağrısına cevap verir."
+      ],
+      "kidsParagraphs": [
+        "İbrahim ve oğlu İsmail Kâbe'yi birlikte yaptılar. İsmail taşları getirdi, İbrahim duvarları ördü.",
+        "Çalışırken dua ediyorlardı: \"Rabbimiz, bizden kabul et!\" Allah dualarını kabul etti ve bugün her yıl milyonlarca insan Kâbe'yi ziyaret ediyor."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "İbn Abbas",
+          "translation": "…Sonra şöyle dedi: \"Ey İsmail! Allah bana bir iş emretti.\" O: \"Öyleyse Rabbinin sana emrettiğini yap\" dedi. \"Bana yardım eder misin?\" dedi. \"Sana yardım ederim\" dedi. \"Allah bana burada bir ev yapmamı emretti\" dedi ve çevresinden yüksek bir tepeciği gösterdi. İşte o zaman Beyt'in temellerini yükselttiler. İsmail taşları getirmeye, İbrahim de inşa etmeye başladı. Bina yükselince İsmail bu taşı getirip onun için koydu. İbrahim onun üzerine çıkıp inşa ediyor, İsmail de ona taşları veriyordu ve ikisi de şöyle diyorlardı: \"Rabbimiz! Bizden kabul buyur. Şüphesiz sen işitensin, bilensin.\"",
+          "match": "فجعل اسماعيل ياتي بالحجارة وابراهيم يبني",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 128,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 22,
+          "ayahStart": 26,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 3,
+          "ayahStart": 96,
+          "ayahEnd": 97
+        }
+      ],
+      "lessons": [
+        "İyilik yap ve yine de Allah'tan onu kabul etmesini iste; amellerinle asla gururlanma.",
+        "Anne babalar ve çocuklar Allah'a birlikte hizmet edebilir.",
+        "Peygamber Muhammed ﷺ, İbrahim ve İsmail'in duasının cevabı olarak geldi."
+      ],
+      "quiz": [
+        {
+          "question": "Kâbe'yi yaparken İbrahim'e kim yardım etti?",
+          "options": [
+            "Hz. İshak (a.s.)",
+            "Hz. Lut (a.s.)",
+            "Hz. İsmail (a.s.)",
+            "Hâcer"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "İnşa ederken ne diyorlardı?",
+          "options": [
+            "Rabbimiz, bizden kabul buyur",
+            "Acele edelim",
+            "Yorulduk",
+            "Eserimize bakın"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "İbrahim ve İsmail soylarına ne gönderilmesi için dua ettiler?",
+          "options": [
+            "Bir kral",
+            "İçlerinden bir resul",
+            "Bir hazine",
+            "Bir ordu"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:129"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-9",
+      "title": "Değerli misafirler",
+      "paragraphs": [
+        "Bir gün İbrahim'e misafirler geldi ve \"Selam\" dediler. O da \"Selam\" dedi ve hiç gecikmeden sessizce ailesinin yanına gidip semiz, kızartılmış bir buzağı getirdi. İbrahim misafirlerine cömertliğiyle tanınırdı.",
+        "Ama misafirler yemeğe el uzatmadılar ve İbrahim onlardan korktu. Onlar: \"Korkma. Biz Lut kavmine gönderildik\" dediler. Onlar meleklerdi.",
+        "Eşi Sâre yakında duruyordu ve güldü. Bunun üzerine melekler ona bir oğul, İshak, ve İshak'tan sonra bir torun, Yakub müjdelediler. Hayretle haykırdı: \"Ben yaşlı bir kadınken, şu kocam da yaşlı bir adamken doğuracak mıyım?\" Melekler: \"Allah'ın emrine mi şaşırıyorsun? Allah'ın rahmeti ve bereketleri üzerinize olsun, ey ev halkı\" dediler.",
+        "Sonra yumuşak huylu ve yufka yürekli İbrahim, Lut kavmi için onlarla tartışmaya başladı. Ama melekler ona Rabbinin emrinin geldiğini söylediler."
+      ],
+      "kidsParagraphs": [
+        "İbrahim'e misafirler geldi ve o hemen onlara büyük, kızartılmış bir yemek getirdi. Çok cömertti!",
+        "Misafirler meleklerdi. İbrahim'e ve eşi Sâre'ye müjde verdiler: çok yaşlı olmalarına rağmen İshak adında bir erkek bebek."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 51,
+          "ayahStart": 24,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 70,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 11,
+          "ayahStart": 74,
+          "ayahEnd": 76
+        }
+      ],
+      "lessons": [
+        "Misafirlerine cömertçe ve hemen ikram et.",
+        "Allah için hiçbir şey imkânsız değildir.",
+        "İbrahim'in günahkâr insanlara bile merhameti, bir peygamber kalbinin yumuşaklığını gösterir."
+      ],
+      "quiz": [
+        {
+          "question": "İbrahim misafirlerine ne ikram etti?",
+          "options": [
+            "Ekmek ve hurma",
+            "Kızartılmış bir buzağı",
+            "Balık",
+            "Sadece süt"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:69"
+        },
+        {
+          "question": "Misafirler kimdi?",
+          "options": [
+            "Yolcular",
+            "Krallar",
+            "İbrahim'in akrabaları",
+            "Melekler"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:70"
+        },
+        {
+          "question": "İbrahim ve eşine hangi oğul müjdelendi?",
+          "options": [
+            "İshak",
+            "İsmail",
+            "Yusuf",
+            "Musa"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ibrahim-10",
+      "title": "Halîlullah, Allah'ın dostu",
+      "paragraphs": [
+        "Allah İbrahim'i kendine halil, yani yakın dost edindi. Kur'an onu tek başına bir ümmet, Allah'a gönülden itaat eden, hakka yönelen ve Allah'ın nimetlerine şükreden biri olarak anlatır. O ne Yahudi ne de Hristiyandı; dosdoğru ve Allah'a teslim olmuş biriydi.",
+        "Allah onu bazı emirlerle imtihan etti, o da hepsini tamamladı; Allah da onu insanlara önder kıldı. Peygamberlik onun soyunda devam etti: İshak'tan Yakub ve İsrailoğulları'nın peygamberleri, İsmail'den de Muhammed ﷺ geldi.",
+        "Peygamber ﷺ bize, Kıyamet Günü bütün insanlar toplandığında ilk giydirilecek kişinin İbrahim olduğunu bildirdi. Müslümanlar her namazda onu anar; Allah'tan, İbrahim'e ve ailesine salat ettiği gibi Muhammed'e ve ailesine de salat etmesini isterler.",
+        "Kur'an der ki: \"İbrahim'de ve onunla beraber olanlarda sizin için güzel bir örnek vardır.\""
+      ],
+      "kidsParagraphs": [
+        "Allah İbrahim'e dostum (Halil) dedi. O her imtihanda Allah'a itaat etti.",
+        "İbrahim'in ailesinden pek çok peygamber geldi; bunlardan biri de Peygamberimiz Muhammed ﷺ'dir. Biz her namazda İbrahim'i anarız!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 125,
+          "ayahEnd": 125
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 16,
+          "ayahStart": 120,
+          "ayahEnd": 121
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 67,
+          "ayahEnd": 67
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 124,
+          "ayahEnd": 124
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3349",
+          "narrator": "İbn Abbas",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Siz yalınayak, çıplak ve sünnetsiz olarak haşredileceksiniz.\" Sonra (Kur'an 21:104'ü) okudu. \"Kıyamet Günü ilk giydirilecek olan İbrahim'dir…\"",
+          "match": "واول من يكسى يوم القيامة ابراهيم",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3370",
+          "narrator": "Kâ'b b. Ucre",
+          "translation": "Resûlullah'a ﷺ sorduk: \"Ey Allah'ın Resulü! Size, yani ehl-i beyte nasıl salavat getirelim? Allah bize nasıl selam vereceğimizi öğretti.\" Buyurdu ki: \"Şöyle deyin: Allah'ım! İbrahim'e ve İbrahim'in ailesine salat ettiğin gibi Muhammed'e ve Muhammed'in ailesine de salat et; şüphesiz sen övülmeye layıksın, şanı yücesin. Allah'ım! İbrahim'e ve İbrahim'in ailesine bereket verdiğin gibi Muhammed'e ve Muhammed'in ailesine de bereket ver; şüphesiz sen övülmeye layıksın, şanı yücesin.\"",
+          "match": "كما صليت على ابراهيم وعلى ال ابراهيم",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 60,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        }
+      ],
+      "lessons": [
+        "Allah'a tam itaat, O'nun sevgisine ve dostluğuna giden yoldur.",
+        "İbrahim'in yolu, bütün peygamberlerin izlediği saf tevhid yoludur.",
+        "Hz. İbrahim'de (a.s.) bizim için güzel bir örnek vardır."
+      ],
+      "quiz": [
+        {
+          "question": "Allah İbrahim'i ne edindi?",
+          "options": [
+            "Kral",
+            "Yakın dost (halil)",
+            "Melek",
+            "Hâkim"
+          ],
+          "answer": 1,
+          "reference": "Quran 4:125"
+        },
+        {
+          "question": "Kıyamet Günü ilk giydirilecek kişi kimdir?",
+          "options": [
+            "Hz. Âdem (a.s.)",
+            "Hz. Musa (a.s.)",
+            "Hz. İbrahim (a.s.)",
+            "Hz. Nuh (a.s.)"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 3349"
+        },
+        {
+          "question": "Müslümanlar İbrahim'i her gün nerede anar?",
+          "options": [
+            "Namazda",
+            "Sadece hacda",
+            "Sadece bayramda",
+            "Anmazlar"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3370"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ilyas",
+  "language": "tr",
+  "name": "İlyas",
+  "title": "Kavmini Ba'l'den vazgeçmeye çağıran resul",
+  "sentTo": "Ba'l putuna tapan kavmi",
+  "era": "Âlimlerin çoğuna göre Hz. Musa'dan (a.s.) sonra, İsrailoğulları peygamberleri arasında; Kur'an ve Sünnet bir tarih vermez. Bu sıralamadaki yeri yaklaşıktır.",
+  "places": [
+    {
+      "name": "Kesin olarak bilinmiyor. Birçoğu onu İsrail topraklarının kuzeyine ya da adı Ba'l putunu hatırlatan Lübnan'daki Baalbek'e yerleştirir.",
+      "lat": 34.0,
+      "lng": 36.2,
+      "approximate": true
+    }
+  ],
+  "summary": "İlyas resullerdendi. Kavmini Allah'tan korkmaya ve Ba'l putuna tapmayı bırakmaya çağırdı. Çoğu onu yalanladı, ama Allah ihlaslı kullarını kurtardı ve sonra gelenler arasında İlyas'a selam bıraktı.",
+  "notes": [
+    "Âlimlerin çoğu İlyas'ı Kitab-ı Mukaddes'teki İlya ile özdeşleştirir.",
+    "\"İlyâsîn'e selam olsun\" (37:130): Âlimler bunu, kıraate göre İlyas adının başka bir şekli ya da \"Yâsîn ailesi\" olarak açıklar.",
+    "Birkaç selef âlimi İlyas'ın İdris'in başka bir adı olduğunu söylemiştir; çoğu bunu reddetmiştir.",
+    "İlyas'ın hâlâ yaşadığı ve her yıl Hızır ile buluştuğu rivayetleri sahih değildir."
+  ],
+  "chapters": [
+    {
+      "id": "ilyas-1",
+      "title": "\"Allah'tan korkmaz mısınız?\"",
+      "paragraphs": [
+        "Hz. İlyas (a.s.) resullerdendi. Kavmi Ba'l denen bir puta yönelmişti.",
+        "Onlara dedi ki: \"Allah'tan korkmaz mısınız? Ba'l'e mi yalvarıyorsunuz da yaratanların en güzelini bırakıyorsunuz: sizin Rabbiniz ve önceki atalarınızın Rabbi olan Allah'ı?\"",
+        "Delili basitti: Hiçbir şey yaratmayan bir heykele neden dua ediyorsunuz da sizi ve sizden önceki atalarınızı yaratanı bırakıyorsunuz?"
+      ],
+      "kidsParagraphs": [
+        "İlyas'ın kavmi Ba'l adında bir puta dua ediyordu.",
+        "İlyas dedi ki: \"Neden bir puta dua edip sizi yaratan Allah'ı bırakıyorsunuz?\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 123,
+          "ayahEnd": 123
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "İbadete yalnızca Yaratan layıktır.",
+        "Eski gelenekler, Allah'tan başkasına ibadet etmenin mazereti değildir.",
+        "Kısa ve açık bir soru bir kalbi açabilir."
+      ],
+      "quiz": [
+        {
+          "question": "İlyas'ın kavmi hangi puta tapıyordu?",
+          "options": [
+            "Vedd",
+            "Ba'l",
+            "Hübel",
+            "Buzağı"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "İlyas Allah'ı nasıl andı?",
+          "options": [
+            "Yaratanların en güzeli",
+            "Şehrin tanrısı",
+            "Kral",
+            "Güneş"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:125"
+        },
+        {
+          "question": "İlyas kavmine önce ne sordu?",
+          "options": [
+            "Allah'tan korkmaz mısınız?",
+            "Kralınız nerede?",
+            "Bir gemi yapacak mısınız?",
+            "Bana ücret verecek misiniz?"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:124"
+        }
+      ]
+    },
+    {
+      "id": "ilyas-2",
+      "title": "İlyas'a selam",
+      "paragraphs": [
+        "Kavmi onu yalanladı ve Kur'an onların hesaba çekileceğini söyler; Allah'ın ihlaslı, seçkin kulları hariç.",
+        "Allah sonra gelenler arasında onun için kalıcı bir anılış bıraktı: \"İlyâsîn'e selam olsun.\" Allah buyurur: \"İşte Biz iyilik yapanları böyle mükâfatlandırırız. O, Bizim mümin kullarımızdandı.\"",
+        "Allah İlyas'ı Zekeriya, Yahya ve İsa ile birlikte de anar ve buyurur: \"Hepsi salihlerdendi.\""
+      ],
+      "kidsParagraphs": [
+        "İnsanların çoğu İlyas'ı dinlemedi, ama Allah ihlaslı müminleri kurtardı.",
+        "Allah buyurur: \"İlyas'a selam olsun.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 127,
+          "ayahEnd": 128
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 129,
+          "ayahEnd": 132
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 6,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        }
+      ],
+      "lessons": [
+        "Allah, kavimleri yalanlasa bile elçilerini şereflendirir.",
+        "İnsanları kurtaran ihlastır.",
+        "Kişiden sonra kalan güzel anılış Allah'tan bir mükâfattır."
+      ],
+      "quiz": [
+        {
+          "question": "İlyas'ın kavminden kimler kurtarıldı?",
+          "options": [
+            "Allah'ın ihlaslı, seçkin kulları",
+            "Hiç kimse",
+            "Zenginler",
+            "Askerler"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:128"
+        },
+        {
+          "question": "İlyas 6:85'te hangi peygamberlerle birlikte anılır?",
+          "options": [
+            "Zekeriya, Yahya ve İsa",
+            "Musa ve Harun",
+            "Nuh ve Hud",
+            "Davud ve Süleyman"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:85"
+        },
+        {
+          "question": "Allah sonra gelenler arasında İlyas için ne bıraktı?",
+          "options": [
+            "Selam",
+            "Bir saray",
+            "Bir kanun kitabı",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:130"
+        }
+      ]
+    }
+  ]
+}

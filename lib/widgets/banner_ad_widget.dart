@@ -8,16 +8,13 @@ import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 /// never leaves a broken-looking gap; there is no interstitial, rewarded or
 /// full-screen ad anywhere in the app.
 ///
-/// The ad unit ID below is Google's published TEST id
-/// (https://developers.google.com/admob/android/test-ads) - it always
-/// serves a clearly-labelled test ad and never real ones. It must be
-/// swapped for the app's real AdMob ad unit ID before release.
+/// Uses the real "Home Banner" ad unit from AdMob for both platforms.
 class BannerAdWidget extends StatefulWidget {
   const BannerAdWidget({super.key});
 
-  static String get _testAdUnitId => Platform.isIOS
-      ? 'ca-app-pub-3940256099942544/2934735716'
-      : 'ca-app-pub-3940256099942544/6300978111';
+  static String get _adUnitId => Platform.isIOS
+      ? 'ca-app-pub-3225473284077595/7073299444'
+      : 'ca-app-pub-3225473284077595/3060893088';
 
   @override
   State<BannerAdWidget> createState() => _BannerAdWidgetState();
@@ -34,7 +31,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
 
   void _loadAd() {
     final ad = BannerAd(
-      adUnitId: BannerAdWidget._testAdUnitId,
+      adUnitId: BannerAdWidget._adUnitId,
       size: AdSize.banner,
       request: const AdRequest(),
       listener: BannerAdListener(

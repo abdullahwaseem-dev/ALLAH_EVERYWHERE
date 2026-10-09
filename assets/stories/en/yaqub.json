@@ -1,0 +1,254 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "yaqub",
+  "language": "en",
+  "name": "Ya'qub",
+  "title": "Isra'il, the father of the twelve tribes",
+  "sentTo": "His family and descendants, the Children of Israel",
+  "era": "The grandson of Ibrahim (AS). No date is given in the Quran or Sunnah.",
+  "places": [
+    {
+      "name": "Canaan (Palestine), where he lived with his sons.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "Egypt, where he joined Yusuf (AS) at the end of his life.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "The son of Ishaq (AS) and father of Yusuf (AS) and his brothers, from whom the twelve tribes of the Children of Israel descend. He is known for his beautiful patience when he lost Yusuf, and for the last advice he gave his sons: worship Allah alone and die only as Muslims.",
+  "notes": [
+    "Many scholars say “Isra'il” in the Quran (for example 3:93) is another name of Ya'qub. This is the common view, based on the Quran's wording and reports from the Companions.",
+    "Stories of Ya'qub's youth, his twin brother and his marriages come mainly from the Bible.",
+    "What happened to his eyes (12:84): scholars differ whether he became completely blind or his sight became very weak from grief."
+  ],
+  "chapters": [
+    {
+      "id": "yaqub-1",
+      "title": "A household of faith",
+      "paragraphs": [
+        "Ya'qub (AS) was the son of Ishaq and the grandson of Ibrahim (AS). Allah gave him to Ibrahim as a gift, and made each of them a Prophet.",
+        "Ibrahim had advised his sons, and Ya'qub advised his own: “O my sons, Allah has chosen this religion for you, so do not die except as Muslims, submitting to Him.”",
+        "Ya'qub had twelve sons. The two youngest, Yusuf and his brother, were especially close to his heart, and his love for them would become the beginning of a long test."
+      ],
+      "kidsParagraphs": [
+        "Ya'qub was the son of Ishaq and the grandson of Ibrahim. He had twelve sons.",
+        "He told his sons: “Allah has chosen this religion for you. Always stay Muslim!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 49,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 132,
+          "ayahEnd": 132
+        }
+      ],
+      "lessons": [
+        "Parents pass on faith by teaching and by example.",
+        "The most important advice is to hold on to Islam until death.",
+        "Every family has tests; faith helps us through them."
+      ],
+      "quiz": [
+        {
+          "question": "Who was Ya'qub's father?",
+          "options": [
+            "Ismail",
+            "Ishaq",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:49"
+        },
+        {
+          "question": "What did Ya'qub tell his sons?",
+          "options": [
+            "Become rich",
+            "Do not die except as Muslims",
+            "Leave Egypt",
+            "Build a city"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:132"
+        },
+        {
+          "question": "Which of these was Ya'qub's son?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "Isa",
+            "Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-2",
+      "title": "Beautiful patience",
+      "paragraphs": [
+        "One day Yusuf's brothers took him away and came back in the evening, weeping, with his shirt stained with false blood. They said a wolf had eaten him. Ya'qub knew they were not telling the truth, but he said: “Beautiful patience. Allah is the One whose help is sought against what you describe.”",
+        "Years later, when another son was kept in Egypt, his grief returned. He turned away and said: “Oh, my sorrow for Yusuf!” His eyes became white from sadness, but he held back his anger.",
+        "His sons said he would destroy himself with grief. He answered: “I only complain of my suffering and my sorrow to Allah, and I know from Allah what you do not know. O my sons, go and search for Yusuf and his brother, and do not despair of Allah's mercy.”"
+      ],
+      "kidsParagraphs": [
+        "When Yusuf was lost, Ya'qub was very sad. But he said: “Beautiful patience.”",
+        "He cried only to Allah and never lost hope. He said: “Never give up on Allah's mercy!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Beautiful patience is patience without complaining to people.",
+        "It is allowed to feel sad and to cry; we complain only to Allah.",
+        "Never despair of Allah's mercy."
+      ],
+      "quiz": [
+        {
+          "question": "What did Ya'qub say when told Yusuf was eaten by a wolf?",
+          "options": [
+            "I will punish you",
+            "Beautiful patience",
+            "Let us go to Egypt",
+            "I believe you"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:18"
+        },
+        {
+          "question": "To whom did Ya'qub complain of his sorrow?",
+          "options": [
+            "His sons",
+            "Allah alone",
+            "The king",
+            "His neighbours"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:86"
+        },
+        {
+          "question": "What did Ya'qub tell his sons not to despair of?",
+          "options": [
+            "Their trade",
+            "Allah's mercy",
+            "The rain",
+            "The king's help"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:87"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-3",
+      "title": "The scent of Yusuf",
+      "paragraphs": [
+        "When the caravan left Egypt carrying Yusuf's shirt, Ya'qub said in Canaan: “I can smell Yusuf, if you will not call me senile.” When the bringer of good news cast the shirt over his face, his sight returned. “Did I not tell you that I know from Allah what you do not know?”",
+        "His sons asked him to pray for their forgiveness, and he promised he would. Then the whole family travelled to Egypt. Yusuf raised his parents up on the throne, and the dream he had seen as a boy came true.",
+        "When death came to Ya'qub, he asked his sons: “What will you worship after me?” They said: “We will worship your God and the God of your fathers, Ibrahim, Ismail and Ishaq: one God, and to Him we submit.”"
+      ],
+      "kidsParagraphs": [
+        "Yusuf sent his shirt to his father. When it touched Ya'qub's face, he could see again!",
+        "The whole family was together again. Before Ya'qub died, his sons promised to worship only Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 94,
+          "ayahEnd": 96
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 97,
+          "ayahEnd": 99
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 133,
+          "ayahEnd": 133
+        }
+      ],
+      "lessons": [
+        "After patience comes relief.",
+        "Forgive family members who repent.",
+        "The best thing to leave behind is children who worship Allah alone."
+      ],
+      "quiz": [
+        {
+          "question": "What restored Ya'qub's sight?",
+          "options": [
+            "A medicine",
+            "Yusuf's shirt",
+            "Zamzam water",
+            "A dream"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:96"
+        },
+        {
+          "question": "What did Ya'qub ask his sons before he died?",
+          "options": [
+            "What will you worship after me?",
+            "Where is my money?",
+            "Who will be king?",
+            "Where is Yusuf?"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        },
+        {
+          "question": "Which three forefathers did his sons name?",
+          "options": [
+            "Ibrahim, Ismail and Ishaq",
+            "Adam, Nuh and Hud",
+            "Musa, Harun and Dawud",
+            "Isa, Yahya and Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        }
+      ]
+    }
+  ]
+}

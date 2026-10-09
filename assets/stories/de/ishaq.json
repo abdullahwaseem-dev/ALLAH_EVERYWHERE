@@ -1,0 +1,181 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ishaq",
+  "language": "de",
+  "name": "Ishaq",
+  "title": "Der verheißene Sohn Ibrahims (a.s.)",
+  "sentTo": "Die Familie Ibrahims (a.s.) im gesegneten Land (Palästina)",
+  "era": "Die Zeit Ibrahims (a.s.), seines Vaters. Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Al-Khalil (Hebron) in Palästina, im gesegneten Land, in dem Ibrahim sich niederließ. Sein Grab wird traditionell hier verortet.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    }
+  ],
+  "summary": "Der Sohn Ibrahims (a.s.) und Saras, geboren, als beide alt waren, wie die Engel es verkündet hatten. Allah machte ihn zum Propheten und segnete seine Nachkommen: Von ihm kamen Yaqub (a.s.) und die Propheten der Kinder Israels.",
+  "notes": [
+    "Der Koran berichtet wenig über Ishaqs eigenes Leben. Einzelheiten wie seine Heirat und seine Zwillingssöhne stammen aus der Bibel.",
+    "War Ishaq oder Ismail der Sohn, der geopfert werden sollte? Die meisten Gelehrten sagen Ismail (siehe die Geschichte Ibrahims)."
+  ],
+  "chapters": [
+    {
+      "id": "ishaq-1",
+      "title": "Frohe Botschaft im Alter",
+      "paragraphs": [
+        "Ibrahim (a.s.) und seine Frau Sara waren alt, und Sara hatte nie ein Kind bekommen. Da kamen Engel als Gäste und überbrachten ihnen die frohe Botschaft von einem Sohn, Ishaq, und nach ihm von einem Enkel, Yaqub.",
+        "Sara war erstaunt: „Soll ich gebären, wo ich eine alte Frau bin und mein Mann ein Greis ist?“ Die Engel antworteten: „Wunderst du dich über Allahs Beschluss? Allahs Barmherzigkeit und Seine Segnungen seien auf euch, ihr Leute des Hauses.“",
+        "Der Koran beschreibt Ishaq als einen Propheten unter den Rechtschaffenen und sagt, dass Allah Ibrahim und Ishaq segnete."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim und Sara waren sehr alt und hatten keine Kinder. Engel sagten ihnen: „Ihr bekommt einen Sohn, Ishaq!“",
+        "Sara staunte. Aber für Allah ist nichts unmöglich."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 72
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 73,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        }
+      ],
+      "lessons": [
+        "Gib die Hoffnung auf Allahs Barmherzigkeit nie auf, wie alt du auch bist.",
+        "Kinder sind ein Geschenk Allahs.",
+        "Allahs Versprechen erfüllt sich immer."
+      ],
+      "quiz": [
+        {
+          "question": "Wer war die Mutter Ishaqs?",
+          "options": [
+            "Hadschar",
+            "Sara",
+            "Maryam",
+            "Asiya"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Wer verkündete die Geburt Ishaqs?",
+          "options": [
+            "Engel",
+            "Ein Traum",
+            "Ein König",
+            "Ein Reisender"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Welcher Enkel wurde ebenfalls verkündet?",
+          "options": [
+            "Yusuf",
+            "Yaqub",
+            "Musa",
+            "Dawud"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ishaq-2",
+      "title": "Ein Vater von Propheten",
+      "paragraphs": [
+        "Allah schenkte Ibrahim Ishaq und Yaqub und machte sie alle rechtschaffen. Er machte sie zu Vorbildern, die nach Seinem Befehl leiteten, und gab ihnen ein, Gutes zu tun, das Gebet zu verrichten und die Zakat zu geben.",
+        "Der Koran fordert uns auf, an Ibrahim, Ishaq und Yaqub zu denken, Männer von Kraft und Einsicht, auserwählt für eine große Eigenschaft: stets an die Wohnstätte des Jenseits zu denken.",
+        "Der Prophet ﷺ beschrieb Ishaqs Abstammungslinie: „Der Edle, Sohn des Edlen, Sohn des Edlen, Sohn des Edlen: Yusuf, Sohn Yaqubs, Sohn Ishaqs, Sohn Ibrahims.“ Vier Generationen von Propheten, eine nach der anderen."
+      ],
+      "kidsParagraphs": [
+        "Ishaqs Sohn war Yaqub, und sein Enkel war Yusuf. Sie alle waren Propheten!",
+        "Allah sagt, dass sie immer an das Jenseits dachten."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 72,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3382",
+          "narrator": "Abdullah ibn Umar",
+          "translation": "Der Prophet ﷺ sagte: „Der Edle, Sohn des Edlen, Sohn des Edlen, Sohn des Edlen: Yusuf, Sohn Yaqubs, Sohn Ishaqs, Sohn Ibrahims, Friede sei mit ihnen.“",
+          "match": "الكريم ابن الكريم ابن الكريم ابن الكريم يوسف ابن يعقوب بن اسحاق بن ابراهيم"
+        }
+      ],
+      "lessons": [
+        "Eine rechtschaffene Familie gibt den Glauben von Generation zu Generation weiter.",
+        "An das Jenseits zu denken, ist eine Eigenschaft, die Allah liebt.",
+        "Vorbilder im Glauben leiten andere, indem sie selbst Gutes tun."
+      ],
+      "quiz": [
+        {
+          "question": "Für welche Eigenschaft wurden Ibrahim, Ishaq und Yaqub auserwählt?",
+          "options": [
+            "Reichtum",
+            "Das Denken an die Wohnstätte des Jenseits",
+            "Städte bauen",
+            "Dichtung"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:46"
+        },
+        {
+          "question": "Welcher Enkel Ishaqs wurde „der Edle, Sohn des Edlen“ genannt?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "Isa",
+            "Yunus"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3382"
+        },
+        {
+          "question": "Wozu gab Allah ihnen Eingebung?",
+          "options": [
+            "Gute Taten, Gebet und Zakat",
+            "Türme bauen",
+            "Krieg führen",
+            "Seereisen"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:73"
+        }
+      ]
+    }
+  ]
+}

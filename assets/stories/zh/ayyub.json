@@ -1,0 +1,249 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ayyub",
+  "language": "zh",
+  "name": "安优卜",
+  "title": "坚忍者，优秀的仆人",
+  "sentTo": "他的族人；《古兰经》没有提到他们的名称",
+  "era": "不确定。许多学者认为他是易司哈格（愿主赐他平安）的后裔，可能在穆萨（愿主赐他平安）之前；《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "不确定。一些传述认为他在叙利亚南部的豪兰。",
+      "lat": 32.75,
+      "lng": 36.3,
+      "approximate": true
+    }
+  ],
+  "summary": "真主用重病和失去家人与财产考验的一位先知。他只向真主诉苦，真主应答了他的祈祷，治愈了他，把他的家人还给他，还加倍赐予。《古兰经》称他为优秀的仆人，时常归向真主。",
+  "notes": [
+    "安优卜患病多久（常说是18年）、患的是什么病，以及人们离弃他等细节，都来自《古兰经》和可靠圣训之外的传述。《古兰经》只说他遭受了伤害和艰辛。",
+    "38:44中的誓言和一把草：《古兰经》没有说明誓言是什么。许多经注家说，他曾因妻子说的一句话发誓要打她，后来被允许以温和的方式履行誓言；这一解释来自传述，而非可靠的圣训。",
+    "他在先知顺序中的位置是大致的。"
+  ],
+  "chapters": [
+    {
+      "id": "ayyub-1",
+      "title": "忍耐的考验",
+      "paragraphs": [
+        "安优卜（愿主赐他平安）是一位先知，真主先赐福于他，后来考验他。他身体遭受病痛，失去了所拥有的一切，但他没有向人抱怨，也没有失去希望。",
+        "他以极大的礼貌祈求他的主：“我确已遭受了伤害，你是最仁慈的。”他没有直接请求痊愈；他只是向最知道的主陈述自己的需要，并提到祂的慈悯。",
+        "他还说：“恶魔使我遭受了疲劳和痛苦。”学者们解释说，先知们出于对真主的礼貌把伤害归于恶魔，同时也知道一切都是按真主的前定发生的。"
+      ],
+      "kidsParagraphs": [
+        "安优卜病得很重，失去了很多东西。但他一直坚忍。",
+        "他轻声祈祷：“我遭受了伤害，你是最仁慈的。”他完全信赖真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 83,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 41,
+          "ayahEnd": 41
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "民间故事说，安优卜病了十八年，身上长满了虫子，除了他的妻子以外，所有人都离弃了他。"
+        }
+      ],
+      "lessons": [
+        "忍耐就是不向人抱怨，而是转向真主。",
+        "祈祷的礼仪：赞颂真主，提到祂的慈悯。",
+        "考验也会降临到最优秀的人身上。"
+      ],
+      "quiz": [
+        {
+          "question": "安优卜在祈祷中说了什么？",
+          "options": [
+            "为什么是我？",
+            "我确已遭受了伤害，你是最仁慈的",
+            "赐给我财富",
+            "惩罚我的敌人"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "安优卜向谁诉苦？",
+          "options": [
+            "他的族人",
+            "唯独真主",
+            "医生",
+            "国王"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "安优卜说恶魔使他遭受了什么？",
+          "options": [
+            "疲劳和痛苦",
+            "财富",
+            "欢乐",
+            "睡眠"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:41"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-2",
+      "title": "清凉的泉水",
+      "paragraphs": [
+        "真主应答了他：“你用脚踏地。这是可供洗浴和饮用的清凉的水。”安优卜痊愈了。",
+        "真主把他的家人还给他，还加倍赐予，这是出于祂的慈悯，也是给有理智者的教诲。",
+        "真主还给了他一个履行誓言而不伤害人的办法：手里拿一把草去打。真主称赞他：“我确已发现他是坚忍的。那仆人真优秀！他确是常常归向真主的。”"
+      ],
+      "kidsParagraphs": [
+        "真主对安优卜说：“用你的脚踏地。”一股清凉的泉水涌了出来，他洗浴、喝水，就痊愈了！",
+        "真主把他的家人还给他，还给了更多。真主称他为“优秀的仆人”。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 42,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 43,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        }
+      ],
+      "lessons": [
+        "艰难之后，凭着真主的慈悯会有宽慰。",
+        "真主给坚忍者的，比他们失去的更多。",
+        "成为“优秀的仆人”是最高的赞誉。"
+      ],
+      "quiz": [
+        {
+          "question": "真主叫安优卜做什么？",
+          "options": [
+            "用脚踏地",
+            "去埃及",
+            "盖房子",
+            "爬山"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "地里涌出了什么？",
+          "options": [
+            "黄金",
+            "可供洗浴和饮用的清凉的水",
+            "火",
+            "水果"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "真主怎样形容安优卜？",
+          "options": [
+            "坚忍的、优秀的仆人",
+            "伟大的国王",
+            "富有的商人",
+            "战士"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:44"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-3",
+      "title": "永远离不开真主的福泽",
+      "paragraphs": [
+        "先知ﷺ告诉我们，有一次安优卜在洗浴时，金色的蝗虫落在他身上，他便开始把它们收进自己的衣服里。",
+        "他的主召唤他：“安优卜啊！难道我没有使你富足到不需要你所看到的东西吗？”安优卜回答：“是的，以你的尊严发誓！但我永远离不开你的福泽。”",
+        "安优卜在贫穷和疾病中坚忍，在富足中感恩。他知道一切美好都来自真主，仆人永远需要祂更多的福泽。"
+      ],
+      "kidsParagraphs": [
+        "有一次，金色的蝗虫落在安优卜身上，他把它们收集起来。",
+        "真主问：“难道我没有使你富足吗？”安优卜说：“是的！但我永远需要你的福泽。”"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "279",
+          "narrator": "艾布·胡莱赖",
+          "translation": "先知ﷺ说：“安优卜赤身洗浴时，金色的蝗虫落在他身上，安优卜便一把一把地把它们收进衣服里。他的主召唤他：‘安优卜啊！难道我没有使你富足到不需要你所看到的东西吗？’他说：‘是的，以你的尊严发誓！但我永远离不开你的福泽。’”",
+          "match": "بينا ايوب يغتسل عريانا فخر عليه جراد من ذهب"
+        }
+      ],
+      "lessons": [
+        "在艰难中要坚忍，在安逸中要感恩。",
+        "无论我们拥有多少，都永远需要真主的福泽。",
+        "来自真主的财富是一种恩典，应当以感恩之心领受。"
+      ],
+      "quiz": [
+        {
+          "question": "安优卜洗浴时，什么落在他身上？",
+          "options": [
+            "金色的蝗虫",
+            "雨水",
+            "椰枣",
+            "石头"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "安优卜说他永远离不开什么？",
+          "options": [
+            "他的家人",
+            "真主的福泽",
+            "水",
+            "黄金"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "安优卜在疾病中坚忍，在富足中……",
+          "options": [
+            "骄傲",
+            "感恩",
+            "疏忽",
+            "害怕"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        }
+      ]
+    }
+  ]
+}

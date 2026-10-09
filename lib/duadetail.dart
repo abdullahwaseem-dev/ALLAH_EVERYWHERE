@@ -1,10 +1,14 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/models/bookmark.dart';
 import 'package:allah_everywhere/services/bookmark_service.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
 import 'data/dua_data.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class DuaDetailScreen extends StatefulWidget {
   final DuaItem dua;
@@ -42,8 +46,16 @@ class _DuaDetailScreenState extends State<DuaDetailScreen> {
   }
 
   Future<void> _toggleBookmark() async {
-    await _bookmarkService.toggle(BookmarkType.dua, _refId, widget.dua.title, widget.categoryTitle);
-    if (mounted) setState(() => _isBookmarked = !_isBookmarked);
+    HapticFeedback.lightImpact();
+    try {
+      final bookmarked =
+          await _bookmarkService.toggle(BookmarkType.dua, _refId, widget.dua.title, widget.categoryTitle);
+      if (mounted) setState(() => _isBookmarked = bookmarked);
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Could not update the bookmark. Please try again.')));
+      }
+    }
   }
 
   @override
@@ -55,7 +67,10 @@ class _DuaDetailScreenState extends State<DuaDetailScreen> {
     final subColor = isDark ? VoidColors.textDarkSecondary : Colors.black87;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Dua',
+      questionBuilder: () => AppLocalizations.of(context)!.askAiExplainDua(dua.title, dua.reference),
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         toolbarHeight: 60.h,
@@ -78,7 +93,7 @@ class _DuaDetailScreenState extends State<DuaDetailScreen> {
             ),
         ],
       ),
-      body: SingleChildScrollView(
+      body: ReadableWidth(child: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(20.w, 10.h, 20.w, 110.h),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -143,7 +158,7 @@ class _DuaDetailScreenState extends State<DuaDetailScreen> {
             ),
           ],
         ),
-      ),
-    );
+      )),
+    ));
   }
 }

@@ -1,0 +1,348 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "hud",
+  "language": "fr",
+  "name": "Houd",
+  "title": "Le messager envoyé au peuple de 'Ad",
+  "sentTo": "Le peuple de 'Ad, son propre peuple",
+  "era": "Après Nouh (AS). Le Coran dit que 'Ad succéda au peuple de Nouh (7:69) ; aucune date n'est donnée.",
+  "places": [
+    {
+      "name": "Al-Ahqaf, « les dunes de sable » (46:21), dans le sud de l'Arabie. Les savants la situent généralement entre Oman et le Hadramaout (Yémen).",
+      "lat": 17.5,
+      "lng": 50.5,
+      "approximate": true
+    }
+  ],
+  "summary": "Houd fut envoyé à 'Ad, un peuple puissant qui construisait de grands monuments et traitait les autres avec tyrannie. Il les appela à n'adorer qu'Allah et à implorer Son pardon. Ils se moquèrent de lui, et un vent violent les détruisit, tandis que Houd et les croyants furent sauvés.",
+  "notes": [
+    "L'emplacement exact d'al-Ahqaf et d'« Iram aux colonnes » (89:7) n'est pas connu avec certitude.",
+    "Les histoires selon lesquelles les gens de 'Ad étaient des géants d'une taille énorme, ou que la tombe de Houd se trouve au Hadramaout, viennent de récits tardifs, non du Coran ni des hadiths authentiques.",
+    "Certains disent que Houd fut le premier prophète arabe ; cela vient d'un récit hors d'al-Bukhari et Muslim qui doit être vérifié."
+  ],
+  "chapters": [
+    {
+      "id": "hud-1",
+      "title": "Le puissant peuple de 'Ad",
+      "paragraphs": [
+        "Après le Déluge, les descendants de ceux qui furent sauvés avec Nouh (AS) se répandirent sur la terre. Parmi eux se trouvait le peuple de 'Ad, qui vivait à al-Ahqaf, un pays de dunes de sable dans le sud de l'Arabie.",
+        "Allah leur donna une grande force. Houd leur rappela qu'Allah les avait faits successeurs du peuple de Nouh et avait accru leur stature. Ils avaient du bétail, des enfants, des jardins et des sources.",
+        "Mais ils firent un mauvais usage de leurs bienfaits. Ils construisaient un monument sur chaque hauteur juste pour se montrer, bâtissaient de solides forteresses comme s'ils allaient vivre éternellement, et quand ils attaquaient les autres, ils le faisaient en tyrans."
+      ],
+      "kidsParagraphs": [
+        "Le peuple de 'Ad était très fort et construisait de grands bâtiments.",
+        "Mais ils devinrent orgueilleux, traitèrent les autres cruellement et oublièrent Allah qui leur avait tout donné."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 21,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 69,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 128,
+          "ayahEnd": 130
+        }
+      ],
+      "lessons": [
+        "Chaque bienfait vient d'Allah, et nous devons l'utiliser pour Lui plaire.",
+        "La force et la richesse ne font vivre personne éternellement.",
+        "L'ostentation et l'oppression ont détruit de grandes nations."
+      ],
+      "quiz": [
+        {
+          "question": "Où vivait le peuple de 'Ad ?",
+          "options": [
+            "Al-Ahqaf, les dunes de sable",
+            "En Égypte",
+            "À Babylone",
+            "À Madyan"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:21"
+        },
+        {
+          "question": "À quel peuple 'Ad succéda-t-il ?",
+          "options": [
+            "Le peuple de Lout",
+            "Le peuple de Nouh",
+            "Le peuple de Moussa",
+            "Thamoud"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:69"
+        },
+        {
+          "question": "Que construisait 'Ad sur chaque hauteur ?",
+          "options": [
+            "Des mosquées",
+            "Un monument pour s'amuser",
+            "Des puits",
+            "Des écoles"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:128"
+        }
+      ]
+    },
+    {
+      "id": "hud-2",
+      "title": "Houd appelle son peuple",
+      "paragraphs": [
+        "Allah envoya à 'Ad leur frère Houd (AS). Son message était celui de tous les prophètes : « Ô mon peuple, adorez Allah ; vous n'avez pas d'autre divinité que Lui. »",
+        "Il ne leur demanda aucune récompense ; sa récompense n'incombait qu'à Celui qui l'avait créé. Il leur dit qu'il était un conseiller sincère et digne de confiance, et non un sot ou un menteur comme ils le prétendaient.",
+        "Il leur promit que s'ils demandaient pardon à leur Seigneur et revenaient à Lui, Allah leur enverrait une pluie abondante et ajouterait de la force à leur force."
+      ],
+      "kidsParagraphs": [
+        "Allah envoya Houd à son peuple. Il dit : « N'adorez qu'Allah ! »",
+        "Houd leur dit : « Demandez pardon à Allah, et Il vous enverra la pluie et vous rendra encore plus forts. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 51,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 52,
+          "ayahEnd": 52
+        }
+      ],
+      "lessons": [
+        "Un messager d'Allah donne un conseil sincère sans demander de paiement.",
+        "Demander pardon apporte des bénédictions dès cette vie.",
+        "Ne juge pas celui qui appelle au bien d'après les insultes de ses ennemis."
+      ],
+      "quiz": [
+        {
+          "question": "À quoi Houd appela-t-il d'abord son peuple ?",
+          "options": [
+            "À quitter leur pays",
+            "À n'adorer qu'Allah",
+            "À construire un bateau",
+            "À le payer"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:50"
+        },
+        {
+          "question": "Selon Houd, qu'Allah enverrait-Il s'ils se repentaient ?",
+          "options": [
+            "Une pluie abondante et plus de force",
+            "De l'or",
+            "Une armée",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:52"
+        },
+        {
+          "question": "De quoi les chefs accusèrent-ils Houd ?",
+          "options": [
+            "De sottise et de mensonge",
+            "De vol",
+            "D'être roi",
+            "D'être un ange"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:66"
+        }
+      ]
+    },
+    {
+      "id": "hud-3",
+      "title": "Ne faire confiance qu'à Allah",
+      "paragraphs": [
+        "'Ad refusa. « Tu ne nous as apporté aucune preuve claire, dirent-ils, et nous n'abandonnerons pas nos dieux sur ta parole. Nous pensons qu'un de nos dieux t'a frappé d'un mal. »",
+        "Houd répondit avec une confiance totale en Allah. Il se déclara innocent de leurs idoles et les défia tous de comploter contre lui sans tarder, car il s'en remettait à Allah, son Seigneur et le leur : « Il n'y a aucune créature qu'Il ne tienne par le toupet. »",
+        "Ils réclamèrent le châtiment dont il les avertissait. Houd dit que le moment n'en est connu que d'Allah, et qu'il ne faisait que transmettre ce avec quoi il avait été envoyé."
+      ],
+      "kidsParagraphs": [
+        "Les gens dirent : « Nos dieux t'ont rendu fou ! »",
+        "Houd n'eut pas peur d'eux. Il dit : « Je fais confiance à Allah. Chaque être vivant est entre Ses mains. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 53,
+          "ayahEnd": 54
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 55,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 46,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        }
+      ],
+      "lessons": [
+        "Le vrai courage vient de la confiance en Allah.",
+        "Chaque créature est sous le contrôle d'Allah ; nous ne craignons donc que Lui.",
+        "Le moment du décret d'Allah n'est connu que de Lui."
+      ],
+      "quiz": [
+        {
+          "question": "Selon 'Ad, que s'était-il passé avec Houd ?",
+          "options": [
+            "Un de leurs dieux l'avait frappé d'un mal",
+            "Il était devenu riche",
+            "Il avait voyagé",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:54"
+        },
+        {
+          "question": "En qui Houd plaça-t-il sa confiance ?",
+          "options": [
+            "En sa tribu",
+            "En Allah, son Seigneur et le leur",
+            "Dans le roi",
+            "Dans sa richesse"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:56"
+        },
+        {
+          "question": "Qui sait quand viendra le châtiment ?",
+          "options": [
+            "Houd",
+            "Les chefs",
+            "Allah seul",
+            "Les devins"
+          ],
+          "answer": 2,
+          "reference": "Quran 46:23"
+        }
+      ]
+    },
+    {
+      "id": "hud-4",
+      "title": "Le vent",
+      "paragraphs": [
+        "Un jour, 'Ad vit un nuage s'avancer vers leurs vallées et se réjouit : « Ce nuage va nous apporter la pluie ! » Mais c'était ce qu'ils avaient réclamé avec impatience : un vent portant un châtiment douloureux, détruisant tout sur l'ordre de son Seigneur.",
+        "Allah le déchaîna sur eux sept nuits et huit jours d'affilée, jusqu'à ce qu'ils gisent comme des troncs de palmiers creux. Il ne resta d'eux que leurs demeures. Allah sauva Houd et ceux qui avaient cru avec lui, par Sa miséricorde.",
+        "Le Prophète ﷺ a dit : « J'ai été secouru par le vent d'est (as-saba), et 'Ad fut détruit par le vent d'ouest (ad-daboûr). » Le même vent qui détruisit un peuple en aida un autre, sur l'ordre d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Un nuage arriva et les gens crurent que c'était la pluie. Mais c'était un vent terrible qui souffla sept nuits et huit jours.",
+        "Allah sauva Houd et les croyants. Le vent n'obéit qu'à Allah !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 69,
+          "ayahStart": 6,
+          "ayahEnd": 8
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "1035",
+          "narrator": "Ibn Abbas",
+          "translation": "Le Prophète ﷺ a dit : « J'ai été secouru par le vent d'est (as-saba), et 'Ad fut détruit par le vent d'ouest (ad-daboûr). »",
+          "match": "نصرت بالصبا واهلكت عاد بالدبور"
+        }
+      ],
+      "lessons": [
+        "Ce que nous souhaitons n'est pas toujours bon pour nous ; Allah seul le sait.",
+        "Toute la création, même le vent, obéit à Allah.",
+        "Allah sauve les croyants, même quand toute leur nation est détruite."
+      ],
+      "quiz": [
+        {
+          "question": "Que pensait 'Ad que le nuage apporterait ?",
+          "options": [
+            "De la pluie",
+            "Des sauterelles",
+            "De la neige",
+            "Des oiseaux"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:24"
+        },
+        {
+          "question": "Combien de temps le vent souffla-t-il ?",
+          "options": [
+            "Trois jours",
+            "Sept nuits et huit jours",
+            "Quarante jours",
+            "Une heure"
+          ],
+          "answer": 1,
+          "reference": "Quran 69:7"
+        },
+        {
+          "question": "Selon le Prophète ﷺ, quel vent détruisit 'Ad ?",
+          "options": [
+            "Le vent d'est",
+            "Le vent d'ouest (ad-daboûr)",
+            "Le vent du nord",
+            "Une tempête de sable venue d'Égypte"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 1035"
+        }
+      ]
+    }
+  ]
+}

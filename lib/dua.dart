@@ -7,6 +7,9 @@ import 'ask_ai.dart';
 import 'data/dua_data.dart';
 import 'dua_2.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class DuaScreen extends StatelessWidget {
   @override
@@ -17,7 +20,9 @@ class DuaScreen extends StatelessWidget {
     final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Dua',
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -27,7 +32,7 @@ class DuaScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
       ),
-      body: Column(
+      body: ReadableWidth(child: Column(
         children: [
           Stack(
             children: [
@@ -41,17 +46,21 @@ class DuaScreen extends StatelessWidget {
                 bottom: 10.h,
                 left: 0,
                 right: 0,
-                child: SizedBox(
-                  height: 95.h,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    padding: EdgeInsets.symmetric(horizontal: 15.w),
+                // Sized by its content (it was a fixed 95.h, which clipped
+                // the cards on iPhone SE and with larger text sizes).
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  padding: EdgeInsets.symmetric(horizontal: 15.w),
+                  child: IntrinsicHeight(
+                    child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       buildCard("Guidance and Righteousness",
                           "O Allah, guide me, make me steadfast, and set my affairs right.", cardColor, textColor, subColor),
                       buildCard("Forgiveness", "O Allah, You are the Most Forgiving, so forgive me.", cardColor, textColor, subColor),
                       buildCard("Gratitude", "O Allah, I thank You for Your countless blessings.", cardColor, textColor, subColor),
                     ],
+                    ),
                   ),
                 ),
               ),
@@ -62,18 +71,22 @@ class DuaScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
             child: Container(
-              padding: EdgeInsets.all(11.w),
               decoration: BoxDecoration(
-                color: cardColor,
                 borderRadius: BorderRadius.circular(14.r),
                 boxShadow: [
                   BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.1), blurRadius: 8.r, offset: const Offset(0, 2)),
                 ],
               ),
-              child: Center(
-                child: GestureDetector(
-                  onTap: () => Get.to(() => AskAiScreen(initialCategory: 'Dua')),
-                  child: buildIconMenuItem(accent, textColor, "Ask AI about a Dua"),
+              child: PressableTile(
+                color: cardColor,
+                borderRadius: BorderRadius.circular(14.r),
+                semanticLabel: "Ask AI about a Dua",
+                onTap: () => Get.to(() => AskAiScreen(initialCategory: 'Dua')),
+                child: Padding(
+                  padding: EdgeInsets.all(11.w),
+                  child: Center(
+                    child: buildIconMenuItem(accent, textColor, "Ask AI about a Dua"),
+                  ),
                 ),
               ),
             ),
@@ -91,16 +104,14 @@ class DuaScreen extends StatelessWidget {
                     child: ListView(
                       children: [
                         for (final category in duaCategories)
-                          GestureDetector(
+                          buildDuaCard(
+                            title: category.title,
+                            duaCount: category.duas.length,
+                            cardColor: cardColor,
+                            textColor: textColor,
+                            subColor: subColor,
+                            isDark: isDark,
                             onTap: () => Get.to(() => Dua2Screen(category: category)),
-                            child: buildDuaCard(
-                              title: category.title,
-                              duaCount: category.duas.length,
-                              cardColor: cardColor,
-                              textColor: textColor,
-                              subColor: subColor,
-                              isDark: isDark,
-                            ),
                           ),
                         SizedBox(height: 130.h),
                       ],
@@ -111,14 +122,14 @@ class DuaScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
+      )),
+    ));
   }
 
   Widget buildCard(String title, String subtitle, Color cardColor, Color textColor, Color subColor) {
     return Container(
       width: 300.w,
-      margin: EdgeInsets.only(right: 16.w),
+      margin: EdgeInsetsDirectional.only(end: 16.w),
       padding: EdgeInsets.all(16.w),
       decoration: BoxDecoration(
         color: cardColor,
@@ -130,7 +141,12 @@ class DuaScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp, color: textColor)),
+          Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp, color: textColor),
+          ),
           SizedBox(height: 8.h),
           Text(
             subtitle,
@@ -160,18 +176,24 @@ class DuaScreen extends StatelessWidget {
     required Color textColor,
     required Color subColor,
     required bool isDark,
+    required VoidCallback onTap,
   }) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.h),
       child: Container(
-        padding: EdgeInsets.all(16.w),
         decoration: BoxDecoration(
-          color: cardColor,
           borderRadius: BorderRadius.circular(12.r),
           boxShadow: [
             BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 6.r, offset: const Offset(0, 2)),
           ],
         ),
+        child: PressableTile(
+        color: cardColor,
+        borderRadius: BorderRadius.circular(12.r),
+        semanticLabel: title,
+        onTap: onTap,
+        child: Padding(
+        padding: EdgeInsets.all(16.w),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -192,6 +214,8 @@ class DuaScreen extends StatelessWidget {
               ],
             ),
           ],
+        ),
+        ),
         ),
       ),
     );

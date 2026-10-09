@@ -1,0 +1,260 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "muhammad",
+  "language": "fr",
+  "name": "Muhammad",
+  "title": "Le Messager d'Allah et le Sceau des prophètes",
+  "sentTo": "Toute l'humanité et les djinns, jusqu'à la fin des temps",
+  "era": "570-632 apr. J.-C.",
+  "places": [
+    {
+      "name": "La Mecque, où il naquit et reçut la première révélation.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    },
+    {
+      "name": "Médine, où il émigra, bâtit la première communauté musulmane et où il est enterré.",
+      "lat": 24.4672,
+      "lng": 39.6112
+    }
+  ],
+  "summary": "Le dernier des prophètes, envoyé comme miséricorde pour les mondes. Il est la réponse à la prière d'Ibrahim et d'Ismaïl et la bonne nouvelle annoncée par Issa (paix sur eux). Ceci est un bref aperçu ; sa vie complète est racontée dans la section Sira de l'application.",
+  "notes": [
+    "Cet aperçu est volontairement bref. Pour la vie du Prophète ﷺ, ouvre la section Sira."
+  ],
+  "chapters": [
+    {
+      "id": "muhammad-1",
+      "title": "Le Sceau des prophètes",
+      "paragraphs": [
+        "Chaque prophète avant lui prépara le chemin. Ibrahim et Ismaïl (paix sur eux), en élevant la Kaaba, prièrent pour un messager issu de leur descendance. Issa (paix sur lui) annonça un messager qui viendrait après lui, nommé Ahmad. Ce messager était Muhammad ﷺ, fils de 'Abdallah, de la tribu de Quraych à La Mecque.",
+        "Allah dit : « Muhammad n'est le père d'aucun de vos hommes, mais il est le Messager d'Allah et le Sceau des prophètes. » Aucun prophète ne viendra après lui.",
+        "Le Prophète ﷺ se décrivit par un bel exemple : les prophètes d'avant lui étaient comme un homme qui bâtit une belle maison, complète sauf une brique dans un coin. Les gens en faisaient le tour, l'admiraient et demandaient : « Pourquoi cette brique n'a-t-elle pas été posée ? » Il dit : « Je suis cette brique, et je suis le Sceau des prophètes. »"
+      ],
+      "kidsParagraphs": [
+        "Notre Prophète Muhammad ﷺ est le dernier prophète. Aucun prophète ne viendra après lui.",
+        "Il a dit que les prophètes étaient comme une belle maison à laquelle il manquait une brique, et qu'il est cette brique !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 129,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 33,
+          "ayahStart": 40,
+          "ayahEnd": 40
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3535",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Mon exemple et celui des prophètes avant moi est celui d'un homme qui bâtit une maison et la rendit belle et parfaite, sauf l'emplacement d'une brique dans un coin. Les gens se mirent à en faire le tour, l'admirant et disant : “Pourquoi cette brique n'a-t-elle pas été posée ?” Je suis cette brique, et je suis le Sceau des prophètes. »",
+          "match": "فانا اللبنة وانا خاتم النبيين"
+        }
+      ],
+      "lessons": [
+        "Le message de tous les prophètes fut parachevé par Muhammad ﷺ.",
+        "Croire qu'il est le dernier prophète fait partie de la foi.",
+        "Aime tous les prophètes, et suis le dernier d'entre eux."
+      ],
+      "quiz": [
+        {
+          "question": "Comment le Coran (33:40) appelle-t-il le Prophète Muhammad ﷺ ?",
+          "options": [
+            "Le Sceau des prophètes",
+            "Un roi",
+            "Un poète",
+            "Un ange"
+          ],
+          "answer": 0,
+          "reference": "Quran 33:40"
+        },
+        {
+          "question": "Quel prophète annonça un messager nommé Ahmad ?",
+          "options": [
+            "Issa",
+            "Moussa",
+            "Nouh",
+            "Yusuf"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "Dans l'exemple du Prophète ﷺ, qu'était-il ?",
+          "options": [
+            "La brique manquante",
+            "La porte",
+            "Le toit",
+            "La fenêtre"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3535"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-2",
+      "title": "Une miséricorde pour les mondes",
+      "paragraphs": [
+        "Allah lui dit : « Nous ne t'avons envoyé que comme miséricorde pour les mondes », et : « Tu es certes d'un caractère éminent. »",
+        "Il se souciait profondément de son peuple : « Un Messager issu de vous-mêmes vous est venu. Il lui est pénible que vous souffriez ; il est plein de sollicitude pour vous, et envers les croyants il est compatissant et miséricordieux. »",
+        "Il vécut ce qu'il enseignait : honnête au point d'être appelé al-Amin, patient quand on le rejetait, pardonnant quand il revint victorieux à La Mecque, et humble jusqu'à la fin."
+      ],
+      "kidsParagraphs": [
+        "Allah envoya notre Prophète ﷺ comme miséricorde pour tous.",
+        "Il était bon, honnête et patient, et il se souciait beaucoup de nous."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 107,
+          "ayahEnd": 107
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 68,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 9,
+          "ayahStart": 128,
+          "ayahEnd": 128
+        }
+      ],
+      "lessons": [
+        "La miséricorde est au cœur de son message.",
+        "Le bon caractère est la meilleure façon de le suivre.",
+        "Il se souciait de sa communauté ; nous montrons notre amour en suivant sa Sunna."
+      ],
+      "quiz": [
+        {
+          "question": "Comme quoi Allah envoya-t-Il le Prophète ﷺ, selon 21:107 ?",
+          "options": [
+            "Une miséricorde pour les mondes",
+            "Un roi",
+            "Seulement un juge",
+            "Seulement un guerrier"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:107"
+        },
+        {
+          "question": "Comment le Coran (68:4) décrit-il son caractère ?",
+          "options": [
+            "Éminent",
+            "Dur",
+            "Ordinaire",
+            "Orgueilleux"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:4"
+        },
+        {
+          "question": "Comment est-il envers les croyants, selon 9:128 ?",
+          "options": [
+            "Compatissant et miséricordieux",
+            "Dur",
+            "Distant",
+            "En colère"
+          ],
+          "answer": 0,
+          "reference": "Quran 9:128"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-3",
+      "title": "Son message continue",
+      "paragraphs": [
+        "Allah rappelle aux croyants que Muhammad ﷺ était un messager, comme les messagers avant lui, et que sa mort ne serait pas la fin du message : « Muhammad n'est qu'un messager ; des messagers sont passés avant lui. »",
+        "Il laissa le Coran et sa Sunna, et des Compagnons « durs envers les mécréants, miséricordieux entre eux », toujours inclinés et prosternés, recherchant la grâce d'Allah.",
+        "Sa vie, de sa naissance à La Mecque à la première révélation, à l'Hégire et à ses dernières années à Médine, est racontée en détail dans la section Sira de cette application."
+      ],
+      "kidsParagraphs": [
+        "Notre Prophète ﷺ nous a laissé le Coran et sa Sunna.",
+        "Tu peux lire toute l'histoire de sa vie dans la section Sira !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 144,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 48,
+          "ayahStart": 29,
+          "ayahEnd": 29
+        }
+      ],
+      "lessons": [
+        "Le message perdure à travers le Coran et la Sunna.",
+        "Suivre le Prophète ﷺ, c'est suivre ce qu'il a enseigné.",
+        "Apprendre sa vie est la meilleure façon de l'aimer davantage."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit le Coran (3:144) au sujet du Prophète ﷺ ?",
+          "options": [
+            "Il n'est qu'un messager ; des messagers sont passés avant lui",
+            "Il ne mourra jamais",
+            "C'est un ange",
+            "C'est un roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:144"
+        },
+        {
+          "question": "Comment le Coran (48:29) décrit-il ses compagnons entre eux ?",
+          "options": [
+            "Miséricordieux",
+            "Durs",
+            "Divisés",
+            "Orgueilleux"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        },
+        {
+          "question": "Que voit-on souvent faire les compagnons, selon 48:29 ?",
+          "options": [
+            "S'incliner et se prosterner",
+            "Commercer",
+            "Dormir",
+            "Voyager"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        }
+      ]
+    }
+  ]
+}

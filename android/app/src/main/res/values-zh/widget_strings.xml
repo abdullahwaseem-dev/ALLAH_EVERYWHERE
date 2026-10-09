@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">下一次礼拜</string>
+    <string name="widget_next_prayer_description">下一次礼拜的倒计时，并显示今日礼拜时间</string>
+    <string name="widget_hijri_date_name">伊斯兰历日期</string>
+    <string name="widget_hijri_date_description">今日的伊斯兰历日期和伊斯兰节日</string>
+    <string name="widget_reminder_name">每日经文</string>
+    <string name="widget_daily_reminder_description">每天一段可供思考的经文或圣训</string>
+    <string name="widget_next_prayer_fallback">下一次礼拜</string>
+    <string name="widget_set_location_fallback">打开应用以设置您的位置</string>
+    <string name="widget_open_app_fallback">打开应用以更新</string>
+    <string name="widget_preview_prayer">晡礼</string>
+    <string name="widget_preview_hijri_month">四月</string>
+</resources>

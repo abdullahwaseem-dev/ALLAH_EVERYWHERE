@@ -1,9 +1,12 @@
-enum BookmarkType { surah, hadith, dua }
+enum BookmarkType { surah, hadith, dua, divineName, mushafPage, prophetStory }
 
 /// A saved reference into Quran/Hadith/Dua content. [refId] is
 /// type-specific: a Surah id for [BookmarkType.surah], a
-/// "bookSlug|chapterId" pair for [BookmarkType.hadith], and a
-/// "categoryTitle|duaTitle" pair for [BookmarkType.dua] - each screen that
+/// "bookSlug|chapterId" pair for [BookmarkType.hadith], a
+/// "categoryTitle|duaTitle" pair for [BookmarkType.dua], the Name's
+/// number (1-99) for [BookmarkType.divineName], the page number (1-604)
+/// for [BookmarkType.mushafPage], and a "prophetId|chapterIndex" pair for
+/// [BookmarkType.prophetStory] - each screen that
 /// creates a bookmark knows how to both build and parse its own refId.
 class Bookmark {
   final String id;

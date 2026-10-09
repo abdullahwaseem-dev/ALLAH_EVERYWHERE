@@ -1,0 +1,4 @@
+// Widget extension: only Flutter's generated build name/number (so the
+// extension's version always matches the app), none of Runner's CocoaPods
+// settings - the extension links no pods.
+#include "Generated.xcconfig"

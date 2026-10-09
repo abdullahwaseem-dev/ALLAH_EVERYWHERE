@@ -1,0 +1,254 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yaqub",
+  "language": "tr",
+  "name": "Yakub",
+  "title": "İsrail, on iki boyun babası",
+  "sentTo": "Ailesi ve soyu, İsrailoğulları",
+  "era": "Hz. İbrahim'in (a.s.) torunu. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Oğullarıyla birlikte yaşadığı Kenan (Filistin).",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "Hayatının sonunda Hz. Yusuf'un (a.s.) yanına gittiği Mısır.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Hz. İshak'ın (a.s.) oğlu; Hz. Yusuf'un (a.s.) ve İsrailoğullarının on iki boyunun soyundan geldiği kardeşlerinin babası. Yusuf'u kaybettiğinde gösterdiği güzel sabırla ve oğullarına verdiği son öğütle tanınır: Yalnız Allah'a ibadet etmek ve ancak Müslüman olarak ölmek.",
+  "notes": [
+    "Birçok âlim, Kur'an'daki \"İsrail\"in (örneğin 3:93) Yakub'un diğer adı olduğunu söyler. Bu, Kur'an'ın ifadesine ve sahabe rivayetlerine dayanan yaygın görüştür.",
+    "Yakub'un gençliği, ikiz kardeşi ve evlilikleriyle ilgili hikâyeler çoğunlukla Kitab-ı Mukaddes'ten gelir.",
+    "Gözlerine ne oldu (12:84): Âlimler tamamen kör mü olduğu, yoksa üzüntüden görüşünün çok mu zayıfladığı konusunda ihtilaf etmiştir."
+  ],
+  "chapters": [
+    {
+      "id": "yaqub-1",
+      "title": "Bir iman yuvası",
+      "paragraphs": [
+        "Hz. Yakub (a.s.), İshak'ın oğlu ve Hz. İbrahim'in (a.s.) torunuydu. Allah onu İbrahim'e bir ihsan olarak verdi ve her birini peygamber yaptı.",
+        "İbrahim oğullarına öğüt vermişti; Yakub da kendi oğullarına öğüt verdi: \"Oğullarım! Allah sizin için bu dini seçti. O hâlde ancak Müslüman olarak, O'na teslim olmuş olarak ölün.\"",
+        "Yakub'un on iki oğlu vardı. En küçük ikisi, Yusuf ve kardeşi, gönlüne özellikle yakındı; onlara olan sevgisi uzun bir imtihanın başlangıcı olacaktı."
+      ],
+      "kidsParagraphs": [
+        "Yakub, İshak'ın oğlu ve İbrahim'in torunuydu. On iki oğlu vardı.",
+        "Oğullarına şöyle dedi: \"Allah sizin için bu dini seçti. Hep Müslüman kalın!\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 49,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 132,
+          "ayahEnd": 132
+        }
+      ],
+      "lessons": [
+        "Anne babalar imanı öğreterek ve örnek olarak aktarır.",
+        "En önemli öğüt, ölene kadar İslam'a sarılmaktır.",
+        "Her ailenin imtihanları vardır; iman onları aşmaya yardım eder."
+      ],
+      "quiz": [
+        {
+          "question": "Yakub'un babası kimdi?",
+          "options": [
+            "İsmâil",
+            "İshak",
+            "İbrahim",
+            "Yusuf"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:49"
+        },
+        {
+          "question": "Yakub oğullarına ne dedi?",
+          "options": [
+            "Zengin olun",
+            "Ancak Müslüman olarak ölün",
+            "Mısır'dan ayrılın",
+            "Bir şehir kurun"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:132"
+        },
+        {
+          "question": "Bunlardan hangisi Yakub'un oğluydu?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "İsa",
+            "Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-2",
+      "title": "Güzel sabır",
+      "paragraphs": [
+        "Bir gün Yusuf'un kardeşleri onu götürdüler ve akşam ağlayarak, gömleği sahte kana bulanmış olarak döndüler. Onu kurdun yediğini söylediler. Yakub doğruyu söylemediklerini biliyordu, ama şöyle dedi: \"Artık bana düşen güzel bir sabırdır. Anlattıklarınıza karşı yardımı istenecek olan Allah'tır.\"",
+        "Yıllar sonra başka bir oğlu Mısır'da alıkonulunca acısı tazelendi. Yüzünü çevirdi ve \"Ah Yusuf'um!\" dedi. Üzüntüden gözlerine ak düştü, ama öfkesini içinde tuttu.",
+        "Oğulları, üzüntüden kendini mahvedeceğini söylediler. O şöyle cevap verdi: \"Ben derdimi ve üzüntümü yalnızca Allah'a arz ediyorum ve Allah'tan sizin bilmediğinizi biliyorum. Oğullarım! Gidin, Yusuf'u ve kardeşini arayın ve Allah'ın rahmetinden ümit kesmeyin.\""
+      ],
+      "kidsParagraphs": [
+        "Yusuf kaybolunca Yakub çok üzüldü. Ama \"Güzel sabır\" dedi.",
+        "Yalnızca Allah'a ağladı ve umudunu hiç kaybetmedi. \"Allah'ın rahmetinden asla ümit kesmeyin!\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Güzel sabır, insanlara şikâyet etmeden gösterilen sabırdır.",
+        "Üzülmek ve ağlamak caizdir; şikâyet yalnız Allah'adır.",
+        "Allah'ın rahmetinden asla ümit kesme."
+      ],
+      "quiz": [
+        {
+          "question": "Yusuf'u kurdun yediği söylenince Yakub ne dedi?",
+          "options": [
+            "Sizi cezalandıracağım",
+            "Güzel sabır",
+            "Haydi Mısır'a gidelim",
+            "Size inanıyorum"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:18"
+        },
+        {
+          "question": "Yakub üzüntüsünü kime arz ediyordu?",
+          "options": [
+            "Oğullarına",
+            "Yalnız Allah'a",
+            "Krala",
+            "Komşularına"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:86"
+        },
+        {
+          "question": "Yakub oğullarına neden ümit kesmemelerini söyledi?",
+          "options": [
+            "Ticaretlerinden",
+            "Allah'ın rahmetinden",
+            "Yağmurdan",
+            "Kralın yardımından"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:87"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-3",
+      "title": "Yusuf'un kokusu",
+      "paragraphs": [
+        "Kervan Yusuf'un gömleğini taşıyarak Mısır'dan çıkınca Yakub Kenan'da şöyle dedi: \"Bana bunak demezseniz, ben Yusuf'un kokusunu alıyorum.\" Müjdeci gelip gömleği yüzüne koyunca gözleri yeniden gördü. \"Ben size Allah'tan sizin bilmediğinizi bilirim dememiş miydim?\"",
+        "Oğulları onlar için bağışlanma dilemesini istediler, o da söz verdi. Sonra bütün aile Mısır'a gitti. Yusuf anne babasını tahtın üstüne çıkardı ve çocukken gördüğü rüya gerçekleşti.",
+        "Yakub'a ölüm gelince oğullarına sordu: \"Benden sonra neye ibadet edeceksiniz?\" Dediler ki: \"Senin ilahına ve ataların İbrahim, İsmâil ve İshak'ın ilahına, tek bir ilaha ibadet edeceğiz; biz O'na teslim olmuşuz.\""
+      ],
+      "kidsParagraphs": [
+        "Yusuf gömleğini babasına gönderdi. Gömlek Yakub'un yüzüne değince yeniden görmeye başladı!",
+        "Bütün aile yeniden bir araya geldi. Yakub ölmeden önce oğulları yalnız Allah'a ibadet edeceklerine söz verdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 94,
+          "ayahEnd": 96
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 97,
+          "ayahEnd": 99
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 133,
+          "ayahEnd": 133
+        }
+      ],
+      "lessons": [
+        "Sabrın ardından ferahlık gelir.",
+        "Tövbe eden aile fertlerini affet.",
+        "Geride bırakılacak en hayırlı şey, yalnız Allah'a ibadet eden evlatlardır."
+      ],
+      "quiz": [
+        {
+          "question": "Yakub'un gözlerini ne iyileştirdi?",
+          "options": [
+            "Bir ilaç",
+            "Yusuf'un gömleği",
+            "Zemzem suyu",
+            "Bir rüya"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:96"
+        },
+        {
+          "question": "Yakub ölmeden önce oğullarına ne sordu?",
+          "options": [
+            "Benden sonra neye ibadet edeceksiniz?",
+            "Param nerede?",
+            "Kim kral olacak?",
+            "Yusuf nerede?"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        },
+        {
+          "question": "Oğulları hangi üç atayı andı?",
+          "options": [
+            "İbrahim, İsmâil ve İshak",
+            "Âdem, Nuh ve Hud",
+            "Musa, Harun ve Davud",
+            "İsa, Yahya ve Zekeriya"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        }
+      ]
+    }
+  ]
+}

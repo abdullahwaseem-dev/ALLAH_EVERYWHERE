@@ -1,0 +1,381 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "nuh",
+  "language": "en",
+  "name": "Nuh",
+  "title": "A grateful servant, the first messenger to the people of the earth",
+  "sentTo": "His people, who had begun to worship idols",
+  "era": "Long after Adam (AS). The Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Mount al-Judi, where the Ark came to rest (11:44). Classical scholars place it in the Jazira region near Mosul; today it is usually identified with Mount Cudi in south-eastern Türkiye.",
+      "lat": 37.37,
+      "lng": 42.35,
+      "approximate": true
+    },
+    {
+      "name": "Mesopotamia (Iraq), where most historians place Nuh's people. The Quran does not name their land.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    }
+  ],
+  "summary": "The first messenger Allah sent to a people who had fallen into idol worship. He called them for 950 years with endless patience. When they refused, Allah saved him and the believers in the Ark and drowned those who denied. Allah praised him as a grateful servant and left peace upon him among all later generations.",
+  "notes": [
+    "How much time passed between Adam and Nuh? Some reports outside al-Bukhari and Muslim say ten generations. A scholar should check them before this is added.",
+    "The 950 years (29:14) are the time Nuh remained among his people. How long he lived in total is not known for certain.",
+    "Scholars differ on whether the Flood covered the whole earth or only the land of Nuh's people.",
+    "'The oven gushed forth' (11:40, 23:27) is explained in different ways: a real oven, water rising from the surface of the earth, or the breaking of dawn.",
+    "The son's name (given in some books as Kan'an or Yam), the number of people on the Ark, and the Ark's size and wood come from later reports, not from the Quran or authentic hadith.",
+    "Al-Judi's location and Nuh's homeland are based on classical geographers and historians, not on the Quran or Sunnah."
+  ],
+  "chapters": [
+    {
+      "id": "nuh-1",
+      "title": "How idol worship began",
+      "paragraphs": [
+        "After Adam (AS), his children lived for many generations worshipping Allah alone. Then, slowly, something changed.",
+        "Ibn Abbas, the Companion who was a great scholar of the Quran, explained how it happened. Among Nuh's people there had been righteous men named Wadd, Suwa', Yaghuth, Ya'uq and Nasr. When they died, Shaytan whispered to the people to set up statues in the places where these men used to sit, and to name the statues after them. The people did so, but no one worshipped the statues. Then that generation died, the knowledge of why the statues had been made was forgotten, and the people who came later began to worship them.",
+        "This is how worshipping others besides Allah began among humankind: not all at once, but step by step, through exaggerated love for righteous people and through forgetting knowledge."
+      ],
+      "kidsParagraphs": [
+        "After Adam, people worshipped only Allah for a long time.",
+        "Then people made statues of good men to remember them. Many years later, people forgot why the statues were made and started to worship them. Shaytan tricked them step by step."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 1, "surah": 71, "ayahStart": 23, "ayahEnd": 23 },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4920",
+          "narrator": "Ibn Abbas",
+          "translation": "Ibn Abbas said: “The idols that were among the people of Nuh later came to the Arabs… They were the names of righteous men from the people of Nuh. When they died, Shaytan inspired their people to set up statues in the places where they used to sit, and to call them by their names. They did so, and the statues were not worshipped until those people had died and knowledge had been forgotten; then they were worshipped.”",
+          "match": "اسماء رجال صالحين من قوم نوح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Shaytan leads people astray little by little, so we must take care even with small things.",
+        "Loving righteous people must never turn into worshipping them.",
+        "Forgetting knowledge opens the door to misguidance; learning the religion protects us."
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is named in the Quran as an idol of Nuh's people?",
+          "options": ["Hubal", "Wadd", "Al-Lat", "Ba'l"],
+          "answer": 1,
+          "reference": "Quran 71:23"
+        },
+        {
+          "question": "According to Ibn Abbas, who were Wadd, Suwa', Yaghuth, Ya'uq and Nasr originally?",
+          "options": ["Righteous men", "Kings", "Angels", "Stars"],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4920"
+        },
+        {
+          "question": "When did people start worshipping the statues?",
+          "options": ["As soon as they were made", "When Nuh told them to", "After the knowledge of why they were made was forgotten", "Never"],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 4920"
+        }
+      ]
+    },
+    {
+      "id": "nuh-2",
+      "title": "Nuh is sent",
+      "paragraphs": [
+        "Then Allah sent Nuh (AS) to his people. He was one of them, a man they knew. His message was simple and clear: “O my people, worship Allah; you have no god other than Him. I fear for you the punishment of a tremendous Day.”",
+        "In the long hadith about the Day of Resurrection, the Prophet ﷺ tells us that people will come to Nuh and say: “You are the first of the messengers to the people of the earth, and Allah called you a grateful servant.” The Quran itself says of him: “Indeed, he was a grateful servant.”",
+        "Nuh promised his people that if they worshipped Allah, feared Him and obeyed His messenger, Allah would forgive their sins and give them more time. He asked them for no money and no reward. His reward, he said, was only with the Lord of the worlds."
+      ],
+      "kidsParagraphs": [
+        "Allah chose Nuh to be a messenger to his people. He told them: “Worship only Allah!”",
+        "Nuh did not ask for any money. He only wanted his people to be saved."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 7, "ayahStart": 59, "ayahEnd": 59 },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4712",
+          "narrator": "Abu Hurayrah",
+          "translation": "From the Prophet's ﷺ description of the Day of Resurrection: “…They will come to Nuh and say: ‘O Nuh, you are the first of the messengers to the people of the earth, and Allah has called you a grateful servant. Intercede for us with your Lord…’”",
+          "match": "انك انت اول الرسل الى اهل الارض",
+          "shortened": true
+        },
+        { "type": "quran", "after": 1, "surah": 17, "ayahStart": 3, "ayahEnd": 3 },
+        { "type": "quran", "after": 2, "surah": 71, "ayahStart": 2, "ayahEnd": 4 },
+        { "type": "quran", "after": 2, "surah": 26, "ayahStart": 109, "ayahEnd": 109 }
+      ],
+      "lessons": [
+        "The message of every Prophet began with worshipping Allah alone.",
+        "Someone who calls others to good should be sincere and not seek payment or fame.",
+        "Being a grateful servant is a quality Allah praises."
+      ],
+      "quiz": [
+        {
+          "question": "What does the Quran call Nuh (AS)?",
+          "options": ["A king", "A grateful servant", "A warrior", "A poet"],
+          "answer": 1,
+          "reference": "Quran 17:3"
+        },
+        {
+          "question": "What was the first thing Nuh asked his people to do?",
+          "options": ["Build a ship", "Leave their city", "Pay him", "Worship Allah alone"],
+          "answer": 3,
+          "reference": "Quran 7:59"
+        },
+        {
+          "question": "In the hadith of the Day of Resurrection, Nuh is called the first … to the people of the earth.",
+          "options": ["Messenger", "King", "Teacher", "Builder"],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4712"
+        }
+      ]
+    },
+    {
+      "id": "nuh-3",
+      "title": "Calling night and day",
+      "paragraphs": [
+        "Nuh called his people for an extremely long time. The Quran tells us he remained among them a thousand years less fifty: nine hundred and fifty years.",
+        "He tried every way. He called them by night and by day, openly and in private. But the more he called, the more they ran away. They put their fingers in their ears so that they would not hear him, and covered themselves with their clothes so that they would not see him.",
+        "He spoke to their hearts and to their minds. “Ask your Lord for forgiveness,” he told them, “He is ever Forgiving. He will send you abundant rain, give you wealth and children, and grant you gardens and rivers.” He asked them to look at how Allah had created them in stages, how He had made the seven heavens, the moon as a light and the sun as a lamp. Why would they not give Allah the reverence He deserves?"
+      ],
+      "kidsParagraphs": [
+        "Nuh kept calling his people for 950 years! He spoke to them in the day and at night.",
+        "His people put their fingers in their ears so that they would not hear. But Nuh never gave up."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 29, "ayahStart": 14, "ayahEnd": 14 },
+        { "type": "quran", "after": 1, "surah": 71, "ayahStart": 5, "ayahEnd": 9 },
+        { "type": "quran", "after": 2, "surah": 71, "ayahStart": 10, "ayahEnd": 16 }
+      ],
+      "lessons": [
+        "Be patient when calling to good, even when the results are slow.",
+        "Asking Allah's forgiveness (istighfar) brings blessings such as rain, wealth and children.",
+        "Reflecting on creation leads the heart to its Creator."
+      ],
+      "quiz": [
+        {
+          "question": "How long did Nuh (AS) remain among his people?",
+          "options": ["100 years", "40 years", "950 years", "Exactly 1000 years"],
+          "answer": 2,
+          "reference": "Quran 29:14"
+        },
+        {
+          "question": "What did Nuh's people do so that they would not hear him?",
+          "options": ["Put their fingers in their ears", "Ran to the mountains", "Closed their doors", "Sang loudly"],
+          "answer": 0,
+          "reference": "Quran 71:7"
+        },
+        {
+          "question": "What did Nuh say Allah would give them if they asked for forgiveness?",
+          "options": ["Only gold and silver", "Abundant rain, wealth and children", "A new king", "Nothing"],
+          "answer": 1,
+          "reference": "Quran 71:10-12"
+        }
+      ]
+    },
+    {
+      "id": "nuh-4",
+      "title": "The chiefs refuse",
+      "paragraphs": [
+        "The leaders of his people had many excuses. “He is only a man like you,” they said. “If Allah wanted to send a messenger, He would have sent angels. We never heard of this from our forefathers.” They even called him a madman.",
+        "Above all, they looked down on those who followed him. “We see that only the lowest of us follow you,” they said. They wanted Nuh to drive the poor believers away before they would even listen to him.",
+        "Nuh refused. He would not drive away the believers: they would meet their Lord, and who would protect him from Allah if he drove them away? He did not claim to own Allah's treasures, to know the unseen, or to be an angel.",
+        "In the end they challenged him: “Bring us what you threaten us with, if you are truthful.” Nuh answered that only Allah would bring it, if He willed, and that no one could escape it."
+      ],
+      "kidsParagraphs": [
+        "The rich leaders said: “Only poor people follow you!” They wanted Nuh to send the poor believers away.",
+        "Nuh said no. Every believer is precious to Allah, rich or poor."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 23, "ayahStart": 24, "ayahEnd": 25 },
+        { "type": "quran", "after": 1, "surah": 11, "ayahStart": 27, "ayahEnd": 27 },
+        { "type": "quran", "after": 2, "surah": 11, "ayahStart": 29, "ayahEnd": 31 },
+        { "type": "quran", "after": 3, "surah": 11, "ayahStart": 32, "ayahEnd": 33 }
+      ],
+      "lessons": [
+        "Status and wealth do not make a person better in Allah's sight.",
+        "Never push sincere people away because they are poor or weak.",
+        "Arrogance stops people from accepting the truth."
+      ],
+      "quiz": [
+        {
+          "question": "What did the chiefs want Nuh to do with his poor followers?",
+          "options": ["Make them leaders", "Give them money", "Drive them away", "Teach them more"],
+          "answer": 2,
+          "reference": "Quran 11:27-29"
+        },
+        {
+          "question": "What did the chiefs say Allah would have sent instead of a man?",
+          "options": ["Angels", "Kings", "Jinn", "Birds"],
+          "answer": 0,
+          "reference": "Quran 23:24"
+        },
+        {
+          "question": "From whom did Nuh say his reward would come?",
+          "options": ["The chiefs", "His followers", "His family", "Allah alone"],
+          "answer": 3,
+          "reference": "Quran 11:29"
+        }
+      ]
+    },
+    {
+      "id": "nuh-5",
+      "title": "Building the Ark",
+      "paragraphs": [
+        "After hundreds of years, Allah revealed to Nuh that no more of his people would believe except those who already had. Nuh called upon his Lord: “I am overpowered, so help me.”",
+        "Allah commanded him to build a ship under His watchful eyes and by His inspiration. Nuh set to work, with planks and nails.",
+        "Whenever the chiefs of his people passed by, they mocked him. Nuh answered calmly: “If you mock us, we will mock you just as you mock. You will soon know who will receive a punishment that will disgrace him.”"
+      ],
+      "kidsParagraphs": [
+        "Allah told Nuh to build a big ship, called the Ark.",
+        "The people laughed at him while he built it. But Nuh trusted Allah and kept working."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 11, "ayahStart": 36, "ayahEnd": 36 },
+        { "type": "quran", "after": 0, "surah": 54, "ayahStart": 10, "ayahEnd": 10 },
+        { "type": "quran", "after": 1, "surah": 11, "ayahStart": 37, "ayahEnd": 37 },
+        { "type": "quran", "after": 1, "surah": 54, "ayahStart": 13, "ayahEnd": 13 },
+        { "type": "quran", "after": 2, "surah": 11, "ayahStart": 38, "ayahEnd": 39 },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Some books give exact measurements for the Ark, name the wood it was made of, or say that Nuh planted the trees for it a hundred years before."
+        }
+      ],
+      "lessons": [
+        "Obeying Allah is right even when others mock you.",
+        "Mockery is the weapon of those who have no argument.",
+        "Du'a is the believer's strength when everything seems hard."
+      ],
+      "quiz": [
+        {
+          "question": "What was the Ark made of, according to the Quran?",
+          "options": ["Stone", "Planks and nails", "Only reeds", "Iron"],
+          "answer": 1,
+          "reference": "Quran 54:13"
+        },
+        {
+          "question": "What did the chiefs do when they passed by the Ark?",
+          "options": ["Helped Nuh", "Prayed with him", "Mocked him", "Bought places on it"],
+          "answer": 2,
+          "reference": "Quran 11:38"
+        },
+        {
+          "question": "What did Nuh say when he called on Allah for help?",
+          "options": ["I am overpowered, so help me", "Destroy the ship", "Give me gold", "Let me rest"],
+          "answer": 0,
+          "reference": "Quran 54:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-6",
+      "title": "The Flood",
+      "paragraphs": [
+        "Then Allah's command came. The “oven” gushed forth, the gates of the sky opened with pouring rain, and springs burst out of the earth, until the waters met for a matter already decreed.",
+        "Allah told Nuh to carry on the ship a pair of every kind, his family (except those against whom the word had already gone forth) and all who believed. Only a few had believed with him. Nuh said: “Board it. In the name of Allah is its sailing and its anchoring. Indeed, my Lord is Forgiving, Merciful.”",
+        "The ship sailed through waves like mountains. Nuh saw his son standing apart and called out with a father's love: “O my son, come aboard with us, and do not be with the disbelievers!” His son replied: “I will take refuge on a mountain that will protect me from the water.” Nuh said: “There is no protector today from Allah's command, except for the one He has mercy on.” Then a wave came between them, and the son was among the drowned.",
+        "Nuh's wife was not among the saved either. The Quran mentions her, with the wife of Lut, as an example of those who disbelieved although they lived with righteous Prophets."
+      ],
+      "kidsParagraphs": [
+        "Rain poured from the sky and water burst out of the ground. Nuh and the believers went into the Ark, with pairs of animals.",
+        "Nuh called to his son: “Come with us!” But his son refused and went towards a mountain, and the water covered him. Only Allah can save us."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 54, "ayahStart": 11, "ayahEnd": 12 },
+        { "type": "quran", "after": 1, "surah": 11, "ayahStart": 40, "ayahEnd": 41 },
+        { "type": "quran", "after": 2, "surah": 11, "ayahStart": 42, "ayahEnd": 43 },
+        { "type": "quran", "after": 3, "surah": 66, "ayahStart": 10, "ayahEnd": 10 }
+      ],
+      "lessons": [
+        "Nothing protects from Allah's decree except His mercy.",
+        "Being related to a Prophet does not save a person; faith and deeds do.",
+        "We begin our journeys in Allah's name, as Nuh did."
+      ],
+      "quiz": [
+        {
+          "question": "What did Nuh say when the believers boarded the Ark?",
+          "options": ["Hurry up", "In the name of Allah is its sailing and its anchoring", "Goodbye", "Bring the treasure"],
+          "answer": 1,
+          "reference": "Quran 11:41"
+        },
+        {
+          "question": "Where did Nuh's son say he would take refuge?",
+          "options": ["In a cave", "In the Ark", "In a tower", "On a mountain"],
+          "answer": 3,
+          "reference": "Quran 11:43"
+        },
+        {
+          "question": "Which two women does the Quran give as an example of those who disbelieved?",
+          "options": ["The wives of Nuh and Lut", "The wives of Ibrahim and Musa", "Maryam and Asiyah", "None"],
+          "answer": 0,
+          "reference": "Quran 66:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-7",
+      "title": "Peace be upon Nuh",
+      "paragraphs": [
+        "At last Allah commanded: “O earth, swallow your water, and O sky, hold back your rain.” The water went down, the matter was finished, and the ship came to rest on al-Judi.",
+        "Nuh, grieving, called to his Lord about his son: “My Lord, my son is from my family, and Your promise is true.” Allah told him that his son was not of his family, because his deeds were not righteous. Nuh at once sought refuge in Allah from asking about what he had no knowledge of, and he asked for forgiveness and mercy.",
+        "Then it was said: “O Nuh, disembark in peace from Us, with blessings upon you and upon the nations that will come from those with you.” Allah left a lasting mention of him among later generations: “Peace be upon Nuh among all the worlds.”",
+        "The Prophet ﷺ told us that on the Day of Resurrection Nuh and his people will be brought forward. Allah will ask Nuh whether he conveyed the message, and he will say yes. His people will deny it. Then Nuh will name his witnesses: Muhammad ﷺ and his Ummah, who will testify that he delivered the message."
+      ],
+      "kidsParagraphs": [
+        "Allah told the earth to swallow the water and the sky to stop the rain. The Ark came to rest safely on a mountain called al-Judi.",
+        "Allah sent peace upon Nuh. And on the Last Day, the Ummah of Muhammad ﷺ will testify that Nuh delivered his message!"
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 11, "ayahStart": 44, "ayahEnd": 44 },
+        { "type": "quran", "after": 1, "surah": 11, "ayahStart": 45, "ayahEnd": 47 },
+        { "type": "quran", "after": 2, "surah": 11, "ayahStart": 48, "ayahEnd": 48 },
+        { "type": "quran", "after": 2, "surah": 37, "ayahStart": 78, "ayahEnd": 80 },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3339",
+          "narrator": "Abu Sa'id al-Khudri",
+          "translation": "The Messenger of Allah ﷺ said: “Nuh and his nation will come, and Allah the Exalted will say: ‘Did you convey (the message)?’ He will say: ‘Yes, my Lord.’ Then He will say to his nation: ‘Did he convey it to you?’ They will say: ‘No, no prophet came to us.’ So He will say to Nuh: ‘Who will testify for you?’ He will say: ‘Muhammad ﷺ and his Ummah.’ So we will testify that he conveyed it.” The Prophet ﷺ explained that this is the meaning of Quran 2:143.",
+          "match": "يجيء نوح وامته"
+        }
+      ],
+      "lessons": [
+        "After every hardship, Allah's help comes to those who are patient.",
+        "A believer accepts Allah's decision, even when it is painful.",
+        "The Ummah of Muhammad ﷺ has an honoured role as witnesses for the earlier Prophets."
+      ],
+      "quiz": [
+        {
+          "question": "Where did the Ark come to rest?",
+          "options": ["Mount Sinai", "Mount Uhud", "Al-Judi", "Mount Arafat"],
+          "answer": 2,
+          "reference": "Quran 11:44"
+        },
+        {
+          "question": "Who will testify for Nuh on the Day of Resurrection?",
+          "options": ["Muhammad ﷺ and his Ummah", "Only the angels", "His son", "No one"],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3339"
+        },
+        {
+          "question": "What did Allah leave for Nuh among later generations?",
+          "options": ["A golden ship", "The words “Peace be upon Nuh among the worlds”", "A kingdom", "Nothing"],
+          "answer": 1,
+          "reference": "Quran 37:79"
+        }
+      ]
+    }
+  ]
+}

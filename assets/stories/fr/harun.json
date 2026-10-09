@@ -1,0 +1,256 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "harun",
+  "language": "fr",
+  "name": "Haroun",
+  "title": "Le frère et l'aide de Moussa (paix sur lui)",
+  "sentTo": "Pharaon et son peuple, et les Enfants d'Israël, aux côtés de Moussa (paix sur lui)",
+  "era": "L'époque de Moussa (paix sur lui). Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "L'Égypte et le désert du Sinaï, avec Moussa (paix sur lui).",
+      "lat": 29.5,
+      "lng": 33.8,
+      "approximate": true
+    }
+  ],
+  "summary": "Le frère de Moussa (paix sur lui), fait prophète à la demande même de Moussa. Il avait la parole plus éloquente, et se tint aux côtés de Moussa devant Pharaon. Quand le peuple adora le veau, il les avertit et tenta de garder leur unité. Allah adressa la paix à Moussa et Haroun.",
+  "notes": [
+    "Le Coran ne dit pas si Haroun était plus âgé ou plus jeune que Moussa ; la Bible dit qu'il était l'aîné.",
+    "Les détails de la mort de Haroun (avant Moussa, dans le désert) viennent de récits historiques, non du Coran ni des hadiths authentiques.",
+    "« Ô sœur de Haroun » (19:28), dit à Maryam, ne signifie pas qu'elle était la sœur de ce Haroun : le Prophète ﷺ a expliqué que les gens donnaient les noms de leurs prophètes et des vertueux d'avant eux (Sahih Muslim 2135)."
+  ],
+  "chapters": [
+    {
+      "id": "harun-1",
+      "title": "Un aide pour son frère",
+      "paragraphs": [
+        "Quand Allah choisit Moussa (paix sur lui) dans la vallée de Touwa et l'envoya vers Pharaon, Moussa demanda un aide : « Donne-moi un assistant de ma famille, Haroun, mon frère. Renforce par lui ma force et associe-le à ma mission, afin que nous Te glorifiions beaucoup et que nous nous souvenions beaucoup de Toi. »",
+        "Moussa expliqua : « Mon frère Haroun est plus éloquent que moi ; envoie-le donc avec moi comme aide pour me confirmer. » Allah répondit : « Nous allons fortifier ton bras par ton frère. » Par Sa miséricorde, Allah fit de Haroun un prophète."
+      ],
+      "kidsParagraphs": [
+        "Moussa demanda à Allah de faire de son frère Haroun son aide, et Allah fit aussi de Haroun un prophète !",
+        "Haroun parlait très bien, et il aida son frère à parler d'Allah à Pharaon."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 29,
+          "ayahEnd": 34
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 53,
+          "ayahEnd": 53
+        }
+      ],
+      "lessons": [
+        "Les bons frères s'entraident pour faire le bien.",
+        "Le travail d'équipe est un don d'Allah.",
+        "Être un aide dans la vérité est un grand honneur."
+      ],
+      "quiz": [
+        {
+          "question": "Pourquoi Moussa demanda-t-il Haroun comme aide ?",
+          "options": [
+            "Haroun avait la parole plus éloquente",
+            "Haroun était plus riche",
+            "Haroun était roi",
+            "Haroun connaissait Pharaon"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:34"
+        },
+        {
+          "question": "Que fit Allah de Haroun, par Sa miséricorde ?",
+          "options": [
+            "Un roi",
+            "Un prophète",
+            "Un marchand",
+            "Un soldat"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:53"
+        },
+        {
+          "question": "Que dit Moussa qu'ils feraient ensemble ?",
+          "options": [
+            "Glorifier Allah et se souvenir beaucoup de Lui",
+            "Devenir riches",
+            "Bâtir des palais",
+            "Parcourir le monde"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:33-34"
+        }
+      ]
+    },
+    {
+      "id": "harun-2",
+      "title": "Ferme face au veau",
+      "paragraphs": [
+        "Quand Moussa alla rencontrer son Seigneur pendant quarante nuits, il confia la charge à Haroun : « Remplace-moi auprès de mon peuple, agis en bien, et ne suis pas le chemin des corrupteurs. »",
+        "Quand as-Samiri fabriqua le veau d'or, Haroun avertit le peuple : « Ô mon peuple, vous n'êtes qu'éprouvés par cela. Votre Seigneur est le Tout Miséricordieux ; suivez-moi donc et obéissez à mon ordre. » Mais beaucoup refusèrent : « Nous continuerons à l'adorer jusqu'au retour de Moussa. »",
+        "Quand Moussa revint, en colère, et saisit Haroun par la tête et la barbe, Haroun dit : « Fils de ma mère, le peuple m'a dominé et a failli me tuer. J'ai craint que tu ne dises : Tu as divisé les Enfants d'Israël. » Moussa pria alors pour eux deux."
+      ],
+      "kidsParagraphs": [
+        "Pendant l'absence de Moussa, des gens fabriquèrent un veau d'or. Haroun leur dit : « C'est une épreuve ! Suivez-moi et adorez Allah. »",
+        "Quand Moussa revint fâché, Haroun lui expliqua ce qui s'était passé, et Moussa pria pour eux deux."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 90,
+          "ayahEnd": 91
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 92,
+          "ayahEnd": 94
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 151,
+          "ayahEnd": 151
+        }
+      ],
+      "lessons": [
+        "Dis la vérité même quand la plupart des gens la refusent.",
+        "Garder l'unité de la communauté est une lourde responsabilité.",
+        "Les malentendus entre gens de bien se guérissent par l'explication et la prière."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Haroun au peuple au sujet du veau ?",
+          "options": [
+            "Vous n'êtes qu'éprouvés par cela",
+            "C'est un cadeau",
+            "Adorez-le jusqu'au retour de Moussa",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:90"
+        },
+        {
+          "question": "Qui fut laissé responsable quand Moussa alla sur la montagne ?",
+          "options": [
+            "Haroun",
+            "As-Samiri",
+            "Qaroun",
+            "Youcha'"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "Comment Haroun appela-t-il Moussa en s'expliquant ?",
+          "options": [
+            "Fils de ma mère",
+            "Mon roi",
+            "Mon maître",
+            "Mon fils"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:94"
+        }
+      ]
+    },
+    {
+      "id": "harun-3",
+      "title": "Paix sur Moussa et Haroun",
+      "paragraphs": [
+        "Allah accorda à Moussa et Haroun une grande faveur : Il les sauva, eux et leur peuple, de la grande angoisse, les secourut pour qu'ils l'emportent, leur donna l'Écriture explicite et les guida vers le droit chemin. Il laissa d'eux un souvenir durable parmi les générations suivantes : « Paix sur Moussa et Haroun. »",
+        "Le Prophète ﷺ dit un jour à 'Ali ibn Abi Talib : « N'es-tu pas satisfait d'être pour moi ce que Haroun était pour Moussa ? » Il honora ainsi 'Ali, et montra combien Haroun avait été proche de son frère, en aide digne de confiance."
+      ],
+      "kidsParagraphs": [
+        "Allah dit : « Paix sur Moussa et Haroun. »",
+        "Notre Prophète ﷺ dit à 'Ali : « Tu es pour moi ce que Haroun était pour Moussa » : un aide proche et digne de confiance."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 114,
+          "ayahEnd": 120
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3706",
+          "narrator": "Sa'd ibn Abi Waqqas",
+          "translation": "Le Prophète ﷺ dit à 'Ali : « N'es-tu pas satisfait d'être pour moi au rang de Haroun auprès de Moussa ? »",
+          "match": "اما ترضى ان تكون مني بمنزلة هارون من موسى"
+        }
+      ],
+      "lessons": [
+        "Allah honore ceux qui soutiennent la vérité.",
+        "Un aide digne de confiance est précieux.",
+        "La paix et l'honneur sont la récompense des bienfaisants."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah laissa-t-Il pour Moussa et Haroun parmi les générations suivantes ?",
+          "options": [
+            "« Paix sur Moussa et Haroun »",
+            "Un palais",
+            "Un veau d'or",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:120"
+        },
+        {
+          "question": "À qui le Prophète ﷺ dit-il : « Tu es pour moi ce que Haroun était pour Moussa » ?",
+          "options": [
+            "Abou Bakr",
+            "'Ali",
+            "'Umar",
+            "'Uthman"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3706"
+        },
+        {
+          "question": "Qu'Allah donna-t-Il à Moussa et Haroun ?",
+          "options": [
+            "L'Écriture explicite",
+            "Un royaume en Égypte",
+            "Un navire",
+            "De l'or"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:117"
+        }
+      ]
+    }
+  ]
+}

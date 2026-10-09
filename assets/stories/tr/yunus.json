@@ -1,0 +1,341 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yunus",
+  "language": "tr",
+  "name": "Yunus",
+  "title": "Zünnûn, balığın sahibi",
+  "sentTo": "Ninova halkı, yüz bin veya daha fazla",
+  "era": "Zamanı Kur'an'da ve Sünnet'te belirtilmez; tarihçiler onu MÖ 8. yüzyıla yerleştirir.",
+  "places": [
+    {
+      "name": "Âlimlerin çoğuna göre bugünkü Irak'ta Musul'un karşısındaki Ninova.",
+      "lat": 36.36,
+      "lng": 43.15,
+      "approximate": true
+    }
+  ],
+  "summary": "Yunus, Allah ona izin vermeden önce öfkeyle kavmini terk etti. Gemiden atıldı ve büyük bir balık onu yuttu; orada karanlıklar içinde seslendi: \"Senden başka ilah yoktur; Seni tenzih ederim; ben gerçekten zalimlerden oldum.\" Allah onu kurtardı ve bütün kavmi iman etti.",
+  "notes": [
+    "Kur'an şehrin adını vermez; Ninova adı tarihten ve Kitab-ı Mukaddes'ten gelir.",
+    "Yunus'un balığın içinde ne kadar kaldığı Kur'an'da veya sahih hadislerde belirtilmez; rivayetler günün bir kısmından kırk güne kadar değişir.",
+    "\"Kendisini asla sıkıştırmayacağımızı sandı\" (21:87): Âlimler bunu \"işi ona zorlaştırmayacağımızı sandı\" diye açıklar; Allah'ın kudretinden şüphe ettiği anlamına gelmez.",
+    "Yunus'un meşhur duası Kur'an'dadır (21:87). Faziletine dair bir hadis Tirmizî'dedir; nakletmeden önce kontrol edilmelidir."
+  ],
+  "chapters": [
+    {
+      "id": "yunus-1",
+      "title": "Öfkeyle ayrılış",
+      "paragraphs": [
+        "Allah Hz. Yunus'u (a.s.) yüz bin veya daha fazla nüfuslu büyük bir şehre gönderdi. Onları Allah'a çağırdı, ama karşılık vermediler.",
+        "Yunus onlara öfkelendi ve Allah ona izin vermeden ayrıldı. Kıyıya gitti ve dolu bir gemiye bindi.",
+        "Kur'an onu \"balık sahibi\" diye anar: Öfkeyle gitti ve Allah'ın onu sorumlu tutmayacağını sandı. Kıssası, bir peygamberin bile Allah'ın emrini beklemesi gerektiğini öğretir."
+      ],
+      "kidsParagraphs": [
+        "Allah Yunus'u büyük bir şehre gönderdi. İnsanlar dinlemeyince Yunus kızdı ve oradan ayrıldı.",
+        "Allah'ın iznini beklemeden bir gemiye bindi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 147
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 139,
+          "ayahEnd": 140
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "İnsanlara karşı sabırlı ol ve Allah'ın emrini bekle.",
+        "Öfke bizi aceleci kararlara götürebilir.",
+        "Allah'a davet sabır ister, bıkkınlık değil."
+      ],
+      "quiz": [
+        {
+          "question": "Yunus kaç kişiye gönderildi?",
+          "options": [
+            "Yüz bin veya daha fazla",
+            "On",
+            "Bin",
+            "Yetmiş"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:147"
+        },
+        {
+          "question": "Yunus kavmini neden terk etti?",
+          "options": [
+            "Onlara öfkelenmişti",
+            "Mısır'a gönderilmişti",
+            "Hastaydı",
+            "Ticaret yapmak istiyordu"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Yunus ayrılınca nereye gitti?",
+          "options": [
+            "Dolu bir gemiye",
+            "Bir dağa",
+            "Bir mağaraya",
+            "Çöle"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:140"
+        }
+      ]
+    },
+    {
+      "id": "yunus-2",
+      "title": "Balığın karnında",
+      "paragraphs": [
+        "Açık denizde gemidekiler kura çekti ve Yunus kaybedenlerden çıktı. Denize atıldı ve büyük bir balık onu yuttu.",
+        "Gecenin, denizin ve balığın karnının karanlıklarında Yunus seslendi: \"Senden başka ilah yoktur; Seni tenzih ederim; ben gerçekten zalimlerden oldum.\"",
+        "Allah buyurur ki Yunus O'nu tesbih edenlerden olmasaydı, kıyamet gününe kadar onun karnında kalırdı. Ama Allah duasını kabul etti ve onu kederden kurtardı: \"İşte Biz müminleri böyle kurtarırız.\""
+      ],
+      "kidsParagraphs": [
+        "Yunus denize atıldı ve büyük bir balık onu yuttu!",
+        "Karanlıkta Yunus dua etti: \"Senden başka ilah yok, Seni tenzih ederim, ben hata ettim.\" Ve Allah onu kurtardı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 141,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 143,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        }
+      ],
+      "lessons": [
+        "Hiçbir karanlık Allah'ın duamızı duyamayacağı kadar derin değildir.",
+        "Hatanı Allah'a itiraf et ve O'nu tesbih et.",
+        "İyi zamanlarda Allah'ı anmak zor zamanlarda yardım eder."
+      ],
+      "quiz": [
+        {
+          "question": "Yunus'u ne yuttu?",
+          "options": [
+            "Büyük bir balık",
+            "Bir dalga",
+            "Bir mağara",
+            "Bir timsah"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:142"
+        },
+        {
+          "question": "Yunus karanlıklarda ne dedi?",
+          "options": [
+            "Senden başka ilah yoktur; Seni tenzih ederim; ben gerçekten zalimlerden oldum",
+            "Bana yardım edin, ey insanlar",
+            "Neden ben?",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Allah Yunus gibi müminlere ne yaptığını söyler?",
+          "options": [
+            "Onları kurtarır",
+            "Onları unutur",
+            "Onları cezalandırır",
+            "Onları bırakır"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:88"
+        }
+      ]
+    },
+    {
+      "id": "yunus-3",
+      "title": "Bütün şehir iman etti",
+      "paragraphs": [
+        "Allah Yunus'u zayıf ve hasta olarak çıplak bir sahile attı ve onu gölgelemek için üzerinde bir kabak bitkisi bitirdi.",
+        "Sonra Allah onu kavmine geri gönderdi ve bu sefer hepsi iman etti. Allah azabı onlardan kaldırdı ve onları bir süre yaşattı. Kur'an, son anda iman eden başka hiçbir şehre imanının böyle fayda vermediğini, yalnızca Yunus kavminin istisna olduğunu söyler.",
+        "Allah Peygamber Muhammed'e ﷺ sabretmesini ve keder içinde seslendiğinde balık sahibi gibi olmamasını söyledi. Sonra Allah Yunus'u seçti ve onu salihlerden kıldı."
+      ],
+      "kidsParagraphs": [
+        "Balık Yunus'u sahile bıraktı ve ona gölge olsun diye bir bitki büyüdü.",
+        "Yunus geri dönünce şehirdeki herkes iman etti! Allah onları bağışladı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 145,
+          "ayahEnd": 146
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 10,
+          "ayahStart": 98,
+          "ayahEnd": 98
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 68,
+          "ayahStart": 48,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "İnsanlardan asla ümit kesme; kalpler değişebilir.",
+        "Allah Kendisine dönenlere ikinci bir şans verir.",
+        "Davette sabır, aceleci öfkeden daha iyidir."
+      ],
+      "quiz": [
+        {
+          "question": "Sahilde Yunus'un üzerinde ne bitti?",
+          "options": [
+            "Bir kabak bitkisi",
+            "Bir hurma ağacı",
+            "Ot",
+            "Bir incir ağacı"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:146"
+        },
+        {
+          "question": "Yunus'un kavmi ne yaptı?",
+          "options": [
+            "İman ettiler",
+            "Şehri terk ettiler",
+            "Onunla savaştılar",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:148"
+        },
+        {
+          "question": "10:98'e göre hangi kavme son anda imanı fayda verdi?",
+          "options": [
+            "Yunus kavmine",
+            "Nuh kavmine",
+            "Firavun'un kavmine",
+            "Âd'a"
+          ],
+          "answer": 0,
+          "reference": "Quran 10:98"
+        }
+      ]
+    },
+    {
+      "id": "yunus-4",
+      "title": "Yunus'tan daha hayırlı olduğunu söyleme",
+      "paragraphs": [
+        "Yunus bir hata yaptığı için bazı insanlar onu küçümseyebilir. Peygamber ﷺ bunu yasakladı: \"Hiçbir kul 'Ben Yunus b. Mettâ'dan daha hayırlıyım' demesin.\"",
+        "Yunus samimiyetle tövbe etti; Allah da onu seçti ve salihlerden kıldı. Karanlıklardan yaptığı dua, bugün de sıkıntıya düşen her müminin duasıdır."
+      ],
+      "kidsParagraphs": [
+        "Peygamberimiz ﷺ buyurdu: \"Kimse 'Ben Yunus'tan daha hayırlıyım' demesin.\"",
+        "Yunus Allah'tan özür diledi ve Allah onu salihlerden kıldı."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3416",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Hiçbir kulun 'Ben Yunus b. Mettâ'dan daha hayırlıyım' demesi uygun değildir.\"",
+          "match": "لا ينبغي لعبد ان يقول انا خير من يونس بن متى"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 68,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Bütün peygamberlere saygı göster.",
+        "Ardından tövbe gelen bir hata, kişiyi Allah katında düşürmez.",
+        "Tövbe ettiği geçmiş bir günah yüzünden kimseyi hor görme."
+      ],
+      "quiz": [
+        {
+          "question": "Peygamber ﷺ hiçbir kulun ne dememesi gerektiğini söyledi?",
+          "options": [
+            "Ben Yunus b. Mettâ'dan daha hayırlıyım",
+            "Yunus'u seviyorum",
+            "Yunus bir peygamberdi",
+            "Yunus sabırlıydı"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        },
+        {
+          "question": "Allah Yunus'un tövbesinden sonra onun için ne yaptı?",
+          "options": [
+            "Onu seçti ve salihlerden kıldı",
+            "Onu kral yaptı",
+            "Ona bir gemi verdi",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:50"
+        },
+        {
+          "question": "Hadise göre Yunus'un babasının adı neydi?",
+          "options": [
+            "Mettâ",
+            "Yakub",
+            "İmrân",
+            "İbrahim"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        }
+      ]
+    }
+  ]
+}

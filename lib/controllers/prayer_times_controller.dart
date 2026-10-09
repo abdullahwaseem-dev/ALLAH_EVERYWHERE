@@ -10,8 +10,11 @@ import 'package:intl/intl.dart' hide TextDirection;
 import 'package:allah_everywhere/utils/utils/local_storage/storage.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/services/local_notifications_service.dart';
+import 'package:allah_everywhere/services/prayer_calculation.dart';
+import 'package:allah_everywhere/services/islamic_calendar_service.dart';
 import 'package:allah_everywhere/data/prayer_reminders_data.dart';
 import 'package:allah_everywhere/widgets/prayer_reminder_dialog.dart';
+import 'package:allah_everywhere/services/home_widget_service.dart';
 
 /// Single source of truth for prayer times, shared by the Home screen and
 /// the standalone Prayer Timing screen so they never show different times
@@ -20,6 +23,11 @@ import 'package:allah_everywhere/widgets/prayer_reminder_dialog.dart';
 class PrayerTimesController extends GetxController {
   static const _methodKey = 'prayer_calculation_method';
   static const _madhabKey = 'prayer_madhab';
+  // ISO country of the last located position, so the automatic calculation
+  // method is right offline and before reverse geocoding finishes.
+  static const _countryKey = 'prayer_country_code';
+  static const _lastLatKey = 'prayer_last_latitude';
+  static const _lastLngKey = 'prayer_last_longitude';
 
   final RxString location = 'Fetching location...'.obs;
   final RxString locationError = ''.obs;
@@ -56,17 +64,29 @@ class PrayerTimesController extends GetxController {
   Timer? _timer;
   Duration? _remainingDuration;
 
-  CalculationMethod get calculationMethod {
+  /// The method the user picked in Settings, or null for automatic.
+  CalculationMethod? get manualCalculationMethod {
     final stored = VoidStorage().readData<String>(_methodKey);
-    return CalculationMethod.values.firstWhere(
-      (m) => m.name == stored,
-      orElse: () => CalculationMethod.muslim_world_league,
-    );
+    for (final m in CalculationMethod.values) {
+      if (m.name == stored) return m;
+    }
+    return null;
   }
 
-  set calculationMethod(CalculationMethod method) {
-    VoidStorage().saveData(_methodKey, method.name);
-    refresh();
+  /// What automatic mode uses for the user's current country.
+  CalculationMethod get automaticCalculationMethod =>
+      methodForCountry(VoidStorage().readData<String>(_countryKey));
+
+  CalculationMethod get calculationMethod => manualCalculationMethod ?? automaticCalculationMethod;
+
+  /// Null switches back to automatic (by country).
+  set manualCalculationMethod(CalculationMethod? method) {
+    if (method == null) {
+      VoidStorage().removeData(_methodKey);
+    } else {
+      VoidStorage().saveData(_methodKey, method.name);
+    }
+    _recomputeIfLocated();
   }
 
   Madhab get madhab {
@@ -76,7 +96,16 @@ class PrayerTimesController extends GetxController {
 
   set madhab(Madhab value) {
     VoidStorage().saveData(_madhabKey, value.name);
-    refresh();
+    _recomputeIfLocated();
+  }
+
+  /// Settings changes used to only call refresh(), which redraws widgets but
+  /// never recomputed the times - a new method/madhab showed no effect until
+  /// the next location fetch. Recompute (and reschedule Adhans) right away.
+  void _recomputeIfLocated() {
+    final lat = latitude.value;
+    final lng = longitude.value;
+    if (lat != null && lng != null) _computePrayerTimes(lat, lng);
   }
 
   @override
@@ -105,17 +134,17 @@ class PrayerTimesController extends GetxController {
         permissionPermanentlyDenied.value = true;
         locationError.value =
             'Location permission was permanently denied. Enable it from app settings.';
-        isLoading.value = false;
+        await _useCachedLocationIfAvailable();
         return;
       }
       if (permission == LocationPermission.denied) {
         locationError.value = 'Location permission is required for accurate prayer times.';
-        isLoading.value = false;
+        await _useCachedLocationIfAvailable();
         return;
       }
       if (!await Geolocator.isLocationServiceEnabled()) {
         locationError.value = 'Location services are turned off.';
-        isLoading.value = false;
+        await _useCachedLocationIfAvailable();
         return;
       }
 
@@ -130,11 +159,16 @@ class PrayerTimesController extends GetxController {
         // weak signal - fall back to the last known fix rather than
         // leaving the user staring at an infinite spinner.
         final lastKnown = await Geolocator.getLastKnownPosition();
-        if (lastKnown == null) rethrow;
+        if (lastKnown == null) {
+          await _useCachedLocationIfAvailable();
+          return;
+        }
         position = lastKnown;
       }
       latitude.value = position.latitude;
       longitude.value = position.longitude;
+      await VoidStorage().saveData(_lastLatKey, position.latitude);
+      await VoidStorage().saveData(_lastLngKey, position.longitude);
       _computePrayerTimes(position.latitude, position.longitude);
       _computeIslamicDate();
 
@@ -143,7 +177,22 @@ class PrayerTimesController extends GetxController {
             await placemarkFromCoordinates(position.latitude, position.longitude);
         if (placemarks.isNotEmpty) {
           final placemark = placemarks.first;
-          location.value = "${placemark.subLocality}, ${placemark.locality}, ${placemark.country}";
+          final country = placemark.isoCountryCode?.trim().toUpperCase() ?? '';
+          if (country.isNotEmpty && country != VoidStorage().readData<String>(_countryKey)) {
+            final before = calculationMethod;
+            await VoidStorage().saveData(_countryKey, country);
+            // Times were computed before the country was known - redo them
+            // if that changes the (automatic) method.
+            if (calculationMethod != before) _computePrayerTimes(position.latitude, position.longitude);
+          }
+          // Geocoders often leave subLocality or locality blank (or repeat
+          // the city in both), which used to render as ", Gulberg, Pakistan".
+          final parts = <String>[];
+          for (final part in [placemark.subLocality, placemark.locality, placemark.country]) {
+            final value = part?.trim() ?? '';
+            if (value.isNotEmpty && !parts.contains(value)) parts.add(value);
+          }
+          location.value = parts.isEmpty ? 'Location found (name unavailable)' : parts.join(', ');
         }
       } catch (e) {
         VoidLogger.error('Reverse geocoding failed', e);
@@ -152,14 +201,49 @@ class PrayerTimesController extends GetxController {
     } catch (e) {
       VoidLogger.error('Failed to fetch prayer times', e);
       locationError.value = 'Could not determine your location. Please try again.';
+      await _useCachedLocationIfAvailable();
     } finally {
       isLoading.value = false;
     }
   }
 
+  /// Falls back to the last successfully-fetched coordinates (persisted to
+  /// disk) so prayer times - and critically, the notifications scheduled
+  /// from them - still get set up even when a fresh location fix isn't
+  /// available right now (permission just revoked, GPS off, indoors, or an
+  /// emulator with no location at all). Without this, testers whose fix
+  /// fails for any reason got zero prayer notifications, full stop.
+  Future<void> _useCachedLocationIfAvailable() async {
+    final lat = VoidStorage().readData<double>(_lastLatKey);
+    final lng = VoidStorage().readData<double>(_lastLngKey);
+    if (lat == null || lng == null) return;
+    latitude.value = lat;
+    longitude.value = lng;
+    if (location.value == 'Fetching location...' || location.value.isEmpty) {
+      location.value = 'Using last known location';
+    }
+    _computePrayerTimes(lat, lng);
+    _computeIslamicDate();
+  }
+
+  /// Re-issues scheduled prayer notifications using whatever coordinates
+  /// are currently known, without needing a fresh location fetch. Used by
+  /// LanguageController/Settings when notification text needs to be
+  /// re-issued (e.g. after a language change) without recomputing times.
+  Future<void> rescheduleNotifications() async {
+    final lat = latitude.value;
+    final lng = longitude.value;
+    if (lat == null || lng == null) return;
+    await LocalNotificationsService().reschedulePrayerNotifications(
+      latitude: lat,
+      longitude: lng,
+      calculationMethod: calculationMethod,
+      madhab: madhab,
+    );
+  }
+
   void _computePrayerTimes(double latitude, double longitude) {
-    final params = calculationMethod.getParameters();
-    params.madhab = madhab;
+    final params = prayerParameters(calculationMethod, madhab, DateTime.now());
     final prayerTimes = PrayerTimes.today(Coordinates(latitude, longitude), params);
 
     fajrTime.value = DateFormat('hh:mm a').format(prayerTimes.fajr);
@@ -176,7 +260,13 @@ class PrayerTimesController extends GetxController {
       'Maghrib': prayerTimes.maghrib,
       'Isha': prayerTimes.isha,
     };
-    LocalNotificationsService().reschedulePrayerNotifications(prayerDateTimes.value);
+    LocalNotificationsService().reschedulePrayerNotifications(
+      latitude: latitude,
+      longitude: longitude,
+      calculationMethod: calculationMethod,
+      madhab: madhab,
+    );
+    HomeWidgetService.sync(latitude: latitude, longitude: longitude, method: calculationMethod, madhab: madhab);
 
     final now = DateTime.now().toUtc();
     String name;
@@ -231,8 +321,16 @@ class PrayerTimesController extends GetxController {
     remainingTime.value = '$h:$m:$s';
   }
 
+  /// Re-reads the Hijri date, e.g. after the Settings Hijri adjustment
+  /// changes.
+  void refreshIslamicDate() {
+    _computeIslamicDate();
+    HomeWidgetService.sync(latitude: latitude.value, longitude: longitude.value);
+  }
+
   void _computeIslamicDate() {
-    final hijriDate = HijriCalendar.fromDate(DateTime.now());
+    // Shifted by the user's moon-sighting adjustment, like the calendar.
+    final hijriDate = HijriCalendar.fromDate(DateTime.now().add(Duration(days: IslamicCalendarService.adjustment)));
     islamicDate.value = '${hijriDate.hDay} ${hijriDate.shortMonthName} ${hijriDate.hYear} AH';
     gregorianDate.value = DateFormat('EEE, dd MMM yyyy').format(DateTime.now());
   }

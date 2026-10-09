@@ -1,0 +1,341 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yunus",
+  "language": "zh",
+  "name": "优努斯",
+  "title": "左农，大鱼的伙伴",
+  "sentTo": "尼尼微的居民，十万人或者还多些",
+  "era": "《古兰经》和圣训没有说明年代；历史学家把他置于公元前8世纪。",
+  "places": [
+    {
+      "name": "大多数学者认为是尼尼微，位于今天伊拉克摩苏尔的对面。",
+      "lat": 36.36,
+      "lng": 43.15,
+      "approximate": true
+    }
+  ],
+  "summary": "优努斯在真主允许之前就愤然离开了他的族人。他被人从船上扔下，被一条大鱼吞下，在黑暗中他呼求道：“除你之外，绝无应受崇拜的；赞你超绝；我确是不义的。”真主拯救了他，他的全族都信道了。",
+  "notes": [
+    "《古兰经》没有提到城市的名字；尼尼微这个名字来自历史和《圣经》。",
+    "优努斯在鱼腹中待了多久，《古兰经》和可靠的圣训都没有说明；传述从一天中的一段时间到四十天不等。",
+    "“他猜想我绝不能处罚他”（21:87）：学者们解释为“他以为我不会使他为难”，而不是说他怀疑真主的能力。",
+    "优努斯著名的祈祷词见于《古兰经》（21:87）。提尔密济的圣训集中有一段关于其优越性的圣训；引用之前应当核实。"
+  ],
+  "chapters": [
+    {
+      "id": "yunus-1",
+      "title": "愤然离去",
+      "paragraphs": [
+        "真主派优努斯（愿主赐他平安）去一座有十万或更多人口的大城。他号召他们归向真主，但他们没有响应。",
+        "优努斯对他们很生气，在真主允许之前就离开了。他到了海边，登上一艘满载的船。",
+        "《古兰经》称他为“大鱼的伙伴”：他愤然离去，以为真主不会追究他。他的故事告诉我们，即使是先知也必须等待真主的命令。"
+      ],
+      "kidsParagraphs": [
+        "真主派优努斯去一座大城。人们不听，优努斯生气地离开了。",
+        "他没有等待真主的允许，就上了一艘船。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 147
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 139,
+          "ayahEnd": 140
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "对人要有耐心，要等待真主的命令。",
+        "愤怒会使我们做出草率的决定。",
+        "号召人归向真主需要耐心，而不是烦躁。"
+      ],
+      "quiz": [
+        {
+          "question": "优努斯被派往多少人那里？",
+          "options": [
+            "十万人或者还多些",
+            "十个人",
+            "一千人",
+            "七十人"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:147"
+        },
+        {
+          "question": "优努斯为什么离开他的族人？",
+          "options": [
+            "他对他们很生气",
+            "他被派往埃及",
+            "他生病了",
+            "他想经商"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "优努斯离开后去了哪里？",
+          "options": [
+            "登上一艘满载的船",
+            "上了一座山",
+            "进了一个山洞",
+            "去了沙漠"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:140"
+        }
+      ]
+    },
+    {
+      "id": "yunus-2",
+      "title": "在鱼腹中",
+      "paragraphs": [
+        "在海上，船上的人抽签，优努斯是输了的人之一。他被扔进海里，一条大鱼吞下了他。",
+        "在夜晚、大海和鱼腹的重重黑暗中，优努斯呼求道：“除你之外，绝无应受崇拜的；赞你超绝；我确是不义的。”",
+        "真主说，如果优努斯不是赞颂真主的人，他必定要在鱼腹中待到复活日。但真主应答了他，把他从忧愁中拯救出来：“我这样拯救信士们。”"
+      ],
+      "kidsParagraphs": [
+        "优努斯被扔进海里，一条大鱼吞下了他！",
+        "在黑暗中，优努斯祈祷：“除你之外没有应受崇拜的，赞你超绝，我做错了。”真主就拯救了他。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 141,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 143,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        }
+      ],
+      "lessons": [
+        "没有任何黑暗深到真主听不见我们的祈祷。",
+        "向真主承认你的错误，并赞颂祂。",
+        "在顺境中记念真主，会在逆境中帮助我们。"
+      ],
+      "quiz": [
+        {
+          "question": "是什么吞下了优努斯？",
+          "options": [
+            "一条大鱼",
+            "一个浪头",
+            "一个山洞",
+            "一条鳄鱼"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:142"
+        },
+        {
+          "question": "优努斯在黑暗中说了什么？",
+          "options": [
+            "除你之外，绝无应受崇拜的；赞你超绝；我确是不义的",
+            "人们啊，救救我",
+            "为什么是我？",
+            "什么也没说"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "真主说祂对像优努斯这样的信士怎样做？",
+          "options": [
+            "拯救他们",
+            "忘记他们",
+            "惩罚他们",
+            "抛弃他们"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:88"
+        }
+      ]
+    },
+    {
+      "id": "yunus-3",
+      "title": "全城都信道了",
+      "paragraphs": [
+        "真主把虚弱生病的优努斯抛在一片空旷的海滩上，并使一株葫芦在他上方生长，为他遮阴。",
+        "然后真主派他回到他的族人那里，这一次他们全都信道了。真主为他们解除了惩罚，让他们享受生活到一定期限。《古兰经》说，除了优努斯的族人以外，没有任何一个在最后一刻信道的城市因信仰而得到这样的益处。",
+        "真主吩咐先知穆罕默德ﷺ要坚忍，不要像那位大鱼的伙伴在忧愁中呼求时那样。后来真主拣选了优努斯，使他成为清廉者之一。"
+      ],
+      "kidsParagraphs": [
+        "大鱼把优努斯放在海滩上，一株植物长出来为他遮阴。",
+        "优努斯回去后，城里的每个人都信道了！真主饶恕了他们。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 145,
+          "ayahEnd": 146
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 10,
+          "ayahStart": 98,
+          "ayahEnd": 98
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 68,
+          "ayahStart": 48,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "永远不要对人绝望；人心是可以改变的。",
+        "真主给归向祂的人第二次机会。",
+        "在号召人时，耐心胜过草率的愤怒。"
+      ],
+      "quiz": [
+        {
+          "question": "在海滩上，什么在优努斯上方生长？",
+          "options": [
+            "一株葫芦",
+            "一棵椰枣树",
+            "青草",
+            "一棵无花果树"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:146"
+        },
+        {
+          "question": "优努斯的族人做了什么？",
+          "options": [
+            "他们信道了",
+            "他们离开了城市",
+            "他们和他作战",
+            "什么也没做"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:148"
+        },
+        {
+          "question": "根据10:98，哪个民族在最后一刻的信仰使他们受益？",
+          "options": [
+            "优努斯的族人",
+            "努哈的族人",
+            "法老的百姓",
+            "阿德人"
+          ],
+          "answer": 0,
+          "reference": "Quran 10:98"
+        }
+      ]
+    },
+    {
+      "id": "yunus-4",
+      "title": "不要说你比优努斯更好",
+      "paragraphs": [
+        "因为优努斯犯过错误，有些人可能会轻视他。先知ﷺ禁止这样做：“任何仆人都不应说：我比优努斯·本·马塔更好。”",
+        "优努斯真诚地悔过了，真主拣选了他，使他成为清廉者之一。他在黑暗中的祈祷，至今仍是每一个身处困境的信士的祈祷。"
+      ],
+      "kidsParagraphs": [
+        "我们的先知ﷺ说：“任何人都不应说：我比优努斯更好。”",
+        "优努斯向真主认错，真主使他成为清廉者之一。"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3416",
+          "narrator": "艾布·胡莱赖",
+          "translation": "先知ﷺ说：“任何仆人都不应当说：我比优努斯·本·马塔更好。”",
+          "match": "لا ينبغي لعبد ان يقول انا خير من يونس بن متى"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 68,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "要尊重所有的先知。",
+        "犯错之后悔过，不会降低一个人在真主那里的地位。",
+        "不要因别人已经悔改的过去的罪而轻视他。"
+      ],
+      "quiz": [
+        {
+          "question": "先知ﷺ说任何仆人都不应当说什么？",
+          "options": [
+            "我比优努斯·本·马塔更好",
+            "我爱优努斯",
+            "优努斯是先知",
+            "优努斯很坚忍"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        },
+        {
+          "question": "优努斯悔过后，真主为他做了什么？",
+          "options": [
+            "拣选了他，使他成为清廉者之一",
+            "使他成为国王",
+            "给了他一艘船",
+            "什么也没做"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:50"
+        },
+        {
+          "question": "根据圣训，优努斯的父亲叫什么名字？",
+          "options": [
+            "马塔",
+            "叶尔孤白",
+            "伊姆兰",
+            "易卜拉欣"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        }
+      ]
+    }
+  ]
+}

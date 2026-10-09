@@ -1,0 +1,357 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "lut",
+  "language": "zh",
+  "name": "鲁特",
+  "title": "易卜拉欣（愿主赐他平安）的侄子，被派往一座堕落的城市",
+  "sentTo": "死海附近诸城的居民，他生活在他们中间",
+  "era": "易卜拉欣（愿主赐他平安）的时代，鲁特是他的侄子。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "鲁特族人的城市，传统上认为在死海附近。《古兰经》说它们位于一条人们至今仍在行走的道路上（15:76）。",
+      "lat": 31.3,
+      "lng": 35.45,
+      "approximate": true
+    }
+  ],
+  "summary": "鲁特信了他的伯父易卜拉欣（愿主赐他平安），并与他一起迁徙。真主派他去一个民族，他们犯下了以前没有人犯过的可耻罪行，并拒绝一切警告。天使们来拯救鲁特和他的家人，那些城市被翻覆了。只有他的妻子，因为站在不义者一边，没有得救。",
+  "notes": [
+    "所多玛和蛾摩拉这两个名字不在《古兰经》中；它们来自《圣经》。",
+    "“这些是我的女儿们”（11:78，15:71）：许多学者说，鲁特指的是他族中的妇女，因为先知就像他民族的父亲，他是在号召他们合法地结婚。另一些人说他指的是以婚姻方式嫁出自己的女儿。",
+    "鲁特的妻子：《圣经》说她因回头看而变成了一根盐柱。《古兰经》只说她是留在后面而被毁灭的人之一。",
+    "这里用适合各年龄层的笼统语言讲述这个故事；家长可以按自己认为合适的方式解释细节。"
+  ],
+  "chapters": [
+    {
+      "id": "lut-1",
+      "title": "鲁特信道并迁徙",
+      "paragraphs": [
+        "当易卜拉欣（愿主赐他平安）号召他的族人归向真主，并从火中得救时，有一个年轻人信了他：他的侄子鲁特。易卜拉欣说：“我要迁移到我的主那里去。”真主把他们两人带到了吉祥的土地。",
+        "后来，真主使鲁特成为先知，派他到附近几座城市的人那里去。他们陷入了一种世界上以前没有任何民族犯过的可耻罪行：男人不爱女人而爱男人。他们还在集会中公开作恶。",
+        "鲁特一次又一次地警告他们。他们的回答是：“把他们赶出你们的城市！他们是想保持纯洁的人。”"
+      ],
+      "kidsParagraphs": [
+        "鲁特信了他的伯父易卜拉欣，为了真主和他一起远行。",
+        "真主派鲁特去一个做非常可耻之事的民族。鲁特警告他们时，他们想把他赶出城去。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 80,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 82,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "信仰有时意味着为了真主而离开熟悉的地方。",
+        "号召行善也包括警告人们远离可耻之事。",
+        "不义的人常常仅仅因为别人想保持纯洁而攻击他们。"
+      ],
+      "quiz": [
+        {
+          "question": "鲁特（愿主赐他平安）是谁的侄子？",
+          "options": [
+            "努哈（愿主赐他平安）",
+            "易卜拉欣（愿主赐他平安）",
+            "穆萨（愿主赐他平安）",
+            "优素福（愿主赐他平安）"
+          ],
+          "answer": 1,
+          "reference": "Quran 29:26"
+        },
+        {
+          "question": "鲁特的族人怎样说他和他的家人？",
+          "options": [
+            "他们是想保持纯洁的人",
+            "他们很富有",
+            "他们是国王",
+            "他们是外乡人"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:82"
+        },
+        {
+          "question": "鲁特的族人想对他做什么？",
+          "options": [
+            "让他当国王",
+            "把他赶出城",
+            "送他礼物",
+            "跟随他"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:82"
+        }
+      ]
+    },
+    {
+      "id": "lut-2",
+      "title": "客人们",
+      "paragraphs": [
+        "给易卜拉欣带来易司哈格喜讯的天使们告诉他，他们要到鲁特的族人那里去。易卜拉欣说：“可是鲁特在那里啊！”他们回答说，他们会拯救他和他的家人，只有他的妻子除外。",
+        "天使们以英俊青年的样子来到鲁特那里。鲁特为他的客人们深感忧虑，因为他了解他的族人。他说：“这是艰难的一天。”",
+        "他的族人急忙赶到他家。鲁特恳求他们敬畏真主，不要在客人面前羞辱他，并指引他们去合法地结婚。他们拒绝了。孤立无援的鲁特说：“但愿我有力量对付你们，或者能投靠一个坚强的支柱！”"
+      ],
+      "kidsParagraphs": [
+        "天使们以男人的样子来到鲁特那里。鲁特担心他的族人会伤害他的客人。",
+        "鲁特说：“你们要敬畏真主！不要在客人面前羞辱我。”他觉得很孤单，但真主与他同在。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 31,
+          "ayahEnd": 32
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 77,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 68,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        }
+      ],
+      "lessons": [
+        "保护客人是关乎荣誉和信仰的事。",
+        "信士永远不会真正孤单：真主是最坚强的支柱。",
+        "对真主的敬畏应当在我们伤害他人之前阻止我们。"
+      ],
+      "quiz": [
+        {
+          "question": "谁拜访了鲁特？",
+          "options": [
+            "商人",
+            "天使",
+            "国王",
+            "牧人"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "鲁特怎样形容客人到来的那一天？",
+          "options": [
+            "快乐的一天",
+            "艰难的一天",
+            "节日",
+            "幸运的一天"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "天使们说他们不会拯救谁？",
+          "options": [
+            "鲁特的妻子",
+            "鲁特的女儿们",
+            "鲁特",
+            "易卜拉欣"
+          ],
+          "answer": 0,
+          "reference": "Quran 29:32"
+        }
+      ]
+    },
+    {
+      "id": "lut-3",
+      "title": "连夜出走",
+      "paragraphs": [
+        "这时天使们表明了身份：“鲁特啊！我们是你的主派来的使者。他们绝不能伤害你。”他们让他在夜里带着家人离开，走在家人后面，并且谁也不要回头。",
+        "惩罚将在清晨降临。鲁特带着他信道的家人出发了。他的妻子不在得救的人之中；她站在了不义者一边。",
+        "先知穆罕默德ﷺ说：“愿真主怜悯鲁特，他确实是在投靠一个坚强的支柱。”换句话说，鲁特从来不是真正孤单的：他的支柱就是真主。"
+      ],
+      "kidsParagraphs": [
+        "天使们说：“鲁特，不要害怕！夜里带着你的家人离开，不要回头。”",
+        "先知ﷺ说，鲁特有一个坚强的支柱：真主！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 81,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 65,
+          "ayahEnd": 66
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "艾布·胡莱赖",
+          "translation": "真主的使者ﷺ说：“……愿真主怜悯鲁特，他确实是在投靠一个坚强的支柱……”",
+          "match": "ويرحم الله لوطا لقد كان ياوي الى ركن شديد",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "真主的援助总在恰当的时候到来。",
+        "要准确地遵守真主的指示，即使是像“不要回头”这样的小事。",
+        "真主是信士最坚强的支柱。"
+      ],
+      "quiz": [
+        {
+          "question": "鲁特和他的家人什么时候离开的？",
+          "options": [
+            "中午",
+            "夜里",
+            "一周以后",
+            "他们从未离开"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:81"
+        },
+        {
+          "question": "惩罚什么时候降临？",
+          "options": [
+            "清晨",
+            "日落时",
+            "一年以后",
+            "半夜"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:66"
+        },
+        {
+          "question": "根据先知ﷺ，鲁特在投靠什么？",
+          "options": [
+            "他的部落",
+            "一个坚强的支柱",
+            "一个山洞",
+            "一艘船"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3372"
+        }
+      ]
+    },
+    {
+      "id": "lut-4",
+      "title": "给有理智者的迹象",
+      "paragraphs": [
+        "日出时，一声可怕的巨响袭击了他们，真主把他们的城市翻了个底朝天，并向他们降下了烧过的泥石，那是在他们的主那里做了标记的。",
+        "真主拯救了鲁特和他的全家，只有他的妻子除外。《古兰经》把她和努哈的妻子一起作为例子，说明有些人虽然和清廉的先知生活在一起，却仍然不信。",
+        "《古兰经》说，这些城市的废墟位于一条人们至今仍在行走的道路上，阿拉伯人早晚都从旁边经过。“难道你们还不理解吗？”"
+      ],
+      "kidsParagraphs": [
+        "真主把他们的城市翻覆了。只有鲁特和信士们得救。",
+        "真主留下他们的废墟，作为给思考者的教训。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 82,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 73,
+          "ayahEnd": 74
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 133,
+          "ayahEnd": 136
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 137,
+          "ayahEnd": 138
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 76,
+          "ayahEnd": 77
+        }
+      ],
+      "lessons": [
+        "每一种坚持不改并公开传播的罪行，都会招致真主的惩罚。",
+        "亲属关系不能救人；信仰才能救人。",
+        "历史中充满了给思考者的迹象。"
+      ],
+      "quiz": [
+        {
+          "question": "真主向鲁特的族人降下了什么？",
+          "options": [
+            "水",
+            "烧过的泥石",
+            "火",
+            "雪"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:82"
+        },
+        {
+          "question": "鲁特的家人中谁没有得救？",
+          "options": [
+            "他的妻子",
+            "他的女儿们",
+            "鲁特",
+            "没有人"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:135"
+        },
+        {
+          "question": "巨响是什么时候袭击他们的？",
+          "options": [
+            "日出时",
+            "半夜",
+            "中午",
+            "日落时"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:73"
+        }
+      ]
+    }
+  ]
+}

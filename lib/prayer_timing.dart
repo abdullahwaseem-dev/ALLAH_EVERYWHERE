@@ -1,5 +1,6 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
 import 'package:allah_everywhere/data/prayer_reminders_data.dart';
 import 'package:allah_everywhere/settings.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class PrayerTimingScreen extends StatelessWidget {
   const PrayerTimingScreen({super.key});
@@ -17,7 +19,7 @@ class PrayerTimingScreen extends StatelessWidget {
     // agree on the same computed times.
     final controller = Get.isRegistered<PrayerTimesController>()
         ? Get.find<PrayerTimesController>()
-        : Get.put(PrayerTimesController());
+        : Get.put(PrayerTimesController(), permanent: true);
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
@@ -30,7 +32,7 @@ class PrayerTimingScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SafeArea(
+      body: ReadableWidth(child: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
           child: Column(
@@ -112,10 +114,11 @@ class PrayerTimingScreen extends StatelessWidget {
                         children: [
                           Icon(Iconsax.timer_1, size: 14.sp, color: VoidColors.goldDark),
                           SizedBox(width: 6.w),
-                          Text(
-                            'in ${controller.remainingTime.value}',
-                            style: TextStyle(color: VoidColors.goldDark, fontSize: 14.sp, fontWeight: FontWeight.w700),
-                          ),
+                          // Own Obx so the per-second tick rebuilds only this.
+                          Obx(() => Text(
+                                'in ${controller.remainingTime.value}',
+                                style: TextStyle(color: VoidColors.goldDark, fontSize: 14.sp, fontWeight: FontWeight.w700),
+                              )),
                           const Spacer(),
                           Text(
                             controller.nextPrayerTime.value,
@@ -171,19 +174,21 @@ class PrayerTimingScreen extends StatelessWidget {
               SizedBox(height: 16.h),
 
               // Calculation method glance - full control lives in Settings.
-              InkWell(
-                borderRadius: BorderRadius.circular(18.r),
-                onTap: () => Get.to(() => SettingsScreen()),
-                child: Container(
-                  width: double.infinity,
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18.r),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+                  ],
+                ),
+                child: PressableTile(
+                  color: cardColor,
+                  borderRadius: BorderRadius.circular(18.r),
+                  semanticLabel: '${controller.calculationMethod.name} · ${controller.madhab.name} Asr',
+                  onTap: () => Get.to(() => SettingsScreen()),
+                  child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
-                  decoration: BoxDecoration(
-                    color: cardColor,
-                    borderRadius: BorderRadius.circular(18.r),
-                    boxShadow: [
-                      BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
-                    ],
-                  ),
                   child: Row(
                     children: [
                       Icon(Iconsax.setting_4, size: 16.sp, color: accent),
@@ -196,6 +201,7 @@ class PrayerTimingScreen extends StatelessWidget {
                       ),
                       Icon(Iconsax.arrow_right_3, size: 14.sp, color: subColor),
                     ],
+                  ),
                   ),
                 ),
               ),
@@ -244,7 +250,7 @@ class PrayerTimingScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
+      )),
     );
   }
 }

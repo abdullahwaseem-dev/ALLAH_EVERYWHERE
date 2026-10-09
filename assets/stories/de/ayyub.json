@@ -1,0 +1,249 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ayyub",
+  "language": "de",
+  "name": "Ayyub",
+  "title": "Der Geduldige, ein vortrefflicher Diener",
+  "sentTo": "Sein Volk; der Koran nennt es nicht",
+  "era": "Ungewiss. Viele Gelehrte zählen ihn zu den Nachkommen Ishaqs (a.s.), vielleicht vor Musa (a.s.); Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Nicht sicher bekannt. Manche Berichte verorten ihn im Hauran im Süden Syriens.",
+      "lat": 32.75,
+      "lng": 36.3,
+      "approximate": true
+    }
+  ],
+  "summary": "Ein Prophet, den Allah mit schwerer Krankheit und dem Verlust seiner Familie und seines Besitzes prüfte. Er klagte nur Allah, und Allah erhörte sein Gebet, heilte ihn und gab ihm seine Familie zurück und noch einmal so viele dazu. Der Koran nennt ihn einen vortrefflichen Diener, der sich stets Allah zuwandte.",
+  "notes": [
+    "Wie lange Ayyubs Krankheit dauerte (oft heißt es 18 Jahre), was sie war und Einzelheiten wie das Verlassenwerden durch die Menschen stammen aus Berichten, die nicht im Koran oder in authentischen Hadithen stehen. Der Koran sagt nur, dass Schaden und Mühsal ihn trafen.",
+    "Der Schwur in 38:44 und das Bündel Gras: Der Koran sagt nicht, was der Schwur war. Viele Kommentatoren sagen, er habe geschworen, seine Frau wegen etwas, das sie gesagt hatte, zu schlagen, und es sei ihm erlaubt worden, den Schwur sanft zu erfüllen; diese Erklärung stammt aus Berichten, nicht aus authentischen Hadithen.",
+    "Seine Stellung in der Reihenfolge der Propheten ist ungefähr."
+  ],
+  "chapters": [
+    {
+      "id": "ayyub-1",
+      "title": "Eine Prüfung der Geduld",
+      "paragraphs": [
+        "Ayyub (a.s.) war ein Prophet, den Allah segnete und dann prüfte. Er wurde an seinem Körper geschädigt und verlor, was er besaß, doch er klagte nicht bei den Menschen und verlor nicht die Hoffnung.",
+        "Er rief seinen Herrn mit großer Höflichkeit an: „Schaden hat mich getroffen, und Du bist der Barmherzigste der Barmherzigen.“ Er bat nicht direkt um Heilung; er beschrieb nur seine Not Dem, Der es am besten weiß, und erwähnte Seine Barmherzigkeit.",
+        "Er sagte auch: „Schaitan hat mich mit Mühsal und Pein getroffen.“ Die Gelehrten erklären, dass die Propheten Schaden aus Anstand gegenüber Allah dem Schaitan zuschrieben, obwohl sie wussten, dass alles nach Allahs Bestimmung geschieht."
+      ],
+      "kidsParagraphs": [
+        "Ayyub wurde sehr krank und verlor vieles. Aber er blieb geduldig.",
+        "Er betete sanft: „Schaden hat mich getroffen, und Du bist der Barmherzigste.“ Er vertraute Allah vollkommen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 83,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 41,
+          "ayahEnd": 41
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Volkstümliche Geschichten sagen, Ayyub sei achtzehn Jahre krank gewesen, sein Körper sei mit Würmern bedeckt gewesen und alle außer seiner Frau hätten ihn verlassen."
+        }
+      ],
+      "lessons": [
+        "Geduld heißt, nicht bei den Menschen zu klagen, sondern sich Allah zuzuwenden.",
+        "Gute Manieren im Bittgebet: Allah preisen und Seine Barmherzigkeit erwähnen.",
+        "Prüfungen können die besten Menschen treffen."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Ayyub in seinem Gebet?",
+          "options": [
+            "Warum ich?",
+            "Schaden hat mich getroffen, und Du bist der Barmherzigste der Barmherzigen",
+            "Gib mir Reichtum",
+            "Bestrafe meine Feinde"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Wem klagte Ayyub?",
+          "options": [
+            "Seinem Volk",
+            "Allah allein",
+            "Den Ärzten",
+            "Dem König"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Womit hatte Schaitan Ayyub laut seinen Worten getroffen?",
+          "options": [
+            "Mit Mühsal und Pein",
+            "Mit Reichtum",
+            "Mit Freude",
+            "Mit Schlaf"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:41"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-2",
+      "title": "Eine kühle Quelle",
+      "paragraphs": [
+        "Allah antwortete ihm: „Stampfe mit deinem Fuß auf den Boden. Hier ist kühles Wasser zum Waschen und zum Trinken.“ Ayyub wurde geheilt.",
+        "Allah gab ihm seine Familie zurück und noch einmal so viele dazu, als Barmherzigkeit von Ihm und als Ermahnung für die Verständigen.",
+        "Allah gab ihm auch einen Weg, einen Schwur zu erfüllen, ohne Schaden anzurichten: ein Bündel Gras in die Hand zu nehmen und damit zu schlagen. Und Allah lobte ihn: „Wir fanden ihn geduldig. Welch vortrefflicher Diener! Er wandte sich stets Allah zu.“"
+      ],
+      "kidsParagraphs": [
+        "Allah sagte Ayyub: „Stampfe mit dem Fuß auf den Boden.“ Eine kühle Quelle sprudelte hervor, er wusch sich, trank und wurde gesund!",
+        "Allah gab ihm seine Familie zurück und noch mehr. Allah nannte ihn „einen vortrefflichen Diener“."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 42,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 43,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        }
+      ],
+      "lessons": [
+        "Nach der Not kommt Erleichterung durch Allahs Barmherzigkeit.",
+        "Allah gibt den Geduldigen mehr zurück, als sie verloren haben.",
+        "„Ein vortrefflicher Diener“ zu sein, ist das größte Lob."
+      ],
+      "quiz": [
+        {
+          "question": "Was sollte Ayyub auf Allahs Befehl tun?",
+          "options": [
+            "Mit dem Fuß auf den Boden stampfen",
+            "Nach Ägypten reisen",
+            "Ein Haus bauen",
+            "Einen Berg besteigen"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Was kam aus dem Boden?",
+          "options": [
+            "Gold",
+            "Kühles Wasser zum Waschen und Trinken",
+            "Feuer",
+            "Früchte"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Wie beschrieb Allah Ayyub?",
+          "options": [
+            "Geduldig, ein vortrefflicher Diener",
+            "Ein großer König",
+            "Ein reicher Kaufmann",
+            "Ein Krieger"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:44"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-3",
+      "title": "Nie ohne Allahs Segen",
+      "paragraphs": [
+        "Der Prophet ﷺ erzählte uns, dass einmal, als Ayyub sich wusch, goldene Heuschrecken auf ihn fielen und er begann, sie in sein Gewand zu sammeln.",
+        "Sein Herr rief ihm zu: „O Ayyub, habe Ich dich nicht reich genug gemacht, dass du das, was du siehst, nicht brauchst?“ Ayyub antwortete: „Doch, bei Deiner Macht! Aber auf Deinen Segen kann ich niemals verzichten.“",
+        "Ayyub war geduldig in Armut und Krankheit gewesen, und er war dankbar im Reichtum. Er wusste, dass alles Gute von Allah kommt und dass ein Diener immer mehr von Seinem Segen braucht."
+      ],
+      "kidsParagraphs": [
+        "Einmal fielen goldene Heuschrecken auf Ayyub, und er sammelte sie.",
+        "Allah fragte: „Habe Ich dich nicht reich gemacht?“ Ayyub sagte: „Doch! Aber ich brauche immer Deinen Segen.“"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "279",
+          "narrator": "Abu Huraira",
+          "translation": "Der Prophet ﷺ sagte: „Während Ayyub sich unbekleidet wusch, fielen goldene Heuschrecken auf ihn, und Ayyub begann, sie mit vollen Händen in sein Gewand zu raffen. Sein Herr rief ihm zu: ‚O Ayyub, habe Ich dich nicht reich genug gemacht, dass du das, was du siehst, nicht brauchst?‘ Er sagte: ‚Doch, bei Deiner Macht! Aber auf Deinen Segen kann ich niemals verzichten.‘“",
+          "match": "بينا ايوب يغتسل عريانا فخر عليه جراد من ذهب"
+        }
+      ],
+      "lessons": [
+        "Sei geduldig in der Not und dankbar im Wohlstand.",
+        "Wir brauchen immer Allahs Segen, wie viel wir auch haben.",
+        "Reichtum, der von Allah kommt, ist ein Segen, den man mit Dank empfängt."
+      ],
+      "quiz": [
+        {
+          "question": "Was fiel auf Ayyub, als er sich wusch?",
+          "options": [
+            "Goldene Heuschrecken",
+            "Regen",
+            "Datteln",
+            "Steine"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Worauf konnte Ayyub laut seinen Worten niemals verzichten?",
+          "options": [
+            "Auf seine Familie",
+            "Auf Allahs Segen",
+            "Auf Wasser",
+            "Auf Gold"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Ayyub war geduldig in Krankheit und … im Reichtum.",
+          "options": [
+            "Stolz",
+            "Dankbar",
+            "Sorglos",
+            "Ängstlich"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        }
+      ]
+    }
+  ]
+}

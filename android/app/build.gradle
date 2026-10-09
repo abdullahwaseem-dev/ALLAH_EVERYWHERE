@@ -69,18 +69,6 @@ flutter {
     source = "../.."
 }
 
-// url_launcher_android's transitive androidx.browser/androidx.core versions
-// require Android Gradle plugin 8.9.1+, but this project is still on 8.7.0.
-// Pin them to the last versions that don't have that requirement rather than
-// bumping AGP (a much larger change) just for this.
-configurations.all {
-    resolutionStrategy {
-        force 'androidx.browser:browser:1.8.0'
-        force 'androidx.core:core:1.13.1'
-        force 'androidx.core:core-ktx:1.13.1'
-    }
-}
-
 dependencies {
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:2.1.4"
 }

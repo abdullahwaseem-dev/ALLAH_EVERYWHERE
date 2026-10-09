@@ -14,7 +14,9 @@ class AiQaController extends GetxController {
 
   final RxList<AiAnswer> history = <AiAnswer>[].obs;
   final RxBool isLoading = false.obs;
-  final RxString errorMessage = ''.obs;
+  /// Why the last question failed, or null. The screen maps it to a
+  /// localized message.
+  final Rx<AiErrorKind?> error = Rx<AiErrorKind?>(null);
 
   User? get _user => FirebaseAuth.instance.currentUser;
 
@@ -58,17 +60,30 @@ class AiQaController extends GetxController {
     if (question.trim().isEmpty) return;
 
     isLoading.value = true;
-    errorMessage.value = '';
+    error.value = null;
+    final AiAnswer answer;
     try {
-      final answer =
-          await AiFatwaService.instance.ask(question.trim(), category: category);
-      history.insert(0, answer);
-      await _persist(answer);
+      answer = await AiFatwaService.instance.ask(question.trim(), category: category);
+    } on AiServiceException catch (e) {
+      VoidLogger.error('AI Q&A request failed', e);
+      error.value = e.kind;
+      return;
     } catch (e) {
       VoidLogger.error('AI Q&A request failed', e);
-      errorMessage.value = 'Something went wrong. Please try again.';
+      error.value = AiErrorKind.unavailable;
+      return;
     } finally {
       isLoading.value = false;
+    }
+
+    history.insert(0, answer);
+    // Saving history is separate from answering: the answer is already on
+    // screen, so a failed save (offline Firestore, rules) must not show an
+    // error - that made every answer look like a failure.
+    try {
+      await _persist(answer);
+    } catch (e) {
+      VoidLogger.error('Failed to save AI answer to history', e);
     }
   }
 
