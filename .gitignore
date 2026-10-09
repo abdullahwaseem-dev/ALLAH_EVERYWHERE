@@ -57,3 +57,13 @@ app.*.map.json
 
 # Firestore rules tests (firestore-tests/) and Cloud Functions dependencies
 node_modules/
+
+# Not part of the app: planning notes, marketing and store material,
+# screenshot helpers, editor settings and logs (kept locally only)
+/NEXT_UPDATE_PROMPTS.md
+/marketing/
+/store_listing/
+/integration_test/screenshot_tour_test.dart
+/integration_test/store_shots_tmp_test.dart
+/.vscode/
+*.log
