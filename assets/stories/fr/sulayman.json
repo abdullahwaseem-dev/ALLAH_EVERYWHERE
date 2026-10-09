@@ -1,0 +1,429 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "sulayman",
+  "language": "fr",
+  "name": "Sulayman",
+  "title": "Le roi qui reçut un royaume sans pareil",
+  "sentTo": "Les Enfants d'Israël, et d'autres sous son autorité, dont le peuple de Saba'",
+  "era": "Le fils de Dawud (paix sur lui). Les historiens le datent généralement du Xe siècle av. J.-C. ; le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Jérusalem (al-Quds), où il régna.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    },
+    {
+      "name": "Saba', le royaume de la reine, généralement situé au Yémen, autour de Ma'rib.",
+      "lat": 15.43,
+      "lng": 45.32,
+      "approximate": true
+    }
+  ],
+  "summary": "Sulayman hérita de son père Dawud la prophétie et la royauté. Allah lui enseigna le langage des oiseaux et lui soumit le vent et les djinns. Il entendit une fourmi parler, envoya une lettre à la reine de Saba' et la vit embrasser l'islam. À travers tout cela, il resta un serviteur reconnaissant, toujours tourné vers Allah.",
+  "notes": [
+    "La reine de Saba' n'est pas nommée dans le Coran ; le nom de Bilqis vient de récits tardifs.",
+    "Les chevaux de 38:31-33 : les savants divergent sur la question de savoir si Sulayman les frappa (en offrande) ou leur caressa les jambes et l'encolure.",
+    "« Nous avons placé sur son trône un corps » (38:34) : les savants l'expliquent de diverses façons ; certains le relient à un hadith authentique d'al-Bukhari où Sulayman oublia de dire « in sha Allah ». Les histoires d'un démon qui vola son anneau et s'assit sur son trône viennent des Gens du Livre et ont été rejetées par des savants comme Ibn Kathir.",
+    "Sulayman ne pratiqua jamais la magie : le Coran l'en innocente (2:102)."
+  ],
+  "chapters": [
+    {
+      "id": "sulayman-1",
+      "title": "Le fils sage d'un père sage",
+      "paragraphs": [
+        "Sulayman (paix sur lui) hérita de son père Dawud la prophétie, la science et la royauté. Le père et le fils dirent ensemble : « Louange à Allah, qui nous a favorisés sur beaucoup de Ses serviteurs croyants. »",
+        "Dès sa jeunesse, Allah donna à Sulayman une compréhension particulière. Un jour, un troupeau de moutons s'égara la nuit dans le champ de quelqu'un et dévora la récolte ; Allah fit comprendre à Sulayman comment juger l'affaire, tout en donnant à lui et à Dawud sagesse et science.",
+        "Le Prophète ﷺ raconta l'histoire de deux femmes accompagnées de leurs fils, quand un loup emporta l'un des garçons. Chacune réclama l'enfant vivant. Dawud jugea en faveur de l'aînée. Sulayman dit : « Apportez-moi un couteau, je vais le couper en deux entre elles. » La plus jeune s'écria : « Ne fais pas cela ! C'est son fils ! » Sulayman sut ainsi qu'elle était la mère, et lui donna l'enfant."
+      ],
+      "kidsParagraphs": [
+        "Sulayman était le fils de Dawud. Allah leur donna à tous deux la sagesse.",
+        "Deux femmes se disputaient un bébé. Sulayman dit qu'il allait couper le bébé en deux. La vraie mère cria : « Non ! Donne-le-lui ! » Sulayman sut alors qu'elle était la vraie mère."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 15,
+          "ayahEnd": 16
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 78,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "6769",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Il y avait deux femmes, chacune avec son fils. Un loup vint et emporta le fils de l'une d'elles. L'une dit à l'autre : “C'est ton fils qu'il a emporté”, et l'autre dit : “C'est ton fils qu'il a emporté.” Elles portèrent l'affaire devant Dawud (paix sur lui), qui jugea en faveur de l'aînée. Puis elles allèrent trouver Sulayman fils de Dawud (paix sur eux) et l'en informèrent. Il dit : “Apportez-moi un couteau, je vais le couper en deux entre elles.” La plus jeune dit : “Ne fais pas cela, qu'Allah te fasse miséricorde ! C'est son fils.” Il jugea donc en faveur de la plus jeune. »",
+          "match": "كانت امراتان معهما ابناهما جاء الذئب فذهب بابن احداهما"
+        }
+      ],
+      "lessons": [
+        "La sagesse est un don d'Allah, parfois accordé même aux jeunes.",
+        "Un bon juge cherche la vérité cachée dans les cœurs.",
+        "Remercie Allah pour chaque bienfait, comme Dawud et Sulayman."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'hérita Sulayman de Dawud ?",
+          "options": [
+            "La prophétie, la science et la royauté",
+            "Seulement de l'or",
+            "Un navire",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        },
+        {
+          "question": "Comment Sulayman trouva-t-il la vraie mère ?",
+          "options": [
+            "Il dit qu'il couperait l'enfant en deux",
+            "Il interrogea l'enfant",
+            "Il regarda leurs vêtements",
+            "Il interrogea les voisins"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 6769"
+        },
+        {
+          "question": "Que firent les moutons dans le champ ?",
+          "options": [
+            "Ils s'y égarèrent la nuit",
+            "Ils le gardèrent",
+            "Ils l'arrosèrent",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:78"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-2",
+      "title": "La vallée des fourmis",
+      "paragraphs": [
+        "Sulayman dit : « Ô gens, on nous a enseigné le langage des oiseaux, et on nous a donné de toute chose. C'est là une faveur évidente. » Ses armées de djinns, d'hommes et d'oiseaux furent rassemblées et marchaient en rangs.",
+        "Quand ils arrivèrent à la vallée des fourmis, une fourmi dit : « Ô fourmis, entrez dans vos demeures, afin que Sulayman et ses soldats ne vous écrasent pas sans s'en rendre compte. »",
+        "Sulayman sourit de ses paroles. Il ne s'enorgueillit pas ; il pria : « Mon Seigneur, inspire-moi de rendre grâce pour le bienfait dont Tu m'as comblé ainsi que mes parents, et de faire le bien qui Te plaît, et fais-moi entrer par Ta miséricorde parmi Tes serviteurs vertueux. »"
+      ],
+      "kidsParagraphs": [
+        "Sulayman comprenait les oiseaux et les animaux. Un jour, son armée arriva dans une vallée de fourmis.",
+        "Une fourmi dit : « Courez chez vous, pour que l'armée de Sulayman ne vous marche pas dessus ! » Sulayman sourit et remercia Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 19,
+          "ayahEnd": 19
+        }
+      ],
+      "lessons": [
+        "La gratitude est la bonne réponse à chaque bienfait.",
+        "Même une petite créature peut se soucier de sa communauté.",
+        "Un grand roi peut être doux et humble."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit la fourmi aux autres fourmis ?",
+          "options": [
+            "Entrez dans vos demeures",
+            "Attaquez l'armée",
+            "Ramassez de la nourriture",
+            "Grimpez aux arbres"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:18"
+        },
+        {
+          "question": "Comment Sulayman réagit-il aux paroles de la fourmi ?",
+          "options": [
+            "Il se mit en colère",
+            "Il sourit et remercia Allah",
+            "Il l'ignora",
+            "Il détruisit la vallée"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:19"
+        },
+        {
+          "question": "Qu'enseigna-t-on à Sulayman à comprendre ?",
+          "options": [
+            "Le langage des oiseaux",
+            "Les étoiles",
+            "Seulement les langues humaines",
+            "La magie"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-3",
+      "title": "La nouvelle de la huppe",
+      "paragraphs": [
+        "Sulayman passa les oiseaux en revue et remarqua que la huppe manquait. Il fut mécontent, à moins que l'oiseau n'eût une bonne excuse. La huppe revint bientôt : « J'ai appris ce que tu ne sais pas. Je t'apporte de Saba' une nouvelle certaine. »",
+        "« J'ai trouvé une femme qui règne sur eux, à qui on a donné de toute chose, et qui a un trône magnifique. Je l'ai trouvée, elle et son peuple, se prosternant devant le soleil au lieu d'Allah. Shaytan leur a embelli leurs actions. »",
+        "Sulayman dit : « Nous verrons si tu as dit la vérité. » Il envoya la huppe avec une lettre : « Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux. Ne soyez pas hautains envers moi, mais venez à moi en soumis. »"
+      ],
+      "kidsParagraphs": [
+        "La huppe s'envola vers un pays appelé Saba'. Les gens là-bas adoraient le soleil !",
+        "Sulayman envoya la huppe avec une lettre qui commençait par : « Au nom d'Allah, le Tout Miséricordieux. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 20,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 27,
+          "ayahEnd": 31
+        }
+      ],
+      "lessons": [
+        "Vérifie les nouvelles avant d'agir.",
+        "Même un oiseau peut appeler au tawhid.",
+        "Commence les choses importantes par « Au nom d'Allah »."
+      ],
+      "quiz": [
+        {
+          "question": "Quel oiseau manquait ?",
+          "options": [
+            "Le corbeau",
+            "La huppe",
+            "La colombe",
+            "L'aigle"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:20"
+        },
+        {
+          "question": "Qu'adoraient les gens de Saba' ?",
+          "options": [
+            "La lune",
+            "Le soleil",
+            "Le feu",
+            "Des idoles de pierre"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:24"
+        },
+        {
+          "question": "Comment commençait la lettre de Sulayman ?",
+          "options": [
+            "Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux",
+            "De la part du roi",
+            "Salutations",
+            "Obéissez-moi"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:30"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-4",
+      "title": "La reine embrasse l'islam",
+      "paragraphs": [
+        "La reine consulta ses notables, qui étaient prêts à combattre. Elle fut plus sage : les rois qui entrent dans une cité la ruinent, dit-elle. Elle envoya plutôt un présent. Sulayman le refusa : « Ce qu'Allah m'a donné vaut mieux que ce qu'Il vous a donné. »",
+        "Tandis qu'elle voyageait vers lui, Sulayman demanda qui pourrait apporter son trône. Un djinn proposa de l'apporter avant que Sulayman ne se lève de sa place. Celui qui avait la science du Livre dit : « Je te l'apporterai avant que ton regard ne te revienne. » Et le voilà. Sulayman dit : « Ceci est de la grâce de mon Seigneur, pour m'éprouver : serai-je reconnaissant ou ingrat ? »",
+        "Quand la reine arriva, elle reconnut son trône, bien qu'il eût été modifié. Puis elle entra dans un palais dont le sol était de verre lisse, et le prit pour de l'eau. Voyant tout cela, elle dit : « Mon Seigneur, je me suis fait du tort, et je me soumets avec Sulayman à Allah, Seigneur des mondes. »"
+      ],
+      "kidsParagraphs": [
+        "La reine de Saba' envoya un cadeau à Sulayman, mais il voulait sa foi, pas son or.",
+        "Son trône fut apporté à Sulayman en un clin d'œil ! Quand elle vint, elle dit : « Je me soumets à Allah avec Sulayman. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 34,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Le nom de la reine, Bilqis, et les histoires sur sa famille et son mariage viennent de récits tardifs, non du Coran ni des hadiths authentiques."
+        }
+      ],
+      "lessons": [
+        "Les dirigeants sages préfèrent la paix et le bon conseil.",
+        "Chaque bienfait est une épreuve : serons-nous reconnaissants ?",
+        "La vérité est acceptée par ceux qui sont honnêtes avec eux-mêmes."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'envoya la reine à Sulayman ?",
+          "options": [
+            "Une armée",
+            "Un présent",
+            "Une déclaration de guerre",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:35"
+        },
+        {
+          "question": "Que dit Sulayman quand le trône apparut ?",
+          "options": [
+            "Ceci est de la grâce de mon Seigneur, pour m'éprouver",
+            "Je suis puissant",
+            "Merci, djinns",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:40"
+        },
+        {
+          "question": "Que dit la reine à la fin ?",
+          "options": [
+            "Je me soumets avec Sulayman à Allah, Seigneur des mondes",
+            "Je veux récupérer mon trône",
+            "Je vais combattre",
+            "Je rentre chez moi"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:44"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-5",
+      "title": "Le vent, les djinns et sa mort",
+      "paragraphs": [
+        "Sulayman demanda un royaume tel que nul après lui n'en aurait, et Allah l'exauça. Le vent soufflait doucement sur son ordre là où il le dirigeait, un mois de marche le matin et un mois le soir. Les djinns bâtissaient pour lui avec la permission d'Allah.",
+        "Plus tard, certains prétendirent que le pouvoir de Sulayman venait de la magie. Le Coran l'en innocente : « Ce n'est pas Sulayman qui fut mécréant, mais les démons, qui enseignaient la magie aux gens. »",
+        "Sulayman mourut debout, appuyé sur son bâton, et les djinns continuèrent à travailler sans le savoir. Ce n'est que lorsqu'une bête de la terre rongea son bâton et qu'il tomba qu'ils comprirent. Si les djinns avaient connu l'invisible, ils ne seraient pas restés dans ce labeur humiliant."
+      ],
+      "kidsParagraphs": [
+        "Allah donna à Sulayman pouvoir sur le vent, et les djinns travaillaient pour lui.",
+        "Quand Sulayman mourut appuyé sur son bâton, les djinns ne le savaient même pas ! Ils ne l'apprirent que lorsqu'un insecte mangea son bâton. Seul Allah connaît l'invisible."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 12,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 34,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        }
+      ],
+      "lessons": [
+        "Le pouvoir est un don d'Allah, non de la magie.",
+        "Seul Allah connaît l'invisible ; ni les djinns, ni les devins.",
+        "La mort vient à chacun, même au plus grand des rois."
+      ],
+      "quiz": [
+        {
+          "question": "Que faisait le vent pour Sulayman ?",
+          "options": [
+            "Il soufflait sur son ordre",
+            "Il ne détruisait que ses ennemis",
+            "Rien",
+            "Il apportait la pluie"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:36"
+        },
+        {
+          "question": "Qui fut mécréant en enseignant la magie, selon 2:102 ?",
+          "options": [
+            "Sulayman",
+            "Les démons",
+            "Dawud",
+            "Les fourmis"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:102"
+        },
+        {
+          "question": "Qu'est-ce qui montra aux djinns que Sulayman était mort ?",
+          "options": [
+            "Une bête de la terre rongea son bâton",
+            "Un ange le leur dit",
+            "Son fils le leur dit",
+            "Le vent s'arrêta"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:14"
+        }
+      ]
+    }
+  ]
+}

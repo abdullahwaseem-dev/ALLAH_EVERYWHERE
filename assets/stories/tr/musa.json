@@ -1,0 +1,950 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "musa",
+  "language": "tr",
+  "name": "Musa",
+  "title": "Kelîmullah, Allah'ın doğrudan konuştuğu peygamber",
+  "sentTo": "Firavun ve kavmi, ve İsrailoğulları",
+  "era": "Birçok tarihçi onu Mısır'ın Yeni Krallık dönemine (yaklaşık MÖ 13. yüzyıl) yerleştirir. Kur'an ve Sünnet bir tarih vermez ve Firavun'un adını söylemez.",
+  "places": [
+    {
+      "name": "Doğduğu ve Firavun'un sarayında büyüdüğü Mısır.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    },
+    {
+      "name": "Mısır'dan kaçtıktan sonra yıllarca yaşadığı Medyen.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    },
+    {
+      "name": "Allah'ın onunla konuştuğu, geleneksel olarak Cebel-i Musa ile özdeşleştirilen Sina Dağı (Tûr).",
+      "lat": 28.5394,
+      "lng": 33.975,
+      "approximate": true
+    }
+  ],
+  "summary": "Kur'an'da en çok anılan peygamber. Bebekken nehirde kurtarıldı ve bizzat Firavun'un sarayında büyüdü; Mısır'dan kaçtı, Medyen'de yaşadı ve Tuva vadisinde Allah tarafından seçildi. Kardeşi Harun ile Firavun'un karşısına çıktı, İsrailoğullarını denizden geçirdi, Tevrat'ı aldı ve zor bir kavme sabırla yol gösterdi. Allah onunla doğrudan konuştu.",
+  "notes": [
+    "Musa'nın zamanındaki Firavun'un adı Kur'an'da ve Sünnet'te geçmez. II. Ramses veya başka krallarla özdeşleştirmeler tarihçilerden gelir ve kesin değildir.",
+    "Musa'nın kızıyla evlendiği Medyenli yaşlı adamın adı Kur'an'da geçmez. Birçok kitap onun Şuayb peygamber olduğunu söyler; İbn Kesîr dahil birçok âlim bundan şüphe etmiştir.",
+    "Hızır (18:65): Âlimler onun peygamber mi yoksa salih bir kul mu olduğu ve hâlâ yaşayıp yaşamadığı konusunda ihtilaf etmiştir. Hadis muhakkiklerinin çoğunluğu onun hayatta olmadığı görüşündedir.",
+    "Bebek Musa'nın ağzına bir kor alması ve bu yüzden konuşma güçlüğü çekmesi hikâyesi, Kur'an'dan veya sahih hadislerden değil, tefsir kitaplarındaki rivayetlerden gelir.",
+    "Denizin yarıldığı yerin tam olarak neresi olduğu bilinmiyor.",
+    "Allah'ın Musa ile konuşması (4:164), mahlukatın konuşmasına benzetilmeksizin Allah'a yakışan hakiki bir konuşmadır; Ehl-i Sünnet'in görüşü budur."
+  ],
+  "chapters": [
+    {
+      "id": "musa-1",
+      "title": "Nehirdeki bebek",
+      "paragraphs": [
+        "Firavun yeryüzünde büyüklük taslamıştı. İnsanları gruplara ayırdı ve İsrailoğullarına zulmetti; yeni doğan erkek çocuklarını öldürüyor, kızlarını sağ bırakıyordu. Ama Allah, ezilenlere lütufta bulunmak ve onları önder yapmak istiyordu.",
+        "Hz. Musa (a.s.) doğunca Allah annesine ilham etti: \"Onu emzir; onun için korktuğunda onu nehre bırak. Korkma ve üzülme; Biz onu sana geri döndüreceğiz ve onu peygamber yapacağız.\"",
+        "Sepet, bizzat Firavun'un ailesine doğru sürüklendi ve onu aldılar. Firavun'un karısı dedi ki: \"Benim için de senin için de bir göz aydınlığı! Onu öldürmeyin; belki bize faydası olur ya da onu evlat ediniriz.\"",
+        "Musa'nın annesinin yüreği bomboş kaldı. Kız kardeşini uzaktan onu izlemesi için gönderdi. Allah bebeğin bütün sütannelerini reddetmesini sağladı; sonunda kız kardeşi dedi ki: \"Size onu sizin için büyütecek bir aile göstereyim mi?\" Böylece Musa, gözü aydın olsun ve Allah'ın vaadinin gerçek olduğunu bilsin diye kendi annesine döndürüldü."
+      ],
+      "kidsParagraphs": [
+        "Firavun İsrailoğullarının bebeklerine zarar veriyordu. Allah Musa'nın annesine bebeğini nehre bırakmasını söyledi.",
+        "Nehir onu Firavun'un sarayına götürdü! Firavun'un karısı onu sevdi ve Allah Musa'yı emzirmesi için kendi annesine geri verdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 4,
+          "ayahEnd": 5
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 28,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        }
+      ],
+      "lessons": [
+        "Allah'ın takdiri, dilediğini düşmanının evinde bile korur.",
+        "Her şey korkutucu göründüğünde Allah'ın vaadine güven.",
+        "Annenin sevgisi Allah katında değerlidir."
+      ],
+      "quiz": [
+        {
+          "question": "Musa'nın annesi onun için korkunca Allah ona ne ilham etti?",
+          "options": [
+            "Onu bir mağarada saklamasını",
+            "Onu nehre bırakmasını",
+            "Onu bir komşuya vermesini",
+            "Kaçmasını"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:7"
+        },
+        {
+          "question": "\"Benim için de senin için de bir göz aydınlığı\" diyen kimdi?",
+          "options": [
+            "Musa'nın kız kardeşi",
+            "Firavun'un karısı",
+            "Musa'nın annesi",
+            "Hâmân"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:9"
+        },
+        {
+          "question": "Musa annesine nasıl döndürüldü?",
+          "options": [
+            "Diğer bütün sütanneleri reddetti",
+            "Firavun onu geri gönderdi",
+            "Eve koşarak döndü",
+            "Bir melek onu taşıdı"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:12-13"
+        }
+      ]
+    },
+    {
+      "id": "musa-2",
+      "title": "Bir yumruk ve bir kaçış",
+      "paragraphs": [
+        "Musa güçlü bir genç olarak büyüdü ve Allah ona hikmet ve ilim verdi. Bir gün biri kendi kavminden, diğeri Firavun'un kavminden iki adamı kavga ederken buldu. Kendi kavminden olan yardım isteyince Musa diğerine bir yumruk vurdu ve adam öldü; oysa Musa onu öldürmek istememişti.",
+        "Musa dehşete düştü: \"Bu şeytanın işidir.\" Hemen Allah'a yöneldi: \"Rabbim! Ben kendime zulmettim, beni bağışla.\" Allah da onu bağışladı. Bir daha asla suçlulara arka çıkmayacağına söz verdi.",
+        "Çok geçmeden şehrin öbür ucundan bir adam koşarak geldi: \"Ey Musa! İleri gelenler seni öldürmek için toplanıyor. Çık git!\" Musa korku içinde Mısır'dan çıktı ve dua etti: \"Rabbim! Beni zalimler topluluğundan kurtar.\""
+      ],
+      "kidsParagraphs": [
+        "Musa bir kavgayı durdurmaya çalışırken yanlışlıkla bir adama vurdu ve adam öldü. Musa çok pişman oldu ve Allah'tan bağışlanma diledi.",
+        "Bir adam onu uyardı: \"Seni öldürmek istiyorlar, kaç!\" Böylece Musa Allah'tan korunma dileyerek Mısır'dan ayrıldı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        }
+      ],
+      "lessons": [
+        "Hata yaptığımızda hemen Allah'a döneriz.",
+        "Öfke, hiç istemediğimiz zararlara yol açabilir.",
+        "Allah yardımcıları doğru anda gönderir."
+      ],
+      "quiz": [
+        {
+          "question": "Adam öldükten sonra Musa ne dedi?",
+          "options": [
+            "Bu şeytanın işidir",
+            "Bunu hak etti",
+            "Kimse görmedi",
+            "Ben bir kahramanım"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:15"
+        },
+        {
+          "question": "Musa Allah'tan ne istedi?",
+          "options": [
+            "Onu kral yapmasını",
+            "Onu bağışlamasını",
+            "Düşmanını cezalandırmasını",
+            "Ona altın vermesini"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:16"
+        },
+        {
+          "question": "Musa'yı şehirden ayrılması için kim uyardı?",
+          "options": [
+            "Şehrin öbür ucundan koşarak gelen bir adam",
+            "Annesi",
+            "Firavun'un karısı",
+            "Bir melek"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:20"
+        }
+      ]
+    },
+    {
+      "id": "musa-3",
+      "title": "Medyen kuyusunda",
+      "paragraphs": [
+        "Musa, Allah'ın ona yol göstermesini umarak tek başına Medyen'e doğru yürüdü. Bir kuyunun başında sürülerini sulamak için itişen çobanlar ve hayvanlarını geri tutan iki kadın gördü. Kadınlar açıkladılar: \"Çobanlar gitmeden sulayamayız; babamız da çok yaşlı bir adam.\" Musa onların hayvanlarını onlar için suladı.",
+        "Sonra yorgun, aç ve evinden uzak bir hâlde gölgeye çekildi ve dua etti: \"Rabbim! Bana indireceğin her hayra gerçekten muhtacım.\"",
+        "Çok geçmeden kadınlardan biri utangaç bir şekilde yürüyerek geldi: \"Babam, bizim için suladığının karşılığını vermek üzere seni çağırıyor.\" Musa yaşlı adama başından geçenleri anlattı, o da dedi ki: \"Korkma; zalimler topluluğundan kurtuldun.\" Kızlardan biri dedi ki: \"Babacığım, onu ücretle tut. Ücretle tutacağın en iyi kimse, güçlü ve güvenilir olandır.\" Yaşlı adam, sekiz ya da on yıl çalışmasına karşılık Musa'ya kızlarından biriyle evlenmeyi teklif etti ve Musa kabul etti."
+      ],
+      "kidsParagraphs": [
+        "Musa iki kadının koyunlarını sulamalarına yardım etti. Sonra gölgede oturup Allah'tan yardım istedi.",
+        "Babaları onu evine davet etti. Musa onun yanında çalıştı ve kızlarından biriyle evlendi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 25,
+          "ayahEnd": 28
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Birçok kitap Medyenli yaşlı adamın Şuayb peygamber olduğunu söyler; Kur'an onun adını vermez ve birçok âlim bundan şüphe etmiştir."
+        }
+      ],
+      "lessons": [
+        "Kendin yorgun ve muhtaç olsan bile başkalarına yardım et.",
+        "Her hayrı Allah'tan iste; biz her zaman O'na muhtacız.",
+        "Bir çalışanın en iyi nitelikleri güç ve güvenilirliktir."
+      ],
+      "quiz": [
+        {
+          "question": "İki kadın kuyunun başında neden bekliyordu?",
+          "options": [
+            "Sudan korkuyorlardı",
+            "Çobanların gitmesini bekliyorlardı",
+            "Kovaları yoktu",
+            "Geceydi"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:23"
+        },
+        {
+          "question": "Musa gölgede nasıl dua etti?",
+          "options": [
+            "Rabbim! Bana indireceğin her hayra muhtacım",
+            "Beni evime götür",
+            "Bana bir krallık ver",
+            "Firavun'u cezalandır"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:24"
+        },
+        {
+          "question": "Kız Musa'nın hangi iki niteliğini övdü?",
+          "options": [
+            "Zengin ve ünlü",
+            "Güçlü ve güvenilir",
+            "Zeki ve esprili",
+            "Uzun boylu ve yakışıklı"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:26"
+        }
+      ]
+    },
+    {
+      "id": "musa-4",
+      "title": "Tuva vadisindeki ateş",
+      "paragraphs": [
+        "Medyen'deki yıllardan sonra Musa ailesiyle yola çıktı. Yolda, karanlıkta bir ateş gördü ve ailesine dedi ki: \"Burada bekleyin. Belki size ondan bir kor getiririm ya da ateşin yanında yol gösteren birini bulurum.\"",
+        "Oraya varınca bir seslenme geldi: \"Ey Musa! Ben senin Rabbinim; ayakkabılarını çıkar, sen mukaddes vadi Tuva'dasın. Ben seni seçtim; vahyolunanı dinle: Ben Allah'ım; Benden başka ilah yoktur; Bana ibadet et ve Beni anmak için namaz kıl.\"",
+        "Allah ona iki mucize verdi. Asası yere atılınca hareket eden bir yılan oldu; eli koynundan çıkarılınca hiçbir hastalık olmaksızın bembeyaz parlayarak çıktı. Sonra büyük emir geldi: \"Firavun'a git. O azdı.\"",
+        "Musa dua etti: \"Rabbim! Göğsümü genişlet, işimi kolaylaştır ve dilimdeki düğümü çöz ki sözümü anlasınlar. Bana ailemden bir yardımcı ver: kardeşim Harun'u.\" Allah cevap verdi: \"Ey Musa! İstediğin sana verildi.\""
+      ],
+      "kidsParagraphs": [
+        "Musa bir dağda ateş gördü. Yaklaşınca Allah onunla konuştu: \"Ben senin Rabbinim!\"",
+        "Allah ona mucizeler verdi: Asası yılan oldu, eli beyaz parladı. Musa kardeşi Harun'u yardımcı yapması için Allah'a dua etti, Allah da kabul etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 17,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 25,
+          "ayahEnd": 36
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Bazı kitaplar, Musa'nın konuşma güçlüğünün Firavun'un sarayında bebekken ağzına bir kor almasından kaynaklandığını söyler."
+        }
+      ],
+      "lessons": [
+        "Allah'a imandan sonra ilk emir namazdır.",
+        "Büyük bir işten önce Allah'tan göğsünü açmasını ve işini kolaylaştırmasını iste.",
+        "İyi yardımcılar bir nimettir; onları Allah'tan iste."
+      ],
+      "quiz": [
+        {
+          "question": "Allah Musa ile konuştuğunda Musa neredeydi?",
+          "options": [
+            "Mısır'da",
+            "Mukaddes vadi Tuva'da",
+            "Medyen'de",
+            "Bir gemide"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:12"
+        },
+        {
+          "question": "Musa'nın asası neye dönüştü?",
+          "options": [
+            "Bir ağaca",
+            "Hareket eden bir yılana",
+            "Bir kılıca",
+            "Bir kuşa"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:20"
+        },
+        {
+          "question": "Musa kimi yardımcı olarak istedi?",
+          "options": [
+            "Kardeşi Harun'u",
+            "Firavun'un karısını",
+            "Kayınpederini",
+            "Yûşa'yı"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:29-30"
+        }
+      ]
+    },
+    {
+      "id": "musa-5",
+      "title": "Firavun'un karşısında",
+      "paragraphs": [
+        "Musa ve Harun Firavun'a gittiler: \"Biz âlemlerin Rabbinin elçileriyiz. İsrailoğullarını bizimle gönder.\" Firavun Musa'ya saraydaki çocukluğunu ve öldürdüğü adamı hatırlattı. Musa dürüstçe cevap verdi: \"Ben onu yolumu bilmezken yaptım; sonra Rabbim bana hikmet verdi ve beni peygamber yaptı. Başıma kaktığın nimet de, İsrailoğullarını köleleştirmen mi?\"",
+        "Firavun sordu: \"Âlemlerin Rabbi de nedir?\" Musa cevap verdi: \"Göklerin, yerin ve ikisi arasındakilerin Rabbi… sizin Rabbiniz ve önceki atalarınızın Rabbi… doğunun ve batının Rabbi.\" Firavun onu deli diye alaya aldı ve hapisle tehdit etti.",
+        "Musa asasını attı, o apaçık bir yılan oldu. Elini çıkardı, o da bakanlar için bembeyaz parladı."
+      ],
+      "kidsParagraphs": [
+        "Musa ve Harun Firavun'a dediler ki: \"İsrailoğullarını serbest bırak!\"",
+        "Firavun sordu: \"Rabbiniz kim?\" Musa dedi ki: \"Göklerin ve yerin Rabbi.\" Sonra Firavun'a Allah'tan gelen mucizeleri gösterdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 16,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 23,
+          "ayahEnd": 29
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Güç sahiplerine hikmet ve cesaretle hakkı söyle.",
+        "Geçmiş hatalarını dürüstçe kabul et; tövbe insanı değiştirir.",
+        "Allah'ın ayetleri göklerde, yerde ve tarihtedir."
+      ],
+      "quiz": [
+        {
+          "question": "Musa ve Harun Firavun'dan ne istedi?",
+          "options": [
+            "Kendilerini vezir yapmasını",
+            "İsrailoğullarını onlarla göndermesini",
+            "Kendilerine altın vermesini",
+            "Bir tapınak yapmasını"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:17"
+        },
+        {
+          "question": "Musa âlemlerin Rabbini nasıl tanıttı?",
+          "options": [
+            "Göklerin ve yerin Rabbi",
+            "Mısır'ın tanrısı",
+            "Güneş",
+            "Kral"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:24"
+        },
+        {
+          "question": "Firavun Musa'yı neyle tehdit etti?",
+          "options": [
+            "Hapisle",
+            "Ödülle",
+            "Medyen'e sürgünle",
+            "Hiçbir şeyle"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:29"
+        }
+      ]
+    },
+    {
+      "id": "musa-6",
+      "title": "Sihirbazlar secdeye kapanıyor",
+      "paragraphs": [
+        "Firavun'un ileri gelenleri Musa'ya sihirbaz dediler ve bir bayram gününde büyük bir yarışma için Mısır'ın en iyi sihirbazlarını topladılar. Sihirbazlar ücret istedi; Firavun da onlara servet ve kendisine yakın bir mevki vaat etti.",
+        "Sihirbazlar iplerini ve değneklerini attılar ve büyük bir sihirle insanların gözlerini büyülediler. Sonra Allah Musa'ya vahyetti: \"Asanı at.\" Asa, onların uydurduğu her şeyi yutuverdi. Hak ortaya çıktı ve yaptıkları boşa gitti.",
+        "Sihirbazlar bunun sihir olmadığını anladılar. Secdeye kapandılar: \"Âlemlerin Rabbine, Musa ve Harun'un Rabbine iman ettik.\" Firavun ellerini ve ayaklarını kesmek ve onları asmakla tehdit etti. Onlar cevap verdiler: \"Biz Rabbimize döneceğiz. Rabbimiz! Üzerimize sabır yağdır ve bizi Müslüman olarak öldür.\""
+      ],
+      "kidsParagraphs": [
+        "Firavun en iyi sihirbazları getirdi. Yılana benzeyen ipler attılar.",
+        "Musa asasını attı ve asa bütün hilelerini yuttu! Sihirbazlar bunun Allah'tan olduğunu anladılar ve iman ettiler."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 113,
+          "ayahEnd": 114
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 116,
+          "ayahEnd": 118
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 120,
+          "ayahEnd": 122
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "Hak, aldatmacayı yener.",
+        "Gerçek ilim tevazuya ve imana götürür.",
+        "İman insanı bir anda cesur yapabilir."
+      ],
+      "quiz": [
+        {
+          "question": "Musa'nın asası sihre ne yaptı?",
+          "options": [
+            "Onu yaktı",
+            "Onu yuttu",
+            "Ondan kaçtı",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:117"
+        },
+        {
+          "question": "Sihirbazlar hakkı görünce ne yaptı?",
+          "options": [
+            "Kaçtılar",
+            "Secdeye kapanıp iman ettiler",
+            "Musa'ya saldırdılar",
+            "Daha çok para istediler"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:120-121"
+        },
+        {
+          "question": "Sihirbazlar ne için dua etti?",
+          "options": [
+            "Servet",
+            "Sabır ve Müslüman olarak ölmek",
+            "İntikam",
+            "Şöhret"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:126"
+        }
+      ]
+    },
+    {
+      "id": "musa-7",
+      "title": "Deniz yarılıyor",
+      "paragraphs": [
+        "Allah Firavun'un kavmine ardı ardına mucizeler gönderdi: kıtlık ve kötü hasat yılları, sonra tufan, çekirge, haşere, kurbağa ve kan. Her seferinde Musa'ya, belanın kalkması için dua etmesini yalvardılar ve İsrailoğullarını göndereceklerine söz verdiler; her seferinde de sözlerini bozdular.",
+        "Sonunda Allah Musa'ya İsrailoğullarıyla birlikte geceleyin yola çıkmasını emretti. Firavun ordusuyla onları takip etti ve güneş doğarken deniz kıyısında onlara yetişti. Musa'nın kavmi bağırdı: \"Yakalandık!\" Musa dedi ki: \"Asla! Rabbim benimledir; O bana yol gösterecektir.\"",
+        "Allah ona vahyetti: \"Asanla denize vur.\" Deniz yarıldı; her parça büyük bir dağ gibiydi ve İsrailoğulları karşıya geçti. Firavun peşlerinden gelince sular üzerine kapandı. Boğulurken \"İman ettim…\" dedi, ama çok geçti. Allah onun bedenini kendisinden sonrakilere bir ibret olarak korudu."
+      ],
+      "kidsParagraphs": [
+        "Musa İsrailoğullarını Mısır'dan çıkardı. Firavun onları denize kadar kovaladı.",
+        "Allah Musa'ya: \"Asanla denize vur\" dedi. Deniz iki dağ gibi açıldı ve güvenle karşıya geçtiler! Firavun ve ordusu boğuldu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 133,
+          "ayahEnd": 135
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 60,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 63,
+          "ayahEnd": 66
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 10,
+          "ayahStart": 90,
+          "ayahEnd": 92
+        }
+      ],
+      "lessons": [
+        "Yol kapalı göründüğünde de ki: \"Rabbim benimledir; O bana yol gösterecektir.\"",
+        "Ölüm anındaki tövbe çok geçtir; şimdi Allah'a dön.",
+        "Allah'a verilen sözleri bozmak helake götürür."
+      ],
+      "quiz": [
+        {
+          "question": "Kavmi yakalanmaktan korkunca Musa ne dedi?",
+          "options": [
+            "Kaçın!",
+            "Rabbim benimledir; O bana yol gösterecektir",
+            "Teslim olun",
+            "Yüzün!"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:62"
+        },
+        {
+          "question": "Deniz nasıl yarıldı?",
+          "options": [
+            "Musa asasıyla vurdu",
+            "Bir rüzgâr esti",
+            "Yazın kurudu",
+            "Melekler itti"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:63"
+        },
+        {
+          "question": "Firavun'un kavmine bunlardan hangisi gönderildi?",
+          "options": [
+            "Çekirge, haşere, kurbağa ve kan",
+            "Kar",
+            "Bir yanardağ",
+            "Sadece depremler"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:133"
+        }
+      ]
+    },
+    {
+      "id": "musa-8",
+      "title": "Buzağı ve levhalar",
+      "paragraphs": [
+        "Allah, Musa'nın dağda O'nunla buluşması için kırk gece belirledi. Musa kavminin başına Harun'u bıraktı. Orada Allah onunla konuştu ve Musa O'nu görmeyi arzuladı: \"Rabbim! Kendini bana göster.\" Allah buyurdu: \"Beni göremezsin, ama dağa bak.\" Allah dağa tecelli edince dağ toz oldu ve Musa baygın düştü. Ayılınca dedi ki: \"Seni tenzih ederim! Sana tövbe ettim.\"",
+        "Allah ona içinde hidayet ve her şeyin açıklaması bulunan levhaları verdi. Ama o yokken Sâmirî adında biri kavmin süs eşyalarından böğüren altın bir buzağı yaptı ve dedi ki: \"İşte sizin ilahınız ve Musa'nın ilahı.\" Harun onları uyardığı hâlde birçoğu ona tapmaya başladı.",
+        "Musa öfkeli ve üzgün döndü. Levhaları yere bıraktı ve kardeşini başından tuttu. Harun yalvardı: \"Anamın oğlu! Kavim beni zayıf gördü, neredeyse beni öldüreceklerdi.\" Musa'nın öfkesi dindi ve dua etti: \"Rabbim! Beni ve kardeşimi bağışla.\" Sonra içinde hidayet ve rahmet bulunan levhaları aldı."
+      ],
+      "kidsParagraphs": [
+        "Musa Allah'tan levhaları almak için kırk gece dağa gitti.",
+        "O yokken bazı insanlar altından bir buzağı yapıp ona taptılar. Musa çok üzgün döndü ve kavmin tövbe etmesi gerekti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 143
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 145,
+          "ayahEnd": 145
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 85,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 150,
+          "ayahEnd": 151
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 154,
+          "ayahEnd": 154
+        }
+      ],
+      "lessons": [
+        "Bu dünyada hiç kimse Allah'ı göremez; müminler O'nu cennette görmeyi umar.",
+        "İlim ve önderler yokken şirk hızla geri dönebilir.",
+        "Öfke yatışıp duaya ve affa dönüşmelidir."
+      ],
+      "quiz": [
+        {
+          "question": "Musa Rabbiyle kaç gece buluştu?",
+          "options": [
+            "Yedi",
+            "Kırk",
+            "On",
+            "Yüz"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "Allah dağa tecelli edince dağa ne oldu?",
+          "options": [
+            "Büyüdü",
+            "Toz oldu",
+            "Altına dönüştü",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:143"
+        },
+        {
+          "question": "Altın buzağıyı kim yaptı?",
+          "options": [
+            "Harun",
+            "Sâmirî",
+            "Firavun",
+            "Kârûn"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:85"
+        }
+      ]
+    },
+    {
+      "id": "musa-9",
+      "title": "Çöldeki dersler",
+      "paragraphs": [
+        "İsrailoğulları Musa'yı birçok kez sınadı. Bir keresinde Allah onlara bir inek kesmelerini emretti; itaat edecekleri yerde yaşı, rengi ve cinsi hakkında soru üstüne soru sordular ve işi kendilerine zorlaştırdılar. Sonunda kestiler ve Allah onunla gizli bir katili ortaya çıkardı.",
+        "Musa onlara Allah'ın kendileri için yazdığı mukaddes topraklara girmelerini söyleyince dediler ki: \"Orada zorba bir kavim var. Sen ve Rabbin gidin savaşın; biz burada oturuyoruz.\" Musa dua etti: \"Rabbim! Ben ancak kendime ve kardeşime söz geçirebiliyorum.\" Böylece o topraklar onlara kırk yıl haram kılındı ve bu süre içinde yeryüzünde şaşkın şaşkın dolaştılar.",
+        "Musa'nın kavminden Kârûn'a, anahtarlarını güçlü bir topluluğun zor taşıdığı hazineler verilmişti. Övündü: \"Bu bana ancak kendi bilgim sayesinde verildi.\" Yer onu ve evini yuttu; dün onun yerinde olmayı isteyenler dediler ki: \"Allah bize lütfetmeseydi bizi de yerin dibine geçirirdi.\""
+      ],
+      "kidsParagraphs": [
+        "Allah kavme bir inek kesmelerini emretti, ama o kadar çok soru sordular ki iş onlar için zorlaştı.",
+        "Kârûn adında zengin bir adam hazinesiyle övünüyordu ve yer onu yuttu. Servet Allah'tandır!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 67,
+          "ayahEnd": 71
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 21,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 76,
+          "ayahEnd": 78
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 81,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Allah'ın emirlerine, onları zorlaştırmadan sadece uy.",
+        "Korku ve rahatlık insanları Allah'ın emrini yapmaktan alıkoyabilir.",
+        "Servet bir imtihandır; kendi zekâmızdan değil, Allah'tan gelir."
+      ],
+      "quiz": [
+        {
+          "question": "Allah İsrailoğullarına neyi kesmelerini emretti?",
+          "options": [
+            "Bir koyunu",
+            "Bir ineği",
+            "Bir deveyi",
+            "Bir keçiyi"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:67"
+        },
+        {
+          "question": "Kaç yıl şaşkın dolaştılar?",
+          "options": [
+            "On",
+            "Kırk",
+            "Yedi",
+            "Yüz"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:26"
+        },
+        {
+          "question": "Kârûn'a ne oldu?",
+          "options": [
+            "Kral oldu",
+            "Yer onu ve evini yuttu",
+            "Boğuldu",
+            "Medyen'e taşındı"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:81"
+        }
+      ]
+    },
+    {
+      "id": "musa-10",
+      "title": "Musa ve Hızır",
+      "paragraphs": [
+        "Peygamber ﷺ bize anlattı ki bir gün Musa İsrailoğullarına hitap ederken ona soruldu: \"İnsanların en bilgilisi kimdir?\" O da \"Benim\" dedi. Allah, ilmi Allah'a havale etmediği için onu uyardı ve ona iki denizin birleştiği yerde kendisinden daha bilgili bir kul olduğunu bildirdi.",
+        "Musa genç arkadaşıyla birlikte yolculuk etti ve sonunda Allah'ın katından rahmet ve ilim verdiği o kulu, Hızır'ı buldular. Musa ona uyup öğrenmek için izin istedi. Hızır onu sabredemeyeceği konusunda uyardı; Musa da deneyeceğine söz verdi.",
+        "Hızır bir gemide delik açtı, bir çocuğu öldürdü ve kendilerine yemek vermeyi reddeden bir kasabada yıkılmak üzere olan bir duvarı yeniden yaptı. Her seferinde Musa susamadı. Sonra Hızır açıkladı: Gemi yoksul insanlarındı ve bir kral her sağlam gemiye el koyuyordu; çocuk mümin anne babasını küfre sürükleyecekti; duvar, babaları salih olan iki yetimin hazinesini gizliyordu. \"Bunu kendiliğimden yapmadım\" dedi. Hepsi Allah'ın emriyleydi."
+      ],
+      "kidsParagraphs": [
+        "Musa, Hızır adında Allah'ın bilge bir kulundan öğrenmek için yolculuğa çıktı.",
+        "Hızır tuhaf şeyler yaptı ve Musa susamadı. Sonra Hızır açıkladı: Her şey Allah'ın emriyleydi ve hayır içindi. Allah bizim bilmediğimizi bilir."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "122",
+          "narrator": "Übey b. Kâ'b",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Peygamber Musa İsrailoğullarına hitap etmek için ayağa kalktı ve ona 'İnsanların hangisi en bilgilidir?' diye soruldu. 'En bilgili benim' dedi. Bunun üzerine Allah, ilmi Kendisine havale etmediği için onu kınadı ve ona vahyetti: 'İki denizin birleştiği yerde kullarımdan biri senden daha bilgilidir…'\"",
+          "match": "فسئل اى الناس اعلم فقال انا اعلم",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 18,
+          "ayahStart": 65,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 71,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 79,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "İlmi daima Allah'a havale et ve mütevazı ol.",
+        "Yolculuk ve sabır ilim talebinin bir parçasıdır.",
+        "Kötü görünen olayların ardında, Allah'ın bizim göremediğimiz bir hikmeti olabilir."
+      ],
+      "quiz": [
+        {
+          "question": "En bilgilinin kim olduğu sorulunca Musa ne cevap verdi?",
+          "options": [
+            "Allah daha iyi bilir",
+            "Benim",
+            "Harun",
+            "Firavun"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 122"
+        },
+        {
+          "question": "Hızır gemiye neden zarar verdi?",
+          "options": [
+            "Eskiydi",
+            "Bir kral her sağlam gemiye el koyuyordu",
+            "Öfkeliydi",
+            "Onu satmak için"
+          ],
+          "answer": 1,
+          "reference": "Quran 18:79"
+        },
+        {
+          "question": "Duvarın altında ne vardı?",
+          "options": [
+            "İki yetimin hazinesi",
+            "Bir kuyu",
+            "Bir mezar",
+            "Gizli bir kapı"
+          ],
+          "answer": 0,
+          "reference": "Quran 18:82"
+        }
+      ]
+    },
+    {
+      "id": "musa-11",
+      "title": "Musa ve ümmetimiz",
+      "paragraphs": [
+        "Allah Musa ile hakiki bir sözle konuştu; bu yüzden ona Kelîmullah denir. Kur'an'da diğer bütün peygamberlerden daha çok anılır ve kıssası Muhammed ﷺ ümmeti için derslerle doludur.",
+        "Mi'rac gecesi Allah Peygamber'in ümmetine elli vakit namazı farz kılınca, Musa ona geri dönüp azaltılmasını istemesini tavsiye etti: \"Ümmetin buna güç yetiremez.\" Peygamber ﷺ tekrar tekrar döndü ve sonunda Allah onları elli vaktin sevabıyla beş vakit namaz yaptı.",
+        "Peygamber ﷺ Medine'ye gelince insanları Âşûrâ günü oruç tutarken buldu, çünkü Allah o gün Musa'yı ve İsrailoğullarını Firavun'dan kurtarmıştı. \"Biz Musa'ya sizden daha layığız\" buyurdu, o günü oruçla geçirdi ve Müslümanlara da oruç tutmalarını emretti."
+      ],
+      "kidsParagraphs": [
+        "Allah Musa ile doğrudan konuştu. Mi'rac gecesi Musa ümmetimize yardım etti: Onun tavsiyesi sayesinde elli yerine beş vakit namazımız var!",
+        "Allah'ın Musa'yı nasıl kurtardığını hatırlamak için Âşûrâ günü oruç tutarız."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "349",
+          "narrator": "Enes b. Mâlik, Ebû Zer'den",
+          "translation": "Peygamber'in ﷺ Mi'rac'ı anlatışından: \"…Musa dedi ki: 'Rabbine dön, çünkü ümmetin buna güç yetiremez.' Ben de döndüm ve O bir kısmını indirdi. Musa'ya döndüm… 'Rabbine dön, çünkü ümmetin buna güç yetiremez' dedi. O'na döndüm ve O buyurdu: 'Onlar beştir ve onlar ellidir; Benim katımda söz değişmez.' Musa'ya döndüm, 'Rabbine dön' dedi. 'Rabbimden utanıyorum' dedim.\"",
+          "match": "فان امتك لا تطيق",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2004",
+          "narrator": "İbn Abbas",
+          "translation": "Peygamber ﷺ Medine'ye geldi ve Yahudilerin Âşûrâ günü oruç tuttuğunu gördü. \"Bu nedir?\" diye sordu. Dediler ki: \"Bu hayırlı bir gündür; bu gün Allah İsrailoğullarını düşmanlarından kurtardı, Musa da bu günü oruçla geçirdi.\" Buyurdu ki: \"Ben Musa'ya sizden daha layığım.\" Böylece o günü oruçla geçirdi ve oruç tutulmasını emretti.",
+          "match": "هذا يوم صالح هذا يوم نجى الله بني اسرائيل من عدوهم فصامه موسى"
+        }
+      ],
+      "lessons": [
+        "Peygamberler birbirlerinin ümmetlerini önemserdi.",
+        "Beş vakit namaz bir rahmet hediyesidir; onları koru.",
+        "Müslümanlar bütün peygamberleri sever ve onlara uyar."
+      ],
+      "quiz": [
+        {
+          "question": "Musa'ya neden Kelîmullah denir?",
+          "options": [
+            "Allah onunla doğrudan konuştu",
+            "Büyük bir hatipti",
+            "Çok kitap yazdı",
+            "Bir kraldı"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:164"
+        },
+        {
+          "question": "Musa Mi'rac gecesi ne tavsiye etti?",
+          "options": [
+            "Namazların azaltılmasını istemeyi",
+            "Daha çok namaz istemeyi",
+            "Mısır'ı ziyaret etmeyi",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 349"
+        },
+        {
+          "question": "Musa Âşûrâ günü neden oruç tuttu?",
+          "options": [
+            "Allah o gün İsrailoğullarını Firavun'dan kurtardı",
+            "Doğum günüydü",
+            "Medyen'e vardığı gündü",
+            "Buzağı günüydü"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2004"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "ishaq",
+  "language": "en",
+  "name": "Ishaq",
+  "title": "The promised son of Ibrahim (AS)",
+  "sentTo": "The family of Ibrahim (AS) in the blessed land (Palestine)",
+  "era": "The time of Ibrahim (AS), his father. No date is given in the Quran or Sunnah.",
+  "places": [
+    {
+      "name": "Al-Khalil (Hebron), Palestine, in the blessed land where Ibrahim settled. His tomb is traditionally placed here.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    }
+  ],
+  "summary": "The son of Ibrahim (AS) and Sarah, born when both were old, as the angels had announced. Allah made him a Prophet and blessed his descendants: from him came Ya'qub (AS) and the Prophets of the Children of Israel.",
+  "notes": [
+    "The Quran tells little about Ishaq's own life. Details such as his marriage and his twin sons come from the Bible.",
+    "Whether Ishaq or Ismail was the son to be sacrificed: most scholars say Ismail (see the story of Ibrahim)."
+  ],
+  "chapters": [
+    {
+      "id": "ishaq-1",
+      "title": "Good news in old age",
+      "paragraphs": [
+        "Ibrahim (AS) and his wife Sarah were old, and Sarah had never had a child. Then angels came as guests and gave them good news of a son, Ishaq, and after him a grandson, Ya'qub.",
+        "Sarah was astonished: “Shall I give birth when I am an old woman, and my husband is an old man?” The angels answered: “Are you amazed at the decree of Allah? The mercy of Allah and His blessings be upon you, people of the house.”",
+        "The Quran describes Ishaq as a Prophet from among the righteous, and says that Allah blessed Ibrahim and Ishaq."
+      ],
+      "kidsParagraphs": [
+        "Ibrahim and Sarah were very old and had no children. Angels told them: “You will have a son, Ishaq!”",
+        "Sarah was amazed. But nothing is impossible for Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 72
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 73,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        }
+      ],
+      "lessons": [
+        "Never lose hope in Allah's mercy, whatever your age.",
+        "Children are a gift from Allah.",
+        "Allah's promise always comes true."
+      ],
+      "quiz": [
+        {
+          "question": "Who was the mother of Ishaq?",
+          "options": [
+            "Hajar",
+            "Sarah",
+            "Maryam",
+            "Asiyah"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Who announced the birth of Ishaq?",
+          "options": [
+            "Angels",
+            "A dream",
+            "A king",
+            "A traveller"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "Which grandson was also announced?",
+          "options": [
+            "Yusuf",
+            "Ya'qub",
+            "Musa",
+            "Dawud"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ishaq-2",
+      "title": "A father of Prophets",
+      "paragraphs": [
+        "Allah gave Ibrahim Ishaq and Ya'qub and made them all righteous. He made them leaders who guided by His command, and inspired them to do good, establish prayer and give zakah.",
+        "The Quran asks us to remember Ibrahim, Ishaq and Ya'qub, people of strength and insight, chosen for one great quality: always remembering the Home of the Hereafter.",
+        "The Prophet ﷺ described Ishaq's family line: “The noble one, son of the noble one, son of the noble one, son of the noble one: Yusuf son of Ya'qub son of Ishaq son of Ibrahim.” Four generations of Prophets, one after another."
+      ],
+      "kidsParagraphs": [
+        "Ishaq's son was Ya'qub, and his grandson was Yusuf. They were all Prophets!",
+        "Allah says they always remembered the Hereafter."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 72,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3382",
+          "narrator": "Abdullah ibn Umar",
+          "translation": "The Prophet ﷺ said: “The noble one, son of the noble one, son of the noble one, son of the noble one: Yusuf son of Ya'qub son of Ishaq son of Ibrahim, peace be upon them.”",
+          "match": "الكريم ابن الكريم ابن الكريم ابن الكريم يوسف ابن يعقوب بن اسحاق بن ابراهيم"
+        }
+      ],
+      "lessons": [
+        "A righteous family passes faith from one generation to the next.",
+        "Remembering the Hereafter is a quality Allah loves.",
+        "Leaders in religion guide others by doing good themselves."
+      ],
+      "quiz": [
+        {
+          "question": "For what quality were Ibrahim, Ishaq and Ya'qub chosen?",
+          "options": [
+            "Wealth",
+            "Remembering the Home of the Hereafter",
+            "Building cities",
+            "Poetry"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:46"
+        },
+        {
+          "question": "Who was Ishaq's grandson, called “the noble one, son of the noble one”?",
+          "options": [
+            "Yusuf",
+            "Musa",
+            "Isa",
+            "Yunus"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3382"
+        },
+        {
+          "question": "What did Allah inspire them to do?",
+          "options": [
+            "Good deeds, prayer and zakah",
+            "Build towers",
+            "Go to war",
+            "Travel by sea"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:73"
+        }
+      ]
+    }
+  ]
+}

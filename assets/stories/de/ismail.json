@@ -1,0 +1,246 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ismail",
+  "language": "de",
+  "name": "Ismail",
+  "title": "Der Sohn Ibrahims (a.s.), treu seinem Versprechen",
+  "sentTo": "Die Araber von Mekka, unter denen er aufwuchs (der Stamm Jurhum)",
+  "era": "Die Zeit Ibrahims (a.s.), seines Vaters. Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Mekka, wo er mit seiner Mutter Hadschar aufwuchs und seinem Vater half, die Kaaba zu bauen.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "Der erstgeborene Sohn Ibrahims (a.s.) und Hadschars. Er wuchs im Tal von Mekka auf, unterwarf sich Allahs Befehl, als sein Vater den Traum vom Opfer sah, und errichtete mit seinem Vater die Kaaba. Allah lobt ihn als treu seinem Versprechen, als Gesandten und Propheten. Der Prophet Muhammad ﷺ ist sein Nachkomme.",
+  "notes": [
+    "Die meisten Gelehrten sagen, Ismail war der Sohn, der geopfert werden sollte (37:101-107); einige frühe Gelehrte sagten Ishaq. Siehe die Geschichte Ibrahims (a.s.).",
+    "Berichte, dass Ismail und Hadschar im Hidschr (dem gebogenen Bereich neben der Kaaba) begraben sind, stammen von Historikern, nicht aus authentischen Hadithen.",
+    "Ismail steht hier in der Reihenfolge der Propheten nach Ibrahim (a.s.), seinem Vater."
+  ],
+  "chapters": [
+    {
+      "id": "ismail-1",
+      "title": "Ein Kind des Tals",
+      "paragraphs": [
+        "Ismail (a.s.) war der erste Sohn Ibrahims (a.s.), geboren von Hadschar. Als er noch ein Säugling war, ließ Ibrahim ihn und seine Mutter auf Allahs Befehl im leeren Tal von Mekka zurück, und Allah ließ für sie die Quelle Zamzam hervorsprudeln. (Die ganze Geschichte steht in den Kapiteln über Ibrahim.)",
+        "Reisende vom Stamm Jurhum kamen und ließen sich mit Hadschars Erlaubnis am Wasser nieder. Ismail wuchs unter ihnen auf, lernte von ihnen Arabisch und beeindruckte sie, und als er erwachsen war, verheirateten sie ihn mit einer ihrer Frauen."
+      ],
+      "kidsParagraphs": [
+        "Ismail wuchs mit seiner Mutter Hadschar im Tal von Mekka auf, neben dem Brunnen Zamzam.",
+        "Ein Stamm namens Jurhum kam, um bei ihnen zu leben, und Ismail lernte von ihnen Arabisch."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "Ibn Abbas",
+          "translation": "…Sie ließen sich dort nieder und schickten nach ihren Familien, die kamen und sich bei ihnen niederließen, bis es dort mehrere Haushalte gab. Der Junge wuchs auf und lernte von ihnen Arabisch, und sie bewunderten und mochten ihn, als er heranwuchs. Als er erwachsen wurde, verheirateten sie ihn mit einer Frau aus ihrer Mitte…",
+          "match": "وشب الغلام وتعلم العربية منهم",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah sorgt für die, die auf Ihn vertrauen, selbst in einem leeren Tal.",
+        "Guter Charakter macht einen Fremden bei den Menschen beliebt.",
+        "Eine kleine Familie kann der Anfang einer großen Nation sein."
+      ],
+      "quiz": [
+        {
+          "question": "Wer war Ismails Mutter?",
+          "options": [
+            "Sara",
+            "Hadschar",
+            "Maryam",
+            "Asiya"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Von welchem Stamm lernte Ismail Arabisch?",
+          "options": [
+            "Quraisch",
+            "Jurhum",
+            "Thamud",
+            "'Ad"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Wo wuchs Ismail auf?",
+          "options": [
+            "In Ägypten",
+            "Im Tal von Mekka",
+            "In Babylon",
+            "In Madyan"
+          ],
+          "answer": 1,
+          "reference": "Quran 14:37"
+        }
+      ]
+    },
+    {
+      "id": "ismail-2",
+      "title": "Der gehorsame Sohn",
+      "paragraphs": [
+        "Als Ismail alt genug war, um an der Seite seines Vaters zu arbeiten, erzählte ihm Ibrahim von dem Traum, in dem er ihn opferte. Ismail antwortete: „O mein Vater, tu, was dir befohlen wird. Du wirst mich, so Allah will, unter den Geduldigen finden.“ Allah löste ihn mit einem gewaltigen Opfer aus.",
+        "Später, als Allah Ibrahim befahl, das Haus zu bauen, sagte Ismail sofort: „Gehorche deinem Herrn“, und er half. Ismail trug die Steine, während sein Vater baute, und gemeinsam beteten sie: „Unser Herr, nimm es von uns an.“"
+      ],
+      "kidsParagraphs": [
+        "Ismail gehorchte Allah und seinem Vater, auch wenn es sehr schwer war.",
+        "Er half seinem Vater, die Kaaba zu bauen, und trug die Steine."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        }
+      ],
+      "lessons": [
+        "Wahrer Gehorsam gegenüber Allah ist geduldig und bereitwillig.",
+        "Den Eltern bei guten Taten zu helfen, ist eine große Ehre.",
+        "Bitte Allah, jede gute Tat anzunehmen."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Ismail, als sein Vater ihm von dem Traum erzählte?",
+          "options": [
+            "Tu, was dir befohlen wird",
+            "Ich habe Angst",
+            "Frag jemand anderen",
+            "Ich laufe weg"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Was trug Ismail, während die Kaaba gebaut wurde?",
+          "options": [
+            "Wasser",
+            "Steine",
+            "Holz",
+            "Essen"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "Was beteten Ibrahim und Ismail beim Bauen?",
+          "options": [
+            "Mach uns reich",
+            "Unser Herr, nimm es von uns an",
+            "Gib uns ein Königreich",
+            "Schütze die Mauern"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        }
+      ]
+    },
+    {
+      "id": "ismail-3",
+      "title": "Treu seinem Versprechen",
+      "paragraphs": [
+        "Der Koran lobt Ismail: Er war treu seinem Versprechen, ein Gesandter und Prophet. Er gebot seiner Familie das Gebet und die Zakat, und sein Herr hatte Wohlgefallen an ihm. Allah nennt ihn unter den Geduldigen und den Besten der Auserwählten.",
+        "Ismail war auch ein Bogenschütze. Einmal kam der Prophet ﷺ an Männern vorbei, die Bogenschießen übten, und sagte: „Schießt, Kinder Ismails, denn euer Vater war ein Bogenschütze.“",
+        "Von Ismails Nachkommen stammen die Araber des Hidschas ab, und aus ihnen kam Tausende von Jahren später der Prophet Muhammad ﷺ: die Antwort auf das Gebet Ibrahims und Ismails um einen Gesandten aus ihren Nachkommen."
+      ],
+      "kidsParagraphs": [
+        "Allah sagt, dass Ismail seine Versprechen immer hielt und seiner Familie das Gebet gebot.",
+        "Er war ein großartiger Bogenschütze! Und unser Prophet Muhammad ﷺ stammt von ihm ab."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 54,
+          "ayahEnd": 55
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2899",
+          "narrator": "Salama ibn al-Akwa'",
+          "translation": "Der Prophet ﷺ kam an Leuten vom Stamm Aslam vorbei, die sich im Bogenschießen maßen, und sagte: „Schießt, Kinder Ismails, denn euer Vater war ein Bogenschütze. Schießt, und ich bin mit der und der Gruppe …“",
+          "match": "ارموا بني اسماعيل فان اباكم كان راميا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Versprechen zu halten ist eine Eigenschaft der Propheten.",
+        "Die Familie zu Gebet und Spende anzuleiten, gehört zum Glauben.",
+        "Nützliche Fertigkeiten wie Bogenschießen werden in der Sunna gelobt."
+      ],
+      "quiz": [
+        {
+          "question": "Welche Eigenschaft lobt der Koran an Ismail (19:54)?",
+          "options": [
+            "Reichtum",
+            "Treue zu seinem Versprechen",
+            "Stärke",
+            "Schönheit"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:54"
+        },
+        {
+          "question": "Was gebot Ismail seiner Familie?",
+          "options": [
+            "Handel",
+            "Gebet und Zakat",
+            "Reisen",
+            "Häuser bauen"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:55"
+        },
+        {
+          "question": "Welche Fertigkeit Ismails erwähnte der Prophet ﷺ?",
+          "options": [
+            "Bogenschießen",
+            "Schwimmen",
+            "Schreiben",
+            "Segeln"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2899"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dhulkifl",
+  "language": "de",
+  "name": "Dhul-Kifl",
+  "title": "Einer der Geduldigen und der Besten",
+  "sentTo": "Sein Volk; der Koran nennt es nicht",
+  "era": "Ungewiss. Die Gelehrten sind sich uneinig, wann er lebte; seine Stellung in dieser Reihenfolge ist ungefähr.",
+  "places": [
+    {
+      "name": "Nicht bekannt. Manche Berichte verorten ihn im Irak; andere setzen ihn mit Hesekiel (Hizqil) gleich.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Dhul-Kifl wird im Koran zweimal erwähnt, unter den Geduldigen, den Rechtschaffenen und den Besten. Mehr erzählt der Koran nicht über sein Leben, und die Gelehrten sind sich sogar uneinig, ob er ein Prophet oder ein rechtschaffener Mann war.",
+  "notes": [
+    "War Dhul-Kifl ein Prophet? Die meisten Gelehrten sagen ja, weil der Koran ihn unter den Propheten nennt. Einige frühe Gelehrte sagten, er sei ein rechtschaffener Mann gewesen, kein Prophet.",
+    "Sein Name bedeutet „der mit dem Anteil“ oder „der eine Verantwortung übernahm“. Berichte erklären ihn mit der Geschichte eines Mannes, der versprach, am Tag zu fasten, in der Nacht zu beten und ohne Zorn zu richten; diese Berichte stehen nicht im Koran oder in authentischen Hadithen.",
+    "Manche setzen ihn mit dem Propheten Hesekiel (Hizqil) der Bibel gleich, andere mit anderen Gestalten; nichts davon ist sicher."
+  ],
+  "chapters": [
+    {
+      "id": "dhulkifl-1",
+      "title": "Unter den Geduldigen genannt",
+      "paragraphs": [
+        "Allah sagt im Koran: „Und Ismail, Idris und Dhul-Kifl: Alle gehörten zu den Geduldigen. Und Wir ließen sie in Unsere Barmherzigkeit eingehen; sie gehörten zu den Rechtschaffenen.“",
+        "An anderer Stelle fordert Allah uns auf, an Ismail, al-Yasa' und Dhul-Kifl zu denken, „und alle gehören zu den Besten“.",
+        "Das ist alles, was Allah uns über ihn gesagt hat. Es genügt zu wissen, dass Allah Selbst ihn für Geduld und Rechtschaffenheit gelobt und ihn unter die Besten Seiner Diener gestellt hat. Manches hat Allah uns verborgen, und wir erfinden nicht, was Er uns nicht gesagt hat."
+      ],
+      "kidsParagraphs": [
+        "Dhul-Kifl wird im Koran mit Ismail und Idris als einer der Geduldigen und Guten genannt.",
+        "Allah hat uns nur wenig über ihn erzählt, und dieses Wenige ist großes Lob!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Eine volkstümliche Geschichte sagt, Dhul-Kifl habe seinem Volk versprochen, jeden Tag zu fasten, jede Nacht zu beten und ohne Zorn zu richten, und Iblis habe vergeblich versucht, ihn zornig zu machen."
+        }
+      ],
+      "lessons": [
+        "Geduld wird von Allah immer wieder gelobt.",
+        "Über die verborgene Vergangenheit sagen wir nur, was Allah und Sein Gesandter ﷺ uns gesagt haben.",
+        "Allahs Lob ist die größte Ehre, ob die Menschen deine Geschichte kennen oder nicht."
+      ],
+      "quiz": [
+        {
+          "question": "Mit welchen Propheten wird Dhul-Kifl als einer der Geduldigen genannt?",
+          "options": [
+            "Ismail und Idris",
+            "Musa und Harun",
+            "Dawud und Sulaiman",
+            "Yunus und Ayyub"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:85"
+        },
+        {
+          "question": "Wie beschreibt der Koran (38:48) Dhul-Kifl, Ismail und al-Yasa'?",
+          "options": [
+            "Unter den Besten",
+            "Als Könige",
+            "Als Händler",
+            "Als Krieger"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Worin ließ Allah sie eingehen?",
+          "options": [
+            "In einen Palast",
+            "In Seine Barmherzigkeit",
+            "In ein Schiff",
+            "In eine Stadt"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:86"
+        }
+      ]
+    }
+  ]
+}

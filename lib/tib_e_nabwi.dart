@@ -1,15 +1,30 @@
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/utils/utils/constraints/image_strings.dart';
 import 'package:allah_everywhere/data/tib_e_nabwi_data.dart';
+import 'package:allah_everywhere/data/prophetic_content.dart';
+import 'package:allah_everywhere/controllers/language_controller.dart';
+import 'package:allah_everywhere/utils/utils/theme/scripture_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class TibENabwi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Rebuilds when the app language changes, so the text switches at once.
+    return Obx(() => _build(
+        context, Get.find<LanguageController>().locale.value.languageCode));
+  }
+
+  Widget _build(BuildContext context, String languageCode) {
+    final content = propheticContentFor(languageCode);
+    final bodyFont = languageCode == 'ur' ? ScriptureText.urduFamily : null;
+    final lineHeight = bodyFont == null ? 1.4 : 2.1;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
-    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final textColor =
+        isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     final subColor = isDark ? VoidColors.textDarkSecondary : Colors.black54;
 
     return Scaffold(
@@ -19,12 +34,13 @@ class TibENabwi extends StatelessWidget {
         elevation: 0,
         automaticallyImplyLeading: false,
         title: Text(
-          'Tib e Nabwi (S.A.W)',
-          style: TextStyle(color: textColor, fontWeight: FontWeight.bold, fontSize: 18.sp),
+          content.text.tibTitle,
+          style: TextStyle(
+              color: textColor, fontWeight: FontWeight.bold, fontSize: 18.sp),
         ),
         centerTitle: true,
       ),
-      body: Padding(
+      body: ReadableWidth(child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
         child: SingleChildScrollView(
           child: Column(
@@ -47,42 +63,62 @@ class TibENabwi extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Text(
-                        'تعظيم النبي',
-                        style: TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                        content.text.tibHeader,
+                        style: TextStyle(
+                          fontSize: 24.sp,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontFamily: ScriptureText.urduFamily,
+                          height: 1.8,
+                        ),
                       ),
                     ),
-                    Image.asset(VoidImages.tib_e_nabwi, height: 100.h, width: 100.w, fit: BoxFit.contain),
+                    Image.asset(VoidImages.tib_e_nabwi,
+                        height: 100.h, width: 100.w, fit: BoxFit.contain),
                   ],
                 ),
               ),
               SizedBox(height: 20.h),
               Text(
-                'Prophetic guidance on health and natural remedies (Tib-e-Nabwi)',
-                style: TextStyle(fontSize: 14.sp, color: textColor, fontWeight: FontWeight.w600),
+                content.text.tibSubtitle,
+                style: TextStyle(
+                    fontSize: 14.sp,
+                    color: textColor,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: bodyFont),
               ),
               SizedBox(height: 4.h),
               Text(
-                'These are traditional teachings from authentic Hadith. They are not a substitute for medical treatment - consult a doctor for health conditions.',
-                style: TextStyle(fontSize: 12.sp, color: subColor, fontStyle: FontStyle.italic),
+                content.text.tibDisclaimer,
+                style: TextStyle(
+                    fontSize: 12.sp,
+                    color: subColor,
+                    fontStyle: bodyFont == null ? FontStyle.italic : null,
+                    fontFamily: bodyFont,
+                    height: bodyFont == null ? null : lineHeight),
               ),
               SizedBox(height: 16.h),
-              for (int i = 0; i < tibENabwiCategories.length; i++)
-                _buildCategoryCard(tibENabwiCategories[i], i, isDark, accent, textColor, subColor),
-              SizedBox(height: 110.h),
+              for (int i = 0; i < content.tib.length; i++)
+                _buildCategoryCard(context, content.tib[i], i, isDark, accent,
+                    textColor, subColor, bodyFont, lineHeight),
+              SizedBox(height: navBarClearance(context)),
             ],
           ),
         ),
-      ),
+      )),
     );
   }
 
   Widget _buildCategoryCard(
+    BuildContext context,
     TibCategory category,
     int index,
     bool isDark,
     Color accent,
     Color textColor,
     Color subColor,
+    String? bodyFont,
+    double lineHeight,
   ) {
     return Container(
       margin: EdgeInsets.only(bottom: 12.h),
@@ -90,34 +126,61 @@ class TibENabwi extends StatelessWidget {
         color: isDark ? VoidColors.cardDark : VoidColors.cardLight,
         borderRadius: BorderRadius.circular(16.r),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 6.r, offset: const Offset(0, 2)),
+          BoxShadow(
+              color: Colors.black.withOpacity(isDark ? 0.25 : 0.06),
+              blurRadius: 6.r,
+              offset: const Offset(0, 2)),
         ],
       ),
-      child: Theme(
-        data: ThemeData(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          initiallyExpanded: index == 0,
-          iconColor: accent,
-          collapsedIconColor: accent,
-          title: Text(
-            category.title,
-            style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: textColor),
+      // Transparent Material so the tile's ink draws above this card's
+      // colour (without it Flutter reports the splash as invisible), and the
+      // app theme is extended - not replaced - just to hide the dividers.
+      child: Material(
+        type: MaterialType.transparency,
+        child: Theme(
+          data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            initiallyExpanded: index == 0,
+            iconColor: accent,
+            collapsedIconColor: accent,
+            title: Text(
+              category.title,
+              style: TextStyle(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.bold,
+                  color: textColor,
+                  fontFamily: bodyFont),
+            ),
+            subtitle: Text(
+              category.intro,
+              style: TextStyle(
+                  fontSize: 12.sp,
+                  color: subColor,
+                  fontFamily: bodyFont,
+                  height: bodyFont == null ? null : lineHeight),
+            ),
+            childrenPadding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 16.h),
+            expandedCrossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (final item in category.items)
+                _buildRemedyCard(item, isDark, accent, textColor, subColor,
+                    bodyFont, lineHeight),
+            ],
           ),
-          subtitle: Text(
-            category.intro,
-            style: TextStyle(fontSize: 12.sp, color: subColor),
-          ),
-          childrenPadding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 16.h),
-          expandedCrossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            for (final item in category.items) _buildRemedyCard(item, isDark, accent, textColor, subColor),
-          ],
         ),
       ),
     );
   }
 
-  Widget _buildRemedyCard(TibRemedy item, bool isDark, Color accent, Color textColor, Color subColor) {
+  Widget _buildRemedyCard(
+    TibRemedy item,
+    bool isDark,
+    Color accent,
+    Color textColor,
+    Color subColor,
+    String? bodyFont,
+    double lineHeight,
+  ) {
     return Container(
       margin: EdgeInsets.only(top: 10.h),
       padding: EdgeInsets.all(12.w),
@@ -128,9 +191,19 @@ class TibENabwi extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(item.title, style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: textColor)),
+          Text(item.title,
+              style: TextStyle(
+                  fontSize: 14.sp,
+                  fontWeight: FontWeight.bold,
+                  color: textColor,
+                  fontFamily: bodyFont)),
           SizedBox(height: 6.h),
-          Text(item.description, style: TextStyle(fontSize: 12.5.sp, color: textColor, height: 1.4)),
+          Text(item.description,
+              style: TextStyle(
+                  fontSize: 12.5.sp,
+                  color: textColor,
+                  height: lineHeight,
+                  fontFamily: bodyFont)),
           SizedBox(height: 8.h),
           Row(
             children: [
@@ -139,7 +212,11 @@ class TibENabwi extends StatelessWidget {
               Expanded(
                 child: Text(
                   item.reference,
-                  style: TextStyle(fontSize: 10.5.sp, fontWeight: FontWeight.bold, color: accent),
+                  style: TextStyle(
+                      fontSize: 10.5.sp,
+                      fontWeight: FontWeight.bold,
+                      color: accent,
+                      fontFamily: bodyFont),
                 ),
               ),
             ],

@@ -1,0 +1,614 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "adam",
+  "language": "fr",
+  "name": "Adam",
+  "title": "Le père de l'humanité",
+  "sentTo": "Ses propres enfants, la première famille humaine",
+  "era": "Le commencement de l'humanité. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Inconnu. Le Coran dit seulement qu'Adam fut descendu sur la terre.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Le premier être humain et le premier prophète. Allah l'a créé de Ses mains, lui a enseigné les noms de toutes choses et l'a honoré au-dessus des anges. Il commit une faute, se repentit aussitôt et fut pardonné, et il devint le père de chaque personne sur terre.",
+  "notes": [
+    "Où se trouvait le Jardin ? La plupart des savants disent que c'était le Paradis de l'au-delà. Une minorité a dit que c'était un jardin élevé sur terre.",
+    "Iblis a-t-il jamais été un ange ? Le Coran dit qu'il « était d'entre les djinns » (18:50). La plupart des savants disent qu'il ne fut jamais un ange ; certains anciens savants ont dit qu'il vivait et adorait parmi eux.",
+    "Le Coran appelle l'épouse d'Adam seulement « ton épouse ». Le nom Hawwa (Ève) vient du hadith (par exemple Sahih al-Bukhari 3330).",
+    "Adam premier prophète : c'est l'avis des savants, fondé sur le fait qu'Allah lui a parlé et l'a élu (3:33). Certains hadiths en dehors d'al-Bukhari et de Muslim le disent explicitement ; un savant doit confirmer lequel citer.",
+    "Les détails populaires comme le type d'arbre, le serpent, le lieu où Adam descendit sur terre ou son âge exact à sa mort viennent de récits faibles ou des Gens du Livre. Ils sont omis ici ou signalés."
+  ],
+  "chapters": [
+    {
+      "id": "adam-1",
+      "title": "La nouvelle annoncée aux anges",
+      "paragraphs": [
+        "Avant qu'il n'y ait un seul être humain sur la terre, Allah informa les anges d'une nouvelle création qu'Il allait faire. « Je vais établir sur la terre un khalifa », dit-Il : un successeur, quelqu'un qui y vivrait et qui recevrait une responsabilité.",
+        "Les anges posèrent une question par étonnement, non par orgueil : Allah allait-Il y placer quelqu'un qui pourrait semer la corruption et verser le sang, alors qu'eux Le louaient et Le sanctifiaient sans cesse ? La réponse d'Allah enseigne l'humilité à chacun de nous : « Je sais ce que vous ne savez pas. »",
+        "Puis Allah enseigna à Adam les noms de toutes choses. Il présenta ces choses aux anges et leur demanda de les nommer. Les anges dirent : « Gloire à Toi ! Nous n'avons de savoir que ce que Tu nous as enseigné. » Puis Adam reçut l'ordre de leur apprendre les noms, et il le fit. Ainsi Allah montra aux anges le don du savoir qu'Il avait accordé à l'être humain.",
+        "Les savants expliquent le mot khalifa de plusieurs façons. Certains disent qu'il désigne des gens qui se succèdent, génération après génération. D'autres disent que les humains ont reçu la charge de prendre soin de la terre sur ordre d'Allah. Les deux sens portent la même leçon : la vie sur terre est un dépôt confié."
+      ],
+      "kidsParagraphs": [
+        "Il y a très longtemps, avant que des hommes ne vivent sur la terre, Allah annonça aux anges qu'Il y placerait une nouvelle création.",
+        "Allah enseigna à Adam les noms de toutes choses. Les anges ne les connaissaient pas, et ils dirent : « Nous savons seulement ce que Tu nous as appris. » Alors Adam leur dit les noms. Le savoir est un cadeau d'Allah !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 30,
+          "ayahEnd": 30
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 31,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "La sagesse d'Allah est plus grande que la nôtre, même quand nous ne comprenons pas Son dessein.",
+        "Le savoir est un don d'Allah et fait partie de ce qui honore l'être humain.",
+        "Quand on ne sait pas, c'est de la politesse de le dire, comme l'ont fait les anges."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah annonça-t-Il aux anges qu'Il placerait sur la terre ?",
+          "options": [
+            "Un ange",
+            "Un khalifa (successeur)",
+            "Un roi des djinns",
+            "Une montagne"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:30"
+        },
+        {
+          "question": "Qu'Allah enseigna-t-Il à Adam ?",
+          "options": [
+            "Les noms de toutes choses",
+            "Construire des bateaux",
+            "Seulement les noms des étoiles",
+            "La poésie"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:31"
+        },
+        {
+          "question": "Que dirent les anges quand on les interrogea sur les noms ?",
+          "options": [
+            "Nous savons tout",
+            "Demande à Iblis",
+            "Nous n'avons de savoir que ce que Tu nous as enseigné",
+            "Nous allons chercher"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-2",
+      "title": "Créé d'argile",
+      "paragraphs": [
+        "Allah créa Adam d'une manière unique parmi les humains : il n'avait ni père ni mère. Allah le façonna d'argile, d'une boue noire et malléable, et quand Il l'eut formé, Il insuffla en lui une âme créée par Lui, puis ordonna aux anges de se prosterner devant Adam.",
+        "Le Coran compare cela à la création de Jésus (Issa, AS) : Adam fut fait de poussière, puis Allah lui dit « Sois », et il fut. De la même façon, Allah crée ce qu'Il veut.",
+        "Le Prophète Muhammad ﷺ nous a appris qu'Adam était très grand, soixante coudées, et qu'Allah l'envoya saluer un groupe d'anges. Les mots d'Adam et la réponse des anges devinrent la salutation de tous ses enfants.",
+        "Ainsi, chaque fois qu'un musulman dit « as-salamu alaykum » aujourd'hui, il répète la toute première salutation prononcée par un être humain."
+      ],
+      "kidsParagraphs": [
+        "Allah fit Adam d'argile, sans mère ni père, puis lui donna la vie.",
+        "Les premiers mots d'Adam aux anges furent « As-salamu alaykum » : que la paix soit sur vous ! C'est pourquoi nous nous saluons encore ainsi aujourd'hui."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 28,
+          "ayahEnd": 29
+        },
+        {
+          "type": "narrationNote",
+          "after": 0,
+          "text": "Certains livres racontent que plusieurs anges furent envoyés chercher la terre pour créer Adam, et que la terre refusa de la donner jusqu'à ce que l'Ange de la mort la prenne."
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3326",
+          "narrator": "Abou Hourayra",
+          "translation": "Le Prophète ﷺ a dit : « Allah créa Adam, et sa taille était de soixante coudées. Puis Il lui dit : “Va saluer ce groupe d'anges et écoute comment ils te saluent, car ce sera ta salutation et celle de ta descendance.” Adam dit : “As-salamu alaykum (que la paix soit sur vous).” Ils dirent : “As-salamu alayka wa rahmatullah (que la paix soit sur toi, ainsi que la miséricorde d'Allah)”, ajoutant “et la miséricorde d'Allah”. Quiconque entrera au Paradis aura la forme d'Adam, et les gens n'ont cessé de diminuer de taille depuis. »",
+          "match": "خلق الله ادم وطوله ستون ذراعا"
+        }
+      ],
+      "lessons": [
+        "Allah crée ce qu'Il veut, comme Il le veut.",
+        "La salutation de paix est celle des croyants depuis le tout premier homme.",
+        "Chaque être humain, quels que soient sa couleur ou son pays, vient du même père, Adam."
+      ],
+      "quiz": [
+        {
+          "question": "De quoi Adam (AS) fut-il créé ?",
+          "options": [
+            "De feu",
+            "De lumière",
+            "D'argile",
+            "Seulement d'eau"
+          ],
+          "answer": 2,
+          "reference": "Quran 15:28"
+        },
+        {
+          "question": "À la création de quel prophète le Coran compare-t-il celle d'Adam ?",
+          "options": [
+            "Issa (Jésus, AS)",
+            "Nouh (Noé, AS)",
+            "Moussa (Moïse, AS)",
+            "Youssouf (Joseph, AS)"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:59"
+        },
+        {
+          "question": "Qu'ajoutèrent les anges en rendant le salut d'Adam ?",
+          "options": [
+            "Rien",
+            "« Et la miséricorde d'Allah » (wa rahmatullah)",
+            "« Bonjour »",
+            "« Bienvenue »"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3326"
+        }
+      ]
+    },
+    {
+      "id": "adam-3",
+      "title": "Iblis refuse de se prosterner",
+      "paragraphs": [
+        "Quand Allah ordonna aux anges de se prosterner devant Adam, tous obéirent. Seul Iblis refusa. Le Coran nous dit qu'Iblis était d'entre les djinns, créés de feu.",
+        "Allah lui demanda ce qui l'avait empêché d'obéir. Sa réponse révéla la maladie de son cœur : « Je suis meilleur que lui. Tu m'as créé de feu et Tu l'as créé d'argile. » Iblis jugea selon l'origine et selon son propre orgueil, et il désobéit à son Seigneur.",
+        "Allah le chassa. Au lieu de se repentir, Iblis demanda un délai jusqu'au Jour de la Résurrection. Puis il jura de guetter les enfants d'Adam sur le droit chemin, de les assaillir par devant et par derrière, par leur droite et par leur gauche.",
+        "Ce fut le début de l'inimitié entre Satan et l'humanité. Allah avertit clairement Adam : celui-ci est un ennemi pour toi et pour ton épouse."
+      ],
+      "kidsParagraphs": [
+        "Tous les anges se prosternèrent devant Adam comme Allah l'avait ordonné. Seul Iblis refusa.",
+        "Iblis dit : « Je suis meilleur que lui ! » Son orgueil le fit désobéir à Allah. Depuis ce jour, Satan est l'ennemi des hommes."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 18,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 14,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 117,
+          "ayahEnd": 117
+        }
+      ],
+      "lessons": [
+        "L'orgueil fut le premier péché commis contre Allah.",
+        "Mépriser les autres à cause de leur origine ou de leur apparence est la voie d'Iblis.",
+        "Satan est un ennemi déclaré ; nous cherchons protection auprès d'Allah contre lui."
+      ],
+      "quiz": [
+        {
+          "question": "Qui refusa de se prosterner devant Adam ?",
+          "options": [
+            "Jibril",
+            "Iblis",
+            "Tous les anges",
+            "Mika'il"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:34"
+        },
+        {
+          "question": "De quoi Iblis dit-il avoir été créé ?",
+          "options": [
+            "De feu",
+            "D'argile",
+            "De lumière",
+            "D'eau"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:12"
+        },
+        {
+          "question": "Selon le Coran, Iblis faisait partie des…",
+          "options": [
+            "Anges",
+            "Humains",
+            "Djinns",
+            "Animaux"
+          ],
+          "answer": 2,
+          "reference": "Quran 18:50"
+        }
+      ]
+    },
+    {
+      "id": "adam-4",
+      "title": "Le Jardin et l'arbre",
+      "paragraphs": [
+        "Allah fit habiter Adam et son épouse dans le Jardin. Ils pouvaient y manger librement où ils voulaient. Ils n'y auraient ni faim ni nudité, ni soif ni brûlure du soleil. Il n'y avait qu'un seul ordre : ne pas s'approcher de cet arbre.",
+        "Satan vint à eux avec ses chuchotements. Il leur dit que leur Seigneur ne leur avait interdit l'arbre que pour qu'ils ne deviennent pas des anges ou ne vivent pas éternellement. Il l'appela « l'arbre de l'éternité et un royaume impérissable », et il leur jura même qu'il était pour eux un conseiller sincère.",
+        "Adam oublia l'engagement, et tous deux mangèrent de l'arbre. Aussitôt leur nudité leur apparut, et ils se mirent à se couvrir de feuilles du Jardin. Leur Seigneur les appela : « Ne vous avais-Je pas interdit cet arbre, et ne vous avais-Je pas dit que Satan est pour vous un ennemi déclaré ? »",
+        "Remarquez comment le Coran raconte cette histoire : Satan les tenta tous les deux, et tous deux mangèrent. Le Coran ne reproche pas à l'épouse d'Adam de l'avoir tenté ; cette idée vient d'autres traditions, pas de l'islam."
+      ],
+      "kidsParagraphs": [
+        "Adam et son épouse vivaient dans un magnifique jardin. Ils pouvaient manger de tout, sauf d'un seul arbre.",
+        "Satan les trompa par des mensonges, et ils mangèrent de l'arbre. Ils avaient commis une faute."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 35,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 22,
+          "ayahEnd": 22
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Certains livres nomment l'arbre (pomme, blé, figue ou vigne), disent qu'un serpent fit entrer Iblis dans le Jardin, ou que l'épouse d'Adam le persuada de manger."
+        }
+      ],
+      "lessons": [
+        "Satan rend le mal attirant, et peut même prétendre donner un bon conseil.",
+        "Les ordres d'Allah nous protègent, même quand nous n'en voyons pas la raison.",
+        "L'homme et la femme sont chacun responsables de leurs actes."
+      ],
+      "quiz": [
+        {
+          "question": "De quoi Adam et son épouse ne devaient-ils pas s'approcher ?",
+          "options": [
+            "De la rivière",
+            "D'un arbre",
+            "Des anges",
+            "De la porte"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:35"
+        },
+        {
+          "question": "Comment Satan appela-t-il l'arbre interdit ?",
+          "options": [
+            "L'arbre de lumière",
+            "L'arbre fruitier",
+            "L'arbre de l'éternité",
+            "L'arbre des anges"
+          ],
+          "answer": 2,
+          "reference": "Quran 20:120"
+        },
+        {
+          "question": "Selon le Coran, qui mangea de l'arbre ?",
+          "options": [
+            "Adam et son épouse tous les deux",
+            "Seulement son épouse",
+            "Seulement Adam",
+            "Iblis"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:121"
+        }
+      ]
+    },
+    {
+      "id": "adam-5",
+      "title": "Les paroles du repentir",
+      "paragraphs": [
+        "Adam et son épouse ne discutèrent pas et ne cherchèrent pas d'excuses, comme l'avait fait Iblis. Ils se tournèrent aussitôt vers Allah, pleins de regret, et dirent : « Seigneur, nous nous sommes fait du tort à nous-mêmes. Si Tu ne nous pardonnes pas et ne nous fais pas miséricorde, nous serons certainement parmi les perdants. »",
+        "Le Coran nous dit qu'Adam reçut de son Seigneur des paroles, et qu'Allah accepta son repentir. Beaucoup de savants expliquent que ces paroles étaient justement la prière que tous deux prononcèrent. Allah, l'Accueillant au repentir, le Très Miséricordieux, leur pardonna.",
+        "Puis Allah les fit descendre sur la terre, où eux et leurs enfants vivraient pour un temps. Il leur fit une promesse : une guidée leur viendrait de Lui, et quiconque la suivrait n'aurait rien à craindre et ne serait pas affligé.",
+        "Voilà la grande différence entre Adam et Iblis. Tous deux désobéirent, mais l'un fut orgueilleux et accusa son Seigneur, tandis que l'autre fut humble et demanda pardon. Adam fut pardonné, et en islam personne ne porte le péché d'autrui : chacun ne répond que de ses propres actes."
+      ],
+      "kidsParagraphs": [
+        "Adam et son épouse regrettèrent beaucoup. Ils demandèrent à Allah : « Seigneur, nous avons mal agi. Pardonne-nous et fais-nous miséricorde. »",
+        "Allah leur pardonna, car Il aime ceux qui demandent pardon sincèrement. Puis Allah les envoya vivre sur la terre."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 38,
+          "ayahEnd": 38
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 6,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        }
+      ],
+      "lessons": [
+        "Quand nous faisons une faute, reconnaissons-la et revenons vite vers Allah.",
+        "Allah aime pardonner à ceux qui se repentent sincèrement.",
+        "Chacun est responsable de ses propres actes ; personne ne porte le péché d'un autre."
+      ],
+      "quiz": [
+        {
+          "question": "Que dirent Adam et son épouse après leur faute ?",
+          "options": [
+            "Ce n'était pas notre faute",
+            "Seigneur, nous nous sommes fait du tort…",
+            "Iblis nous y a poussés",
+            "Nous n'avons rien fait de mal"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:23"
+        },
+        {
+          "question": "Que fit Allah quand Adam se repentit ?",
+          "options": [
+            "Il accepta son repentir",
+            "Il le transforma en ange",
+            "Il le laissa dans le Jardin",
+            "Il l'envoya chez les djinns"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:37"
+        },
+        {
+          "question": "Qu'Allah promit-Il à ceux qui suivent Sa guidée ?",
+          "options": [
+            "Une grande richesse",
+            "Une longue vie",
+            "Ni crainte ni tristesse",
+            "Le pouvoir sur les autres"
+          ],
+          "answer": 2,
+          "reference": "Quran 2:38"
+        }
+      ]
+    },
+    {
+      "id": "adam-6",
+      "title": "Les deux fils d'Adam",
+      "paragraphs": [
+        "Sur la terre, Adam et son épouse eurent des enfants, et la famille humaine commença à grandir. Le Coran raconte l'histoire de deux des fils d'Adam. Chacun offrit un sacrifice à Allah. Il fut accepté de l'un, mais pas de l'autre.",
+        "Celui dont l'offrande ne fut pas acceptée devint jaloux et dit : « Je te tuerai certainement. » Son frère répondit calmement : « Allah n'accepte que de ceux qui Le craignent. Même si tu étends la main pour me tuer, je n'étendrai pas la main pour te tuer, car je crains Allah, le Seigneur des mondes. »",
+        "Mais la jalousie l'emporta, et le premier meurtre de l'histoire humaine eut lieu. Ensuite, le meurtrier ne savait même pas quoi faire du corps de son frère. Alors Allah envoya un corbeau qui gratta la terre pour le lui montrer. Il s'écria : « Malheur à moi ! N'ai-je même pas été capable d'être comme ce corbeau ? » et il fut rempli de regret.",
+        "Le Prophète ﷺ a enseigné que chaque fois qu'une personne est tuée injustement, le premier fils d'Adam porte une part de ce péché, car il fut le premier à instaurer le meurtre. Et le Coran tire de cette histoire une leçon pour toute l'humanité : tuer une seule âme innocente revient à tuer l'humanité entière, et sauver une seule vie revient à sauver l'humanité entière."
+      ],
+      "kidsParagraphs": [
+        "Adam avait deux fils qui offrirent chacun un cadeau à Allah. Allah accepta le cadeau du bon fils.",
+        "L'autre fils devint jaloux et tua son frère, puis il le regretta amèrement. Allah nous enseigne que sauver une vie, c'est comme sauver tous les hommes !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 30,
+          "ayahEnd": 31
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3335",
+          "narrator": "Abdallah ibn Mas'oud",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Aucune âme n'est tuée injustement sans que le premier fils d'Adam ne porte une part de son sang, car il fut le premier à instaurer le meurtre. »",
+          "match": "لا تقتل نفس ظلما الا كان على ابن ادم الاول كفل من دمها"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 5,
+          "ayahStart": 32,
+          "ayahEnd": 32
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Les noms Habil (Abel) et Qabil (Caïn), et l'histoire selon laquelle les frères se disputèrent au sujet d'un mariage, ne figurent ni dans le Coran ni chez al-Bukhari et Muslim. Ils viennent de récits plus tardifs, souvent issus des Gens du Livre."
+        }
+      ],
+      "lessons": [
+        "La jalousie non maîtrisée peut mener à des péchés terribles.",
+        "Allah accepte les actes de ceux qui Le craignent.",
+        "Chaque vie humaine est précieuse : sauver une vie, c'est comme sauver toute l'humanité.",
+        "Celui qui instaure une mauvaise pratique porte une part du péché de tous ceux qui la suivent."
+      ],
+      "quiz": [
+        {
+          "question": "Pourquoi l'un des fils menaça-t-il de tuer son frère ?",
+          "options": [
+            "Ils se disputaient une terre",
+            "Sa propre offrande n'avait pas été acceptée",
+            "Son frère l'avait volé",
+            "Iblis le lui avait ordonné"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:27"
+        },
+        {
+          "question": "Qu'Allah envoya-t-Il pour montrer au meurtrier comment enterrer son frère ?",
+          "options": [
+            "Un ange",
+            "Une colombe",
+            "Un loup",
+            "Un corbeau"
+          ],
+          "answer": 3,
+          "reference": "Quran 5:31"
+        },
+        {
+          "question": "Selon le Coran, sauver une vie revient à…",
+          "options": [
+            "Sauver l'humanité entière",
+            "Sauver une tribu",
+            "Jeûner un jour",
+            "Rien de particulier"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-7",
+      "title": "L'héritage d'Adam",
+      "paragraphs": [
+        "Adam (AS) fut le premier être humain, et les savants le comptent comme le premier prophète. Allah l'élut, lui parla et le guida, et il enseigna à ses enfants à n'adorer qu'Allah seul.",
+        "Allah prit aussi un engagement de tous les enfants d'Adam. Il fit sortir leur descendance et les fit témoigner : « Ne suis-Je pas votre Seigneur ? » Ils répondirent : « Si, nous en témoignons. » C'est pourquoi chaque cœur humain sent naturellement qu'il a un Créateur.",
+        "Le Prophète ﷺ a décrit une discussion entre Adam et Moïse (Moussa, AS). Moussa dit : « Tu es Adam, dont la faute t'a fait sortir du Jardin. » Adam répondit : « Tu es Moussa, qu'Allah a choisi pour Ses messages et Sa parole, et tu me reproches une chose qui m'était décrétée avant même que je sois créé ? » Le Prophète ﷺ dit qu'Adam eut le meilleur argument. Les savants expliquent qu'Adam n'excusait pas un péché par le destin : il s'était déjà repenti et avait été pardonné, et il parlait de l'épreuve qu'Allah avait décrétée.",
+        "Le Coran nous appelle tous « enfants d'Adam » et nous avertit : ne laissez pas Satan vous tenter comme il a fait sortir vos parents du Jardin. L'histoire d'Adam est celle de chacun : nous ferons des erreurs, et le chemin du retour passe toujours par le repentir."
+      ],
+      "kidsParagraphs": [
+        "Adam fut le premier homme et le premier prophète. Il apprit à ses enfants à n'adorer qu'Allah.",
+        "Nous sommes tous des « enfants d'Adam ». Quand nous faisons une erreur, nous pouvons toujours demander pardon à Allah, comme notre père Adam l'a fait."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 33,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 172,
+          "ayahEnd": 172
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3409",
+          "narrator": "Abou Hourayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Adam et Moussa eurent une discussion. Moussa lui dit : “Tu es Adam, dont la faute t'a fait sortir du Paradis.” Adam lui dit : “Tu es Moussa, qu'Allah a choisi pour Ses messages et Sa parole, et puis tu me reproches une chose qui m'était décrétée avant que je sois créé ?” » Le Messager d'Allah ﷺ dit deux fois : « Ainsi Adam l'emporta sur Moussa dans la discussion. »",
+          "match": "احتج ادم وموسى"
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 7,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        }
+      ],
+      "lessons": [
+        "Tous les hommes forment une seule famille : les enfants d'Adam.",
+        "Chaque cœur connaît son Créateur ; c'est l'engagement qu'Allah a pris de nous.",
+        "Le destin n'est pas une excuse pour pécher, mais après le repentir nous acceptons avec patience ce qu'Allah a décrété.",
+        "Satan est toujours notre ennemi ; restons vigilants."
+      ],
+      "quiz": [
+        {
+          "question": "Selon le Coran 3:33, qui Allah a-t-Il élu au-dessus des mondes ?",
+          "options": [
+            "Seulement les anges",
+            "Adam, Nouh, la famille d'Ibrahim et la famille d'Imran",
+            "Les rois de la terre",
+            "Les djinns"
+          ],
+          "answer": 1,
+          "reference": "Quran 3:33"
+        },
+        {
+          "question": "Quelle question Allah posa-t-Il aux enfants d'Adam lors de l'engagement ?",
+          "options": [
+            "M'obéirez-vous ?",
+            "Qui vous a créés ?",
+            "Où allez-vous ?",
+            "Ne suis-Je pas votre Seigneur ?"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:172"
+        },
+        {
+          "question": "Quel prophète discuta avec Adam au sujet de la sortie du Jardin ?",
+          "options": [
+            "Moussa (Moïse, AS)",
+            "Nouh (Noé, AS)",
+            "Ibrahim (Abraham, AS)",
+            "Issa (Jésus, AS)"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3409"
+        }
+      ]
+    }
+  ]
+}

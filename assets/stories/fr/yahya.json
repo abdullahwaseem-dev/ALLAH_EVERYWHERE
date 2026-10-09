@@ -1,0 +1,180 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yahya",
+  "language": "fr",
+  "name": "Yahya",
+  "title": "Pur, doux et dévoué dès sa jeunesse",
+  "sentTo": "Les Enfants d'Israël",
+  "era": "L'époque d'Issa (paix sur lui), son cousin, au Ier siècle ; le Coran ne donne aucune date.",
+  "places": [
+    {
+      "name": "Jérusalem (al-Quds), autour du Temple où servait Zakariya.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Le fils accordé à Zakariya (paix sur lui) dans sa vieillesse, avec un nom que personne n'avait porté avant lui. Allah lui donna la sagesse dès l'enfance, la douceur, la pureté et le dévouement envers ses parents. Il confirma la venue d'Issa (paix sur lui), son cousin, et Allah lui adressa la paix le jour de sa naissance, le jour de sa mort et le jour où il sera ressuscité.",
+  "notes": [
+    "La plupart des savants identifient Yahya à Jean le Baptiste de la Bible.",
+    "L'histoire de sa mort (tué par un roi, sa tête apportée sur un plateau) vient de sources chrétiennes et de récits tardifs, non du Coran ni des hadiths authentiques.",
+    "« Confirmant une parole venant d'Allah » (3:39) est expliqué par la plupart des savants comme la confirmation d'Issa (paix sur lui), appelé « une parole venant d'Allah »."
+  ],
+  "chapters": [
+    {
+      "id": "yahya-1",
+      "title": "La sagesse dès l'enfance",
+      "paragraphs": [
+        "Allah l'appela : « Ô Yahya, tiens fermement le Livre. » Allah lui donna la sagesse alors qu'il était encore enfant, ainsi qu'une tendresse venant de Lui et la pureté, et il était pieux.",
+        "Il était dévoué envers ses parents, et ne fut jamais arrogant ni désobéissant. Les anges l'avaient décrit à son père comme un chef, chaste, un prophète parmi les vertueux, qui confirmerait une parole venant d'Allah : Issa (paix sur lui).",
+        "Allah dit : « Que la paix soit sur lui le jour où il naquit, le jour où il mourra, et le jour où il sera ressuscité vivant. »"
+      ],
+      "kidsParagraphs": [
+        "Yahya était sage même enfant. Il était bon et pur, et il aimait et obéissait à ses parents.",
+        "Allah adresse la paix à Yahya : quand il naquit, quand il mourut, et quand il sera ressuscité."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 12,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        }
+      ],
+      "lessons": [
+        "Les enfants peuvent être sages et proches d'Allah.",
+        "La bonté envers les parents est une qualité des prophètes.",
+        "Tiens fermement le Livre d'Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce que Yahya reçut l'ordre de tenir fermement ?",
+          "options": [
+            "Le Livre",
+            "Une épée",
+            "Un bâton",
+            "Les clés du Temple"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Quand Allah donna-t-Il la sagesse à Yahya ?",
+          "options": [
+            "Dès l'enfance",
+            "Dans sa vieillesse",
+            "Jamais",
+            "Après sa mort"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Comment Yahya était-il envers ses parents ?",
+          "options": [
+            "Dévoué",
+            "Désobéissant",
+            "Distant",
+            "Orgueilleux"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:14"
+        }
+      ]
+    },
+    {
+      "id": "yahya-2",
+      "title": "Des cousins au deuxième ciel",
+      "paragraphs": [
+        "La nuit du Mi'raj, le Prophète Muhammad ﷺ atteignit le deuxième ciel et y trouva deux cousins : Yahya et Issa (paix sur eux). Jibril dit : « Voici Yahya et Issa ; salue-les. » Ils lui rendirent le salut et dirent : « Bienvenue au frère vertueux et au prophète vertueux. »",
+        "Yahya et Issa étaient les fils de deux femmes de la même famille, et tous deux étaient des prophètes envoyés aux Enfants d'Israël à la même époque."
+      ],
+      "kidsParagraphs": [
+        "La nuit du Mi'raj, notre Prophète ﷺ rencontra Yahya et Issa au deuxième ciel.",
+        "Yahya et Issa étaient cousins ! Ils l'accueillirent comme un frère."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3430",
+          "narrator": "Malik ibn Sa'sa'a",
+          "translation": "Le Prophète ﷺ leur raconta la nuit où il fut élevé : « …Puis il monta jusqu'au deuxième ciel et demanda qu'on ouvre. On dit : “Qui est-ce ?” Il dit : “Jibril.” On dit : “Et qui est avec toi ?” Il dit : “Muhammad.” On dit : “L'a-t-on fait venir ?” Il dit : “Oui.” Quand j'entrai, voici Yahya et Issa, qui sont cousins. Il dit : “Voici Yahya et Issa, salue-les.” Je les saluai ; ils me rendirent le salut et dirent : “Bienvenue au frère vertueux et au prophète vertueux.” »",
+          "match": "فاذا يحيى وعيسى وهما ابنا خالة",
+          "shortened": true
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Une histoire célèbre dit que Yahya fut tué par un roi, et que sa tête fut apportée sur un plateau."
+        }
+      ],
+      "lessons": [
+        "Les prophètes s'aiment et s'accueillent les uns les autres.",
+        "Les liens familiaux vertueux sont une bénédiction.",
+        "Le Mi'raj honore tous les prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Dans quel ciel le Prophète ﷺ rencontra-t-il Yahya et Issa ?",
+          "options": [
+            "Le premier",
+            "Le deuxième",
+            "Le quatrième",
+            "Le septième"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Quel lien de parenté y avait-il entre Yahya et Issa ?",
+          "options": [
+            "Frères",
+            "Cousins",
+            "Père et fils",
+            "Aucun"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Comment appelèrent-ils le Prophète ﷺ ?",
+          "options": [
+            "Le frère vertueux et le prophète vertueux",
+            "Notre roi",
+            "Notre fils",
+            "Un étranger"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3430"
+        }
+      ]
+    }
+  ]
+}

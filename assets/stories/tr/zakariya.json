@@ -1,0 +1,279 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "zakariya",
+  "language": "tr",
+  "name": "Zekeriya",
+  "title": "Meryem'in kefili, Rabbine gizlice yalvaran",
+  "sentTo": "İsrailoğulları",
+  "era": "Hz. İsa'dan (a.s.) hemen önce, MÖ 1. yüzyılın sonlarına doğru; Kur'an bir tarih vermez.",
+  "places": [
+    {
+      "name": "Zekeriya'nın hizmet ettiği mabedin çevresi, Kudüs.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "İbadethanede hizmet eden ve küçük Meryem'e bakan yaşlı bir peygamber. Allah'ın rızkının ona geldiğini görünce, çok yaşlı olmasına ve eşinin kısır olmasına rağmen salih bir evlat için gizlice dua etti. Allah ona Yahya'yı verdi.",
+  "notes": [
+    "Meryem'in annesinin adı (Hanne) ve diğer aile ayrıntıları Kur'an'dan veya sahih hadislerden değil, sonraki kaynaklardan gelir.",
+    "Zekeriya'nın nasıl vefat ettiğine dair hikâyeler (bazıları öldürüldüğünü söyler) Kur'an'da veya sahih hadislerde bulunmayan rivayetlerden gelir.",
+    "Zekeriya'nın eşi Meryem'in kız kardeşi miydi, yoksa teyzesi mi: Rivayetler farklıdır."
+  ],
+  "chapters": [
+    {
+      "id": "zakariya-1",
+      "title": "Meryem'in kefili",
+      "paragraphs": [
+        "İmrân'ın karısı karnındaki çocuğu Allah'ın hizmetine adamıştı. Bir kız doğurunca adını Meryem koydu ve onu ve soyunu şeytandan koruması için Allah'a sığındı. Allah Meryem'i güzel bir kabulle kabul etti.",
+        "İbadethanede hizmet edenler, ona kimin bakacağını belirlemek için kalemleriyle kura çektiler ve kura Hz. Zekeriya'ya (a.s.) çıktı. Onun yanına mihraba her girişinde yanında bir rızık bulurdu. \"Ey Meryem! Bu sana nereden?\" O da derdi ki: \"Bu Allah katındandır. Allah dilediğine hesapsız rızık verir.\"",
+        "Zekeriya geçimi için çalışan bir peygamberdi. Peygamber ﷺ şöyle buyurdu: \"Zekeriya marangozdu.\""
+      ],
+      "kidsParagraphs": [
+        "Zekeriya küçük Meryem'e bakıyordu. Onu her ziyaret ettiğinde yanında Allah'tan gelen yiyecek vardı!",
+        "Zekeriya bir peygamberdi, aynı zamanda marangozluk yapardı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2379",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Zekeriya marangozdu.\"",
+          "match": "كان زكرياء نجارا"
+        }
+      ],
+      "lessons": [
+        "Allah dilediğine ummadığı yerden rızık verir.",
+        "Yetimlere ve küçüklere bakmak asil bir iştir.",
+        "Elle yapılan dürüst iş peygamberlerin yoludur."
+      ],
+      "quiz": [
+        {
+          "question": "Meryem'e kim baktı?",
+          "options": [
+            "Zekeriya",
+            "Yahya",
+            "Harun",
+            "İmrân"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "Zekeriya Meryem'in yanında ne buldu?",
+          "options": [
+            "Allah'tan gelen rızık",
+            "Altın",
+            "Bir kitap",
+            "Bir kuzu"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "Peygamber'e ﷺ göre Zekeriya'nın mesleği neydi?",
+          "options": [
+            "Marangoz",
+            "Çoban",
+            "Demirci",
+            "Tüccar"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2379"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-2",
+      "title": "Gizli bir dua",
+      "paragraphs": [
+        "Allah'ın Meryem'e nasıl rızık verdiğini gören Zekeriya, sessiz ve gizli bir duayla Rabbine yöneldi. Çok yaşlıydı ve eşinin hiç çocuğu olmamıştı.",
+        "\"Rabbim! Kemiklerim zayıfladı, başım yaşlılıktan ağardı ve Sana dua ederek hiç mahrum kalmadım. Benden sonra akrabalarımın yapacaklarından korkuyorum ve eşim kısırdır. Bana katından bir varis bağışla ve onu razı olunan biri kıl.\"",
+        "Şöyle de dua etti: \"Rabbim! Beni yalnız bırakma; Sen varislerin en hayırlısısın.\""
+      ],
+      "kidsParagraphs": [
+        "Zekeriya çok yaşlıydı ve çocuğu yoktu. İyi bir çocuk için Allah'a sessizce dua etti.",
+        "Dedi ki: \"Rabbim! Senden ne istediysem hiç hayal kırıklığına uğramadım!\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 2,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 4,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 89,
+          "ayahEnd": 89
+        }
+      ],
+      "lessons": [
+        "Sessizce ve alçakgönüllülükle dua et; Allah en hafif duayı bile işitir.",
+        "Allah'ın daha önce duana nasıl karşılık verdiğini kendine hatırlat.",
+        "Hiçbir şeyin Allah için zor olduğunu düşünme."
+      ],
+      "quiz": [
+        {
+          "question": "Zekeriya nasıl dua etti?",
+          "options": [
+            "Çarşıda yüksek sesle",
+            "Sessizce ve gizlice",
+            "Dua etmedi",
+            "Sadece toplu olarak"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:3"
+        },
+        {
+          "question": "Zekeriya geçmiş dualarıyla ilgili ne dedi?",
+          "options": [
+            "Allah'a dua ederek hiç mahrum kalmadığını",
+            "Hiç kabul edilmediğini",
+            "Hiç dua etmediğini",
+            "Onları unuttuğunu"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:4"
+        },
+        {
+          "question": "Zekeriya ne istedi?",
+          "options": [
+            "Allah'ın razı olacağı bir varis",
+            "Servet",
+            "Bir saray",
+            "Sadece sağlık"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:6"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-3",
+      "title": "Yahya müjdesi",
+      "paragraphs": [
+        "Zekeriya mihrapta ayakta namaz kılarken melekler ona seslendi: \"Allah sana, Allah'tan gelen bir kelimeyi tasdik edecek, efendi, iffetli ve salihlerden bir peygamber olacak Yahya'yı müjdeliyor.\" Allah bu adı daha önce kimseye vermediğini söyledi.",
+        "Zekeriya hayret etti: \"Ben bu kadar yaşlıyken ve eşim kısırken nasıl oğlum olur?\" Cevap geldi: \"Rabbin buyuruyor ki: Bu Bana kolaydır. Daha önce sen hiçbir şey değilken seni yarattım.\"",
+        "Bir alamet istedi; ona, sağlıklı olduğu hâlde üç gece insanlarla konuşamayacağı söylendi. Kavminin karşısına çıktı ve onlara sabah akşam Allah'ı tesbih etmelerini işaret etti. Allah Zekeriya'nın ailesi hakkında buyurur: \"Onlar hayırlarda yarışırlar, umarak ve korkarak Bize dua ederlerdi ve Bize karşı derin saygı içindeydiler.\""
+      ],
+      "kidsParagraphs": [
+        "Melekler Zekeriya'ya dedi ki: \"Yahya adında bir oğlun olacak!\"",
+        "Alamet olarak Zekeriya üç gece konuşamadı. İnsanlara işaretle Allah'ı tesbih etmelerini söyledi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 10,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 90,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "Allah duaları kendi mükemmel zamanında kabul eder.",
+        "Hayırlarda yarış ve hem umarak hem korkarak dua et.",
+        "İmkânsız görünen şey Allah için kolaydır."
+      ],
+      "quiz": [
+        {
+          "question": "Zekeriya'nın oğlunun adı neydi?",
+          "options": [
+            "İsa",
+            "Yahya",
+            "Yusuf",
+            "Musa"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:7"
+        },
+        {
+          "question": "Zekeriya'nın alameti neydi?",
+          "options": [
+            "Üç gece insanlarla konuşamadı",
+            "Bir yıldız göründü",
+            "Yağmur yağdı",
+            "Bir rüya gördü"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:10"
+        },
+        {
+          "question": "Zekeriya'nın ailesi Allah'a nasıl dua ederdi?",
+          "options": [
+            "Umarak ve korkarak",
+            "Sadece sıkıntıda",
+            "Hiç",
+            "Kibirle"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:90"
+        }
+      ]
+    }
+  ]
+}

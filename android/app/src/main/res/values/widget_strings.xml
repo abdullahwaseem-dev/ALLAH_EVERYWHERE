@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">Next Prayer</string>
+    <string name="widget_next_prayer_description">Countdown to the next prayer, with today\'s prayer times</string>
+    <string name="widget_hijri_date_name">Islamic Date</string>
+    <string name="widget_hijri_date_description">Today\'s Hijri date and Islamic occasions</string>
+    <string name="widget_reminder_name">Verse of the Day</string>
+    <string name="widget_daily_reminder_description">A verse or hadith to reflect on each day</string>
+    <string name="widget_next_prayer_fallback">Next prayer</string>
+    <string name="widget_set_location_fallback">Open the app to set your location</string>
+    <string name="widget_open_app_fallback">Open the app to update</string>
+    <string name="widget_preview_prayer">Asr</string>
+    <string name="widget_preview_hijri_month">Rabi\' al-Thani</string>
+    <string name="widget_preview_time" translatable="false">3:45 PM</string>
+    <string name="widget_preview_hijri_day" translatable="false">16</string>
+    <string name="widget_preview_hijri_year" translatable="false">1448 AH</string>
+    <string name="widget_preview_gregorian" translatable="false">Thu, 08 Oct 2026</string>
+</resources>

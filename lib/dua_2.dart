@@ -5,6 +5,9 @@ import 'package:get/get.dart';
 import 'data/dua_data.dart';
 import 'duadetail.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class Dua2Screen extends StatelessWidget {
   final DuaCategory category;
@@ -15,10 +18,13 @@ class Dua2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
-    final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
+    final textColor =
+        isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Dua',
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         toolbarHeight: 60.h,
@@ -27,11 +33,12 @@ class Dua2Screen extends StatelessWidget {
         leading: VoidBackButton(onPressed: () => Navigator.pop(context)),
         title: Text(
           category.title,
-          style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),
+          style: TextStyle(
+              fontSize: 18.sp, fontWeight: FontWeight.w600, color: textColor),
         ),
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
+      body: ReadableWidth(child: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(20.w, 20.h, 20.w, 110.h),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,7 +50,10 @@ class Dua2Screen extends StatelessWidget {
                 SizedBox(width: 8.w),
                 Text(
                   '${category.duas.length} duas',
-                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: textColor),
+                  style: TextStyle(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold,
+                      color: textColor),
                 ),
               ],
             ),
@@ -72,8 +82,8 @@ class Dua2Screen extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      )),
+    ));
   }
 }
 
@@ -103,20 +113,33 @@ class DuaCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: cardColor,
           borderRadius: BorderRadius.circular(8),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.06), blurRadius: 4, offset: const Offset(0, 2)),
+            BoxShadow(
+                color: Colors.black.withOpacity(isDark ? 0.25 : 0.06),
+                blurRadius: 4,
+                offset: const Offset(0, 2)),
           ],
         ),
-        child: ListTile(
-          leading: CircleAvatar(
-            backgroundColor: accent.withOpacity(isDark ? 0.25 : 0.14),
-            child: Text(number, style: TextStyle(color: accent, fontWeight: FontWeight.bold)),
-          ),
-          title: Text(title, style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w400, color: textColor)),
-          trailing: Icon(Icons.chevron_right, color: textColor.withOpacity(0.5)),
+        child: PressableTile(
+          color: cardColor,
+          borderRadius: BorderRadius.circular(8),
+          semanticLabel: title,
           onTap: onTap,
+          child: ListTile(
+            leading: CircleAvatar(
+              backgroundColor: accent.withOpacity(isDark ? 0.25 : 0.14),
+              child: Text(number,
+                  style: TextStyle(color: accent, fontWeight: FontWeight.bold)),
+            ),
+            title: Text(title,
+                style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w400,
+                    color: textColor)),
+            trailing:
+                Icon(Icons.chevron_right, color: textColor.withOpacity(0.5)),
+          ),
         ),
       ),
     );

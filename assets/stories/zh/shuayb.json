@@ -1,0 +1,338 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "shuayb",
+  "language": "zh",
+  "name": "舒阿卜",
+  "title": "被派往麦德彦、号召诚信交易的使者",
+  "sentTo": "麦德彦的居民和“丛林的居民”（艾凯）",
+  "era": "在穆萨（愿主赐他平安）之前；他提醒麦德彦人鲁特族人的下场，鲁特族人离他们“不远”（11:89）。没有给出年代。",
+  "places": [
+    {
+      "name": "麦德彦，位于阿拉伯半岛西北部，亚喀巴湾以东。",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    }
+  ],
+  "summary": "舒阿卜被派往麦德彦，那是一个经商的民族，他们在斗秤上欺诈，抢劫旅客，阻止人们走真主的道路。他号召他们崇拜真主，诚实交易。傲慢的首领们威胁要驱逐他，于是惩罚降临了他们，而舒阿卜和信士们得救了。",
+  "notes": [
+    "麦德彦的居民和“丛林的居民”（艾凯，26:176）是同一个民族吗？学者们意见不一：有人说是一个民族，有人说是舒阿卜被派往的两个不同民族。",
+    "穆萨娶其女儿的那位麦德彦老人（28:23-28）在许多书中被称为舒阿卜。包括伊本·凯西尔在内的许多学者对此表示怀疑，因为舒阿卜生活在穆萨之前很久；《古兰经》没有提到他的名字。",
+    "《古兰经》把惩罚描述为地震（7:91）、一声巨响（11:94）和“阴云之日的惩罚”（26:189）；学者们解释说，这些是同一事件的不同部分，或是分别描述两个民族。"
+  ],
+  "chapters": [
+    {
+      "id": "shuayb-1",
+      "title": "公平的斗秤",
+      "paragraphs": [
+        "麦德彦是商路上的一座商人之城。真主派他们的兄弟舒阿卜（愿主赐他平安）带着每位先知都传达的信息去见他们：“我的族人啊！你们要崇拜真主，除祂之外，你们绝无应受崇拜的。”",
+        "他还点出了他们特有的罪过：他们在交易中欺诈。“你们要使用充足的斗和公平的秤，不要克扣别人的东西，不要在地方太平之后在地上作恶。”",
+        "他提醒他们，如果他们是信士，那么真主所留下的少量合法利润，比靠欺诈得来的大量利润对他们更好。"
+      ],
+      "kidsParagraphs": [
+        "麦德彦的人卖东西时欺骗人。他们给人的东西比人付钱买的少。",
+        "舒阿卜对他们说：“只崇拜真主，买卖时要诚实！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 84,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 181,
+          "ayahEnd": 183
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 86,
+          "ayahEnd": 86
+        }
+      ],
+      "lessons": [
+        "生意上的诚实是功修的一部分。",
+        "少量合法的利润胜过大量非法的利润。",
+        "欺骗人会在社会中散播腐败。"
+      ],
+      "quiz": [
+        {
+          "question": "麦德彦人在交易中做错了什么？",
+          "options": [
+            "给得太多",
+            "在斗秤上欺诈",
+            "拒绝出售",
+            "只卖给富人"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:84"
+        },
+        {
+          "question": "舒阿卜说什么对他们更好？",
+          "options": [
+            "真主所留下的（合法的）",
+            "更多的黄金",
+            "更多的土地",
+            "更大的市场"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:86"
+        },
+        {
+          "question": "舒阿卜信息的第一部分是什么？",
+          "options": [
+            "只崇拜真主",
+            "造一艘船",
+            "离开城市",
+            "与国王作战"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:85"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-2",
+      "title": "“难道你的拜功命令你……？”",
+      "paragraphs": [
+        "人们嘲笑他：“舒阿卜啊！难道你的拜功命令你，要我们放弃我们祖先所崇拜的，或者不再随意处置我们自己的财产吗？”他们不明白宗教为什么要过问钱财的事。",
+        "舒阿卜温和而明智地回答。他不愿禁止他们做某件事，自己却去做。他说：“我只想尽力改善。我的成功只在于真主。我只信赖祂，我只归依祂。”",
+        "他提醒他们努哈、呼德和撒立哈的族人所遭遇的事，还有离他们不远的鲁特的族人，并请他们向他们的主求饶恕，因为祂是至慈的、至爱的。"
+      ],
+      "kidsParagraphs": [
+        "人们笑着说：“难道你的拜功告诉你，我们该怎样用我们的钱吗？”",
+        "舒阿卜说：“我只想把事情做好。我的成功只来自真主。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "伊斯兰指导生活的方方面面，包括我们怎样挣钱和花钱。",
+        "号召行善的人自己身体力行。",
+        "成功只来自真主。"
+      ],
+      "quiz": [
+        {
+          "question": "人们嘲笑地问舒阿卜什么？",
+          "options": [
+            "难道你的拜功命令你……？",
+            "你的军队在哪里？",
+            "你的父亲是谁？",
+            "你为什么富有？"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:87"
+        },
+        {
+          "question": "舒阿卜说他想要什么？",
+          "options": [
+            "当国王",
+            "只想尽力改善",
+            "他们的财产",
+            "离开"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:88"
+        },
+        {
+          "question": "舒阿卜说哪个以前的民族离他们“不远”？",
+          "options": [
+            "鲁特的族人",
+            "穆萨的族人",
+            "罗马人",
+            "优努斯的族人"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:89"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-3",
+      "title": "威胁",
+      "paragraphs": [
+        "傲慢的首领们威胁他：“舒阿卜啊！我们一定要把你和与你一同信道的人逐出我们的城市，除非你们回到我们的宗教来。”舒阿卜回答：“即使我们厌恶它吗？在真主把我们从中拯救出来之后，如果我们回到你们的宗教，那我们就是在假借真主的名义造谣了。”",
+        "他们还说：“你说的许多话我们都不懂，我们看你在我们中间是软弱的。要不是你的宗族，我们早就用石头打死你了。”舒阿卜问：“难道我的宗族在你们看来比真主还贵重吗？”",
+        "他告诉他们，他们照自己的方式去做，他也照自己的方式去做：他们不久就会知道，谁将受凌辱的惩罚，谁是说谎的人。"
+      ],
+      "kidsParagraphs": [
+        "首领们说：“离开我们的城市，或者回到我们的宗教来！”",
+        "舒阿卜很勇敢。他说：“我们永远不会放弃真主给我们的真理。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 88,
+          "ayahEnd": 89
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 91,
+          "ayahEnd": 92
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        }
+      ],
+      "lessons": [
+        "永远不要用信仰换取安全或舒适。",
+        "对真主的敬畏应当大于对人的畏惧。",
+        "真理不需要部落的力量来撑腰。"
+      ],
+      "quiz": [
+        {
+          "question": "首领们用什么威胁舒阿卜？",
+          "options": [
+            "让他发财",
+            "把他逐出城市",
+            "让他当首领",
+            "给他土地"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:88"
+        },
+        {
+          "question": "首领们说为什么没有用石头打死他？",
+          "options": [
+            "因为他的宗族",
+            "因为国王",
+            "因为他强大",
+            "因为天使"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:91"
+        },
+        {
+          "question": "舒阿卜关于他的宗族问了他们什么？",
+          "options": [
+            "难道我的宗族在你们看来比真主还贵重吗？",
+            "我的宗族在哪里？",
+            "你们会和我的宗族通婚吗？",
+            "什么也没问"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:92"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-4",
+      "title": "仿佛他们从未在那里住过",
+      "paragraphs": [
+        "当真主的命令降临时，祂凭自己的慈悯拯救了舒阿卜和与他一同信道的人，而一声可怕的巨响和地震袭击了不义的人。他们僵卧在自己的家中，仿佛从未在那里住过。",
+        "舒阿卜转身离开他们，说：“我的族人啊！我确已把我的主的使命传达给你们，并劝告了你们。我怎能为不信道的民族悲伤呢？”",
+        "《古兰经》把同样否认舒阿卜的“丛林的居民”所受的惩罚称为“阴云之日的惩罚”。他们曾挑战他使天的碎片落在他们身上，结果那成了可怕的一天。"
+      ],
+      "kidsParagraphs": [
+        "真主拯救了舒阿卜和信士们。欺诈和拒绝的人被毁灭了。",
+        "诚实和信仰使人得救；欺诈和骄傲使人毁灭。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 94,
+          "ayahEnd": 95
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 187,
+          "ayahEnd": 189
+        }
+      ],
+      "lessons": [
+        "社会中的不公终将导致毁灭。",
+        "真主凭祂的慈悯拯救信士。",
+        "每一位警告者的职责是传达信息；引导来自真主。"
+      ],
+      "quiz": [
+        {
+          "question": "什么袭击了麦德彦的不义之人？",
+          "options": [
+            "洪水",
+            "一声可怕的巨响",
+            "一阵风",
+            "蝗虫"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        },
+        {
+          "question": "丛林居民所受的惩罚叫什么？",
+          "options": [
+            "阴云之日",
+            "洪水之日",
+            "火之日",
+            "风之日"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:189"
+        },
+        {
+          "question": "谁得救了？",
+          "options": [
+            "没有人",
+            "舒阿卜和信道的人",
+            "只有首领们",
+            "只有商人们"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        }
+      ]
+    }
+  ]
+}

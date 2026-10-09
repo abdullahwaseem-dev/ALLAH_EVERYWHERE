@@ -1,0 +1,429 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "sulayman",
+  "language": "en",
+  "name": "Sulayman",
+  "title": "The king given a kingdom like no other",
+  "sentTo": "The Children of Israel, and others under his rule, including the people of Saba' (Sheba)",
+  "era": "The son of Dawud (AS). Commonly dated by historians to the 10th century BCE; the Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds), where he ruled.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    },
+    {
+      "name": "Saba' (Sheba), the kingdom of the queen, usually placed in Yemen around Ma'rib.",
+      "lat": 15.43,
+      "lng": 45.32,
+      "approximate": true
+    }
+  ],
+  "summary": "Sulayman inherited prophethood and kingship from his father Dawud. Allah taught him the speech of birds and gave him command of the wind and the jinn. He heard an ant speak, sent a letter to the Queen of Saba', and saw her come to Islam. Through all of it he remained a grateful servant, always turning to Allah.",
+  "notes": [
+    "The Queen of Saba' is not named in the Quran; the name Bilqis comes from later reports.",
+    "The horses in 38:31-33: scholars differ on whether Sulayman struck them (as an offering) or stroked their legs and necks.",
+    "“We placed on his throne a body” (38:34): scholars explain this in different ways; some link it to an authentic hadith in al-Bukhari about Sulayman forgetting to say “in sha Allah”. Stories that a devil stole his ring and sat on his throne come from the People of the Book and were rejected by scholars such as Ibn Kathir.",
+    "Sulayman never practised magic: the Quran clears him of it (2:102)."
+  ],
+  "chapters": [
+    {
+      "id": "sulayman-1",
+      "title": "The wise son of a wise father",
+      "paragraphs": [
+        "Sulayman (AS) inherited from his father Dawud prophethood, knowledge and kingship. Father and son said together: “Praise be to Allah, who has favoured us over many of His believing servants.”",
+        "Even when he was young, Allah gave Sulayman special understanding. Once a flock of sheep strayed at night into someone's field and ate the crops; Allah gave Sulayman understanding of how to judge the case, while giving both him and Dawud wisdom and knowledge.",
+        "The Prophet ﷺ told of two women whose sons were with them when a wolf took one boy. Each claimed the living child. Dawud judged for the older woman. Sulayman said: “Bring me a knife, and I will cut him in two between them.” The younger woman cried: “Do not! He is her son!” So Sulayman knew she was the mother, and gave the child to her."
+      ],
+      "kidsParagraphs": [
+        "Sulayman was the son of Dawud. Allah gave them both wisdom.",
+        "Two women argued over a baby. Sulayman said he would cut the baby in two. The real mother cried: “No! Give him to her!” So Sulayman knew she was the true mother."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 15,
+          "ayahEnd": 16
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 78,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "6769",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “There were two women, each with her son. A wolf came and took the son of one of them. One said to the other: ‘It took your son,’ and the other said: ‘It took your son.’ They took the case to Dawud (AS), who judged in favour of the older one. Then they went out to Sulayman son of Dawud (AS) and told him. He said: ‘Bring me a knife, and I will cut him in two between them.’ The younger one said: ‘Do not, may Allah have mercy on you! He is her son.’ So he judged in favour of the younger one.”",
+          "match": "كانت امراتان معهما ابناهما جاء الذئب فذهب بابن احداهما"
+        }
+      ],
+      "lessons": [
+        "Wisdom is a gift from Allah, sometimes given even to the young.",
+        "A good judge looks for the truth hidden in people's hearts.",
+        "Thank Allah for every favour, as Dawud and Sulayman did."
+      ],
+      "quiz": [
+        {
+          "question": "What did Sulayman inherit from Dawud?",
+          "options": [
+            "Prophethood, knowledge and kingship",
+            "Only gold",
+            "A ship",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        },
+        {
+          "question": "How did Sulayman find the true mother?",
+          "options": [
+            "He said he would cut the child in two",
+            "He asked the child",
+            "He looked at their clothes",
+            "He asked the neighbours"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 6769"
+        },
+        {
+          "question": "What did the sheep do in the field?",
+          "options": [
+            "Strayed into it at night",
+            "Guarded it",
+            "Watered it",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:78"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-2",
+      "title": "The valley of the ants",
+      "paragraphs": [
+        "Sulayman said: “O people, we have been taught the speech of birds, and given something of everything. This is a clear favour.” His armies of jinn, men and birds were gathered and marched in ranks.",
+        "When they came to the valley of the ants, an ant said: “O ants, go into your homes, so that Sulayman and his soldiers do not crush you without realising.”",
+        "Sulayman smiled at her words. He did not become proud; he prayed: “My Lord, inspire me to be grateful for Your favour on me and on my parents, and to do good that pleases You, and admit me by Your mercy among Your righteous servants.”"
+      ],
+      "kidsParagraphs": [
+        "Sulayman could understand the birds and animals. One day his army came to a valley of ants.",
+        "An ant said: “Run home, so Sulayman's army doesn't step on you!” Sulayman smiled and thanked Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 19,
+          "ayahEnd": 19
+        }
+      ],
+      "lessons": [
+        "Gratitude is the right response to every blessing.",
+        "Even a small creature can care for its community.",
+        "A great king can be gentle and humble."
+      ],
+      "quiz": [
+        {
+          "question": "What did the ant tell the other ants?",
+          "options": [
+            "Go into your homes",
+            "Attack the army",
+            "Gather food",
+            "Climb the trees"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:18"
+        },
+        {
+          "question": "How did Sulayman react to the ant's words?",
+          "options": [
+            "He got angry",
+            "He smiled and thanked Allah",
+            "He ignored it",
+            "He destroyed the valley"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:19"
+        },
+        {
+          "question": "What was Sulayman taught to understand?",
+          "options": [
+            "The speech of birds",
+            "The stars",
+            "Many human languages only",
+            "Magic"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-3",
+      "title": "The hoopoe's news",
+      "paragraphs": [
+        "Sulayman inspected the birds and noticed the hoopoe was missing. He was displeased, unless the bird had a good excuse. The hoopoe soon returned: “I have learned something you did not know. I bring you certain news from Saba'.”",
+        "“I found a woman ruling them, given something of everything, with a great throne. I found her and her people bowing down to the sun instead of Allah. Shaytan has made their deeds look good to them.”",
+        "Sulayman said: “We shall see whether you have told the truth.” He sent the hoopoe with a letter: “In the name of Allah, the Most Merciful, the Especially Merciful. Do not be arrogant towards me, but come to me in submission.”"
+      ],
+      "kidsParagraphs": [
+        "The hoopoe bird flew to a land called Saba'. The people there worshipped the sun!",
+        "Sulayman sent the hoopoe with a letter that began: “In the name of Allah, the Most Merciful.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 20,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 27,
+          "ayahEnd": 31
+        }
+      ],
+      "lessons": [
+        "Check news before acting on it.",
+        "Even a bird can be a caller to tawhid.",
+        "Begin important matters with “In the name of Allah”."
+      ],
+      "quiz": [
+        {
+          "question": "Which bird was missing?",
+          "options": [
+            "The crow",
+            "The hoopoe",
+            "The dove",
+            "The eagle"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:20"
+        },
+        {
+          "question": "What did the people of Saba' worship?",
+          "options": [
+            "The moon",
+            "The sun",
+            "Fire",
+            "Idols of stone"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:24"
+        },
+        {
+          "question": "How did Sulayman's letter begin?",
+          "options": [
+            "In the name of Allah, the Most Merciful, the Especially Merciful",
+            "From the king",
+            "Greetings",
+            "Obey me"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:30"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-4",
+      "title": "The queen comes to Islam",
+      "paragraphs": [
+        "The queen consulted her chiefs, who were ready to fight. She was wiser: kings who enter a land ruin it, she said. Instead she sent a gift. Sulayman refused it: “What Allah has given me is better than what He has given you.”",
+        "As she travelled to him, Sulayman asked who could bring her throne. One of the jinn offered to bring it before Sulayman rose from his seat. One who had knowledge of the Scripture said: “I will bring it before your glance returns to you.” And there it was. Sulayman said: “This is from the favour of my Lord, to test me whether I am grateful or ungrateful.”",
+        "When the queen arrived, she recognised her throne, though it had been changed. Then she entered a palace whose floor was of smooth glass, and thought it was water. Seeing all this, she said: “My Lord, I have wronged myself, and I submit with Sulayman to Allah, Lord of the worlds.”"
+      ],
+      "kidsParagraphs": [
+        "The queen of Saba' sent Sulayman a gift, but he wanted her to believe, not gold.",
+        "Her throne was brought to Sulayman in the blink of an eye! When she came, she said: “I submit to Allah with Sulayman.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 34,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "The queen's name, Bilqis, and stories about her family and her marriage come from later reports, not from the Quran or authentic hadith."
+        }
+      ],
+      "lessons": [
+        "Wise leaders prefer peace and good counsel.",
+        "Every blessing is a test: will we be grateful?",
+        "Truth is accepted by those who are honest with themselves."
+      ],
+      "quiz": [
+        {
+          "question": "What did the queen send Sulayman?",
+          "options": [
+            "An army",
+            "A gift",
+            "A letter of war",
+            "Nothing"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:35"
+        },
+        {
+          "question": "What did Sulayman say when the throne appeared?",
+          "options": [
+            "This is from the favour of my Lord, to test me",
+            "I am powerful",
+            "Thank you, jinn",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:40"
+        },
+        {
+          "question": "What did the queen say at the end?",
+          "options": [
+            "I submit with Sulayman to Allah, Lord of the worlds",
+            "I want my throne back",
+            "I will fight",
+            "I will go home"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:44"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-5",
+      "title": "The wind, the jinn and his death",
+      "paragraphs": [
+        "Sulayman prayed for a kingdom such as no one after him would have, and Allah answered. The wind ran gently by his command wherever he directed it, a month's journey in a morning and a month's in an evening. The jinn built for him by Allah's permission.",
+        "Some people later claimed that Sulayman's power came from magic. The Quran clears him: “It was not Sulayman who disbelieved, but the devils disbelieved, teaching people magic.”",
+        "Sulayman died while standing, leaning on his staff, and the jinn kept working, not knowing. Only when a creature of the earth gnawed through his staff and he fell did they realise. If the jinn had known the unseen, they would not have stayed in humiliating labour."
+      ],
+      "kidsParagraphs": [
+        "Allah gave Sulayman power over the wind, and the jinn worked for him.",
+        "When Sulayman died leaning on his staff, the jinn did not even know! They only found out when an insect ate his staff. Only Allah knows the unseen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 12,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 34,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        }
+      ],
+      "lessons": [
+        "Power is a gift from Allah, not from magic.",
+        "Only Allah knows the unseen; not the jinn, not fortune-tellers.",
+        "Death comes to everyone, even the greatest king."
+      ],
+      "quiz": [
+        {
+          "question": "What did the wind do for Sulayman?",
+          "options": [
+            "Blew by his command",
+            "Destroyed his enemies only",
+            "Nothing",
+            "Brought rain"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:36"
+        },
+        {
+          "question": "Who disbelieved by teaching magic, according to 2:102?",
+          "options": [
+            "Sulayman",
+            "The devils",
+            "Dawud",
+            "The ants"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:102"
+        },
+        {
+          "question": "What showed the jinn that Sulayman had died?",
+          "options": [
+            "A creature of the earth ate his staff",
+            "An angel told them",
+            "His son told them",
+            "The wind stopped"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:14"
+        }
+      ]
+    }
+  ]
+}

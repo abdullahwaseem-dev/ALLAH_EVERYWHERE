@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">الصلاة القادمة</string>
+    <string name="widget_next_prayer_description">عدّ تنازلي للصلاة القادمة مع مواقيت اليوم</string>
+    <string name="widget_hijri_date_name">التاريخ الهجري</string>
+    <string name="widget_hijri_date_description">التاريخ الهجري لليوم والمناسبات الإسلامية</string>
+    <string name="widget_reminder_name">آية اليوم</string>
+    <string name="widget_daily_reminder_description">آية أو حديث للتأمل كل يوم</string>
+    <string name="widget_next_prayer_fallback">الصلاة القادمة</string>
+    <string name="widget_set_location_fallback">افتح التطبيق لتحديد موقعك</string>
+    <string name="widget_open_app_fallback">افتح التطبيق للتحديث</string>
+    <string name="widget_preview_prayer">العصر</string>
+    <string name="widget_preview_hijri_month">ربيع الآخر</string>
+</resources>

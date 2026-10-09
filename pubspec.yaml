@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.1.0+17
 
 environment:
   sdk: ^3.5.1
@@ -73,8 +73,15 @@ dependencies:
   google_mobile_ads: ^9.1.0
   flutter_islamic_icons: ^1.0.2
   flutter_compass_v2: ^1.0.3
+  flutter_markdown_plus: ^1.0.12
+  share_plus: ^11.0.0
+  path_provider: ^2.1.5
+  home_widget: ^0.10.0
+  pdf: ^3.12.0
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  integration_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -84,6 +91,8 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.14.2
+  fake_cloud_firestore: ^3.1.0
+  firebase_auth_mocks: ^0.14.2
 
 flutter_launcher_icons:
     android: true
@@ -110,6 +119,17 @@ flutter:
     - assets/icons/
     - assets/fonts/
     - assets/audio/
+    # Stories of the Prophets: index.json plus one folder per language.
+    # Asset folders aren't recursive, so add each language folder here.
+    - assets/stories/
+    - assets/stories/en/
+    - assets/stories/ar/
+    - assets/stories/ur/
+    - assets/stories/fr/
+    - assets/stories/de/
+    - assets/stories/tr/
+    - assets/stories/hi/
+    - assets/stories/zh/
 
   fonts:
     - family: NotoNaskhArabic
@@ -118,6 +138,16 @@ flutter:
     - family: Almarai
       fonts:
         - asset: assets/fonts/Almarai-Regular.ttf
+    # Classical Naskh typeface used in printed Hadith and Quran editions.
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    # Nastaliq is the standard script style for Urdu.
+    - family: NotoNastaliqUrdu
+      fonts:
+        - asset: assets/fonts/NotoNastaliqUrdu-VariableFont_wght.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

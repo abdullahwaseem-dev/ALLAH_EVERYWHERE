@@ -1,0 +1,180 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yahya",
+  "language": "de",
+  "name": "Yahya",
+  "title": "Rein, sanft und pflichtbewusst von Jugend an",
+  "sentTo": "Die Kinder Israels",
+  "era": "Die Zeit Isas (a.s.), seines Cousins, im 1. Jahrhundert n. Chr.; der Koran nennt kein Datum.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds), rund um den Tempel, in dem Zakariya diente.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Der Sohn, der Zakariya (a.s.) im Alter geschenkt wurde, mit einem Namen, den niemand zuvor getragen hatte. Allah gab ihm schon als Kind Weisheit, Sanftmut, Reinheit und Pflichtbewusstsein gegenüber seinen Eltern. Er bestätigte das Kommen Isas (a.s.), seines Cousins, und Allah entbot ihm Frieden am Tag seiner Geburt, am Tag seines Todes und am Tag, an dem er auferweckt wird.",
+  "notes": [
+    "Die meisten Gelehrten setzen Yahya mit Johannes dem Täufer aus der Bibel gleich.",
+    "Die Geschichte seines Todes (dass ein König ihn töten ließ und sein Kopf auf einer Schale gebracht wurde) stammt aus christlichen Quellen und späteren Berichten, nicht aus dem Koran oder authentischen Hadithen.",
+    "„Ein Wort von Allah bestätigend“ (3:39) wird von den meisten Gelehrten als Bestätigung Isas (a.s.) erklärt, der „ein Wort von Allah“ genannt wird."
+  ],
+  "chapters": [
+    {
+      "id": "yahya-1",
+      "title": "Weisheit als Kind",
+      "paragraphs": [
+        "Allah rief ihm zu: „O Yahya, halte die Schrift mit Kraft fest.“ Allah gab ihm Weisheit, als er noch ein Kind war, dazu Zärtlichkeit von Ihm und Reinheit, und er war gottesfürchtig.",
+        "Er war pflichtbewusst gegenüber seinen Eltern und nie hochmütig oder widerspenstig. Die Engel hatten ihn seinem Vater als Herrn beschrieben, keusch, als Propheten unter den Rechtschaffenen, der ein Wort von Allah bestätigen würde: Isa (a.s.).",
+        "Allah sagt: „Friede sei auf ihm am Tag, an dem er geboren wurde, am Tag, an dem er stirbt, und am Tag, an dem er lebendig auferweckt wird.“"
+      ],
+      "kidsParagraphs": [
+        "Yahya war schon als Kind weise. Er war gütig und rein, und er liebte seine Eltern und gehorchte ihnen.",
+        "Allah entbietet Yahya Frieden: als er geboren wurde, als er starb und wenn er wieder auferweckt wird."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 12,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        }
+      ],
+      "lessons": [
+        "Kinder können weise und Allah nahe sein.",
+        "Güte gegenüber den Eltern ist eine Eigenschaft der Propheten.",
+        "Halte das Buch Allahs mit Kraft fest."
+      ],
+      "quiz": [
+        {
+          "question": "Was sollte Yahya mit Kraft festhalten?",
+          "options": [
+            "Die Schrift",
+            "Ein Schwert",
+            "Einen Stab",
+            "Die Schlüssel des Tempels"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Wann gab Allah Yahya Weisheit?",
+          "options": [
+            "Als Kind",
+            "Im Alter",
+            "Nie",
+            "Nach seinem Tod"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Wie war Yahya zu seinen Eltern?",
+          "options": [
+            "Pflichtbewusst",
+            "Ungehorsam",
+            "Distanziert",
+            "Hochmütig"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:14"
+        }
+      ]
+    },
+    {
+      "id": "yahya-2",
+      "title": "Cousins im zweiten Himmel",
+      "paragraphs": [
+        "In der Nacht des Mi'radsch erreichte der Prophet Muhammad ﷺ den zweiten Himmel und fand dort zwei Cousins: Yahya und Isa (Friede sei mit ihnen). Dschibril sagte: „Das sind Yahya und Isa; grüße sie.“ Sie erwiderten seinen Gruß und sagten: „Willkommen dem rechtschaffenen Bruder und dem rechtschaffenen Propheten.“",
+        "Yahya und Isa waren die Söhne zweier Frauen aus derselben Familie, und beide waren Propheten, die zur selben Zeit zu den Kindern Israels gesandt wurden."
+      ],
+      "kidsParagraphs": [
+        "In der Nacht des Mi'radsch traf unser Prophet ﷺ Yahya und Isa im zweiten Himmel.",
+        "Yahya und Isa waren Cousins! Sie hießen ihn als Bruder willkommen."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3430",
+          "narrator": "Malik ibn Sa'sa'a",
+          "translation": "Der Prophet ﷺ erzählte ihnen von der Nacht, in der er emporgehoben wurde: „… Dann stieg er hinauf, bis er den zweiten Himmel erreichte, und bat, dass er geöffnet werde. Es wurde gefragt: ‚Wer ist das?‘ Er sagte: ‚Dschibril.‘ Es wurde gefragt: ‚Und wer ist bei dir?‘ Er sagte: ‚Muhammad.‘ Es wurde gefragt: ‚Wurde nach ihm gesandt?‘ Er sagte: ‚Ja.‘ Als ich hindurchkam, waren da Yahya und Isa, die Cousins sind. Er sagte: ‚Das sind Yahya und Isa, so grüße sie.‘ Ich grüßte sie, und sie erwiderten den Gruß und sagten: ‚Willkommen dem rechtschaffenen Bruder und dem rechtschaffenen Propheten.‘“",
+          "match": "فاذا يحيى وعيسى وهما ابنا خالة",
+          "shortened": true
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Eine bekannte Geschichte sagt, Yahya sei von einem König getötet und sein Kopf auf einer Schale gebracht worden."
+        }
+      ],
+      "lessons": [
+        "Die Propheten lieben einander und heißen einander willkommen.",
+        "Rechtschaffene Familienbande sind ein Segen.",
+        "Der Mi'radsch ehrt alle Propheten."
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Himmel traf der Prophet ﷺ Yahya und Isa?",
+          "options": [
+            "Im ersten",
+            "Im zweiten",
+            "Im vierten",
+            "Im siebten"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Wie waren Yahya und Isa verwandt?",
+          "options": [
+            "Brüder",
+            "Cousins",
+            "Vater und Sohn",
+            "Nicht verwandt"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Wie nannten sie den Propheten ﷺ?",
+          "options": [
+            "Den rechtschaffenen Bruder und den rechtschaffenen Propheten",
+            "Unser König",
+            "Unser Sohn",
+            "Ein Fremder"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3430"
+        }
+      ]
+    }
+  ]
+}

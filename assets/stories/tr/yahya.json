@@ -1,0 +1,180 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yahya",
+  "language": "tr",
+  "name": "Yahya",
+  "title": "Gençliğinden beri temiz, şefkatli ve anne babasına itaatkâr",
+  "sentTo": "İsrailoğulları",
+  "era": "Teyze oğlu Hz. İsa'nın (a.s.) dönemi, MS 1. yüzyıl; Kur'an bir tarih vermez.",
+  "places": [
+    {
+      "name": "Zekeriya'nın hizmet ettiği mabedin çevresi, Kudüs.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Hz. Zekeriya'ya (a.s.) yaşlılığında, daha önce kimseye verilmemiş bir adla bağışlanan oğul. Allah ona çocukken hikmet, şefkat, temizlik ve anne babasına iyilik verdi. Teyze oğlu Hz. İsa'nın (a.s.) gelişini tasdik etti; Allah doğduğu gün, öleceği gün ve diri olarak diriltileceği gün ona selam etti.",
+  "notes": [
+    "Âlimlerin çoğu Yahya'yı Kitab-ı Mukaddes'teki Vaftizci Yahya ile özdeşleştirir.",
+    "Ölümünün hikâyesi (bir kralın onu öldürttüğü ve başının bir tepside getirildiği) Kur'an'dan veya sahih hadislerden değil, Hristiyan kaynaklardan ve sonraki rivayetlerden gelir.",
+    "\"Allah'tan bir kelimeyi tasdik edici\" (3:39), âlimlerin çoğunca \"Allah'tan bir kelime\" diye anılan Hz. İsa'yı (a.s.) tasdik etmek olarak açıklanır."
+  ],
+  "chapters": [
+    {
+      "id": "yahya-1",
+      "title": "Çocukken verilen hikmet",
+      "paragraphs": [
+        "Allah ona seslendi: \"Ey Yahya! Kitab'a kuvvetle sarıl.\" Allah ona henüz çocukken hikmet verdi; Kendi katından şefkat ve temizlik de verdi; o, takva sahibiydi.",
+        "Anne babasına itaatkârdı; asla zorba ya da isyankâr olmadı. Melekler onu babasına bir efendi, iffetli, salihlerden bir peygamber ve Allah'tan bir kelimeyi, yani Hz. İsa'yı (a.s.), tasdik edecek biri olarak tanıtmışlardı.",
+        "Allah buyurur: \"Doğduğu gün, öleceği gün ve diri olarak diriltileceği gün ona selam olsun.\""
+      ],
+      "kidsParagraphs": [
+        "Yahya çocukken bile bilgeydi. İyi kalpli ve temizdi; anne babasını sever ve onlara itaat ederdi.",
+        "Allah Yahya'ya selam eder: doğduğunda, öldüğünde ve yeniden diriltileceğinde."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 12,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        }
+      ],
+      "lessons": [
+        "Çocuklar da bilge ve Allah'a yakın olabilir.",
+        "Anne babaya iyilik peygamberlerin vasfıdır.",
+        "Allah'ın Kitabı'na kuvvetle sarıl."
+      ],
+      "quiz": [
+        {
+          "question": "Yahya'ya neye kuvvetle sarılması söylendi?",
+          "options": [
+            "Kitab'a",
+            "Bir kılıca",
+            "Bir asaya",
+            "Mabedin anahtarlarına"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Allah Yahya'ya hikmeti ne zaman verdi?",
+          "options": [
+            "Çocukken",
+            "Yaşlılığında",
+            "Hiç",
+            "Öldükten sonra"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "Yahya anne babasına karşı nasıldı?",
+          "options": [
+            "İtaatkâr",
+            "İsyankâr",
+            "Mesafeli",
+            "Kibirli"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:14"
+        }
+      ]
+    },
+    {
+      "id": "yahya-2",
+      "title": "İkinci gökteki teyze oğulları",
+      "paragraphs": [
+        "Mi'rac gecesi Peygamber Muhammed ﷺ ikinci göğe ulaştı ve orada iki teyze oğlunu buldu: Yahya ve İsa (onlara selam olsun). Cebrail dedi ki: \"Bunlar Yahya ve İsa'dır; onlara selam ver.\" Selamına karşılık verdiler ve dediler ki: \"Salih kardeşe ve salih peygambere hoş geldin.\"",
+        "Yahya ve İsa aynı aileden iki kadının oğullarıydı ve her ikisi de aynı dönemde İsrailoğullarına gönderilmiş peygamberlerdi."
+      ],
+      "kidsParagraphs": [
+        "Mi'rac gecesi Peygamberimiz ﷺ ikinci gökte Yahya ve İsa ile karşılaştı.",
+        "Yahya ve İsa teyze oğullarıydı! Onu bir kardeş olarak karşıladılar."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3430",
+          "narrator": "Mâlik b. Sa'sa'a",
+          "translation": "Peygamber ﷺ onlara göğe yükseltildiği geceyi anlattı: \"…Sonra yükseldi, ikinci göğe vardı ve açılmasını istedi. 'Kim o?' denildi. 'Cebrail' dedi. 'Yanındaki kim?' denildi. 'Muhammed' dedi. 'Ona elçi gönderildi mi?' denildi. 'Evet' dedi. İçeri geçtiğimde bir de baktım ki teyze oğulları olan Yahya ve İsa oradalar. 'Bunlar Yahya ve İsa'dır, onlara selam ver' dedi. Selam verdim; onlar da selamımı alıp dediler ki: 'Salih kardeşe ve salih peygambere hoş geldin.'\"",
+          "match": "فاذا يحيى وعيسى وهما ابنا خالة",
+          "shortened": true
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Meşhur bir hikâyeye göre Yahya bir kral tarafından öldürüldü ve başı bir tepside getirildi."
+        }
+      ],
+      "lessons": [
+        "Peygamberler birbirlerini sever ve birbirlerini güzel karşılarlar.",
+        "Salih akrabalık bağları bir nimettir.",
+        "Mi'rac bütün peygamberleri onurlandırır."
+      ],
+      "quiz": [
+        {
+          "question": "Peygamber ﷺ Yahya ve İsa ile hangi gökte karşılaştı?",
+          "options": [
+            "Birinci",
+            "İkinci",
+            "Dördüncü",
+            "Yedinci"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Yahya ile İsa'nın akrabalığı neydi?",
+          "options": [
+            "Kardeş",
+            "Teyze oğulları",
+            "Baba ve oğul",
+            "Akraba değillerdi"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "Peygamber'e ﷺ ne dediler?",
+          "options": [
+            "Salih kardeş ve salih peygamber",
+            "Kralımız",
+            "Oğlumuz",
+            "Bir yabancı"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3430"
+        }
+      ]
+    }
+  ]
+}

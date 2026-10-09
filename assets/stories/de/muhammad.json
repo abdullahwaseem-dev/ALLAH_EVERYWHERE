@@ -1,0 +1,260 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "muhammad",
+  "language": "de",
+  "name": "Muhammad",
+  "title": "Der Gesandte Allahs und das Siegel der Propheten",
+  "sentTo": "Die ganze Menschheit und die Dschinn, bis zum Ende der Zeit",
+  "era": "570-632 n. Chr.",
+  "places": [
+    {
+      "name": "Mekka, wo er geboren wurde und die erste Offenbarung empfing.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    },
+    {
+      "name": "Medina, wohin er auswanderte, wo er die erste muslimische Gemeinschaft aufbaute und wo er begraben ist.",
+      "lat": 24.4672,
+      "lng": 39.6112
+    }
+  ],
+  "summary": "Der letzte der Propheten, gesandt als Barmherzigkeit für die Welten. Er ist die Antwort auf das Gebet Ibrahims und Ismails und die frohe Botschaft, die Isa (Friede sei mit ihnen) verkündete. Dies ist ein kurzer Überblick; sein ganzes Leben wird im Seerah-Bereich der App erzählt.",
+  "notes": [
+    "Dieser Überblick ist bewusst kurz gehalten. Für das Leben des Propheten ﷺ öffne den Seerah-Bereich."
+  ],
+  "chapters": [
+    {
+      "id": "muhammad-1",
+      "title": "Das Siegel der Propheten",
+      "paragraphs": [
+        "Jeder Prophet vor ihm bereitete den Weg. Ibrahim und Ismail (Friede sei mit ihnen) beteten, als sie die Kaaba errichteten, um einen Gesandten aus ihren Nachkommen. Isa (a.s.) verkündete einen Gesandten, der nach ihm kommen würde, namens Ahmad. Dieser Gesandte war Muhammad ﷺ, Sohn 'Abdullahs, vom Stamm Quraisch in Mekka.",
+        "Allah sagt: „Muhammad ist nicht der Vater eines eurer Männer, sondern der Gesandte Allahs und das Siegel der Propheten.“ Nach ihm wird kein Prophet mehr kommen.",
+        "Der Prophet ﷺ beschrieb sich mit einem schönen Gleichnis: Die Propheten vor ihm waren wie ein Mann, der ein schönes Haus baute, vollständig bis auf einen Ziegelstein in einer Ecke. Die Menschen gingen darum herum, bewunderten es und fragten: „Warum wurde dieser Ziegel nicht eingesetzt?“ Er sagte: „Ich bin dieser Ziegel, und ich bin das Siegel der Propheten.“"
+      ],
+      "kidsParagraphs": [
+        "Unser Prophet Muhammad ﷺ ist der letzte Prophet. Nach ihm wird kein Prophet mehr kommen.",
+        "Er sagte, die Propheten seien wie ein schönes Haus, dem ein Ziegelstein fehlte, und er sei dieser Ziegel!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 129,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 33,
+          "ayahStart": 40,
+          "ayahEnd": 40
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3535",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Das Gleichnis von mir und den Propheten vor mir ist das eines Mannes, der ein Haus baute und es schön und vollkommen machte, bis auf den Platz eines Ziegelsteins in einer Ecke. Die Menschen begannen, darum herumzugehen, es zu bewundern und zu sagen: ‚Warum wurde dieser Ziegel nicht eingesetzt?‘ Ich bin dieser Ziegel, und ich bin das Siegel der Propheten.“",
+          "match": "فانا اللبنة وانا خاتم النبيين"
+        }
+      ],
+      "lessons": [
+        "Die Botschaft aller Propheten wurde durch Muhammad ﷺ vollendet.",
+        "Zu glauben, dass er der letzte Prophet ist, gehört zum Glauben.",
+        "Liebe alle Propheten und folge dem letzten von ihnen."
+      ],
+      "quiz": [
+        {
+          "question": "Wie nennt der Koran (33:40) den Propheten Muhammad ﷺ?",
+          "options": [
+            "Das Siegel der Propheten",
+            "Einen König",
+            "Einen Dichter",
+            "Einen Engel"
+          ],
+          "answer": 0,
+          "reference": "Quran 33:40"
+        },
+        {
+          "question": "Welcher Prophet kündigte einen Gesandten namens Ahmad an?",
+          "options": [
+            "Isa",
+            "Musa",
+            "Nuh",
+            "Yusuf"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "Was war der Prophet ﷺ in seinem Gleichnis?",
+          "options": [
+            "Der fehlende Ziegel",
+            "Die Tür",
+            "Das Dach",
+            "Das Fenster"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3535"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-2",
+      "title": "Eine Barmherzigkeit für die Welten",
+      "paragraphs": [
+        "Allah sagt zu ihm: „Wir haben dich nur als Barmherzigkeit für die Welten gesandt“, und: „Du bist wahrlich von großartiger Wesensart.“",
+        "Er sorgte sich zutiefst um sein Volk: „Zu euch ist ein Gesandter aus euren eigenen Reihen gekommen. Es bedrückt ihn, wenn ihr leidet; er ist um euch besorgt, und zu den Gläubigen ist er gütig und barmherzig.“",
+        "Er lebte, was er lehrte: so ehrlich, dass man ihn al-Amin nannte, geduldig, als er abgelehnt wurde, vergebend, als er siegreich nach Mekka zurückkehrte, und demütig bis zum Ende."
+      ],
+      "kidsParagraphs": [
+        "Allah sandte unseren Propheten ﷺ als Barmherzigkeit für alle.",
+        "Er war gütig, ehrlich und geduldig, und er sorgte sich sehr um uns."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 107,
+          "ayahEnd": 107
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 68,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 9,
+          "ayahStart": 128,
+          "ayahEnd": 128
+        }
+      ],
+      "lessons": [
+        "Barmherzigkeit steht im Zentrum seiner Botschaft.",
+        "Guter Charakter ist der beste Weg, ihm zu folgen.",
+        "Er sorgte sich um seine Umma; wir zeigen unsere Liebe, indem wir seiner Sunna folgen."
+      ],
+      "quiz": [
+        {
+          "question": "Als was sandte Allah den Propheten ﷺ laut 21:107?",
+          "options": [
+            "Als Barmherzigkeit für die Welten",
+            "Als König",
+            "Nur als Richter",
+            "Nur als Krieger"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:107"
+        },
+        {
+          "question": "Wie beschreibt der Koran (68:4) seine Wesensart?",
+          "options": [
+            "Großartig",
+            "Hart",
+            "Gewöhnlich",
+            "Hochmütig"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:4"
+        },
+        {
+          "question": "Wie ist er laut 9:128 zu den Gläubigen?",
+          "options": [
+            "Gütig und barmherzig",
+            "Hart",
+            "Distanziert",
+            "Zornig"
+          ],
+          "answer": 0,
+          "reference": "Quran 9:128"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-3",
+      "title": "Seine Botschaft lebt weiter",
+      "paragraphs": [
+        "Allah erinnert die Gläubigen daran, dass Muhammad ﷺ ein Gesandter war wie die Gesandten vor ihm und dass sein Tod nicht das Ende der Botschaft sein würde: „Muhammad ist nur ein Gesandter; vor ihm sind schon Gesandte dahingegangen.“",
+        "Er hinterließ den Koran und seine Sunna sowie Gefährten, die „hart gegen die Ungläubigen, barmherzig untereinander“ waren, stets verneigt und niedergeworfen, auf der Suche nach Allahs Huld.",
+        "Sein Leben, von seiner Geburt in Mekka über die erste Offenbarung und die Hidschra bis zu seinen letzten Jahren in Medina, wird im Seerah-Bereich dieser App ausführlich erzählt."
+      ],
+      "kidsParagraphs": [
+        "Unser Prophet ﷺ hinterließ uns den Koran und seine Sunna.",
+        "Seine ganze Lebensgeschichte kannst du im Seerah-Bereich lesen!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 144,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 48,
+          "ayahStart": 29,
+          "ayahEnd": 29
+        }
+      ],
+      "lessons": [
+        "Die Botschaft lebt durch den Koran und die Sunna weiter.",
+        "Dem Propheten ﷺ zu folgen heißt, dem zu folgen, was er lehrte.",
+        "Sein Leben kennenzulernen ist der beste Weg, ihn mehr zu lieben."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagt der Koran (3:144) über den Propheten ﷺ?",
+          "options": [
+            "Er ist nur ein Gesandter; vor ihm sind Gesandte dahingegangen",
+            "Er wird niemals sterben",
+            "Er ist ein Engel",
+            "Er ist ein König"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:144"
+        },
+        {
+          "question": "Wie beschreibt der Koran (48:29) seine Gefährten untereinander?",
+          "options": [
+            "Barmherzig",
+            "Hart",
+            "Zerstritten",
+            "Hochmütig"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        },
+        {
+          "question": "Wobei sieht man die Gefährten laut 48:29 oft?",
+          "options": [
+            "Beim Verneigen und Niederwerfen",
+            "Beim Handeln",
+            "Beim Schlafen",
+            "Beim Reisen"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        }
+      ]
+    }
+  ]
+}

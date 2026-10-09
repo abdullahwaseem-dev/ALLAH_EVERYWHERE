@@ -1,0 +1,636 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "nuh",
+  "language": "fr",
+  "name": "Nouh",
+  "title": "Un serviteur reconnaissant, le premier messager envoyé aux habitants de la terre",
+  "sentTo": "Son peuple, qui avait commencé à adorer des idoles",
+  "era": "Longtemps après Adam (AS). Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Le mont al-Joudi, où l'Arche s'immobilisa (11:44). Les savants anciens le situent dans la région de la Jazira près de Mossoul ; on l'identifie aujourd'hui généralement au mont Cudi, dans le sud-est de la Turquie.",
+      "lat": 37.37,
+      "lng": 42.35,
+      "approximate": true
+    },
+    {
+      "name": "La Mésopotamie (Irak), où la plupart des historiens situent le peuple de Nouh. Le Coran ne nomme pas leur pays.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    }
+  ],
+  "summary": "Le premier messager qu'Allah envoya à un peuple tombé dans l'idolâtrie. Il les appela pendant 950 ans avec une patience infinie. Quand ils refusèrent, Allah le sauva avec les croyants dans l'Arche et noya ceux qui démentaient. Allah le loua comme un serviteur reconnaissant et laissa la paix sur lui parmi toutes les générations suivantes.",
+  "notes": [
+    "Combien de temps s'écoula entre Adam et Nouh ? Certains récits en dehors d'al-Bukhari et Muslim parlent de dix générations. Un savant doit les vérifier avant de l'ajouter.",
+    "Les 950 ans (29:14) sont la durée que Nouh passa parmi son peuple. La durée totale de sa vie n'est pas connue avec certitude.",
+    "Les savants divergent : le Déluge a-t-il couvert toute la terre ou seulement le pays du peuple de Nouh ?",
+    "« Le four se mit à bouillonner » (11:40, 23:27) est expliqué de plusieurs façons : un vrai four, l'eau jaillissant de la surface de la terre, ou le lever de l'aube.",
+    "Le nom du fils (donné dans certains livres comme Kan'an ou Yam), le nombre de personnes dans l'Arche, sa taille et son bois viennent de récits tardifs, non du Coran ni des hadiths authentiques.",
+    "L'emplacement d'al-Joudi et la patrie de Nouh reposent sur les géographes et historiens classiques, non sur le Coran ou la Sunna."
+  ],
+  "chapters": [
+    {
+      "id": "nuh-1",
+      "title": "Comment l'idolâtrie commença",
+      "paragraphs": [
+        "Après Adam (AS), ses enfants vécurent pendant de nombreuses générations en n'adorant qu'Allah seul. Puis, lentement, quelque chose changea.",
+        "Ibn Abbas, le Compagnon grand savant du Coran, a expliqué comment cela arriva. Parmi le peuple de Nouh, il y avait des hommes pieux nommés Wadd, Souwa', Yaghouth, Ya'ouq et Nasr. Quand ils moururent, Satan souffla aux gens de dresser des statues aux endroits où ces hommes s'asseyaient et de leur donner leurs noms. Les gens le firent, mais personne n'adorait les statues. Puis cette génération mourut, on oublia pourquoi les statues avaient été faites, et ceux qui vinrent ensuite se mirent à les adorer.",
+        "C'est ainsi que l'association à Allah commença chez les hommes : non pas d'un coup, mais pas à pas, par un amour excessif des gens pieux et par l'oubli du savoir."
+      ],
+      "kidsParagraphs": [
+        "Après Adam, les gens adorèrent Allah seul pendant très longtemps.",
+        "Puis ils firent des statues d'hommes pieux pour se souvenir d'eux. Bien des années plus tard, on oublia pourquoi, et on se mit à adorer les statues. Satan les avait trompés pas à pas."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4920",
+          "narrator": "Ibn Abbas",
+          "translation": "Ibn Abbas a dit : « Les idoles qui étaient chez le peuple de Nouh passèrent ensuite chez les Arabes… C'étaient les noms d'hommes pieux du peuple de Nouh. Quand ils moururent, Satan inspira à leur peuple de dresser des statues aux endroits où ils s'asseyaient et de les appeler par leurs noms. Ils le firent, et elles ne furent pas adorées, jusqu'à ce que ces gens meurent et que le savoir soit oublié ; alors elles furent adorées. »",
+          "match": "اسماء رجال صالحين من قوم نوح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Satan égare les gens petit à petit ; il faut donc faire attention même aux petites choses.",
+        "L'amour des gens pieux ne doit jamais devenir leur adoration.",
+        "L'oubli du savoir ouvre la porte à l'égarement ; apprendre la religion nous protège."
+      ],
+      "quiz": [
+        {
+          "question": "Lequel de ces noms est cité dans le Coran comme idole du peuple de Nouh ?",
+          "options": [
+            "Houbal",
+            "Wadd",
+            "Al-Lat",
+            "Ba'l"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:23"
+        },
+        {
+          "question": "Selon Ibn Abbas, qui étaient à l'origine Wadd, Souwa', Yaghouth, Ya'ouq et Nasr ?",
+          "options": [
+            "Des hommes pieux",
+            "Des rois",
+            "Des anges",
+            "Des étoiles"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4920"
+        },
+        {
+          "question": "Quand les gens commencèrent-ils à adorer les statues ?",
+          "options": [
+            "Dès qu'elles furent faites",
+            "Quand Nouh le leur ordonna",
+            "Après qu'on eut oublié pourquoi elles avaient été faites",
+            "Jamais"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 4920"
+        }
+      ]
+    },
+    {
+      "id": "nuh-2",
+      "title": "Nouh est envoyé",
+      "paragraphs": [
+        "Puis Allah envoya Nouh (AS) à son peuple. Il était l'un d'eux, un homme qu'ils connaissaient. Son message était simple et clair : « Ô mon peuple, adorez Allah ; vous n'avez pas d'autre divinité que Lui. Je crains pour vous le châtiment d'un jour terrible. »",
+        "Dans le long hadith sur le Jour de la Résurrection, le Prophète ﷺ nous apprend que les gens viendront à Nouh et lui diront : « Tu es le premier des messagers envoyés aux habitants de la terre, et Allah t'a appelé un serviteur reconnaissant. » Le Coran lui-même dit de lui : « Il était vraiment un serviteur reconnaissant. »",
+        "Nouh promit à son peuple que s'ils adoraient Allah, Le craignaient et obéissaient à Son messager, Allah leur pardonnerait leurs péchés et leur accorderait un délai. Il ne leur demanda ni argent ni récompense : sa récompense, disait-il, n'incombait qu'au Seigneur des mondes."
+      ],
+      "kidsParagraphs": [
+        "Allah choisit Nouh comme messager pour son peuple. Il leur dit : « N'adorez qu'Allah ! »",
+        "Nouh ne demanda pas d'argent. Il voulait seulement que son peuple soit sauvé."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4712",
+          "narrator": "Abou Hourayra",
+          "translation": "Extrait de la description du Jour de la Résurrection par le Prophète ﷺ : « …Ils viendront à Nouh et diront : “Ô Nouh, tu es le premier des messagers envoyés aux habitants de la terre, et Allah t'a nommé serviteur reconnaissant. Intercède pour nous auprès de ton Seigneur…” »",
+          "match": "انك انت اول الرسل الى اهل الارض",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 17,
+          "ayahStart": 3,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 2,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 109,
+          "ayahEnd": 109
+        }
+      ],
+      "lessons": [
+        "Le message de chaque prophète commençait par l'adoration d'Allah seul.",
+        "Celui qui appelle au bien doit être sincère et ne pas chercher salaire ni renommée.",
+        "Être un serviteur reconnaissant est une qualité qu'Allah loue."
+      ],
+      "quiz": [
+        {
+          "question": "Comment le Coran appelle-t-il Nouh (AS) ?",
+          "options": [
+            "Un roi",
+            "Un serviteur reconnaissant",
+            "Un guerrier",
+            "Un poète"
+          ],
+          "answer": 1,
+          "reference": "Quran 17:3"
+        },
+        {
+          "question": "Quelle fut la première chose que Nouh demanda à son peuple ?",
+          "options": [
+            "Construire un bateau",
+            "Quitter leur ville",
+            "Le payer",
+            "N'adorer qu'Allah seul"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:59"
+        },
+        {
+          "question": "Dans le hadith du Jour de la Résurrection, Nouh est appelé le premier … envoyé aux habitants de la terre.",
+          "options": [
+            "Messager",
+            "Roi",
+            "Enseignant",
+            "Bâtisseur"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4712"
+        }
+      ]
+    },
+    {
+      "id": "nuh-3",
+      "title": "Appeler nuit et jour",
+      "paragraphs": [
+        "Nouh appela son peuple pendant un temps extrêmement long. Le Coran nous dit qu'il resta parmi eux mille ans moins cinquante : neuf cent cinquante ans.",
+        "Il essaya tous les moyens. Il les appela de nuit et de jour, ouvertement et en privé. Mais plus il les appelait, plus ils fuyaient. Ils mettaient leurs doigts dans leurs oreilles pour ne pas l'entendre et se couvraient de leurs vêtements pour ne pas le voir.",
+        "Il parla à leurs cœurs et à leurs esprits. « Demandez pardon à votre Seigneur, leur dit-il, Il est très Pardonneur. Il vous enverra une pluie abondante, vous donnera des biens et des enfants, et vous accordera des jardins et des rivières. » Il les invita à considérer comment Allah les avait créés par étapes, comment Il avait fait les sept cieux, la lune comme une lumière et le soleil comme une lampe. Pourquoi ne rendaient-ils pas à Allah la grandeur qui Lui est due ?"
+      ],
+      "kidsParagraphs": [
+        "Nouh appela son peuple pendant 950 ans ! Il leur parla le jour et la nuit.",
+        "Les gens mettaient leurs doigts dans leurs oreilles pour ne pas entendre. Mais Nouh n'abandonna jamais."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 5,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 10,
+          "ayahEnd": 16
+        }
+      ],
+      "lessons": [
+        "Être patient en appelant au bien, même quand les résultats tardent.",
+        "Demander pardon à Allah (istighfar) apporte des bénédictions comme la pluie, les biens et les enfants.",
+        "Réfléchir à la création conduit le cœur vers son Créateur."
+      ],
+      "quiz": [
+        {
+          "question": "Combien de temps Nouh (AS) resta-t-il parmi son peuple ?",
+          "options": [
+            "100 ans",
+            "40 ans",
+            "950 ans",
+            "Exactement 1000 ans"
+          ],
+          "answer": 2,
+          "reference": "Quran 29:14"
+        },
+        {
+          "question": "Que faisait le peuple de Nouh pour ne pas l'entendre ?",
+          "options": [
+            "Ils mettaient leurs doigts dans leurs oreilles",
+            "Ils fuyaient vers les montagnes",
+            "Ils fermaient leurs portes",
+            "Ils chantaient fort"
+          ],
+          "answer": 0,
+          "reference": "Quran 71:7"
+        },
+        {
+          "question": "Que dit Nouh qu'Allah leur donnerait s'ils demandaient pardon ?",
+          "options": [
+            "Seulement de l'or et de l'argent",
+            "Une pluie abondante, des biens et des enfants",
+            "Un nouveau roi",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:10-12"
+        }
+      ]
+    },
+    {
+      "id": "nuh-4",
+      "title": "Les notables refusent",
+      "paragraphs": [
+        "Les chefs de son peuple avaient bien des excuses. « Ce n'est qu'un homme comme vous, disaient-ils. Si Allah avait voulu envoyer un messager, Il aurait envoyé des anges. Nous n'avons jamais entendu cela de nos ancêtres. » Ils le traitèrent même de fou.",
+        "Surtout, ils méprisaient ceux qui le suivaient. « Nous voyons que seuls les plus vils d'entre nous te suivent », disaient-ils. Ils voulaient que Nouh chasse les croyants pauvres avant même d'accepter de l'écouter.",
+        "Nouh refusa. Il ne chasserait pas les croyants : ils allaient rencontrer leur Seigneur, et qui le protégerait d'Allah s'il les chassait ? Il ne prétendait ni posséder les trésors d'Allah, ni connaître l'invisible, ni être un ange.",
+        "Finalement, ils le défièrent : « Apporte-nous ce dont tu nous menaces, si tu es véridique. » Nouh répondit que seul Allah l'apporterait, s'Il le voulait, et que personne ne pourrait y échapper."
+      ],
+      "kidsParagraphs": [
+        "Les chefs riches dirent : « Seuls les pauvres te suivent ! » Ils voulaient que Nouh renvoie les croyants pauvres.",
+        "Nouh refusa. Chaque croyant est précieux pour Allah, riche ou pauvre."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 23,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 29,
+          "ayahEnd": 31
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 11,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Le rang et la richesse ne rendent personne meilleur aux yeux d'Allah.",
+        "Ne jamais repousser des gens sincères parce qu'ils sont pauvres ou faibles.",
+        "L'orgueil empêche les gens d'accepter la vérité."
+      ],
+      "quiz": [
+        {
+          "question": "Que voulaient les chefs que Nouh fasse de ses disciples pauvres ?",
+          "options": [
+            "Les nommer chefs",
+            "Leur donner de l'argent",
+            "Les chasser",
+            "Leur enseigner davantage"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:27-29"
+        },
+        {
+          "question": "Selon les chefs, qu'Allah aurait-Il envoyé à la place d'un homme ?",
+          "options": [
+            "Des anges",
+            "Des rois",
+            "Des djinns",
+            "Des oiseaux"
+          ],
+          "answer": 0,
+          "reference": "Quran 23:24"
+        },
+        {
+          "question": "De qui Nouh disait-il que viendrait sa récompense ?",
+          "options": [
+            "Des chefs",
+            "De ses disciples",
+            "De sa famille",
+            "D'Allah seul"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:29"
+        }
+      ]
+    },
+    {
+      "id": "nuh-5",
+      "title": "La construction de l'Arche",
+      "paragraphs": [
+        "Après des centaines d'années, Allah révéla à Nouh que plus personne de son peuple ne croirait, sauf ceux qui avaient déjà cru. Nouh invoqua son Seigneur : « Je suis vaincu, alors secours-moi. »",
+        "Allah lui ordonna de construire un navire sous Ses yeux et selon Son inspiration. Nouh se mit au travail, avec des planches et des clous.",
+        "Chaque fois que les chefs de son peuple passaient, ils se moquaient de lui. Nouh répondait calmement : « Si vous vous moquez de nous, nous nous moquerons de vous comme vous vous moquez. Vous saurez bientôt qui recevra un châtiment qui le couvrira de honte. »"
+      ],
+      "kidsParagraphs": [
+        "Allah dit à Nouh de construire un grand bateau, appelé l'Arche.",
+        "Les gens se moquaient de lui pendant qu'il la construisait. Mais Nouh avait confiance en Allah et continua de travailler."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 54,
+          "ayahStart": 13,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 38,
+          "ayahEnd": 39
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Certains livres donnent les mesures exactes de l'Arche, nomment le bois dont elle était faite, ou disent que Nouh en planta les arbres cent ans plus tôt."
+        }
+      ],
+      "lessons": [
+        "Obéir à Allah est juste, même quand les autres se moquent.",
+        "La moquerie est l'arme de ceux qui n'ont pas d'argument.",
+        "L'invocation (dou'a) est la force du croyant quand tout semble difficile."
+      ],
+      "quiz": [
+        {
+          "question": "Selon le Coran, de quoi l'Arche était-elle faite ?",
+          "options": [
+            "De pierre",
+            "De planches et de clous",
+            "Seulement de roseaux",
+            "De fer"
+          ],
+          "answer": 1,
+          "reference": "Quran 54:13"
+        },
+        {
+          "question": "Que faisaient les chefs en passant près de l'Arche ?",
+          "options": [
+            "Ils aidaient Nouh",
+            "Ils priaient avec lui",
+            "Ils se moquaient de lui",
+            "Ils y achetaient des places"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:38"
+        },
+        {
+          "question": "Que dit Nouh en appelant Allah au secours ?",
+          "options": [
+            "Je suis vaincu, alors secours-moi",
+            "Détruis le bateau",
+            "Donne-moi de l'or",
+            "Laisse-moi me reposer"
+          ],
+          "answer": 0,
+          "reference": "Quran 54:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-6",
+      "title": "Le Déluge",
+      "paragraphs": [
+        "Puis l'ordre d'Allah vint. Le « four » se mit à bouillonner, les portes du ciel s'ouvrirent sur une pluie torrentielle, et des sources jaillirent de la terre, jusqu'à ce que les eaux se rejoignent pour une affaire déjà décrétée.",
+        "Allah dit à Nouh de charger sur le navire un couple de chaque espèce, sa famille (sauf ceux contre qui la parole avait déjà été prononcée) et tous ceux qui avaient cru. Très peu avaient cru avec lui. Nouh dit : « Montez-y. Au nom d'Allah se font sa course et son mouillage. Mon Seigneur est certes Pardonneur et Miséricordieux. »",
+        "Le navire vogua parmi des vagues comme des montagnes. Nouh vit son fils resté à l'écart et l'appela avec un amour de père : « Ô mon fils, monte avec nous, et ne reste pas avec les mécréants ! » Son fils répondit : « Je vais me réfugier sur une montagne qui me protégera de l'eau. » Nouh dit : « Aujourd'hui, il n'y a aucun protecteur contre l'ordre d'Allah, sauf pour celui à qui Il fait miséricorde. » Alors une vague passa entre eux, et le fils fut parmi les noyés.",
+        "L'épouse de Nouh ne fut pas non plus parmi les sauvés. Le Coran la cite, avec l'épouse de Lout, comme exemple de ceux qui mécrurent alors qu'ils vivaient auprès de prophètes vertueux."
+      ],
+      "kidsParagraphs": [
+        "La pluie tomba du ciel et l'eau jaillit du sol. Nouh et les croyants montèrent dans l'Arche, avec des couples d'animaux.",
+        "Nouh appela son fils : « Viens avec nous ! » Mais son fils refusa et partit vers une montagne, et l'eau le recouvrit. Seul Allah peut nous sauver."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 11,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 40,
+          "ayahEnd": 41
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 66,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        }
+      ],
+      "lessons": [
+        "Rien ne protège du décret d'Allah, sauf Sa miséricorde.",
+        "Être parent d'un prophète ne sauve pas ; la foi et les actes, si.",
+        "Nous commençons nos voyages au nom d'Allah, comme Nouh."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Nouh quand les croyants montèrent dans l'Arche ?",
+          "options": [
+            "Dépêchez-vous",
+            "Au nom d'Allah se font sa course et son mouillage",
+            "Au revoir",
+            "Apportez le trésor"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:41"
+        },
+        {
+          "question": "Où le fils de Nouh dit-il qu'il se réfugierait ?",
+          "options": [
+            "Dans une grotte",
+            "Dans l'Arche",
+            "Dans une tour",
+            "Sur une montagne"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:43"
+        },
+        {
+          "question": "Quelles deux femmes le Coran donne-t-il en exemple de ceux qui mécrurent ?",
+          "options": [
+            "Les épouses de Nouh et de Lout",
+            "Les épouses d'Ibrahim et de Moussa",
+            "Maryam et Asiya",
+            "Aucune"
+          ],
+          "answer": 0,
+          "reference": "Quran 66:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-7",
+      "title": "Paix sur Nouh",
+      "paragraphs": [
+        "Enfin Allah ordonna : « Ô terre, absorbe ton eau ; ô ciel, retiens ta pluie. » L'eau baissa, l'affaire fut accomplie, et le navire s'immobilisa sur al-Joudi.",
+        "Nouh, attristé, appela son Seigneur au sujet de son fils : « Seigneur, mon fils fait partie de ma famille, et Ta promesse est vérité. » Allah lui dit que son fils ne faisait pas partie de sa famille, car ses actes n'étaient pas vertueux. Nouh chercha aussitôt refuge auprès d'Allah contre le fait de demander ce dont il n'avait aucune connaissance, et implora pardon et miséricorde.",
+        "Puis il fut dit : « Ô Nouh, débarque avec la paix de Notre part, et des bénédictions sur toi et sur des communautés issues de ceux qui sont avec toi. » Allah laissa de lui un souvenir durable parmi les générations suivantes : « Paix sur Nouh dans tous les mondes. »",
+        "Le Prophète ﷺ nous a appris qu'au Jour de la Résurrection, Nouh et son peuple seront amenés. Allah demandera à Nouh s'il a transmis le message, et il dira oui. Son peuple le niera. Alors Nouh nommera ses témoins : Muhammad ﷺ et sa communauté, qui témoigneront qu'il a bien transmis le message."
+      ],
+      "kidsParagraphs": [
+        "Allah dit à la terre d'avaler l'eau et au ciel d'arrêter la pluie. L'Arche se posa en sécurité sur une montagne appelée al-Joudi.",
+        "Allah envoya la paix sur Nouh. Et au Dernier Jour, la communauté de Muhammad ﷺ témoignera que Nouh a transmis son message !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 78,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3339",
+          "narrator": "Abou Sa'id al-Khoudri",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Nouh et sa communauté viendront, et Allah le Très-Haut dira : “As-tu transmis (le message) ?” Il dira : “Oui, mon Seigneur.” Puis Il dira à sa communauté : “Vous l'a-t-il transmis ?” Ils diront : “Non, aucun prophète n'est venu à nous.” Alors Il dira à Nouh : “Qui témoignera pour toi ?” Il dira : “Muhammad ﷺ et sa communauté.” Alors nous témoignerons qu'il l'a bien transmis. » Le Prophète ﷺ a expliqué que c'est le sens du Coran 2:143.",
+          "match": "يجيء نوح وامته"
+        }
+      ],
+      "lessons": [
+        "Après chaque épreuve, l'aide d'Allah vient à ceux qui patientent.",
+        "Le croyant accepte la décision d'Allah, même quand elle est douloureuse.",
+        "La communauté de Muhammad ﷺ a l'honneur d'être témoin pour les prophètes précédents."
+      ],
+      "quiz": [
+        {
+          "question": "Où l'Arche s'immobilisa-t-elle ?",
+          "options": [
+            "Le mont Sinaï",
+            "Le mont Ouhoud",
+            "Al-Joudi",
+            "Le mont Arafat"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:44"
+        },
+        {
+          "question": "Qui témoignera pour Nouh au Jour de la Résurrection ?",
+          "options": [
+            "Muhammad ﷺ et sa communauté",
+            "Seulement les anges",
+            "Son fils",
+            "Personne"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3339"
+        },
+        {
+          "question": "Qu'Allah laissa-t-Il pour Nouh parmi les générations suivantes ?",
+          "options": [
+            "Une arche en or",
+            "Les mots « Paix sur Nouh dans tous les mondes »",
+            "Un royaume",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:79"
+        }
+      ]
+    }
+  ]
+}

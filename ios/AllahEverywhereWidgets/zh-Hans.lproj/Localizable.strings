@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "下一次礼拜";
+"widget.nextPrayer.description" = "下一次礼拜的倒计时，并显示今日礼拜时间。";
+"widget.hijriDate.name" = "伊斯兰历日期";
+"widget.hijriDate.description" = "今日的伊斯兰历日期和伊斯兰节日。";
+"widget.reminder.name" = "每日经文";
+"widget.reminder.description" = "每天一段可供思考的经文或圣训。";
+"widget.nextPrayer.fallback" = "下一次礼拜";
+"widget.setLocation.fallback" = "打开应用以设置您的位置";
+"widget.openApp.fallback" = "打开应用以更新";

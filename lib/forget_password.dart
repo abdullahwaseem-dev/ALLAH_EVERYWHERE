@@ -8,6 +8,7 @@ import 'package:firebase_auth/firebase_auth.dart';  // Firebase import
 import 'forget_password_success.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);
@@ -78,7 +79,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
         ),
       ),
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SingleChildScrollView( // Make the body scrollable
+      body: ReadableWidth(child: SingleChildScrollView( // Make the body scrollable
         child: Column(
           children: [
             Padding(
@@ -156,7 +157,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }

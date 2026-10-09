@@ -17,6 +17,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
 import 'package:allah_everywhere/controllers/prayer_times_controller.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 // Kaaba coordinates, matching the ones flutter_qiblah itself uses.
 const double _kaabaLat = 21.422487;
@@ -191,7 +192,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
         ),
         centerTitle: true,
       ),
-      body: _buildBody(isDark),
+      body: ReadableWidth(child: _buildBody(isDark)),
     );
   }
 

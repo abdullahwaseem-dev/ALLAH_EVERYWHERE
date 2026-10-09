@@ -1,0 +1,256 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "harun",
+  "language": "tr",
+  "name": "Harun",
+  "title": "Hz. Musa'nın (a.s.) kardeşi ve yardımcısı",
+  "sentTo": "Hz. Musa (a.s.) ile birlikte Firavun ve kavmi, ve İsrailoğulları",
+  "era": "Hz. Musa'nın (a.s.) dönemi. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Hz. Musa (a.s.) ile birlikte Mısır ve Sina çölü.",
+      "lat": 29.5,
+      "lng": 33.8,
+      "approximate": true
+    }
+  ],
+  "summary": "Hz. Musa'nın (a.s.) kardeşi; bizzat Musa'nın isteği üzerine peygamber yapıldı. Daha fasih konuşurdu ve Firavun'un karşısında Musa'nın yanında durdu. Kavim buzağıya tapınca onları uyardı ve birliklerini korumaya çalıştı. Allah Musa'ya ve Harun'a selam etti.",
+  "notes": [
+    "Harun'un Musa'dan büyük mü küçük mü olduğu Kur'an'da belirtilmez; Kitab-ı Mukaddes onun büyük olduğunu söyler.",
+    "Harun'un vefatının ayrıntıları (Musa'dan önce, çölde) Kur'an'dan veya sahih hadislerden değil, tarihî rivayetlerden gelir.",
+    "Meryem'e söylenen \"Ey Harun'un kız kardeşi!\" (19:28), onun bu Harun'un kız kardeşi olduğu anlamına gelmez: Peygamber ﷺ, insanların kendilerinden önceki peygamberlerin ve salihlerin adlarıyla adlandırıldığını açıklamıştır (Sahih-i Müslim 2135)."
+  ],
+  "chapters": [
+    {
+      "id": "harun-1",
+      "title": "Kardeşine bir yardımcı",
+      "paragraphs": [
+        "Allah Tuva vadisinde Hz. Musa'yı (a.s.) seçip Firavun'a gönderince, Musa bir yardımcı istedi: \"Bana ailemden bir yardımcı ver: kardeşim Harun'u. Onunla gücümü pekiştir ve onu işime ortak et ki Seni çok tesbih edelim ve Seni çok analım.\"",
+        "Musa açıkladı: \"Kardeşim Harun benden daha fasih konuşur; onu beni doğrulayan bir yardımcı olarak benimle gönder.\" Allah cevap verdi: \"Seni kardeşinle destekleyeceğiz.\" Allah rahmetinden Harun'u peygamber yaptı."
+      ],
+      "kidsParagraphs": [
+        "Musa Allah'tan kardeşi Harun'u yardımcısı yapmasını istedi; Allah Harun'u da peygamber yaptı!",
+        "Harun çok güzel konuşurdu ve kardeşinin Firavun'a Allah'ı anlatmasına yardım etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 29,
+          "ayahEnd": 34
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 53,
+          "ayahEnd": 53
+        }
+      ],
+      "lessons": [
+        "İyi kardeşler hayırda birbirine yardım eder.",
+        "Birlikte çalışmak Allah'ın bir hediyesidir.",
+        "Hakka yardımcı olmak büyük bir şereftir."
+      ],
+      "quiz": [
+        {
+          "question": "Musa neden Harun'u yardımcı olarak istedi?",
+          "options": [
+            "Harun daha fasih konuşurdu",
+            "Harun daha zengindi",
+            "Harun bir kraldı",
+            "Harun Firavun'u tanırdı"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:34"
+        },
+        {
+          "question": "Allah rahmetinden Harun'u ne yaptı?",
+          "options": [
+            "Bir kral",
+            "Bir peygamber",
+            "Bir tüccar",
+            "Bir asker"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:53"
+        },
+        {
+          "question": "Musa birlikte ne yapacaklarını söyledi?",
+          "options": [
+            "Allah'ı çok tesbih edip çok anmak",
+            "Zengin olmak",
+            "Saraylar yapmak",
+            "Dünyayı dolaşmak"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:33-34"
+        }
+      ]
+    },
+    {
+      "id": "harun-2",
+      "title": "Buzağıya karşı sebat",
+      "paragraphs": [
+        "Musa kırk gece Rabbiyle buluşmaya gidince Harun'u yerine bıraktı: \"Kavmim arasında benim yerime geç, ıslah et ve bozguncuların yoluna uyma.\"",
+        "Sâmirî altın buzağıyı yapınca Harun kavmi uyardı: \"Ey kavmim! Siz bununla sadece imtihan edildiniz. Sizin Rabbiniz Rahmân'dır; bana uyun ve emrime itaat edin.\" Ama birçoğu reddetti: \"Musa dönünceye kadar ona tapmaya devam edeceğiz.\"",
+        "Musa öfkeyle dönüp Harun'u başından ve sakalından tutunca Harun dedi ki: \"Anamın oğlu! Kavim beni zayıf gördü, neredeyse beni öldüreceklerdi. 'İsrailoğulları arasında ayrılık çıkardın' demenden korktum.\" Bunun üzerine Musa ikisi için de dua etti."
+      ],
+      "kidsParagraphs": [
+        "Musa yokken insanlar altından bir buzağı yaptı. Harun onlara dedi ki: \"Bu bir imtihan! Bana uyun ve Allah'a ibadet edin.\"",
+        "Musa üzgün dönünce Harun olanları anlattı ve Musa ikisi için dua etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 90,
+          "ayahEnd": 91
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 92,
+          "ayahEnd": 94
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 151,
+          "ayahEnd": 151
+        }
+      ],
+      "lessons": [
+        "İnsanların çoğu reddetse bile hakkı söyle.",
+        "Topluluğun birliğini korumak ciddi bir sorumluluktur.",
+        "İyi insanlar arasındaki yanlış anlamalar açıklama ve duayla giderilir."
+      ],
+      "quiz": [
+        {
+          "question": "Harun kavme buzağı hakkında ne dedi?",
+          "options": [
+            "Siz bununla sadece imtihan edildiniz",
+            "Bu bir hediye",
+            "Musa dönene kadar ona tapın",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:90"
+        },
+        {
+          "question": "Musa dağa gidince kavmin başına kim bırakıldı?",
+          "options": [
+            "Harun",
+            "Sâmirî",
+            "Kârûn",
+            "Yûşa"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "Harun kendini açıklarken Musa'ya nasıl seslendi?",
+          "options": [
+            "Anamın oğlu",
+            "Kralım",
+            "Hocam",
+            "Oğlum"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:94"
+        }
+      ]
+    },
+    {
+      "id": "harun-3",
+      "title": "Musa'ya ve Harun'a selam",
+      "paragraphs": [
+        "Allah Musa ile Harun'a büyük lütufta bulundu: Onları ve kavimlerini büyük sıkıntıdan kurtardı, onlara yardım etti de galip gelenler onlar oldu, onlara apaçık Kitab'ı verdi ve onları dosdoğru yola iletti. Sonra gelenler arasında onlar için kalıcı bir güzel anılış bıraktı: \"Musa'ya ve Harun'a selam olsun.\"",
+        "Peygamber ﷺ bir gün Ali b. Ebî Tâlib'e şöyle buyurdu: \"Bana göre Harun'un Musa'ya göre olduğu konumda olmaya razı değil misin?\" Böylece Ali'yi onurlandırdı ve Harun'un güvenilir bir yardımcı olarak kardeşine ne kadar yakın olduğunu gösterdi."
+      ],
+      "kidsParagraphs": [
+        "Allah buyurur: \"Musa'ya ve Harun'a selam olsun.\"",
+        "Peygamberimiz ﷺ Ali'ye: \"Sen bana göre, Harun'un Musa'ya göre olduğu gibisin\" dedi: yakın ve güvenilir bir yardımcı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 114,
+          "ayahEnd": 120
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3706",
+          "narrator": "Sa'd b. Ebî Vakkâs",
+          "translation": "Peygamber ﷺ Ali'ye şöyle buyurdu: \"Bana göre Harun'un Musa'ya göre olduğu mevkide olmaya razı değil misin?\"",
+          "match": "اما ترضى ان تكون مني بمنزلة هارون من موسى"
+        }
+      ],
+      "lessons": [
+        "Allah hakkı destekleyenleri şereflendirir.",
+        "Güvenilir bir yardımcı çok değerlidir.",
+        "Esenlik ve şeref iyilik yapanların mükâfatıdır."
+      ],
+      "quiz": [
+        {
+          "question": "Allah sonra gelenler arasında Musa ve Harun için ne bıraktı?",
+          "options": [
+            "\"Musa'ya ve Harun'a selam olsun\"",
+            "Bir saray",
+            "Altın bir buzağı",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:120"
+        },
+        {
+          "question": "Peygamber ﷺ \"Sen bana göre, Harun'un Musa'ya göre olduğu gibisin\" sözünü kime söyledi?",
+          "options": [
+            "Ebû Bekir",
+            "Ali",
+            "Ömer",
+            "Osman"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3706"
+        },
+        {
+          "question": "Allah Musa ile Harun'a ne verdi?",
+          "options": [
+            "Apaçık Kitab'ı",
+            "Mısır'da bir krallık",
+            "Bir gemi",
+            "Altın"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:117"
+        }
+      ]
+    }
+  ]
+}

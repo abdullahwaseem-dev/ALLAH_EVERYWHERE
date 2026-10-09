@@ -1,0 +1,165 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "idris",
+  "language": "fr",
+  "name": "Idris",
+  "title": "Un homme véridique, élevé à un haut rang",
+  "sentTo": "Les descendants d'Adam (AS), avant ou après Nouh (AS) ; le Coran ne le précise pas",
+  "era": "Très ancien. La plupart des savants le situent entre Adam et Nouh (AS) ; le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Inconnu. Le Coran ne dit pas où vivait Idris.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Un prophète loué par le Coran comme un homme véridique, patient et vertueux, qu'Allah éleva à un haut rang. On sait très peu de choses certaines sur sa vie, et le Coran ne le mentionne que deux fois.",
+  "notes": [
+    "La plupart des savants disent qu'Idris vécut entre Adam et Nouh. Beaucoup l'identifient à Hénoch (Akhnoukh) de la Bible ; cela vient des historiens et des Gens du Livre, non du Coran ou de la Sunna.",
+    "« Nous l'avons élevé à un haut rang » (19:57) : beaucoup de savants disent que cela désigne un haut degré d'honneur et de prophétie ; d'autres disent qu'il fut élevé à l'un des cieux.",
+    "Les récits populaires selon lesquels il fut le premier à écrire avec un calame, à coudre des vêtements ou à étudier les étoiles viennent de sources tardives, non du Coran ni des hadiths authentiques."
+  ],
+  "chapters": [
+    {
+      "id": "idris-1",
+      "title": "Un homme véridique",
+      "paragraphs": [
+        "Le Coran nous demande de nous souvenir d'Idris (AS). Allah le décrit comme un homme véridique et un prophète, et dit : « Nous l'avons élevé à un haut rang. »",
+        "Allah le nomme aussi avec Ismaël et Dhou-l-Kifl (AS) parmi les patients, et dit qu'Il les a fait entrer dans Sa miséricorde, car ils étaient parmi les vertueux.",
+        "C'est presque tout ce que nous savons avec certitude sur Idris. Le Coran nous donne ses qualités plutôt que son histoire : la véracité, la patience et la vertu. Ce sont ces qualités qui élèvent une personne auprès d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Idris était un prophète qui disait toujours la vérité.",
+        "Allah dit qu'il était patient et bon, et qu'Il l'éleva à une place élevée. Nous aussi, nous pouvons être véridiques et patients comme lui !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 56,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Certains livres disent qu'Idris fut le premier à écrire avec un calame et à coudre des vêtements, ou décrivent comment un ange l'emporta au ciel."
+        }
+      ],
+      "lessons": [
+        "La véracité est l'une des plus grandes qualités des prophètes.",
+        "La patience fait entrer une personne dans la miséricorde d'Allah.",
+        "Ce qui compte le plus chez une personne, c'est son caractère, non ce que l'on sait d'elle."
+      ],
+      "quiz": [
+        {
+          "question": "Comment le Coran décrit-il Idris (AS) ?",
+          "options": [
+            "Un roi",
+            "Un homme véridique et un prophète",
+            "Un marchand",
+            "Un poète"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:56"
+        },
+        {
+          "question": "Qu'Allah fit-Il pour Idris ?",
+          "options": [
+            "Il l'éleva à un haut rang",
+            "Il lui donna un bateau",
+            "Il le fit roi",
+            "Il lui donna un bâton"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:57"
+        },
+        {
+          "question": "Avec quels deux prophètes Idris est-il cité parmi les patients ?",
+          "options": [
+            "Moussa et Haroun",
+            "Ismaël et Dhou-l-Kifl",
+            "Younous et Ayyoub",
+            "Dawoud et Soulayman"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:85"
+        }
+      ]
+    },
+    {
+      "id": "idris-2",
+      "title": "Saluer le Prophète ﷺ dans les cieux",
+      "paragraphs": [
+        "La nuit du Mi'raj, quand le Prophète Muhammad ﷺ fut élevé à travers les cieux, il rencontra plusieurs des prophètes précédents. L'un d'eux était Idris.",
+        "Idris l'accueillit par ces mots : « Bienvenue au prophète vertueux et au frère vertueux. » Les prophètes se saluaient comme des frères, car leur message était un : adorer Allah seul."
+      ],
+      "kidsParagraphs": [
+        "La nuit du Mi'raj, le Prophète Muhammad ﷺ rencontra Idris dans les cieux.",
+        "Idris dit : « Bienvenue au prophète vertueux et au frère vertueux ! » Tous les prophètes sont comme des frères."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3342",
+          "narrator": "Anas ibn Malik, d'après Abou Dharr",
+          "translation": "…Anas a dit : « Quand Jibril passa avec le Prophète ﷺ près d'Idris, celui-ci dit : “Bienvenue au prophète vertueux et au frère vertueux.” Le Prophète ﷺ dit : “Qui est-ce ?” Jibril dit : “C'est Idris.” »",
+          "match": "فلما مر جبريل بادريس قال مرحبا بالنبي الصالح والاخ الصالح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Tous les prophètes sont des frères porteurs d'un même message.",
+        "Accueillir les autres chaleureusement est la voie des prophètes.",
+        "Le Mi'raj a montré l'honneur qu'Allah a accordé à Ses prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Quand le Prophète ﷺ rencontra-t-il Idris ?",
+          "options": [
+            "À la bataille de Badr",
+            "La nuit du Mi'raj",
+            "À Médine",
+            "Dans un rêve à Hira"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Comment Idris appela-t-il le Prophète ﷺ ?",
+          "options": [
+            "Fils vertueux",
+            "Frère vertueux",
+            "Roi",
+            "Maître"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Qui emmena le Prophète ﷺ à travers les cieux ?",
+          "options": [
+            "Jibril",
+            "Mika'il",
+            "Israfil",
+            "Idris"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3342"
+        }
+      ]
+    }
+  ]
+}

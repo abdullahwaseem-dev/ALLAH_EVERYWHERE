@@ -1,0 +1,344 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "salih",
+  "language": "zh",
+  "name": "撒立哈",
+  "title": "被派往赛莫德人的使者",
+  "sentTo": "赛莫德人，他自己的族人",
+  "era": "在阿德人之后。《古兰经》说赛莫德人是在阿德人之后成为继承者的（7:74）；没有给出年代。",
+  "places": [
+    {
+      "name": "希志尔（15:80），在阿拉伯半岛西北部。人们认为它就是玛达因·撒立哈（黑格拉），那里凿在岩石中的墓葬今天仍然可以看到。",
+      "lat": 26.79,
+      "lng": 37.95,
+      "approximate": true
+    }
+  ],
+  "summary": "撒立哈被派往赛莫德人，他们在山中凿造房屋。真主赐给他们一峰母驼作为迹象，警告他们不要伤害它。他们杀了它，一声可怕的巨响毁灭了他们，而撒立哈和信士们得救了。",
+  "notes": [
+    "关于母驼出现的细节（例如应人们的要求从岩石中出来）来自经注和历史书中的传述，而不是《古兰经》或可靠的圣训。",
+    "玛达因·撒立哈的岩墓属于纳巴泰时期，晚于赛莫德人；把希志尔认定为这一地区，是因为先知ﷺ曾经过那里，但哪些遗迹属于赛莫德人并不确定。",
+    "杀死母驼的人的名字（通常说是古达尔）来自后来的传述。"
+  ],
+  "chapters": [
+    {
+      "id": "salih-1",
+      "title": "凿山的人",
+      "paragraphs": [
+        "在阿德人之后，真主在大地上安置了另一个民族：赛莫德人。他们住在阿拉伯半岛西北部的希志尔，生活在园圃、泉水、田地和果实累累的椰枣树之间。",
+        "他们是能工巧匠。他们在平原上建造宫殿，在山中凿造房屋。但是像他们之前的阿德人一样，他们忘记了赐给他们这一切的主，他们中傲慢的人领导着其余的人。"
+      ],
+      "kidsParagraphs": [
+        "赛莫德人生活在园圃和泉水之间。",
+        "他们在山里凿出房子。但他们忘记了感谢真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 146,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 74,
+          "ayahEnd": 74
+        }
+      ],
+      "lessons": [
+        "技艺和舒适是真主的恩典，不是骄傲的理由。",
+        "要从我们以前的民族中吸取教训。",
+        "舒适的生活会使人忘记后世。"
+      ],
+      "quiz": [
+        {
+          "question": "赛莫德人在山中凿造什么？",
+          "options": [
+            "雕像",
+            "房屋",
+            "船",
+            "水井"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "赛莫德人是在哪个民族之后出现的？",
+          "options": [
+            "阿德人",
+            "鲁特的族人",
+            "穆萨的族人",
+            "罗马人"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "根据《古兰经》26:147-148，赛莫德人拥有什么？",
+          "options": [
+            "园圃、泉水和椰枣树",
+            "船只和港口",
+            "冰雪",
+            "金矿"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:147-148"
+        }
+      ]
+    },
+    {
+      "id": "salih-2",
+      "title": "真主的母驼",
+      "paragraphs": [
+        "真主派他们的弟兄撒立哈（愿主赐他平安）到他们那里：“我的族人啊！你们要崇拜真主，除祂以外，你们没有任何应受崇拜的。祂从大地上造化了你们，并使你们居住在大地上，所以你们要向祂求饶恕，并向祂悔过。”",
+        "以前，他们对撒立哈寄予厚望。现在他们说对他的信息心存怀疑，称他是中了魔的人：“你只是一个像我们一样的人，如果你是诚实的，就拿出一个迹象来吧。”",
+        "真主给了他们一个明显的迹象：一峰母驼。撒立哈对他们说：“这是真主的母驼，是给你们的迹象。让它在真主的大地上吃草吧，不要伤害它。”水要分享：一天它喝，另一天他们喝。"
+      ],
+      "kidsParagraphs": [
+        "撒立哈告诉他的族人只崇拜真主。他们要求一个迹象。",
+        "真主给了他们一峰特别的母驼。撒立哈说：“不要伤害它。它喝一天，你们喝第二天。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 61,
+          "ayahEnd": 61
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 62,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 153,
+          "ayahEnd": 154
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 64,
+          "ayahEnd": 64
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 155,
+          "ayahEnd": 156
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "有些书说，在人们正好要求这个迹象之后，母驼当着他们的面从一块坚硬的岩石中走出来，而且已经怀了孕。"
+        }
+      ],
+      "lessons": [
+        "真主的迹象既是慈悯，也是考验。",
+        "公平分享是服从真主的一部分。",
+        "要求迹象很容易；之后的信仰和服从才是真正的考验。"
+      ],
+      "quiz": [
+        {
+          "question": "真主给了赛莫德人什么迹象？",
+          "options": [
+            "一根手杖",
+            "一峰母驼",
+            "一艘船",
+            "一片云"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:64"
+        },
+        {
+          "question": "水是怎样分享的？",
+          "options": [
+            "母驼从来不喝水",
+            "它喝一天，他们喝另一天",
+            "只有首领们喝",
+            "他们先喝"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:155"
+        },
+        {
+          "question": "赛莫德人称撒立哈为什么？",
+          "options": [
+            "国王",
+            "中了魔的人",
+            "商人",
+            "天使"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:153"
+        }
+      ]
+    },
+    {
+      "id": "salih-3",
+      "title": "他们砍断了它的腿筋",
+      "paragraphs": [
+        "傲慢的首领们拒绝信道，并轻视那些信道的弱者。后来，他们中最薄命的人站了出来，他们砍断了母驼的腿筋，杀死了它。",
+        "他们向撒立哈挑战：“如果你是使者，就把你许诺我们的东西带来吧。”撒立哈对他们说：“你们在家中享受三天吧。这是一个不会落空的许诺。”"
+      ],
+      "kidsParagraphs": [
+        "骄傲的人们杀死了真主的母驼。",
+        "撒立哈警告他们：“你们只剩下三天了。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 75,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 91,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 65,
+          "ayahEnd": 65
+        }
+      ],
+      "lessons": [
+        "公然违抗真主的命令，会招致祂的惩罚。",
+        "赞同罪行的人也是罪行的参与者。",
+        "嘲笑警告，并不能使警告消失。"
+      ],
+      "quiz": [
+        {
+          "question": "赛莫德人对母驼做了什么？",
+          "options": [
+            "卖了它",
+            "砍断了它的腿筋",
+            "把它藏起来",
+            "喂养它"
+          ],
+          "answer": 1,
+          "reference": "Quran 91:14"
+        },
+        {
+          "question": "此后撒立哈给了他们几天？",
+          "options": [
+            "七天",
+            "三天",
+            "四十天",
+            "十天"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:65"
+        },
+        {
+          "question": "谁站出来杀死了母驼？",
+          "options": [
+            "他们中最薄命的人",
+            "撒立哈的儿子",
+            "一个陌生人",
+            "埃及国王"
+          ],
+          "answer": 0,
+          "reference": "Quran 91:12"
+        }
+      ]
+    },
+    {
+      "id": "salih-4",
+      "title": "希志尔的废墟",
+      "paragraphs": [
+        "当真主的命令来临时，祂以慈悯拯救了撒立哈和与他一起信道的人。一声可怕的巨响和一场地震袭击了不义的人，到了早晨，他们僵死在自己的家中，好像从来没有在那里住过一样。",
+        "撒立哈离开了他们，说：“我的族人啊！我确已向你们传达了我的主的使命，并劝告了你们，但你们不喜欢劝告者。”",
+        "许多世纪以后，先知ﷺ和他的圣门弟子们经过希志尔。他告诉他们，进入那些亏待自己的人的住处时，一定要哭着进去，以免他们遭受同样的灾难，他还蒙住了自己的脸。"
+      ],
+      "kidsParagraphs": [
+        "真主拯救了撒立哈和信士们。一声可怕的巨响毁灭了其他人。",
+        "先知ﷺ经过他们的废墟时说：“除非哭着，否则不要进去。”他希望我们吸取教训，保持谦卑。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3380",
+          "narrator": "阿卜杜拉·本·欧麦尔",
+          "translation": "先知ﷺ经过希志尔时说：“除非你们哭着，否则不要进入那些亏待自己的人的住处，以免你们遭受他们所遭受的。”然后他骑在鞍上，用斗篷蒙住了头。",
+          "match": "لا تدخلوا مساكن الذين ظلموا الا ان تكونوا باكين"
+        }
+      ],
+      "lessons": [
+        "遭受惩罚的地方是用来吸取教训的，不是用来游玩的。",
+        "先知的劝告是真诚的，即使人们拒绝它。",
+        "即使在一个被毁灭的民族中，真主也会拯救信士。"
+      ],
+      "quiz": [
+        {
+          "question": "是什么袭击了赛莫德人中不义的人？",
+          "options": [
+            "洪水",
+            "可怕的巨响和地震",
+            "火",
+            "刮了七夜的风"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:67"
+        },
+        {
+          "question": "先知ﷺ经过希志尔时说了什么？",
+          "options": [
+            "进去休息吧",
+            "除非哭着，否则不要进去",
+            "在那里建一座清真寺",
+            "喝那里井中的水"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3380"
+        },
+        {
+          "question": "撒立哈离开他们时说了什么？",
+          "options": [
+            "我已向你们传达了我的主的使命，并劝告了你们",
+            "我会回来的",
+            "你们是对的",
+            "什么也没说"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:79"
+        }
+      ]
+    }
+  ]
+}

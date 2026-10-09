@@ -1,0 +1,950 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "musa",
+  "language": "fr",
+  "name": "Moussa",
+  "title": "Kalimullah, celui à qui Allah parla directement",
+  "sentTo": "Pharaon et son peuple, et les Enfants d'Israël",
+  "era": "Beaucoup d'historiens le situent à l'époque du Nouvel Empire égyptien (vers le XIIIe siècle av. J.-C.). Le Coran et la Sunna ne donnent aucune date et ne nomment pas le Pharaon.",
+  "places": [
+    {
+      "name": "L'Égypte, où il naquit et fut élevé dans le palais de Pharaon.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    },
+    {
+      "name": "Madyan, où il vécut des années après avoir fui l'Égypte.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    },
+    {
+      "name": "Le mont Sinaï (at-Tour), traditionnellement identifié au Djebel Moussa, où Allah lui parla.",
+      "lat": 28.5394,
+      "lng": 33.975,
+      "approximate": true
+    }
+  ],
+  "summary": "Le prophète le plus souvent mentionné dans le Coran. Sauvé bébé dans le fleuve et élevé dans le palais même de Pharaon, il s'enfuit d'Égypte, vécut à Madyan et fut choisi par Allah dans la vallée de Touwa. Avec son frère Haroun, il affronta Pharaon, conduisit les Enfants d'Israël à travers la mer, reçut la Torah et guida avec patience un peuple difficile. Allah lui parla directement.",
+  "notes": [
+    "Le Pharaon de l'époque de Moussa n'est nommé ni dans le Coran ni dans la Sunna. Les identifications à Ramsès II ou à d'autres rois viennent des historiens et restent incertaines.",
+    "Le vieil homme de Madyan dont Moussa épousa la fille n'est pas nommé dans le Coran. Beaucoup de livres disent qu'il s'agit du prophète Chou'ayb ; beaucoup de savants, dont Ibn Kathir, en ont douté.",
+    "Al-Khidr (18:65) : les savants divergent sur la question de savoir s'il était prophète ou un serviteur vertueux, et s'il est encore vivant. L'avis majoritaire des spécialistes du hadith est qu'il n'est pas vivant.",
+    "L'histoire selon laquelle le bébé Moussa mit une braise dans sa bouche, ce qui causa sa difficulté d'élocution, vient de récits des livres d'exégèse, non du Coran ni des hadiths authentiques.",
+    "L'endroit exact où la mer s'est fendue n'est pas connu.",
+    "La parole d'Allah à Moussa (4:164) est une parole réelle qui convient à Allah, sans la comparer à la parole des créatures ; c'est l'avis d'Ahl as-Sunna."
+  ],
+  "chapters": [
+    {
+      "id": "musa-1",
+      "title": "Un bébé dans le fleuve",
+      "paragraphs": [
+        "Pharaon s'était élevé en tyran sur la terre. Il divisa les gens en groupes et opprima les Enfants d'Israël, tuant leurs fils nouveau-nés et épargnant leurs filles. Mais Allah voulait favoriser les opprimés et en faire des guides.",
+        "Quand Moussa (paix sur lui) naquit, Allah inspira à sa mère : « Allaite-le, et quand tu craindras pour lui, jette-le dans le fleuve. N'aie pas peur et ne t'afflige pas ; Nous te le rendrons et ferons de lui un messager. »",
+        "Le panier flotta jusqu'à la maison même de Pharaon, et ils le recueillirent. La femme de Pharaon dit : « Une joie pour mes yeux et pour les tiens ! Ne le tuez pas ; peut-être nous sera-t-il utile, ou l'adopterons-nous comme fils. »",
+        "Le cœur de la mère de Moussa était vide d'angoisse. Elle envoya sa sœur le suivre de loin. Allah fit que le bébé refusa toutes les nourrices, jusqu'à ce que sa sœur dise : « Voulez-vous que je vous indique une famille qui s'occupera de lui pour vous ? » Ainsi Moussa fut rendu à sa propre mère, pour la consoler et lui montrer que la promesse d'Allah est vraie."
+      ],
+      "kidsParagraphs": [
+        "Pharaon faisait du mal aux bébés des Enfants d'Israël. Allah dit à la mère de Moussa de mettre son bébé dans le fleuve.",
+        "Le fleuve l'emporta jusqu'au palais de Pharaon ! La femme de Pharaon l'aima, et Allah rendit Moussa à sa propre mère pour qu'elle le nourrisse."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 4,
+          "ayahEnd": 5
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 28,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        }
+      ],
+      "lessons": [
+        "Le plan d'Allah protège qui Il veut, même dans la maison de son ennemi.",
+        "Fais confiance à la promesse d'Allah quand tout semble effrayant.",
+        "L'amour d'une mère est honoré par Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah inspira-t-Il à la mère de Moussa quand elle craignait pour lui ?",
+          "options": [
+            "Le cacher dans une grotte",
+            "Le jeter dans le fleuve",
+            "Le confier à une voisine",
+            "S'enfuir"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:7"
+        },
+        {
+          "question": "Qui dit : « Une joie pour mes yeux et pour les tiens » ?",
+          "options": [
+            "La sœur de Moussa",
+            "La femme de Pharaon",
+            "La mère de Moussa",
+            "Haman"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:9"
+        },
+        {
+          "question": "Comment Moussa fut-il rendu à sa mère ?",
+          "options": [
+            "Il refusa toutes les autres nourrices",
+            "Pharaon le renvoya",
+            "Il rentra seul à la maison",
+            "Un ange le porta"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:12-13"
+        }
+      ]
+    },
+    {
+      "id": "musa-2",
+      "title": "Un coup et une fuite",
+      "paragraphs": [
+        "Moussa grandit fort, et Allah lui donna sagesse et science. Un jour, il trouva deux hommes qui se battaient, l'un de son peuple et l'autre de celui de Pharaon. Quand son parent appela à l'aide, Moussa frappa l'autre homme, et l'homme mourut, bien que Moussa n'eût pas voulu le tuer.",
+        "Moussa fut horrifié : « Ceci est l'œuvre de Shaytan. » Il se tourna aussitôt vers Allah : « Mon Seigneur, je me suis fait du tort, pardonne-moi », et Allah lui pardonna. Il promit de ne plus jamais soutenir les criminels.",
+        "Bientôt, un homme arriva en courant de l'extrémité de la ville : « Moussa, les notables complotent pour te tuer. Pars ! » Moussa quitta l'Égypte, inquiet, en priant : « Mon Seigneur, sauve-moi du peuple injuste. »"
+      ],
+      "kidsParagraphs": [
+        "Moussa voulut arrêter une bagarre et frappa un homme par erreur, et l'homme mourut. Moussa le regretta beaucoup et demanda à Allah de lui pardonner.",
+        "Un homme l'avertit : « Ils veulent te tuer, fuis ! » Alors Moussa quitta l'Égypte en demandant à Allah de le protéger."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        }
+      ],
+      "lessons": [
+        "Quand nous commettons une erreur, nous revenons aussitôt vers Allah.",
+        "La colère peut mener à un mal que nous n'avions jamais voulu.",
+        "Allah envoie des aides au bon moment."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Moussa après la mort de l'homme ?",
+          "options": [
+            "Ceci est l'œuvre de Shaytan",
+            "Il l'a mérité",
+            "Personne n'a vu",
+            "Je suis un héros"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:15"
+        },
+        {
+          "question": "Que demanda Moussa à Allah ?",
+          "options": [
+            "De le faire roi",
+            "De lui pardonner",
+            "De punir son ennemi",
+            "De lui donner de l'or"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:16"
+        },
+        {
+          "question": "Qui avertit Moussa de quitter la ville ?",
+          "options": [
+            "Un homme accourant de l'extrémité de la ville",
+            "Sa mère",
+            "La femme de Pharaon",
+            "Un ange"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:20"
+        }
+      ]
+    },
+    {
+      "id": "musa-3",
+      "title": "Au puits de Madyan",
+      "paragraphs": [
+        "Moussa marcha seul vers Madyan, espérant qu'Allah le guiderait. À un puits, il trouva des bergers qui se pressaient pour abreuver leurs troupeaux, et deux femmes qui retenaient le leur. Elles expliquèrent : « Nous ne pouvons abreuver avant que les bergers ne partent, et notre père est un vieillard. » Moussa abreuva leurs bêtes pour elles.",
+        "Puis il se retira à l'ombre, fatigué, affamé et loin de chez lui, et pria : « Mon Seigneur, j'ai vraiment besoin de tout bien que Tu feras descendre vers moi. »",
+        "Bientôt, l'une des femmes revint en marchant avec pudeur : « Mon père t'invite, pour te récompenser d'avoir abreuvé pour nous. » Moussa raconta son histoire au vieil homme, qui dit : « N'aie pas peur ; tu as échappé au peuple injuste. » L'une des filles dit : « Père, engage-le. Le meilleur à engager est le fort, le digne de confiance. » Le vieil homme offrit à Moussa l'une de ses filles en mariage, contre huit ou dix ans de travail, et Moussa accepta."
+      ],
+      "kidsParagraphs": [
+        "Moussa aida deux femmes à abreuver leurs moutons. Puis il s'assit à l'ombre et demanda de l'aide à Allah.",
+        "Leur père l'invita chez lui. Moussa travailla pour lui et épousa l'une de ses filles."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 25,
+          "ayahEnd": 28
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Beaucoup de livres disent que le vieil homme de Madyan était le prophète Chou'ayb ; le Coran ne le nomme pas, et beaucoup de savants en ont douté."
+        }
+      ],
+      "lessons": [
+        "Aide les autres même quand tu es toi-même fatigué et dans le besoin.",
+        "Demande à Allah tout bien ; nous avons toujours besoin de Lui.",
+        "Les meilleures qualités d'un travailleur sont la force et la fiabilité."
+      ],
+      "quiz": [
+        {
+          "question": "Pourquoi les deux femmes attendaient-elles au puits ?",
+          "options": [
+            "Elles avaient peur de l'eau",
+            "Elles attendaient que les bergers partent",
+            "Elles n'avaient pas de seau",
+            "Il faisait nuit"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:23"
+        },
+        {
+          "question": "Que pria Moussa à l'ombre ?",
+          "options": [
+            "Mon Seigneur, j'ai besoin de tout bien que Tu m'envoies",
+            "Ramène-moi chez moi",
+            "Donne-moi un royaume",
+            "Punis Pharaon"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:24"
+        },
+        {
+          "question": "Quelles deux qualités la fille loua-t-elle chez Moussa ?",
+          "options": [
+            "Riche et célèbre",
+            "Fort et digne de confiance",
+            "Intelligent et drôle",
+            "Grand et beau"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:26"
+        }
+      ]
+    },
+    {
+      "id": "musa-4",
+      "title": "Le feu dans la vallée de Touwa",
+      "paragraphs": [
+        "Après les années de Madyan, Moussa partit avec sa famille. En chemin, dans l'obscurité, il vit un feu et dit à sa famille : « Restez ici. Peut-être vous en rapporterai-je un tison, ou trouverai-je auprès du feu une direction. »",
+        "Quand il y parvint, un appel retentit : « Ô Moussa, Je suis ton Seigneur ; ôte tes sandales, tu es dans la vallée sacrée de Touwa. Je t'ai choisi ; écoute donc ce qui va être révélé : Je suis Allah ; il n'y a de divinité que Moi ; adore-Moi donc et accomplis la prière pour te souvenir de Moi. »",
+        "Allah lui donna deux signes. Son bâton, jeté à terre, devint un serpent qui rampait ; sa main, retirée de son flanc, sortit d'une blancheur éclatante, sans aucun mal. Puis vint le grand ordre : « Va vers Pharaon. Il a dépassé les limites. »",
+        "Moussa pria : « Mon Seigneur, ouvre-moi ma poitrine, facilite-moi ma mission, et dénoue le nœud de ma langue, afin qu'ils comprennent mes paroles. Donne-moi un assistant de ma famille, Haroun, mon frère. » Allah répondit : « Ta demande est exaucée, ô Moussa. »"
+      ],
+      "kidsParagraphs": [
+        "Moussa vit un feu sur une montagne. Quand il s'approcha, Allah lui parla : « Je suis ton Seigneur ! »",
+        "Allah lui donna des signes : son bâton devint un serpent, et sa main brilla de blanc. Moussa demanda à Allah de faire de son frère Haroun son aide, et Allah accepta."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 17,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 25,
+          "ayahEnd": 36
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Certains livres disent que la difficulté d'élocution de Moussa venait d'une braise qu'il avait mise dans sa bouche, bébé, dans le palais de Pharaon."
+        }
+      ],
+      "lessons": [
+        "La prière est le premier commandement après la foi en Allah.",
+        "Avant une grande tâche, demande à Allah de t'ouvrir le cœur et de te la faciliter.",
+        "De bons aides sont une bénédiction ; demande-les à Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Où était Moussa quand Allah lui parla ?",
+          "options": [
+            "En Égypte",
+            "Dans la vallée sacrée de Touwa",
+            "À Madyan",
+            "Sur un navire"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:12"
+        },
+        {
+          "question": "Que devint le bâton de Moussa ?",
+          "options": [
+            "Un arbre",
+            "Un serpent qui rampait",
+            "Une épée",
+            "Un oiseau"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:20"
+        },
+        {
+          "question": "Qui Moussa demanda-t-il comme aide ?",
+          "options": [
+            "Son frère Haroun",
+            "La femme de Pharaon",
+            "Son beau-père",
+            "Youcha'"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:29-30"
+        }
+      ]
+    },
+    {
+      "id": "musa-5",
+      "title": "Devant Pharaon",
+      "paragraphs": [
+        "Moussa et Haroun allèrent vers Pharaon : « Nous sommes les messagers du Seigneur des mondes. Laisse partir avec nous les Enfants d'Israël. » Pharaon rappela à Moussa son enfance au palais et l'homme qu'il avait tué. Moussa répondit honnêtement : « Je l'ai fait quand j'étais égaré, puis mon Seigneur m'a donné la sagesse et a fait de moi un messager. Et est-ce là le bienfait que tu me reproches, d'avoir asservi les Enfants d'Israël ? »",
+        "« Et qu'est-ce que le Seigneur des mondes ? » demanda Pharaon. Moussa répondit : « Le Seigneur des cieux et de la terre et de ce qui est entre eux… votre Seigneur et le Seigneur de vos premiers ancêtres… le Seigneur du Levant et du Couchant. » Pharaon le traita de fou et le menaça de prison.",
+        "Moussa jeta son bâton, et il devint un serpent bien réel. Il retira sa main, et elle brilla de blanc aux yeux de tous."
+      ],
+      "kidsParagraphs": [
+        "Moussa et Haroun dirent à Pharaon : « Laisse les Enfants d'Israël partir libres ! »",
+        "Pharaon demanda : « Qui est votre Seigneur ? » Moussa dit : « Le Seigneur des cieux et de la terre. » Puis il montra à Pharaon les signes d'Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 16,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 23,
+          "ayahEnd": 29
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Dis la vérité aux puissants, avec sagesse et courage.",
+        "Reconnais honnêtement tes erreurs passées ; le repentir transforme une personne.",
+        "Les signes d'Allah sont dans les cieux, la terre et l'histoire."
+      ],
+      "quiz": [
+        {
+          "question": "Que demandèrent Moussa et Haroun à Pharaon ?",
+          "options": [
+            "De les nommer ministres",
+            "De laisser partir avec eux les Enfants d'Israël",
+            "De leur donner de l'or",
+            "De bâtir un temple"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:17"
+        },
+        {
+          "question": "Comment Moussa décrivit-il le Seigneur des mondes ?",
+          "options": [
+            "Le Seigneur des cieux et de la terre",
+            "Le dieu de l'Égypte",
+            "Le soleil",
+            "Le roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:24"
+        },
+        {
+          "question": "De quoi Pharaon menaça-t-il Moussa ?",
+          "options": [
+            "De prison",
+            "D'une récompense",
+            "D'exil à Madyan",
+            "De rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:29"
+        }
+      ]
+    },
+    {
+      "id": "musa-6",
+      "title": "Les magiciens se prosternent",
+      "paragraphs": [
+        "Les notables de Pharaon traitèrent Moussa de magicien et rassemblèrent les meilleurs magiciens d'Égypte pour un grand concours, un jour de fête. Les magiciens voulaient une récompense, et Pharaon leur promit des richesses et une place auprès de lui.",
+        "Les magiciens jetèrent leurs cordes et leurs bâtons et ensorcelèrent les yeux des gens par une magie puissante. Alors Allah inspira à Moussa : « Jette ton bâton », et il engloutit tout ce qu'ils avaient fabriqué. La vérité s'établit et leur œuvre fut réduite à néant.",
+        "Les magiciens surent que ce n'était pas de la magie. Ils tombèrent prosternés : « Nous croyons au Seigneur des mondes, le Seigneur de Moussa et de Haroun. » Pharaon menaça de leur couper les mains et les pieds et de les crucifier. Ils répondirent : « C'est vers notre Seigneur que nous retournerons. Notre Seigneur, déverse sur nous la patience et fais-nous mourir musulmans. »"
+      ],
+      "kidsParagraphs": [
+        "Pharaon fit venir les meilleurs magiciens. Ils jetèrent des cordes qui ressemblaient à des serpents.",
+        "Moussa jeta son bâton et il avala tous leurs tours ! Les magiciens surent que cela venait d'Allah et devinrent croyants."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 113,
+          "ayahEnd": 114
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 116,
+          "ayahEnd": 118
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 120,
+          "ayahEnd": 122
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "La vérité triomphe de l'illusion.",
+        "Le vrai savoir mène à l'humilité et à la foi.",
+        "La foi peut rendre quelqu'un courageux en un instant."
+      ],
+      "quiz": [
+        {
+          "question": "Que fit le bâton de Moussa à la magie ?",
+          "options": [
+            "Il la brûla",
+            "Il l'engloutit",
+            "Il la fuit",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:117"
+        },
+        {
+          "question": "Que firent les magiciens quand ils virent la vérité ?",
+          "options": [
+            "Ils s'enfuirent",
+            "Ils tombèrent prosternés et crurent",
+            "Ils attaquèrent Moussa",
+            "Ils demandèrent plus d'argent"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:120-121"
+        },
+        {
+          "question": "Pour quoi les magiciens prièrent-ils ?",
+          "options": [
+            "La richesse",
+            "La patience et mourir musulmans",
+            "La vengeance",
+            "La célébrité"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:126"
+        }
+      ]
+    },
+    {
+      "id": "musa-7",
+      "title": "La mer s'ouvre",
+      "paragraphs": [
+        "Allah envoya signe après signe sur le peuple de Pharaon : des années de famine et de mauvaises récoltes, puis le déluge, les sauterelles, les poux, les grenouilles et le sang. Chaque fois ils suppliaient Moussa de prier pour leur soulagement et promettaient de laisser partir les Enfants d'Israël, et chaque fois ils trahissaient leur parole.",
+        "Enfin, Allah ordonna à Moussa de partir de nuit avec les Enfants d'Israël. Pharaon les poursuivit avec son armée et les rattrapa au lever du soleil, au bord de la mer. Les gens de Moussa crièrent : « Nous allons être rattrapés ! » Moussa dit : « Jamais ! Mon Seigneur est avec moi ; Il me guidera. »",
+        "Allah lui inspira : « Frappe la mer de ton bâton. » La mer se fendit, chaque partie semblable à une énorme montagne, et les Enfants d'Israël traversèrent. Quand Pharaon les suivit, les eaux se refermèrent sur lui. En se noyant, il dit : « Je crois… » mais c'était trop tard. Allah préserva son corps comme signe pour ceux qui viendraient après lui."
+      ],
+      "kidsParagraphs": [
+        "Moussa conduisit les Enfants d'Israël hors d'Égypte. Pharaon les poursuivit jusqu'à la mer.",
+        "Allah dit à Moussa : « Frappe la mer de ton bâton. » La mer s'ouvrit comme deux montagnes, et ils traversèrent en sécurité ! Pharaon et son armée se noyèrent."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 133,
+          "ayahEnd": 135
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 60,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 63,
+          "ayahEnd": 66
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 10,
+          "ayahStart": 90,
+          "ayahEnd": 92
+        }
+      ],
+      "lessons": [
+        "Quand le chemin semble fermé, dis : « Mon Seigneur est avec moi ; Il me guidera. »",
+        "Le repentir au moment de la mort est trop tardif ; reviens à Allah maintenant.",
+        "Trahir ses promesses envers Allah mène à la ruine."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Moussa quand son peuple craignit d'être rattrapé ?",
+          "options": [
+            "Fuyez !",
+            "Mon Seigneur est avec moi ; Il me guidera",
+            "Rendez-vous",
+            "Nagez !"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:62"
+        },
+        {
+          "question": "Comment la mer s'ouvrit-elle ?",
+          "options": [
+            "Moussa la frappa de son bâton",
+            "Un vent souffla",
+            "Elle s'assécha en été",
+            "Les anges la poussèrent"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:63"
+        },
+        {
+          "question": "Lequel de ces signes fut envoyé sur le peuple de Pharaon ?",
+          "options": [
+            "Les sauterelles, les poux, les grenouilles et le sang",
+            "La neige",
+            "Un volcan",
+            "Seulement des tremblements de terre"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:133"
+        }
+      ]
+    },
+    {
+      "id": "musa-8",
+      "title": "Le veau et les Tables",
+      "paragraphs": [
+        "Allah fixa quarante nuits à Moussa pour Le rencontrer sur la montagne. Moussa laissa Haroun responsable du peuple. Là, Allah lui parla, et Moussa désira Le voir : « Mon Seigneur, montre-Toi à moi. » Allah dit : « Tu ne Me verras pas, mais regarde la montagne. » Quand Allah Se manifesta à la montagne, elle fut réduite en poussière, et Moussa tomba foudroyé. Quand il revint à lui, il dit : « Gloire à Toi ! Je me repens à Toi. »",
+        "Allah lui donna les Tables, contenant une guidance et un exposé de toute chose. Mais pendant son absence, un homme appelé as-Samiri fabriqua avec les bijoux du peuple un veau d'or qui mugissait, et dit : « Voici votre dieu et le dieu de Moussa. » Beaucoup se mirent à l'adorer, bien que Haroun les eût avertis.",
+        "Moussa revint en colère et affligé. Il jeta les Tables et saisit son frère par la tête. Haroun supplia : « Fils de ma mère, le peuple m'a dominé et a failli me tuer. » La colère de Moussa s'apaisa, et il pria : « Mon Seigneur, pardonne-moi ainsi qu'à mon frère. » Puis il reprit les Tables, où se trouvaient guidance et miséricorde."
+      ],
+      "kidsParagraphs": [
+        "Moussa alla sur la montagne pendant quarante nuits pour recevoir les Tables d'Allah.",
+        "Pendant son absence, certains fabriquèrent un veau d'or et l'adorèrent. Moussa revint très peiné, et le peuple dut se repentir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 143
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 145,
+          "ayahEnd": 145
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 85,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 150,
+          "ayahEnd": 151
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 154,
+          "ayahEnd": 154
+        }
+      ],
+      "lessons": [
+        "Personne ne peut voir Allah en ce monde ; les croyants espèrent Le voir au Paradis.",
+        "L'associationnisme peut revenir vite quand la science et les guides sont absents.",
+        "La colère doit s'apaiser en prière et en pardon."
+      ],
+      "quiz": [
+        {
+          "question": "Pendant combien de nuits Moussa rencontra-t-il son Seigneur ?",
+          "options": [
+            "Sept",
+            "Quarante",
+            "Dix",
+            "Cent"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "Qu'arriva-t-il à la montagne quand Allah Se manifesta à elle ?",
+          "options": [
+            "Elle grandit",
+            "Elle fut réduite en poussière",
+            "Elle se changea en or",
+            "Rien"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:143"
+        },
+        {
+          "question": "Qui fabriqua le veau d'or ?",
+          "options": [
+            "Haroun",
+            "As-Samiri",
+            "Pharaon",
+            "Qaroun"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:85"
+        }
+      ]
+    },
+    {
+      "id": "musa-9",
+      "title": "Leçons dans le désert",
+      "paragraphs": [
+        "Les Enfants d'Israël éprouvèrent Moussa bien des fois. Un jour, Allah leur ordonna d'égorger une vache, et au lieu d'obéir, ils posèrent question sur question sur son âge, sa couleur et son espèce, se rendant la tâche plus difficile. Enfin ils le firent, et Allah s'en servit pour révéler un meurtrier caché.",
+        "Quand Moussa leur dit d'entrer dans la Terre sainte qu'Allah leur avait prescrite, ils dirent : « Il y a là un peuple puissant. Va, toi et ton Seigneur, et combattez ; nous restons assis ici. » Moussa pria : « Mon Seigneur, je n'ai de pouvoir que sur moi-même et sur mon frère. » Alors la terre leur fut interdite pendant quarante ans, durant lesquels ils errèrent dans le pays.",
+        "Parmi le peuple de Moussa se trouvait Qaroun, à qui avaient été donnés des trésors dont les clés pesaient à un groupe d'hommes forts. Il se vanta : « Je les ai reçus grâce à mon propre savoir. » La terre l'engloutit, lui et sa maison, et ceux qui l'avaient envié dirent : « Si Allah ne nous avait pas fait grâce, Il nous aurait fait engloutir aussi. »"
+      ],
+      "kidsParagraphs": [
+        "Allah dit au peuple de sacrifier une vache, mais ils posèrent tant de questions que la tâche devint difficile.",
+        "Un homme riche nommé Qaroun était fier de son trésor, et la terre l'engloutit. La richesse vient d'Allah !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 67,
+          "ayahEnd": 71
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 21,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 76,
+          "ayahEnd": 78
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 81,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Obéis aux ordres d'Allah simplement, sans les compliquer.",
+        "La peur et le confort peuvent empêcher les gens d'obéir à Allah.",
+        "La richesse est une épreuve ; elle vient d'Allah, non de notre propre habileté."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah ordonna-t-Il aux Enfants d'Israël d'égorger ?",
+          "options": [
+            "Un mouton",
+            "Une vache",
+            "Un chameau",
+            "Une chèvre"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:67"
+        },
+        {
+          "question": "Pendant combien d'années errèrent-ils ?",
+          "options": [
+            "Dix",
+            "Quarante",
+            "Sept",
+            "Cent"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:26"
+        },
+        {
+          "question": "Qu'arriva-t-il à Qaroun ?",
+          "options": [
+            "Il devint roi",
+            "La terre l'engloutit, lui et sa maison",
+            "Il se noya",
+            "Il partit à Madyan"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:81"
+        }
+      ]
+    },
+    {
+      "id": "musa-10",
+      "title": "Moussa et al-Khidr",
+      "paragraphs": [
+        "Le Prophète ﷺ nous a raconté qu'un jour Moussa se leva pour s'adresser aux Enfants d'Israël et qu'on lui demanda : « Qui est le plus savant des gens ? » Il dit : « Moi. » Allah le reprit parce qu'il n'avait pas attribué le savoir à Allah, et lui parla d'un serviteur, au confluent des deux mers, plus savant que lui.",
+        "Moussa voyagea avec son jeune compagnon jusqu'à trouver ce serviteur, al-Khidr, à qui Allah avait donné une miséricorde et une science venant de Lui. Moussa demanda à le suivre pour apprendre. Al-Khidr l'avertit qu'il ne pourrait pas être patient, et Moussa promit d'essayer.",
+        "Al-Khidr troua une barque, tua un garçon et reconstruisit un mur qui menaçait de tomber dans une ville qui leur avait refusé l'hospitalité. Chaque fois, Moussa ne put se taire. Puis al-Khidr expliqua : la barque appartenait à des pauvres, et un roi s'emparait de toute bonne barque ; le garçon aurait entraîné ses parents croyants dans la mécréance ; le mur cachait le trésor de deux orphelins dont le père était vertueux. « Je ne l'ai pas fait de moi-même », dit-il. Tout était sur l'ordre d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Moussa voyagea pour apprendre auprès d'un sage serviteur d'Allah appelé al-Khidr.",
+        "Al-Khidr fit des choses étranges, et Moussa ne put se taire. Puis al-Khidr expliqua : tout était sur l'ordre d'Allah, et pour le bien. Allah sait ce que nous ne savons pas."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "122",
+          "narrator": "Ubayy ibn Ka'b",
+          "translation": "Le Prophète ﷺ a dit : « Moussa le prophète se leva pour s'adresser aux Enfants d'Israël, et on lui demanda : “Qui est le plus savant des gens ?” Il dit : “C'est moi le plus savant.” Allah le reprit alors, car il n'avait pas attribué le savoir à Lui, et Allah lui révéla : “Un de Mes serviteurs, au confluent des deux mers, est plus savant que toi…” »",
+          "match": "فسئل اى الناس اعلم فقال انا اعلم",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 18,
+          "ayahStart": 65,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 71,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 79,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Attribue toujours le savoir à Allah et reste humble.",
+        "Le voyage et la patience font partie de la quête du savoir.",
+        "Derrière des événements qui semblent mauvais, Allah peut avoir une sagesse que nous ne voyons pas."
+      ],
+      "quiz": [
+        {
+          "question": "Que répondit Moussa quand on lui demanda qui était le plus savant ?",
+          "options": [
+            "Allah sait mieux",
+            "Moi",
+            "Haroun",
+            "Pharaon"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 122"
+        },
+        {
+          "question": "Pourquoi al-Khidr endommagea-t-il la barque ?",
+          "options": [
+            "Elle était vieille",
+            "Un roi s'emparait de toute bonne barque",
+            "Il était en colère",
+            "Pour la vendre"
+          ],
+          "answer": 1,
+          "reference": "Quran 18:79"
+        },
+        {
+          "question": "Qu'y avait-il sous le mur ?",
+          "options": [
+            "Un trésor pour deux orphelins",
+            "Un puits",
+            "Une tombe",
+            "Une porte secrète"
+          ],
+          "answer": 0,
+          "reference": "Quran 18:82"
+        }
+      ]
+    },
+    {
+      "id": "musa-11",
+      "title": "Moussa et notre Oumma",
+      "paragraphs": [
+        "Allah parla à Moussa d'une parole réelle, c'est pourquoi on l'appelle Kalimullah. Il est mentionné dans le Coran plus que tout autre prophète, et son histoire est pleine de leçons pour l'Oumma de Muhammad ﷺ.",
+        "La nuit du Mi'raj, quand Allah prescrivit cinquante prières à l'Oumma du Prophète, Moussa lui conseilla de retourner demander moins : « Ton Oumma n'en sera pas capable. » Le Prophète ﷺ retourna encore et encore, jusqu'à ce qu'Allah les fixe à cinq prières, avec la récompense de cinquante.",
+        "Quand le Prophète ﷺ arriva à Médine, il trouva des gens qui jeûnaient le jour de 'Achoura, car Allah avait sauvé Moussa et les Enfants d'Israël de Pharaon ce jour-là. Il dit : « Nous avons plus de droit sur Moussa que vous », et il le jeûna et ordonna aux musulmans de le jeûner."
+      ],
+      "kidsParagraphs": [
+        "Allah parla directement à Moussa. La nuit du Mi'raj, Moussa aida notre Oumma : grâce à son conseil, nous avons cinq prières au lieu de cinquante !",
+        "Nous jeûnons le jour de 'Achoura pour nous rappeler comment Allah sauva Moussa."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "349",
+          "narrator": "Anas ibn Malik, d'après Abu Dharr",
+          "translation": "Extrait de la description du Mi'raj par le Prophète ﷺ : « …Moussa dit : “Retourne auprès de ton Seigneur, car ton Oumma n'en sera pas capable.” Je retournai donc, et Il en retira une partie. Je revins vers Moussa… et il dit : “Retourne auprès de ton Seigneur, car ton Oumma n'en sera pas capable.” Je retournai auprès de Lui, et Il dit : “Elles sont cinq, et elles sont cinquante ; Ma parole ne change pas.” Je revins vers Moussa et il dit : “Retourne auprès de ton Seigneur.” Je dis : “J'ai honte devant mon Seigneur.” »",
+          "match": "فان امتك لا تطيق",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2004",
+          "narrator": "Ibn Abbas",
+          "translation": "Le Prophète ﷺ arriva à Médine et vit les Juifs jeûner le jour de 'Achoura. Il demanda : « Qu'est-ce que cela ? » Ils dirent : « C'est un jour de bien ; ce jour-là, Allah sauva les Enfants d'Israël de leur ennemi, et Moussa le jeûna. » Il dit : « J'ai plus de droit sur Moussa que vous. » Il le jeûna donc et ordonna de le jeûner.",
+          "match": "هذا يوم صالح هذا يوم نجى الله بني اسرائيل من عدوهم فصامه موسى"
+        }
+      ],
+      "lessons": [
+        "Les prophètes se souciaient des nations les uns des autres.",
+        "Les cinq prières quotidiennes sont un don de miséricorde ; préserve-les.",
+        "Les musulmans aiment et suivent tous les prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Pourquoi Moussa est-il appelé Kalimullah ?",
+          "options": [
+            "Allah lui parla directement",
+            "C'était un grand orateur",
+            "Il écrivit beaucoup de livres",
+            "C'était un roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:164"
+        },
+        {
+          "question": "Que conseilla Moussa la nuit du Mi'raj ?",
+          "options": [
+            "Demander moins de prières",
+            "Demander plus de prières",
+            "Visiter l'Égypte",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 349"
+        },
+        {
+          "question": "Pourquoi Moussa jeûna-t-il le jour de 'Achoura ?",
+          "options": [
+            "Allah sauva ce jour-là les Enfants d'Israël de Pharaon",
+            "C'était son anniversaire",
+            "C'était le jour de son arrivée à Madyan",
+            "C'était le jour du veau"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2004"
+        }
+      ]
+    }
+  ]
+}

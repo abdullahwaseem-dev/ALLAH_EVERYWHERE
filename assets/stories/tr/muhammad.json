@@ -1,0 +1,260 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "muhammad",
+  "language": "tr",
+  "name": "Muhammed",
+  "title": "Allah'ın Resûlü ve peygamberlerin sonuncusu",
+  "sentTo": "Zamanın sonuna kadar bütün insanlık ve cinler",
+  "era": "MS 570-632.",
+  "places": [
+    {
+      "name": "Doğduğu ve ilk vahyi aldığı Mekke.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    },
+    {
+      "name": "Hicret ettiği, ilk Müslüman toplumu kurduğu ve kabrinin bulunduğu Medine.",
+      "lat": 24.4672,
+      "lng": 39.6112
+    }
+  ],
+  "summary": "Âlemlere rahmet olarak gönderilen son peygamber. O, İbrahim ve İsmâil'in duasının cevabı ve İsa'nın (onlara selam olsun) verdiği müjdedir. Bu kısa bir özettir; hayatının tamamı uygulamanın Siyer bölümünde anlatılır.",
+  "notes": [
+    "Bu özet bilerek kısa tutulmuştur. Peygamber'in ﷺ hayatı için Siyer bölümünü açın."
+  ],
+  "chapters": [
+    {
+      "id": "muhammad-1",
+      "title": "Peygamberlerin sonuncusu",
+      "paragraphs": [
+        "Ondan önceki her peygamber yolu hazırladı. İbrahim ve İsmâil (onlara selam olsun), Kâbe'yi yükseltirken soylarından bir elçi gönderilmesi için dua ettiler. İsa (a.s.), kendisinden sonra gelecek, adı Ahmed olan bir elçiyi müjdeledi. O elçi, Mekke'de Kureyş kabilesinden Abdullah oğlu Muhammed'di ﷺ.",
+        "Allah buyurur: \"Muhammed sizin erkeklerinizden hiçbirinin babası değildir; fakat o, Allah'ın Resûlü ve peygamberlerin sonuncusudur.\" Ondan sonra hiçbir peygamber gelmeyecektir.",
+        "Peygamber ﷺ kendini güzel bir misalle anlattı: Ondan önceki peygamberler, bir köşesindeki bir tuğla dışında tamamlanmış güzel bir ev yapan adam gibidir. İnsanlar etrafında dolaşır, beğenir ve \"Bu tuğla neden konmamış?\" derlerdi. Buyurdu ki: \"İşte o tuğla benim ve ben peygamberlerin sonuncusuyum.\""
+      ],
+      "kidsParagraphs": [
+        "Peygamberimiz Muhammed ﷺ son peygamberdir. Ondan sonra hiçbir peygamber gelmeyecek.",
+        "Peygamberlerin bir tuğlası eksik güzel bir ev gibi olduğunu, o tuğlanın da kendisi olduğunu söyledi!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 129,
+          "ayahEnd": 129
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 33,
+          "ayahStart": 40,
+          "ayahEnd": 40
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3535",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Benim ve benden önceki peygamberlerin misali, bir ev yapıp onu güzelleştiren ve süsleyen, ancak bir köşesinde bir tuğlalık yeri boş bırakan bir adamın misali gibidir. İnsanlar onun etrafında dolaşmaya, ona hayran kalmaya ve 'Bu tuğla neden konmadı?' demeye başladılar. İşte o tuğla benim ve ben peygamberlerin sonuncusuyum.\"",
+          "match": "فانا اللبنة وانا خاتم النبيين"
+        }
+      ],
+      "lessons": [
+        "Bütün peygamberlerin mesajı Muhammed ﷺ ile tamamlandı.",
+        "Onun son peygamber olduğuna inanmak imanın bir parçasıdır.",
+        "Bütün peygamberleri sev ve onların sonuncusuna uy."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an (33:40) Peygamber Muhammed'i ﷺ nasıl anar?",
+          "options": [
+            "Peygamberlerin sonuncusu",
+            "Bir kral",
+            "Bir şair",
+            "Bir melek"
+          ],
+          "answer": 0,
+          "reference": "Quran 33:40"
+        },
+        {
+          "question": "Hangi peygamber Ahmed adında bir elçiyi müjdeledi?",
+          "options": [
+            "İsa",
+            "Musa",
+            "Nuh",
+            "Yusuf"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "Peygamber'in ﷺ misalinde o neydi?",
+          "options": [
+            "Eksik tuğla",
+            "Kapı",
+            "Çatı",
+            "Pencere"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3535"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-2",
+      "title": "Âlemlere rahmet",
+      "paragraphs": [
+        "Allah ona şöyle buyurur: \"Biz seni ancak âlemlere rahmet olarak gönderdik\" ve: \"Sen elbette yüce bir ahlak üzeresin.\"",
+        "Kavmini derinden önemserdi: \"Size kendi içinizden bir elçi geldi. Sıkıntıya düşmeniz ona ağır gelir; size çok düşkündür, müminlere karşı çok şefkatli ve merhametlidir.\"",
+        "Öğrettiğini yaşadı: Emîn denecek kadar dürüst, reddedildiğinde sabırlı, Mekke'ye zaferle döndüğünde affedici ve sonuna kadar mütevazı."
+      ],
+      "kidsParagraphs": [
+        "Allah Peygamberimizi ﷺ herkese rahmet olarak gönderdi.",
+        "O şefkatli, dürüst ve sabırlıydı; bizi çok düşünürdü."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 107,
+          "ayahEnd": 107
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 68,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 9,
+          "ayahStart": 128,
+          "ayahEnd": 128
+        }
+      ],
+      "lessons": [
+        "Rahmet onun mesajının merkezindedir.",
+        "Güzel ahlak ona uymanın en iyi yoludur.",
+        "O ümmetini önemserdi; biz de sevgimizi onun Sünnet'ine uyarak gösteririz."
+      ],
+      "quiz": [
+        {
+          "question": "21:107'ye göre Allah Peygamber'i ﷺ ne olarak gönderdi?",
+          "options": [
+            "Âlemlere rahmet",
+            "Bir kral",
+            "Sadece bir hâkim",
+            "Sadece bir savaşçı"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:107"
+        },
+        {
+          "question": "Kur'an (68:4) onun ahlakını nasıl niteler?",
+          "options": [
+            "Yüce",
+            "Sert",
+            "Sıradan",
+            "Kibirli"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:4"
+        },
+        {
+          "question": "9:128'e göre müminlere karşı nasıldır?",
+          "options": [
+            "Şefkatli ve merhametli",
+            "Sert",
+            "Mesafeli",
+            "Öfkeli"
+          ],
+          "answer": 0,
+          "reference": "Quran 9:128"
+        }
+      ]
+    },
+    {
+      "id": "muhammad-3",
+      "title": "Mesajı devam ediyor",
+      "paragraphs": [
+        "Allah müminlere, Muhammed'in ﷺ kendinden önceki elçiler gibi bir elçi olduğunu ve vefatının mesajın sonu olmayacağını hatırlatır: \"Muhammed ancak bir elçidir; ondan önce de elçiler gelip geçmiştir.\"",
+        "Geride Kur'an'ı ve Sünnet'ini, bir de \"kâfirlere karşı çetin, kendi aralarında merhametli\", daima rükû ve secde ederek Allah'ın lütfunu arayan sahabeleri bıraktı.",
+        "Mekke'deki doğumundan ilk vahye, Hicret'e ve Medine'deki son yıllarına kadar hayatı, bu uygulamanın Siyer bölümünde ayrıntılı olarak anlatılır."
+      ],
+      "kidsParagraphs": [
+        "Peygamberimiz ﷺ bize Kur'an'ı ve Sünnet'ini bıraktı.",
+        "Onun bütün hayat hikâyesini Siyer bölümünde okuyabilirsin!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 144,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 48,
+          "ayahStart": 29,
+          "ayahEnd": 29
+        }
+      ],
+      "lessons": [
+        "Mesaj Kur'an ve Sünnet ile yaşamaya devam eder.",
+        "Peygamber'e ﷺ uymak, onun öğrettiklerine uymaktır.",
+        "Hayatını öğrenmek onu daha çok sevmenin en iyi yoludur."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an (3:144) Peygamber ﷺ hakkında ne der?",
+          "options": [
+            "O ancak bir elçidir; ondan önce de elçiler gelip geçmiştir",
+            "O asla ölmeyecek",
+            "O bir melektir",
+            "O bir kraldır"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:144"
+        },
+        {
+          "question": "Kur'an (48:29) sahabeleri kendi aralarında nasıl tanıtır?",
+          "options": [
+            "Merhametli",
+            "Sert",
+            "Bölünmüş",
+            "Kibirli"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        },
+        {
+          "question": "48:29'a göre sahabeler çoğu zaman ne yaparken görülür?",
+          "options": [
+            "Rükû ve secde ederken",
+            "Ticaret yaparken",
+            "Uyurken",
+            "Yolculuk yaparken"
+          ],
+          "answer": 0,
+          "reference": "Quran 48:29"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "allah-everywhere-functions",
+  "private": true,
+  "description": "Cloud Functions for Challenges: push notifications for feed updates and daily reminders.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && firebase emulators:exec --only firestore --project demo-allah-everywhere --config ../firebase.json 'node --test --test-concurrency=1 --test-reporter=tap lib/test/notify.test.js lib/test/rewards.test.js'",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0",
+    "firebase-functions": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "firebase-tools": "^15.0.0",
+    "typescript": "^5.6.0"
+  }
+}

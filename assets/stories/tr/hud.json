@@ -1,0 +1,348 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "hud",
+  "language": "tr",
+  "name": "Hûd",
+  "title": "Âd kavmine gönderilen resul",
+  "sentTo": "Kendi kavmi olan Âd kavmi",
+  "era": "Hz. Nuh'tan (a.s.) sonra. Kur'an Âd'ın Nuh kavminden sonra halef kılındığını söyler (7:69); tarih verilmez.",
+  "places": [
+    {
+      "name": "Güney Arabistan'daki el-Ahkâf, yani \"kum tepeleri\" (46:21). Âlimler onu genellikle Umman ile Hadramut (Yemen) arasına yerleştirir.",
+      "lat": 17.5,
+      "lng": 50.5,
+      "approximate": true
+    }
+  ],
+  "summary": "Hûd, büyük anıtlar inşa eden ve başkalarına zorbalıkla davranan güçlü bir kavim olan Âd'a gönderildi. Onları yalnızca Allah'a ibadete ve O'ndan bağışlanma dilemeye çağırdı. Onunla alay ettiler; şiddetli bir rüzgâr onları helak etti, Hûd ve müminler ise kurtarıldı.",
+  "notes": [
+    "el-Ahkâf'ın ve \"Sütunlar sahibi İrem\"in (89:7) tam yeri kesin olarak bilinmiyor.",
+    "Âd halkının devasa boylu devler olduğu ya da Hûd'un kabrinin Hadramut'ta bulunduğu hikâyeleri Kur'an'dan veya sahih hadislerden değil, sonraki rivayetlerden gelir.",
+    "Bazıları Hûd'un ilk Arap peygamber olduğunu söyler; bu, Buhârî ve Müslim dışındaki bir rivayetten gelir ve incelenmesi gerekir."
+  ],
+  "chapters": [
+    {
+      "id": "hud-1",
+      "title": "Güçlü Âd kavmi",
+      "paragraphs": [
+        "Tufan'dan sonra Hz. Nuh (a.s.) ile birlikte kurtulanların soyu yeryüzüne yayıldı. Bunlar arasında Güney Arabistan'da bir kum tepeleri diyarı olan el-Ahkâf'ta yaşayan Âd kavmi vardı.",
+        "Allah onlara büyük bir güç verdi. Hûd onlara, Allah'ın kendilerini Nuh kavminden sonra halef kıldığını ve yaratılışta onlara üstün bir cüsse verdiğini hatırlattı. Hayvanları, çocukları, bahçeleri ve pınarları vardı.",
+        "Ama nimetlerini kötüye kullandılar. Sadece gösteriş için her yüksek yere bir alamet diktiler, ebedî yaşayacakmış gibi sağlam kaleler kurdular ve başkalarına saldırdıklarında zorbalar gibi saldırdılar."
+      ],
+      "kidsParagraphs": [
+        "Âd kavmi çok güçlüydü ve büyük binalar yapıyordu.",
+        "Ama kibirlendiler, başkalarına zulmettiler ve kendilerine her şeyi veren Allah'ı unuttular."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 21,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 69,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 128,
+          "ayahEnd": 130
+        }
+      ],
+      "lessons": [
+        "Sahip olduğumuz her nimet Allah'tandır; onu O'nu razı edecek şekilde kullanmalıyız.",
+        "Güç ve servet kimseyi sonsuza dek yaşatmaz.",
+        "Gösteriş ve başkalarına zulüm büyük milletleri yok etti."
+      ],
+      "quiz": [
+        {
+          "question": "Âd kavmi nerede yaşıyordu?",
+          "options": [
+            "el-Ahkâf'ta, kum tepelerinde",
+            "Mısır'da",
+            "Babil'de",
+            "Medyen'de"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:21"
+        },
+        {
+          "question": "Âd hangi kavimden sonra halef kılındı?",
+          "options": [
+            "Lut kavminden",
+            "Nuh kavminden",
+            "Musa kavminden",
+            "Semûd'dan"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:69"
+        },
+        {
+          "question": "Âd her yüksek yere ne dikiyordu?",
+          "options": [
+            "Mescitler",
+            "Eğlenmek için bir alamet",
+            "Kuyular",
+            "Okullar"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:128"
+        }
+      ]
+    },
+    {
+      "id": "hud-2",
+      "title": "Hûd kavmini davet ediyor",
+      "paragraphs": [
+        "Allah Âd'a kardeşleri Hûd'u (a.s.) gönderdi. Mesajı her peygamberin mesajıydı: \"Ey kavmim! Allah'a ibadet edin; sizin O'ndan başka ilahınız yoktur.\"",
+        "Onlardan hiçbir ücret istemedi; ücreti yalnızca kendisini yaratana aitti. Onlara, iddia ettikleri gibi beyinsiz veya yalancı değil, samimi ve güvenilir bir öğütçü olduğunu söyledi.",
+        "Rablerinden bağışlanma dileyip O'na tövbe ederlerse Allah'ın onlara bol yağmur göndereceğini ve güçlerine güç katacağını vaat etti."
+      ],
+      "kidsParagraphs": [
+        "Allah Hûd'u kavmine gönderdi. O: \"Sadece Allah'a ibadet edin!\" dedi.",
+        "Hûd onlara: \"Allah'tan bağışlanma dileyin; size yağmur gönderir ve sizi daha da güçlü kılar\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 51,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 52,
+          "ayahEnd": 52
+        }
+      ],
+      "lessons": [
+        "Allah'ın resulü ücret istemeden samimi öğüt verir.",
+        "İstiğfar bu dünyada da bereket getirir.",
+        "İyiliğe çağıranı düşmanlarının hakaretlerine göre yargılama."
+      ],
+      "quiz": [
+        {
+          "question": "Hûd kavmini ilk olarak neye çağırdı?",
+          "options": [
+            "Topraklarını terk etmeye",
+            "Yalnızca Allah'a ibadete",
+            "Gemi yapmaya",
+            "Ona para vermeye"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:50"
+        },
+        {
+          "question": "Hûd, tövbe ederlerse Allah'ın ne göndereceğini söyledi?",
+          "options": [
+            "Bol yağmur ve daha fazla güç",
+            "Altın",
+            "Bir ordu",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:52"
+        },
+        {
+          "question": "İleri gelenler Hûd'u neyle suçladı?",
+          "options": [
+            "Beyinsizlik ve yalancılıkla",
+            "Hırsızlıkla",
+            "Kral olmakla",
+            "Melek olmakla"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:66"
+        }
+      ]
+    },
+    {
+      "id": "hud-3",
+      "title": "Yalnız Allah'a güvenmek",
+      "paragraphs": [
+        "Âd reddetti. \"Sen bize açık bir delil getirmedin; senin sözünle ilahlarımızı bırakmayız. Bizce ilahlarımızdan biri seni çarptı\" dediler.",
+        "Hûd, Allah'a tam bir güvenle cevap verdi. Putlarından uzak olduğunu ilan etti ve hepsine, hiç mühlet vermeden ona tuzak kurmaları için meydan okudu; çünkü o, kendisinin ve onların Rabbi olan Allah'a tevekkül etmişti: \"Hiçbir canlı yoktur ki O, onun perçeminden tutmuş olmasın.\"",
+        "Uyardığı azabı istediler. Hûd, onun vaktini yalnızca Allah'ın bildiğini ve kendisinin sadece gönderildiği şeyi tebliğ ettiğini söyledi."
+      ],
+      "kidsParagraphs": [
+        "İnsanlar: \"İlahlarımız seni çıldırttı!\" dediler.",
+        "Hûd onlardan korkmadı. \"Ben Allah'a güveniyorum. Her canlı O'nun elindedir\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 53,
+          "ayahEnd": 54
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 55,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 46,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        }
+      ],
+      "lessons": [
+        "Gerçek cesaret Allah'a güvenden gelir.",
+        "Her canlı Allah'ın kudreti altındadır; bu yüzden O'ndan başkasından korkmayız.",
+        "Allah'ın takdirinin vaktini yalnızca O bilir."
+      ],
+      "quiz": [
+        {
+          "question": "Âd'a göre Hûd'a ne olmuştu?",
+          "options": [
+            "İlahlarından biri onu çarpmıştı",
+            "Zengin olmuştu",
+            "Yolculuğa çıkmıştı",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:54"
+        },
+        {
+          "question": "Hûd kime tevekkül etti?",
+          "options": [
+            "Kabilesine",
+            "Kendisinin ve onların Rabbi olan Allah'a",
+            "Krala",
+            "Servetine"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:56"
+        },
+        {
+          "question": "Azabın ne zaman geleceğini kim bilir?",
+          "options": [
+            "Hûd",
+            "İleri gelenler",
+            "Yalnızca Allah",
+            "Kâhinler"
+          ],
+          "answer": 2,
+          "reference": "Quran 46:23"
+        }
+      ]
+    },
+    {
+      "id": "hud-4",
+      "title": "Rüzgâr",
+      "paragraphs": [
+        "Bir gün Âd, vadilerine doğru gelen bir bulut gördü ve sevindi: \"Bu bulut bize yağmur getirecek!\" Ama bu, acele ettikleri şeydi: Rabbinin emriyle her şeyi yok eden, içinde acıklı bir azap bulunan bir rüzgâr.",
+        "Allah onu üzerlerine yedi gece sekiz gün aralıksız musallat etti; sonunda içi boş hurma kütükleri gibi yere serildiler. Evlerinden başka hiçbir şeyleri görünmez oldu. Allah, rahmetiyle Hûd'u ve onunla birlikte iman edenleri kurtardı.",
+        "Peygamber ﷺ şöyle buyurdu: \"Ben doğu rüzgârı (sabâ) ile zafere ulaştırıldım, Âd ise batı rüzgârı (debûr) ile helak edildi.\" Bir kavmi yok eden aynı rüzgâr, Allah'ın emriyle başkalarına yardım etti."
+      ],
+      "kidsParagraphs": [
+        "Bir bulut geldi ve insanlar yağmur sandılar. Ama o, yedi gece sekiz gün esen korkunç bir rüzgârdı.",
+        "Allah Hûd'u ve müminleri kurtardı. Rüzgâr yalnızca Allah'a itaat eder!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 69,
+          "ayahStart": 6,
+          "ayahEnd": 8
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "1035",
+          "narrator": "İbn Abbas",
+          "translation": "Peygamber ﷺ şöyle buyurdu: \"Ben doğu rüzgârı (sabâ) ile zafere ulaştırıldım, Âd kavmi ise batı rüzgârı (debûr) ile helak edildi.\"",
+          "match": "نصرت بالصبا واهلكت عاد بالدبور"
+        }
+      ],
+      "lessons": [
+        "İstediğimiz her şey bizim için hayırlı değildir; bunu yalnızca Allah bilir.",
+        "Bütün yaratılış, rüzgâr bile, Allah'a itaat eder.",
+        "Allah, bütün milletleri helak olsa bile müminleri kurtarır."
+      ],
+      "quiz": [
+        {
+          "question": "Âd bulutun ne getireceğini sandı?",
+          "options": [
+            "Yağmur",
+            "Çekirge",
+            "Kar",
+            "Kuşlar"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:24"
+        },
+        {
+          "question": "Rüzgâr ne kadar esti?",
+          "options": [
+            "Üç gün",
+            "Yedi gece sekiz gün",
+            "Kırk gün",
+            "Bir saat"
+          ],
+          "answer": 1,
+          "reference": "Quran 69:7"
+        },
+        {
+          "question": "Peygamber'e ﷺ göre Âd hangi rüzgârla helak edildi?",
+          "options": [
+            "Doğu rüzgârı",
+            "Batı rüzgârı (debûr)",
+            "Kuzey rüzgârı",
+            "Mısır'dan gelen bir kum fırtınası"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 1035"
+        }
+      ]
+    }
+  ]
+}

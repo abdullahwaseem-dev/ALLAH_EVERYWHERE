@@ -1,0 +1,341 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yunus",
+  "language": "fr",
+  "name": "Younous",
+  "title": "Dhoun-Noun, le compagnon du poisson",
+  "sentTo": "Les gens de Ninive, cent mille ou plus",
+  "era": "L'époque n'est pas précisée dans le Coran ni la Sunna ; les historiens le situent au VIIIe siècle av. J.-C.",
+  "places": [
+    {
+      "name": "Ninive, face à l'actuelle Mossoul en Irak, selon la plupart des savants.",
+      "lat": 36.36,
+      "lng": 43.15,
+      "approximate": true
+    }
+  ],
+  "summary": "Younous quitta son peuple en colère avant qu'Allah ne lui en donne la permission. Il fut jeté d'un navire et avalé par un grand poisson, où il appela dans les ténèbres : « Il n'y a de divinité que Toi ; gloire à Toi ; j'ai été parmi les injustes. » Allah le sauva, et tout son peuple crut.",
+  "notes": [
+    "Le Coran ne nomme pas la ville ; Ninive vient de l'histoire et de la Bible.",
+    "La durée du séjour de Younous dans le poisson n'est précisée ni dans le Coran ni dans les hadiths authentiques ; les récits vont d'une partie de journée à quarante jours.",
+    "« Il pensa que Nous n'allions pas l'éprouver » (21:87) : les savants l'expliquent par « il pensa que Nous ne le mettrions pas à l'étroit », et non qu'il doutait de la puissance d'Allah.",
+    "La célèbre invocation de Younous est dans le Coran (21:87). Un hadith sur son mérite figure chez at-Tirmidhi ; il faut le vérifier avant de le citer."
+  ],
+  "chapters": [
+    {
+      "id": "yunus-1",
+      "title": "Parti en colère",
+      "paragraphs": [
+        "Allah envoya Younous (paix sur lui) vers une grande ville de cent mille personnes ou plus. Il les appela à Allah, mais ils ne répondirent pas.",
+        "Younous se mit en colère contre eux et partit avant qu'Allah ne lui en ait donné la permission. Il alla au rivage et embarqua sur un navire chargé.",
+        "Le Coran l'appelle « l'homme au poisson » : il partit en colère et pensa qu'Allah ne lui demanderait pas de comptes. Son histoire enseigne que même un prophète doit attendre l'ordre d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Allah envoya Younous dans une grande ville. Quand les gens n'écoutèrent pas, Younous se fâcha et partit.",
+        "Il monta sur un bateau sans attendre la permission d'Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 147
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 139,
+          "ayahEnd": 140
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Sois patient avec les gens et attends l'ordre d'Allah.",
+        "La colère peut nous mener à des décisions hâtives.",
+        "Appeler à Allah demande de la patience, non de l'agacement."
+      ],
+      "quiz": [
+        {
+          "question": "Vers combien de personnes Younous fut-il envoyé ?",
+          "options": [
+            "Cent mille ou plus",
+            "Dix",
+            "Mille",
+            "Soixante-dix"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:147"
+        },
+        {
+          "question": "Pourquoi Younous quitta-t-il son peuple ?",
+          "options": [
+            "Il était en colère contre eux",
+            "Il fut envoyé en Égypte",
+            "Il était malade",
+            "Il voulait commercer"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Où alla Younous quand il partit ?",
+          "options": [
+            "Vers un navire chargé",
+            "Vers une montagne",
+            "Vers une grotte",
+            "Vers le désert"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:140"
+        }
+      ]
+    },
+    {
+      "id": "yunus-2",
+      "title": "Dans le ventre du poisson",
+      "paragraphs": [
+        "En pleine mer, les gens du navire tirèrent au sort, et Younous fut parmi les perdants. Il fut jeté à la mer, et un grand poisson l'avala.",
+        "Dans les ténèbres de la nuit, de la mer et du ventre du poisson, Younous appela : « Il n'y a de divinité que Toi ; gloire à Toi ; j'ai été parmi les injustes. »",
+        "Allah dit que si Younous n'avait pas été de ceux qui Le glorifient, il serait resté dans son ventre jusqu'au Jour de la Résurrection. Mais Allah l'exauça et le sauva de son angoisse : « Et c'est ainsi que Nous sauvons les croyants. »"
+      ],
+      "kidsParagraphs": [
+        "Younous fut jeté à la mer, et un gros poisson l'avala !",
+        "Dans le noir, Younous pria : « Il n'y a de divinité que Toi, gloire à Toi, j'ai mal agi. » Et Allah le sauva."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 141,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 143,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        }
+      ],
+      "lessons": [
+        "Aucune obscurité n'est trop profonde pour qu'Allah entende notre invocation.",
+        "Reconnais ton erreur devant Allah, et glorifie-Le.",
+        "Se souvenir d'Allah dans les bons moments aide dans les moments durs."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui avala Younous ?",
+          "options": [
+            "Un grand poisson",
+            "Une vague",
+            "Une grotte",
+            "Un crocodile"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:142"
+        },
+        {
+          "question": "Que dit Younous dans les ténèbres ?",
+          "options": [
+            "Il n'y a de divinité que Toi ; gloire à Toi ; j'ai été parmi les injustes",
+            "Aidez-moi, les gens",
+            "Pourquoi moi ?",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Que dit Allah faire pour les croyants comme Younous ?",
+          "options": [
+            "Il les sauve",
+            "Il les oublie",
+            "Il les punit",
+            "Il les abandonne"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:88"
+        }
+      ]
+    },
+    {
+      "id": "yunus-3",
+      "title": "Toute la ville crut",
+      "paragraphs": [
+        "Allah rejeta Younous sur un rivage dénudé, faible et malade, et fit pousser au-dessus de lui un plant de courge pour l'abriter.",
+        "Puis Allah le renvoya vers son peuple, et cette fois ils crurent, tous. Allah leur épargna le châtiment et les laissa jouir de la vie pour un temps. Le Coran dit qu'aucune autre cité ayant cru au dernier moment ne fut ainsi secourue par sa foi, sauf le peuple de Younous.",
+        "Allah dit au Prophète Muhammad ﷺ d'être patient et de ne pas être comme le compagnon du poisson quand il appela dans l'angoisse. Puis Allah choisit Younous et fit de lui l'un des vertueux."
+      ],
+      "kidsParagraphs": [
+        "Le poisson déposa Younous sur la plage, et une plante poussa pour lui faire de l'ombre.",
+        "Quand Younous revint, tout le monde dans la ville crut ! Allah leur pardonna."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 145,
+          "ayahEnd": 146
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 10,
+          "ayahStart": 98,
+          "ayahEnd": 98
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 68,
+          "ayahStart": 48,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Ne désespère jamais des gens ; les cœurs peuvent changer.",
+        "Allah donne une seconde chance à ceux qui reviennent à Lui.",
+        "La patience dans l'appel vaut mieux que la colère hâtive."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui poussa au-dessus de Younous sur le rivage ?",
+          "options": [
+            "Un plant de courge",
+            "Un palmier",
+            "De l'herbe",
+            "Un figuier"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:146"
+        },
+        {
+          "question": "Que fit le peuple de Younous ?",
+          "options": [
+            "Ils crurent",
+            "Ils quittèrent la ville",
+            "Ils le combattirent",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:148"
+        },
+        {
+          "question": "Quel peuple fut secouru par sa foi au dernier moment, selon 10:98 ?",
+          "options": [
+            "Le peuple de Younous",
+            "Le peuple de Nouh",
+            "Le peuple de Pharaon",
+            "'Ad"
+          ],
+          "answer": 0,
+          "reference": "Quran 10:98"
+        }
+      ]
+    },
+    {
+      "id": "yunus-4",
+      "title": "Ne dis pas que tu es meilleur que Younous",
+      "paragraphs": [
+        "Parce que Younous commit une erreur, certains pourraient le déprécier. Le Prophète ﷺ l'a interdit : « Aucun serviteur ne doit dire : je suis meilleur que Younous ibn Matta. »",
+        "Younous se repentit sincèrement, et Allah le choisit et fit de lui l'un des vertueux. Son invocation depuis les ténèbres reste celle de tout croyant en détresse."
+      ],
+      "kidsParagraphs": [
+        "Notre Prophète ﷺ a dit : « Personne ne doit dire : je suis meilleur que Younous. »",
+        "Younous demanda pardon à Allah, et Allah fit de lui l'un des vertueux."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3416",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Prophète ﷺ a dit : « Il ne convient à aucun serviteur de dire : je suis meilleur que Younous ibn Matta. »",
+          "match": "لا ينبغي لعبد ان يقول انا خير من يونس بن متى"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 68,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Respecte tous les prophètes.",
+        "Une erreur suivie du repentir n'abaisse pas une personne aux yeux d'Allah.",
+        "Ne méprise personne pour un péché passé dont il s'est repenti."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit le Prophète ﷺ qu'aucun serviteur ne doit dire ?",
+          "options": [
+            "Je suis meilleur que Younous ibn Matta",
+            "J'aime Younous",
+            "Younous était un prophète",
+            "Younous était patient"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        },
+        {
+          "question": "Que fit Allah pour Younous après son repentir ?",
+          "options": [
+            "Il le choisit et fit de lui l'un des vertueux",
+            "Il fit de lui un roi",
+            "Il lui donna un navire",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:50"
+        },
+        {
+          "question": "Quel était le nom du père de Younous, selon le hadith ?",
+          "options": [
+            "Matta",
+            "Ya'qub",
+            "'Imran",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        }
+      ]
+    }
+  ]
+}

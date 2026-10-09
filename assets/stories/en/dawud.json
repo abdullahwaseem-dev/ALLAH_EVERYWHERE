@@ -1,0 +1,349 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "dawud",
+  "language": "en",
+  "name": "Dawud",
+  "title": "The king and Prophet who was given the Zabur",
+  "sentTo": "The Children of Israel, whom he ruled as king",
+  "era": "Commonly dated by historians to around 1000 BCE. The Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds) and the land of Palestine, where he ruled.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Dawud was a young soldier who killed the tyrant Jalut (Goliath) by Allah's permission. Allah gave him kingship, prophethood, wisdom and the Zabur (Psalms). The mountains and birds glorified Allah with him, and iron was made soft for him. He judged with justice, ate only from his own work, and worshipped Allah night and day.",
+  "notes": [
+    "The story that Dawud wanted the wife of one of his soldiers (Uriah) is from the Bible and the reports of the People of the Book. Scholars such as Ibn Kathir rejected it as unworthy of a Prophet. The Quran says only that Dawud realised he had been tested, asked forgiveness and was forgiven (38:24-25); scholars differ on what the test was.",
+    "Talut (Saul) and Jalut (Goliath) are named in the Quran; other details of the battle come from history.",
+    "The “Zabur” given to Dawud is usually identified with the Psalms, but the Psalms that exist today are not considered the original revelation unchanged."
+  ],
+  "chapters": [
+    {
+      "id": "dawud-1",
+      "title": "The young man who killed Jalut",
+      "paragraphs": [
+        "After Musa (AS), the Children of Israel asked for a king, and Allah appointed Talut. As the army marched to face the tyrant Jalut, Talut tested them at a river: whoever drank his fill was not one of his. Most drank; only a few passed the test.",
+        "When the small army saw Jalut and his soldiers, the believers prayed: “Our Lord, pour patience upon us, make our feet firm, and help us against the disbelieving people.”",
+        "By Allah's permission they defeated them, and a young man named Dawud killed Jalut. Allah gave Dawud kingship and wisdom and taught him what He willed."
+      ],
+      "kidsParagraphs": [
+        "A small army of believers faced the giant warrior Jalut.",
+        "Young Dawud killed Jalut by Allah's permission! Then Allah made Dawud a king and a Prophet."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 249,
+          "ayahEnd": 249
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 250,
+          "ayahEnd": 250
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 251,
+          "ayahEnd": 251
+        }
+      ],
+      "lessons": [
+        "Victory comes from Allah, not from numbers.",
+        "Self-control, like the test at the river, prepares people for great tasks.",
+        "Pray for patience and firm feet when facing hardship."
+      ],
+      "quiz": [
+        {
+          "question": "Who killed Jalut (Goliath)?",
+          "options": [
+            "Talut",
+            "Dawud",
+            "Sulayman",
+            "Musa"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:251"
+        },
+        {
+          "question": "How did Talut test his army?",
+          "options": [
+            "With a river",
+            "With a race",
+            "With a fast",
+            "With gold"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:249"
+        },
+        {
+          "question": "What did the believers pray for before the battle?",
+          "options": [
+            "Patience, firm feet and victory",
+            "Wealth",
+            "A king",
+            "Rain"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:250"
+        }
+      ]
+    },
+    {
+      "id": "dawud-2",
+      "title": "Mountains, birds and iron",
+      "paragraphs": [
+        "Allah gave Dawud a special bounty. When he glorified Allah, the mountains and the birds glorified Allah with him, morning and evening. Allah gave him the Zabur, a revealed book.",
+        "Allah made iron soft in his hands and taught him to make coats of mail, measuring the links carefully, to protect people in battle. “Work righteousness,” Allah told him and his family.",
+        "Although Dawud was a king, he lived from his own work. The Prophet ﷺ said: “Dawud (AS) used to eat only from the work of his own hands.”"
+      ],
+      "kidsParagraphs": [
+        "When Dawud praised Allah, the mountains and the birds praised Allah with him!",
+        "Allah made iron soft for him, and he made armour. Even as a king, he earned his own food."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 163,
+          "ayahEnd": 163
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 34,
+          "ayahStart": 11,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2073",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “Dawud (AS) used to eat only from the work of his own hands.”",
+          "match": "ان داود عليه السلام كان لا ياكل الا من عمل يده"
+        }
+      ],
+      "lessons": [
+        "All creation glorifies Allah; join it with your remembrance.",
+        "Working with your hands is honourable, even for a king.",
+        "Skills and technology are blessings to be used for good."
+      ],
+      "quiz": [
+        {
+          "question": "What glorified Allah with Dawud?",
+          "options": [
+            "The mountains and the birds",
+            "The seas",
+            "The stars",
+            "The jinn"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "What did Allah make soft for Dawud?",
+          "options": [
+            "Stone",
+            "Iron",
+            "Gold",
+            "Wood"
+          ],
+          "answer": 1,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "From what did Dawud eat, according to the Prophet ﷺ?",
+          "options": [
+            "The treasury",
+            "The work of his own hands",
+            "Gifts",
+            "Taxes"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 2073"
+        }
+      ]
+    },
+    {
+      "id": "dawud-3",
+      "title": "Judging with truth",
+      "paragraphs": [
+        "One day two men climbed over the wall into Dawud's private place of prayer, and he was startled. “Do not be afraid,” they said. “We are two parties to a dispute. Judge between us with truth.” One said: “My brother has ninety-nine ewes and I have one, and he insists I give it to him.”",
+        "Dawud judged that the man had wronged his brother, and that many partners wrong each other, except those who believe and do good. Then Dawud realised that Allah had tested him. He asked forgiveness of his Lord, fell down bowing and turned to Him, and Allah forgave him.",
+        "Allah said: “O Dawud, We have made you a successor on the earth, so judge between people with truth and do not follow your desire, for it will lead you away from Allah's path.”"
+      ],
+      "kidsParagraphs": [
+        "Two men came to Dawud with a problem, and he judged between them.",
+        "Then Dawud asked Allah to forgive him, and Allah forgave him. Allah told him: “Always judge fairly!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 21,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "A story from the People of the Book says Dawud's test was that he desired the wife of one of his soldiers. Scholars such as Ibn Kathir rejected it."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "A judge must listen to both sides and follow truth, not desire.",
+        "Even the best people turn to Allah in repentance.",
+        "Power is a trust from Allah."
+      ],
+      "quiz": [
+        {
+          "question": "How many ewes did the first man's brother have?",
+          "options": [
+            "Ten",
+            "Ninety-nine",
+            "One hundred",
+            "Seven"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:23"
+        },
+        {
+          "question": "What did Dawud do when he realised he had been tested?",
+          "options": [
+            "Asked forgiveness and bowed down",
+            "Got angry",
+            "Left the city",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:24"
+        },
+        {
+          "question": "What did Allah tell Dawud not to follow when judging?",
+          "options": [
+            "His desire",
+            "The Torah",
+            "His son",
+            "The elders"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:26"
+        }
+      ]
+    },
+    {
+      "id": "dawud-4",
+      "title": "The worship of Dawud",
+      "paragraphs": [
+        "Allah describes Dawud as a man of strength who was always turning back to Him.",
+        "The Prophet ﷺ said: “The fasting most beloved to Allah is the fasting of Dawud: he fasted one day and did not fast the next. And the prayer most beloved to Allah is the prayer of Dawud: he slept half the night, prayed a third of it, and slept a sixth of it.”",
+        "A king with a great kingdom, he still made time for long night prayer and regular fasting. His worship was balanced: strong, steady and lasting."
+      ],
+      "kidsParagraphs": [
+        "Dawud fasted every other day, and woke up at night to pray.",
+        "The Prophet ﷺ said this was the fasting and prayer most loved by Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 17,
+          "ayahEnd": 18
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3420",
+          "narrator": "Abdullah ibn 'Amr",
+          "translation": "The Messenger of Allah ﷺ said to me: “The fasting most beloved to Allah is the fasting of Dawud: he would fast a day and not fast a day. And the prayer most beloved to Allah is the prayer of Dawud: he would sleep half the night, stand in prayer for a third of it, and sleep for a sixth of it.”",
+          "match": "احب الصيام الى الله صيام داود كان يصوم يوما ويفطر يوما"
+        }
+      ],
+      "lessons": [
+        "Steady, balanced worship is most beloved to Allah.",
+        "Busy people can still make time for night prayer.",
+        "Turning back to Allah often is a quality of the Prophets."
+      ],
+      "quiz": [
+        {
+          "question": "How did Dawud fast?",
+          "options": [
+            "Every day",
+            "One day yes and one day no",
+            "Only in Ramadan",
+            "Once a year"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "How much of the night did Dawud pray?",
+          "options": [
+            "A third",
+            "All of it",
+            "None",
+            "A tenth"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "How does the Quran describe Dawud in 38:17?",
+          "options": [
+            "Always turning back to Allah",
+            "Lazy",
+            "Proud",
+            "Afraid"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:17"
+        }
+      ]
+    }
+  ]
+}

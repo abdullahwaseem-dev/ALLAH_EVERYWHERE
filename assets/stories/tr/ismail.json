@@ -1,0 +1,246 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ismail",
+  "language": "tr",
+  "name": "İsmâil",
+  "title": "Hz. İbrahim'in (a.s.) oğlu, sözüne sadık",
+  "sentTo": "Aralarında büyüdüğü Mekke Arapları (Cürhüm kabilesi)",
+  "era": "Babası Hz. İbrahim'in (a.s.) dönemi. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Annesi Hacer ile büyüdüğü ve babasının Kâbe'yi inşa etmesine yardım ettiği Mekke.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "Hz. İbrahim'in (a.s.) Hacer'den olan ilk oğlu. Mekke vadisinde büyüdü, babası kurban rüyasını görünce Allah'ın emrine teslim oldu ve babasıyla birlikte Kâbe'yi yükseltti. Allah onu sözüne sadık, bir resul ve nebi olarak över. Peygamber Muhammed ﷺ onun soyundandır.",
+  "notes": [
+    "Âlimlerin çoğu kurban edilecek oğulun İsmâil olduğunu söyler (37:101-107); bazı selef âlimleri İshak demiştir. Hz. İbrahim'in (a.s.) kıssasına bakınız.",
+    "İsmâil ile Hacer'in Hicr'de (Kâbe'nin yanındaki yay biçimli alan) gömülü olduğuna dair rivayetler sahih hadislerden değil, tarihçilerden gelir.",
+    "Burada peygamberler sıralamasında İsmâil, babası Hz. İbrahim'den (a.s.) sonra yer alır."
+  ],
+  "chapters": [
+    {
+      "id": "ismail-1",
+      "title": "Vadinin çocuğu",
+      "paragraphs": [
+        "Hz. İsmâil (a.s.), Hz. İbrahim'in (a.s.) Hacer'den doğan ilk oğluydu. O daha bebekken İbrahim, Allah'ın emriyle onu ve annesini Mekke'nin ıssız vadisinde bıraktı ve Allah onlar için Zemzem suyunu çıkardı. (Kıssanın tamamı İbrahim bölümlerindedir.)",
+        "Cürhüm kabilesinden yolcular gelip Hacer'in izniyle suyun yanına yerleştiler. İsmâil onların arasında büyüdü, onlardan Arapçayı öğrendi ve onların beğenisini kazandı; büyüyünce onu kendi kadınlarından biriyle evlendirdiler."
+      ],
+      "kidsParagraphs": [
+        "İsmâil, annesi Hacer ile birlikte Mekke vadisinde, Zemzem kuyusunun yanında büyüdü.",
+        "Cürhüm adında bir kabile onlarla yaşamaya geldi ve İsmâil onlardan Arapçayı öğrendi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "İbn Abbas",
+          "translation": "…Oraya yerleştiler ve ailelerine haber gönderdiler; onlar da gelip yanlarına yerleştiler, öyle ki orada birkaç hane oldu. Çocuk büyüdü ve onlardan Arapçayı öğrendi; büyüdüğünde onu beğendiler ve sevdiler. Erginlik çağına gelince onu kendilerinden bir kadınla evlendirdiler…",
+          "match": "وشب الغلام وتعلم العربية منهم",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah, ıssız bir vadide bile olsa Kendisine güvenenleri korur.",
+        "Güzel ahlak, yabancıyı bile insanlara sevdirir.",
+        "Küçük bir aile büyük bir milletin başlangıcı olabilir."
+      ],
+      "quiz": [
+        {
+          "question": "İsmâil'in annesi kimdi?",
+          "options": [
+            "Sâre",
+            "Hacer",
+            "Meryem",
+            "Âsiye"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "İsmâil Arapçayı hangi kabileden öğrendi?",
+          "options": [
+            "Kureyş",
+            "Cürhüm",
+            "Semûd",
+            "Âd"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "İsmâil nerede büyüdü?",
+          "options": [
+            "Mısır'da",
+            "Mekke vadisinde",
+            "Babil'de",
+            "Medyen'de"
+          ],
+          "answer": 1,
+          "reference": "Quran 14:37"
+        }
+      ]
+    },
+    {
+      "id": "ismail-2",
+      "title": "İtaatkâr oğul",
+      "paragraphs": [
+        "İsmâil babasının yanında çalışacak yaşa gelince İbrahim ona, rüyasında onu kurban ettiğini anlattı. İsmâil şöyle cevap verdi: \"Babacığım, emrolunduğun şeyi yap. İnşallah beni sabredenlerden bulacaksın.\" Allah ona büyük bir kurbanı fidye kıldı.",
+        "Daha sonra Allah İbrahim'e Beyt'i inşa etmesini emredince İsmâil hemen \"Rabbine itaat et\" dedi ve yardım etti. Babası inşa ederken İsmâil taşları taşıdı ve birlikte dua ettiler: \"Rabbimiz, bizden kabul buyur.\""
+      ],
+      "kidsParagraphs": [
+        "İsmâil çok zor olsa bile Allah'a ve babasına itaat etti.",
+        "Babasının Kâbe'yi inşa etmesine taş taşıyarak yardım etti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        }
+      ],
+      "lessons": [
+        "Allah'a gerçek itaat sabırlı ve gönüllü olur.",
+        "Hayırlı işlerde anne babaya yardım etmek büyük bir şereftir.",
+        "Her güzel ameli kabul etmesi için Allah'a dua et."
+      ],
+      "quiz": [
+        {
+          "question": "Babası rüyayı anlatınca İsmâil ne dedi?",
+          "options": [
+            "Emrolunduğun şeyi yap",
+            "Korkuyorum",
+            "Başkasına sor",
+            "Kaçacağım"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Kâbe inşa edilirken İsmâil ne taşıdı?",
+          "options": [
+            "Su",
+            "Taş",
+            "Odun",
+            "Yiyecek"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "İbrahim ve İsmâil inşa ederken nasıl dua ettiler?",
+          "options": [
+            "Bizi zengin kıl",
+            "Rabbimiz, bizden kabul buyur",
+            "Bize bir krallık ver",
+            "Duvarları koru"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        }
+      ]
+    },
+    {
+      "id": "ismail-3",
+      "title": "Sözüne sadık",
+      "paragraphs": [
+        "Kur'an İsmâil'i över: O sözüne sadık, bir resul ve nebiydi. Ailesine namazı ve zekâtı emrederdi ve Rabbi katında beğenilmiş biriydi. Allah onu sabredenler ve seçkin hayırlılar arasında anar.",
+        "İsmâil aynı zamanda bir okçuydu. Bir gün Peygamber ﷺ ok atışı yapan birkaç adamın yanından geçti ve şöyle buyurdu: \"Atın ey İsmâiloğulları, çünkü babanız bir okçuydu.\"",
+        "İsmâil'in soyundan Hicaz Arapları geldi ve binlerce yıl sonra onların arasından Peygamber Muhammed ﷺ geldi: İbrahim ile İsmâil'in, soylarından bir peygamber gönderilmesi için yaptıkları duanın cevabı."
+      ],
+      "kidsParagraphs": [
+        "Allah, İsmâil'in sözünü hep tuttuğunu ve ailesine namazı emrettiğini söyler.",
+        "O harika bir okçuydu! Peygamberimiz Muhammed ﷺ de onun soyundandır."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 54,
+          "ayahEnd": 55
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2899",
+          "narrator": "Seleme b. Ekva'",
+          "translation": "Peygamber ﷺ ok atışında yarışan Eslem kabilesinden bazı kimselerin yanından geçti ve şöyle buyurdu: \"Atın ey İsmâiloğulları, çünkü babanız bir okçuydu. Atın, ben de falan grupla beraberim…\"",
+          "match": "ارموا بني اسماعيل فان اباكم كان راميا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Sözünü tutmak peygamberlerin vasfıdır.",
+        "Ailesini namaza ve sadakaya yönlendirmek imandandır.",
+        "Okçuluk gibi faydalı beceriler Sünnet'te övülmüştür."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an (19:54) İsmâil'in hangi vasfını över?",
+          "options": [
+            "Zenginliğini",
+            "Sözüne sadık olmasını",
+            "Gücünü",
+            "Güzelliğini"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:54"
+        },
+        {
+          "question": "İsmâil ailesine neyi emrederdi?",
+          "options": [
+            "Ticareti",
+            "Namazı ve zekâtı",
+            "Yolculuğu",
+            "Ev yapmayı"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:55"
+        },
+        {
+          "question": "Peygamber ﷺ İsmâil'in hangi becerisinden bahsetti?",
+          "options": [
+            "Okçuluk",
+            "Yüzme",
+            "Yazı",
+            "Denizcilik"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2899"
+        }
+      ]
+    }
+  ]
+}

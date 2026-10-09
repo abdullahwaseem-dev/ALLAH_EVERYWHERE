@@ -1,0 +1,254 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yaqub",
+  "language": "fr",
+  "name": "Ya'qub",
+  "title": "Isra'il, le père des douze tribus",
+  "sentTo": "Sa famille et sa descendance, les Enfants d'Israël",
+  "era": "Le petit-fils d'Ibrahim (paix sur lui). Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Canaan (Palestine), où il vivait avec ses fils.",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "L'Égypte, où il rejoignit Yusuf (paix sur lui) à la fin de sa vie.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Le fils d'Ishaq (paix sur lui) et le père de Yusuf (paix sur lui) et de ses frères, dont descendent les douze tribus des Enfants d'Israël. Il est connu pour sa belle patience quand il perdit Yusuf, et pour le dernier conseil qu'il donna à ses fils : n'adorer qu'Allah et ne mourir qu'en musulmans.",
+  "notes": [
+    "Beaucoup de savants disent qu'« Isra'il » dans le Coran (par exemple 3:93) est un autre nom de Ya'qub. C'est l'avis courant, fondé sur la formulation du Coran et sur des récits des Compagnons.",
+    "Les récits sur la jeunesse de Ya'qub, son frère jumeau et ses mariages viennent surtout de la Bible.",
+    "Ce qui arriva à ses yeux (12:84) : les savants divergent sur la question de savoir s'il devint complètement aveugle ou si sa vue s'affaiblit beaucoup à cause du chagrin."
+  ],
+  "chapters": [
+    {
+      "id": "yaqub-1",
+      "title": "Une maison de foi",
+      "paragraphs": [
+        "Ya'qub (paix sur lui) était le fils d'Ishaq et le petit-fils d'Ibrahim (paix sur lui). Allah le donna à Ibrahim en don supplémentaire, et fit de chacun d'eux un prophète.",
+        "Ibrahim avait conseillé ses fils, et Ya'qub conseilla les siens : « Ô mes fils, Allah a choisi pour vous cette religion ; ne mourez donc qu'en musulmans, soumis à Lui. »",
+        "Ya'qub avait douze fils. Les deux plus jeunes, Yusuf et son frère, étaient particulièrement chers à son cœur, et son amour pour eux allait devenir le début d'une longue épreuve."
+      ],
+      "kidsParagraphs": [
+        "Ya'qub était le fils d'Ishaq et le petit-fils d'Ibrahim. Il avait douze fils.",
+        "Il dit à ses fils : « Allah a choisi cette religion pour vous. Restez toujours musulmans ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 49,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 132,
+          "ayahEnd": 132
+        }
+      ],
+      "lessons": [
+        "Les parents transmettent la foi par l'enseignement et par l'exemple.",
+        "Le conseil le plus important est de rester attaché à l'islam jusqu'à la mort.",
+        "Chaque famille a ses épreuves ; la foi aide à les traverser."
+      ],
+      "quiz": [
+        {
+          "question": "Qui était le père de Ya'qub ?",
+          "options": [
+            "Ismaïl",
+            "Ishaq",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:49"
+        },
+        {
+          "question": "Que dit Ya'qub à ses fils ?",
+          "options": [
+            "Devenez riches",
+            "Ne mourez qu'en musulmans",
+            "Quittez l'Égypte",
+            "Bâtissez une ville"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:132"
+        },
+        {
+          "question": "Lequel de ceux-ci était le fils de Ya'qub ?",
+          "options": [
+            "Yusuf",
+            "Moussa",
+            "Issa",
+            "Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-2",
+      "title": "Une belle patience",
+      "paragraphs": [
+        "Un jour, les frères de Yusuf l'emmenèrent et revinrent le soir en pleurant, avec sa chemise tachée d'un faux sang. Ils dirent qu'un loup l'avait dévoré. Ya'qub savait qu'ils ne disaient pas la vérité, mais il dit : « Belle patience ! C'est Allah dont on implore le secours contre ce que vous racontez. »",
+        "Des années plus tard, quand un autre fils fut retenu en Égypte, son chagrin revint. Il se détourna et dit : « Hélas, quel chagrin pour Yusuf ! » Ses yeux blanchirent de tristesse, mais il contint sa colère.",
+        "Ses fils dirent qu'il allait se consumer de chagrin. Il répondit : « Je ne me plains de mon affliction et de ma peine qu'à Allah, et je sais d'Allah ce que vous ne savez pas. Ô mes fils, partez à la recherche de Yusuf et de son frère, et ne désespérez pas de la miséricorde d'Allah. »"
+      ],
+      "kidsParagraphs": [
+        "Quand Yusuf disparut, Ya'qub fut très triste. Mais il dit : « Belle patience. »",
+        "Il ne pleurait que devant Allah et ne perdit jamais espoir. Il dit : « Ne désespérez jamais de la miséricorde d'Allah ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "La belle patience est une patience sans plainte auprès des gens.",
+        "Il est permis d'être triste et de pleurer ; on ne se plaint qu'à Allah.",
+        "Ne désespère jamais de la miséricorde d'Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Ya'qub quand on lui dit qu'un loup avait dévoré Yusuf ?",
+          "options": [
+            "Je vais vous punir",
+            "Belle patience",
+            "Allons en Égypte",
+            "Je vous crois"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:18"
+        },
+        {
+          "question": "À qui Ya'qub se plaignait-il de son chagrin ?",
+          "options": [
+            "À ses fils",
+            "À Allah seul",
+            "Au roi",
+            "À ses voisins"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:86"
+        },
+        {
+          "question": "De quoi Ya'qub dit-il à ses fils de ne pas désespérer ?",
+          "options": [
+            "De leur commerce",
+            "De la miséricorde d'Allah",
+            "De la pluie",
+            "De l'aide du roi"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:87"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-3",
+      "title": "Le parfum de Yusuf",
+      "paragraphs": [
+        "Quand la caravane quitta l'Égypte en emportant la chemise de Yusuf, Ya'qub dit à Canaan : « Je sens l'odeur de Yusuf, si vous ne me traitez pas de radoteur. » Quand le porteur de la bonne nouvelle jeta la chemise sur son visage, la vue lui revint. « Ne vous avais-je pas dit que je sais d'Allah ce que vous ne savez pas ? »",
+        "Ses fils lui demandèrent de prier pour leur pardon, et il le leur promit. Puis toute la famille se rendit en Égypte. Yusuf éleva ses parents sur le trône, et le rêve qu'il avait vu enfant se réalisa.",
+        "Quand la mort vint à Ya'qub, il demanda à ses fils : « Qu'adorerez-vous après moi ? » Ils dirent : « Nous adorerons ton Dieu et le Dieu de tes pères, Ibrahim, Ismaïl et Ishaq : un Dieu unique, et à Lui nous sommes soumis. »"
+      ],
+      "kidsParagraphs": [
+        "Yusuf envoya sa chemise à son père. Quand elle toucha le visage de Ya'qub, il put voir de nouveau !",
+        "Toute la famille fut réunie. Avant la mort de Ya'qub, ses fils promirent de n'adorer qu'Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 94,
+          "ayahEnd": 96
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 97,
+          "ayahEnd": 99
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 133,
+          "ayahEnd": 133
+        }
+      ],
+      "lessons": [
+        "Après la patience vient le soulagement.",
+        "Pardonne aux membres de ta famille qui se repentent.",
+        "Le meilleur héritage, ce sont des enfants qui n'adorent qu'Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui rendit la vue à Ya'qub ?",
+          "options": [
+            "Un remède",
+            "La chemise de Yusuf",
+            "L'eau de Zamzam",
+            "Un rêve"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:96"
+        },
+        {
+          "question": "Que demanda Ya'qub à ses fils avant de mourir ?",
+          "options": [
+            "Qu'adorerez-vous après moi ?",
+            "Où est mon argent ?",
+            "Qui sera roi ?",
+            "Où est Yusuf ?"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        },
+        {
+          "question": "Quels trois ancêtres ses fils nommèrent-ils ?",
+          "options": [
+            "Ibrahim, Ismaïl et Ishaq",
+            "Adam, Nouh et Houd",
+            "Moussa, Haroun et Dawud",
+            "Issa, Yahya et Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        }
+      ]
+    }
+  ]
+}

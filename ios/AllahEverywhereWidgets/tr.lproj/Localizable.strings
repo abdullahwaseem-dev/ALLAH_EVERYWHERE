@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "Sıradaki Namaz";
+"widget.nextPrayer.description" = "Bugünün namaz vakitleriyle sıradaki namaza geri sayım.";
+"widget.hijriDate.name" = "Hicri Tarih";
+"widget.hijriDate.description" = "Bugünün hicri tarihi ve İslami günler.";
+"widget.reminder.name" = "Günün Ayeti";
+"widget.reminder.description" = "Her gün üzerine düşünmek için bir ayet veya hadis.";
+"widget.nextPrayer.fallback" = "Sıradaki namaz";
+"widget.setLocation.fallback" = "Konumunuzu ayarlamak için uygulamayı açın";
+"widget.openApp.fallback" = "Güncellemek için uygulamayı açın";

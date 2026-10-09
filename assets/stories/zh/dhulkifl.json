@@ -1,0 +1,100 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dhulkifl",
+  "language": "zh",
+  "name": "祖勒基福勒",
+  "title": "坚忍者和优秀者之一",
+  "sentTo": "他的族人；《古兰经》没有提到他们的名称",
+  "era": "不确定。学者们对他生活的时代意见不一；他在这个顺序中的位置是大致的。",
+  "places": [
+    {
+      "name": "不详。一些传述认为他在伊拉克；另一些认为他就是以西结（希兹基勒）。",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "祖勒基福勒在《古兰经》中被提到两次，列于坚忍者、清廉者和优秀者之中。《古兰经》没有告诉我们关于他生平的更多内容，学者们甚至对他是先知还是清廉之人意见不一。",
+  "notes": [
+    "祖勒基福勒是先知吗？大多数学者认为是，因为《古兰经》把他列在先知之中。一些早期学者说他是一位清廉的人，而不是先知。",
+    "他的名字意为“有一份的人”或“承担责任的人”。有些传述用一个故事来解释：一个人承诺白天斋戒、夜里礼拜、判案时不发怒；这些传述不在《古兰经》或可靠的圣训中。",
+    "有人认为他就是《圣经》中的先知以西结（希兹基勒），也有人认为是其他人物；这些都不确定。"
+  ],
+  "chapters": [
+    {
+      "id": "dhulkifl-1",
+      "title": "列于坚忍者之中",
+      "paragraphs": [
+        "真主在《古兰经》中说：“易司马仪、易德里斯和祖勒基福勒，都是坚忍的人。我使他们进入我的慈恩之中；他们确是清廉的人。”",
+        "在另一处，真主要我们记住易司马仪、艾勒叶赛和祖勒基福勒，“他们都是优秀的人。”",
+        "这就是真主告诉我们关于他的全部。只要知道真主亲自称赞他的坚忍和清廉，并把他列在祂最优秀的仆人之中，就足够了。有些事情真主对我们隐藏了，我们不编造祂没有告诉我们的事。"
+      ],
+      "kidsParagraphs": [
+        "在《古兰经》中，祖勒基福勒和易司马仪、易德里斯一起被列为坚忍者和好人。",
+        "真主只告诉了我们一点点关于他的事，而这一点点就是极大的赞扬！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "一个流行的故事说，祖勒基福勒向他的族人承诺每天斋戒、每夜礼拜、判案时不发怒，易卜劣斯试图激怒他，却没有成功。"
+        }
+      ],
+      "lessons": [
+        "真主一再称赞坚忍。",
+        "关于过去的幽玄之事，我们只说真主和祂的使者ﷺ告诉我们的。",
+        "无论人们是否知道你的故事，真主的赞扬都是最高的荣誉。"
+      ],
+      "quiz": [
+        {
+          "question": "祖勒基福勒和哪两位先知一起被列为坚忍者？",
+          "options": [
+            "易司马仪和易德里斯",
+            "穆萨和哈伦",
+            "达乌德和苏莱曼",
+            "优努斯和安优卜"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:85"
+        },
+        {
+          "question": "《古兰经》（38:48）怎样形容祖勒基福勒、易司马仪和艾勒叶赛？",
+          "options": [
+            "优秀的人",
+            "国王",
+            "商人",
+            "战士"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "真主使他们进入什么之中？",
+          "options": [
+            "一座宫殿",
+            "祂的慈恩",
+            "一艘船",
+            "一座城市"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:86"
+        }
+      ]
+    }
+  ]
+}

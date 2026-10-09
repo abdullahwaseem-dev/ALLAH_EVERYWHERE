@@ -11,26 +11,22 @@ class HadithDetailController extends GetxController {
 
   final HadithDetailService _service = HadithDetailService();
 
-  Future<void> fetchHadiths(String chapterId) async {
+  Future<void> fetchHadiths(String bookSlug, int chapterNumber) async {
     try {
       isLoading(true);
       errorMessage.value = '';
       hadithData.value = [];
       chapterName.value = '';
-      var data = await _service.fetchHadithDetails(chapterId);
-      if (data != null) {
-        // Ensure hadiths data is a list
-        if (data['hadiths'] != null && data['hadiths']['data'] is List) {
-          hadithData.value = data['hadiths']['data'];  // Assign the list to the observable variable
-          chapterName.value = data['hadiths']['data'][0]['chapter']['chapterEnglish'] ?? 'Unknown Chapter';
-        } else {
-          errorMessage.value = 'No Hadiths found for this chapter.';
-        }
+      final list = await _service.fetchHadithDetails(bookSlug, chapterNumber);
+      if (list.isNotEmpty) {
+        hadithData.value = list;
+        final chapter = list[0]['chapter'];
+        chapterName.value = (chapter is Map ? chapter['chapterEnglish'] as String? : null) ?? 'Unknown Chapter';
       } else {
-        errorMessage.value = 'Failed to load Hadith details.';
+        errorMessage.value = 'No Hadiths found for this chapter.';
       }
     } catch (e) {
-      errorMessage.value = 'Error: $e';
+      errorMessage.value = e.toString().replaceFirst('Exception: ', '');
     } finally {
       isLoading(false);
     }

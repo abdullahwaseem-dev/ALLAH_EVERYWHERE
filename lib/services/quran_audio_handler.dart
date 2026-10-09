@@ -4,6 +4,7 @@ import 'package:just_audio/just_audio.dart';
 import 'package:http/http.dart' as http;
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/data/reciters_data.dart';
+import 'package:allah_everywhere/services/hifz_plan.dart';
 
 /// A single ayah's audio + text, used both to drive playback and to show
 /// the currently-playing verse's translation in the UI.
@@ -31,11 +32,26 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
   int? _loadedSurahId;
   String _loadedReciterId = 'ar.alafasy';
 
+  /// Surah data already fetched this session, by "surah|reciter".
+  final Map<String, List<AyahAudio>> _fetched = {};
+
+  /// The queue of a Hifz session (one entry per queued item), or null when
+  /// the reader's normal surah playback is loaded.
+  List<HifzStep>? _hifzSteps;
+  int? _hifzSurahId;
+
+  static const _silenceAsset = 'assets/audio/silence_10s.m4a';
+
   QuranAudioHandler() {
     _player.playbackEventStream.listen(_broadcastState, onError: (Object e, StackTrace st) {
       VoidLogger.error('Quran audio playback error', e);
     });
     _player.currentIndexStream.listen((index) {
+      final steps = _hifzSteps;
+      if (steps != null) {
+        if (index != null && index < steps.length) mediaItem.add(queue.value[index]);
+        return;
+      }
       if (index == null || _ayahs.isEmpty || index >= _ayahs.length) return;
       mediaItem.add(_mediaItemFor(_ayahs[index], reciterFor(_loadedReciterId).name));
     });
@@ -48,6 +64,10 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
   int? get loadedSurahId => _loadedSurahId;
   String get loadedReciterId => _loadedReciterId;
   Stream<int?> get currentIndexStream => _player.currentIndexStream;
+  // Read synchronously by the Surah reader to resync its highlight right
+  // away (e.g. after the screen was locked), before the next stream event.
+  int? get currentIndex => _player.currentIndex;
+  ProcessingState get processingState => _player.processingState;
   Stream<bool> get playingStream => _player.playingStream;
   bool get isPlaying => _player.playing;
 
@@ -55,6 +75,47 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
   /// an English translation) in a single call to the free, keyless
   /// api.alquran.cloud, then loads them as a gapless background playlist.
   Future<void> loadSurah(int surahId, {int startAtAyah = 1, String reciterId = 'ar.alafasy'}) async {
+    _ayahs = await fetchSurahAyahs(surahId, reciterId);
+    _hifzSteps = null;
+    _hifzSurahId = null;
+    final reciterName = reciterFor(reciterId).name;
+    queue.add(_ayahs.map((a) => _mediaItemFor(a, reciterName)).toList());
+    final source = ConcatenatingAudioSource(
+      children: _ayahs.map((a) => AudioSource.uri(Uri.parse(a.audioUrl))).toList(),
+    );
+    final startIndex = (startAtAyah - 1).clamp(0, _ayahs.length - 1);
+    await _player.setSpeed(1.0); // a Hifz session may have changed it
+    await _player.setAudioSource(source, initialIndex: startIndex);
+    _loadedSurahId = surahId;
+    _loadedReciterId = reciterId;
+  }
+
+  /// Loads only ayat [fromAyah]-[toAyah] of [surahId], e.g. the passage
+  /// quoted in a Prophets' Story. As with a Hifz session, [loadedSurahId]
+  /// becomes null so the Surah reader doesn't take this for its own playback.
+  Future<void> loadAyahRange(int surahId, int fromAyah, int toAyah, {String reciterId = 'ar.alafasy'}) async {
+    final all = await fetchSurahAyahs(surahId, reciterId);
+    final start = (fromAyah - 1).clamp(0, all.length - 1);
+    final end = toAyah.clamp(start + 1, all.length);
+    _ayahs = all.sublist(start, end);
+    _hifzSteps = null;
+    _hifzSurahId = null;
+    final reciterName = reciterFor(reciterId).name;
+    queue.add(_ayahs.map((a) => _mediaItemFor(a, reciterName)).toList());
+    await _player.setSpeed(1.0);
+    await _player.setAudioSource(
+      ConcatenatingAudioSource(children: _ayahs.map((a) => AudioSource.uri(Uri.parse(a.audioUrl))).toList()),
+    );
+    _loadedSurahId = null;
+    _loadedReciterId = reciterId;
+  }
+
+  /// Every ayah of [surahId] with [reciterId]'s audio URL, fetched once per
+  /// app session (one request to api.alquran.cloud).
+  Future<List<AyahAudio>> fetchSurahAyahs(int surahId, String reciterId) async {
+    final key = '$surahId|$reciterId';
+    final cached = _fetched[key];
+    if (cached != null) return cached;
     final url = Uri.parse(
       'https://api.alquran.cloud/v1/surah/$surahId/editions/$reciterId,en.sahih',
     );
@@ -68,9 +129,7 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
     final translationEdition = editions.firstWhere((e) => e['edition']['identifier'] == 'en.sahih');
     final arabicAyahs = arabicEdition['ayahs'] as List<dynamic>;
     final translationAyahs = translationEdition['ayahs'] as List<dynamic>;
-    final reciterName = reciterFor(reciterId).name;
-
-    _ayahs = List.generate(arabicAyahs.length, (i) {
+    final ayahs = List.generate(arabicAyahs.length, (i) {
       final a = arabicAyahs[i] as Map<String, dynamic>;
       final t = translationAyahs[i] as Map<String, dynamic>;
       return AyahAudio(
@@ -80,15 +139,62 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
         audioUrl: a['audio'] as String,
       );
     });
+    _fetched[key] = ayahs;
+    return ayahs;
+  }
 
-    queue.add(_ayahs.map((a) => _mediaItemFor(a, reciterName)).toList());
-    final source = ConcatenatingAudioSource(
-      children: _ayahs.map((a) => AudioSource.uri(Uri.parse(a.audioUrl))).toList(),
-    );
-    final startIndex = (startAtAyah - 1).clamp(0, _ayahs.length - 1);
-    await _player.setAudioSource(source, initialIndex: startIndex);
-    _loadedSurahId = surahId;
+  /// Queues a whole Hifz session: [steps] (see buildHifzPlan) with each
+  /// recitation played from its downloaded file in [ayahFiles] and each pause
+  /// clipped from a bundled silent track. Because the entire session is in
+  /// the native player's queue, repeats and pauses carry on with the screen
+  /// locked. [loadedSurahId] becomes null, so the reader doesn't mistake the
+  /// session for its own playback.
+  Future<void> loadHifzSession({
+    required int surahId,
+    required String surahName,
+    required String reciterId,
+    required Map<int, String> ayahFiles,
+    required List<HifzStep> steps,
+    required HifzSettings settings,
+  }) async {
+    final s = settings.clamped();
+    final reciterName = reciterFor(reciterId).name;
+    final pause = pauseClipLength(s.gapSeconds, s.speed);
+    final children = <AudioSource>[
+      for (final step in steps)
+        step.isPause
+            ? ClippingAudioSource(child: AudioSource.asset(_silenceAsset), start: Duration.zero, end: pause)
+            : AudioSource.file(ayahFiles[step.ayah]!),
+    ];
+    queue.add([
+      for (int i = 0; i < steps.length; i++)
+        MediaItem(
+          id: 'hifz-$surahId-$i',
+          title: '$surahName ${steps[i].highlightedAyah}',
+          album: 'Hifz',
+          artist: reciterName,
+        ),
+    ]);
+    _hifzSteps = steps;
+    _hifzSurahId = surahId;
+    _ayahs = [];
+    _loadedSurahId = null;
     _loadedReciterId = reciterId;
+    await _player.setSpeed(s.speed);
+    await _player.setAudioSource(ConcatenatingAudioSource(useLazyPreparation: true, children: children));
+  }
+
+  bool get hasHifzSession => _hifzSteps != null;
+  int? get hifzSurahId => _hifzSurahId;
+
+  /// The Hifz step now playing, for highlighting the ayah.
+  Stream<HifzStep?> get hifzStepStream => _player.currentIndexStream.map(_stepAt);
+  HifzStep? get currentHifzStep => _stepAt(_player.currentIndex);
+
+  HifzStep? _stepAt(int? index) {
+    final steps = _hifzSteps;
+    if (steps == null || index == null || index >= steps.length) return null;
+    return steps[index];
   }
 
   MediaItem _mediaItemFor(AyahAudio a, String reciterName) => MediaItem(
@@ -142,6 +248,9 @@ class QuranAudioHandler extends BaseAudioHandler with QueueHandler, SeekHandler 
 
   @override
   Future<void> seek(Duration position) => _player.seek(position);
+
+  @override
+  Future<void> setSpeed(double speed) => _player.setSpeed(speed);
 
   @override
   Future<void> skipToNext() => _player.seekToNext();

@@ -1,0 +1,344 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "salih",
+  "language": "en",
+  "name": "Salih",
+  "title": "The messenger to Thamud",
+  "sentTo": "The people of Thamud, his own people",
+  "era": "After 'Ad. The Quran says Thamud were successors after 'Ad (7:74); no date is given.",
+  "places": [
+    {
+      "name": "Al-Hijr (15:80), in north-western Arabia. It is identified with Mada'in Salih (Hegra), whose rock-cut tombs can still be seen.",
+      "lat": 26.79,
+      "lng": 37.95,
+      "approximate": true
+    }
+  ],
+  "summary": "Salih was sent to Thamud, who carved their homes out of mountains. Allah gave them a she-camel as a sign and warned them not to harm her. They killed her, and a dreadful blast destroyed them, while Salih and the believers were saved.",
+  "notes": [
+    "Details of how the she-camel appeared (for example, that she came out of a rock at the people's request) come from reports in the books of tafsir and history, not from the Quran or authentic hadith.",
+    "The rock-cut tombs at Mada'in Salih date from the Nabataean period, later than Thamud; the identification of al-Hijr with this area comes from the Prophet ﷺ passing by it, but which ruins belong to Thamud is not certain.",
+    "The name of the man who killed the camel (often given as Qudar) comes from later reports."
+  ],
+  "chapters": [
+    {
+      "id": "salih-1",
+      "title": "Carvers of the mountains",
+      "paragraphs": [
+        "After 'Ad, Allah established another people on the earth: Thamud. They lived in al-Hijr, in the north-west of Arabia, among gardens, springs, fields and palm trees heavy with fruit.",
+        "They were skilful builders. They built palaces on the plains and carved their homes out of the mountains. But like 'Ad before them, they forgot the One who gave them all this, and the arrogant among them led the rest."
+      ],
+      "kidsParagraphs": [
+        "The people of Thamud lived among gardens and springs.",
+        "They carved houses out of mountains. But they forgot to thank Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 146,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 74,
+          "ayahEnd": 74
+        }
+      ],
+      "lessons": [
+        "Skill and comfort are blessings from Allah, not reasons for pride.",
+        "Learn from the nations before us.",
+        "Comfort can make people forget the Hereafter."
+      ],
+      "quiz": [
+        {
+          "question": "What did Thamud carve out of the mountains?",
+          "options": [
+            "Statues",
+            "Homes",
+            "Ships",
+            "Wells"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "After which people did Thamud come?",
+          "options": [
+            "'Ad",
+            "The people of Lut",
+            "The people of Musa",
+            "The Romans"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Which of these did Thamud have, according to Quran 26:147-148?",
+          "options": [
+            "Gardens, springs and palm trees",
+            "Ships and harbours",
+            "Snow and ice",
+            "Gold mines"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:147-148"
+        }
+      ]
+    },
+    {
+      "id": "salih-2",
+      "title": "The she-camel of Allah",
+      "paragraphs": [
+        "Allah sent them their brother Salih (AS): “O my people, worship Allah; you have no god other than Him. He produced you from the earth and settled you in it, so ask His forgiveness and turn back to Him.”",
+        "Before this, they had placed great hopes in Salih. Now they said they were in doubt about his message and called him bewitched: “You are only a man like us, so bring a sign if you are truthful.”",
+        "Allah gave them a clear sign: a she-camel. Salih told them: “This is the she-camel of Allah, a sign for you. Let her eat on Allah's earth, and do not touch her with harm.” The water was to be shared: she would drink on one day, and they on another."
+      ],
+      "kidsParagraphs": [
+        "Salih told his people to worship only Allah. They asked for a sign.",
+        "Allah gave them a special she-camel. Salih said: “Do not hurt her. She drinks one day, and you drink the next.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 61,
+          "ayahEnd": 61
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 62,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 153,
+          "ayahEnd": 154
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 64,
+          "ayahEnd": 64
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 155,
+          "ayahEnd": 156
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Some books say the she-camel came out of a solid rock in front of the people, already pregnant, after they asked for this exact sign."
+        }
+      ],
+      "lessons": [
+        "Allah's signs are a mercy and also a test.",
+        "Sharing fairly is part of obeying Allah.",
+        "Asking for a sign is easy; believing and obeying afterwards is the real test."
+      ],
+      "quiz": [
+        {
+          "question": "What sign did Allah give Thamud?",
+          "options": [
+            "A staff",
+            "A she-camel",
+            "A ship",
+            "A cloud"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:64"
+        },
+        {
+          "question": "How was the water shared?",
+          "options": [
+            "The camel never drank",
+            "She drank one day and they drank another",
+            "Only the chiefs drank",
+            "They drank first"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:155"
+        },
+        {
+          "question": "What did Thamud call Salih?",
+          "options": [
+            "A king",
+            "One affected by magic",
+            "A merchant",
+            "An angel"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:153"
+        }
+      ]
+    },
+    {
+      "id": "salih-3",
+      "title": "They hamstrung her",
+      "paragraphs": [
+        "The arrogant chiefs refused to believe and looked down on the weak who had believed. Then the most wretched of them was sent forward, and they hamstrung the she-camel and killed her.",
+        "They challenged Salih: “Bring us what you promise us, if you are a messenger.” Salih told them: “Enjoy yourselves in your homes for three days. That is a promise that will not be denied.”"
+      ],
+      "kidsParagraphs": [
+        "The proud people killed the she-camel of Allah.",
+        "Salih warned them: “You have only three days left.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 75,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 91,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 65,
+          "ayahEnd": 65
+        }
+      ],
+      "lessons": [
+        "Breaking Allah's command openly brings His punishment.",
+        "Those who agree with a crime share in it.",
+        "Mocking a warning does not make it go away."
+      ],
+      "quiz": [
+        {
+          "question": "What did Thamud do to the she-camel?",
+          "options": [
+            "Sold her",
+            "Hamstrung her",
+            "Hid her",
+            "Fed her"
+          ],
+          "answer": 1,
+          "reference": "Quran 91:14"
+        },
+        {
+          "question": "How many days did Salih give them after that?",
+          "options": [
+            "Seven",
+            "Three",
+            "Forty",
+            "Ten"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:65"
+        },
+        {
+          "question": "Who was sent forward to kill her?",
+          "options": [
+            "The most wretched of them",
+            "Salih's son",
+            "A stranger",
+            "The king of Egypt"
+          ],
+          "answer": 0,
+          "reference": "Quran 91:12"
+        }
+      ]
+    },
+    {
+      "id": "salih-4",
+      "title": "The ruins of al-Hijr",
+      "paragraphs": [
+        "When Allah's command came, Allah saved Salih and those who believed with him by His mercy. A dreadful blast and an earthquake seized the wrongdoers, and in the morning they lay lifeless in their homes, as if they had never lived there.",
+        "Salih turned away from them, saying: “O my people, I conveyed to you the message of my Lord and advised you, but you do not like sincere advisers.”",
+        "Many centuries later, the Prophet ﷺ passed by al-Hijr with his Companions. He told them not to enter the dwellings of those who wronged themselves unless they were weeping, so that what struck them would not strike them too, and he covered his face."
+      ],
+      "kidsParagraphs": [
+        "Allah saved Salih and the believers. A terrible blast destroyed the others.",
+        "When the Prophet ﷺ passed their ruins, he said: “Do not go in unless you are crying.” He wanted us to learn and be humble."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3380",
+          "narrator": "Abdullah ibn Umar",
+          "translation": "When the Prophet ﷺ passed by al-Hijr, he said: “Do not enter the dwellings of those who wronged themselves unless you are weeping, lest what struck them strikes you.” Then he covered his head with his cloak while he was on his saddle.",
+          "match": "لا تدخلوا مساكن الذين ظلموا الا ان تكونوا باكين"
+        }
+      ],
+      "lessons": [
+        "Places of punishment are for taking lessons, not for amusement.",
+        "A Prophet's advice is sincere even when people reject it.",
+        "Allah saves the believers even among a destroyed people."
+      ],
+      "quiz": [
+        {
+          "question": "What seized the wrongdoers of Thamud?",
+          "options": [
+            "A flood",
+            "A dreadful blast and an earthquake",
+            "A fire",
+            "A wind of seven nights"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:67"
+        },
+        {
+          "question": "What did the Prophet ﷺ say when he passed al-Hijr?",
+          "options": [
+            "Enter it and rest",
+            "Do not enter unless you are weeping",
+            "Build a mosque there",
+            "Drink from its wells"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3380"
+        },
+        {
+          "question": "What did Salih say as he turned away from them?",
+          "options": [
+            "I conveyed my Lord's message and advised you",
+            "I will return",
+            "You were right",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:79"
+        }
+      ]
+    }
+  ]
+}

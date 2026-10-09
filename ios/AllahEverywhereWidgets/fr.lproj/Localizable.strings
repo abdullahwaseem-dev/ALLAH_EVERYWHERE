@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "Prochaine prière";
+"widget.nextPrayer.description" = "Compte à rebours jusqu'à la prochaine prière, avec les horaires du jour.";
+"widget.hijriDate.name" = "Date islamique";
+"widget.hijriDate.description" = "La date hégirienne du jour et les occasions islamiques.";
+"widget.reminder.name" = "Verset du jour";
+"widget.reminder.description" = "Un verset ou un hadith à méditer chaque jour.";
+"widget.nextPrayer.fallback" = "Prochaine prière";
+"widget.setLocation.fallback" = "Ouvrez l'application pour définir votre position";
+"widget.openApp.fallback" = "Ouvrez l'application pour mettre à jour";

@@ -1,0 +1,246 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "ismail",
+  "language": "en",
+  "name": "Ismail",
+  "title": "The son of Ibrahim (AS), true to his promise",
+  "sentTo": "The Arabs of Makkah, among whom he grew up (the tribe of Jurhum)",
+  "era": "The time of Ibrahim (AS), his father. No date is given in the Quran or Sunnah.",
+  "places": [
+    {
+      "name": "Makkah, where he grew up with his mother Hajar and helped his father build the Kaaba.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "The firstborn son of Ibrahim (AS) and Hajar. He grew up in the valley of Makkah, submitted to Allah's command when his father saw the dream of sacrifice, and raised the Kaaba with his father. Allah praises him as true to his promise, a messenger and a Prophet. The Prophet Muhammad ﷺ is his descendant.",
+  "notes": [
+    "Most scholars say Ismail was the son to be sacrificed (37:101-107); some early scholars said Ishaq. See the story of Ibrahim (AS).",
+    "Reports that Ismail and Hajar are buried in the Hijr (the curved area next to the Kaaba) come from historians, not from authentic hadith.",
+    "The place of Ismail in the order of Prophets here follows Ibrahim (AS), his father."
+  ],
+  "chapters": [
+    {
+      "id": "ismail-1",
+      "title": "A child of the valley",
+      "paragraphs": [
+        "Ismail (AS) was the first son of Ibrahim (AS), born to Hajar. While he was still a baby, Ibrahim left him and his mother in the empty valley of Makkah by Allah's command, and Allah brought out the spring of Zamzam for them. (The full story is in the chapters about Ibrahim.)",
+        "Travellers from the tribe of Jurhum came and settled beside the water, with Hajar's permission. Ismail grew up among them, learned Arabic from them and impressed them, and when he grew up they married him to one of their women."
+      ],
+      "kidsParagraphs": [
+        "Ismail grew up in the valley of Makkah with his mother Hajar, next to the well of Zamzam.",
+        "A tribe called Jurhum came to live with them, and Ismail learned Arabic from them."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "Ibn Abbas",
+          "translation": "…They settled there and sent for their families, who came and settled with them, until there were several households there. The boy grew up and learned Arabic from them, and they admired him and liked him when he grew up. When he reached adulthood, they married him to a woman from among them…",
+          "match": "وشب الغلام وتعلم العربية منهم",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah takes care of those who trust Him, even in an empty valley.",
+        "Good character makes a stranger loved by people.",
+        "A small family can become the start of a great nation."
+      ],
+      "quiz": [
+        {
+          "question": "Who was Ismail's mother?",
+          "options": [
+            "Sarah",
+            "Hajar",
+            "Maryam",
+            "Asiyah"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "From which tribe did Ismail learn Arabic?",
+          "options": [
+            "Quraysh",
+            "Jurhum",
+            "Thamud",
+            "'Ad"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Where did Ismail grow up?",
+          "options": [
+            "Egypt",
+            "The valley of Makkah",
+            "Babylon",
+            "Madyan"
+          ],
+          "answer": 1,
+          "reference": "Quran 14:37"
+        }
+      ]
+    },
+    {
+      "id": "ismail-2",
+      "title": "The obedient son",
+      "paragraphs": [
+        "When Ismail was old enough to work beside his father, Ibrahim told him about the dream in which he was sacrificing him. Ismail answered: “O my father, do what you are commanded. You will find me, if Allah wills, among the patient.” Allah ransomed him with a great sacrifice.",
+        "Later, when Allah commanded Ibrahim to build the House, Ismail said at once: “Obey your Lord,” and he helped. Ismail carried the stones while his father built, and together they prayed: “Our Lord, accept this from us.”"
+      ],
+      "kidsParagraphs": [
+        "Ismail obeyed Allah and his father, even when it was very hard.",
+        "He helped his father build the Kaaba, carrying the stones."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        }
+      ],
+      "lessons": [
+        "True obedience to Allah is patient and willing.",
+        "Helping our parents in good deeds is a great honour.",
+        "Ask Allah to accept every good deed."
+      ],
+      "quiz": [
+        {
+          "question": "What did Ismail say when his father told him about the dream?",
+          "options": [
+            "Do what you are commanded",
+            "I am afraid",
+            "Ask someone else",
+            "I will run away"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "What did Ismail carry while the Kaaba was built?",
+          "options": [
+            "Water",
+            "Stones",
+            "Wood",
+            "Food"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "What did Ibrahim and Ismail pray while building?",
+          "options": [
+            "Make us rich",
+            "Our Lord, accept this from us",
+            "Give us a kingdom",
+            "Protect the walls"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        }
+      ]
+    },
+    {
+      "id": "ismail-3",
+      "title": "True to his promise",
+      "paragraphs": [
+        "The Quran praises Ismail: he was true to his promise, a messenger and a Prophet. He commanded his family to pray and give zakah, and he was pleasing to his Lord. Allah names him among the patient and the best of the chosen.",
+        "Ismail was also an archer. Once the Prophet ﷺ passed by some men practising archery and said: “Shoot, children of Ismail, for your father was an archer.”",
+        "From Ismail's descendants came the Arabs of the Hijaz, and from them, thousands of years later, the Prophet Muhammad ﷺ: the answer to the prayer of Ibrahim and Ismail for a messenger from among their children."
+      ],
+      "kidsParagraphs": [
+        "Allah says Ismail always kept his promises and told his family to pray.",
+        "He was a great archer! And our Prophet Muhammad ﷺ is from his family."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 54,
+          "ayahEnd": 55
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2899",
+          "narrator": "Salamah ibn al-Akwa'",
+          "translation": "The Prophet ﷺ passed by some people of the tribe of Aslam who were competing in archery, and he said: “Shoot, children of Ismail, for your father was an archer. Shoot, and I am with such-and-such a group…”",
+          "match": "ارموا بني اسماعيل فان اباكم كان راميا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Keeping promises is a quality of the Prophets.",
+        "Leading your family in prayer and charity is part of faith.",
+        "Healthy skills like archery are praised in the Sunnah."
+      ],
+      "quiz": [
+        {
+          "question": "What quality does the Quran praise in Ismail (19:54)?",
+          "options": [
+            "Wealth",
+            "Being true to his promise",
+            "Strength",
+            "Beauty"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:54"
+        },
+        {
+          "question": "What did Ismail command his family to do?",
+          "options": [
+            "Trade",
+            "Pray and give zakah",
+            "Travel",
+            "Build houses"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:55"
+        },
+        {
+          "question": "What skill did the Prophet ﷺ say Ismail had?",
+          "options": [
+            "Archery",
+            "Swimming",
+            "Writing",
+            "Sailing"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2899"
+        }
+      ]
+    }
+  ]
+}

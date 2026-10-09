@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">اگلی نماز</string>
+    <string name="widget_next_prayer_description">اگلی نماز کا کاؤنٹ ڈاؤن، آج کے اوقاتِ نماز کے ساتھ</string>
+    <string name="widget_hijri_date_name">اسلامی تاریخ</string>
+    <string name="widget_hijri_date_description">آج کی ہجری تاریخ اور اسلامی مواقع</string>
+    <string name="widget_reminder_name">آج کی آیت</string>
+    <string name="widget_daily_reminder_description">ہر دن غور کے لیے ایک آیت یا حدیث</string>
+    <string name="widget_next_prayer_fallback">اگلی نماز</string>
+    <string name="widget_set_location_fallback">اپنا مقام طے کرنے کے لیے ایپ کھولیں</string>
+    <string name="widget_open_app_fallback">اپ ڈیٹ کے لیے ایپ کھولیں</string>
+    <string name="widget_preview_prayer">عصر</string>
+    <string name="widget_preview_hijri_month">ربیع الثانی</string>
+</resources>

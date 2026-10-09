@@ -1,0 +1,279 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "zakariya",
+  "language": "zh",
+  "name": "宰凯里雅",
+  "title": "麦尔彦的监护人，暗中祈祷的先知",
+  "sentTo": "以色列的后裔",
+  "era": "就在尔撒（愿主赐他平安）之前，约公元前1世纪末；《古兰经》没有给出年代。",
+  "places": [
+    {
+      "name": "耶路撒冷（古德斯），宰凯里雅服务的圣殿周围。",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "一位在礼拜场所服务的年迈先知，照顾年幼的麦尔彦。看到真主的给养来到她那里，他暗中祈求一个清廉的孩子，尽管他已经很老，他的妻子又不能生育。真主赐给他叶哈雅。",
+  "notes": [
+    "麦尔彦母亲的名字（汉娜）和其他家庭细节来自后来的资料，而非《古兰经》或可靠的圣训。",
+    "关于宰凯里雅怎样去世的故事（有人说他被杀害）来自《古兰经》和可靠圣训之外的传述。",
+    "宰凯里雅的妻子是麦尔彦的姐姐还是她母亲的姐妹：传述不一。"
+  ],
+  "chapters": [
+    {
+      "id": "zakariya-1",
+      "title": "麦尔彦的监护人",
+      "paragraphs": [
+        "伊姆兰的妻子曾许愿把腹中的孩子献给真主服务。她生下一个女孩后，给她取名麦尔彦，并祈求真主保护她和她的后代免受恶魔的伤害。真主以美好的接受接受了麦尔彦。",
+        "在礼拜场所服务的人们用他们的笔抽签，决定谁来抚养她，签落到了宰凯里雅（愿主赐他平安）身上。每当他进入她的圣堂，都发现她身边有食物。“麦尔彦啊！你怎么会有这个？”她说：“这是从真主那里降下的。真主必定无量地供给祂所意欲的人。”",
+        "宰凯里雅是一位靠劳动谋生的先知。先知ﷺ说：“宰凯里雅是一个木匠。”"
+      ],
+      "kidsParagraphs": [
+        "宰凯里雅照顾年幼的麦尔彦。每次他去看她，她那里都有来自真主的食物！",
+        "宰凯里雅是先知，他也做木匠活。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2379",
+          "narrator": "艾布·胡莱赖",
+          "translation": "真主的使者ﷺ说：“宰凯里雅是一个木匠。”",
+          "match": "كان زكرياء نجارا"
+        }
+      ],
+      "lessons": [
+        "真主从人意想不到的地方供给祂所意欲的人。",
+        "照顾孤儿和孩子是高尚的工作。",
+        "用双手诚实地劳动是众先知的道路。"
+      ],
+      "quiz": [
+        {
+          "question": "谁照顾麦尔彦？",
+          "options": [
+            "宰凯里雅",
+            "叶哈雅",
+            "哈伦",
+            "伊姆兰"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "宰凯里雅在麦尔彦那里发现了什么？",
+          "options": [
+            "来自真主的给养",
+            "金子",
+            "一本书",
+            "一只小羊"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:37"
+        },
+        {
+          "question": "根据先知ﷺ，宰凯里雅的职业是什么？",
+          "options": [
+            "木匠",
+            "牧人",
+            "铁匠",
+            "商人"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2379"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-2",
+      "title": "静静的祈祷",
+      "paragraphs": [
+        "看到真主怎样供给麦尔彦，宰凯里雅就以安静而私密的祈祷转向他的主。他已经很老了，他的妻子从未生过孩子。",
+        "“我的主啊！我的骨骼已经衰弱，我的头发已经斑白，我从来没有因祈祷你而失望过。我确实担心我死后我的亲属们会怎样，我的妻子又是不能生育的。求你从你那里赏赐我一个继承人，使他成为你所喜悦的人。”",
+        "他还祈祷：“我的主啊！求你不要使我孤独，你是最好的继承者。”"
+      ],
+      "kidsParagraphs": [
+        "宰凯里雅年纪很大，没有孩子。他悄悄地向真主祈求一个好孩子。",
+        "他说：“我的主啊！我向你祈求时从来没有失望过！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 2,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 4,
+          "ayahEnd": 6
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 89,
+          "ayahEnd": 89
+        }
+      ],
+      "lessons": [
+        "要安静而谦卑地祈祷；真主听得见最轻的祈祷。",
+        "提醒自己真主以前是怎样应答你的。",
+        "永远不要认为有什么事对真主来说太难。"
+      ],
+      "quiz": [
+        {
+          "question": "宰凯里雅是怎样祈祷的？",
+          "options": [
+            "在市场上大声祈祷",
+            "安静地、私下地祈祷",
+            "他没有祈祷",
+            "只在集体中祈祷"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:3"
+        },
+        {
+          "question": "关于自己过去的祈祷，宰凯里雅说了什么？",
+          "options": [
+            "他从未因祈祷真主而失望过",
+            "从来没有被应答过",
+            "他从未祈祷过",
+            "他忘记了"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:4"
+        },
+        {
+          "question": "宰凯里雅祈求什么？",
+          "options": [
+            "一个真主所喜悦的继承人",
+            "财富",
+            "一座宫殿",
+            "只求健康"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:6"
+        }
+      ]
+    },
+    {
+      "id": "zakariya-3",
+      "title": "叶哈雅的喜讯",
+      "paragraphs": [
+        "宰凯里雅正站在圣堂里礼拜时，天使们呼唤他：“真主以叶哈雅向你报喜，他将证实从真主发出的一句话，他将是长者、克己者、清廉的先知。”真主说祂以前从未把这个名字给过任何人。",
+        "宰凯里雅很惊讶：“我已经这么老了，我的妻子又不能生育，我怎么会有儿子呢？”回答说：“你的主说：这对我是容易的。以前你什么也不是，我已经创造了你。”",
+        "他请求一个迹象，于是被告知他将三夜不能对人说话，尽管他身体健全。他出来走到族人中间，示意他们早晚赞颂真主。真主这样形容宰凯里雅的家人：“他们争先行善，怀着希望和恐惧祈祷我，他们对我是恭顺的。”"
+      ],
+      "kidsParagraphs": [
+        "天使们告诉宰凯里雅：“你将有一个儿子，名叫叶哈雅！”",
+        "作为迹象，宰凯里雅三夜不能说话。他用手势叫人们赞颂真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 10,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 90,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "真主在祂完美的时间应答祈祷。",
+        "要争先行善，怀着希望和恐惧祈祷。",
+        "看似不可能的事对真主来说很容易。"
+      ],
+      "quiz": [
+        {
+          "question": "宰凯里雅的儿子叫什么名字？",
+          "options": [
+            "尔撒",
+            "叶哈雅",
+            "优素福",
+            "穆萨"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:7"
+        },
+        {
+          "question": "宰凯里雅的迹象是什么？",
+          "options": [
+            "他三夜不能对人说话",
+            "出现了一颗星星",
+            "下雨了",
+            "他做了一个梦"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:10"
+        },
+        {
+          "question": "宰凯里雅的家人怎样祈祷真主？",
+          "options": [
+            "怀着希望和恐惧",
+            "只在困难时",
+            "从不祈祷",
+            "带着骄傲"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:90"
+        }
+      ]
+    }
+  ]
+}

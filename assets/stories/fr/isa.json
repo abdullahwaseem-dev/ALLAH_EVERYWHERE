@@ -1,0 +1,593 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "isa",
+  "language": "fr",
+  "name": "Issa",
+  "title": "Le Messie, fils de Maryam, une parole venant d'Allah",
+  "sentTo": "Les Enfants d'Israël",
+  "era": "Né vers le début de l'ère commune. Il fut élevé auprès d'Allah et reviendra avant le Jour de la Résurrection.",
+  "places": [
+    {
+      "name": "Bethléem et Jérusalem (al-Quds), en Palestine, selon l'histoire ; le Coran dit que Maryam se retira « en un lieu éloigné » (19:22).",
+      "lat": 31.7054,
+      "lng": 35.2024,
+      "approximate": true
+    },
+    {
+      "name": "Jérusalem (al-Quds), autour du Temple où servait Zakariya.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Né de la vierge Maryam sans père, par la parole d'Allah « Sois ». Il parla au berceau, guérit l'aveugle-né et le lépreux et ressuscita les morts avec la permission d'Allah, et appela les Enfants d'Israël à n'adorer qu'Allah. Il ne fut ni tué ni crucifié ; Allah l'éleva, et il reviendra avant la fin des temps.",
+  "notes": [
+    "Les musulmans croient qu'Issa est un prophète et le Messie, ni Dieu ni fils de Dieu (19:35, 5:116-117).",
+    "Comment il fut sauvé (4:157, « on leur a fait voir cela ainsi ») : les savants divergent sur les détails, notamment sur la question de savoir si quelqu'un d'autre reçut sa ressemblance. Le Coran est clair : il ne fut ni tué ni crucifié.",
+    "Le retour d'Issa est confirmé par des hadiths authentiques (par exemple Sahih al-Bukhari 3448). Les détails de la fin des temps viennent de nombreux récits de force différente.",
+    "L'Évangile (Injil) donné à Issa n'est pas considéré comme identique aux quatre Évangiles écrits plus tard."
+  ],
+  "chapters": [
+    {
+      "id": "isa-1",
+      "title": "Maryam, choisie au-dessus des femmes des mondes",
+      "paragraphs": [
+        "Maryam était la fille de 'Imran, dont la femme avait voué son enfant au service d'Allah. Sa mère demanda à Allah de protéger Maryam et sa descendance de Shaytan, et le Prophète ﷺ a dit que tout enfant est touché par Shaytan à sa naissance et crie, sauf Maryam et son fils.",
+        "Maryam grandit dans l'adoration sous la tutelle de Zakariya (paix sur lui). Les anges lui dirent : « Ô Maryam, Allah t'a choisie et purifiée, et t'a choisie au-dessus des femmes des mondes. Ô Maryam, sois dévouée à ton Seigneur, prosterne-toi et incline-toi avec ceux qui s'inclinent. »"
+      ],
+      "kidsParagraphs": [
+        "Maryam était une jeune femme très bonne et pure qui adorait Allah.",
+        "Les anges lui dirent : « Allah t'a choisie au-dessus de toutes les femmes ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4548",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Prophète ﷺ a dit : « Aucun enfant ne naît sans que Shaytan ne le touche à sa naissance, et il crie à cause du toucher de Shaytan, sauf Maryam et son fils. »",
+          "match": "ما من مولود يولد الا والشيطان يمسه حين يولد",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        }
+      ],
+      "lessons": [
+        "Allah protège ceux qui se consacrent à Lui.",
+        "La prière d'une mère pour son enfant est précieuse.",
+        "Maryam est un modèle d'adoration pour les femmes et les hommes."
+      ],
+      "quiz": [
+        {
+          "question": "Au-dessus de qui Allah choisit-Il Maryam ?",
+          "options": [
+            "Les femmes des mondes",
+            "Les anges",
+            "Les prophètes",
+            "Les rois"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:42"
+        },
+        {
+          "question": "Qui Shaytan ne touche-t-il pas à la naissance, selon le hadith ?",
+          "options": [
+            "Maryam et son fils",
+            "Tous les bébés",
+            "Seulement les prophètes",
+            "Personne"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4548"
+        },
+        {
+          "question": "Qui était le père de Maryam ?",
+          "options": [
+            "'Imran",
+            "Zakariya",
+            "Yahya",
+            "Haroun"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:35"
+        }
+      ]
+    },
+    {
+      "id": "isa-2",
+      "title": "La nouvelle de l'ange",
+      "paragraphs": [
+        "Un jour, Maryam se retira de sa famille en un lieu vers l'orient. Allah lui envoya l'ange Jibril sous la forme d'un homme. Elle eut peur : « Je me réfugie auprès du Tout Miséricordieux contre toi, si tu crains Allah. »",
+        "Il dit : « Je ne suis qu'un messager de ton Seigneur, pour te donner un fils pur. » Elle demanda : « Comment aurais-je un fils alors qu'aucun homme ne m'a touchée ? » Il dit : « Ton Seigneur dit : cela M'est facile. Nous ferons de lui un signe pour les gens et une miséricorde de Notre part. »",
+        "Les anges lui dirent son nom : « Le Messie, Issa, fils de Maryam, illustre en ce monde et dans l'au-delà, et parmi les rapprochés. Il parlera aux gens au berceau et à l'âge mûr. » Quand Allah décide une chose, Il lui dit seulement « Sois », et elle est."
+      ],
+      "kidsParagraphs": [
+        "Un ange vint voir Maryam et lui dit : « Allah va te donner un fils pur. »",
+        "Maryam demanda : « Comment, alors que je ne suis pas mariée ? » L'ange dit : « C'est facile pour Allah ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 19,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 3,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        }
+      ],
+      "lessons": [
+        "Cherche refuge auprès d'Allah quand tu as peur.",
+        "Allah crée comme Il veut ; la naissance d'Issa est un signe de Sa puissance.",
+        "La chasteté et la pudeur sont honorées par Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Qui vint voir Maryam ?",
+          "options": [
+            "Un ange sous la forme d'un homme",
+            "Zakariya",
+            "Un voyageur",
+            "Un roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:17"
+        },
+        {
+          "question": "Quel était le nom de son fils, selon les anges ?",
+          "options": [
+            "Le Messie, Issa, fils de Maryam",
+            "Yahya",
+            "Moussa",
+            "Ahmad"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:45"
+        },
+        {
+          "question": "Que dit l'ange au sujet de la naissance ?",
+          "options": [
+            "C'est facile pour Allah",
+            "C'est impossible",
+            "Attends dix ans",
+            "Demande à Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:21"
+        }
+      ]
+    },
+    {
+      "id": "isa-3",
+      "title": "Sous le palmier",
+      "paragraphs": [
+        "Maryam conçut Issa et se retira en un lieu éloigné. Les douleurs de l'enfantement la poussèrent vers le tronc d'un palmier. Seule et effrayée, elle dit : « Hélas ! Si seulement j'étais morte avant cela et complètement oubliée. »",
+        "Alors une voix l'appela d'en bas : « Ne t'attriste pas. Ton Seigneur a fait couler un ruisseau à tes pieds. Secoue vers toi le tronc du palmier : il fera tomber sur toi des dattes fraîches et mûres. Mange donc, bois et que ton œil se réjouisse. »",
+        "On lui dit que si elle voyait quelqu'un, elle devait indiquer : « J'ai voué un jeûne de silence au Tout Miséricordieux ; je ne parlerai donc à personne aujourd'hui. »"
+      ],
+      "kidsParagraphs": [
+        "Maryam eut son bébé sous un palmier. Elle était fatiguée et avait peur.",
+        "Une voix dit : « Ne sois pas triste ! Secoue le palmier et mange les dattes fraîches, et bois au ruisseau. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Allah envoie le réconfort dans les moments les plus durs.",
+        "Allah pourvoit, mais nous prenons aussi les moyens : Maryam secoua l'arbre.",
+        "Le silence peut être la meilleure réponse aux accusations des gens."
+      ],
+      "quiz": [
+        {
+          "question": "Où Maryam accoucha-t-elle ?",
+          "options": [
+            "Près du tronc d'un palmier",
+            "Dans un palais",
+            "Dans le Temple",
+            "Sur un navire"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:23"
+        },
+        {
+          "question": "Qu'est-ce qui tomba du palmier ?",
+          "options": [
+            "Des dattes fraîches et mûres",
+            "Des feuilles",
+            "De l'or",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:25"
+        },
+        {
+          "question": "Quel genre de jeûne Maryam observa-t-elle ?",
+          "options": [
+            "Un jeûne de silence",
+            "Un jeûne de nourriture seulement",
+            "Aucun jeûne",
+            "Un jeûne de quarante jours"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:26"
+        }
+      ]
+    },
+    {
+      "id": "isa-4",
+      "title": "La parole au berceau",
+      "paragraphs": [
+        "Maryam apporta son bébé à son peuple. Ils furent choqués : « Ô Maryam, tu as commis une chose monstrueuse ! Ô sœur de Haroun, ton père n'était pas un homme mauvais, et ta mère n'était pas une débauchée. » (Le Prophète ﷺ a expliqué que les gens donnaient les noms des prophètes et des vertueux d'avant eux.)",
+        "Maryam montra le bébé du doigt. « Comment parlerions-nous à un bébé au berceau ? » dirent-ils. Alors Issa parla : « Je suis le serviteur d'Allah. Il m'a donné le Livre et a fait de moi un prophète. Il m'a béni où que je sois, et m'a prescrit la prière et la zakat tant que je vivrai, et la bonté envers ma mère. Que la paix soit sur moi le jour où je naquis, le jour où je mourrai et le jour où je serai ressuscité vivant. »",
+        "Allah dit : « Tel est Issa, fils de Maryam : la parole de vérité dont ils doutent. Il ne convient pas à Allah de prendre un fils. »"
+      ],
+      "kidsParagraphs": [
+        "Les gens dirent du mal de Maryam. Elle montra son bébé.",
+        "Le bébé Issa parla ! Il dit : « Je suis le serviteur d'Allah, et Il a fait de moi un prophète. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2135",
+          "narrator": "Al-Mughira ibn Shu'ba",
+          "translation": "Quand j'arrivai à Najran, ils me demandèrent : « Vous récitez “Ô sœur de Haroun”, alors que Moussa vécut bien avant Issa ? » Quand je revins auprès du Messager d'Allah ﷺ, je l'interrogeai à ce sujet, et il dit : « Ils donnaient les noms de leurs prophètes et des vertueux d'avant eux. »",
+          "match": "انهم كانوا يسمون بانبيائهم والصالحين قبلهم"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 29,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Allah défend l'innocent.",
+        "Les premiers mots d'Issa furent : « Je suis le serviteur d'Allah. »",
+        "La prière, l'aumône et la bonté envers la mère sont au cœur de la foi."
+      ],
+      "quiz": [
+        {
+          "question": "Quels furent les premiers mots d'Issa au berceau ?",
+          "options": [
+            "Je suis le serviteur d'Allah",
+            "Je suis un roi",
+            "J'ai faim",
+            "Je suis le fils de Dieu"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:30"
+        },
+        {
+          "question": "Envers qui Issa dit-il devoir être bon ?",
+          "options": [
+            "Sa mère",
+            "Le roi",
+            "Les prêtres",
+            "Son maître"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:32"
+        },
+        {
+          "question": "Pourquoi Maryam fut-elle appelée « sœur de Haroun » ?",
+          "options": [
+            "Les gens portaient les noms des prophètes et des vertueux d'avant",
+            "Elle était la sœur de Moussa",
+            "C'était son surnom en Égypte",
+            "Sans raison"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2135"
+        }
+      ]
+    },
+    {
+      "id": "isa-5",
+      "title": "Des signes avec la permission d'Allah",
+      "paragraphs": [
+        "Allah enseigna à Issa l'écriture et la sagesse, la Torah et l'Injil, et l'envoya comme messager aux Enfants d'Israël. Il vint avec des signes, toujours « avec la permission d'Allah » : il façonnait dans l'argile une forme d'oiseau et soufflait dedans, et elle devenait un oiseau ; il guérissait l'aveugle-né et le lépreux ; il ressuscitait les morts ; et il disait aux gens ce qu'ils mangeaient et ce qu'ils gardaient dans leurs maisons.",
+        "Il confirma la Torah venue avant lui et leur rendit licites certaines choses qui leur avaient été interdites. Son message était clair : « Allah est mon Seigneur et votre Seigneur ; adorez-Le donc. Voilà le droit chemin. »",
+        "Issa annonça aussi une bonne nouvelle : « Je suis le messager d'Allah vers vous, confirmant la Torah venue avant moi, et annonçant un messager qui viendra après moi, dont le nom est Ahmad. » C'est le Prophète Muhammad ﷺ."
+      ],
+      "kidsParagraphs": [
+        "Avec la permission d'Allah, Issa fit voler un oiseau d'argile, guérit les malades et ramena les morts à la vie.",
+        "Il dit aux gens : « Allah est mon Seigneur et votre Seigneur ; adorez-Le. » Et il annonça un prophète appelé Ahmad."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 48,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Chaque miracle se fait avec la permission d'Allah, non par le propre pouvoir du prophète.",
+        "Tous les prophètes appelèrent à n'adorer qu'Allah.",
+        "Issa annonça la venue du Prophète Muhammad ﷺ."
+      ],
+      "quiz": [
+        {
+          "question": "Que façonna Issa dans l'argile ?",
+          "options": [
+            "Une forme d'oiseau",
+            "Une maison",
+            "Une coupe",
+            "Une lampe"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        },
+        {
+          "question": "Quel nom Issa donna-t-il au messager après lui ?",
+          "options": [
+            "Ahmad",
+            "Yahya",
+            "Moussa",
+            "Ilyas"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "Avec la permission de qui Issa accomplissait-il ses signes ?",
+          "options": [
+            "D'Allah",
+            "La sienne",
+            "Des anges",
+            "Du roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        }
+      ]
+    },
+    {
+      "id": "isa-6",
+      "title": "Les apôtres et la table",
+      "paragraphs": [
+        "Allah inspira aux apôtres (al-Hawariyyun) de croire en Lui et en Son messager. Ils dirent : « Nous croyons ; sois témoin que nous sommes musulmans. »",
+        "Les apôtres demandèrent : « Ô Issa, fils de Maryam, ton Seigneur peut-Il faire descendre sur nous du ciel une table servie ? » Issa leur dit de craindre Allah. Ils expliquèrent qu'ils voulaient en manger, rassurer leurs cœurs et en être témoins.",
+        "Issa pria : « Ô Allah, notre Seigneur, fais descendre sur nous du ciel une table servie, qui soit une fête pour les premiers et les derniers d'entre nous, et un signe de Ta part. » Allah répondit qu'Il la ferait descendre, mais que quiconque mécroirait ensuite subirait un châtiment sévère."
+      ],
+      "kidsParagraphs": [
+        "Issa avait des aides fidèles appelés les apôtres.",
+        "Ils demandèrent une table de nourriture venant du ciel, et Issa pria Allah pour l'obtenir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 5,
+          "ayahStart": 111,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 114,
+          "ayahEnd": 115
+        }
+      ],
+      "lessons": [
+        "Les bons compagnons aident à rester ferme dans la foi.",
+        "Demande à Allah, et à personne d'autre, ce dont tu as besoin.",
+        "De plus grands bienfaits apportent une plus grande responsabilité."
+      ],
+      "quiz": [
+        {
+          "question": "Que demandèrent les apôtres ?",
+          "options": [
+            "Une table servie venant du ciel",
+            "Un royaume",
+            "De l'or",
+            "Un navire"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:112"
+        },
+        {
+          "question": "Que dirent les apôtres d'eux-mêmes ?",
+          "options": [
+            "Nous sommes musulmans",
+            "Nous sommes des rois",
+            "Nous sommes des anges",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:111"
+        },
+        {
+          "question": "À qui Issa adressa-t-il sa prière pour la table ?",
+          "options": [
+            "À Allah",
+            "Aux anges",
+            "Au roi",
+            "À sa mère"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:114"
+        }
+      ]
+    },
+    {
+      "id": "isa-7",
+      "title": "Élevé, et il reviendra",
+      "paragraphs": [
+        "Certains ennemis d'Issa complotèrent pour le tuer. Ils prétendirent : « Nous avons tué le Messie, Issa fils de Maryam. » Mais le Coran dit : « Ils ne l'ont ni tué ni crucifié ; on leur a seulement fait voir cela ainsi… Mais Allah l'a élevé vers Lui. »",
+        "Au Jour de la Résurrection, Allah demandera à Issa s'il a dit aux gens de le prendre, lui et sa mère, pour divinités en dehors d'Allah. Il dira : « Gloire à Toi ! Je ne leur ai dit que ce que Tu m'avais ordonné : adorez Allah, mon Seigneur et votre Seigneur. »",
+        "Le Prophète ﷺ a dit qu'Issa fils de Maryam descendra en juge équitable avant l'Heure. Il a dit aussi : « Je suis le plus proche des gens d'Issa fils de Maryam en ce monde et dans l'au-delà. Les prophètes sont frères : leurs mères sont différentes, mais leur religion est une. »"
+      ],
+      "kidsParagraphs": [
+        "Issa ne fut pas tué. Allah l'éleva vers Lui.",
+        "Notre Prophète ﷺ nous a dit qu'Issa reviendra avant la fin du monde. Tous les prophètes sont des frères qui ont une seule religion !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 157,
+          "ayahEnd": 158
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 116,
+          "ayahEnd": 117
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3448",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Par Celui qui tient mon âme dans Sa main, le fils de Maryam descendra bientôt parmi vous en juge équitable… »",
+          "match": "ليوشكن ان ينزل فيكم ابن مريم حكما عدلا",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3443",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Je suis le plus proche des gens d'Issa fils de Maryam en ce monde et dans l'au-delà. Les prophètes sont des frères d'un même père : leurs mères sont différentes, et leur religion est une. »",
+          "match": "انا اولى الناس بعيسى ابن مريم في الدنيا والاخرة"
+        }
+      ],
+      "lessons": [
+        "Issa ne fut ni tué ni crucifié ; Allah l'éleva.",
+        "Issa n'appela jamais les gens à l'adorer.",
+        "Tous les prophètes partageaient une seule religion : l'islam, la soumission à Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit le Coran sur ce qui arriva à Issa ?",
+          "options": [
+            "Allah l'éleva vers Lui",
+            "Il fut crucifié",
+            "Il mourut au combat",
+            "Il partit en Inde"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:158"
+        },
+        {
+          "question": "Que dira Issa au Jour de la Résurrection ?",
+          "options": [
+            "Je leur ai seulement dit d'adorer Allah, mon Seigneur et votre Seigneur",
+            "Adorez-moi",
+            "Adorez ma mère",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:117"
+        },
+        {
+          "question": "Comment le Prophète ﷺ décrivit-il les prophètes ?",
+          "options": [
+            "Des frères dont la religion est une",
+            "Des rivaux",
+            "Des rois",
+            "Des étrangers"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3443"
+        }
+      ]
+    }
+  ]
+}

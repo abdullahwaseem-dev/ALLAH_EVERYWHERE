@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "tr",
+  "name": "Elyesa",
+  "title": "Seçkin hayırlılardan, âlemlere üstün kılınan",
+  "sentTo": "Âlimlerin çoğuna göre İsrailoğulları",
+  "era": "Tarihçilere göre Hz. İlyas'tan (a.s.) sonra; Kur'an ve Sünnet bir tarih vermez. Bu sıralamadaki yeri yaklaşıktır.",
+  "places": [
+    {
+      "name": "Kesin olarak bilinmiyor; genellikle İsrail toprağına (Filistin) yerleştirilir.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Elyesa, Kur'an'da iki kez anılır: Allah'ın âlemlere üstün kıldığı peygamberler arasında ve seçkin hayırlılar arasında. Kur'an onun hayatı hakkında başka bir şey söylemez.",
+  "notes": [
+    "Âlimlerin çoğu Elyesa'ı, İlya'nın (İlyas) halefi olan Kitab-ı Mukaddes'teki Elişa ile özdeşleştirir. Bu bilgi tarihten ve Ehl-i Kitap'tan gelir.",
+    "Kur'an onun için bir kıssa anlatmaz; sahih hadislerde de başka bir şey rivayet edilmez."
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "Âlemlere üstün kılınan",
+      "paragraphs": [
+        "Allah, Hz. Elyesa'ı (a.s.) En'âm suresinde İsmâil, Yunus ve Lût ile birlikte anar: \"Hepsini âlemlere üstün kıldık.\"",
+        "Sâd suresinde Allah buyurur: \"İsmâil'i, Elyesa'ı ve Zülkifl'i de an; hepsi seçkin hayırlılardandır.\"",
+        "Tarihçiler onun İlyas'ın (a.s.) yerine geçtiğini ve ondan sonra İsrailoğullarını Allah'a çağırdığını söyler. Kur'an onun kıssasını kısa tutar, ama onu seçilmişler ve en hayırlılar arasına koyar."
+      ],
+      "kidsParagraphs": [
+        "Elyesa, Kur'an'da İsmâil, Yunus ve Lût ile birlikte anılan bir peygamberdir.",
+        "Allah onun insanların en hayırlı ve en seçkinlerinden olduğunu söyler."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "Allah'ın seçmesi ve övmesi en büyük şereftir.",
+        "Her peygamber aynı tevhid mesajını taşıdı.",
+        "Kıssaları uzun da olsa kısa da olsa bütün peygamberlere iman ederiz."
+      ],
+      "quiz": [
+        {
+          "question": "Elyesa 6:86'da kimlerle birlikte anılır?",
+          "options": [
+            "İsmâil, Yunus ve Lût",
+            "Musa ve Harun",
+            "Âdem ve Nuh",
+            "İsa ve Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "38:48 Elyesa'ı nasıl niteler?",
+          "options": [
+            "Seçkin hayırlılardan",
+            "Bir kral",
+            "Bir tüccar",
+            "Bir şair"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Allah 6:86'da anılanlar hakkında ne der?",
+          "options": [
+            "Onları âlemlere üstün kıldı",
+            "Kraldılar",
+            "Zengindiler",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

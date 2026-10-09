@@ -1,0 +1,636 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "nuh",
+  "language": "de",
+  "name": "Nuh",
+  "title": "Ein dankbarer Diener, der erste Gesandte zu den Bewohnern der Erde",
+  "sentTo": "Sein Volk, das begonnen hatte, Götzen anzubeten",
+  "era": "Lange nach Adam (a.s.). Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Der Berg al-Dschudi, wo die Arche zur Ruhe kam (11:44). Klassische Gelehrte verorten ihn in der Dschazira-Region bei Mosul; heute wird er meist mit dem Berg Cudi im Südosten der Türkei gleichgesetzt.",
+      "lat": 37.37,
+      "lng": 42.35,
+      "approximate": true
+    },
+    {
+      "name": "Mesopotamien (Irak), wo die meisten Historiker Nuhs Volk verorten. Der Koran nennt ihr Land nicht.",
+      "lat": 32.54,
+      "lng": 44.42,
+      "approximate": true
+    }
+  ],
+  "summary": "Der erste Gesandte, den Allah zu einem Volk schickte, das in Götzendienst verfallen war. Er rief sie 950 Jahre lang mit grenzenloser Geduld. Als sie ablehnten, rettete Allah ihn und die Gläubigen in der Arche und ließ die Leugner ertrinken. Allah lobte ihn als dankbaren Diener und ließ den Frieden auf ihm unter allen späteren Generationen fortbestehen.",
+  "notes": [
+    "Wie viel Zeit lag zwischen Adam und Nuh? Einige Berichte außerhalb von al-Bukhari und Muslim sprechen von zehn Generationen. Ein Gelehrter sollte sie prüfen, bevor dies ergänzt wird.",
+    "Die 950 Jahre (29:14) sind die Zeit, die Nuh unter seinem Volk verbrachte. Wie lange er insgesamt lebte, ist nicht sicher bekannt.",
+    "Die Gelehrten sind uneins, ob die Flut die ganze Erde bedeckte oder nur das Land von Nuhs Volk.",
+    "„Der Ofen brodelte“ (11:40, 23:27) wird unterschiedlich erklärt: ein echter Ofen, Wasser, das aus der Erdoberfläche quoll, oder der Anbruch der Morgendämmerung.",
+    "Der Name des Sohnes (in manchen Büchern Kan'an oder Yam), die Zahl der Menschen auf der Arche sowie ihre Größe und ihr Holz stammen aus späteren Berichten, nicht aus dem Koran oder authentischen Hadithen.",
+    "Die Lage von al-Dschudi und die Heimat Nuhs beruhen auf klassischen Geographen und Historikern, nicht auf Koran oder Sunna."
+  ],
+  "chapters": [
+    {
+      "id": "nuh-1",
+      "title": "Wie der Götzendienst begann",
+      "paragraphs": [
+        "Nach Adam (a.s.) lebten seine Kinder viele Generationen lang und beteten Allah allein an. Dann änderte sich langsam etwas.",
+        "Ibn Abbas, der Gefährte und große Kenner des Korans, erklärte, wie es geschah. Unter Nuhs Volk hatte es rechtschaffene Männer gegeben namens Wadd, Suwa', Yaghuth, Ya'uq und Nasr. Als sie starben, flüsterte der Satan den Leuten ein, an den Orten, wo diese Männer gesessen hatten, Statuen aufzustellen und sie nach ihnen zu benennen. Die Leute taten es, doch niemand betete die Statuen an. Dann starb diese Generation, das Wissen, warum die Statuen gemacht worden waren, geriet in Vergessenheit, und die Nachkommen begannen, sie anzubeten.",
+        "So begann die Beigesellung unter den Menschen: nicht auf einmal, sondern Schritt für Schritt, durch übertriebene Liebe zu rechtschaffenen Menschen und durch das Vergessen des Wissens."
+      ],
+      "kidsParagraphs": [
+        "Nach Adam beteten die Menschen sehr lange nur Allah an.",
+        "Dann machten sie Statuen von guten Männern, um sich an sie zu erinnern. Viele Jahre später vergaßen sie, warum, und begannen, die Statuen anzubeten. Der Satan hatte sie Schritt für Schritt getäuscht."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4920",
+          "narrator": "Ibn Abbas",
+          "translation": "Ibn Abbas sagte: „Die Götzen, die bei Nuhs Volk waren, gelangten später zu den Arabern … Es waren die Namen rechtschaffener Männer aus Nuhs Volk. Als sie starben, gab der Satan ihrem Volk ein, an den Orten, wo sie zu sitzen pflegten, Standbilder aufzustellen und sie nach ihnen zu benennen. Sie taten es, und die Bilder wurden nicht angebetet, bis jene Leute gestorben waren und das Wissen vergessen war; dann wurden sie angebetet.“",
+          "match": "اسماء رجال صالحين من قوم نوح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Der Satan führt die Menschen nach und nach in die Irre, darum müssen wir auch auf kleine Dinge achten.",
+        "Die Liebe zu rechtschaffenen Menschen darf nie zu ihrer Anbetung werden.",
+        "Vergessenes Wissen öffnet die Tür zur Irreführung; die Religion zu lernen schützt uns."
+      ],
+      "quiz": [
+        {
+          "question": "Welcher dieser Namen wird im Koran als Götze von Nuhs Volk genannt?",
+          "options": [
+            "Hubal",
+            "Wadd",
+            "Al-Lat",
+            "Ba'l"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:23"
+        },
+        {
+          "question": "Wer waren Wadd, Suwa', Yaghuth, Ya'uq und Nasr laut Ibn Abbas ursprünglich?",
+          "options": [
+            "Rechtschaffene Männer",
+            "Könige",
+            "Engel",
+            "Sterne"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4920"
+        },
+        {
+          "question": "Wann begannen die Menschen, die Statuen anzubeten?",
+          "options": [
+            "Sobald sie gemacht waren",
+            "Als Nuh es ihnen befahl",
+            "Nachdem vergessen war, warum sie gemacht worden waren",
+            "Niemals"
+          ],
+          "answer": 2,
+          "reference": "Sahih al-Bukhari 4920"
+        }
+      ]
+    },
+    {
+      "id": "nuh-2",
+      "title": "Nuh wird gesandt",
+      "paragraphs": [
+        "Dann sandte Allah Nuh (a.s.) zu seinem Volk. Er war einer von ihnen, ein Mann, den sie kannten. Seine Botschaft war einfach und klar: „O mein Volk, betet Allah an; ihr habt keinen Gott außer Ihm. Ich fürchte für euch die Strafe eines gewaltigen Tages.“",
+        "Im langen Hadith über den Tag der Auferstehung berichtet der Prophet ﷺ, dass die Menschen zu Nuh kommen und sagen werden: „Du bist der erste der Gesandten zu den Bewohnern der Erde, und Allah hat dich einen dankbaren Diener genannt.“ Der Koran selbst sagt über ihn: „Er war wahrlich ein dankbarer Diener.“",
+        "Nuh versprach seinem Volk: Wenn sie Allah anbeteten, Ihn fürchteten und Seinem Gesandten gehorchten, würde Allah ihnen ihre Sünden vergeben und ihnen Aufschub gewähren. Er verlangte von ihnen weder Geld noch Lohn. Sein Lohn, sagte er, liege allein beim Herrn der Welten."
+      ],
+      "kidsParagraphs": [
+        "Allah wählte Nuh als Gesandten für sein Volk. Er sagte zu ihnen: „Betet nur Allah an!“",
+        "Nuh verlangte kein Geld. Er wollte nur, dass sein Volk gerettet wird."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 59,
+          "ayahEnd": 59
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4712",
+          "narrator": "Abu Huraira",
+          "translation": "Aus der Beschreibung des Tages der Auferstehung durch den Propheten ﷺ: „… Sie werden zu Nuh kommen und sagen: ‚O Nuh, du bist der erste der Gesandten zu den Bewohnern der Erde, und Allah hat dich einen dankbaren Diener genannt. Tritt für uns bei deinem Herrn ein …‘“",
+          "match": "انك انت اول الرسل الى اهل الارض",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 17,
+          "ayahStart": 3,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 2,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 109,
+          "ayahEnd": 109
+        }
+      ],
+      "lessons": [
+        "Die Botschaft jedes Propheten begann mit der Anbetung Allahs allein.",
+        "Wer zum Guten ruft, soll aufrichtig sein und weder Lohn noch Ruhm suchen.",
+        "Ein dankbarer Diener zu sein ist eine Eigenschaft, die Allah lobt."
+      ],
+      "quiz": [
+        {
+          "question": "Wie nennt der Koran Nuh (a.s.)?",
+          "options": [
+            "Einen König",
+            "Einen dankbaren Diener",
+            "Einen Krieger",
+            "Einen Dichter"
+          ],
+          "answer": 1,
+          "reference": "Quran 17:3"
+        },
+        {
+          "question": "Worum bat Nuh sein Volk als Erstes?",
+          "options": [
+            "Ein Schiff zu bauen",
+            "Ihre Stadt zu verlassen",
+            "Ihn zu bezahlen",
+            "Allah allein anzubeten"
+          ],
+          "answer": 3,
+          "reference": "Quran 7:59"
+        },
+        {
+          "question": "Im Hadith über den Tag der Auferstehung wird Nuh der erste … zu den Bewohnern der Erde genannt.",
+          "options": [
+            "Gesandte",
+            "König",
+            "Lehrer",
+            "Baumeister"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4712"
+        }
+      ]
+    },
+    {
+      "id": "nuh-3",
+      "title": "Rufen bei Nacht und bei Tag",
+      "paragraphs": [
+        "Nuh rief sein Volk eine außergewöhnlich lange Zeit. Der Koran sagt uns, dass er tausend Jahre weniger fünfzig unter ihnen blieb: neunhundertfünfzig Jahre.",
+        "Er versuchte jeden Weg. Er rief sie bei Nacht und bei Tag, öffentlich und im Geheimen. Doch je mehr er rief, desto mehr liefen sie davon. Sie steckten sich die Finger in die Ohren, um ihn nicht zu hören, und hüllten sich in ihre Gewänder, um ihn nicht zu sehen.",
+        "Er sprach zu ihren Herzen und ihrem Verstand. „Bittet euren Herrn um Vergebung“, sagte er, „Er ist stets vergebend. Er wird euch reichlich Regen schicken, euch Vermögen und Kinder geben und euch Gärten und Flüsse schenken.“ Er bat sie, zu bedenken, wie Allah sie in Stufen erschaffen hatte, wie Er die sieben Himmel gemacht hatte, den Mond als Licht und die Sonne als Leuchte. Warum gaben sie Allah nicht die Ehrfurcht, die Ihm gebührt?"
+      ],
+      "kidsParagraphs": [
+        "Nuh rief sein Volk 950 Jahre lang! Er sprach mit ihnen am Tag und in der Nacht.",
+        "Die Leute steckten sich die Finger in die Ohren, um nicht zu hören. Aber Nuh gab nie auf."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 71,
+          "ayahStart": 5,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 71,
+          "ayahStart": 10,
+          "ayahEnd": 16
+        }
+      ],
+      "lessons": [
+        "Geduldig zum Guten rufen, auch wenn die Ergebnisse lange auf sich warten lassen.",
+        "Allah um Vergebung bitten (Istighfar) bringt Segen wie Regen, Vermögen und Kinder.",
+        "Nachdenken über die Schöpfung führt das Herz zu seinem Schöpfer."
+      ],
+      "quiz": [
+        {
+          "question": "Wie lange blieb Nuh (a.s.) unter seinem Volk?",
+          "options": [
+            "100 Jahre",
+            "40 Jahre",
+            "950 Jahre",
+            "Genau 1000 Jahre"
+          ],
+          "answer": 2,
+          "reference": "Quran 29:14"
+        },
+        {
+          "question": "Was taten Nuhs Leute, um ihn nicht zu hören?",
+          "options": [
+            "Sie steckten sich die Finger in die Ohren",
+            "Sie flohen in die Berge",
+            "Sie schlossen ihre Türen",
+            "Sie sangen laut"
+          ],
+          "answer": 0,
+          "reference": "Quran 71:7"
+        },
+        {
+          "question": "Was würde Allah ihnen laut Nuh geben, wenn sie um Vergebung bäten?",
+          "options": [
+            "Nur Gold und Silber",
+            "Reichlich Regen, Vermögen und Kinder",
+            "Einen neuen König",
+            "Nichts"
+          ],
+          "answer": 1,
+          "reference": "Quran 71:10-12"
+        }
+      ]
+    },
+    {
+      "id": "nuh-4",
+      "title": "Die Vornehmen lehnen ab",
+      "paragraphs": [
+        "Die Anführer seines Volkes hatten viele Ausreden. „Er ist nur ein Mensch wie ihr“, sagten sie. „Hätte Allah einen Gesandten schicken wollen, hätte Er Engel geschickt. Davon haben wir bei unseren Vorvätern nie gehört.“ Sie nannten ihn sogar einen Verrückten.",
+        "Vor allem verachteten sie die, die ihm folgten. „Wir sehen, dass dir nur die Niedrigsten unter uns folgen“, sagten sie. Sie wollten, dass Nuh die armen Gläubigen fortjagt, bevor sie ihm überhaupt zuhörten.",
+        "Nuh weigerte sich. Er würde die Gläubigen nicht fortjagen: Sie würden ihrem Herrn begegnen, und wer würde ihn vor Allah schützen, wenn er sie fortjagte? Er behauptete nicht, Allahs Schätze zu besitzen, das Verborgene zu kennen oder ein Engel zu sein.",
+        "Schließlich forderten sie ihn heraus: „Bring uns doch das, womit du uns drohst, wenn du die Wahrheit sagst.“ Nuh antwortete, dass nur Allah es bringen würde, wenn Er wollte, und dass niemand ihm entkommen könne."
+      ],
+      "kidsParagraphs": [
+        "Die reichen Anführer sagten: „Dir folgen nur arme Leute!“ Sie wollten, dass Nuh die armen Gläubigen wegschickt.",
+        "Nuh sagte Nein. Jeder Gläubige ist Allah kostbar, ob reich oder arm."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 23,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 27,
+          "ayahEnd": 27
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 29,
+          "ayahEnd": 31
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 11,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Rang und Reichtum machen niemanden besser in Allahs Augen.",
+        "Stoße niemals aufrichtige Menschen zurück, weil sie arm oder schwach sind.",
+        "Hochmut hindert Menschen daran, die Wahrheit anzunehmen."
+      ],
+      "quiz": [
+        {
+          "question": "Was sollte Nuh nach dem Willen der Anführer mit seinen armen Anhängern tun?",
+          "options": [
+            "Sie zu Anführern machen",
+            "Ihnen Geld geben",
+            "Sie fortjagen",
+            "Sie mehr lehren"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:27-29"
+        },
+        {
+          "question": "Was hätte Allah laut den Anführern statt eines Menschen geschickt?",
+          "options": [
+            "Engel",
+            "Könige",
+            "Dschinn",
+            "Vögel"
+          ],
+          "answer": 0,
+          "reference": "Quran 23:24"
+        },
+        {
+          "question": "Von wem sollte laut Nuh sein Lohn kommen?",
+          "options": [
+            "Von den Anführern",
+            "Von seinen Anhängern",
+            "Von seiner Familie",
+            "Allein von Allah"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:29"
+        }
+      ]
+    },
+    {
+      "id": "nuh-5",
+      "title": "Der Bau der Arche",
+      "paragraphs": [
+        "Nach Hunderten von Jahren offenbarte Allah Nuh, dass niemand mehr aus seinem Volk glauben würde, außer denen, die schon glaubten. Nuh rief zu seinem Herrn: „Ich bin überwältigt, so hilf mir.“",
+        "Allah befahl ihm, unter Seinen Augen und nach Seiner Eingebung ein Schiff zu bauen. Nuh machte sich ans Werk, mit Planken und Nägeln.",
+        "Immer wenn die Anführer seines Volkes vorbeikamen, verspotteten sie ihn. Nuh antwortete ruhig: „Wenn ihr uns verspottet, werden wir euch verspotten, so wie ihr spottet. Bald werdet ihr wissen, wen eine Strafe trifft, die ihn bloßstellt.“"
+      ],
+      "kidsParagraphs": [
+        "Allah sagte Nuh, er solle ein großes Schiff bauen, die Arche.",
+        "Die Leute lachten über ihn, während er baute. Aber Nuh vertraute auf Allah und arbeitete weiter."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 54,
+          "ayahStart": 13,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 38,
+          "ayahEnd": 39
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Manche Bücher nennen genaue Maße der Arche, das Holz, aus dem sie gebaut war, oder sagen, Nuh habe die Bäume dafür hundert Jahre zuvor gepflanzt."
+        }
+      ],
+      "lessons": [
+        "Allah zu gehorchen ist richtig, auch wenn andere spotten.",
+        "Spott ist die Waffe derer, die kein Argument haben.",
+        "Das Bittgebet (Du'a) ist die Stärke des Gläubigen, wenn alles schwer scheint."
+      ],
+      "quiz": [
+        {
+          "question": "Woraus war die Arche laut dem Koran gemacht?",
+          "options": [
+            "Aus Stein",
+            "Aus Planken und Nägeln",
+            "Nur aus Schilf",
+            "Aus Eisen"
+          ],
+          "answer": 1,
+          "reference": "Quran 54:13"
+        },
+        {
+          "question": "Was taten die Anführer, wenn sie an der Arche vorbeikamen?",
+          "options": [
+            "Sie halfen Nuh",
+            "Sie beteten mit ihm",
+            "Sie verspotteten ihn",
+            "Sie kauften Plätze darauf"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:38"
+        },
+        {
+          "question": "Was sagte Nuh, als er Allah um Hilfe rief?",
+          "options": [
+            "Ich bin überwältigt, so hilf mir",
+            "Zerstöre das Schiff",
+            "Gib mir Gold",
+            "Lass mich ausruhen"
+          ],
+          "answer": 0,
+          "reference": "Quran 54:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-6",
+      "title": "Die Flut",
+      "paragraphs": [
+        "Dann kam Allahs Befehl. Der „Ofen“ brodelte, die Tore des Himmels öffneten sich mit strömendem Regen, und aus der Erde brachen Quellen hervor, bis die Wasser zusammenkamen für eine bereits beschlossene Sache.",
+        "Allah sagte Nuh, er solle ein Paar von jeder Art auf das Schiff laden, seine Familie (außer denen, gegen die das Wort schon ergangen war) und alle, die glaubten. Nur wenige hatten mit ihm geglaubt. Nuh sagte: „Steigt ein. Im Namen Allahs sei seine Fahrt und sein Ankern. Mein Herr ist wahrlich vergebend und barmherzig.“",
+        "Das Schiff fuhr durch Wellen wie Berge. Nuh sah seinen Sohn abseits stehen und rief mit der Liebe eines Vaters: „O mein Sohn, steig mit uns ein und sei nicht mit den Ungläubigen!“ Sein Sohn antwortete: „Ich werde Zuflucht auf einem Berg suchen, der mich vor dem Wasser schützt.“ Nuh sagte: „Heute gibt es keinen Schutz vor Allahs Befehl, außer für den, dessen Er Sich erbarmt.“ Dann kam eine Welle zwischen sie, und der Sohn war unter den Ertrunkenen.",
+        "Auch Nuhs Frau war nicht unter den Geretteten. Der Koran nennt sie zusammen mit der Frau Luts als Beispiel für jene, die ungläubig waren, obwohl sie mit rechtschaffenen Propheten lebten."
+      ],
+      "kidsParagraphs": [
+        "Regen fiel vom Himmel und Wasser sprudelte aus dem Boden. Nuh und die Gläubigen stiegen mit Tierpaaren in die Arche.",
+        "Nuh rief seinen Sohn: „Komm mit uns!“ Doch der Sohn weigerte sich und ging zu einem Berg, und das Wasser bedeckte ihn. Nur Allah kann uns retten."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 54,
+          "ayahStart": 11,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 40,
+          "ayahEnd": 41
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 66,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        }
+      ],
+      "lessons": [
+        "Nichts schützt vor Allahs Beschluss außer Seiner Barmherzigkeit.",
+        "Mit einem Propheten verwandt zu sein, rettet niemanden; Glaube und Taten retten.",
+        "Wir beginnen unsere Reisen im Namen Allahs, wie Nuh."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Nuh, als die Gläubigen die Arche bestiegen?",
+          "options": [
+            "Beeilt euch",
+            "Im Namen Allahs sei seine Fahrt und sein Ankern",
+            "Auf Wiedersehen",
+            "Bringt den Schatz"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:41"
+        },
+        {
+          "question": "Wo wollte Nuhs Sohn Zuflucht suchen?",
+          "options": [
+            "In einer Höhle",
+            "In der Arche",
+            "In einem Turm",
+            "Auf einem Berg"
+          ],
+          "answer": 3,
+          "reference": "Quran 11:43"
+        },
+        {
+          "question": "Welche zwei Frauen nennt der Koran als Beispiel für die Ungläubigen?",
+          "options": [
+            "Die Frauen von Nuh und Lut",
+            "Die Frauen von Ibrahim und Musa",
+            "Maryam und Asiya",
+            "Keine"
+          ],
+          "answer": 0,
+          "reference": "Quran 66:10"
+        }
+      ]
+    },
+    {
+      "id": "nuh-7",
+      "title": "Friede sei auf Nuh",
+      "paragraphs": [
+        "Schließlich befahl Allah: „O Erde, verschlucke dein Wasser, und o Himmel, halte deinen Regen zurück.“ Das Wasser sank, die Sache war vollbracht, und das Schiff kam auf al-Dschudi zur Ruhe.",
+        "Nuh rief betrübt zu seinem Herrn wegen seines Sohnes: „Mein Herr, mein Sohn gehört zu meiner Familie, und Dein Versprechen ist wahr.“ Allah sagte ihm, dass sein Sohn nicht zu seiner Familie gehörte, weil seine Taten nicht rechtschaffen waren. Nuh suchte sofort Zuflucht bei Allah davor, um etwas zu bitten, wovon er kein Wissen hatte, und bat um Vergebung und Barmherzigkeit.",
+        "Dann wurde gesagt: „O Nuh, geh von Bord in Frieden von Uns, mit Segen über dich und über Gemeinschaften, die von denen kommen, die mit dir sind.“ Allah ließ ein bleibendes Gedenken an ihn unter den späteren Generationen: „Friede sei auf Nuh in allen Welten.“",
+        "Der Prophet ﷺ berichtete uns, dass am Tag der Auferstehung Nuh und sein Volk herbeigebracht werden. Allah wird Nuh fragen, ob er die Botschaft übermittelt hat, und er wird Ja sagen. Sein Volk wird es leugnen. Dann wird Nuh seine Zeugen nennen: Muhammad ﷺ und seine Umma, die bezeugen werden, dass er die Botschaft überbracht hat."
+      ],
+      "kidsParagraphs": [
+        "Allah befahl der Erde, das Wasser zu schlucken, und dem Himmel, den Regen anzuhalten. Die Arche kam sicher auf einem Berg namens al-Dschudi zur Ruhe.",
+        "Allah schickte Frieden auf Nuh. Und am Letzten Tag wird die Umma Muhammads ﷺ bezeugen, dass Nuh seine Botschaft überbracht hat!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 78,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3339",
+          "narrator": "Abu Sa'id al-Chudri",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Nuh und seine Gemeinschaft werden kommen, und Allah, der Erhabene, wird sagen: ‚Hast du (die Botschaft) übermittelt?‘ Er wird sagen: ‚Ja, mein Herr.‘ Dann wird Er zu seiner Gemeinschaft sagen: ‚Hat er sie euch übermittelt?‘ Sie werden sagen: ‚Nein, kein Prophet ist zu uns gekommen.‘ Da wird Er zu Nuh sagen: ‚Wer bezeugt es für dich?‘ Er wird sagen: ‚Muhammad ﷺ und seine Umma.‘ So werden wir bezeugen, dass er sie übermittelt hat.“ Der Prophet ﷺ erklärte, dass dies die Bedeutung von Koran 2:143 ist.",
+          "match": "يجيء نوح وامته"
+        }
+      ],
+      "lessons": [
+        "Nach jeder Not kommt Allahs Hilfe zu den Geduldigen.",
+        "Ein Gläubiger nimmt Allahs Entscheidung an, auch wenn sie schmerzt.",
+        "Die Umma Muhammads ﷺ hat die ehrenvolle Rolle, Zeugin für die früheren Propheten zu sein."
+      ],
+      "quiz": [
+        {
+          "question": "Wo kam die Arche zur Ruhe?",
+          "options": [
+            "Am Berg Sinai",
+            "Am Berg Uhud",
+            "Auf al-Dschudi",
+            "Am Berg Arafat"
+          ],
+          "answer": 2,
+          "reference": "Quran 11:44"
+        },
+        {
+          "question": "Wer wird am Tag der Auferstehung für Nuh Zeugnis ablegen?",
+          "options": [
+            "Muhammad ﷺ und seine Umma",
+            "Nur die Engel",
+            "Sein Sohn",
+            "Niemand"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3339"
+        },
+        {
+          "question": "Was ließ Allah für Nuh unter den späteren Generationen?",
+          "options": [
+            "Eine goldene Arche",
+            "Die Worte „Friede sei auf Nuh in allen Welten“",
+            "Ein Königreich",
+            "Nichts"
+          ],
+          "answer": 1,
+          "reference": "Quran 37:79"
+        }
+      ]
+    }
+  ]
+}

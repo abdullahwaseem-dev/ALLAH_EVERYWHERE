@@ -20,6 +20,17 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.allaheverywhere.app.widgets</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>allaheverywhere</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -31,8 +42,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -45,20 +54,49 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>flutter</string>
+					<key>UISceneDelegateClassName</key>
+					<string>FlutterSceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allah Everywhere uses your location to calculate accurate prayer times and point you toward the Qibla.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allah Everywhere needs access to your photo library so you can choose a profile picture.</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Allah Everywhere uses motion sensors to keep the Qibla compass accurate as you turn.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allah Everywhere uses your location to calculate accurate prayer times and point you toward the Qibla.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allah Everywhere does not record audio; this permission is only required by the audio playback library used for Adhan and Quran recitation.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Allah Everywhere saves the Quran and Hadith images you create to your photo library when you choose Save Image.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
 		<string>fetch</string>
+		<string>remote-notification</string>
 	</array>
-	<!-- Google's published TEST App ID - swap for the real AdMob App ID before release. -->
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<string>ca-app-pub-3225473284077595~5508818797</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>

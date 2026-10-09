@@ -1,0 +1,950 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "musa",
+  "language": "en",
+  "name": "Musa",
+  "title": "Kalimullah, the one to whom Allah spoke directly",
+  "sentTo": "Pharaoh and his people, and the Children of Israel",
+  "era": "Many historians place him in the time of the New Kingdom of Egypt (around the 13th century BCE). The Quran and Sunnah give no date and do not name the Pharaoh.",
+  "places": [
+    {
+      "name": "Egypt, where he was born and raised in Pharaoh's palace.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    },
+    {
+      "name": "Madyan, where he lived for years after fleeing Egypt.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    },
+    {
+      "name": "Mount Sinai (at-Tur), traditionally identified with Jabal Musa, where Allah spoke to him.",
+      "lat": 28.5394,
+      "lng": 33.975,
+      "approximate": true
+    }
+  ],
+  "summary": "The Prophet mentioned most often in the Quran. Saved as a baby in the river and raised in Pharaoh's own palace, he fled Egypt, lived in Madyan, and was chosen by Allah at the valley of Tuwa. With his brother Harun he faced Pharaoh, led the Children of Israel through the sea, received the Torah, and patiently guided a difficult people. Allah spoke to him directly.",
+  "notes": [
+    "The Pharaoh of Musa's time is not named in the Quran or Sunnah. Identifications with Ramesses II or other kings come from historians and are uncertain.",
+    "The old man of Madyan whose daughter Musa married is not named in the Quran. Many books say he was the Prophet Shu'ayb; many scholars, including Ibn Kathir, doubted this.",
+    "Al-Khidr (18:65): scholars differ on whether he was a Prophet or a righteous servant, and on whether he is still alive. The majority view among researchers of hadith is that he is not alive.",
+    "The story that baby Musa put a burning coal in his mouth, causing his speech difficulty, comes from reports in the books of tafsir, not from the Quran or authentic hadith.",
+    "The exact place where the sea was parted is not known.",
+    "Allah speaking to Musa (4:164) is a real speech that befits Allah, without likening it to the speech of creation; this is the view of Ahl as-Sunnah."
+  ],
+  "chapters": [
+    {
+      "id": "musa-1",
+      "title": "A baby in the river",
+      "paragraphs": [
+        "Pharaoh had made himself great in the land. He divided the people into groups and oppressed the Children of Israel, killing their newborn sons and sparing their daughters. But Allah wanted to favour the oppressed and make them leaders.",
+        "When Musa (AS) was born, Allah inspired his mother: “Nurse him, and when you fear for him, cast him into the river. Do not fear and do not grieve; We will return him to you and make him a messenger.”",
+        "The basket floated to Pharaoh's own household, and they picked him up. Pharaoh's wife said: “A comfort to my eye and to yours! Do not kill him; perhaps he will benefit us, or we may adopt him as a son.”",
+        "Musa's mother was heartbroken. She sent his sister to follow him from a distance. Allah made the baby refuse every wet-nurse, until his sister said: “Shall I show you a family who will look after him for you?” So Musa was returned to his own mother, to comfort her and to show her that Allah's promise is true."
+      ],
+      "kidsParagraphs": [
+        "Pharaoh was hurting the babies of the Children of Israel. Allah told Musa's mother to put her baby in the river.",
+        "The river carried him to Pharaoh's palace! Pharaoh's wife loved him, and Allah brought Musa back to his own mother to feed him."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 4,
+          "ayahEnd": 5
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 7,
+          "ayahEnd": 7
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 8,
+          "ayahEnd": 9
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 28,
+          "ayahStart": 11,
+          "ayahEnd": 13
+        }
+      ],
+      "lessons": [
+        "Allah's plan protects those He wills, even in the house of their enemy.",
+        "Trust Allah's promise when everything looks frightening.",
+        "A mother's love is honoured by Allah."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah inspire Musa's mother to do when she feared for him?",
+          "options": [
+            "Hide him in a cave",
+            "Cast him into the river",
+            "Give him to a neighbour",
+            "Run away"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:7"
+        },
+        {
+          "question": "Who said, “A comfort to my eye and to yours”?",
+          "options": [
+            "Musa's sister",
+            "Pharaoh's wife",
+            "Musa's mother",
+            "Haman"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:9"
+        },
+        {
+          "question": "How was Musa returned to his mother?",
+          "options": [
+            "He refused all other wet-nurses",
+            "Pharaoh sent him back",
+            "He ran home",
+            "An angel carried him"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:12-13"
+        }
+      ]
+    },
+    {
+      "id": "musa-2",
+      "title": "A blow and a flight",
+      "paragraphs": [
+        "Musa grew up strong, and Allah gave him wisdom and knowledge. One day he found two men fighting, one from his own people and one from Pharaoh's. When his kinsman cried for help, Musa struck the other man, and the man died, though Musa had not meant to kill him.",
+        "Musa was horrified: “This is the work of Shaytan.” He turned to Allah at once: “My Lord, I have wronged myself, so forgive me,” and Allah forgave him. He promised never again to support wrongdoers.",
+        "Soon a man came running from the far end of the city: “Musa, the chiefs are plotting to kill you. Leave!” Musa left Egypt in fear, praying: “My Lord, save me from the wrongdoing people.”"
+      ],
+      "kidsParagraphs": [
+        "Musa tried to stop a fight and hit a man by mistake, and the man died. Musa was very sorry and asked Allah to forgive him.",
+        "A man warned him: “They want to kill you, run!” So Musa left Egypt, asking Allah to protect him."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 20,
+          "ayahEnd": 21
+        }
+      ],
+      "lessons": [
+        "When we make a mistake, we turn to Allah at once.",
+        "Anger can lead to harm we never intended.",
+        "Allah sends helpers at the right moment."
+      ],
+      "quiz": [
+        {
+          "question": "What did Musa say after the man died?",
+          "options": [
+            "This is the work of Shaytan",
+            "He deserved it",
+            "Nobody saw",
+            "I am a hero"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:15"
+        },
+        {
+          "question": "What did Musa ask Allah?",
+          "options": [
+            "To make him king",
+            "To forgive him",
+            "To punish his enemy",
+            "To give him gold"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:16"
+        },
+        {
+          "question": "Who warned Musa to leave the city?",
+          "options": [
+            "A man running from the far end of the city",
+            "His mother",
+            "Pharaoh's wife",
+            "An angel"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:20"
+        }
+      ]
+    },
+    {
+      "id": "musa-3",
+      "title": "At the well of Madyan",
+      "paragraphs": [
+        "Musa walked alone towards Madyan, hoping Allah would guide him. At a well he found shepherds crowding to water their flocks, and two women holding theirs back. They explained: “We cannot water until the shepherds leave, and our father is a very old man.” Musa watered their flocks for them.",
+        "Then he went to the shade, tired, hungry and far from home, and prayed: “My Lord, I am truly in need of whatever good You send down to me.”",
+        "Soon one of the women came back, walking shyly: “My father invites you, to reward you for watering for us.” Musa told the old man his story, and he said: “Do not fear; you are safe from the wrongdoing people.” One daughter said: “Father, hire him. The best one to hire is the strong and trustworthy.” The old man offered Musa one of his daughters in marriage, for eight or ten years of work, and Musa agreed."
+      ],
+      "kidsParagraphs": [
+        "Musa helped two women water their sheep. Then he sat in the shade and asked Allah for help.",
+        "Their father invited him home. Musa worked for him and married one of his daughters."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 28,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 25,
+          "ayahEnd": 28
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Many books say the old man of Madyan was the Prophet Shu'ayb; the Quran does not name him, and many scholars doubted this."
+        }
+      ],
+      "lessons": [
+        "Help others even when you are tired and in need yourself.",
+        "Ask Allah for every good thing; we are always in need of Him.",
+        "The best qualities in a worker are strength and trustworthiness."
+      ],
+      "quiz": [
+        {
+          "question": "Why were the two women waiting at the well?",
+          "options": [
+            "They were afraid of the water",
+            "They waited for the shepherds to leave",
+            "They had no buckets",
+            "It was night"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:23"
+        },
+        {
+          "question": "What did Musa pray in the shade?",
+          "options": [
+            "My Lord, I am in need of whatever good You send me",
+            "Take me home",
+            "Give me a kingdom",
+            "Punish Pharaoh"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:24"
+        },
+        {
+          "question": "Which two qualities did the daughter praise in Musa?",
+          "options": [
+            "Rich and famous",
+            "Strong and trustworthy",
+            "Clever and funny",
+            "Tall and handsome"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:26"
+        }
+      ]
+    },
+    {
+      "id": "musa-4",
+      "title": "The fire in the valley of Tuwa",
+      "paragraphs": [
+        "After the years in Madyan, Musa set out with his family. On the way, in the dark, he saw a fire and told his family: “Wait here. Perhaps I can bring you a burning brand, or find guidance at the fire.”",
+        "When he reached it, a call came: “O Musa, I am your Lord, so take off your sandals; you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed: I am Allah; there is no god but Me, so worship Me and establish prayer to remember Me.”",
+        "Allah gave him two signs. His staff, when thrown down, became a moving snake; his hand, drawn from his side, came out shining white without any illness. Then came the great command: “Go to Pharaoh. He has transgressed.”",
+        "Musa prayed: “My Lord, open my chest for me, make my task easy, and untie the knot from my tongue so they understand my speech. Give me a helper from my family, Harun, my brother.” Allah answered: “You have been granted what you asked, O Musa.”"
+      ],
+      "kidsParagraphs": [
+        "Musa saw a fire on a mountain. When he came close, Allah spoke to him: “I am your Lord!”",
+        "Allah gave him signs: his staff became a snake, and his hand shone white. Musa asked Allah to make his brother Harun his helper, and Allah said yes."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 17,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 3,
+          "surah": 20,
+          "ayahStart": 25,
+          "ayahEnd": 36
+        },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Some books say Musa's difficulty in speaking came from putting a burning coal in his mouth as a baby in Pharaoh's palace."
+        }
+      ],
+      "lessons": [
+        "Prayer is the first command after belief in Allah.",
+        "Before a great task, ask Allah to open your heart and make it easy.",
+        "Good helpers are a blessing; ask Allah for them."
+      ],
+      "quiz": [
+        {
+          "question": "Where was Musa when Allah spoke to him?",
+          "options": [
+            "In Egypt",
+            "In the sacred valley of Tuwa",
+            "In Madyan",
+            "On a ship"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:12"
+        },
+        {
+          "question": "What did Musa's staff become?",
+          "options": [
+            "A tree",
+            "A moving snake",
+            "A sword",
+            "A bird"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:20"
+        },
+        {
+          "question": "Whom did Musa ask for as a helper?",
+          "options": [
+            "His brother Harun",
+            "Pharaoh's wife",
+            "His father-in-law",
+            "Yusha'"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:29-30"
+        }
+      ]
+    },
+    {
+      "id": "musa-5",
+      "title": "Before Pharaoh",
+      "paragraphs": [
+        "Musa and Harun went to Pharaoh: “We are messengers of the Lord of the worlds. Let the Children of Israel go with us.” Pharaoh reminded Musa of his childhood in the palace and of the man he had killed. Musa answered honestly: “I did it when I was astray, then my Lord gave me wisdom and made me a messenger. And is this the favour you remind me of, that you enslaved the Children of Israel?”",
+        "“And what is the Lord of the worlds?” asked Pharaoh. Musa answered: “The Lord of the heavens and the earth and all between them… your Lord and the Lord of your forefathers… the Lord of the east and the west.” Pharaoh mocked him as mad and threatened him with prison.",
+        "Musa threw his staff, and it became a clear serpent. He drew out his hand, and it shone white for all to see."
+      ],
+      "kidsParagraphs": [
+        "Musa and Harun told Pharaoh: “Let the Children of Israel go free!”",
+        "Pharaoh asked: “Who is your Lord?” Musa said: “The Lord of the heavens and the earth.” Then he showed Pharaoh the signs from Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 16,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 23,
+          "ayahEnd": 29
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 32,
+          "ayahEnd": 33
+        }
+      ],
+      "lessons": [
+        "Speak the truth to people in power, with wisdom and courage.",
+        "Admit past mistakes honestly; repentance changes a person.",
+        "The signs of Allah are in the heavens, the earth and history."
+      ],
+      "quiz": [
+        {
+          "question": "What did Musa and Harun ask Pharaoh to do?",
+          "options": [
+            "Make them ministers",
+            "Let the Children of Israel go with them",
+            "Give them gold",
+            "Build a temple"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:17"
+        },
+        {
+          "question": "How did Musa describe the Lord of the worlds?",
+          "options": [
+            "The Lord of the heavens and the earth",
+            "The god of Egypt",
+            "The sun",
+            "The king"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:24"
+        },
+        {
+          "question": "What did Pharaoh threaten Musa with?",
+          "options": [
+            "Prison",
+            "A reward",
+            "Exile to Madyan",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:29"
+        }
+      ]
+    },
+    {
+      "id": "musa-6",
+      "title": "The magicians bow down",
+      "paragraphs": [
+        "Pharaoh's chiefs called Musa a magician and gathered the best magicians of Egypt for a great contest on a festival day. The magicians wanted a reward, and Pharaoh promised them riches and a place close to him.",
+        "The magicians threw their ropes and staffs and bewitched the people's eyes with a mighty magic. Then Allah inspired Musa: “Throw your staff,” and it swallowed up everything they had faked. The truth was established and their work came to nothing.",
+        "The magicians knew this was no magic. They fell down in prostration: “We believe in the Lord of the worlds, the Lord of Musa and Harun.” Pharaoh threatened to cut off their hands and feet and crucify them. They answered: “To our Lord we will return. Our Lord, pour patience upon us and let us die as Muslims.”"
+      ],
+      "kidsParagraphs": [
+        "Pharaoh brought the best magicians. They threw ropes that looked like snakes.",
+        "Musa threw his staff and it swallowed all their tricks! The magicians knew it was from Allah and became believers."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 113,
+          "ayahEnd": 114
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 116,
+          "ayahEnd": 118
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 120,
+          "ayahEnd": 122
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 124,
+          "ayahEnd": 126
+        }
+      ],
+      "lessons": [
+        "Truth defeats illusion.",
+        "Real knowledge leads to humility and faith.",
+        "Faith can make a person brave in a single moment."
+      ],
+      "quiz": [
+        {
+          "question": "What did Musa's staff do to the magic?",
+          "options": [
+            "Burned it",
+            "Swallowed it up",
+            "Ran from it",
+            "Nothing"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:117"
+        },
+        {
+          "question": "What did the magicians do when they saw the truth?",
+          "options": [
+            "Ran away",
+            "Fell in prostration and believed",
+            "Attacked Musa",
+            "Asked for more money"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:120-121"
+        },
+        {
+          "question": "What did the magicians pray for?",
+          "options": [
+            "Wealth",
+            "Patience and to die as Muslims",
+            "Revenge",
+            "Fame"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:126"
+        }
+      ]
+    },
+    {
+      "id": "musa-7",
+      "title": "The sea is parted",
+      "paragraphs": [
+        "Allah sent sign after sign upon Pharaoh's people: years of famine and poor harvests, then floods, locusts, lice, frogs and blood. Each time they begged Musa to pray for relief and promised to let the Children of Israel go, and each time they broke their word.",
+        "At last Allah commanded Musa to leave by night with the Children of Israel. Pharaoh chased them with his army and caught up with them at sunrise by the sea. Musa's people cried: “We will be caught!” Musa said: “No! My Lord is with me; He will guide me.”",
+        "Allah inspired him: “Strike the sea with your staff.” The sea split, each part like a huge mountain, and the Children of Israel walked across. When Pharaoh followed, the waters closed over him. As he drowned he said: “I believe…” but it was too late. Allah preserved his body as a sign for those after him."
+      ],
+      "kidsParagraphs": [
+        "Musa led the Children of Israel out of Egypt. Pharaoh chased them to the sea.",
+        "Allah told Musa: “Strike the sea with your staff.” The sea opened like two mountains, and they walked across safely! Pharaoh and his army drowned."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 133,
+          "ayahEnd": 135
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 60,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 63,
+          "ayahEnd": 66
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 10,
+          "ayahStart": 90,
+          "ayahEnd": 92
+        }
+      ],
+      "lessons": [
+        "When the way seems closed, say: “My Lord is with me; He will guide me.”",
+        "Repentance at the moment of death is too late; turn to Allah now.",
+        "Breaking promises to Allah brings ruin."
+      ],
+      "quiz": [
+        {
+          "question": "What did Musa say when his people feared being caught?",
+          "options": [
+            "Run!",
+            "My Lord is with me; He will guide me",
+            "Surrender",
+            "Swim!"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:62"
+        },
+        {
+          "question": "How did the sea part?",
+          "options": [
+            "Musa struck it with his staff",
+            "A wind blew",
+            "It dried up in summer",
+            "The angels pushed it"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:63"
+        },
+        {
+          "question": "Which of these signs was sent on Pharaoh's people?",
+          "options": [
+            "Locusts, lice, frogs and blood",
+            "Snow",
+            "A volcano",
+            "Earthquakes only"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:133"
+        }
+      ]
+    },
+    {
+      "id": "musa-8",
+      "title": "The calf and the tablets",
+      "paragraphs": [
+        "Allah appointed forty nights for Musa to meet Him on the mountain. Musa left Harun in charge of the people. There Allah spoke to him, and Musa longed to see Him: “My Lord, show Yourself to me.” Allah said: “You will not see Me, but look at the mountain.” When Allah manifested Himself to the mountain, it crumbled to dust, and Musa fell unconscious. When he woke, he said: “Glory be to You! I repent to You.”",
+        "Allah gave him the Tablets, with guidance and explanation of all things. But while he was away, a man called as-Samiri made a golden calf from the people's jewellery, which made a lowing sound, and said: “This is your god and the god of Musa.” Many began to worship it, although Harun warned them.",
+        "Musa came back angry and grieved. He threw down the Tablets and took his brother by the head. Harun pleaded: “Son of my mother, the people overpowered me and almost killed me.” Musa's anger cooled, and he prayed: “My Lord, forgive me and my brother.” Then he picked up the Tablets, in which were guidance and mercy."
+      ],
+      "kidsParagraphs": [
+        "Musa went to the mountain for forty nights to receive the Tablets from Allah.",
+        "While he was away, some people made a golden calf and worshipped it. Musa came back very upset, and the people had to repent."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 143
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 145,
+          "ayahEnd": 145
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 85,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 150,
+          "ayahEnd": 151
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 154,
+          "ayahEnd": 154
+        }
+      ],
+      "lessons": [
+        "No one can see Allah in this world; believers hope to see Him in Paradise.",
+        "Shirk can return quickly when knowledge and leaders are absent.",
+        "Anger should cool into prayer and forgiveness."
+      ],
+      "quiz": [
+        {
+          "question": "For how many nights did Musa meet his Lord?",
+          "options": [
+            "Seven",
+            "Forty",
+            "Ten",
+            "One hundred"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "What happened to the mountain when Allah manifested Himself to it?",
+          "options": [
+            "It grew",
+            "It crumbled to dust",
+            "It turned to gold",
+            "Nothing"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:143"
+        },
+        {
+          "question": "Who made the golden calf?",
+          "options": [
+            "Harun",
+            "As-Samiri",
+            "Pharaoh",
+            "Qarun"
+          ],
+          "answer": 1,
+          "reference": "Quran 20:85"
+        }
+      ]
+    },
+    {
+      "id": "musa-9",
+      "title": "Lessons in the wilderness",
+      "paragraphs": [
+        "The Children of Israel tested Musa many times. Once Allah commanded them to slaughter a cow, and instead of obeying, they asked question after question about its age, its colour and its kind, making it harder for themselves. At last they did it, and Allah used it to reveal a hidden murderer.",
+        "When Musa told them to enter the Holy Land Allah had written for them, they said: “There are mighty people there. Go, you and your Lord, and fight; we will sit here.” Musa prayed: “My Lord, I have power only over myself and my brother.” So the land was forbidden to them for forty years, during which they wandered in the land.",
+        "Among Musa's people was Qarun, given treasures whose keys were heavy for a group of strong men. He boasted: “I was given it because of my own knowledge.” The earth swallowed him and his house, and those who had envied him said: “If Allah had not been gracious to us, He would have made it swallow us too.”"
+      ],
+      "kidsParagraphs": [
+        "Allah told the people to sacrifice a cow, but they asked so many questions that it became hard for them.",
+        "A rich man named Qarun was proud of his treasure, and the earth swallowed him. Wealth is from Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 67,
+          "ayahEnd": 71
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 21,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 76,
+          "ayahEnd": 78
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 28,
+          "ayahStart": 81,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Obey Allah's commands simply, without making them harder.",
+        "Fear and comfort can stop people from doing what Allah commands.",
+        "Wealth is a test; it comes from Allah, not from our own cleverness."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah command the Children of Israel to slaughter?",
+          "options": [
+            "A sheep",
+            "A cow",
+            "A camel",
+            "A goat"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:67"
+        },
+        {
+          "question": "For how many years did they wander?",
+          "options": [
+            "Ten",
+            "Forty",
+            "Seven",
+            "One hundred"
+          ],
+          "answer": 1,
+          "reference": "Quran 5:26"
+        },
+        {
+          "question": "What happened to Qarun?",
+          "options": [
+            "He became king",
+            "The earth swallowed him and his house",
+            "He drowned",
+            "He moved to Madyan"
+          ],
+          "answer": 1,
+          "reference": "Quran 28:81"
+        }
+      ]
+    },
+    {
+      "id": "musa-10",
+      "title": "Musa and al-Khidr",
+      "paragraphs": [
+        "The Prophet ﷺ told us that Musa once stood addressing the Children of Israel and was asked: “Who is the most knowledgeable of people?” He said: “I am.” Allah corrected him because he had not attributed knowledge to Allah, and told him of a servant at the meeting of the two seas who knew more than him.",
+        "Musa travelled with his young companion until they found that servant, al-Khidr, to whom Allah had given mercy and knowledge from Himself. Musa asked to follow him and learn. Al-Khidr warned him that he would not be able to be patient, and Musa promised to try.",
+        "Al-Khidr made a hole in a boat, killed a boy, and rebuilt a falling wall in a town that had refused them food. Each time Musa could not keep quiet. Then al-Khidr explained: the boat belonged to poor people, and a king was seizing every good boat; the boy would have led his believing parents into disbelief; the wall hid the treasure of two orphans whose father was righteous. “I did not do it on my own,” he said. It was all by Allah's command."
+      ],
+      "kidsParagraphs": [
+        "Musa travelled to learn from a wise servant of Allah called al-Khidr.",
+        "Al-Khidr did strange things, and Musa could not stay quiet. Then al-Khidr explained: everything was by Allah's command, and it was for good. Allah knows what we do not know."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "122",
+          "narrator": "Ubayy ibn Ka'b",
+          "translation": "The Prophet ﷺ said: “Musa the Prophet stood to address the Children of Israel, and he was asked: ‘Which of the people is the most knowledgeable?’ He said: ‘I am the most knowledgeable.’ So Allah reproached him, because he did not attribute the knowledge to Him, and Allah revealed to him: ‘A servant of Mine at the meeting of the two seas is more knowledgeable than you…’”",
+          "match": "فسئل اى الناس اعلم فقال انا اعلم",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 18,
+          "ayahStart": 65,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 71,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 18,
+          "ayahStart": 79,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Always attribute knowledge to Allah and stay humble.",
+        "Travel and patience are part of seeking knowledge.",
+        "Behind events that look bad, Allah may have a wisdom we cannot see."
+      ],
+      "quiz": [
+        {
+          "question": "What did Musa answer when asked who was most knowledgeable?",
+          "options": [
+            "Allah knows best",
+            "I am",
+            "Harun",
+            "Pharaoh"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 122"
+        },
+        {
+          "question": "Why did al-Khidr damage the boat?",
+          "options": [
+            "It was old",
+            "A king was seizing every good boat",
+            "He was angry",
+            "To sell it"
+          ],
+          "answer": 1,
+          "reference": "Quran 18:79"
+        },
+        {
+          "question": "What was under the wall?",
+          "options": [
+            "A treasure for two orphans",
+            "A well",
+            "A grave",
+            "A secret door"
+          ],
+          "answer": 0,
+          "reference": "Quran 18:82"
+        }
+      ]
+    },
+    {
+      "id": "musa-11",
+      "title": "Musa and our Ummah",
+      "paragraphs": [
+        "Allah spoke to Musa with real speech, which is why he is called Kalimullah. He is mentioned in the Quran more than any other Prophet, and his story is full of lessons for the Ummah of Muhammad ﷺ.",
+        "On the night of the Mi'raj, when Allah made fifty prayers obligatory on the Prophet's Ummah, Musa advised him to go back and ask for less: “Your Ummah will not be able to bear it.” The Prophet ﷺ returned again and again, until Allah made them five prayers, with the reward of fifty.",
+        "When the Prophet ﷺ came to Madinah, he found people fasting on the day of 'Ashura' because Allah had saved Musa and the Children of Israel from Pharaoh on that day. He said: “We have more right to Musa than you,” and he fasted it and told Muslims to fast it."
+      ],
+      "kidsParagraphs": [
+        "Allah spoke to Musa directly. On the night of the Mi'raj, Musa helped our Ummah: because of his advice we have five prayers instead of fifty!",
+        "We fast on the day of 'Ashura' to remember how Allah saved Musa."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 164,
+          "ayahEnd": 164
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "349",
+          "narrator": "Anas ibn Malik, from Abu Dharr",
+          "translation": "From the Prophet's ﷺ description of the Mi'raj: “…Musa said: ‘Go back to your Lord, for your Ummah will not be able to bear it.’ So I went back, and He reduced part of it. I returned to Musa… and he said: ‘Go back to your Lord, for your Ummah will not be able to bear that.’ So I went back to Him, and He said: ‘They are five, and they are fifty; My word does not change.’ I returned to Musa and he said: ‘Go back to your Lord.’ I said: ‘I feel shy before my Lord.’”",
+          "match": "فان امتك لا تطيق",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2004",
+          "narrator": "Ibn Abbas",
+          "translation": "The Prophet ﷺ came to Madinah and saw the Jews fasting on the day of 'Ashura'. He asked: “What is this?” They said: “This is a good day; on this day Allah saved the Children of Israel from their enemy, so Musa fasted it.” He said: “I have more right to Musa than you.” So he fasted it and commanded that it be fasted.",
+          "match": "هذا يوم صالح هذا يوم نجى الله بني اسرائيل من عدوهم فصامه موسى"
+        }
+      ],
+      "lessons": [
+        "The Prophets cared for one another's nations.",
+        "The five daily prayers are a gift of mercy; guard them.",
+        "Muslims love and follow all the Prophets."
+      ],
+      "quiz": [
+        {
+          "question": "Why is Musa called Kalimullah?",
+          "options": [
+            "Allah spoke to him directly",
+            "He was a great speaker",
+            "He wrote many books",
+            "He was a king"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:164"
+        },
+        {
+          "question": "What did Musa advise on the night of the Mi'raj?",
+          "options": [
+            "Ask for fewer prayers",
+            "Ask for more prayers",
+            "Visit Egypt",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 349"
+        },
+        {
+          "question": "Why did Musa fast on the day of 'Ashura'?",
+          "options": [
+            "Allah saved the Children of Israel from Pharaoh on that day",
+            "It was his birthday",
+            "It was the day he reached Madyan",
+            "It was the day of the calf"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2004"
+        }
+      ]
+    }
+  ]
+}

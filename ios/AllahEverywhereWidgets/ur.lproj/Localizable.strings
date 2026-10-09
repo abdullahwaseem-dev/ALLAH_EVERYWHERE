@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "اگلی نماز";
+"widget.nextPrayer.description" = "اگلی نماز کا کاؤنٹ ڈاؤن، آج کے اوقاتِ نماز کے ساتھ۔";
+"widget.hijriDate.name" = "اسلامی تاریخ";
+"widget.hijriDate.description" = "آج کی ہجری تاریخ اور اسلامی مواقع۔";
+"widget.reminder.name" = "آج کی آیت";
+"widget.reminder.description" = "ہر دن غور کے لیے ایک آیت یا حدیث۔";
+"widget.nextPrayer.fallback" = "اگلی نماز";
+"widget.setLocation.fallback" = "اپنا مقام طے کرنے کے لیے ایپ کھولیں";
+"widget.openApp.fallback" = "اپ ڈیٹ کے لیے ایپ کھولیں";

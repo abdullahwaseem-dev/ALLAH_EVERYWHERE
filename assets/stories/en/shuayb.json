@@ -1,0 +1,338 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "shuayb",
+  "language": "en",
+  "name": "Shu'ayb",
+  "title": "The messenger to Madyan, who called for honest trade",
+  "sentTo": "The people of Madyan and the “companions of the thicket” (al-Aykah)",
+  "era": "Before Musa (AS); he reminded Madyan of the fate of the people of Lut, who were “not far” from them (11:89). No date is given.",
+  "places": [
+    {
+      "name": "Madyan, in north-western Arabia, east of the Gulf of Aqaba.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    }
+  ],
+  "summary": "Shu'ayb was sent to Madyan, a trading people who cheated in weights and measures, robbed travellers and blocked people from Allah's way. He called them to worship Allah and to deal honestly. The arrogant chiefs threatened to drive him out, and a punishment seized them, while Shu'ayb and the believers were saved.",
+  "notes": [
+    "Were the people of Madyan and the “companions of the thicket” (al-Aykah, 26:176) the same people? Scholars differ: some say they were one people, others two different peoples to whom Shu'ayb was sent.",
+    "The old man in Madyan whose daughter Musa married (28:23-28) is called Shu'ayb in many books. Many scholars, including Ibn Kathir, doubted this, since Shu'ayb lived long before Musa; the Quran does not name him.",
+    "The Quran describes the punishment as an earthquake (7:91), a blast (11:94) and “the day of the shadow (cloud)” (26:189); scholars explain these as parts of one event or as describing two peoples."
+  ],
+  "chapters": [
+    {
+      "id": "shuayb-1",
+      "title": "Honest weights and measures",
+      "paragraphs": [
+        "Madyan was a town of traders on the caravan routes. Allah sent them their brother Shu'ayb (AS) with the message of every Prophet: “O my people, worship Allah; you have no god other than Him.”",
+        "He also named their particular sin: they cheated in trade. “Give full measure and weight, and do not cheat people of their things, and do not spread corruption in the land after it has been set right.”",
+        "He reminded them that a smaller lawful profit, what remains from Allah, is better for them than a large one gained by cheating, if only they believed."
+      ],
+      "kidsParagraphs": [
+        "The people of Madyan cheated when they sold things. They gave people less than they paid for.",
+        "Shu'ayb told them: “Worship only Allah, and be honest when you buy and sell!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 84,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 181,
+          "ayahEnd": 183
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 86,
+          "ayahEnd": 86
+        }
+      ],
+      "lessons": [
+        "Honesty in business is part of worship.",
+        "A small lawful profit is better than a large unlawful one.",
+        "Cheating people spreads corruption in society."
+      ],
+      "quiz": [
+        {
+          "question": "What did Madyan do wrong in trade?",
+          "options": [
+            "Gave too much",
+            "Cheated in weights and measures",
+            "Refused to sell",
+            "Sold only to the rich"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:84"
+        },
+        {
+          "question": "What did Shu'ayb say is better for them?",
+          "options": [
+            "What remains (lawful) from Allah",
+            "More gold",
+            "More land",
+            "A bigger market"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:86"
+        },
+        {
+          "question": "What was the first part of Shu'ayb's message?",
+          "options": [
+            "Worship Allah alone",
+            "Build a ship",
+            "Leave the city",
+            "Fight the king"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:85"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-2",
+      "title": "“Does your prayer command you?”",
+      "paragraphs": [
+        "The people mocked him: “O Shu'ayb, does your prayer command you that we should leave what our fathers worshipped, or stop doing what we like with our own wealth?” They could not see why religion should have anything to say about money.",
+        "Shu'ayb answered gently and wisely. He did not want to forbid them something and then do it himself. “I only want to put things right, as much as I can,” he said. “My success is only from Allah. In Him I trust, and to Him I turn.”",
+        "He reminded them of what had happened to the people of Nuh, Hud and Salih, and of the people of Lut, who were not far from them, and he asked them to seek their Lord's forgiveness, for He is Merciful and Loving."
+      ],
+      "kidsParagraphs": [
+        "The people laughed: “Does your prayer tell you what to do with our money?”",
+        "Shu'ayb said: “I only want to make things right. My success comes only from Allah.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "Islam guides every part of life, including how we earn and spend.",
+        "A caller to good practises what he preaches.",
+        "Success comes only from Allah."
+      ],
+      "quiz": [
+        {
+          "question": "What did the people ask Shu'ayb mockingly?",
+          "options": [
+            "Does your prayer command you…?",
+            "Where is your army?",
+            "Who is your father?",
+            "Why are you rich?"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:87"
+        },
+        {
+          "question": "What did Shu'ayb say he wanted?",
+          "options": [
+            "To become king",
+            "Only to put things right as much as he could",
+            "Their wealth",
+            "To leave"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:88"
+        },
+        {
+          "question": "Which earlier people did Shu'ayb say were “not far” from them?",
+          "options": [
+            "The people of Lut",
+            "The people of Musa",
+            "The Romans",
+            "The people of Yunus"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:89"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-3",
+      "title": "Threats",
+      "paragraphs": [
+        "The arrogant chiefs threatened him: “We will drive you out of our town, O Shu'ayb, together with those who believe with you, unless you return to our religion.” Shu'ayb replied: “Even if we hate it? We would be inventing a lie against Allah if we returned to your religion after Allah saved us from it.”",
+        "They also said: “We do not understand much of what you say, and we see you are weak among us. If it were not for your family, we would have stoned you.” Shu'ayb asked: “Is my family dearer to you than Allah?”",
+        "He told them to carry on as they were, and he would carry on as he was: soon they would know who would receive a disgracing punishment, and who was the liar."
+      ],
+      "kidsParagraphs": [
+        "The chiefs said: “Leave our town, or come back to our religion!”",
+        "Shu'ayb was brave. He said: “We will never leave the truth Allah gave us.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 88,
+          "ayahEnd": 89
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 91,
+          "ayahEnd": 92
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        }
+      ],
+      "lessons": [
+        "Never trade your faith for safety or comfort.",
+        "Fear of Allah should be greater than fear of people.",
+        "Truth does not need the strength of a tribe behind it."
+      ],
+      "quiz": [
+        {
+          "question": "What did the chiefs threaten to do to Shu'ayb?",
+          "options": [
+            "Make him rich",
+            "Drive him out of the town",
+            "Make him their leader",
+            "Give him land"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:88"
+        },
+        {
+          "question": "Why did the chiefs say they had not stoned him?",
+          "options": [
+            "Because of his family",
+            "Because of the king",
+            "Because he was strong",
+            "Because of the angels"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:91"
+        },
+        {
+          "question": "What did Shu'ayb ask them about his family?",
+          "options": [
+            "Is my family dearer to you than Allah?",
+            "Where is my family?",
+            "Will you marry into my family?",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:92"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-4",
+      "title": "As if they had never lived there",
+      "paragraphs": [
+        "When Allah's command came, He saved Shu'ayb and those who believed with him by His mercy, and a dreadful blast and an earthquake seized the wrongdoers. They lay lifeless in their homes, as if they had never lived there.",
+        "Shu'ayb turned away from them, saying: “O my people, I conveyed to you the messages of my Lord and advised you. How can I grieve for a people who disbelieved?”",
+        "The Quran describes the punishment of the “companions of the thicket”, who also rejected Shu'ayb, as “the punishment of the day of the shadow”. They had challenged him to make pieces of the sky fall on them, and it came as a terrible day."
+      ],
+      "kidsParagraphs": [
+        "Allah saved Shu'ayb and the believers. The people who cheated and refused were destroyed.",
+        "Honesty and faith save us; cheating and pride destroy."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 94,
+          "ayahEnd": 95
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 187,
+          "ayahEnd": 189
+        }
+      ],
+      "lessons": [
+        "Injustice in society brings destruction in the end.",
+        "Allah saves the believers by His mercy.",
+        "Every warner's duty is to convey the message; guidance is from Allah."
+      ],
+      "quiz": [
+        {
+          "question": "What seized the wrongdoers of Madyan?",
+          "options": [
+            "A flood",
+            "A dreadful blast",
+            "A wind",
+            "Locusts"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        },
+        {
+          "question": "What is the punishment of the companions of the thicket called?",
+          "options": [
+            "The day of the shadow (cloud)",
+            "The day of the flood",
+            "The day of the fire",
+            "The day of the wind"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:189"
+        },
+        {
+          "question": "Who was saved?",
+          "options": [
+            "No one",
+            "Shu'ayb and those who believed",
+            "Only the chiefs",
+            "Only the merchants"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        }
+      ]
+    }
+  ]
+}

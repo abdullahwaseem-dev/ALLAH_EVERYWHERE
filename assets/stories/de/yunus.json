@@ -1,0 +1,341 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yunus",
+  "language": "de",
+  "name": "Yunus",
+  "title": "Dhun-Nun, der Gefährte des Fisches",
+  "sentTo": "Die Leute von Ninive, hunderttausend oder mehr",
+  "era": "Die Zeit wird in Koran und Sunna nicht genannt; Historiker verorten ihn im 8. Jahrhundert v. Chr.",
+  "places": [
+    {
+      "name": "Ninive, gegenüber dem heutigen Mossul im Irak, nach Ansicht der meisten Gelehrten.",
+      "lat": 36.36,
+      "lng": 43.15,
+      "approximate": true
+    }
+  ],
+  "summary": "Yunus verließ sein Volk im Zorn, bevor Allah ihm die Erlaubnis gab. Er wurde von einem Schiff geworfen und von einem großen Fisch verschlungen, wo er in der Dunkelheit rief: „Es gibt keinen Gott außer Dir; gepriesen seist Du; ich gehörte zu den Ungerechten.“ Allah rettete ihn, und sein ganzes Volk glaubte.",
+  "notes": [
+    "Der Koran nennt die Stadt nicht; Ninive stammt aus der Geschichtsschreibung und der Bibel.",
+    "Wie lange Yunus im Fisch blieb, wird weder im Koran noch in authentischen Hadithen gesagt; die Berichte reichen von einem Teil eines Tages bis zu vierzig Tagen.",
+    "„Er meinte, Wir würden ihn nicht bedrängen“ (21:87): Die Gelehrten erklären es mit „er meinte, Wir würden es ihm nicht schwer machen“, nicht damit, dass er an Allahs Macht zweifelte.",
+    "Das berühmte Bittgebet des Yunus steht im Koran (21:87). Ein Hadith über seinen Vorzug findet sich bei at-Tirmidhi; er sollte vor dem Zitieren geprüft werden."
+  ],
+  "chapters": [
+    {
+      "id": "yunus-1",
+      "title": "Im Zorn fortgegangen",
+      "paragraphs": [
+        "Allah sandte Yunus (a.s.) zu einer großen Stadt von hunderttausend Menschen oder mehr. Er rief sie zu Allah, aber sie folgten nicht.",
+        "Yunus wurde zornig auf sie und ging fort, bevor Allah ihm die Erlaubnis gegeben hatte. Er ging an die Küste und bestieg ein voll beladenes Schiff.",
+        "Der Koran nennt ihn „den Mann des Fisches“: Er ging im Zorn fort und meinte, Allah werde ihn nicht zur Rechenschaft ziehen. Seine Geschichte lehrt, dass selbst ein Prophet auf Allahs Befehl warten muss."
+      ],
+      "kidsParagraphs": [
+        "Allah sandte Yunus in eine große Stadt. Als die Leute nicht zuhörten, wurde Yunus ärgerlich und ging fort.",
+        "Er stieg auf ein Schiff, ohne auf Allahs Erlaubnis zu warten."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 147
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 139,
+          "ayahEnd": 140
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Sei geduldig mit den Menschen und warte auf Allahs Befehl.",
+        "Zorn kann zu übereilten Entscheidungen führen.",
+        "Der Ruf zu Allah braucht Geduld, nicht Verdruss."
+      ],
+      "quiz": [
+        {
+          "question": "Zu wie vielen Menschen wurde Yunus gesandt?",
+          "options": [
+            "Hunderttausend oder mehr",
+            "Zehn",
+            "Tausend",
+            "Siebzig"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:147"
+        },
+        {
+          "question": "Warum verließ Yunus sein Volk?",
+          "options": [
+            "Er war zornig auf sie",
+            "Er wurde nach Ägypten gesandt",
+            "Er war krank",
+            "Er wollte Handel treiben"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Wohin ging Yunus, als er fortging?",
+          "options": [
+            "Zu einem beladenen Schiff",
+            "Auf einen Berg",
+            "In eine Höhle",
+            "In die Wüste"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:140"
+        }
+      ]
+    },
+    {
+      "id": "yunus-2",
+      "title": "Im Bauch des Fisches",
+      "paragraphs": [
+        "Draußen auf dem Meer losten die Leute auf dem Schiff, und Yunus gehörte zu den Verlierern. Er wurde ins Meer geworfen, und ein großer Fisch verschlang ihn.",
+        "In der Dunkelheit der Nacht, des Meeres und des Fischbauchs rief Yunus: „Es gibt keinen Gott außer Dir; gepriesen seist Du; ich gehörte zu den Ungerechten.“",
+        "Allah sagt: Wäre Yunus nicht einer von denen gewesen, die Ihn preisen, wäre er bis zum Tag der Auferstehung in seinem Bauch geblieben. Aber Allah erhörte ihn und rettete ihn aus seiner Not: „Und so retten Wir die Gläubigen.“"
+      ],
+      "kidsParagraphs": [
+        "Yunus wurde ins Meer geworfen, und ein großer Fisch verschluckte ihn!",
+        "Im Dunkeln betete Yunus: „Es gibt keinen Gott außer Dir, gepriesen seist Du, ich habe Unrecht getan.“ Und Allah rettete ihn."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 141,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 143,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        }
+      ],
+      "lessons": [
+        "Keine Dunkelheit ist zu tief, als dass Allah unser Bittgebet nicht hören würde.",
+        "Gestehe Allah deinen Fehler ein und preise Ihn.",
+        "Allahs in guten Zeiten zu gedenken, hilft in schweren Zeiten."
+      ],
+      "quiz": [
+        {
+          "question": "Was verschlang Yunus?",
+          "options": [
+            "Ein großer Fisch",
+            "Eine Welle",
+            "Eine Höhle",
+            "Ein Krokodil"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:142"
+        },
+        {
+          "question": "Was sagte Yunus in der Dunkelheit?",
+          "options": [
+            "Es gibt keinen Gott außer Dir; gepriesen seist Du; ich gehörte zu den Ungerechten",
+            "Helft mir, ihr Leute",
+            "Warum ich?",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Was tut Allah laut Seinen Worten für Gläubige wie Yunus?",
+          "options": [
+            "Er rettet sie",
+            "Er vergisst sie",
+            "Er bestraft sie",
+            "Er verlässt sie"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:88"
+        }
+      ]
+    },
+    {
+      "id": "yunus-3",
+      "title": "Die ganze Stadt glaubte",
+      "paragraphs": [
+        "Allah warf Yunus an eine kahle Küste, schwach und krank, und ließ über ihm eine Kürbispflanze wachsen, die ihm Schutz bot.",
+        "Dann sandte Allah ihn zu seinem Volk zurück, und diesmal glaubten sie, alle. Allah nahm die Strafe von ihnen und ließ sie eine Zeit lang das Leben genießen. Der Koran sagt, keiner anderen Stadt, die im letzten Augenblick glaubte, habe ihr Glaube so genützt, außer dem Volk des Yunus.",
+        "Allah sagte dem Propheten Muhammad ﷺ, er solle geduldig sein und nicht wie der Gefährte des Fisches, als er in seiner Not rief. Dann erwählte Allah Yunus und machte ihn zu einem der Rechtschaffenen."
+      ],
+      "kidsParagraphs": [
+        "Der Fisch legte Yunus am Strand ab, und eine Pflanze wuchs, um ihm Schatten zu spenden.",
+        "Als Yunus zurückkam, glaubte jeder in der Stadt! Allah vergab ihnen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 145,
+          "ayahEnd": 146
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 10,
+          "ayahStart": 98,
+          "ayahEnd": 98
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 68,
+          "ayahStart": 48,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Gib die Menschen nie auf; Herzen können sich ändern.",
+        "Allah gibt denen, die zu Ihm zurückkehren, eine zweite Chance.",
+        "Geduld beim Rufen ist besser als übereilter Zorn."
+      ],
+      "quiz": [
+        {
+          "question": "Was wuchs am Ufer über Yunus?",
+          "options": [
+            "Eine Kürbispflanze",
+            "Eine Dattelpalme",
+            "Gras",
+            "Ein Feigenbaum"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:146"
+        },
+        {
+          "question": "Was tat das Volk des Yunus?",
+          "options": [
+            "Sie glaubten",
+            "Sie verließen die Stadt",
+            "Sie bekämpften ihn",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:148"
+        },
+        {
+          "question": "Welchem Volk nützte laut 10:98 sein Glaube im letzten Augenblick?",
+          "options": [
+            "Dem Volk des Yunus",
+            "Dem Volk Nuhs",
+            "Dem Volk Pharaos",
+            "'Ad"
+          ],
+          "answer": 0,
+          "reference": "Quran 10:98"
+        }
+      ]
+    },
+    {
+      "id": "yunus-4",
+      "title": "Sag nicht, du seist besser als Yunus",
+      "paragraphs": [
+        "Weil Yunus einen Fehler machte, könnten manche Menschen ihn geringschätzen. Der Prophet ﷺ verbot dies: „Kein Diener soll sagen: Ich bin besser als Yunus ibn Matta.“",
+        "Yunus bereute aufrichtig, und Allah erwählte ihn und machte ihn zu einem der Rechtschaffenen. Sein Bittgebet aus der Dunkelheit ist noch immer das Gebet jedes Gläubigen in Not."
+      ],
+      "kidsParagraphs": [
+        "Unser Prophet ﷺ sagte: „Niemand soll sagen: Ich bin besser als Yunus.“",
+        "Yunus entschuldigte sich bei Allah, und Allah machte ihn zu einem der Rechtschaffenen."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3416",
+          "narrator": "Abu Huraira",
+          "translation": "Der Prophet ﷺ sagte: „Es geziemt keinem Diener zu sagen: Ich bin besser als Yunus ibn Matta.“",
+          "match": "لا ينبغي لعبد ان يقول انا خير من يونس بن متى"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 68,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Achte alle Propheten.",
+        "Ein Fehler, dem Reue folgt, erniedrigt einen Menschen nicht vor Allah.",
+        "Verachte niemanden für eine vergangene Sünde, die er bereut hat."
+      ],
+      "quiz": [
+        {
+          "question": "Was soll laut dem Propheten ﷺ kein Diener sagen?",
+          "options": [
+            "Ich bin besser als Yunus ibn Matta",
+            "Ich liebe Yunus",
+            "Yunus war ein Prophet",
+            "Yunus war geduldig"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        },
+        {
+          "question": "Was tat Allah für Yunus nach seiner Reue?",
+          "options": [
+            "Er erwählte ihn und machte ihn zu einem der Rechtschaffenen",
+            "Er machte ihn zum König",
+            "Er gab ihm ein Schiff",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:50"
+        },
+        {
+          "question": "Wie hieß der Vater des Yunus laut dem Hadith?",
+          "options": [
+            "Matta",
+            "Yaqub",
+            "'Imran",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        }
+      ]
+    }
+  ]
+}

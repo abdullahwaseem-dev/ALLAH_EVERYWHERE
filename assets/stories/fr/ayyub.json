@@ -1,0 +1,249 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ayyub",
+  "language": "fr",
+  "name": "Ayyoub",
+  "title": "Le patient, un excellent serviteur",
+  "sentTo": "Son peuple ; le Coran ne le nomme pas",
+  "era": "Incertaine. Beaucoup de savants le placent parmi les descendants d'Ishaq (paix sur lui), peut-être avant Moussa (paix sur lui) ; le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Pas connu avec certitude. Certains récits le situent dans le Hauran, au sud de la Syrie.",
+      "lat": 32.75,
+      "lng": 36.3,
+      "approximate": true
+    }
+  ],
+  "summary": "Un prophète qu'Allah éprouva par une grave maladie et la perte de sa famille et de ses biens. Il ne se plaignit qu'à Allah, et Allah exauça sa prière, le guérit et lui rendit sa famille, et autant avec elle. Le Coran l'appelle un excellent serviteur, toujours revenant vers Allah.",
+  "notes": [
+    "La durée de la maladie d'Ayyoub (souvent dite de 18 ans), sa nature, et des détails comme l'abandon des gens, viennent de récits absents du Coran et des hadiths authentiques. Le Coran dit seulement que le mal et la peine l'avaient touché.",
+    "Le serment de 38:44 et la poignée d'herbes : le Coran ne dit pas quel était le serment. Beaucoup de commentateurs disent qu'il avait juré de frapper sa femme pour une parole qu'elle avait dite, et qu'il lui fut permis d'accomplir son serment avec douceur ; cette explication vient de récits, non de hadiths authentiques.",
+    "Sa place dans l'ordre des prophètes est approximative."
+  ],
+  "chapters": [
+    {
+      "id": "ayyub-1",
+      "title": "Une épreuve de patience",
+      "paragraphs": [
+        "Ayyoub (paix sur lui) était un prophète qu'Allah combla de bienfaits, puis éprouva. Il fut atteint dans son corps et perdit ce qu'il possédait, mais il ne se plaignit pas aux gens et ne perdit pas espoir.",
+        "Il invoqua son Seigneur avec une grande délicatesse : « Le mal m'a touché, et Tu es le plus miséricordieux des miséricordieux. » Il ne demanda pas directement la guérison ; il décrivit simplement son besoin à Celui qui sait le mieux, et mentionna Sa miséricorde.",
+        "Il dit aussi : « Shaytan m'a infligé peine et souffrance. » Les savants expliquent que les prophètes attribuaient le mal à Shaytan par politesse envers Allah, tout en sachant que tout arrive par le décret d'Allah."
+      ],
+      "kidsParagraphs": [
+        "Ayyoub tomba très malade et perdit beaucoup de choses. Mais il resta patient.",
+        "Il pria doucement : « Le mal m'a touché, et Tu es le plus miséricordieux. » Il avait entièrement confiance en Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 83,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 41,
+          "ayahEnd": 41
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Les récits populaires disent qu'Ayyoub fut malade dix-huit ans, que son corps fut couvert de vers, et que tous l'abandonnèrent sauf sa femme."
+        }
+      ],
+      "lessons": [
+        "La patience, c'est ne pas se plaindre aux gens, tout en se tournant vers Allah.",
+        "Les bonnes manières dans l'invocation : louer Allah et mentionner Sa miséricorde.",
+        "Les épreuves peuvent atteindre les meilleurs des gens."
+      ],
+      "quiz": [
+        {
+          "question": "Que dit Ayyoub dans sa prière ?",
+          "options": [
+            "Pourquoi moi ?",
+            "Le mal m'a touché, et Tu es le plus miséricordieux des miséricordieux",
+            "Donne-moi des richesses",
+            "Punis mes ennemis"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Auprès de qui Ayyoub se plaignait-il ?",
+          "options": [
+            "De son peuple",
+            "D'Allah seul",
+            "Des médecins",
+            "Du roi"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:83"
+        },
+        {
+          "question": "Qu'Ayyoub dit-il que Shaytan lui avait infligé ?",
+          "options": [
+            "Peine et souffrance",
+            "La richesse",
+            "La joie",
+            "Le sommeil"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:41"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-2",
+      "title": "Une source fraîche",
+      "paragraphs": [
+        "Allah lui répondit : « Frappe le sol de ton pied. Voici une eau fraîche pour te laver et pour boire. » Ayyoub fut guéri.",
+        "Allah lui rendit sa famille, et autant avec elle, par une miséricorde de Sa part et comme rappel pour les gens doués d'intelligence.",
+        "Allah lui donna aussi un moyen d'accomplir un serment qu'il avait fait sans causer de mal : prendre en main une poignée d'herbes et frapper avec. Et Allah le loua : « Nous l'avons trouvé patient. Quel excellent serviteur ! Il revenait sans cesse vers Allah. »"
+      ],
+      "kidsParagraphs": [
+        "Allah dit à Ayyoub : « Frappe le sol de ton pied. » Une source fraîche jaillit ; il se lava, but et fut guéri !",
+        "Allah lui rendit sa famille, et même plus. Allah l'appela « un excellent serviteur »."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 42,
+          "ayahEnd": 42
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 43,
+          "ayahEnd": 43
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        }
+      ],
+      "lessons": [
+        "Après l'épreuve vient le soulagement, par la miséricorde d'Allah.",
+        "Allah rend aux patients plus que ce qu'ils ont perdu.",
+        "Être « un excellent serviteur » est le plus bel éloge."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah dit-Il à Ayyoub de faire ?",
+          "options": [
+            "Frapper le sol de son pied",
+            "Voyager en Égypte",
+            "Construire une maison",
+            "Gravir une montagne"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Qu'est-ce qui sortit du sol ?",
+          "options": [
+            "De l'or",
+            "Une eau fraîche pour se laver et boire",
+            "Du feu",
+            "Des fruits"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:42"
+        },
+        {
+          "question": "Comment Allah décrivit-Il Ayyoub ?",
+          "options": [
+            "Patient, un excellent serviteur",
+            "Un grand roi",
+            "Un riche marchand",
+            "Un guerrier"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:44"
+        }
+      ]
+    },
+    {
+      "id": "ayyub-3",
+      "title": "Jamais sans la bénédiction d'Allah",
+      "paragraphs": [
+        "Le Prophète ﷺ nous a raconté qu'un jour, alors qu'Ayyoub se lavait, des sauterelles d'or tombèrent sur lui, et il se mit à les ramasser dans son vêtement.",
+        "Son Seigneur l'appela : « Ô Ayyoub, ne t'ai-Je pas suffisamment enrichi pour que tu n'aies pas besoin de ce que tu vois ? » Ayyoub répondit : « Si, par Ta puissance ! Mais je ne peux jamais me passer de Ta bénédiction. »",
+        "Ayyoub avait été patient dans la pauvreté et la maladie, et il fut reconnaissant dans la richesse. Il savait que tout bien vient d'Allah, et qu'un serviteur a toujours besoin de davantage de Sa bénédiction."
+      ],
+      "kidsParagraphs": [
+        "Un jour, des sauterelles d'or tombèrent sur Ayyoub, et il les ramassa.",
+        "Allah demanda : « Ne t'ai-Je pas enrichi ? » Ayyoub dit : « Si ! Mais j'ai toujours besoin de Ta bénédiction. »"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "279",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Prophète ﷺ a dit : « Alors qu'Ayyoub se lavait, nu, des sauterelles d'or tombèrent sur lui, et Ayyoub se mit à les ramasser à pleines mains dans son vêtement. Son Seigneur l'appela : “Ô Ayyoub, ne t'ai-Je pas suffisamment enrichi pour que tu n'aies pas besoin de ce que tu vois ?” Il dit : “Si, par Ta puissance ! Mais je ne peux jamais me passer de Ta bénédiction.” »",
+          "match": "بينا ايوب يغتسل عريانا فخر عليه جراد من ذهب"
+        }
+      ],
+      "lessons": [
+        "Sois patient dans l'épreuve et reconnaissant dans l'aisance.",
+        "Nous avons toujours besoin de la bénédiction d'Allah, quoi que nous possédions.",
+        "La richesse qui vient d'Allah est un bienfait à recevoir avec gratitude."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui tomba sur Ayyoub pendant qu'il se lavait ?",
+          "options": [
+            "Des sauterelles d'or",
+            "De la pluie",
+            "Des dattes",
+            "Des pierres"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "De quoi Ayyoub dit-il ne jamais pouvoir se passer ?",
+          "options": [
+            "De sa famille",
+            "De la bénédiction d'Allah",
+            "De l'eau",
+            "De l'or"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        },
+        {
+          "question": "Ayyoub fut patient dans la maladie et … dans la richesse.",
+          "options": [
+            "Orgueilleux",
+            "Reconnaissant",
+            "Insouciant",
+            "Craintif"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 279"
+        }
+      ]
+    }
+  ]
+}

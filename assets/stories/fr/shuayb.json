@@ -1,0 +1,338 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "shuayb",
+  "language": "fr",
+  "name": "Chou'ayb",
+  "title": "Le messager envoyé à Madyan, qui appela au commerce honnête",
+  "sentTo": "Les gens de Madyan et les « gens d'al-Ayka » (le bosquet)",
+  "era": "Avant Moussa (paix sur lui) ; il rappela à Madyan le sort du peuple de Lout, qui n'était « pas loin » d'eux (11:89). Aucune date n'est donnée.",
+  "places": [
+    {
+      "name": "Madyan, au nord-ouest de l'Arabie, à l'est du golfe d'Aqaba.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    }
+  ],
+  "summary": "Chou'ayb fut envoyé à Madyan, un peuple de commerçants qui trichait sur les poids et mesures, détroussait les voyageurs et détournait les gens du chemin d'Allah. Il les appela à adorer Allah et à commercer honnêtement. Les notables arrogants menacèrent de le chasser, et un châtiment les saisit, tandis que Chou'ayb et les croyants furent sauvés.",
+  "notes": [
+    "Les gens de Madyan et les « gens d'al-Ayka » (26:176) étaient-ils le même peuple ? Les savants divergent : certains disent qu'il s'agit d'un seul peuple, d'autres de deux peuples différents vers lesquels Chou'ayb fut envoyé.",
+    "Le vieil homme de Madyan dont Moussa épousa la fille (28:23-28) est appelé Chou'ayb dans beaucoup de livres. Beaucoup de savants, dont Ibn Kathir, en ont douté, car Chou'ayb vécut longtemps avant Moussa ; le Coran ne le nomme pas.",
+    "Le Coran décrit le châtiment comme un tremblement de terre (7:91), un cri (11:94) et « le châtiment du jour de l'ombre (nuage) » (26:189) ; les savants y voient les parties d'un même événement ou la description de deux peuples."
+  ],
+  "chapters": [
+    {
+      "id": "shuayb-1",
+      "title": "Des poids et mesures honnêtes",
+      "paragraphs": [
+        "Madyan était une ville de commerçants sur les routes des caravanes. Allah leur envoya leur frère Chou'ayb (paix sur lui) avec le message de tout prophète : « Ô mon peuple, adorez Allah ; vous n'avez pas d'autre divinité que Lui. »",
+        "Il nomma aussi leur péché particulier : ils trichaient dans le commerce. « Donnez la pleine mesure et le juste poids, ne lésez pas les gens dans leurs biens, et ne semez pas la corruption sur terre après qu'elle a été réformée. »",
+        "Il leur rappela qu'un petit gain licite, ce qui reste auprès d'Allah, vaut mieux pour eux qu'un grand gain obtenu par la tricherie, s'ils étaient croyants."
+      ],
+      "kidsParagraphs": [
+        "Les gens de Madyan trichaient en vendant. Ils donnaient aux gens moins que ce qu'ils avaient payé.",
+        "Chou'ayb leur dit : « N'adorez qu'Allah, et soyez honnêtes quand vous achetez et vendez ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 84,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 181,
+          "ayahEnd": 183
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 86,
+          "ayahEnd": 86
+        }
+      ],
+      "lessons": [
+        "L'honnêteté dans les affaires fait partie de l'adoration.",
+        "Un petit gain licite vaut mieux qu'un grand gain illicite.",
+        "Tromper les gens répand la corruption dans la société."
+      ],
+      "quiz": [
+        {
+          "question": "Que faisaient les gens de Madyan de mal dans le commerce ?",
+          "options": [
+            "Ils donnaient trop",
+            "Ils trichaient sur les poids et mesures",
+            "Ils refusaient de vendre",
+            "Ils ne vendaient qu'aux riches"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:84"
+        },
+        {
+          "question": "Qu'est-ce que Chou'ayb dit être meilleur pour eux ?",
+          "options": [
+            "Ce qui reste (licite) auprès d'Allah",
+            "Plus d'or",
+            "Plus de terres",
+            "Un plus grand marché"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:86"
+        },
+        {
+          "question": "Quelle était la première partie du message de Chou'ayb ?",
+          "options": [
+            "Adorer Allah seul",
+            "Construire un navire",
+            "Quitter la ville",
+            "Combattre le roi"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:85"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-2",
+      "title": "« Est-ce ta prière qui te commande ? »",
+      "paragraphs": [
+        "Les gens se moquèrent de lui : « Ô Chou'ayb, est-ce ta prière qui te commande que nous abandonnions ce qu'adoraient nos pères, ou que nous cessions de faire ce que nous voulons de nos biens ? » Ils ne voyaient pas pourquoi la religion aurait son mot à dire sur l'argent.",
+        "Chou'ayb répondit avec douceur et sagesse. Il ne voulait pas leur interdire une chose pour la faire ensuite lui-même. « Je ne veux que réformer, autant que je le peux, dit-il. Ma réussite ne vient que d'Allah. En Lui je place ma confiance, et vers Lui je reviens. »",
+        "Il leur rappela ce qui était arrivé aux peuples de Nouh, de Houd et de Salih, et au peuple de Lout, qui n'était pas loin d'eux, et il leur demanda d'implorer le pardon de leur Seigneur, car Il est Miséricordieux et Plein d'amour."
+      ],
+      "kidsParagraphs": [
+        "Les gens rirent : « Est-ce ta prière qui te dit ce que nous devons faire de notre argent ? »",
+        "Chou'ayb dit : « Je ne veux que réformer. Ma réussite ne vient que d'Allah. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "L'islam guide chaque partie de la vie, y compris la façon de gagner et de dépenser.",
+        "Celui qui appelle au bien met en pratique ce qu'il prêche.",
+        "La réussite ne vient que d'Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Que demandèrent les gens à Chou'ayb pour se moquer ?",
+          "options": [
+            "Est-ce ta prière qui te commande… ?",
+            "Où est ton armée ?",
+            "Qui est ton père ?",
+            "Pourquoi es-tu riche ?"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:87"
+        },
+        {
+          "question": "Que dit Chou'ayb vouloir ?",
+          "options": [
+            "Devenir roi",
+            "Seulement réformer, autant qu'il le pouvait",
+            "Leurs biens",
+            "Partir"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:88"
+        },
+        {
+          "question": "Quel peuple ancien Chou'ayb dit-il n'être « pas loin » d'eux ?",
+          "options": [
+            "Le peuple de Lout",
+            "Le peuple de Moussa",
+            "Les Romains",
+            "Le peuple de Younous"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:89"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-3",
+      "title": "Les menaces",
+      "paragraphs": [
+        "Les notables arrogants le menacèrent : « Nous te chasserons de notre cité, ô Chou'ayb, toi et ceux qui ont cru avec toi, à moins que vous ne reveniez à notre religion. » Chou'ayb répondit : « Même si nous la détestons ? Nous inventerions un mensonge contre Allah si nous revenions à votre religion après qu'Allah nous en a sauvés. »",
+        "Ils dirent aussi : « Nous ne comprenons pas grand-chose à ce que tu dis, et nous te voyons faible parmi nous. Sans ton clan, nous t'aurions lapidé. » Chou'ayb demanda : « Mon clan vous est-il plus cher qu'Allah ? »",
+        "Il leur dit de continuer comme ils faisaient, et qu'il continuerait de son côté : bientôt ils sauraient qui recevrait un châtiment humiliant, et qui était le menteur."
+      ],
+      "kidsParagraphs": [
+        "Les notables dirent : « Quitte notre ville, ou reviens à notre religion ! »",
+        "Chou'ayb fut courageux. Il dit : « Nous n'abandonnerons jamais la vérité qu'Allah nous a donnée. »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 88,
+          "ayahEnd": 89
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 91,
+          "ayahEnd": 92
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        }
+      ],
+      "lessons": [
+        "N'échange jamais ta foi contre la sécurité ou le confort.",
+        "La crainte d'Allah doit être plus grande que la crainte des gens.",
+        "La vérité n'a pas besoin de la force d'un clan pour la soutenir."
+      ],
+      "quiz": [
+        {
+          "question": "De quoi les notables menacèrent-ils Chou'ayb ?",
+          "options": [
+            "De l'enrichir",
+            "De le chasser de la cité",
+            "D'en faire leur chef",
+            "De lui donner des terres"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:88"
+        },
+        {
+          "question": "Pourquoi les notables dirent-ils ne pas l'avoir lapidé ?",
+          "options": [
+            "À cause de son clan",
+            "À cause du roi",
+            "Parce qu'il était fort",
+            "À cause des anges"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:91"
+        },
+        {
+          "question": "Que leur demanda Chou'ayb au sujet de son clan ?",
+          "options": [
+            "Mon clan vous est-il plus cher qu'Allah ?",
+            "Où est mon clan ?",
+            "Allez-vous vous marier dans mon clan ?",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:92"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-4",
+      "title": "Comme s'ils n'y avaient jamais vécu",
+      "paragraphs": [
+        "Quand vint l'ordre d'Allah, Il sauva par Sa miséricorde Chou'ayb et ceux qui avaient cru avec lui, et un cri terrible et un tremblement de terre saisirent les injustes. Ils gisaient sans vie dans leurs demeures, comme s'ils n'y avaient jamais vécu.",
+        "Chou'ayb se détourna d'eux en disant : « Ô mon peuple, je vous ai transmis les messages de mon Seigneur et je vous ai conseillés. Comment m'affligerais-je pour un peuple mécréant ? »",
+        "Le Coran décrit le châtiment des « gens d'al-Ayka », qui rejetèrent eux aussi Chou'ayb, comme « le châtiment du jour de l'ombre ». Ils l'avaient défié de faire tomber sur eux des morceaux du ciel, et il vint sous la forme d'un jour terrible."
+      ],
+      "kidsParagraphs": [
+        "Allah sauva Chou'ayb et les croyants. Ceux qui trichaient et refusaient furent anéantis.",
+        "L'honnêteté et la foi sauvent ; la tricherie et l'orgueil détruisent."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 94,
+          "ayahEnd": 95
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 187,
+          "ayahEnd": 189
+        }
+      ],
+      "lessons": [
+        "L'injustice dans la société mène finalement à la destruction.",
+        "Allah sauve les croyants par Sa miséricorde.",
+        "Le devoir de tout avertisseur est de transmettre le message ; la guidée vient d'Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui saisit les injustes de Madyan ?",
+          "options": [
+            "Un déluge",
+            "Un cri terrible",
+            "Un vent",
+            "Des sauterelles"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        },
+        {
+          "question": "Comment s'appelle le châtiment des gens d'al-Ayka ?",
+          "options": [
+            "Le jour de l'ombre (nuage)",
+            "Le jour du déluge",
+            "Le jour du feu",
+            "Le jour du vent"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:189"
+        },
+        {
+          "question": "Qui fut sauvé ?",
+          "options": [
+            "Personne",
+            "Chou'ayb et ceux qui avaient cru",
+            "Seulement les notables",
+            "Seulement les marchands"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        }
+      ]
+    }
+  ]
+}

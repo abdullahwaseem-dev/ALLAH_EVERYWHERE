@@ -1,0 +1,100 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dhulkifl",
+  "language": "fr",
+  "name": "Dhoul-Kifl",
+  "title": "L'un des patients et des meilleurs",
+  "sentTo": "Son peuple ; le Coran ne le nomme pas",
+  "era": "Incertaine. Les savants divergent sur l'époque où il vécut ; sa place dans cet ordre est approximative.",
+  "places": [
+    {
+      "name": "Inconnu. Certains récits le situent en Irak ; d'autres l'identifient à Ézéchiel (Hizqil).",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Dhoul-Kifl est mentionné deux fois dans le Coran, parmi les patients, les vertueux et les meilleurs. Le Coran ne nous dit rien de plus sur sa vie, et les savants divergent même sur la question de savoir s'il était prophète ou homme vertueux.",
+  "notes": [
+    "Dhoul-Kifl était-il prophète ? La plupart des savants disent oui, car le Coran le nomme parmi les prophètes. Certains savants anciens ont dit qu'il était un homme vertueux, non un prophète.",
+    "Son nom signifie « celui qui a une part » ou « celui qui a pris une responsabilité ». Des récits l'expliquent par l'histoire d'un homme qui promit de jeûner le jour, de prier la nuit et de juger sans colère ; ces récits ne sont ni dans le Coran ni dans les hadiths authentiques.",
+    "Certains l'identifient au prophète Ézéchiel (Hizqil) de la Bible, d'autres à d'autres personnages ; rien de tout cela n'est certain."
+  ],
+  "chapters": [
+    {
+      "id": "dhulkifl-1",
+      "title": "Nommé parmi les patients",
+      "paragraphs": [
+        "Allah dit dans le Coran : « Et Ismaïl, Idris et Dhoul-Kifl : tous étaient parmi les patients. Et Nous les avons fait entrer dans Notre miséricorde ; ils étaient parmi les vertueux. »",
+        "Ailleurs, Allah nous demande de nous rappeler Ismaïl, al-Yasa' et Dhoul-Kifl, « et tous sont parmi les meilleurs ».",
+        "C'est tout ce qu'Allah nous a dit de lui. Il suffit de savoir qu'Allah Lui-même l'a loué pour sa patience et sa vertu, et l'a placé parmi les meilleurs de Ses serviteurs. Allah nous a caché certaines choses, et nous n'inventons pas ce qu'Il ne nous a pas dit."
+      ],
+      "kidsParagraphs": [
+        "Dhoul-Kifl est nommé dans le Coran avec Ismaïl et Idris comme l'un des patients et des bons.",
+        "Allah nous a dit peu de choses sur lui, et ce peu est un grand éloge !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Une histoire populaire dit que Dhoul-Kifl promit à son peuple de jeûner chaque jour, de prier chaque nuit et de juger sans colère, et qu'Iblis tenta de le mettre en colère sans y parvenir."
+        }
+      ],
+      "lessons": [
+        "La patience est louée par Allah encore et encore.",
+        "Nous ne disons sur le passé caché que ce qu'Allah et Son Messager ﷺ nous ont dit.",
+        "L'éloge d'Allah est le plus grand honneur, que les gens connaissent ton histoire ou non."
+      ],
+      "quiz": [
+        {
+          "question": "Avec quels prophètes Dhoul-Kifl est-il nommé parmi les patients ?",
+          "options": [
+            "Ismaïl et Idris",
+            "Moussa et Haroun",
+            "Dawud et Sulayman",
+            "Younous et Ayyoub"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:85"
+        },
+        {
+          "question": "Comment le Coran (38:48) décrit-il Dhoul-Kifl, Ismaïl et al-Yasa' ?",
+          "options": [
+            "Parmi les meilleurs",
+            "Des rois",
+            "Des marchands",
+            "Des guerriers"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Dans quoi Allah les fit-Il entrer ?",
+          "options": [
+            "Un palais",
+            "Sa miséricorde",
+            "Un navire",
+            "Une ville"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:86"
+        }
+      ]
+    }
+  ]
+}

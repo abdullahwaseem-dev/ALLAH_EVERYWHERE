@@ -11,11 +11,15 @@ import 'package:allah_everywhere/services/tasbeeh_service.dart';
 import 'package:allah_everywhere/services/reading_stats_service.dart';
 import 'package:allah_everywhere/services/account_service.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
 import 'About_us.dart';
 import 'bookmarks_screen.dart';
 import 'login.dart';
 import 'notification.dart';
 import 'editprofilescreen.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
+import 'package:allah_everywhere/widgets/reward_cosmetics.dart';
+import 'package:allah_everywhere/rewards.dart';
 
 class _ProfileData {
   final String name;
@@ -40,6 +44,7 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   late Future<_ProfileData> _profileFuture;
+  bool _profileImageFailed = false;
 
   @override
   void initState() {
@@ -54,33 +59,43 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<_ProfileData> _getUserProfile() async {
-    User? user = FirebaseAuth.instance.currentUser;
+    final User? user = FirebaseAuth.instance.currentUser;
 
     int tasbeehTotal = TasbeehService().lifetimeTotal;
     int hadithRead = ReadingStatsService().hadithReadCount;
 
-    if (user != null) {
-      DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+    // Start from what we already know locally, so the screen can render even if
+    // Firestore is unreachable (offline, slow network, or a transient error).
+    String name = (user?.displayName?.trim().isNotEmpty ?? false)
+        ? user!.displayName!.trim()
+        : (user?.email ?? 'Guest');
+    String? profilePicUrl = user?.photoURL;
 
-      if (userDoc.exists) {
-        final data = userDoc.data() as Map<String, dynamic>? ?? {};
-        final name = data['name'] as String? ?? 'No Name';
-        final profilePicUrl = data['profilePicture'] as String?;
-        // Firestore may hold a higher total synced from another device.
-        tasbeehTotal = (data['tasbeehTotal'] as num?)?.toInt() ?? tasbeehTotal;
-        hadithRead = (data['hadithReadCount'] as num?)?.toInt() ?? hadithRead;
-        return _ProfileData(
-          name: name,
-          profilePicUrl: (profilePicUrl != null && profilePicUrl.isNotEmpty) ? profilePicUrl : null,
-          tasbeehTotal: tasbeehTotal,
-          hadithRead: hadithRead,
-        );
+    if (user != null) {
+      try {
+        final userDoc =
+            await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+
+        if (userDoc.exists) {
+          final data = userDoc.data() ?? <String, dynamic>{};
+          final docName = (data['name'] as String?)?.trim();
+          if (docName != null && docName.isNotEmpty) name = docName;
+          final docPic = data['profilePicture'] as String?;
+          if (docPic != null && docPic.isNotEmpty) profilePicUrl = docPic;
+          // Firestore may hold a higher total synced from another device.
+          tasbeehTotal = (data['tasbeehTotal'] as num?)?.toInt() ?? tasbeehTotal;
+          hadithRead = (data['hadithReadCount'] as num?)?.toInt() ?? hadithRead;
+        }
+      } catch (_) {
+        // Network/Firestore hiccup: keep the local/auth fallback values above
+        // instead of failing the whole profile screen.
       }
     }
 
     return _ProfileData(
-      name: 'Guest',
-      profilePicUrl: null,
+      name: name,
+      profilePicUrl:
+          (profilePicUrl != null && profilePicUrl.isNotEmpty) ? profilePicUrl : null,
       tasbeehTotal: tasbeehTotal,
       hadithRead: hadithRead,
     );
@@ -106,7 +121,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
-      body: FutureBuilder<_ProfileData>(
+      body: ReadableWidth(child: FutureBuilder<_ProfileData>(
         future: _profileFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -127,13 +142,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Center(
                     child: Container(
                       padding: EdgeInsets.all(4.w),
-                      decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: accent, width: 2.5)),
+                      decoration: avatarFrameDecoration(accent),
                       child: CircleAvatar(
                         radius: 52.r,
                         backgroundColor: isDark ? VoidColors.cardDark : VoidColors.cardLight,
-                        backgroundImage: userProfile.profilePicUrl != null
+                        backgroundImage: (userProfile.profilePicUrl != null && !_profileImageFailed)
                             ? NetworkImage(userProfile.profilePicUrl!)
                             : AssetImage(VoidImages.profile) as ImageProvider,
+                        onBackgroundImageError: (_, __) {
+                          // A broken/expired profile picture URL must not
+                          // crash the screen - fall back to the default.
+                          if (mounted && !_profileImageFailed) {
+                            setState(() => _profileImageFailed = true);
+                          }
+                        },
                       ),
                     ),
                   ),
@@ -185,6 +207,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: Column(
                       children: [
                         _buildMenuItem(
+                          icon: Iconsax.award,
+                          text: t.rewardsTitle,
+                          textColor: textColor,
+                          onTap: () async {
+                            await Get.to(() => const RewardsScreen());
+                            // A new profile frame may have been chosen.
+                            if (mounted) setState(() {});
+                          },
+                        ),
+                        _buildMenuItem(
                           icon: Iconsax.bookmark,
                           text: t.bookmarks,
                           textColor: textColor,
@@ -234,14 +266,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 130.h),
+                  SizedBox(height: navBarClearance(context)),
                 ],
               ),
             );
           }
           return Container(); // Default return for any unexpected case
         },
-      ),
+      )),
     );
   }
 
@@ -252,8 +284,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
     required VoidCallback onTap,
     bool isLast = false,
   }) {
-    return InkWell(
+    return PressableTile(
       onTap: onTap,
+      semanticLabel: text,
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 13.h),
         decoration: isLast

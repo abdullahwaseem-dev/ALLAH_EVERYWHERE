@@ -1,0 +1,349 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dawud",
+  "language": "fr",
+  "name": "Dawud",
+  "title": "Le roi et prophète à qui fut donné le Zabour",
+  "sentTo": "Les Enfants d'Israël, sur lesquels il régna",
+  "era": "Les historiens le datent généralement vers 1000 av. J.-C. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Jérusalem (al-Quds) et la terre de Palestine, où il régna.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Dawud était un jeune soldat qui tua le tyran Jalout (Goliath) avec la permission d'Allah. Allah lui donna la royauté, la prophétie, la sagesse et le Zabour (les Psaumes). Les montagnes et les oiseaux glorifiaient Allah avec lui, et le fer fut rendu malléable pour lui. Il jugeait avec justice, ne mangeait que du fruit de son propre travail, et adorait Allah nuit et jour.",
+  "notes": [
+    "L'histoire selon laquelle Dawud désira la femme de l'un de ses soldats (Urie) vient de la Bible et des récits des Gens du Livre. Des savants comme Ibn Kathir l'ont rejetée comme indigne d'un prophète. Le Coran dit seulement que Dawud comprit qu'il avait été éprouvé, demanda pardon et fut pardonné (38:24-25) ; les savants divergent sur la nature de l'épreuve.",
+    "Talout (Saül) et Jalout (Goliath) sont nommés dans le Coran ; les autres détails de la bataille viennent de l'histoire.",
+    "Le « Zabour » donné à Dawud est généralement identifié aux Psaumes, mais les Psaumes actuels ne sont pas considérés comme la révélation originale inchangée."
+  ],
+  "chapters": [
+    {
+      "id": "dawud-1",
+      "title": "Le jeune homme qui tua Jalout",
+      "paragraphs": [
+        "Après Moussa (paix sur lui), les Enfants d'Israël demandèrent un roi, et Allah désigna Talout. Tandis que l'armée marchait contre le tyran Jalout, Talout les éprouva par une rivière : quiconque y boirait à satiété ne serait pas des siens. La plupart burent ; seuls quelques-uns réussirent l'épreuve.",
+        "Quand la petite armée vit Jalout et ses soldats, les croyants prièrent : « Notre Seigneur, déverse sur nous la patience, affermis nos pas et donne-nous la victoire sur le peuple mécréant. »",
+        "Avec la permission d'Allah, ils les mirent en déroute, et un jeune homme nommé Dawud tua Jalout. Allah donna à Dawud la royauté et la sagesse et lui enseigna ce qu'Il voulut."
+      ],
+      "kidsParagraphs": [
+        "Une petite armée de croyants affronta le guerrier géant Jalout.",
+        "Le jeune Dawud tua Jalout avec la permission d'Allah ! Puis Allah fit de Dawud un roi et un prophète."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 249,
+          "ayahEnd": 249
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 250,
+          "ayahEnd": 250
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 251,
+          "ayahEnd": 251
+        }
+      ],
+      "lessons": [
+        "La victoire vient d'Allah, non du nombre.",
+        "La maîtrise de soi, comme l'épreuve de la rivière, prépare aux grandes tâches.",
+        "Demande la patience et la fermeté face à l'épreuve."
+      ],
+      "quiz": [
+        {
+          "question": "Qui tua Jalout (Goliath) ?",
+          "options": [
+            "Talout",
+            "Dawud",
+            "Sulayman",
+            "Moussa"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:251"
+        },
+        {
+          "question": "Comment Talout éprouva-t-il son armée ?",
+          "options": [
+            "Par une rivière",
+            "Par une course",
+            "Par un jeûne",
+            "Par de l'or"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:249"
+        },
+        {
+          "question": "Que demandèrent les croyants avant la bataille ?",
+          "options": [
+            "La patience, la fermeté et la victoire",
+            "La richesse",
+            "Un roi",
+            "La pluie"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:250"
+        }
+      ]
+    },
+    {
+      "id": "dawud-2",
+      "title": "Les montagnes, les oiseaux et le fer",
+      "paragraphs": [
+        "Allah accorda à Dawud une faveur particulière. Quand il glorifiait Allah, les montagnes et les oiseaux glorifiaient Allah avec lui, matin et soir. Allah lui donna le Zabour, un livre révélé.",
+        "Allah rendit le fer malléable entre ses mains et lui apprit à fabriquer des cottes de mailles, en mesurant soigneusement les mailles, pour protéger les gens au combat. « Faites le bien », dit Allah à lui et à sa famille.",
+        "Bien que roi, Dawud vivait de son propre travail. Le Prophète ﷺ a dit : « Dawud (paix sur lui) ne mangeait que du fruit du travail de ses mains. »"
+      ],
+      "kidsParagraphs": [
+        "Quand Dawud louait Allah, les montagnes et les oiseaux louaient Allah avec lui !",
+        "Allah rendit le fer souple pour lui, et il fabriquait des armures. Même roi, il gagnait sa propre nourriture."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 163,
+          "ayahEnd": 163
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 34,
+          "ayahStart": 11,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2073",
+          "narrator": "Abu Hurayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « Dawud (paix sur lui) ne mangeait que du fruit du travail de ses mains. »",
+          "match": "ان داود عليه السلام كان لا ياكل الا من عمل يده"
+        }
+      ],
+      "lessons": [
+        "Toute la création glorifie Allah ; joins-toi à elle par ton rappel.",
+        "Travailler de ses mains est honorable, même pour un roi.",
+        "Les compétences et la technique sont des bienfaits à utiliser pour le bien."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'est-ce qui glorifiait Allah avec Dawud ?",
+          "options": [
+            "Les montagnes et les oiseaux",
+            "Les mers",
+            "Les étoiles",
+            "Les djinns"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "Qu'Allah rendit-Il malléable pour Dawud ?",
+          "options": [
+            "La pierre",
+            "Le fer",
+            "L'or",
+            "Le bois"
+          ],
+          "answer": 1,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "De quoi Dawud mangeait-il, selon le Prophète ﷺ ?",
+          "options": [
+            "Du trésor public",
+            "Du travail de ses mains",
+            "Des cadeaux",
+            "Des impôts"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 2073"
+        }
+      ]
+    },
+    {
+      "id": "dawud-3",
+      "title": "Juger avec vérité",
+      "paragraphs": [
+        "Un jour, deux hommes escaladèrent le mur du sanctuaire privé où Dawud priait, et il prit peur. « N'aie pas peur, dirent-ils. Nous sommes deux parties en litige. Juge entre nous avec vérité. » L'un dit : « Mon frère a quatre-vingt-dix-neuf brebis et moi une seule, et il insiste pour que je la lui donne. »",
+        "Dawud jugea que l'homme avait lésé son frère, et que beaucoup d'associés se font du tort, sauf ceux qui croient et font le bien. Puis Dawud comprit qu'Allah l'avait éprouvé. Il demanda pardon à son Seigneur, tomba incliné et se repentit, et Allah lui pardonna.",
+        "Allah dit : « Ô Dawud, Nous avons fait de toi un successeur sur terre ; juge donc entre les gens avec vérité et ne suis pas la passion, sinon elle t'égarera du chemin d'Allah. »"
+      ],
+      "kidsParagraphs": [
+        "Deux hommes vinrent voir Dawud avec un problème, et il jugea entre eux.",
+        "Puis Dawud demanda pardon à Allah, et Allah lui pardonna. Allah lui dit : « Juge toujours avec justice ! »"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 21,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Un récit des Gens du Livre dit que l'épreuve de Dawud fut qu'il désira la femme de l'un de ses soldats. Des savants comme Ibn Kathir l'ont rejeté."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Un juge doit écouter les deux parties et suivre la vérité, non la passion.",
+        "Même les meilleurs reviennent vers Allah par le repentir.",
+        "Le pouvoir est un dépôt confié par Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Combien de brebis avait le frère du premier homme ?",
+          "options": [
+            "Dix",
+            "Quatre-vingt-dix-neuf",
+            "Cent",
+            "Sept"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:23"
+        },
+        {
+          "question": "Que fit Dawud quand il comprit qu'il avait été éprouvé ?",
+          "options": [
+            "Il demanda pardon et tomba incliné",
+            "Il se mit en colère",
+            "Il quitta la ville",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:24"
+        },
+        {
+          "question": "Qu'Allah dit-Il à Dawud de ne pas suivre en jugeant ?",
+          "options": [
+            "Sa passion",
+            "La Torah",
+            "Son fils",
+            "Les anciens"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:26"
+        }
+      ]
+    },
+    {
+      "id": "dawud-4",
+      "title": "L'adoration de Dawud",
+      "paragraphs": [
+        "Allah décrit Dawud comme un homme de force, qui revenait sans cesse vers Lui.",
+        "Le Prophète ﷺ a dit : « Le jeûne le plus aimé d'Allah est le jeûne de Dawud : il jeûnait un jour et ne jeûnait pas le suivant. Et la prière la plus aimée d'Allah est la prière de Dawud : il dormait la moitié de la nuit, en priait un tiers et en dormait un sixième. »",
+        "Roi d'un grand royaume, il trouvait pourtant le temps de longues prières nocturnes et d'un jeûne régulier. Son adoration était équilibrée : forte, constante et durable."
+      ],
+      "kidsParagraphs": [
+        "Dawud jeûnait un jour sur deux, et se levait la nuit pour prier.",
+        "Le Prophète ﷺ a dit que c'était le jeûne et la prière les plus aimés d'Allah."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 17,
+          "ayahEnd": 18
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3420",
+          "narrator": "Abdallah ibn 'Amr",
+          "translation": "Le Messager d'Allah ﷺ m'a dit : « Le jeûne le plus aimé d'Allah est le jeûne de Dawud : il jeûnait un jour et ne jeûnait pas un jour. Et la prière la plus aimée d'Allah est la prière de Dawud : il dormait la moitié de la nuit, se tenait en prière un tiers, et dormait un sixième. »",
+          "match": "احب الصيام الى الله صيام داود كان يصوم يوما ويفطر يوما"
+        }
+      ],
+      "lessons": [
+        "L'adoration constante et équilibrée est la plus aimée d'Allah.",
+        "Les gens occupés peuvent quand même trouver du temps pour la prière de nuit.",
+        "Revenir souvent vers Allah est une qualité des prophètes."
+      ],
+      "quiz": [
+        {
+          "question": "Comment Dawud jeûnait-il ?",
+          "options": [
+            "Chaque jour",
+            "Un jour oui, un jour non",
+            "Seulement pendant le Ramadan",
+            "Une fois par an"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Quelle part de la nuit Dawud passait-il en prière ?",
+          "options": [
+            "Un tiers",
+            "Toute la nuit",
+            "Aucune",
+            "Un dixième"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Comment le Coran décrit-il Dawud en 38:17 ?",
+          "options": [
+            "Revenant sans cesse vers Allah",
+            "Paresseux",
+            "Orgueilleux",
+            "Craintif"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:17"
+        }
+      ]
+    }
+  ]
+}

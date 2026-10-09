@@ -1,0 +1,254 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yaqub",
+  "language": "zh",
+  "name": "叶尔孤白",
+  "title": "伊斯拉伊来，十二支派之父",
+  "sentTo": "他的家人和后裔，以色列的后裔",
+  "era": "易卜拉欣（愿主赐他平安）的孙子。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "迦南（巴勒斯坦），他和儿子们在那里生活。",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "埃及，他在晚年到那里与优素福（愿主赐他平安）团聚。",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "易司哈格（愿主赐他平安）的儿子，优素福（愿主赐他平安）和他兄弟们的父亲，以色列后裔的十二支派都出自他们。他以失去优素福时美好的忍耐而闻名，也以他给儿子们的临终嘱咐而闻名：只崇拜真主，至死都做穆斯林。",
+  "notes": [
+    "许多学者认为《古兰经》中的“伊斯拉伊来”（例如3:93）是叶尔孤白的另一个名字。这是通行的观点，依据是《古兰经》的措辞和圣门弟子的传述。",
+    "关于叶尔孤白的青年时代、他的孪生兄弟和他的婚姻的故事，主要来自《圣经》。",
+    "他的眼睛怎么了（12:84）：学者们对他是完全失明，还是因悲伤而视力大为减弱，看法不一。"
+  ],
+  "chapters": [
+    {
+      "id": "yaqub-1",
+      "title": "信仰之家",
+      "paragraphs": [
+        "叶尔孤白（愿主赐他平安）是易司哈格的儿子、易卜拉欣（愿主赐他平安）的孙子。真主把他作为额外的恩赐赏给易卜拉欣，并使他们每一个人都成为先知。",
+        "易卜拉欣曾嘱咐他的儿子们，叶尔孤白也嘱咐自己的儿子们：“我的孩子们！真主确已为你们拣选了这个宗教，所以你们除非成了顺服祂的穆斯林，否则不要死去。”",
+        "叶尔孤白有十二个儿子。最小的两个，优素福和他的弟弟，特别得他的疼爱，而他对他们的爱，将成为一场漫长考验的开端。"
+      ],
+      "kidsParagraphs": [
+        "叶尔孤白是易司哈格的儿子、易卜拉欣的孙子。他有十二个儿子。",
+        "他对儿子们说：“真主为你们拣选了这个宗教。要一直做穆斯林！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 49,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 132,
+          "ayahEnd": 132
+        }
+      ],
+      "lessons": [
+        "父母通过教导和榜样把信仰传下去。",
+        "最重要的嘱咐是坚守伊斯兰直到去世。",
+        "每个家庭都有考验；信仰帮助我们渡过难关。"
+      ],
+      "quiz": [
+        {
+          "question": "叶尔孤白的父亲是谁？",
+          "options": [
+            "易司马仪",
+            "易司哈格",
+            "易卜拉欣",
+            "优素福"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:49"
+        },
+        {
+          "question": "叶尔孤白对儿子们说了什么？",
+          "options": [
+            "要变得富有",
+            "除非做了穆斯林，否则不要死去",
+            "离开埃及",
+            "建一座城"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:132"
+        },
+        {
+          "question": "下面哪一位是叶尔孤白的儿子？",
+          "options": [
+            "优素福",
+            "穆萨",
+            "尔撒",
+            "叶哈雅"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-2",
+      "title": "美好的忍耐",
+      "paragraphs": [
+        "有一天，优素福的哥哥们把他带走了，傍晚时哭着回来，带着他沾了假血的衬衣。他们说他被狼吃了。叶尔孤白知道他们没有说实话，但他说：“我只有美好的忍耐。对于你们所叙述的事，只有真主是应当求助的。”",
+        "许多年后，另一个儿子被扣留在埃及，他的悲伤又回来了。他转过身去说：“优素福啊，我多么悲伤！”他的眼睛因忧伤而变白了，但他抑制住了怒气。",
+        "儿子们说他会因悲伤而毁了自己。他回答说：“我只向真主诉说我的忧愁和悲伤，我从真主那里知道你们所不知道的。我的孩子们！你们去寻找优素福和他的弟弟吧，不要对真主的慈恩绝望。”"
+      ],
+      "kidsParagraphs": [
+        "优素福失踪后，叶尔孤白非常难过。但他说：“美好的忍耐。”",
+        "他只在真主面前哭泣，从不失去希望。他说：“永远不要对真主的慈恩绝望！”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 84,
+          "ayahEnd": 84
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "美好的忍耐是不向人抱怨的忍耐。",
+        "悲伤和哭泣是允许的；我们只向真主诉苦。",
+        "永远不要对真主的慈恩绝望。"
+      ],
+      "quiz": [
+        {
+          "question": "当听说优素福被狼吃了时，叶尔孤白说了什么？",
+          "options": [
+            "我要惩罚你们",
+            "美好的忍耐",
+            "我们去埃及吧",
+            "我相信你们"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:18"
+        },
+        {
+          "question": "叶尔孤白向谁诉说他的悲伤？",
+          "options": [
+            "他的儿子们",
+            "唯独真主",
+            "国王",
+            "他的邻居"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:86"
+        },
+        {
+          "question": "叶尔孤白叫儿子们不要对什么绝望？",
+          "options": [
+            "他们的生意",
+            "真主的慈恩",
+            "雨水",
+            "国王的帮助"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:87"
+        }
+      ]
+    },
+    {
+      "id": "yaqub-3",
+      "title": "优素福的气味",
+      "paragraphs": [
+        "当商队带着优素福的衬衣离开埃及时，叶尔孤白在迦南说：“我确实闻到了优素福的气味，但愿你们不要说我老糊涂了。”报喜的人把衬衣放在他脸上时，他恢复了视力。“难道我没有告诉过你们，我从真主那里知道你们所不知道的吗？”",
+        "儿子们请他为他们求饶恕，他答应了。然后全家迁往埃及。优素福把父母扶上宝座，他小时候做的梦实现了。",
+        "叶尔孤白临终时问儿子们：“我死后你们崇拜什么？”他们说：“我们崇拜你的主，你的祖先易卜拉欣、易司马仪和易司哈格的主：独一的主，我们是顺服祂的。”"
+      ],
+      "kidsParagraphs": [
+        "优素福把衬衣送给父亲。衬衣碰到叶尔孤白的脸时，他又能看见了！",
+        "全家又团聚了。叶尔孤白去世前，儿子们答应只崇拜真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 94,
+          "ayahEnd": 96
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 97,
+          "ayahEnd": 99
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 133,
+          "ayahEnd": 133
+        }
+      ],
+      "lessons": [
+        "忍耐之后就是宽慰。",
+        "要原谅悔过的家人。",
+        "留下的最好的东西，是只崇拜真主的子女。"
+      ],
+      "quiz": [
+        {
+          "question": "是什么让叶尔孤白恢复了视力？",
+          "options": [
+            "一种药",
+            "优素福的衬衣",
+            "渗渗泉水",
+            "一个梦"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:96"
+        },
+        {
+          "question": "叶尔孤白临终前问了儿子们什么？",
+          "options": [
+            "我死后你们崇拜什么？",
+            "我的钱在哪里？",
+            "谁会当国王？",
+            "优素福在哪里？"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        },
+        {
+          "question": "他的儿子们提到了哪三位祖先？",
+          "options": [
+            "易卜拉欣、易司马仪和易司哈格",
+            "阿丹、努哈和呼德",
+            "穆萨、哈伦和达乌德",
+            "尔撒、叶哈雅和宰凯里雅"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:133"
+        }
+      ]
+    }
+  ]
+}

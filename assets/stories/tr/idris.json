@@ -1,0 +1,165 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "idris",
+  "language": "tr",
+  "name": "İdris",
+  "title": "Yüksek bir makama çıkarılan sıddık bir insan",
+  "sentTo": "Hz. Âdem'in (a.s.) soyu, Hz. Nuh'tan (a.s.) önce veya sonra; Kur'an bunu belirtmez",
+  "era": "Çok eski. Âlimlerin çoğu onu Âdem ile Nuh (a.s.) arasına yerleştirir; Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Bilinmiyor. Kur'an İdris'in nerede yaşadığını söylemez.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Kur'an'ın sıddık, sabırlı ve salih olarak övdüğü, Allah'ın yüksek bir makama çıkardığı bir peygamber. Hayatı hakkında kesin olarak çok az şey bilinir ve Kur'an'da sadece iki kez anılır.",
+  "notes": [
+    "Âlimlerin çoğu İdris'in Âdem ile Nuh arasında yaşadığını söyler. Birçoğu onu Tevrat'taki Ahnuh (Hanok) ile aynı kişi sayar; bu, Kur'an ve Sünnet'ten değil, tarihçilerden ve Ehl-i Kitap'tan gelir.",
+    "\"Onu yüce bir mekâna yükselttik\" (19:57): Birçok âlim bunun yüksek bir şeref ve nübüvvet derecesi demek olduğunu söyler; bazıları onun göklerden birine yükseltildiğini söyler.",
+    "Kalemle ilk yazan, ilk elbise diken veya yıldızları ilk inceleyen kişi olduğuna dair meşhur rivayetler, Kur'an veya sahih hadislerden değil, sonraki kaynaklardan gelir."
+  ],
+  "chapters": [
+    {
+      "id": "idris-1",
+      "title": "Sıddık bir insan",
+      "paragraphs": [
+        "Kur'an bizden Hz. İdris'i (a.s.) anmamızı ister. Allah onu sıddık bir insan ve bir peygamber olarak anlatır ve \"Onu yüce bir mekâna yükselttik\" buyurur.",
+        "Allah onu ayrıca İsmail ve Zülkifl (a.s.) ile birlikte sabredenler arasında anar ve onları rahmetine dahil ettiğini, çünkü onların salihlerden olduğunu bildirir.",
+        "İdris hakkında kesin olarak bildiklerimizin hemen hepsi budur. Kur'an bize onun kıssasını değil, özelliklerini verir: doğruluk, sabır ve salihlik. İnsanı Allah katında yükselten de bu özelliklerdir."
+      ],
+      "kidsParagraphs": [
+        "İdris her zaman doğruyu söyleyen bir peygamberdi.",
+        "Allah onun sabırlı ve iyi olduğunu söyler ve onu yüksek bir yere çıkardı. Biz de onun gibi doğru ve sabırlı olabiliriz!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 56,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Bazı kitaplar İdris'in kalemle ilk yazan ve ilk elbise diken kişi olduğunu söyler ya da bir meleğin onu göğe nasıl götürdüğünü anlatır."
+        }
+      ],
+      "lessons": [
+        "Doğruluk peygamberlerin en büyük özelliklerindendir.",
+        "Sabır insanı Allah'ın rahmetine sokar.",
+        "Bir insanda en önemli olan, hakkında ne kadar bilindiği değil, ahlakıdır."
+      ],
+      "quiz": [
+        {
+          "question": "Kur'an Hz. İdris'i (a.s.) nasıl anlatır?",
+          "options": [
+            "Bir kral",
+            "Sıddık bir insan ve bir peygamber",
+            "Bir tüccar",
+            "Bir şair"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:56"
+        },
+        {
+          "question": "Allah İdris için ne yaptı?",
+          "options": [
+            "Onu yüce bir mekâna yükseltti",
+            "Ona bir gemi verdi",
+            "Onu kral yaptı",
+            "Ona bir asa verdi"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:57"
+        },
+        {
+          "question": "İdris, sabredenler arasında hangi iki peygamberle birlikte anılır?",
+          "options": [
+            "Musa ve Harun",
+            "İsmail ve Zülkifl",
+            "Yunus ve Eyyûb",
+            "Davud ve Süleyman"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:85"
+        }
+      ]
+    },
+    {
+      "id": "idris-2",
+      "title": "Göklerde Peygamber'i ﷺ karşılama",
+      "paragraphs": [
+        "Miraç gecesi, Peygamber Muhammed ﷺ göklere yükseltildiğinde önceki peygamberlerden birçoğuyla karşılaştı. Onlardan biri İdris'ti.",
+        "İdris onu şu sözlerle karşıladı: \"Hoş geldin salih peygamber ve salih kardeş.\" Peygamberler birbirlerini kardeş olarak selamlardı, çünkü mesajları birdi: yalnızca Allah'a ibadet."
+      ],
+      "kidsParagraphs": [
+        "Miraç gecesi Peygamber Muhammed ﷺ göklerde İdris ile karşılaştı.",
+        "İdris: \"Hoş geldin salih peygamber ve salih kardeş!\" dedi. Bütün peygamberler kardeş gibidir."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3342",
+          "narrator": "Enes b. Mâlik, Ebû Zer'den",
+          "translation": "…Enes şöyle dedi: \"Cebrail, Peygamber ﷺ ile birlikte İdris'in yanından geçince İdris: 'Hoş geldin salih peygamber ve salih kardeş' dedi. Peygamber ﷺ: 'Bu kim?' dedi. Cebrail: 'Bu İdris'tir' dedi.\"",
+          "match": "فلما مر جبريل بادريس قال مرحبا بالنبي الصالح والاخ الصالح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Bütün peygamberler tek bir mesajı taşıyan kardeşlerdir.",
+        "Başkalarını sıcak bir şekilde karşılamak peygamberlerin yoludur.",
+        "Miraç, Allah'ın peygamberlerine verdiği şerefi gösterdi."
+      ],
+      "quiz": [
+        {
+          "question": "Peygamber ﷺ İdris ile ne zaman karşılaştı?",
+          "options": [
+            "Bedir Savaşı'nda",
+            "Miraç gecesi",
+            "Medine'de",
+            "Hira'da bir rüyada"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "İdris Peygamber'e ﷺ ne dedi?",
+          "options": [
+            "Salih evlat",
+            "Salih kardeş",
+            "Kral",
+            "Öğretmen"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "Peygamber'i ﷺ göklere kim götürdü?",
+          "options": [
+            "Cebrail",
+            "Mikail",
+            "İsrafil",
+            "İdris"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3342"
+        }
+      ]
+    }
+  ]
+}

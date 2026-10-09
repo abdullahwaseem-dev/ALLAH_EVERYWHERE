@@ -1,6 +1,7 @@
 class VoidImages {
   VoidImages._();
   static const String logo = "assets/images/logo.png";
+  static const String launcher = "assets/images/launcher.png";
   static const String ALLAH = "assets/images/ALLAH.png";
   static const String verify_phone="assets/images/verify_phone.png";
   static const String forget_pass="assets/images/forget_pass.png";

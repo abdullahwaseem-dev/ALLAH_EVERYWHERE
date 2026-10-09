@@ -10,6 +10,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class EditProfileScreen extends StatefulWidget {
   @override
@@ -44,24 +45,40 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
   Future<void> _getUserProfile() async {
     User? user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
 
-    if (user != null) {
-      // Fetch user's profile data from Firestore
-      DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+    // Start from Auth's own values so the screen still shows something
+    // sensible if Firestore is unreachable.
+    userEmail = user.email ?? '';
+    if (user.displayName?.trim().isNotEmpty ?? false) userName = user.displayName!.trim();
 
-      if (userDoc.exists) {
-        setState(() {
-          userName = userDoc['name'];
-          userEmail = userDoc['email'];
-          _profilePicUrl = userDoc['profilePicture'];
-          // Check if the URL is valid and not empty
-          _imageProvider = (_profilePicUrl != null && _profilePicUrl!.isNotEmpty)
-              ? NetworkImage(_profilePicUrl!)
-              : AssetImage(VoidImages.profile);
-          _nameController.text = userName;
-        });
+    try {
+      // Fetch user's profile data from Firestore. `.data()` returns null
+      // safely for a missing doc/field instead of throwing like the
+      // DocumentSnapshot `[]` operator does for a field that doesn't exist.
+      final userDoc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+      final data = userDoc.data();
+
+      if (data != null) {
+        final docName = (data['name'] as String?)?.trim();
+        final docEmail = (data['email'] as String?)?.trim();
+        final docPic = data['profilePicture'] as String?;
+        if (docName != null && docName.isNotEmpty) userName = docName;
+        if (docEmail != null && docEmail.isNotEmpty) userEmail = docEmail;
+        if (docPic != null && docPic.isNotEmpty) _profilePicUrl = docPic;
       }
+    } catch (e) {
+      VoidLogger.error('Failed to load profile for editing', e);
+      // Fall through with the Auth-derived values set above.
     }
+
+    if (!mounted) return;
+    setState(() {
+      _imageProvider = (_profilePicUrl != null && _profilePicUrl!.isNotEmpty)
+          ? NetworkImage(_profilePicUrl!)
+          : AssetImage(VoidImages.profile);
+      _nameController.text = userName;
+    });
   }
 
   Future<void> _pickImage() async {
@@ -71,6 +88,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       final XFile? image = await pickSingleImage();
       if (image != null) {
         await _uploadProfilePicture(image);
+      }
+    } catch (e) {
+      VoidLogger.error('Failed to pick profile image', e);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Could not open the image picker. Please try again.')),
+        );
       }
     } finally {
       if (mounted) setState(() => _isPickingImage = false);
@@ -152,6 +176,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
     return Scaffold(
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(
@@ -167,7 +192,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Container(
+      body: ReadableWidth(child: Container(
         width: double.infinity,
         height: double.infinity,
         color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
@@ -190,6 +215,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             radius: 55.r,
                             backgroundColor: cardColor,
                             backgroundImage: _imageProvider ?? AssetImage(VoidImages.profile),
+                            onBackgroundImageError: (_, __) {
+                              // A broken/expired profile picture URL must not
+                              // crash the screen - fall back to the default.
+                              if (mounted && _imageProvider is NetworkImage) {
+                                setState(() => _imageProvider = AssetImage(VoidImages.profile));
+                              }
+                            },
                           ),
                         ),
                         if (_isUploadingImage)
@@ -252,7 +284,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
           ),
         ),
-      ),
+      )),
     );
   }
 }

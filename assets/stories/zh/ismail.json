@@ -1,0 +1,246 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ismail",
+  "language": "zh",
+  "name": "易司马仪",
+  "title": "易卜拉欣（愿主赐他平安）之子，信守诺言",
+  "sentTo": "他在其中长大的麦加阿拉伯人（朱尔胡姆部落）",
+  "era": "他父亲易卜拉欣（愿主赐他平安）的时代。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "麦加。他和母亲哈哲尔在那里长大，并帮助父亲修建克尔白。",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "易卜拉欣（愿主赐他平安）与哈哲尔所生的长子。他在麦加山谷长大；父亲梦见宰他献祭时，他顺从了真主的命令；他还和父亲一起建起了克尔白。真主称赞他信守诺言，是使者和先知。先知穆罕默德ﷺ是他的后裔。",
+  "notes": [
+    "大多数学者认为要被献祭的儿子是易司马仪（37:101-107）；一些早期学者说是易司哈格。参见易卜拉欣（愿主赐他平安）的故事。",
+    "关于易司马仪和哈哲尔葬在克尔白旁弧形区域“希吉尔”的说法，来自历史学家，而非可靠的圣训。",
+    "本应用在先知顺序中把易司马仪排在他父亲易卜拉欣（愿主赐他平安）之后。"
+  ],
+  "chapters": [
+    {
+      "id": "ismail-1",
+      "title": "山谷里的孩子",
+      "paragraphs": [
+        "易司马仪（愿主赐他平安）是易卜拉欣（愿主赐他平安）的第一个儿子，由哈哲尔所生。他还是婴儿时，易卜拉欣奉真主之命把他和他母亲留在麦加荒无人烟的山谷里，真主为他们涌出了渗渗泉水。（完整的故事见易卜拉欣的章节。）",
+        "朱尔胡姆部落的旅人来到这里，经哈哲尔允许在水边定居下来。易司马仪在他们中间长大，跟他们学会了阿拉伯语，并赢得了他们的喜爱；他成年后，他们把本族的一个女子嫁给了他。"
+      ],
+      "kidsParagraphs": [
+        "易司马仪和母亲哈哲尔在麦加山谷长大，住在渗渗井旁边。",
+        "一个叫朱尔胡姆的部落来和他们一起生活，易司马仪跟他们学会了阿拉伯语。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "伊本·阿拔斯",
+          "translation": "……他们在那里住下，并派人去接他们的家人，家人们也来和他们住在一起，直到那里有了好几户人家。那孩子长大了，跟他们学会了阿拉伯语；他长大时，他们很欣赏他、喜欢他。他成年后，他们把本族的一个女子嫁给了他……",
+          "match": "وشب الغلام وتعلم العربية منهم",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "真主照顾信赖祂的人，即使在荒凉的山谷里。",
+        "良好的品德使陌生人也受人喜爱。",
+        "一个小小的家庭可以成为一个伟大民族的开端。"
+      ],
+      "quiz": [
+        {
+          "question": "易司马仪的母亲是谁？",
+          "options": [
+            "萨拉",
+            "哈哲尔",
+            "麦尔彦",
+            "阿西娅"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "易司马仪跟哪个部落学会了阿拉伯语？",
+          "options": [
+            "古莱什",
+            "朱尔胡姆",
+            "赛莫德",
+            "阿德"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "易司马仪在哪里长大？",
+          "options": [
+            "埃及",
+            "麦加山谷",
+            "巴比伦",
+            "麦德彦"
+          ],
+          "answer": 1,
+          "reference": "Quran 14:37"
+        }
+      ]
+    },
+    {
+      "id": "ismail-2",
+      "title": "顺从的儿子",
+      "paragraphs": [
+        "当易司马仪长大到能在父亲身边干活时，易卜拉欣把梦见自己宰他献祭的事告诉了他。易司马仪回答说：“父亲啊！你执行你所奉的命令吧。如果真主意欲，你将发现我是坚忍的人。”真主用一个伟大的牺牲赎替了他。",
+        "后来，真主命令易卜拉欣修建天房，易司马仪立刻说：“顺从你的主吧。”并帮助他。父亲砌墙，易司马仪搬运石头，他们一起祈祷：“我们的主啊！求你接受我们的工作。”"
+      ],
+      "kidsParagraphs": [
+        "易司马仪顺从真主，也顺从父亲，即使事情非常艰难。",
+        "他帮助父亲修建克尔白，为父亲搬运石头。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        }
+      ],
+      "lessons": [
+        "对真主真正的顺从是坚忍而甘愿的。",
+        "在善事上帮助父母是莫大的荣幸。",
+        "祈求真主接受每一件善行。"
+      ],
+      "quiz": [
+        {
+          "question": "父亲告诉易司马仪那个梦时，他说了什么？",
+          "options": [
+            "你执行你所奉的命令吧",
+            "我害怕",
+            "去找别人吧",
+            "我要逃跑"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "修建克尔白时易司马仪搬运什么？",
+          "options": [
+            "水",
+            "石头",
+            "木头",
+            "食物"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "易卜拉欣和易司马仪修建时怎样祈祷？",
+          "options": [
+            "让我们富有",
+            "我们的主啊！求你接受我们的工作",
+            "赐给我们一个王国",
+            "保护这些墙"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        }
+      ]
+    },
+    {
+      "id": "ismail-3",
+      "title": "信守诺言",
+      "paragraphs": [
+        "《古兰经》称赞易司马仪：他信守诺言，是使者和先知。他命令家人礼拜和交纳天课，他是他的主所喜悦的人。真主把他列入坚忍者和优秀的被选者之中。",
+        "易司马仪还是一名射手。有一次，先知ﷺ经过一些正在练习射箭的人，说：“射吧，易司马仪的子孙们，因为你们的祖先是一名射手。”",
+        "易司马仪的后裔繁衍成希贾兹的阿拉伯人，数千年后，先知穆罕默德ﷺ就出自他们之中：这是对易卜拉欣和易司马仪祈求从他们的子孙中派出一位使者的回应。"
+      ],
+      "kidsParagraphs": [
+        "真主说，易司马仪总是信守诺言，并叫家人礼拜。",
+        "他是一名出色的射手！我们的先知穆罕默德ﷺ就是他的后代。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 54,
+          "ayahEnd": 55
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2899",
+          "narrator": "赛莱迈·本·艾克瓦尔",
+          "translation": "先知ﷺ经过艾斯莱姆部落的一些人，他们正在比赛射箭，他说：“射吧，易司马仪的子孙们，因为你们的祖先是一名射手。射吧，我和某某一组……”",
+          "match": "ارموا بني اسماعيل فان اباكم كان راميا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "信守诺言是众先知的品质。",
+        "引导家人礼拜和施舍是信仰的一部分。",
+        "射箭这类有益的技能在圣训中受到称赞。"
+      ],
+      "quiz": [
+        {
+          "question": "《古兰经》（19:54）称赞易司马仪的哪种品质？",
+          "options": [
+            "财富",
+            "信守诺言",
+            "力量",
+            "美貌"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:54"
+        },
+        {
+          "question": "易司马仪命令家人做什么？",
+          "options": [
+            "经商",
+            "礼拜和交纳天课",
+            "旅行",
+            "建房子"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:55"
+        },
+        {
+          "question": "先知ﷺ提到易司马仪有什么技能？",
+          "options": [
+            "射箭",
+            "游泳",
+            "写字",
+            "航海"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2899"
+        }
+      ]
+    }
+  ]
+}

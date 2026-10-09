@@ -42,14 +42,10 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
-        <!-- Google Mobile Ads. This is Google's published TEST App ID
-             (https://developers.google.com/admob/android/test-ads) - it only
-             ever serves test ads and is safe to ship as a placeholder, but it
-             MUST be swapped for the app's real AdMob App ID before release,
-             or no real ads will ever show. -->
+        <!-- Google Mobile Ads real App ID for the "Home Banner" ad unit. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-3225473284077595~5680326726" />
 
         <!-- Required by flutter_local_notifications for scheduled (Adhan / daily
              reminder) notifications to actually fire and to survive device reboot. -->
@@ -61,6 +57,41 @@
                 <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
                 <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
             </intent-filter>
+        </receiver>
+
+        <!-- Home screen widgets (data comes from lib/services/home_widget_service.dart). -->
+        <receiver
+            android:name=".widgets.NextPrayerWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_next_prayer_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_next_prayer_info" />
+        </receiver>
+        <receiver
+            android:name=".widgets.HijriDateWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_hijri_date_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_hijri_date_info" />
+        </receiver>
+        <receiver
+            android:name=".widgets.DailyReminderWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_reminder_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_daily_reminder_info" />
         </receiver>
 
         <!-- Required by audio_service for background/lock-screen Quran playback. -->

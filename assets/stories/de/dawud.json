@@ -1,0 +1,349 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dawud",
+  "language": "de",
+  "name": "Dawud",
+  "title": "Der König und Prophet, dem der Zabur gegeben wurde",
+  "sentTo": "Die Kinder Israels, die er als König regierte",
+  "era": "Von Historikern meist um 1000 v. Chr. datiert. Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Jerusalem (al-Quds) und das Land Palästina, wo er regierte.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Dawud war ein junger Soldat, der mit Allahs Erlaubnis den Tyrannen Dschalut (Goliath) tötete. Allah gab ihm Königsherrschaft, Prophetentum, Weisheit und den Zabur (die Psalmen). Die Berge und die Vögel priesen Allah mit ihm, und das Eisen wurde für ihn weich gemacht. Er richtete gerecht, aß nur von seiner eigenen Arbeit und betete Allah Tag und Nacht an.",
+  "notes": [
+    "Die Geschichte, dass Dawud die Frau eines seiner Soldaten (Uria) begehrte, stammt aus der Bibel und den Berichten der Leute der Schrift. Gelehrte wie Ibn Kathir lehnten sie als eines Propheten unwürdig ab. Der Koran sagt nur, dass Dawud erkannte, dass er geprüft worden war, um Vergebung bat und Vergebung erhielt (38:24-25); die Gelehrten sind sich uneinig, worin die Prüfung bestand.",
+    "Talut (Saul) und Dschalut (Goliath) werden im Koran genannt; weitere Einzelheiten der Schlacht stammen aus der Geschichtsschreibung.",
+    "Der „Zabur“, der Dawud gegeben wurde, wird meist mit den Psalmen gleichgesetzt, aber die heute vorhandenen Psalmen gelten nicht als die unveränderte ursprüngliche Offenbarung."
+  ],
+  "chapters": [
+    {
+      "id": "dawud-1",
+      "title": "Der junge Mann, der Dschalut tötete",
+      "paragraphs": [
+        "Nach Musa (a.s.) baten die Kinder Israels um einen König, und Allah setzte Talut ein. Als das Heer gegen den Tyrannen Dschalut zog, prüfte Talut sie an einem Fluss: Wer sich daran satt trank, gehörte nicht zu ihm. Die meisten tranken; nur wenige bestanden die Prüfung.",
+        "Als das kleine Heer Dschalut und seine Soldaten sah, beteten die Gläubigen: „Unser Herr, gieße Geduld über uns aus, festige unsere Füße und hilf uns gegen das ungläubige Volk.“",
+        "Mit Allahs Erlaubnis schlugen sie sie, und ein junger Mann namens Dawud tötete Dschalut. Allah gab Dawud die Königsherrschaft und die Weisheit und lehrte ihn, was Er wollte."
+      ],
+      "kidsParagraphs": [
+        "Ein kleines Heer von Gläubigen trat gegen den riesigen Krieger Dschalut an.",
+        "Der junge Dawud tötete Dschalut mit Allahs Erlaubnis! Dann machte Allah Dawud zum König und Propheten."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 249,
+          "ayahEnd": 249
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 250,
+          "ayahEnd": 250
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 251,
+          "ayahEnd": 251
+        }
+      ],
+      "lessons": [
+        "Der Sieg kommt von Allah, nicht von der Zahl.",
+        "Selbstbeherrschung, wie die Prüfung am Fluss, bereitet Menschen auf große Aufgaben vor.",
+        "Bete in schweren Zeiten um Geduld und feste Füße."
+      ],
+      "quiz": [
+        {
+          "question": "Wer tötete Dschalut (Goliath)?",
+          "options": [
+            "Talut",
+            "Dawud",
+            "Sulaiman",
+            "Musa"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:251"
+        },
+        {
+          "question": "Wie prüfte Talut sein Heer?",
+          "options": [
+            "Mit einem Fluss",
+            "Mit einem Wettlauf",
+            "Mit einem Fasten",
+            "Mit Gold"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:249"
+        },
+        {
+          "question": "Worum beteten die Gläubigen vor der Schlacht?",
+          "options": [
+            "Um Geduld, feste Füße und Sieg",
+            "Um Reichtum",
+            "Um einen König",
+            "Um Regen"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:250"
+        }
+      ]
+    },
+    {
+      "id": "dawud-2",
+      "title": "Berge, Vögel und Eisen",
+      "paragraphs": [
+        "Allah gab Dawud eine besondere Gunst. Wenn er Allah pries, priesen die Berge und die Vögel Allah mit ihm, morgens und abends. Allah gab ihm den Zabur, ein offenbartes Buch.",
+        "Allah machte das Eisen in seinen Händen weich und lehrte ihn, Kettenhemden herzustellen und die Glieder sorgfältig abzumessen, um Menschen im Kampf zu schützen. „Tut Gutes“, sagte Allah zu ihm und seiner Familie.",
+        "Obwohl Dawud ein König war, lebte er von seiner eigenen Arbeit. Der Prophet ﷺ sagte: „Dawud (a.s.) aß nur von der Arbeit seiner eigenen Hände.“"
+      ],
+      "kidsParagraphs": [
+        "Wenn Dawud Allah lobte, lobten die Berge und die Vögel Allah mit ihm!",
+        "Allah machte das Eisen für ihn weich, und er stellte Rüstungen her. Selbst als König verdiente er sein Essen selbst."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 163,
+          "ayahEnd": 163
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 34,
+          "ayahStart": 11,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2073",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „Dawud (a.s.) aß nur von der Arbeit seiner eigenen Hände.“",
+          "match": "ان داود عليه السلام كان لا ياكل الا من عمل يده"
+        }
+      ],
+      "lessons": [
+        "Die ganze Schöpfung preist Allah; schließ dich ihr mit deinem Gedenken an.",
+        "Mit den eigenen Händen zu arbeiten ist ehrenhaft, selbst für einen König.",
+        "Fertigkeiten und Technik sind Segnungen, die zum Guten genutzt werden sollen."
+      ],
+      "quiz": [
+        {
+          "question": "Was pries Allah mit Dawud?",
+          "options": [
+            "Die Berge und die Vögel",
+            "Die Meere",
+            "Die Sterne",
+            "Die Dschinn"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "Was machte Allah für Dawud weich?",
+          "options": [
+            "Stein",
+            "Eisen",
+            "Gold",
+            "Holz"
+          ],
+          "answer": 1,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "Wovon aß Dawud laut dem Propheten ﷺ?",
+          "options": [
+            "Aus der Staatskasse",
+            "Von der Arbeit seiner eigenen Hände",
+            "Von Geschenken",
+            "Von Steuern"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 2073"
+        }
+      ]
+    },
+    {
+      "id": "dawud-3",
+      "title": "Mit Wahrheit richten",
+      "paragraphs": [
+        "Eines Tages stiegen zwei Männer über die Mauer in Dawuds privaten Gebetsraum, und er erschrak. „Fürchte dich nicht“, sagten sie. „Wir sind zwei Streitparteien. Richte zwischen uns mit der Wahrheit.“ Einer sagte: „Mein Bruder hat neunundneunzig Mutterschafe und ich habe eines, und er besteht darauf, dass ich es ihm gebe.“",
+        "Dawud urteilte, dass der Mann seinem Bruder Unrecht getan hatte und dass viele Teilhaber einander Unrecht tun, außer denen, die glauben und Gutes tun. Dann erkannte Dawud, dass Allah ihn geprüft hatte. Er bat seinen Herrn um Vergebung, fiel verneigt nieder und wandte sich Ihm reuig zu, und Allah vergab ihm.",
+        "Allah sagte: „O Dawud, Wir haben dich zum Statthalter auf der Erde gemacht, so richte zwischen den Menschen mit der Wahrheit und folge nicht der Neigung, denn sie wird dich von Allahs Weg abbringen.“"
+      ],
+      "kidsParagraphs": [
+        "Zwei Männer kamen mit einem Problem zu Dawud, und er richtete zwischen ihnen.",
+        "Dann bat Dawud Allah um Vergebung, und Allah vergab ihm. Allah sagte ihm: „Richte immer gerecht!“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 21,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Eine Geschichte der Leute der Schrift sagt, Dawuds Prüfung sei gewesen, dass er die Frau eines seiner Soldaten begehrte. Gelehrte wie Ibn Kathir lehnten sie ab."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Ein Richter muss beide Seiten anhören und der Wahrheit folgen, nicht der Neigung.",
+        "Selbst die besten Menschen wenden sich Allah reuig zu.",
+        "Macht ist ein anvertrautes Gut von Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Mutterschafe hatte der Bruder des ersten Mannes?",
+          "options": [
+            "Zehn",
+            "Neunundneunzig",
+            "Hundert",
+            "Sieben"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:23"
+        },
+        {
+          "question": "Was tat Dawud, als er erkannte, dass er geprüft worden war?",
+          "options": [
+            "Er bat um Vergebung und fiel verneigt nieder",
+            "Er wurde zornig",
+            "Er verließ die Stadt",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:24"
+        },
+        {
+          "question": "Wem sollte Dawud nach Allahs Worten beim Richten nicht folgen?",
+          "options": [
+            "Seiner Neigung",
+            "Der Tora",
+            "Seinem Sohn",
+            "Den Ältesten"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:26"
+        }
+      ]
+    },
+    {
+      "id": "dawud-4",
+      "title": "Die Anbetung Dawuds",
+      "paragraphs": [
+        "Allah beschreibt Dawud als einen Mann von Kraft, der sich stets Ihm zuwandte.",
+        "Der Prophet ﷺ sagte: „Das Allah liebste Fasten ist das Fasten Dawuds: Er fastete einen Tag und fastete den nächsten nicht. Und das Allah liebste Gebet ist das Gebet Dawuds: Er schlief die Hälfte der Nacht, betete ein Drittel davon und schlief ein Sechstel davon.“",
+        "Als König eines großen Reiches nahm er sich dennoch Zeit für lange Nachtgebete und regelmäßiges Fasten. Seine Anbetung war ausgewogen: stark, beständig und dauerhaft."
+      ],
+      "kidsParagraphs": [
+        "Dawud fastete jeden zweiten Tag und stand nachts zum Beten auf.",
+        "Der Prophet ﷺ sagte, das sei das Fasten und das Gebet, die Allah am meisten liebt."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 17,
+          "ayahEnd": 18
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3420",
+          "narrator": "Abdullah ibn 'Amr",
+          "translation": "Der Gesandte Allahs ﷺ sagte zu mir: „Das Allah liebste Fasten ist das Fasten Dawuds: Er fastete einen Tag und fastete einen Tag nicht. Und das Allah liebste Gebet ist das Gebet Dawuds: Er schlief die Hälfte der Nacht, stand ein Drittel davon im Gebet und schlief ein Sechstel davon.“",
+          "match": "احب الصيام الى الله صيام داود كان يصوم يوما ويفطر يوما"
+        }
+      ],
+      "lessons": [
+        "Beständige, ausgewogene Anbetung ist Allah am liebsten.",
+        "Auch vielbeschäftigte Menschen können Zeit für das Nachtgebet finden.",
+        "Sich oft Allah zuzuwenden, ist eine Eigenschaft der Propheten."
+      ],
+      "quiz": [
+        {
+          "question": "Wie fastete Dawud?",
+          "options": [
+            "Jeden Tag",
+            "Einen Tag ja und einen Tag nein",
+            "Nur im Ramadan",
+            "Einmal im Jahr"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Welchen Teil der Nacht betete Dawud?",
+          "options": [
+            "Ein Drittel",
+            "Die ganze Nacht",
+            "Gar nicht",
+            "Ein Zehntel"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Wie beschreibt der Koran Dawud in 38:17?",
+          "options": [
+            "Sich stets Allah zuwendend",
+            "Faul",
+            "Hochmütig",
+            "Ängstlich"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:17"
+        }
+      ]
+    }
+  ]
+}

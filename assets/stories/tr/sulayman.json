@@ -1,0 +1,429 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "sulayman",
+  "language": "tr",
+  "name": "Süleyman",
+  "title": "Eşi benzeri olmayan bir mülk verilen kral",
+  "sentTo": "İsrailoğulları ve Sebe halkı da dahil olmak üzere hükmü altındaki diğerleri",
+  "era": "Hz. Davud'un (a.s.) oğlu. Tarihçilerce genellikle MÖ 10. yüzyıla tarihlendirilir; Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Hüküm sürdüğü Kudüs.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    },
+    {
+      "name": "Melikenin ülkesi Sebe; genellikle Yemen'de Me'rib çevresine yerleştirilir.",
+      "lat": 15.43,
+      "lng": 45.32,
+      "approximate": true
+    }
+  ],
+  "summary": "Süleyman, peygamberliği ve hükümranlığı babası Davud'dan miras aldı. Allah ona kuşların dilini öğretti ve rüzgârı ve cinleri emrine verdi. Bir karıncanın konuştuğunu duydu, Sebe melikesine bir mektup gönderdi ve onun Müslüman oluşunu gördü. Bütün bunlara rağmen daima Allah'a yönelen, şükreden bir kul olarak kaldı.",
+  "notes": [
+    "Sebe melikesinin adı Kur'an'da geçmez; Belkıs adı sonraki rivayetlerden gelir.",
+    "38:31-33'teki atlar: Âlimler Süleyman'ın onları (kurban olarak) mı kestiği, yoksa bacaklarını ve boyunlarını mı sıvazladığı konusunda ihtilaf etmiştir.",
+    "\"Tahtının üzerine bir ceset bıraktık\" (38:34): Âlimler bunu farklı şekillerde açıklar; bazıları bunu Buhârî'deki, Süleyman'ın \"inşallah\" demeyi unuttuğuna dair sahih bir hadisle ilişkilendirir. Bir şeytanın yüzüğünü çalıp tahtına oturduğu hikâyeleri Ehl-i Kitap'tan gelir ve İbn Kesîr gibi âlimlerce reddedilmiştir.",
+    "Süleyman asla sihir yapmadı: Kur'an onu bundan beri kılar (2:102)."
+  ],
+  "chapters": [
+    {
+      "id": "sulayman-1",
+      "title": "Bilge babanın bilge oğlu",
+      "paragraphs": [
+        "Hz. Süleyman (a.s.) babası Davud'dan peygamberliği, ilmi ve hükümranlığı miras aldı. Baba ve oğul birlikte dediler ki: \"Bizi mümin kullarının birçoğundan üstün kılan Allah'a hamdolsun.\"",
+        "Allah Süleyman'a daha gençken bile özel bir anlayış verdi. Bir keresinde bir koyun sürüsü gece birinin tarlasına girip ekini yedi; Allah, hem ona hem Davud'a hikmet ve ilim verdiği hâlde, davanın nasıl çözüleceğini Süleyman'a kavrattı.",
+        "Peygamber ﷺ, yanlarında oğulları olan iki kadından bahsetti; bir kurt çocuklardan birini kaptı. Her biri yaşayan çocuğun kendisinin olduğunu iddia etti. Davud büyük kadının lehine hükmetti. Süleyman dedi ki: \"Bana bir bıçak getirin, onu ikisi arasında bölüştüreyim.\" Genç kadın bağırdı: \"Yapma! O onun oğlu!\" Böylece Süleyman onun anne olduğunu anladı ve çocuğu ona verdi."
+      ],
+      "kidsParagraphs": [
+        "Süleyman Davud'un oğluydu. Allah ikisine de hikmet verdi.",
+        "İki kadın bir bebek için tartıştı. Süleyman bebeği ikiye böleceğini söyledi. Gerçek anne bağırdı: \"Hayır! Ona verin!\" Böylece Süleyman onun gerçek anne olduğunu anladı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 15,
+          "ayahEnd": 16
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 78,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "6769",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"İki kadın vardı, her birinin yanında oğlu vardı. Bir kurt geldi ve birinin oğlunu kaptı. Biri diğerine 'Senin oğlunu götürdü' dedi, öteki de 'Senin oğlunu götürdü' dedi. Davaya Davud'a (a.s.) gittiler; o da büyüğün lehine hükmetti. Sonra Davud oğlu Süleyman'ın (a.s.) yanına çıkıp ona durumu anlattılar. O dedi ki: 'Bana bir bıçak getirin, onu ikisi arasında böleyim.' Küçük olan dedi ki: 'Yapma, Allah sana rahmet etsin! O onun oğludur.' Bunun üzerine küçüğün lehine hükmetti.\"",
+          "match": "كانت امراتان معهما ابناهما جاء الذئب فذهب بابن احداهما"
+        }
+      ],
+      "lessons": [
+        "Hikmet, bazen gençlere bile verilen Allah'ın bir hediyesidir.",
+        "İyi bir hâkim kalplerde gizli olan hakikati arar.",
+        "Davud ve Süleyman gibi her nimet için Allah'a şükret."
+      ],
+      "quiz": [
+        {
+          "question": "Süleyman Davud'dan neyi miras aldı?",
+          "options": [
+            "Peygamberliği, ilmi ve hükümranlığı",
+            "Sadece altını",
+            "Bir gemiyi",
+            "Hiçbir şeyi"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        },
+        {
+          "question": "Süleyman gerçek anneyi nasıl buldu?",
+          "options": [
+            "Çocuğu ikiye böleceğini söyledi",
+            "Çocuğa sordu",
+            "Elbiselerine baktı",
+            "Komşulara sordu"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 6769"
+        },
+        {
+          "question": "Koyunlar tarlada ne yaptı?",
+          "options": [
+            "Gece oraya girdiler",
+            "Onu korudular",
+            "Onu suladılar",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:78"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-2",
+      "title": "Karınca vadisi",
+      "paragraphs": [
+        "Süleyman dedi ki: \"Ey insanlar! Bize kuşların dili öğretildi ve bize her şeyden verildi. Bu apaçık bir lütuftur.\" Cinlerden, insanlardan ve kuşlardan oluşan orduları toplandı ve saflar hâlinde yürüdüler.",
+        "Karınca vadisine vardıklarında bir karınca dedi ki: \"Ey karıncalar! Yuvalarınıza girin ki Süleyman ve askerleri farkında olmadan sizi ezmesin.\"",
+        "Süleyman onun sözüne gülümsedi. Kibirlenmedi; dua etti: \"Rabbim! Bana ve anne babama verdiğin nimete şükretmemi ve razı olacağın salih ameller işlememi bana ilham et ve rahmetinle beni salih kullarının arasına kat.\""
+      ],
+      "kidsParagraphs": [
+        "Süleyman kuşları ve hayvanları anlayabilirdi. Bir gün ordusu bir karınca vadisine geldi.",
+        "Bir karınca dedi ki: \"Evlerinize koşun, Süleyman'ın ordusu sizi ezmesin!\" Süleyman gülümsedi ve Allah'a şükretti."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 16,
+          "ayahEnd": 17
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 18,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 19,
+          "ayahEnd": 19
+        }
+      ],
+      "lessons": [
+        "Her nimete verilecek doğru karşılık şükürdür.",
+        "Küçük bir canlı bile topluluğunu önemseyebilir.",
+        "Büyük bir kral yumuşak huylu ve mütevazı olabilir."
+      ],
+      "quiz": [
+        {
+          "question": "Karınca diğer karıncalara ne dedi?",
+          "options": [
+            "Yuvalarınıza girin",
+            "Orduya saldırın",
+            "Yiyecek toplayın",
+            "Ağaçlara tırmanın"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:18"
+        },
+        {
+          "question": "Süleyman karıncanın sözüne nasıl karşılık verdi?",
+          "options": [
+            "Öfkelendi",
+            "Gülümsedi ve Allah'a şükretti",
+            "Önemsemedi",
+            "Vadiyi yok etti"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:19"
+        },
+        {
+          "question": "Süleyman'a neyi anlamak öğretildi?",
+          "options": [
+            "Kuşların dili",
+            "Yıldızlar",
+            "Sadece insan dilleri",
+            "Sihir"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:16"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-3",
+      "title": "Hüdhüd'ün haberi",
+      "paragraphs": [
+        "Süleyman kuşları teftiş etti ve hüdhüdün olmadığını fark etti. Kuş geçerli bir mazeret getirmedikçe hoşnutsuzdu. Hüdhüd çok geçmeden döndü: \"Senin bilmediğin bir şeyi öğrendim. Sana Sebe'den kesin bir haber getirdim.\"",
+        "\"Onlara hükmeden bir kadın buldum; ona her şeyden verilmiş ve büyük bir tahtı var. Onun ve kavminin Allah'ı bırakıp güneşe secde ettiğini gördüm. Şeytan onlara amellerini süslü göstermiş.\"",
+        "Süleyman dedi ki: \"Doğru mu söyledin, yoksa yalancılardan mısın, bakacağız.\" Hüdhüdü bir mektupla gönderdi: \"Rahmân ve Rahîm olan Allah'ın adıyla. Bana karşı büyüklük taslamayın ve bana teslim olarak gelin.\""
+      ],
+      "kidsParagraphs": [
+        "Hüdhüd kuşu Sebe adında bir ülkeye uçtu. Oradaki insanlar güneşe tapıyordu!",
+        "Süleyman hüdhüdü şöyle başlayan bir mektupla gönderdi: \"Rahmân olan Allah'ın adıyla.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 20,
+          "ayahEnd": 22
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 23,
+          "ayahEnd": 24
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 27,
+          "ayahEnd": 31
+        }
+      ],
+      "lessons": [
+        "Bir haberle amel etmeden önce onu doğrula.",
+        "Bir kuş bile tevhide davet edebilir.",
+        "Önemli işlere \"Bismillah\" ile başla."
+      ],
+      "quiz": [
+        {
+          "question": "Hangi kuş yoktu?",
+          "options": [
+            "Karga",
+            "Hüdhüd",
+            "Güvercin",
+            "Kartal"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:20"
+        },
+        {
+          "question": "Sebe halkı neye tapıyordu?",
+          "options": [
+            "Aya",
+            "Güneşe",
+            "Ateşe",
+            "Taştan putlara"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:24"
+        },
+        {
+          "question": "Süleyman'ın mektubu nasıl başlıyordu?",
+          "options": [
+            "Rahmân ve Rahîm olan Allah'ın adıyla",
+            "Kraldan",
+            "Selamlar",
+            "Bana itaat edin"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:30"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-4",
+      "title": "Melike Müslüman oluyor",
+      "paragraphs": [
+        "Melike ileri gelenlerine danıştı; onlar savaşa hazırdı. O daha akıllıydı: Krallar bir ülkeye girdiklerinde orayı bozarlar, dedi. Bunun yerine bir hediye gönderdi. Süleyman onu reddetti: \"Allah'ın bana verdiği, size verdiğinden daha hayırlıdır.\"",
+        "Melike ona doğru yolculuk ederken Süleyman onun tahtını kimin getirebileceğini sordu. Cinlerden biri, Süleyman yerinden kalkmadan önce getirmeyi teklif etti. Kitaptan ilmi olan biri dedi ki: \"Ben onu gözünü açıp kapamadan sana getiririm.\" Ve taht oradaydı. Süleyman dedi ki: \"Bu, şükür mü edeceğim yoksa nankörlük mü edeceğim diye beni sınamak için Rabbimin lütfundandır.\"",
+        "Melike gelince, değiştirilmiş olmasına rağmen tahtını tanıdı. Sonra zemini pürüzsüz camdan olan bir köşke girdi ve onu su sandı. Bütün bunları görünce dedi ki: \"Rabbim! Ben kendime zulmettim; Süleyman ile birlikte âlemlerin Rabbi Allah'a teslim oldum.\""
+      ],
+      "kidsParagraphs": [
+        "Sebe melikesi Süleyman'a bir hediye gönderdi, ama o altınını değil imanını istiyordu.",
+        "Tahtı göz açıp kapayıncaya kadar Süleyman'a getirildi! Gelince dedi ki: \"Süleyman ile birlikte Allah'a teslim oldum.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 27,
+          "ayahStart": 34,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 27,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 27,
+          "ayahStart": 44,
+          "ayahEnd": 44
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Melikenin adı Belkıs ve ailesi ile evliliği hakkındaki hikâyeler Kur'an'dan veya sahih hadislerden değil, sonraki rivayetlerden gelir."
+        }
+      ],
+      "lessons": [
+        "Bilge yöneticiler barışı ve iyi danışmayı tercih eder.",
+        "Her nimet bir imtihandır: Şükredecek miyiz?",
+        "Hakkı kendine karşı dürüst olanlar kabul eder."
+      ],
+      "quiz": [
+        {
+          "question": "Melike Süleyman'a ne gönderdi?",
+          "options": [
+            "Bir ordu",
+            "Bir hediye",
+            "Bir savaş mektubu",
+            "Hiçbir şey"
+          ],
+          "answer": 1,
+          "reference": "Quran 27:35"
+        },
+        {
+          "question": "Taht görününce Süleyman ne dedi?",
+          "options": [
+            "Bu, beni sınamak için Rabbimin lütfundandır",
+            "Ben güçlüyüm",
+            "Teşekkürler cinler",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:40"
+        },
+        {
+          "question": "Melike sonunda ne dedi?",
+          "options": [
+            "Süleyman ile birlikte âlemlerin Rabbi Allah'a teslim oldum",
+            "Tahtımı geri istiyorum",
+            "Savaşacağım",
+            "Evime döneceğim"
+          ],
+          "answer": 0,
+          "reference": "Quran 27:44"
+        }
+      ]
+    },
+    {
+      "id": "sulayman-5",
+      "title": "Rüzgâr, cinler ve vefatı",
+      "paragraphs": [
+        "Süleyman kendisinden sonra kimseye nasip olmayacak bir mülk istedi ve Allah duasını kabul etti. Rüzgâr onun emriyle dilediği yere yumuşakça eserdi; sabahleyin bir aylık yol, akşamleyin bir aylık yol. Cinler Allah'ın izniyle onun için inşa ederdi.",
+        "Sonradan bazıları Süleyman'ın gücünün sihirden geldiğini iddia etti. Kur'an onu beri kılar: \"Süleyman kâfir olmadı; fakat insanlara sihri öğreten şeytanlar kâfir oldu.\"",
+        "Süleyman asasına dayanmış hâlde ayakta vefat etti ve cinler farkında olmadan çalışmaya devam etti. Ancak yerden bir canlı asasını kemirip o yere düşünce anladılar. Cinler gaybı bilseydi, alçaltıcı angaryada kalmazlardı."
+      ],
+      "kidsParagraphs": [
+        "Allah Süleyman'a rüzgâr üzerinde güç verdi ve cinler onun için çalıştı.",
+        "Süleyman asasına dayanarak vefat edince cinler bunu bilmediler bile! Ancak bir böcek asasını yiyince öğrendiler. Gaybı yalnızca Allah bilir."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 35,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 12,
+          "ayahEnd": 12
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 34,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        }
+      ],
+      "lessons": [
+        "Güç sihirden değil, Allah'ın bir hediyesidir.",
+        "Gaybı yalnızca Allah bilir; ne cinler ne de falcılar.",
+        "Ölüm en büyük krala bile gelir."
+      ],
+      "quiz": [
+        {
+          "question": "Rüzgâr Süleyman için ne yapardı?",
+          "options": [
+            "Onun emriyle eserdi",
+            "Sadece düşmanlarını yok ederdi",
+            "Hiçbir şey",
+            "Yağmur getirirdi"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:36"
+        },
+        {
+          "question": "2:102'ye göre sihir öğreterek kim kâfir oldu?",
+          "options": [
+            "Süleyman",
+            "Şeytanlar",
+            "Davud",
+            "Karıncalar"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:102"
+        },
+        {
+          "question": "Cinlere Süleyman'ın vefat ettiğini ne gösterdi?",
+          "options": [
+            "Yerden bir canlı asasını yedi",
+            "Bir melek söyledi",
+            "Oğlu söyledi",
+            "Rüzgâr durdu"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:14"
+        }
+      ]
+    }
+  ]
+}

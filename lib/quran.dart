@@ -7,6 +7,13 @@ import 'package:get/get.dart';
 
 import 'controller/QuranController.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
+import 'package:allah_everywhere/mushaf.dart';
+import 'package:allah_everywhere/services/mushaf_service.dart';
+import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:iconsax/iconsax.dart';
 
 class QuranScreen extends StatelessWidget {
   @override
@@ -18,7 +25,9 @@ class QuranScreen extends StatelessWidget {
     final subColor = isDark ? VoidColors.textDarkSecondary : Colors.grey.shade600;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Quran',
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -34,10 +43,14 @@ class QuranScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Padding(
+      body: ReadableWidth(child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-        child: SingleChildScrollView(
-          child: Column(
+        // Slivers instead of a shrinkWrap ListView inside a scroll view, so
+        // only the visible surahs are built (114 rows were built up front).
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Last Read Section
@@ -83,6 +96,7 @@ class QuranScreen extends StatelessWidget {
                               Get.to(() => SurahScreen(
                                     surahName: controller.lastReadSurahName.value,
                                     surahId: controller.lastReadSurahId.value,
+                                    initialAyah: controller.lastReadAyah.value,
                                   ));
                             },
                             style: ElevatedButton.styleFrom(
@@ -105,7 +119,12 @@ class QuranScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 16.h),
+              SizedBox(height: 12.h),
+              _buildViewToggle(context, controller, accent, textColor, cardColor),
+              Obx(() => controller.mushafView.value
+                  ? _buildContinueMushaf(context, controller, accent, textColor, cardColor)
+                  : const SizedBox.shrink()),
+              SizedBox(height: 12.h),
 
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
@@ -128,15 +147,18 @@ class QuranScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8.h),
+            ],
+              ),
+            ),
 
               // Surah List
               Obx(() {
                 if (controller.isLoading.value) {
-                  return Center(child: CircularProgressIndicator(color: accent));
+                  return SliverToBoxAdapter(child: Center(child: CircularProgressIndicator(color: accent)));
                 }
 
                 if (controller.errorMessage.isNotEmpty) {
-                  return Padding(
+                  return SliverToBoxAdapter(child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 24.h),
                     child: Column(
                       children: [
@@ -152,40 +174,129 @@ class QuranScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                  );
+                  ));
                 }
 
-                return ListView.builder(
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                return SliverList.builder(
                   itemCount: controller.filteredSurahList.length,
                   itemBuilder: (context, index) {
                     final surah = controller.filteredSurahList[index];
+                    final int surahNumber = surah['surahNumber'];
 
-                    return GestureDetector(
-                      onTap: () {
-                        controller.updateLastReadSurah(surah['surahName'], index + 1, 1);
+                    return buildSurahTile(
+                      surah['surahName']!,
+                      surah['surahNameArabic']!,
+                      surah['surahNameTranslation']!,
+                      surah['totalAyah'].toString(),
+                      surahNumber,
+                      isDark,
+                      accent,
+                      textColor,
+                      subColor,
+                      () async {
+                        if (controller.mushafView.value) {
+                          await Get.to(() => MushafScreen(initialPage: MushafService.pageForSurah(surahNumber)));
+                          controller.refreshLastMushafPage();
+                          return;
+                        }
+                        controller.updateLastReadSurah(surah['surahName'], surahNumber, 1);
                         Get.to(() => SurahScreen(
                               surahName: surah['surahName'],
-                              surahId: index + 1,
+                              surahId: surahNumber,
                             ));
                       },
-                      child: buildSurahTile(
-                        surah['surahName']!,
-                        surah['surahNameArabic']!,
-                        surah['surahNameTranslation']!,
-                        surah['totalAyah'].toString(),
-                        index + 1,
-                        isDark,
-                        accent,
-                        textColor,
-                        subColor,
-                      ),
                     );
                   },
                 );
               }),
-              SizedBox(height: 110.h),
+              SliverToBoxAdapter(child: SizedBox(height: 110.h)),
+          ],
+        ),
+      )),
+    ));
+  }
+
+  /// "Surah view / Mushaf view" switch.
+  Widget _buildViewToggle(BuildContext context, QuranController controller, Color accent, Color textColor, Color cardColor) {
+    final t = AppLocalizations.of(context)!;
+    Widget option(String label, IconData icon, bool mushaf) => Expanded(
+          child: Obx(() {
+            final selected = controller.mushafView.value == mushaf;
+            return Semantics(
+              button: true,
+              selected: selected,
+              child: GestureDetector(
+                onTap: () => controller.setMushafView(mushaf),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 150),
+                  padding: EdgeInsets.symmetric(vertical: 10.h),
+                  decoration: BoxDecoration(
+                    color: selected ? accent : Colors.transparent,
+                    borderRadius: BorderRadius.circular(11.r),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(icon, size: 16.sp, color: selected ? Colors.white : textColor),
+                      SizedBox(width: 6.w),
+                      Flexible(
+                        child: Text(
+                          label,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 13.sp,
+                            fontWeight: FontWeight.w600,
+                            color: selected ? Colors.white : textColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          }),
+        );
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(color: cardColor, borderRadius: BorderRadius.circular(14.r)),
+      child: Row(
+        children: [
+          option(t.quranSurahView, Iconsax.task_square, false),
+          option(t.quranMushafView, Iconsax.book_1, true),
+        ],
+      ),
+    );
+  }
+
+  /// "Continue from page X" (or open at page 1 the first time).
+  Widget _buildContinueMushaf(
+      BuildContext context, QuranController controller, Color accent, Color textColor, Color cardColor) {
+    final t = AppLocalizations.of(context)!;
+    final last = controller.lastMushafPage.value;
+    return Padding(
+      padding: EdgeInsets.only(top: 10.h),
+      child: PressableTile(
+        onTap: () async {
+          await Get.to(() => MushafScreen(initialPage: last ?? 1));
+          controller.refreshLastMushafPage();
+        },
+        color: cardColor,
+        borderRadius: BorderRadius.circular(14.r),
+        semanticLabel: last == null ? t.mushafOpen : t.mushafContinue('$last'),
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
+          child: Row(
+            children: [
+              Icon(Iconsax.book_saved, color: accent, size: 20.sp),
+              SizedBox(width: 10.w),
+              Expanded(
+                child: Text(
+                  last == null ? t.mushafOpen : t.mushafContinue('$last'),
+                  style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700, color: textColor),
+                ),
+              ),
+              Icon(Iconsax.arrow_right_3, size: 14.sp, color: accent),
             ],
           ),
         ),
@@ -203,10 +314,14 @@ class QuranScreen extends StatelessWidget {
     Color accent,
     Color textColor,
     Color subColor,
+    VoidCallback onTap,
   ) {
     return Column(
       children: [
-        Padding(
+        PressableTile(
+          onTap: onTap,
+          semanticLabel: surahName,
+          child: Padding(
           padding: EdgeInsets.symmetric(vertical: 8.h),
           child: Row(
             children: [
@@ -248,6 +363,7 @@ class QuranScreen extends StatelessWidget {
               ),
             ],
           ),
+        ),
         ),
         Divider(
           thickness: 1.h,

@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
   @override
@@ -80,12 +81,21 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   }
 
   @override
+  void dispose() {
+    _currentPasswordController.dispose();
+    _newPasswordController.dispose();
+    _retypeNewPasswordController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final accent = isDark ? VoidColors.goldDark : VoidColors.gold;
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     final cardColor = isDark ? VoidColors.cardDark : VoidColors.cardLight;
     return Scaffold(
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       key: _scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -102,14 +112,20 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Container(
+      body: ReadableWidth(child: Container(
         width: double.infinity,
         height: double.infinity,
         color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
         child: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 170.h),
+          // Scrolls (it was a fixed 170.h top/bottom padding that overflowed
+          // on iPhone SE and under the keyboard), centred when there's room.
+          child: LayoutBuilder(
+            builder: (context, constraints) => SingleChildScrollView(
+            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
+            child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: (constraints.maxHeight - 48.h).clamp(0, double.infinity)),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
@@ -169,9 +185,11 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 ),
               ],
             ),
+            ),
+            ),
           ),
         ),
-      ),
+      )),
     );
   }
 

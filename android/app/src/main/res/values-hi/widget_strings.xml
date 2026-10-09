@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">अगली नमाज़</string>
+    <string name="widget_next_prayer_description">अगली नमाज़ तक उलटी गिनती, आज के नमाज़ के समय के साथ</string>
+    <string name="widget_hijri_date_name">इस्लामी तारीख़</string>
+    <string name="widget_hijri_date_description">आज की हिजरी तारीख़ और इस्लामी मौक़े</string>
+    <string name="widget_reminder_name">आज की आयत</string>
+    <string name="widget_daily_reminder_description">हर दिन सोचने के लिए एक आयत या हदीस</string>
+    <string name="widget_next_prayer_fallback">अगली नमाज़</string>
+    <string name="widget_set_location_fallback">अपना स्थान सेट करने के लिए ऐप खोलें</string>
+    <string name="widget_open_app_fallback">अपडेट के लिए ऐप खोलें</string>
+    <string name="widget_preview_prayer">अस्र</string>
+    <string name="widget_preview_hijri_month">रबीउस्सानी</string>
+</resources>

@@ -1,0 +1,9 @@
+"widget.nextPrayer.name" = "अगली नमाज़";
+"widget.nextPrayer.description" = "अगली नमाज़ तक उलटी गिनती, आज के नमाज़ के समय के साथ।";
+"widget.hijriDate.name" = "इस्लामी तारीख़";
+"widget.hijriDate.description" = "आज की हिजरी तारीख़ और इस्लामी मौक़े।";
+"widget.reminder.name" = "आज की आयत";
+"widget.reminder.description" = "हर दिन सोचने के लिए एक आयत या हदीस।";
+"widget.nextPrayer.fallback" = "अगली नमाज़";
+"widget.setLocation.fallback" = "अपना स्थान सेट करने के लिए ऐप खोलें";
+"widget.openApp.fallback" = "अपडेट के लिए ऐप खोलें";

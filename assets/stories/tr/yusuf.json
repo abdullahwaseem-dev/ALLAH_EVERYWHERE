@@ -1,0 +1,675 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yusuf",
+  "language": "tr",
+  "name": "Yusuf",
+  "title": "Sıddîk, şerefli peygamberlerin şerefli oğlu",
+  "sentTo": "Mısır halkı ve kendi ailesi, İsrailoğulları",
+  "era": "Hz. İbrahim'in (a.s.) torununun oğlu. Tarihçiler Mısır'daki Hiksos hükümdarları dönemini (yaklaşık MÖ 1700-1550) önerir; Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Babası Yakub ile birlikte büyüdüğü Kenan (Filistin).",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    },
+    {
+      "name": "Satıldığı, hapsedildiği ve sonra ülkenin hazinelerinin başına getirildiği Mısır.",
+      "lat": 30.0,
+      "lng": 31.2,
+      "approximate": true
+    }
+  ],
+  "summary": "Hz. Yakub'un (a.s.) oğlu; kıskanç kardeşleri tarafından kuyuya atıldı, Mısır'da köle olarak satıldı, iftiraya uğrayıp hapsedildi, sonra Allah onu bütün ülke üzerinde güvenilir bir makama yükseltti. Kur'an onun kıssasını \"kıssaların en güzeli\" diye anar: sabrın, iffetin, affın ve Allah'ın gizli takdirinin kıssası.",
+  "notes": [
+    "Azîz'in karısının adı (çoğu zaman Züleyha denir) Kur'an'da veya sahih hadislerde geçmez; onun sonradan Yusuf'la evlendiğine dair yaygın hikâye, çoğu Ehl-i Kitap'tan gelen sonraki rivayetlere dayanır.",
+    "Yusuf'un küçük kardeşinin adı (Bünyamin) Kur'an'da geçmez; Kitab-ı Mukaddes'ten gelir.",
+    "\"Rabbinin burhanını görmeseydi o da ona meyledecekti\" (12:24): Âlimler bunu çeşitli şekillerde açıklar. Hepsi Yusuf'un hiçbir kötülük yapmadığında birleşir; ayetin kendisi de Allah'ın kötülüğü ondan uzaklaştırdığını söyler.",
+    "Yusuf'un zamanındaki Mısır kralının iman edip etmediği ve Yusuf'un her aşamadaki tam yaşı Kur'an ve Sünnet'te belirtilmez."
+  ],
+  "chapters": [
+    {
+      "id": "yusuf-1",
+      "title": "Rüya",
+      "paragraphs": [
+        "Allah, Peygamber Muhammed'e ﷺ şöyle der: \"Biz sana kıssaların en güzelini anlatıyoruz.\" Bu, Yakub oğlu, İshak oğlu, İbrahim oğlu Yusuf'un (onlara selam olsun) kıssasıdır.",
+        "Bir sabah küçük Yusuf babasına dedi ki: \"Babacığım, ben on bir yıldız, güneşi ve ayı gördüm; onları bana secde ederken gördüm.\"",
+        "Yakub rüyanın gelecekteki büyük işlerin işareti olduğunu anladı. Yusuf'u, kardeşleri ona tuzak kurmasın diye rüyayı onlara anlatmaması konusunda uyardı, çünkü şeytan insanın apaçık düşmanıdır. \"Rabbin seni seçecek, sana olayların yorumunu öğretecek ve daha önce ataların İbrahim ile İshak'a nimetini tamamladığı gibi sana da tamamlayacak\" dedi."
+      ],
+      "kidsParagraphs": [
+        "Küçük Yusuf bir rüya gördü: On bir yıldız, güneş ve ay ona secde ediyordu.",
+        "Babası dedi ki: \"Kardeşlerine anlatma. Allah seni büyük bir iş için seçecek.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 3,
+          "ayahEnd": 3
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 4,
+          "ayahEnd": 4
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 5,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Bazı müjdeleri kıskançlıktan korumak için gizli tutmak daha iyidir.",
+        "Şeytan aileleri bölmek için kıskançlığı kullanır.",
+        "Bilge bir anne baba çocuklarına sevgiyle yol gösterir."
+      ],
+      "quiz": [
+        {
+          "question": "Yusuf rüyasında ne gördü?",
+          "options": [
+            "On bir yıldız, güneş ve ayın ona secde ettiğini",
+            "Yedi inek",
+            "Bir gemi",
+            "Bir saray"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:4"
+        },
+        {
+          "question": "Yakub Yusuf'a ne yapmasını söyledi?",
+          "options": [
+            "Herkese anlatmasını",
+            "Kardeşlerine anlatmamasını",
+            "Mısır'a gitmesini",
+            "Unutmasını"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:5"
+        },
+        {
+          "question": "Kur'an Yusuf'un kıssasını nasıl adlandırır?",
+          "options": [
+            "Garip bir masal",
+            "Kıssaların en güzeli",
+            "Bir efsane",
+            "Bir şiir"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:3"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-2",
+      "title": "Kuyu",
+      "paragraphs": [
+        "Yusuf'un kardeşleri kıskançtı: \"Yusuf ile kardeşi, biz güçlü bir topluluk olduğumuz hâlde babamıza bizden daha sevimli.\" İçlerinden biri dedi ki: \"Yusuf'u öldürün ya da onu bir yere atın.\" Bir başkası dedi ki: \"Onu öldürmeyin; bir kuyunun dibine atın, yolculardan biri onu bulup alır.\"",
+        "Babalarını Yusuf'u oynamak için onlarla göndermeye ikna ettiler. Yakub endişeliydi: \"Siz ondan habersizken onu kurdun yemesinden korkuyorum.\" Yusuf'u kuyuya attıklarında Allah ona vahyetti: Bir gün sen onlara bu yaptıklarını haber vereceksin, onlar ise senin kim olduğunu fark etmeyecekler.",
+        "Akşam ağlayarak, gömleği sahte kana bulanmış hâlde döndüler: \"Onu kurt yedi.\" Yakub dedi ki: \"Güzel bir sabır. Yardımı istenecek olan Allah'tır.\""
+      ],
+      "kidsParagraphs": [
+        "Yusuf'un kardeşleri kıskançtı. Onu kuyuya attılar ve babalarına kurdun yediğini söylediler.",
+        "Ama Allah Yusuf'a: \"Bir gün onlara yaptıklarını anlatacaksın\" dedi. Allah onunlaydı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 8,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        }
+      ],
+      "lessons": [
+        "Kıskançlık insanları korkunç işlere sürükleyebilir.",
+        "Allah, bir kuyunun dibinde bile olsa masumla beraberdir.",
+        "Yalanlar genellikle ortaya çıkar; Yakub sahte kanı anladı."
+      ],
+      "quiz": [
+        {
+          "question": "Kardeşleri Yusuf'u nereye attı?",
+          "options": [
+            "Bir nehre",
+            "Bir kuyunun dibine",
+            "Bir mağaraya",
+            "Denize"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:10"
+        },
+        {
+          "question": "Kardeşler Yusuf'a ne olduğunu söylediler?",
+          "options": [
+            "Kaçtığını",
+            "Kurdun yediğini",
+            "Kaybolduğunu",
+            "Mısır'a gittiğini"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:17"
+        },
+        {
+          "question": "Allah kuyudaki Yusuf'a ne vahyetti?",
+          "options": [
+            "Bir gün onlara bunu haber vereceğini",
+            "Orada kalması gerektiğini",
+            "Hemen kral olacağını",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:15"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-3",
+      "title": "Mısır'da satılış",
+      "paragraphs": [
+        "Bir kervan geçti ve su çekmesi için bir adam gönderdi. Kovasını sarkıtınca bağırdı: \"Müjde! İşte bir oğlan!\" Onu ticaret malı olarak gizlediler ve onu değersiz bir fiyata, birkaç dirheme sattılar, çünkü ona değer vermiyorlardı.",
+        "Onu Mısır'da satın alan adam karısına dedi ki: \"Ona güzel bak. Belki bize faydası dokunur ya da onu evlat ediniriz.\" Böylece Allah Yusuf'u o yere yerleştirdi ve ona olayların yorumunu öğretmeye başladı. Erginlik çağına erişince Allah ona hikmet ve ilim verdi.",
+        "Peygamber ﷺ, Mi'rac gecesi göklerde Yusuf ile karşılaştığını ve ona güzelliğin yarısının verilmiş olduğunu söyledi."
+      ],
+      "kidsParagraphs": [
+        "Yolcular Yusuf'u buldular ve onu Mısır'da birkaç paraya sattılar.",
+        "Mısır'da zengin bir adam onu evine aldı. Yusuf büyüdükçe Allah ona hikmet ve ilim verdi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 19,
+          "ayahEnd": 20
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 21,
+          "ayahEnd": 22
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "162 a",
+          "narrator": "Enes b. Mâlik",
+          "translation": "Peygamber'in ﷺ Mi'rac'ı anlatışından: \"…Sonra bizi üçüncü göğe yükseltti… Bir de baktım ki Yusuf ﷺ ile beraberim; ona güzelliğin yarısı verilmişti. Beni karşıladı ve bana hayır dua etti…\"",
+          "match": "فاذا انا بيوسف صلى الله عليه وسلم اذا هو قد اعطي شطر الحسن",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah'ın takdiri insanların haksızlıkları aracılığıyla bile işler.",
+        "İnsanlar seni küçümseyebilir; Allah gerçek değerini bilir.",
+        "Hikmet ve ilim, Allah'ın iyilik yapanlara verdiği hediyelerdir."
+      ],
+      "quiz": [
+        {
+          "question": "Yusuf kaça satıldı?",
+          "options": [
+            "Bir deveye",
+            "Birkaç dirheme",
+            "Bir saraya",
+            "Hiçbir şeye"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:20"
+        },
+        {
+          "question": "Mısır'daki adam karısına Yusuf hakkında ne dedi?",
+          "options": [
+            "Ona güzel bak",
+            "Onu gönder",
+            "Onu tarlada hizmetçi yap",
+            "Onu yeniden sat"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:21"
+        },
+        {
+          "question": "Peygamber'e ﷺ göre Yusuf'a ne verilmişti?",
+          "options": [
+            "Güzelliğin yarısı",
+            "Büyük bir krallık",
+            "Altın bir asa",
+            "Kuşların dili"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 162 a"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-4",
+      "title": "Allah'ı seçmek",
+      "paragraphs": [
+        "Yusuf büyüyünce, sahibi olan adamın karısı onu ayartmaya çalıştı. Kapıları kapattı ve onu kendine çağırdı. Yusuf hemen reddetti: \"Allah'a sığınırım! O benim efendimdir, bana güzel davrandı. Zalimler asla iflah olmaz.\" Allah kötülüğü ondan uzaklaştırdı, çünkü o, Allah'ın seçkin kullarındandı.",
+        "Kapıya koştu, kadın da arkasından koşup gömleğini arkadan yırttı; kapıda kadının kocasıyla karşılaştılar. Kadın hemen Yusuf'u suçladı. Kadının kendi ailesinden bir şahit dedi ki: Gömlek önden yırtılmışsa kadın doğru söylüyor; arkadan yırtılmışsa o doğru söylüyor. Gömlek arkadan yırtılmıştı.",
+        "Yine de şehrin kadınları dedikodu yaptı ve kadın onu hapisle tehdit etmeye devam etti. Yusuf dua etti: \"Rabbim! Zindan bana, bunların beni çağırdığı şeyden daha sevimlidir.\" Allah duasını kabul etti; masumiyeti açık olduğu hâlde bir süre hapse atıldı."
+      ],
+      "kidsParagraphs": [
+        "Evdeki bir kadın Yusuf'tan kötü bir şey yapmasını istedi. O \"Allah'a sığınırım!\" dedi ve kapıya koştu.",
+        "Masum olduğu hâlde Yusuf hapse atıldı. \"Hapis, Allah'a isyan etmekten iyidir\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 23,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 25,
+          "ayahEnd": 28
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 33,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Ayartılınca Allah'a sığın ve oradan uzaklaş.",
+        "Bize iyilik edenlere vefa imandandır.",
+        "Allah'a isyan etmektense dünyada sıkıntı çekmek daha iyidir."
+      ],
+      "quiz": [
+        {
+          "question": "Ayartılınca Yusuf ne dedi?",
+          "options": [
+            "Allah'a sığınırım",
+            "Sonra",
+            "Herkese anlatacağım",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:23"
+        },
+        {
+          "question": "Yusuf'un masumiyeti nasıl ortaya çıktı?",
+          "options": [
+            "Gömleği arkadan yırtılmıştı",
+            "Bir rüyayla",
+            "Kralın emriyle",
+            "Bir mektupla"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:27-28"
+        },
+        {
+          "question": "Yusuf neyin kendisine daha sevimli olduğunu söyledi?",
+          "options": [
+            "Servetin",
+            "Zindanın",
+            "Eve dönüşün",
+            "Sarayın"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:33"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-5",
+      "title": "Zindanda Allah'a davet",
+      "paragraphs": [
+        "Yusuf'la birlikte zindana iki genç girdi. Her biri bir rüya gördü: Biri şarap için üzüm sıktığını, diğeri başının üstünde kuşların yediği ekmek taşıdığını gördü. Onun iyi bir insan olduğunu gördükleri için Yusuf'tan yorumlamasını istediler.",
+        "Rüyalarını yorumlamadan önce Yusuf bu fırsatı onları Allah'a davet etmek için kullandı: \"Ben atalarım İbrahim, İshak ve Yakub'un dinine uyuyorum. Ey zindan arkadaşlarım! Birbirinden ayrı birçok rab mi daha hayırlı, yoksa bir olan, her şeye galip Allah mı?\"",
+        "Sonra onlara şunu söyledi: Biri yeniden efendisine şarap sunacak, diğeri ise idam edilecekti. Kurtulacağını bildiği kişiye \"Efendinin yanında beni an\" dedi. Ama şeytan ona bunu unutturdu ve Yusuf birkaç yıl daha zindanda kaldı."
+      ],
+      "kidsParagraphs": [
+        "Zindanda iki adam Yusuf'a rüyalarını sordu.",
+        "Yusuf önce onlara Allah'ı anlattı, sonra rüyalarını yorumladı. Zindanda bile Allah'a davet ediyordu!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 38,
+          "ayahEnd": 40
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 41,
+          "ayahEnd": 42
+        }
+      ],
+      "lessons": [
+        "Nerede olursan ol, sıkıntıda bile insanları Allah'a davet et.",
+        "En önemliyle başla: tek Allah'a iman.",
+        "İnsanlardan çok Allah'a güven."
+      ],
+      "quiz": [
+        {
+          "question": "Yusuf'la zindana kaç genç girdi?",
+          "options": [
+            "Bir",
+            "İki",
+            "Yedi",
+            "On bir"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:36"
+        },
+        {
+          "question": "Yusuf kimin dinine uyduğunu söyledi?",
+          "options": [
+            "Kralın",
+            "Ataları İbrahim, İshak ve Yakub'un",
+            "Mısırlıların",
+            "Efendisinin"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:38"
+        },
+        {
+          "question": "Yusuf kurtulan adamdan ne istedi?",
+          "options": [
+            "Onu efendisinin yanında anmasını",
+            "Ona yiyecek getirmesini",
+            "Babasına haber vermesini",
+            "Onu unutmasını"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:42"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-6",
+      "title": "Kralın rüyası",
+      "paragraphs": [
+        "Bir gün Mısır kralı garip bir rüya gördü: Yedi semiz ineği yedi cılız inek yiyor, yedi yeşil başak ve yedi kuru başak. Danışmanları bunların karmakarışık rüyalar olduğunu söyledi. O zaman zindandan kurtulan adam Yusuf'u hatırladı.",
+        "Yusuf şöyle açıkladı: \"Yedi yıl her zamanki gibi ekin; biçtiğinizi yiyeceğiniz azı dışında başağında bırakın. Sonra biriktirdiğinizi yiyip bitirecek yedi kıtlık yılı gelecek. Ondan sonra yağmurun ve bolluğun olduğu bir yıl gelecek.\"",
+        "Kral onu görmek istedi, ama Yusuf adı temize çıkmadan zindandan çıkmayı reddetti. Kadınlar itiraf etti: \"Onun hiçbir kötülüğünü bilmiyoruz.\" Azîz'in karısı da itiraf etti: \"Onu ben ayartmaya çalıştım; o doğru sözlülerdendir.\" Peygamber ﷺ sonradan Yusuf'un sabrını övdü: \"Yusuf'un kaldığı kadar zindanda kalsaydım, beni çağırana icabet ederdim.\""
+      ],
+      "kidsParagraphs": [
+        "Kral rüyasında yedi semiz ve yedi cılız inek gördü. Yusuf açıkladı: yedi iyi yıl, sonra yedi zor yıl.",
+        "Zindandan çıkmadan önce Yusuf herkesin masum olduğunu bilmesini istedi. Herkes de masum olduğunu söyledi!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 43,
+          "ayahEnd": 45
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 47,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"…Yusuf'un zindanda kaldığı kadar kalsaydım, beni çağırmaya gelene icabet ederdim.\"",
+          "match": "ولو لبثت في السجن طول ما لبث يوسف لاجبت الداعي",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Zor zamanlar için önceden plan yapmak akıllıcadır.",
+        "Temiz bir ad önemlidir; Yusuf herhangi bir görev almadan önce adını temize çıkardı.",
+        "Sabır ve vakar bir arada güçlü imanın işaretidir."
+      ],
+      "quiz": [
+        {
+          "question": "Kral rüyasında ne gördü?",
+          "options": [
+            "Yedi semiz ineği yedi cılız ineğin yediğini",
+            "On bir yıldız",
+            "Yanan bir çalı",
+            "Büyük bir tufan"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:43"
+        },
+        {
+          "question": "Yusuf kaç zor yıl geleceğini söyledi?",
+          "options": [
+            "Üç",
+            "Yedi",
+            "On",
+            "Kırk"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:48"
+        },
+        {
+          "question": "Yusuf zindandan neden hemen çıkmadı?",
+          "options": [
+            "Önce masumiyetinin açığa çıkmasını istedi",
+            "Korkuyordu",
+            "Zindanı seviyordu",
+            "Kapı kilitliydi"
+          ],
+          "answer": 0,
+          "reference": "Quran 12:50"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-7",
+      "title": "Hazinelerin başında",
+      "paragraphs": [
+        "Kral dedi ki: \"Onu bana getirin, onu kendime özel danışman yapayım.\" Yusuf'la konuşunca dedi ki: \"Bugün sen yanımızda itibarlı ve güvenilir birisin.\" Yusuf istedi: \"Beni ülkenin hazinelerinin başına getir; ben iyi koruyan, iyi bilen biriyim.\" Allah Yusuf'u o yerde iktidar sahibi kıldı.",
+        "Zor yıllar gelince insanlar her yerden tahıl almaya geldi ve aralarında Yusuf'un kardeşleri de geldi. Yusuf onları tanıdı, ama onlar onu tanımadı. Onlara tahıl verdi ve bir dahaki sefere küçük kardeşlerini getirmelerini istedi.",
+        "Onunla döndüklerinde Yusuf kardeşine gizlice kim olduğunu söyledi. Sonra Allah'ın ona öğrettiği bir tedbirle, kardeşini Mısır'da alıkoyabilmek için kralın su kabını kardeşinin yüküne koydurdu."
+      ],
+      "kidsParagraphs": [
+        "Yusuf Mısır'ın yiyeceklerinden sorumlu oldu. Zor yıllarda kardeşleri tahıl almaya geldi.",
+        "Onlar onu tanımadı, ama o onları tanıdı! Akıllıca bir planla küçük kardeşini yanında tuttu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 54,
+          "ayahEnd": 56
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 58,
+          "ayahEnd": 60
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 69,
+          "ayahEnd": 70
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 76,
+          "ayahEnd": 76
+        }
+      ],
+      "lessons": [
+        "Sorumluluğu ancak onun için gereken beceri ve dürüstlüğe sahipsen iste.",
+        "Allah sabredenleri sıkıntılarının ardından yükseltir.",
+        "Allah'ın takdiri adım adım ortaya çıkar."
+      ],
+      "quiz": [
+        {
+          "question": "Yusuf hangi görevi istedi?",
+          "options": [
+            "Ordu komutanlığı",
+            "Hazinelerin sorumluluğu",
+            "Başkadılık",
+            "Gemi kaptanlığı"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:55"
+        },
+        {
+          "question": "Kardeşler Yusuf'u tanıdı mı?",
+          "options": [
+            "Evet, hemen",
+            "Hayır",
+            "Yalnızca en küçüğü",
+            "Yalnızca en büyüğü"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:58"
+        },
+        {
+          "question": "Kardeşinin yüküne ne konuldu?",
+          "options": [
+            "Altın paralar",
+            "Kralın su kabı",
+            "Bir mektup",
+            "Bir gömlek"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:70"
+        }
+      ]
+    },
+    {
+      "id": "yusuf-8",
+      "title": "Bugün size kınama yok",
+      "paragraphs": [
+        "Kardeşler ihtiyaç içinde Mısır'a döndüler: \"Ey Azîz! Bize ve ailemize sıkıntı dokundu.\" Yusuf onlara sordu: \"Siz cahilken Yusuf'a ve kardeşine ne yaptığınızı biliyor musunuz?\" Haykırdılar: \"Yoksa sen gerçekten Yusuf musun?\" Dedi ki: \"Ben Yusuf'um, bu da kardeşim. Allah bize lütufta bulundu.\"",
+        "Günahlarını itiraf ettiler. Artık güçlü olan Yusuf intikam almadı: \"Bugün size kınama yok. Allah sizi bağışlasın; O merhametlilerin en merhametlisidir.\" Babasının gözlerini açması için gömleğini gönderdi ve bütün aileyi Mısır'a davet etti.",
+        "Anne babası gelince onları tahtın üstüne çıkardı ve hepsi onun önünde secdeye kapandı: Çocukluk rüyasının tabiri buydu. Yusuf dua etti: \"Rabbim! Bana mülk verdin ve olayların yorumunu öğrettin. Beni Müslüman olarak öldür ve salihlere kat.\" Peygamber ﷺ onu insanların en şereflisi olarak andı: bir peygamber, peygamber oğlu, peygamber oğlu, Allah'ın dostunun oğlu."
+      ],
+      "kidsParagraphs": [
+        "Kardeşler geri geldi ve Yusuf \"Ben Yusuf'um!\" dedi. Çok pişman oldular.",
+        "Yusuf onları affetti: \"Bugün size kınama yok.\" Sonra bütün aile Mısır'a geldi ve rüyası gerçek oldu."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 12,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 12,
+          "ayahStart": 91,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 12,
+          "ayahStart": 100,
+          "ayahEnd": 101
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3353",
+          "narrator": "Ebû Hüreyre",
+          "translation": "\"Ey Allah'ın Resûlü! İnsanların en şereflisi kimdir?\" denildi. \"Allah'tan en çok korkanıdır\" buyurdu. \"Sana bunu sormuyoruz\" dediler. Buyurdu ki: \"O hâlde Allah'ın peygamberi Yusuf; Allah'ın peygamberinin oğlu, Allah'ın peygamberinin oğlu, Allah'ın dostunun oğlu…\"",
+          "match": "فيوسف نبي الله ابن نبي الله ابن نبي الله ابن خليل الله",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Cezalandırma gücü varken affetmek gerçek büyüklüktür.",
+        "Sabır ve takva asla boşa gitmez.",
+        "Allah'tan güzel bir son iste: salihler arasında Müslüman olarak ölmek."
+      ],
+      "quiz": [
+        {
+          "question": "Kardeşleri günahlarını itiraf edince Yusuf ne dedi?",
+          "options": [
+            "Cezalandırılacaksınız",
+            "Bugün size kınama yok",
+            "Mısır'dan çıkın",
+            "Hakkımı ödeyin"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:92"
+        },
+        {
+          "question": "Yusuf babasına ne gönderdi?",
+          "options": [
+            "Altın",
+            "Gömleğini",
+            "Bir mektup",
+            "Tahıl"
+          ],
+          "answer": 1,
+          "reference": "Quran 12:93"
+        },
+        {
+          "question": "Peygamber ﷺ (soy bakımından) insanların en şereflisi olarak kimi andı?",
+          "options": [
+            "Yusuf'u",
+            "Musa'yı",
+            "Süleyman'ı",
+            "Davud'u"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3353"
+        }
+      ]
+    }
+  ]
+}

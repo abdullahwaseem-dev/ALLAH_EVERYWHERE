@@ -1,0 +1,338 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "shuayb",
+  "language": "tr",
+  "name": "Şuayb",
+  "title": "Doğru ticarete çağıran Medyen peygamberi",
+  "sentTo": "Medyen halkı ve \"Eyke ashabı\" (sık ağaçlık halkı)",
+  "era": "Hz. Musa'dan (a.s.) önce; Medyen halkına, onlardan \"uzak olmayan\" Lut kavminin akıbetini hatırlattı (11:89). Bir tarih verilmez.",
+  "places": [
+    {
+      "name": "Arabistan'ın kuzeybatısında, Akabe Körfezi'nin doğusunda Medyen.",
+      "lat": 28.5,
+      "lng": 35.0,
+      "approximate": true
+    }
+  ],
+  "summary": "Şuayb, ölçü ve tartıda hile yapan, yolcuları soyan ve insanları Allah yolundan alıkoyan, ticaretle uğraşan Medyen halkına gönderildi. Onları Allah'a ibadete ve dürüst alışverişe çağırdı. Kibirli ileri gelenler onu sürgün etmekle tehdit etti; azap onları yakaladı, Şuayb ve müminler ise kurtarıldı.",
+  "notes": [
+    "Medyen halkı ile \"Eyke ashabı\" (26:176) aynı kavim miydi? Âlimler ihtilaf etmiştir: Bazıları tek bir kavim olduğunu, bazıları da Şuayb'ın gönderildiği iki ayrı kavim olduğunu söyler.",
+    "Musa'nın kızıyla evlendiği Medyen'deki yaşlı adam (28:23-28) birçok kitapta Şuayb olarak geçer. İbn Kesîr dahil birçok âlim, Şuayb Musa'dan çok önce yaşadığı için bundan şüphe etmiştir; Kur'an onun adını vermez.",
+    "Kur'an azabı bir sarsıntı (7:91), bir sayha (11:94) ve \"gölge gününün azabı\" (26:189) olarak anlatır; âlimler bunları tek bir olayın parçaları ya da iki kavmin anlatımı olarak açıklar."
+  ],
+  "chapters": [
+    {
+      "id": "shuayb-1",
+      "title": "Dürüst ölçü ve tartı",
+      "paragraphs": [
+        "Medyen, kervan yolları üzerinde bir tüccarlar şehriydi. Allah onlara kardeşleri Şuayb'ı (a.s.) her peygamberin mesajıyla gönderdi: \"Ey kavmim! Allah'a ibadet edin; sizin O'ndan başka ilahınız yoktur.\"",
+        "Onların özel günahını da söyledi: Ticarette hile yapıyorlardı. \"Ölçüyü ve tartıyı tam yapın, insanların mallarını eksik vermeyin ve düzene konulduktan sonra yeryüzünde bozgunculuk yapmayın.\"",
+        "Onlara, eğer iman ediyorlarsa, Allah'ın bıraktığı az helal kazancın hileyle elde edilen çok kazançtan daha hayırlı olduğunu hatırlattı."
+      ],
+      "kidsParagraphs": [
+        "Medyen halkı satış yaparken hile yapıyordu. İnsanlara ödedikleri paradan daha azını veriyorlardı.",
+        "Şuayb onlara dedi ki: \"Yalnız Allah'a ibadet edin ve alışverişte dürüst olun!\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 85,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 84,
+          "ayahEnd": 85
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 181,
+          "ayahEnd": 183
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 86,
+          "ayahEnd": 86
+        }
+      ],
+      "lessons": [
+        "Ticarette dürüstlük ibadetin bir parçasıdır.",
+        "Az helal kazanç, çok haram kazançtan iyidir.",
+        "İnsanları aldatmak toplumda bozgunculuğu yayar."
+      ],
+      "quiz": [
+        {
+          "question": "Medyen halkı ticarette ne yanlış yapıyordu?",
+          "options": [
+            "Fazla veriyorlardı",
+            "Ölçü ve tartıda hile yapıyorlardı",
+            "Satmayı reddediyorlardı",
+            "Sadece zenginlere satıyorlardı"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:84"
+        },
+        {
+          "question": "Şuayb onlar için neyin daha hayırlı olduğunu söyledi?",
+          "options": [
+            "Allah'ın bıraktığı (helal) kazancın",
+            "Daha fazla altının",
+            "Daha fazla toprağın",
+            "Daha büyük bir pazarın"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:86"
+        },
+        {
+          "question": "Şuayb'ın mesajının ilk kısmı neydi?",
+          "options": [
+            "Yalnız Allah'a ibadet edin",
+            "Bir gemi yapın",
+            "Şehri terk edin",
+            "Krala karşı savaşın"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:85"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-2",
+      "title": "\"Namazın mı sana emrediyor?\"",
+      "paragraphs": [
+        "Halk onunla alay etti: \"Ey Şuayb! Atalarımızın tapındıklarını bırakmamızı ya da mallarımızda dilediğimizi yapmaktan vazgeçmemizi sana namazın mı emrediyor?\" Dinin parayla ne ilgisi olduğunu anlayamıyorlardı.",
+        "Şuayb yumuşak ve hikmetli bir şekilde cevap verdi. Onları bir şeyden men edip sonra kendisi onu yapmak istemiyordu. \"Ben sadece gücüm yettiğince ıslah etmek istiyorum\" dedi. \"Başarım ancak Allah'tandır. O'na tevekkül ettim ve O'na yöneliyorum.\"",
+        "Onlara Nuh, Hud ve Salih kavimlerinin başına gelenleri ve onlardan uzak olmayan Lut kavmini hatırlattı; Rablerinden bağışlanma dilemelerini istedi, çünkü O çok merhametli ve çok sevendir."
+      ],
+      "kidsParagraphs": [
+        "Halk güldü: \"Paramızla ne yapacağımızı sana namazın mı söylüyor?\"",
+        "Şuayb dedi ki: \"Ben sadece düzeltmek istiyorum. Başarım yalnız Allah'tandır.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 89,
+          "ayahEnd": 90
+        }
+      ],
+      "lessons": [
+        "İslam, nasıl kazanıp harcadığımız dahil hayatın her alanına yol gösterir.",
+        "Hayra çağıran kişi söylediğini kendisi de yapar.",
+        "Başarı yalnızca Allah'tandır."
+      ],
+      "quiz": [
+        {
+          "question": "Halk Şuayb'a alay ederek ne sordu?",
+          "options": [
+            "Namazın mı sana emrediyor…?",
+            "Ordun nerede?",
+            "Baban kim?",
+            "Neden zenginsin?"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:87"
+        },
+        {
+          "question": "Şuayb ne istediğini söyledi?",
+          "options": [
+            "Kral olmak",
+            "Sadece gücü yettiğince ıslah etmek",
+            "Onların mallarını",
+            "Gitmek"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:88"
+        },
+        {
+          "question": "Şuayb hangi eski kavmin onlardan \"uzak olmadığını\" söyledi?",
+          "options": [
+            "Lut kavmi",
+            "Musa kavmi",
+            "Rumlar",
+            "Yunus kavmi"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:89"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-3",
+      "title": "Tehditler",
+      "paragraphs": [
+        "Kibirli ileri gelenler onu tehdit etti: \"Ey Şuayb! Ya dinimize dönersiniz ya da seni ve seninle birlikte iman edenleri şehrimizden çıkarırız.\" Şuayb cevap verdi: \"İstemesek de mi? Allah bizi ondan kurtardıktan sonra sizin dininize dönersek, Allah'a karşı yalan uydurmuş oluruz.\"",
+        "Şunu da dediler: \"Söylediklerinin çoğunu anlamıyoruz ve seni aramızda zayıf görüyoruz. Kabilen olmasaydı seni taşlardık.\" Şuayb sordu: \"Kabilem size Allah'tan daha mı değerli?\"",
+        "Onlara, kendi yollarında devam etmelerini, kendisinin de kendi yolunda devam edeceğini söyledi: Yakında rezil edici azabın kime geleceğini ve yalancının kim olduğunu bileceklerdi."
+      ],
+      "kidsParagraphs": [
+        "İleri gelenler dedi ki: \"Şehrimizi terk et ya da dinimize geri dön!\"",
+        "Şuayb cesurdu. Dedi ki: \"Allah'ın bize verdiği hakkı asla bırakmayacağız.\""
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 88,
+          "ayahEnd": 89
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 91,
+          "ayahEnd": 92
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        }
+      ],
+      "lessons": [
+        "İmanını asla güvenlik veya rahatlık için satma.",
+        "Allah korkusu, insan korkusundan büyük olmalıdır.",
+        "Hakkın ayakta durmak için kabile gücüne ihtiyacı yoktur."
+      ],
+      "quiz": [
+        {
+          "question": "İleri gelenler Şuayb'ı neyle tehdit etti?",
+          "options": [
+            "Onu zengin etmekle",
+            "Onu şehirden çıkarmakla",
+            "Onu liderleri yapmakla",
+            "Ona toprak vermekle"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:88"
+        },
+        {
+          "question": "İleri gelenler onu neden taşlamadıklarını söyledi?",
+          "options": [
+            "Kabilesi yüzünden",
+            "Kral yüzünden",
+            "Güçlü olduğu için",
+            "Melekler yüzünden"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:91"
+        },
+        {
+          "question": "Şuayb kabilesi hakkında onlara ne sordu?",
+          "options": [
+            "Kabilem size Allah'tan daha mı değerli?",
+            "Kabilem nerede?",
+            "Kabileme kız verir misiniz?",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:92"
+        }
+      ]
+    },
+    {
+      "id": "shuayb-4",
+      "title": "Sanki orada hiç yaşamamışlar gibi",
+      "paragraphs": [
+        "Allah'ın emri gelince, Şuayb'ı ve onunla birlikte iman edenleri rahmetiyle kurtardı; zalimleri ise korkunç bir sayha ve sarsıntı yakaladı. Yurtlarında cansız kaldılar, sanki orada hiç yaşamamışlar gibi.",
+        "Şuayb onlardan yüz çevirip şöyle dedi: \"Ey kavmim! Ben size Rabbimin mesajlarını tebliğ ettim ve size öğüt verdim. Kâfir bir kavim için nasıl üzüleyim?\"",
+        "Kur'an, Şuayb'ı yalanlayan \"Eyke ashabı\"nın azabını \"gölge gününün azabı\" olarak anlatır. Onlar, üzerlerine gökten parçalar düşürmesi için ona meydan okumuşlardı; azap korkunç bir gün olarak geldi."
+      ],
+      "kidsParagraphs": [
+        "Allah Şuayb'ı ve müminleri kurtardı. Hile yapan ve inat edenler helak oldu.",
+        "Dürüstlük ve iman kurtarır; hile ve kibir helak eder."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 94,
+          "ayahEnd": 95
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 93,
+          "ayahEnd": 93
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 187,
+          "ayahEnd": 189
+        }
+      ],
+      "lessons": [
+        "Toplumdaki adaletsizlik sonunda helake götürür.",
+        "Allah müminleri rahmetiyle kurtarır.",
+        "Her uyarıcının görevi tebliğdir; hidayet Allah'tandır."
+      ],
+      "quiz": [
+        {
+          "question": "Medyen'in zalimlerini ne yakaladı?",
+          "options": [
+            "Bir tufan",
+            "Korkunç bir sayha",
+            "Bir rüzgâr",
+            "Çekirgeler"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        },
+        {
+          "question": "Eyke ashabının azabına ne denir?",
+          "options": [
+            "Gölge günü",
+            "Tufan günü",
+            "Ateş günü",
+            "Rüzgâr günü"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:189"
+        },
+        {
+          "question": "Kim kurtuldu?",
+          "options": [
+            "Hiç kimse",
+            "Şuayb ve iman edenler",
+            "Sadece ileri gelenler",
+            "Sadece tüccarlar"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:94"
+        }
+      ]
+    }
+  ]
+}

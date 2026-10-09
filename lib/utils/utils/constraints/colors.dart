@@ -63,8 +63,17 @@ class VoidColors {
 
   // Brand palette for the card-based redesign - taken from the app's own
   // logo (olive green + gold + dusty rose), not a generic template.
-  static const Color gold = Color(0xFFCB9B3F);
-  static const Color goldDark = Color(0xFFE8C165);
+  // The accent (light / dark mode). Gold by default; an accent theme
+  // earned in My Rewards replaces it app-wide (see ThemeController).
+  static Color get gold => _accentLight;
+  static Color get goldDark => _accentDark;
+  static Color _accentLight = const Color(0xFFCB9B3F);
+  static Color _accentDark = const Color(0xFFE8C165);
+
+  static void useAccent(Color light, Color dark) {
+    _accentLight = light;
+    _accentDark = dark;
+  }
   static const Color oliveDeep = Color(0xFF4B4B32);
   static const Color oliveDeepLight = Color(0xFF6E6E48);
   static const Color dustyRose = Color(0xFFD9B8A8);
@@ -75,4 +84,12 @@ class VoidColors {
   static const Color cardDark = Color(0xFF211F17);
   static const Color textDarkPrimary = Color(0xFFF3EEE4);
   static const Color textDarkSecondary = Color(0xFFB9B3A4);
+
+  // Mushaf page backgrounds and ink (Quran reader, page view).
+  static const Color mushafWhite = Color(0xFFFFFEFA);
+  static const Color mushafWhiteInk = Color(0xFF1E1B14);
+  static const Color mushafSepia = Color(0xFFF4E9D2);
+  static const Color mushafSepiaInk = Color(0xFF3B2F1E);
+  static const Color mushafNight = Color(0xFF12110D);
+  static const Color mushafNightInk = Color(0xFFE9E1CF);
 }

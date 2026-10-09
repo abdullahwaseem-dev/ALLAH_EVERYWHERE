@@ -1,0 +1,165 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "idris",
+  "language": "zh",
+  "name": "易德立斯",
+  "title": "一位诚实的人，被提升到崇高的地位",
+  "sentTo": "阿丹（愿主赐他平安）的后裔，在努哈（愿主赐他平安）之前或之后；《古兰经》没有说明",
+  "era": "非常早。大多数学者把他放在阿丹和努哈（愿主赐他们平安）之间；《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "不详。《古兰经》没有说易德立斯住在哪里。",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "一位被《古兰经》称赞为诚实、坚忍、清廉的先知，真主把他提升到崇高的地位。关于他的生平，确切知道的很少，《古兰经》只提到他两次。",
+  "notes": [
+    "大多数学者说易德立斯生活在阿丹和努哈之间。许多人认为他就是《圣经》中的以诺（艾赫努赫）；这来自历史学家和有经人，而不是《古兰经》或圣训。",
+    "“我把他提升到一个崇高的地位”（19:57）：许多学者说这是指尊贵和先知品级的崇高；另一些人说他被提升到了诸天中的一层。",
+    "流行的说法，例如他是第一个用笔书写、第一个缝衣服或第一个研究星象的人，来自后来的资料，而不是《古兰经》或可靠的圣训。"
+  ],
+  "chapters": [
+    {
+      "id": "idris-1",
+      "title": "一位诚实的人",
+      "paragraphs": [
+        "《古兰经》要我们记住易德立斯（愿主赐他平安）。真主描述他是一个诚实的人、一位先知，并说：“我把他提升到一个崇高的地位。”",
+        "真主还把他和伊斯玛仪、助勒·基福勒（愿主赐他们平安）一起列为坚忍的人，并说祂使他们进入了祂的慈悯，因为他们都是清廉的人。",
+        "这几乎就是我们确切知道的关于易德立斯的一切。《古兰经》给我们的是他的品质，而不是他的故事：诚实、坚忍和清廉。正是这些品质使一个人在真主那里得到提升。"
+      ],
+      "kidsParagraphs": [
+        "易德立斯是一位总是说真话的先知。",
+        "真主说他坚忍、善良，并把他提升到很高的地位。我们也可以像他一样诚实、坚忍！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 56,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 85,
+          "ayahEnd": 86
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "有些书说易德立斯是第一个用笔书写、第一个缝衣服的人，或者描述一位天使怎样把他带上天。"
+        }
+      ],
+      "lessons": [
+        "诚实是先知们最伟大的品质之一。",
+        "坚忍使人进入真主的慈悯。",
+        "一个人最重要的是他的品格，而不是人们对他知道多少。"
+      ],
+      "quiz": [
+        {
+          "question": "《古兰经》怎样描述易德立斯（愿主赐他平安）？",
+          "options": [
+            "一位国王",
+            "一个诚实的人和一位先知",
+            "一个商人",
+            "一位诗人"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:56"
+        },
+        {
+          "question": "真主为易德立斯做了什么？",
+          "options": [
+            "把他提升到崇高的地位",
+            "给了他一艘船",
+            "使他成为国王",
+            "给了他一根手杖"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:57"
+        },
+        {
+          "question": "易德立斯和哪两位先知一起被列为坚忍的人？",
+          "options": [
+            "穆萨和哈伦",
+            "伊斯玛仪和助勒·基福勒",
+            "优努斯和安优卜",
+            "达五德和素莱曼"
+          ],
+          "answer": 1,
+          "reference": "Quran 21:85"
+        }
+      ]
+    },
+    {
+      "id": "idris-2",
+      "title": "在诸天中迎接先知ﷺ",
+      "paragraphs": [
+        "在登霄之夜，当先知穆罕默德ﷺ被带着穿越诸天时，他遇见了好几位以前的先知。其中一位就是易德立斯。",
+        "易德立斯用这样的话迎接他：“欢迎清廉的先知、清廉的兄弟。”先知们像兄弟一样互相问候，因为他们的使命是一样的：只崇拜真主。"
+      ],
+      "kidsParagraphs": [
+        "在登霄之夜，先知穆罕默德ﷺ在诸天中遇见了易德立斯。",
+        "易德立斯说：“欢迎清廉的先知、清廉的兄弟！”所有的先知都像兄弟一样。"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3342",
+          "narrator": "艾奈斯·本·马立克，传自艾布·赞尔",
+          "translation": "……艾奈斯说：“当吉卜利勒带着先知ﷺ经过易德立斯时，易德立斯说：‘欢迎清廉的先知、清廉的兄弟。’先知ﷺ问：‘这是谁？’吉卜利勒说：‘这是易德立斯。’”",
+          "match": "فلما مر جبريل بادريس قال مرحبا بالنبي الصالح والاخ الصالح",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "所有的先知都是传达同一使命的兄弟。",
+        "热情地欢迎别人，是先知们的做法。",
+        "登霄显示了真主赐给祂的先知们的荣耀。"
+      ],
+      "quiz": [
+        {
+          "question": "先知ﷺ是什么时候遇见易德立斯的？",
+          "options": [
+            "在白德尔战役中",
+            "在登霄之夜",
+            "在麦地那",
+            "在希拉山洞的一个梦中"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "易德立斯怎样称呼先知ﷺ？",
+          "options": [
+            "清廉的儿子",
+            "清廉的兄弟",
+            "国王",
+            "老师"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3342"
+        },
+        {
+          "question": "是谁带着先知ﷺ穿越诸天的？",
+          "options": [
+            "吉卜利勒",
+            "米卡伊勒",
+            "伊斯拉菲勒",
+            "易德立斯"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3342"
+        }
+      ]
+    }
+  ]
+}

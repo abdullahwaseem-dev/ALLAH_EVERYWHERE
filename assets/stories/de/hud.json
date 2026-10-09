@@ -1,0 +1,348 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "hud",
+  "language": "de",
+  "name": "Hud",
+  "title": "Der Gesandte zum Volk 'Ad",
+  "sentTo": "Das Volk 'Ad, sein eigenes Volk",
+  "era": "Nach Nuh (a.s.). Der Koran sagt, 'Ad kam als Nachfolger nach dem Volk Nuhs (7:69); kein Datum wird genannt.",
+  "places": [
+    {
+      "name": "Al-Ahqaf, „die Sanddünen“ (46:21), im Süden Arabiens. Die Gelehrten verorten es meist zwischen Oman und Hadramaut (Jemen).",
+      "lat": 17.5,
+      "lng": 50.5,
+      "approximate": true
+    }
+  ],
+  "summary": "Hud wurde zu 'Ad gesandt, einem mächtigen Volk, das große Monumente baute und andere tyrannisch behandelte. Er rief sie dazu auf, Allah allein anzubeten und Ihn um Vergebung zu bitten. Sie verspotteten ihn, und ein gewaltiger Sturm vernichtete sie, während Hud und die Gläubigen gerettet wurden.",
+  "notes": [
+    "Die genaue Lage von al-Ahqaf und von „Iram mit den Säulen“ (89:7) ist nicht sicher bekannt.",
+    "Geschichten, die Leute von 'Ad seien Riesen von enormer Größe gewesen oder Huds Grab befinde sich in Hadramaut, stammen aus späteren Berichten, nicht aus dem Koran oder authentischen Hadithen.",
+    "Manche sagen, Hud sei der erste arabische Prophet gewesen; das stammt aus einem Bericht außerhalb von al-Bukhari und Muslim und muss geprüft werden."
+  ],
+  "chapters": [
+    {
+      "id": "hud-1",
+      "title": "Das mächtige Volk 'Ad",
+      "paragraphs": [
+        "Nach der Flut verbreiteten sich die Nachkommen derer, die mit Nuh (a.s.) gerettet worden waren, über die Erde. Unter ihnen war das Volk 'Ad, das in al-Ahqaf lebte, einem Land der Sanddünen im Süden Arabiens.",
+        "Allah gab ihnen große Kraft. Hud erinnerte sie daran, dass Allah sie zu Nachfolgern nach dem Volk Nuhs gemacht und ihnen an Gestalt reichlich zugelegt hatte. Sie hatten Vieh, Kinder, Gärten und Quellen.",
+        "Doch sie gebrauchten ihre Gaben schlecht. Sie bauten auf jeder Anhöhe ein Monument, nur um zu prahlen, errichteten starke Festungen, als würden sie ewig leben, und wenn sie andere angriffen, taten sie es wie Tyrannen."
+      ],
+      "kidsParagraphs": [
+        "Das Volk 'Ad war sehr stark und baute große Gebäude.",
+        "Doch sie wurden stolz, behandelten andere grausam und vergaßen Allah, der ihnen alles gegeben hatte."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 21,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 69,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 128,
+          "ayahEnd": 130
+        }
+      ],
+      "lessons": [
+        "Jede Gabe, die wir haben, ist von Allah, und wir sollten sie so gebrauchen, dass es Ihm gefällt.",
+        "Kraft und Reichtum lassen niemanden ewig leben.",
+        "Prahlerei und Unterdrückung haben große Völker zerstört."
+      ],
+      "quiz": [
+        {
+          "question": "Wo lebte das Volk 'Ad?",
+          "options": [
+            "In al-Ahqaf, den Sanddünen",
+            "In Ägypten",
+            "In Babylon",
+            "In Madyan"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:21"
+        },
+        {
+          "question": "Nach welchem Volk wurde 'Ad Nachfolger?",
+          "options": [
+            "Dem Volk Luts",
+            "Dem Volk Nuhs",
+            "Dem Volk Musas",
+            "Thamud"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:69"
+        },
+        {
+          "question": "Was baute 'Ad auf jeder Anhöhe?",
+          "options": [
+            "Moscheen",
+            "Ein Monument zum Zeitvertreib",
+            "Brunnen",
+            "Schulen"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:128"
+        }
+      ]
+    },
+    {
+      "id": "hud-2",
+      "title": "Hud ruft sein Volk",
+      "paragraphs": [
+        "Allah sandte zu 'Ad ihren Bruder Hud (a.s.). Seine Botschaft war die jedes Propheten: „O mein Volk, betet Allah an; ihr habt keinen Gott außer Ihm.“",
+        "Er verlangte keinen Lohn von ihnen; sein Lohn lag allein bei Dem, der ihn erschaffen hatte. Er sagte ihnen, er sei ein aufrichtiger und vertrauenswürdiger Ratgeber, kein Narr oder Lügner, wie sie behaupteten.",
+        "Er versprach ihnen: Wenn sie ihren Herrn um Vergebung bäten und zu Ihm umkehrten, würde Allah ihnen reichlich Regen schicken und ihrer Kraft weitere Kraft hinzufügen."
+      ],
+      "kidsParagraphs": [
+        "Allah sandte Hud zu seinem Volk. Er sagte: „Betet nur Allah an!“",
+        "Hud sagte zu ihnen: „Bittet Allah um Vergebung, dann schickt Er euch Regen und macht euch noch stärker.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 51,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 52,
+          "ayahEnd": 52
+        }
+      ],
+      "lessons": [
+        "Ein Gesandter Allahs gibt aufrichtigen Rat, ohne Bezahlung zu verlangen.",
+        "Um Vergebung zu bitten bringt schon in diesem Leben Segen.",
+        "Beurteile niemanden, der zum Guten ruft, nach den Beleidigungen seiner Feinde."
+      ],
+      "quiz": [
+        {
+          "question": "Wozu rief Hud sein Volk zuerst auf?",
+          "options": [
+            "Ihr Land zu verlassen",
+            "Allah allein anzubeten",
+            "Ein Schiff zu bauen",
+            "Ihn zu bezahlen"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:50"
+        },
+        {
+          "question": "Was würde Allah laut Hud schicken, wenn sie bereuten?",
+          "options": [
+            "Reichlich Regen und mehr Kraft",
+            "Gold",
+            "Ein Heer",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:52"
+        },
+        {
+          "question": "Wessen beschuldigten die Anführer Hud?",
+          "options": [
+            "Der Torheit und der Lüge",
+            "Des Diebstahls",
+            "König zu sein",
+            "Ein Engel zu sein"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:66"
+        }
+      ]
+    },
+    {
+      "id": "hud-3",
+      "title": "Allein auf Allah vertrauen",
+      "paragraphs": [
+        "'Ad weigerte sich. „Du hast uns keinen klaren Beweis gebracht“, sagten sie, „und wir verlassen unsere Götter nicht auf dein Wort hin. Wir glauben, einer unserer Götter hat dich mit Bösem getroffen.“",
+        "Hud antwortete mit vollkommenem Vertrauen auf Allah. Er sagte sich von ihren Götzen los und forderte sie alle heraus, ohne Aufschub gegen ihn zu planen, denn er verließ sich auf Allah, seinen und ihren Herrn: „Es gibt kein Lebewesen, das Er nicht an seinem Schopf hält.“",
+        "Sie forderten die Strafe, vor der er sie warnte. Hud sagte, ihre Zeit sei allein Allah bekannt, und er übermittle nur, womit er gesandt worden sei."
+      ],
+      "kidsParagraphs": [
+        "Die Leute sagten: „Unsere Götter haben dich verrückt gemacht!“",
+        "Hud hatte keine Angst vor ihnen. Er sagte: „Ich vertraue auf Allah. Jedes Lebewesen ist in Seiner Hand.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 53,
+          "ayahEnd": 54
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 55,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 46,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        }
+      ],
+      "lessons": [
+        "Wahrer Mut kommt aus dem Vertrauen auf Allah.",
+        "Jedes Geschöpf steht unter Allahs Macht, darum fürchten wir niemanden außer Ihm.",
+        "Den Zeitpunkt von Allahs Beschluss kennt nur Er."
+      ],
+      "quiz": [
+        {
+          "question": "Was war laut 'Ad mit Hud geschehen?",
+          "options": [
+            "Einer ihrer Götter hatte ihn mit Bösem getroffen",
+            "Er war reich geworden",
+            "Er war verreist",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:54"
+        },
+        {
+          "question": "Auf wen verließ sich Hud?",
+          "options": [
+            "Auf seinen Stamm",
+            "Auf Allah, seinen und ihren Herrn",
+            "Auf den König",
+            "Auf seinen Reichtum"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:56"
+        },
+        {
+          "question": "Wer weiß, wann die Strafe kommt?",
+          "options": [
+            "Hud",
+            "Die Anführer",
+            "Allah allein",
+            "Die Wahrsager"
+          ],
+          "answer": 2,
+          "reference": "Quran 46:23"
+        }
+      ]
+    },
+    {
+      "id": "hud-4",
+      "title": "Der Wind",
+      "paragraphs": [
+        "Eines Tages sah 'Ad eine Wolke auf ihre Täler zukommen und freute sich: „Diese Wolke bringt uns Regen!“ Doch es war das, was sie ungeduldig gefordert hatten: ein Wind, der schmerzhafte Strafe trug und auf Befehl seines Herrn alles zerstörte.",
+        "Allah ließ ihn sieben Nächte und acht Tage ununterbrochen über sie kommen, bis sie dalagen wie hohle Palmstämme. Nichts war von ihnen zu sehen außer ihren Wohnstätten. Allah rettete Hud und die, die mit ihm glaubten, durch Seine Barmherzigkeit.",
+        "Der Prophet ﷺ sagte: „Mir wurde durch den Ostwind (as-saba) zum Sieg verholfen, und 'Ad wurde durch den Westwind (ad-dabur) vernichtet.“ Derselbe Wind, der ein Volk vernichtete, half einem anderen, auf Allahs Befehl."
+      ],
+      "kidsParagraphs": [
+        "Eine Wolke kam, und die Leute dachten, es sei Regen. Doch es war ein schrecklicher Wind, der sieben Nächte und acht Tage wehte.",
+        "Allah rettete Hud und die Gläubigen. Der Wind gehorcht nur Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 69,
+          "ayahStart": 6,
+          "ayahEnd": 8
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "1035",
+          "narrator": "Ibn Abbas",
+          "translation": "Der Prophet ﷺ sagte: „Mir wurde durch den Ostwind (as-saba) zum Sieg verholfen, und 'Ad wurde durch den Westwind (ad-dabur) vernichtet.“",
+          "match": "نصرت بالصبا واهلكت عاد بالدبور"
+        }
+      ],
+      "lessons": [
+        "Was wir uns wünschen, ist nicht immer gut für uns; nur Allah weiß es.",
+        "Die ganze Schöpfung, sogar der Wind, gehorcht Allah.",
+        "Allah rettet die Gläubigen, selbst wenn ihr ganzes Volk vernichtet wird."
+      ],
+      "quiz": [
+        {
+          "question": "Was dachte 'Ad, würde die Wolke bringen?",
+          "options": [
+            "Regen",
+            "Heuschrecken",
+            "Schnee",
+            "Vögel"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:24"
+        },
+        {
+          "question": "Wie lange wehte der Wind?",
+          "options": [
+            "Drei Tage",
+            "Sieben Nächte und acht Tage",
+            "Vierzig Tage",
+            "Eine Stunde"
+          ],
+          "answer": 1,
+          "reference": "Quran 69:7"
+        },
+        {
+          "question": "Welcher Wind vernichtete 'Ad laut dem Propheten ﷺ?",
+          "options": [
+            "Der Ostwind",
+            "Der Westwind (ad-dabur)",
+            "Der Nordwind",
+            "Ein Sandsturm aus Ägypten"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 1035"
+        }
+      ]
+    }
+  ]
+}

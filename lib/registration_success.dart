@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 
 
@@ -19,9 +20,14 @@ class RegistrationSuccess extends StatelessWidget {
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: Padding(
+      body: ReadableWidth(child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.w),
-        child: Column(
+        // Scrollable: the fixed-height artwork + spacing overflowed on
+        // iPhone SE and with larger text.
+        child: SingleChildScrollView(
+          child: SizedBox(
+          width: double.infinity,
+          child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Transform.translate(
@@ -80,8 +86,9 @@ class RegistrationSuccess extends StatelessWidget {
               ),
             ),
           ],
+        )),
         ),
-      ),
+      )),
     );
   }
 }

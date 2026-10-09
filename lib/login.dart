@@ -13,6 +13,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:allah_everywhere/utils/utils/validators/validate.dart';
 import 'package:allah_everywhere/utils/utils/logging/logger.dart';
 import 'package:allah_everywhere/l10n/generated/app_localizations.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -122,7 +123,7 @@ class _LoginState extends State<Login> {
 
     return Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SingleChildScrollView(
+      body: ReadableWidth(child: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
           child: Column(
@@ -173,10 +174,16 @@ class _LoginState extends State<Login> {
                 ),
               ),
               SizedBox(height: 20.h),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // Wrap, not Row: on iPhone SE / large text both don't fit on
+              // one line, so "Forgot password" moves below instead of
+              // overflowing.
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                spacing: 12,
                 children: [
                   Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Checkbox(
                         value: _keepLoggedIn,
@@ -263,7 +270,7 @@ class _LoginState extends State<Login> {
             ],
           ),
         ),
-      ),
+      )),
     );
   }
 }

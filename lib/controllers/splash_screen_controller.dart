@@ -20,7 +20,10 @@ class SplashScreenController {
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
-        double opacity = (1 - (index * 0.33)) * _controller.value;
+        // Each dot runs the same fade-in/fade-out wave, offset by [delay],
+        // so the three pulse in sequence rather than all at once.
+        final phase = (_controller.value - delay) % 1.0;
+        final opacity = 0.25 + 0.75 * (1 - (2 * phase - 1).abs());
         return Opacity(
           opacity: opacity,
           child: Container(

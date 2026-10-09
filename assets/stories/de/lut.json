@@ -1,0 +1,357 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "lut",
+  "language": "de",
+  "name": "Lut",
+  "title": "Der Neffe Ibrahims (a.s.), gesandt zu einer verdorbenen Stadt",
+  "sentTo": "Die Leute der Städte am Toten Meer, unter denen er lebte",
+  "era": "Die Zeit Ibrahims (a.s.), dessen Neffe er war. Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Die Städte von Luts Volk, die die Überlieferung am Toten Meer verortet. Der Koran sagt, sie liegen an einem Weg, den die Menschen noch immer benutzen (15:76).",
+      "lat": 31.3,
+      "lng": 35.45,
+      "approximate": true
+    }
+  ],
+  "summary": "Lut glaubte an seinen Onkel Ibrahim (a.s.) und wanderte mit ihm aus. Allah sandte ihn zu einem Volk, das eine schändliche Sünde beging, die niemand vor ihnen begangen hatte, und jede Warnung ablehnte. Engel kamen, um Lut und seine Familie zu retten, und die Städte wurden umgestürzt. Nur seine Frau, die sich auf die Seite der Ungerechten gestellt hatte, wurde nicht gerettet.",
+  "notes": [
+    "Die Namen Sodom und Gomorra stehen nicht im Koran; sie stammen aus der Bibel.",
+    "„Das sind meine Töchter“ (11:78, 15:71): Viele Gelehrte sagen, Lut meinte die Frauen seines Volkes, da ein Prophet wie ein Vater für sein Volk ist, und rief sie zur erlaubten Ehe auf. Andere sagen, er meinte seine eigenen Töchter zur Ehe.",
+    "Luts Frau: Die Bibel sagt, sie wurde zur Salzsäule, als sie zurückblickte. Der Koran sagt nur, dass sie zu denen gehörte, die zurückblieben und vernichtet wurden.",
+    "Die Geschichte wird hier in allgemeinen, für alle Altersgruppen geeigneten Worten erzählt; Eltern können die Einzelheiten nach eigenem Ermessen erklären."
+  ],
+  "chapters": [
+    {
+      "id": "lut-1",
+      "title": "Lut glaubt und wandert aus",
+      "paragraphs": [
+        "Als Ibrahim (a.s.) sein Volk zu Allah rief und vor dem Feuer gerettet wurde, glaubte ein junger Mann an ihn: sein Neffe Lut. Ibrahim sagte: „Ich wandere zu meinem Herrn aus“, und Allah brachte beide in das gesegnete Land.",
+        "Dann machte Allah Lut zum Propheten und sandte ihn zu den Leuten benachbarter Städte. Sie waren in eine schändliche Sünde verfallen, die kein Volk der Welt vor ihnen begangen hatte: Männer begehrten Männer statt Frauen. Sie taten auch in ihren Versammlungen offen Böses.",
+        "Lut warnte sie wieder und wieder. Ihre Antwort war: „Vertreibt sie aus eurer Stadt! Das sind Leute, die rein bleiben wollen.“"
+      ],
+      "kidsParagraphs": [
+        "Lut glaubte an seinen Onkel Ibrahim und reiste um Allahs willen mit ihm.",
+        "Allah sandte Lut zu einem Volk, das sehr schändliche Dinge tat. Als Lut sie warnte, wollten sie ihn aus ihrer Stadt vertreiben."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 80,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 82,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "Glaube kann bedeuten, einen vertrauten Ort um Allahs willen zu verlassen.",
+        "Zum Guten rufen schließt ein, vor Schändlichem zu warnen.",
+        "Ungerechte greifen Menschen oft nur deshalb an, weil sie rein bleiben wollen."
+      ],
+      "quiz": [
+        {
+          "question": "Wessen Neffe war Lut (a.s.)?",
+          "options": [
+            "Nuhs (a.s.)",
+            "Ibrahims (a.s.)",
+            "Musas (a.s.)",
+            "Yusufs (a.s.)"
+          ],
+          "answer": 1,
+          "reference": "Quran 29:26"
+        },
+        {
+          "question": "Was sagte Luts Volk über ihn und seine Familie?",
+          "options": [
+            "Das sind Leute, die rein bleiben wollen",
+            "Sie sind reich",
+            "Sie sind Könige",
+            "Sie sind Fremde"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:82"
+        },
+        {
+          "question": "Was wollte Luts Volk mit ihm tun?",
+          "options": [
+            "Ihn zum König machen",
+            "Ihn aus der Stadt vertreiben",
+            "Ihm Geschenke geben",
+            "Ihm folgen"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:82"
+        }
+      ]
+    },
+    {
+      "id": "lut-2",
+      "title": "Die Gäste",
+      "paragraphs": [
+        "Die Engel, die Ibrahim die frohe Botschaft von Ishaq gebracht hatten, sagten ihm, dass sie zum Volk Luts weiterziehen würden. Ibrahim sagte: „Aber Lut ist doch dort!“ Sie antworteten, dass sie ihn und seine Familie retten würden, außer seiner Frau.",
+        "Die Engel kamen zu Lut in der Gestalt schöner junger Männer. Lut war tief besorgt um seine Gäste, denn er kannte sein Volk. „Das ist ein schwerer Tag“, sagte er.",
+        "Sein Volk eilte zu seinem Haus. Lut flehte sie an, Allah zu fürchten und ihn vor seinen Gästen nicht zu entehren, und wies sie stattdessen auf die erlaubte Ehe hin. Sie weigerten sich. Allein und ohne Hilfe sagte Lut: „Hätte ich doch Kraft gegen euch oder könnte bei einer starken Stütze Zuflucht suchen!“"
+      ],
+      "kidsParagraphs": [
+        "Engel kamen zu Lut, die wie Männer aussahen. Lut sorgte sich, dass sein Volk seinen Gästen schaden würde.",
+        "Lut sagte: „Fürchtet Allah! Beschämt mich nicht vor meinen Gästen.“ Er fühlte sich allein, aber Allah war bei ihm."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 31,
+          "ayahEnd": 32
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 77,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 68,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        }
+      ],
+      "lessons": [
+        "Gäste zu schützen ist eine Frage der Ehre und des Glaubens.",
+        "Ein Gläubiger ist nie wirklich allein: Allah ist die stärkste Stütze.",
+        "Die Furcht vor Allah sollte uns zurückhalten, bevor wir anderen schaden."
+      ],
+      "quiz": [
+        {
+          "question": "Wer besuchte Lut?",
+          "options": [
+            "Händler",
+            "Engel",
+            "Könige",
+            "Hirten"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Wie nannte Lut den Tag, an dem seine Gäste kamen?",
+          "options": [
+            "Einen glücklichen Tag",
+            "Einen schweren Tag",
+            "Einen Feiertag",
+            "Einen Glückstag"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Wen würden die Engel laut ihren Worten nicht retten?",
+          "options": [
+            "Luts Frau",
+            "Luts Töchter",
+            "Lut",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Quran 29:32"
+        }
+      ]
+    },
+    {
+      "id": "lut-3",
+      "title": "Aufbruch in der Nacht",
+      "paragraphs": [
+        "Da offenbarten die Engel, wer sie waren: „O Lut, wir sind Gesandte deines Herrn. Sie werden dich niemals erreichen.“ Sie sagten ihm, er solle in der Nacht mit seiner Familie aufbrechen, hinter ihnen gehen, und keiner von ihnen solle sich umdrehen.",
+        "Die Strafe würde in der Morgendämmerung kommen. Lut brach mit seiner gläubigen Familie auf. Seine Frau war nicht unter den Geretteten; sie hatte sich auf die Seite der Ungerechten gestellt.",
+        "Der Prophet Muhammad ﷺ sagte: „Möge Allah Sich Luts erbarmen; er suchte Zuflucht bei einer starken Stütze.“ Mit anderen Worten: Lut war nie wirklich allein; seine Stütze war Allah."
+      ],
+      "kidsParagraphs": [
+        "Die Engel sagten: „Hab keine Angst, Lut! Brich nachts mit deiner Familie auf und dreh dich nicht um.“",
+        "Der Prophet ﷺ sagte, Lut hatte eine starke Stütze: Allah!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 81,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 65,
+          "ayahEnd": 66
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Abu Huraira",
+          "translation": "Der Gesandte Allahs ﷺ sagte: „… Möge Allah Sich Luts erbarmen; er suchte Zuflucht bei einer starken Stütze …“",
+          "match": "ويرحم الله لوطا لقد كان ياوي الى ركن شديد",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allahs Hilfe kommt zur rechten Zeit.",
+        "Befolge Allahs Anweisungen genau, auch kleine wie „dreh dich nicht um“.",
+        "Allah ist die stärkste Stütze der Gläubigen."
+      ],
+      "quiz": [
+        {
+          "question": "Wann brachen Lut und seine Familie auf?",
+          "options": [
+            "Mittags",
+            "In der Nacht",
+            "Nach einer Woche",
+            "Nie"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:81"
+        },
+        {
+          "question": "Wann sollte die Strafe kommen?",
+          "options": [
+            "In der Morgendämmerung",
+            "Bei Sonnenuntergang",
+            "In einem Jahr",
+            "Um Mitternacht"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:66"
+        },
+        {
+          "question": "Laut dem Propheten ﷺ suchte Lut Zuflucht bei …",
+          "options": [
+            "Seinem Stamm",
+            "Einer starken Stütze",
+            "Einer Höhle",
+            "Einem Schiff"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3372"
+        }
+      ]
+    },
+    {
+      "id": "lut-4",
+      "title": "Ein Zeichen für die Nachdenkenden",
+      "paragraphs": [
+        "Bei Sonnenaufgang ergriff sie ein schrecklicher Schrei, und Allah stürzte ihre Städte um, das Oberste zuunterst, und ließ Steine aus gebranntem Lehm auf sie regnen, gezeichnet von ihrem Herrn.",
+        "Allah rettete Lut und seine ganze Familie außer seiner Frau. Der Koran nennt sie zusammen mit der Frau Nuhs als Beispiel für jene, die ungläubig waren, obwohl sie mit rechtschaffenen Propheten lebten.",
+        "Der Koran sagt, dass die Ruinen dieser Städte an einem Weg liegen, den die Menschen noch immer benutzen, und dass die Araber morgens und abends an ihnen vorbeikamen. „Begreift ihr denn nicht?“"
+      ],
+      "kidsParagraphs": [
+        "Allah stürzte ihre Städte um. Nur Lut und die Gläubigen wurden gerettet.",
+        "Allah ließ ihre Ruinen als Lehre für die zurück, die nachdenken."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 82,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 73,
+          "ayahEnd": 74
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 133,
+          "ayahEnd": 136
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 137,
+          "ayahEnd": 138
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 76,
+          "ayahEnd": 77
+        }
+      ],
+      "lessons": [
+        "Jede Sünde, auf der man beharrt und die offen verbreitet wird, zieht Allahs Strafe nach sich.",
+        "Verwandtschaft rettet nicht; der Glaube rettet.",
+        "Die Geschichte ist voller Zeichen für die, die nachdenken."
+      ],
+      "quiz": [
+        {
+          "question": "Was ließ Allah auf Luts Volk regnen?",
+          "options": [
+            "Wasser",
+            "Steine aus gebranntem Lehm",
+            "Feuer",
+            "Schnee"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:82"
+        },
+        {
+          "question": "Wer aus Luts Familie wurde nicht gerettet?",
+          "options": [
+            "Seine Frau",
+            "Seine Töchter",
+            "Lut",
+            "Niemand"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:135"
+        },
+        {
+          "question": "Wann ergriff sie der Schrei?",
+          "options": [
+            "Bei Sonnenaufgang",
+            "Um Mitternacht",
+            "Mittags",
+            "Bei Sonnenuntergang"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:73"
+        }
+      ]
+    }
+  ]
+}

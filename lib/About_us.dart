@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class AboutUsScreen extends StatelessWidget {
   @override
@@ -9,6 +10,7 @@ class AboutUsScreen extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final textColor = isDark ? VoidColors.textDarkPrimary : VoidColors.oliveDeep;
     return Scaffold(
+      backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
       appBar: AppBar(
         title: Text(
           'About Us',
@@ -23,7 +25,7 @@ class AboutUsScreen extends StatelessWidget {
         elevation: 0,
         leading: const VoidBackButton(),
       ),
-      body: Container(
+      body: ReadableWidth(child: Container(
         width: double.infinity,
         height: double.infinity,
         color: isDark ? VoidColors.bgDark : VoidColors.bgLight,
@@ -122,7 +124,7 @@ class AboutUsScreen extends StatelessWidget {
           ),
         ),
       ),
-    ),
+    )),
     );
   }
 }

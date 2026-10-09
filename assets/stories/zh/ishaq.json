@@ -1,0 +1,181 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ishaq",
+  "language": "zh",
+  "name": "易司哈格",
+  "title": "易卜拉欣（愿主赐他平安）蒙应许的儿子",
+  "sentTo": "吉祥之地（巴勒斯坦）上易卜拉欣（愿主赐他平安）的家族",
+  "era": "他父亲易卜拉欣（愿主赐他平安）的时代。《古兰经》和圣训都没有给出年代。",
+  "places": [
+    {
+      "name": "巴勒斯坦的哈利勒（希伯伦），位于易卜拉欣定居的吉祥之地。传统上认为他的坟墓在这里。",
+      "lat": 31.5247,
+      "lng": 35.1108,
+      "approximate": true
+    }
+  ],
+  "summary": "易卜拉欣（愿主赐他平安）与萨拉的儿子，正如天使所报喜的那样，在父母年老时出生。真主使他成为先知，并赐福于他的后裔：叶尔孤白（愿主赐他平安）和以色列后裔的众先知都出自他。",
+  "notes": [
+    "《古兰经》很少讲述易司哈格本人的生平。他的婚姻和双胞胎儿子等细节来自《圣经》。",
+    "要被献祭的儿子是易司哈格还是易司马仪？大多数学者说是易司马仪（见易卜拉欣的故事）。"
+  ],
+  "chapters": [
+    {
+      "id": "ishaq-1",
+      "title": "年老时的喜讯",
+      "paragraphs": [
+        "易卜拉欣（愿主赐他平安）和他的妻子萨拉都已年老，萨拉从未生过孩子。后来天使们作为客人到来，向他们报喜：他们将有一个儿子易司哈格，在他之后还有一个孙子叶尔孤白。",
+        "萨拉很惊讶：“我已是老太婆，我丈夫也是老头子了，我还能生孩子吗？”天使们回答说：“你对真主的命令感到惊讶吗？这家人啊！愿真主的慈恩和祂的福泽降临你们。”",
+        "《古兰经》说易司哈格是清廉者中的一位先知，并说真主赐福于易卜拉欣和易司哈格。"
+      ],
+      "kidsParagraphs": [
+        "易卜拉欣和萨拉年纪很大，没有孩子。天使们告诉他们：“你们会有一个儿子，名叫易司哈格！”",
+        "萨拉很惊讶。但对真主来说，没有什么是不可能的。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 71,
+          "ayahEnd": 72
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 73,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        }
+      ],
+      "lessons": [
+        "无论年纪多大，都不要对真主的慈恩绝望。",
+        "孩子是真主的恩赐。",
+        "真主的应许总会实现。"
+      ],
+      "quiz": [
+        {
+          "question": "易司哈格的母亲是谁？",
+          "options": [
+            "哈哲尔",
+            "萨拉",
+            "麦尔彦",
+            "阿西娅"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "谁报告了易司哈格将要出生的喜讯？",
+          "options": [
+            "天使们",
+            "一个梦",
+            "一位国王",
+            "一个旅人"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:71"
+        },
+        {
+          "question": "同时报喜的还有哪个孙子？",
+          "options": [
+            "优素福",
+            "叶尔孤白",
+            "穆萨",
+            "达乌德"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:71"
+        }
+      ]
+    },
+    {
+      "id": "ishaq-2",
+      "title": "众先知之父",
+      "paragraphs": [
+        "真主把易司哈格和叶尔孤白赐给易卜拉欣，使他们都成为清廉的人。祂使他们成为奉祂的命令引导人的领袖，并启示他们行善、立站拜功、交纳天课。",
+        "《古兰经》要我们记住易卜拉欣、易司哈格和叶尔孤白，他们是有能力、有眼光的人，因一种伟大的品质而被选拔：时刻记念后世的家园。",
+        "先知ﷺ这样描述易司哈格的家系：“高贵者之子高贵者之子高贵者之子高贵者：优素福，叶尔孤白之子，易司哈格之孙，易卜拉欣的曾孙。”四代先知，一代接着一代。"
+      ],
+      "kidsParagraphs": [
+        "易司哈格的儿子是叶尔孤白，孙子是优素福。他们都是先知！",
+        "真主说，他们总是记念后世。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 21,
+          "ayahStart": 72,
+          "ayahEnd": 73
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3382",
+          "narrator": "阿卜杜拉·本·欧麦尔",
+          "translation": "先知ﷺ说：“高贵者之子高贵者之子高贵者之子高贵者：优素福，叶尔孤白之子，易司哈格之孙，易卜拉欣的曾孙，愿他们平安。”",
+          "match": "الكريم ابن الكريم ابن الكريم ابن الكريم يوسف ابن يعقوب بن اسحاق بن ابراهيم"
+        }
+      ],
+      "lessons": [
+        "清廉的家庭把信仰一代代传下去。",
+        "记念后世是真主喜爱的品质。",
+        "宗教上的领袖以自己行善来引导他人。"
+      ],
+      "quiz": [
+        {
+          "question": "易卜拉欣、易司哈格和叶尔孤白因什么品质被选拔？",
+          "options": [
+            "财富",
+            "记念后世的家园",
+            "建造城市",
+            "诗歌"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:46"
+        },
+        {
+          "question": "被称为“高贵者之子高贵者”的易司哈格的孙子是谁？",
+          "options": [
+            "优素福",
+            "穆萨",
+            "尔撒",
+            "优努斯"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3382"
+        },
+        {
+          "question": "真主启示他们做什么？",
+          "options": [
+            "行善、礼拜和天课",
+            "建塔楼",
+            "打仗",
+            "航海"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:73"
+        }
+      ]
+    }
+  ]
+}

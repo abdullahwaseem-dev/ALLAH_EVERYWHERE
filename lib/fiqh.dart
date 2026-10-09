@@ -4,6 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'ask_ai.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/pressable_tile.dart';
+import 'package:allah_everywhere/widgets/ask_ai_fab.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class FiqhScreen extends StatefulWidget {
   @override
@@ -46,9 +49,11 @@ class _FiqhScreenState extends State<FiqhScreen> {
         ? [VoidColors.cardDark, VoidColors.oliveDeep]
         : [VoidColors.oliveDeep, VoidColors.dustyRose];
 
-    return Scaffold(
+    return AskAiFabHost(
+      category: 'Fiqh',
+      child: Scaffold(
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: Column(
+      body: ReadableWidth(child: Column(
         children: [
           Stack(
             children: [
@@ -134,17 +139,20 @@ class _FiqhScreenState extends State<FiqhScreen> {
               itemCount: _filteredTopics.length,
               itemBuilder: (context, index) {
                 final topic = _filteredTopics[index];
-                return GestureDetector(
-                  onTap: () => Get.to(() => AskAiScreen(initialCategory: topic)),
-                  child: Container(
+                return Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16.r),
+                    boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
+                    ],
+                  ),
+                  child: PressableTile(
+                    color: cardColor,
+                    borderRadius: BorderRadius.circular(16.r),
+                    semanticLabel: topic,
+                    onTap: () => Get.to(() => AskAiScreen(initialCategory: topic)),
+                    child: Padding(
                     padding: EdgeInsets.all(12.w),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16.r),
-                      color: cardColor,
-                      boxShadow: [
-                        BoxShadow(color: Colors.black.withOpacity(isDark ? 0.25 : 0.05), blurRadius: 8, offset: const Offset(0, 3)),
-                      ],
-                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -157,14 +165,15 @@ class _FiqhScreenState extends State<FiqhScreen> {
                         ),
                       ],
                     ),
+                    ),
                   ),
                 );
               },
             ),
           ),
         ],
-      ),
-    );
+      )),
+    ));
   }
 }
 

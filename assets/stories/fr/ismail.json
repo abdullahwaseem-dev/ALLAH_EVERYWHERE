@@ -1,0 +1,246 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "ismail",
+  "language": "fr",
+  "name": "Ismaïl",
+  "title": "Le fils d'Ibrahim (paix sur lui), fidèle à sa promesse",
+  "sentTo": "Les Arabes de La Mecque, parmi lesquels il grandit (la tribu de Jurhum)",
+  "era": "L'époque d'Ibrahim (paix sur lui), son père. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "La Mecque, où il grandit avec sa mère Hajar et aida son père à bâtir la Kaaba.",
+      "lat": 21.4225,
+      "lng": 39.8262
+    }
+  ],
+  "summary": "Le fils aîné d'Ibrahim (paix sur lui) et de Hajar. Il grandit dans la vallée de La Mecque, se soumit à l'ordre d'Allah quand son père vit le rêve du sacrifice, et éleva la Kaaba avec son père. Allah le loue comme fidèle à sa promesse, messager et prophète. Le Prophète Muhammad ﷺ est l'un de ses descendants.",
+  "notes": [
+    "La plupart des savants disent qu'Ismaïl était le fils à sacrifier (37:101-107) ; certains savants anciens ont dit Ishaq. Voir l'histoire d'Ibrahim (paix sur lui).",
+    "Les récits selon lesquels Ismaïl et Hajar sont enterrés dans le Hijr (l'espace arrondi à côté de la Kaaba) viennent des historiens, non de hadiths authentiques.",
+    "Ismaïl est placé ici, dans l'ordre des prophètes, après Ibrahim (paix sur lui), son père."
+  ],
+  "chapters": [
+    {
+      "id": "ismail-1",
+      "title": "Un enfant de la vallée",
+      "paragraphs": [
+        "Ismaïl (paix sur lui) était le premier fils d'Ibrahim (paix sur lui), né de Hajar. Alors qu'il était encore nourrisson, Ibrahim le laissa avec sa mère dans la vallée déserte de La Mecque sur l'ordre d'Allah, et Allah fit jaillir pour eux la source de Zamzam. (L'histoire complète se trouve dans les chapitres consacrés à Ibrahim.)",
+        "Des voyageurs de la tribu de Jurhum arrivèrent et s'installèrent près de l'eau, avec la permission de Hajar. Ismaïl grandit parmi eux, apprit d'eux l'arabe et gagna leur admiration ; devenu adulte, ils le marièrent à l'une de leurs femmes."
+      ],
+      "kidsParagraphs": [
+        "Ismaïl grandit dans la vallée de La Mecque avec sa mère Hajar, près du puits de Zamzam.",
+        "Une tribu appelée Jurhum vint vivre avec eux, et Ismaïl apprit l'arabe auprès d'eux."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 14,
+          "ayahStart": 37,
+          "ayahEnd": 37
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3364",
+          "narrator": "Ibn Abbas",
+          "translation": "…Ils s'installèrent là et firent venir leurs familles, qui s'établirent avec eux, jusqu'à ce qu'il y ait là plusieurs foyers. Le garçon grandit et apprit d'eux l'arabe ; ils l'admirèrent et l'apprécièrent en le voyant grandir. Quand il atteignit l'âge adulte, ils le marièrent à une femme d'entre eux…",
+          "match": "وشب الغلام وتعلم العربية منهم",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Allah prend soin de ceux qui placent leur confiance en Lui, même dans une vallée déserte.",
+        "Le bon caractère fait aimer un étranger des gens.",
+        "Une petite famille peut être le début d'une grande nation."
+      ],
+      "quiz": [
+        {
+          "question": "Qui était la mère d'Ismaïl ?",
+          "options": [
+            "Sarah",
+            "Hajar",
+            "Maryam",
+            "Asiya"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Auprès de quelle tribu Ismaïl apprit-il l'arabe ?",
+          "options": [
+            "Quraych",
+            "Jurhum",
+            "Thamoud",
+            "'Ad"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3364"
+        },
+        {
+          "question": "Où Ismaïl grandit-il ?",
+          "options": [
+            "En Égypte",
+            "Dans la vallée de La Mecque",
+            "À Babylone",
+            "À Madyan"
+          ],
+          "answer": 1,
+          "reference": "Quran 14:37"
+        }
+      ]
+    },
+    {
+      "id": "ismail-2",
+      "title": "Le fils obéissant",
+      "paragraphs": [
+        "Quand Ismaïl fut en âge de travailler aux côtés de son père, Ibrahim lui parla du rêve dans lequel il le sacrifiait. Ismaïl répondit : « Ô mon père, fais ce qui t'est ordonné. Tu me trouveras, si Allah le veut, parmi les patients. » Allah le racheta par un sacrifice immense.",
+        "Plus tard, quand Allah ordonna à Ibrahim de bâtir la Maison, Ismaïl dit aussitôt : « Obéis à ton Seigneur », et il l'aida. Ismaïl apportait les pierres pendant que son père construisait, et ensemble ils priaient : « Notre Seigneur, accepte ceci de notre part. »"
+      ],
+      "kidsParagraphs": [
+        "Ismaïl obéit à Allah et à son père, même quand c'était très difficile.",
+        "Il aida son père à bâtir la Kaaba en portant les pierres."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 102,
+          "ayahEnd": 102
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 127,
+          "ayahEnd": 127
+        }
+      ],
+      "lessons": [
+        "La vraie obéissance à Allah est patiente et consentie.",
+        "Aider nos parents dans les bonnes œuvres est un grand honneur.",
+        "Demande à Allah d'accepter chaque bonne action."
+      ],
+      "quiz": [
+        {
+          "question": "Que répondit Ismaïl quand son père lui parla du rêve ?",
+          "options": [
+            "Fais ce qui t'est ordonné",
+            "J'ai peur",
+            "Demande à quelqu'un d'autre",
+            "Je vais m'enfuir"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:102"
+        },
+        {
+          "question": "Que portait Ismaïl pendant la construction de la Kaaba ?",
+          "options": [
+            "De l'eau",
+            "Des pierres",
+            "Du bois",
+            "De la nourriture"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        },
+        {
+          "question": "Que prièrent Ibrahim et Ismaïl pendant la construction ?",
+          "options": [
+            "Rends-nous riches",
+            "Notre Seigneur, accepte ceci de notre part",
+            "Donne-nous un royaume",
+            "Protège les murs"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:127"
+        }
+      ]
+    },
+    {
+      "id": "ismail-3",
+      "title": "Fidèle à sa promesse",
+      "paragraphs": [
+        "Le Coran fait l'éloge d'Ismaïl : il était fidèle à sa promesse, messager et prophète. Il ordonnait à sa famille la prière et la zakat, et il était agréé de son Seigneur. Allah le cite parmi les patients et les meilleurs des élus.",
+        "Ismaïl était aussi archer. Un jour, le Prophète ﷺ passa près d'hommes qui s'exerçaient au tir à l'arc et dit : « Tirez, enfants d'Ismaïl, car votre père était archer. »",
+        "Des descendants d'Ismaïl sont issus les Arabes du Hijaz, et parmi eux, des milliers d'années plus tard, le Prophète Muhammad ﷺ : la réponse à la prière d'Ibrahim et d'Ismaïl pour qu'un messager soit suscité parmi leurs enfants."
+      ],
+      "kidsParagraphs": [
+        "Allah dit qu'Ismaïl tenait toujours ses promesses et demandait à sa famille de prier.",
+        "C'était un excellent archer ! Et notre Prophète Muhammad ﷺ est de sa descendance."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 54,
+          "ayahEnd": 55
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2899",
+          "narrator": "Salama ibn al-Akwa'",
+          "translation": "Le Prophète ﷺ passa près de gens de la tribu d'Aslam qui rivalisaient au tir à l'arc, et il dit : « Tirez, enfants d'Ismaïl, car votre père était archer. Tirez, et je suis avec tel groupe… »",
+          "match": "ارموا بني اسماعيل فان اباكم كان راميا",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Tenir ses promesses est une qualité des prophètes.",
+        "Guider sa famille vers la prière et l'aumône fait partie de la foi.",
+        "Les compétences saines comme le tir à l'arc sont louées dans la Sunna."
+      ],
+      "quiz": [
+        {
+          "question": "Quelle qualité le Coran loue-t-il chez Ismaïl (19:54) ?",
+          "options": [
+            "La richesse",
+            "La fidélité à sa promesse",
+            "La force",
+            "La beauté"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:54"
+        },
+        {
+          "question": "Qu'ordonnait Ismaïl à sa famille ?",
+          "options": [
+            "Le commerce",
+            "La prière et la zakat",
+            "Le voyage",
+            "Construire des maisons"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:55"
+        },
+        {
+          "question": "Quelle compétence d'Ismaïl le Prophète ﷺ a-t-il mentionnée ?",
+          "options": [
+            "Le tir à l'arc",
+            "La natation",
+            "L'écriture",
+            "La navigation"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 2899"
+        }
+      ]
+    }
+  ]
+}

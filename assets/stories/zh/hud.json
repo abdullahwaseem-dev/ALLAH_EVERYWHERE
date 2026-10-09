@@ -1,0 +1,348 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "hud",
+  "language": "zh",
+  "name": "呼德",
+  "title": "被派往阿德人的使者",
+  "sentTo": "阿德人，他自己的族人",
+  "era": "在努哈（愿主赐他平安）之后。《古兰经》说阿德人是在努哈的族人之后成为继承者的（7:69）；没有给出年代。",
+  "places": [
+    {
+      "name": "艾哈嘎夫，意为“沙丘”（46:21），在阿拉伯半岛南部。学者们通常认为它位于阿曼和哈德拉毛（也门）之间。",
+      "lat": 17.5,
+      "lng": 50.5,
+      "approximate": true
+    }
+  ],
+  "summary": "呼德被派往阿德人，那是一个强大的民族，他们建造宏伟的纪念物，以暴虐对待他人。他号召他们只崇拜真主，向祂求饶恕。他们嘲笑他，一场猛烈的风毁灭了他们，而呼德和信士们得救了。",
+  "notes": [
+    "艾哈嘎夫和“有柱的伊赖姆”（89:7）的确切位置并不确定。",
+    "说阿德人是身材巨大的巨人，或者说呼德的陵墓在哈德拉毛，这些故事来自后来的传述，而不是《古兰经》或可靠的圣训。",
+    "有人说呼德是第一位阿拉伯先知；这来自布哈里和穆斯林圣训集以外的一段传述，需要核实。"
+  ],
+  "chapters": [
+    {
+      "id": "hud-1",
+      "title": "强大的阿德人",
+      "paragraphs": [
+        "洪水之后，和努哈（愿主赐他平安）一起得救的人的后代散布到大地各处。其中有阿德人，他们住在艾哈嘎夫，那是阿拉伯半岛南部一片沙丘之地。",
+        "真主赐给他们巨大的力量。呼德提醒他们，真主使他们在努哈的族人之后成为继承者，并使他们身材魁梧。他们有牲畜、子女、园圃和泉水。",
+        "但是他们滥用了这些恩典。他们在每一座高地上建造纪念物，只为了炫耀；他们修建坚固的堡垒，好像他们会永生一样；他们攻击别人时，像暴君一样残酷。"
+      ],
+      "kidsParagraphs": [
+        "阿德人非常强大，建造了宏伟的建筑。",
+        "但是他们变得骄傲，残酷地对待别人，忘记了赐给他们一切的真主。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 21,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 69,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 128,
+          "ayahEnd": 130
+        }
+      ],
+      "lessons": [
+        "我们拥有的每一样恩典都来自真主，我们应当用它来取悦祂。",
+        "力量和财富不能使任何人永生。",
+        "炫耀和压迫他人毁灭了许多伟大的民族。"
+      ],
+      "quiz": [
+        {
+          "question": "阿德人住在哪里？",
+          "options": [
+            "艾哈嘎夫，沙丘之地",
+            "埃及",
+            "巴比伦",
+            "麦德彦"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:21"
+        },
+        {
+          "question": "阿德人是在哪个民族之后成为继承者的？",
+          "options": [
+            "鲁特的族人",
+            "努哈的族人",
+            "穆萨的族人",
+            "赛莫德人"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:69"
+        },
+        {
+          "question": "阿德人在每一座高地上建造什么？",
+          "options": [
+            "清真寺",
+            "用来消遣的纪念物",
+            "水井",
+            "学校"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:128"
+        }
+      ]
+    },
+    {
+      "id": "hud-2",
+      "title": "呼德召唤他的族人",
+      "paragraphs": [
+        "真主派他们的弟兄呼德（愿主赐他平安）去阿德人那里。他的信息就是每一位先知的信息：“我的族人啊！你们要崇拜真主，除祂以外，你们没有任何应受崇拜的。”",
+        "他不向他们要任何报酬；他的报酬只由造化他的主负责。他告诉他们，他是一个真诚可靠的劝告者，而不是他们所说的愚人或骗子。",
+        "他向他们许诺：如果他们向他们的主求饶恕，然后向祂悔过，真主就会给他们降下充足的雨水，并在他们的力量之上增加力量。"
+      ],
+      "kidsParagraphs": [
+        "真主派呼德去他的族人那里。他说：“只崇拜真主！”",
+        "呼德对他们说：“向真主求饶恕吧，祂会给你们降雨，使你们更加强大。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 51,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 52,
+          "ayahEnd": 52
+        }
+      ],
+      "lessons": [
+        "真主的使者给予真诚的劝告，而不索取报酬。",
+        "求饶恕在今世也会带来福分。",
+        "不要根据敌人的辱骂来评判号召行善的人。"
+      ],
+      "quiz": [
+        {
+          "question": "呼德首先号召他的族人做什么？",
+          "options": [
+            "离开他们的土地",
+            "只崇拜真主",
+            "造一艘船",
+            "付钱给他"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:50"
+        },
+        {
+          "question": "呼德说，如果他们悔过，真主会降下什么？",
+          "options": [
+            "充足的雨水和更多的力量",
+            "金子",
+            "一支军队",
+            "什么也没有"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:52"
+        },
+        {
+          "question": "首领们指责呼德什么？",
+          "options": [
+            "愚蠢和说谎",
+            "偷窃",
+            "当国王",
+            "是天使"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:66"
+        }
+      ]
+    },
+    {
+      "id": "hud-3",
+      "title": "只信赖真主",
+      "paragraphs": [
+        "阿德人拒绝了。他们说：“你没有给我们带来明证，我们不会因为你的话而放弃我们的神灵。我们认为我们的某个神灵使你中了邪。”",
+        "呼德以对真主完全的信赖回答他们。他宣布与他们的偶像无关，并向他们所有人挑战，让他们毫不迟延地共同谋害他，因为他信赖真主——他的主和他们的主：“没有一个动物不是祂抓住其额发的。”",
+        "他们要求降下他警告他们的惩罚。呼德说，惩罚的时间只有真主知道，他只是传达他奉命传达的信息。"
+      ],
+      "kidsParagraphs": [
+        "人们说：“我们的神灵使你发疯了！”",
+        "呼德不怕他们。他说：“我信赖真主。每一个活物都在祂的掌握之中。”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 53,
+          "ayahEnd": 54
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 55,
+          "ayahEnd": 57
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 46,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        }
+      ],
+      "lessons": [
+        "真正的勇气来自对真主的信赖。",
+        "每一个被造物都在真主的掌控之下，所以我们只畏惧祂。",
+        "真主判决的时间只有祂知道。"
+      ],
+      "quiz": [
+        {
+          "question": "阿德人说呼德怎么了？",
+          "options": [
+            "他们的某个神灵使他中了邪",
+            "他发财了",
+            "他出远门了",
+            "什么也没有"
+          ],
+          "answer": 0,
+          "reference": "Quran 11:54"
+        },
+        {
+          "question": "呼德信赖谁？",
+          "options": [
+            "他的部落",
+            "真主——他的主和他们的主",
+            "国王",
+            "他的财富"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:56"
+        },
+        {
+          "question": "谁知道惩罚什么时候来？",
+          "options": [
+            "呼德",
+            "首领们",
+            "只有真主",
+            "占卜者"
+          ],
+          "answer": 2,
+          "reference": "Quran 46:23"
+        }
+      ]
+    },
+    {
+      "id": "hud-4",
+      "title": "风",
+      "paragraphs": [
+        "有一天，阿德人看见一片云朝他们的山谷飘来，高兴地说：“这片云会给我们降雨！”但那正是他们急于要求的东西：一阵带着痛苦惩罚的风，奉它的主的命令摧毁一切。",
+        "真主使这风连续七夜八天吹向他们，直到他们像空心的椰枣树干一样倒在地上。除了他们的住宅，他们什么也没留下。真主以祂的慈悯拯救了呼德和与他一起信道的人。",
+        "先知ﷺ说：“我借东风（萨巴）获胜，阿德人被西风（代布尔）毁灭。”同样的风，奉真主的命令，毁灭了一个民族，也援助了另一个民族。"
+      ],
+      "kidsParagraphs": [
+        "一片云来了，人们以为是下雨。但那是一阵可怕的风，刮了七夜八天。",
+        "真主拯救了呼德和信士们。风只服从真主！"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 46,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 69,
+          "ayahStart": 6,
+          "ayahEnd": 8
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 58,
+          "ayahEnd": 58
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "1035",
+          "narrator": "伊本·阿拔斯",
+          "translation": "先知ﷺ说：“我借东风（萨巴）获得援助，阿德人被西风（代布尔）毁灭。”",
+          "match": "نصرت بالصبا واهلكت عاد بالدبور"
+        }
+      ],
+      "lessons": [
+        "我们所希望的并不总是对我们有益；只有真主知道。",
+        "一切被造物，甚至风，都服从真主。",
+        "即使整个民族都被毁灭，真主也会拯救信士。"
+      ],
+      "quiz": [
+        {
+          "question": "阿德人以为那片云会带来什么？",
+          "options": [
+            "雨",
+            "蝗虫",
+            "雪",
+            "鸟"
+          ],
+          "answer": 0,
+          "reference": "Quran 46:24"
+        },
+        {
+          "question": "风刮了多久？",
+          "options": [
+            "三天",
+            "七夜八天",
+            "四十天",
+            "一小时"
+          ],
+          "answer": 1,
+          "reference": "Quran 69:7"
+        },
+        {
+          "question": "根据先知ﷺ，阿德人是被哪种风毁灭的？",
+          "options": [
+            "东风",
+            "西风（代布尔）",
+            "北风",
+            "来自埃及的沙尘暴"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 1035"
+        }
+      ]
+    }
+  ]
+}

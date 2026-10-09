@@ -1,0 +1,256 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "harun",
+  "language": "de",
+  "name": "Harun",
+  "title": "Der Bruder und Helfer Musas (a.s.)",
+  "sentTo": "Pharao und sein Volk, und die Kinder Israels, an der Seite Musas (a.s.)",
+  "era": "Die Zeit Musas (a.s.). Koran und Sunna nennen kein Datum.",
+  "places": [
+    {
+      "name": "Ägypten und die Wüste Sinai, mit Musa (a.s.).",
+      "lat": 29.5,
+      "lng": 33.8,
+      "approximate": true
+    }
+  ],
+  "summary": "Der Bruder Musas (a.s.), auf Musas eigene Bitte zum Propheten gemacht. Er war redegewandter und stand Musa vor Pharao zur Seite. Als das Volk das Kalb anbetete, warnte er sie und versuchte, sie zusammenzuhalten. Allah entbot Musa und Harun den Frieden.",
+  "notes": [
+    "Ob Harun älter oder jünger als Musa war, sagt der Koran nicht; die Bibel sagt, er war älter.",
+    "Die Einzelheiten von Haruns Tod (vor Musa, in der Wüste) stammen aus historischen Berichten, nicht aus dem Koran oder authentischen Hadithen.",
+    "„O Schwester Haruns“ (19:28), zu Maryam gesagt, bedeutet nicht, dass sie die Schwester dieses Harun war: Der Prophet ﷺ erklärte, dass die Menschen nach ihren Propheten und den Rechtschaffenen vor ihnen benannt wurden (Sahih Muslim 2135)."
+  ],
+  "chapters": [
+    {
+      "id": "harun-1",
+      "title": "Ein Helfer für seinen Bruder",
+      "paragraphs": [
+        "Als Allah Musa (a.s.) im Tal Tuwa erwählte und ihn zu Pharao sandte, bat Musa um einen Helfer: „Gib mir einen Beistand aus meiner Familie, Harun, meinen Bruder. Stärke durch ihn meine Kraft und lass ihn an meiner Aufgabe teilhaben, damit wir Dich viel preisen und Deiner viel gedenken.“",
+        "Musa erklärte: „Mein Bruder Harun ist redegewandter als ich, so sende ihn mit mir als Helfer, der mich bestätigt.“ Allah antwortete: „Wir werden deinen Arm durch deinen Bruder stärken.“ Aus Seiner Barmherzigkeit machte Allah Harun zu einem Propheten."
+      ],
+      "kidsParagraphs": [
+        "Musa bat Allah, seinen Bruder Harun zu seinem Helfer zu machen, und Allah machte Harun auch zu einem Propheten!",
+        "Harun sprach sehr gut, und er half seinem Bruder, Pharao von Allah zu erzählen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 20,
+          "ayahStart": 29,
+          "ayahEnd": 34
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 28,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 53,
+          "ayahEnd": 53
+        }
+      ],
+      "lessons": [
+        "Gute Brüder helfen einander beim Guten.",
+        "Zusammenarbeit ist ein Geschenk Allahs.",
+        "Ein Helfer der Wahrheit zu sein, ist eine große Ehre."
+      ],
+      "quiz": [
+        {
+          "question": "Warum erbat Musa Harun als Helfer?",
+          "options": [
+            "Harun war redegewandter",
+            "Harun war reicher",
+            "Harun war ein König",
+            "Harun kannte Pharao"
+          ],
+          "answer": 0,
+          "reference": "Quran 28:34"
+        },
+        {
+          "question": "Wozu machte Allah Harun aus Seiner Barmherzigkeit?",
+          "options": [
+            "Zu einem König",
+            "Zu einem Propheten",
+            "Zu einem Händler",
+            "Zu einem Soldaten"
+          ],
+          "answer": 1,
+          "reference": "Quran 19:53"
+        },
+        {
+          "question": "Was würden sie laut Musa gemeinsam tun?",
+          "options": [
+            "Allah viel preisen und Seiner viel gedenken",
+            "Reich werden",
+            "Paläste bauen",
+            "Die Welt bereisen"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:33-34"
+        }
+      ]
+    },
+    {
+      "id": "harun-2",
+      "title": "Standhaft gegen das Kalb",
+      "paragraphs": [
+        "Als Musa für vierzig Nächte ging, um seinem Herrn zu begegnen, übertrug er Harun die Verantwortung: „Vertritt mich bei meinem Volk, sorge für Ordnung und folge nicht dem Weg der Unheilstifter.“",
+        "Als as-Samiri das goldene Kalb machte, warnte Harun das Volk: „O mein Volk, ihr werdet damit nur geprüft. Euer Herr ist der Allerbarmer, so folgt mir und gehorcht meinem Befehl.“ Doch viele weigerten sich: „Wir werden es weiter anbeten, bis Musa zurückkehrt.“",
+        "Als Musa zornig zurückkam und Harun am Kopf und am Bart packte, sagte Harun: „Sohn meiner Mutter, das Volk hat mich überwältigt und hätte mich beinahe getötet. Ich fürchtete, du würdest sagen: Du hast Spaltung unter die Kinder Israels gebracht.“ Musa betete dann für sie beide."
+      ],
+      "kidsParagraphs": [
+        "Während Musa fort war, machten Leute ein goldenes Kalb. Harun sagte ihnen: „Das ist eine Prüfung! Folgt mir und betet Allah an.“",
+        "Als Musa betrübt zurückkam, erklärte Harun, was geschehen war, und Musa betete für sie beide."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 142,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 20,
+          "ayahStart": 90,
+          "ayahEnd": 91
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 20,
+          "ayahStart": 92,
+          "ayahEnd": 94
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 151,
+          "ayahEnd": 151
+        }
+      ],
+      "lessons": [
+        "Sag die Wahrheit, auch wenn die meisten Menschen sie ablehnen.",
+        "Die Gemeinschaft zusammenzuhalten ist eine ernste Verantwortung.",
+        "Missverständnisse zwischen guten Menschen heilen durch Erklärung und Gebet."
+      ],
+      "quiz": [
+        {
+          "question": "Was sagte Harun dem Volk über das Kalb?",
+          "options": [
+            "Ihr werdet damit nur geprüft",
+            "Es ist ein Geschenk",
+            "Betet es an, bis Musa zurückkehrt",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:90"
+        },
+        {
+          "question": "Wer wurde mit der Verantwortung betraut, als Musa auf den Berg ging?",
+          "options": [
+            "Harun",
+            "As-Samiri",
+            "Qarun",
+            "Yuscha'"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:142"
+        },
+        {
+          "question": "Wie nannte Harun Musa, als er sich erklärte?",
+          "options": [
+            "Sohn meiner Mutter",
+            "Mein König",
+            "Mein Lehrer",
+            "Mein Sohn"
+          ],
+          "answer": 0,
+          "reference": "Quran 20:94"
+        }
+      ]
+    },
+    {
+      "id": "harun-3",
+      "title": "Friede sei auf Musa und Harun",
+      "paragraphs": [
+        "Allah erwies Musa und Harun große Gunst: Er rettete sie und ihr Volk aus der großen Bedrängnis, half ihnen, sodass sie die Oberhand gewannen, gab ihnen die deutliche Schrift und leitete sie den geraden Weg. Er hinterließ ein bleibendes Gedenken an sie bei den späteren Generationen: „Friede sei auf Musa und Harun.“",
+        "Der Prophet ﷺ sagte einmal zu 'Ali ibn Abi Talib: „Bist du nicht zufrieden, für mich das zu sein, was Harun für Musa war?“ So ehrte er 'Ali und zeigte, wie nah Harun seinem Bruder als vertrauenswürdiger Helfer gestanden hatte."
+      ],
+      "kidsParagraphs": [
+        "Allah sagt: „Friede sei auf Musa und Harun.“",
+        "Unser Prophet ﷺ sagte zu 'Ali: „Du bist für mich wie Harun für Musa“: ein naher, vertrauenswürdiger Helfer."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 114,
+          "ayahEnd": 120
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3706",
+          "narrator": "Sa'd ibn Abi Waqqas",
+          "translation": "Der Prophet ﷺ sagte zu 'Ali: „Bist du nicht zufrieden, für mich die Stellung Haruns gegenüber Musa einzunehmen?“",
+          "match": "اما ترضى ان تكون مني بمنزلة هارون من موسى"
+        }
+      ],
+      "lessons": [
+        "Allah ehrt die, die die Wahrheit unterstützen.",
+        "Ein vertrauenswürdiger Helfer ist kostbar.",
+        "Friede und Ehre sind der Lohn der Gutes Tuenden."
+      ],
+      "quiz": [
+        {
+          "question": "Was hinterließ Allah für Musa und Harun bei den späteren Generationen?",
+          "options": [
+            "„Friede sei auf Musa und Harun“",
+            "Einen Palast",
+            "Ein goldenes Kalb",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:120"
+        },
+        {
+          "question": "Zu wem sagte der Prophet ﷺ: „Du bist für mich wie Harun für Musa“?",
+          "options": [
+            "Abu Bakr",
+            "'Ali",
+            "'Umar",
+            "'Uthman"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3706"
+        },
+        {
+          "question": "Was gab Allah Musa und Harun?",
+          "options": [
+            "Die deutliche Schrift",
+            "Ein Königreich in Ägypten",
+            "Ein Schiff",
+            "Gold"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:117"
+        }
+      ]
+    }
+  ]
+}

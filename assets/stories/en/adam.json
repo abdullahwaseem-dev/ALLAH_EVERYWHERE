@@ -1,0 +1,383 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "adam",
+  "language": "en",
+  "name": "Adam",
+  "title": "The father of mankind",
+  "sentTo": "His own children, the first human family",
+  "era": "The beginning of humankind. The Quran and Sunnah give no date.",
+  "places": [
+    {
+      "name": "Not known. The Quran says only that Adam was sent down to the earth.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "The first human being and the first Prophet. Allah created him with His own hands, taught him the names of all things, and honoured him above the angels. He made a mistake, repented at once, and was forgiven, and he became the father of every person on earth.",
+  "notes": [
+    "Where was the Garden? Most scholars say it was the Paradise of the Hereafter. A minority said it was a high garden on earth.",
+    "Was Iblis ever an angel? The Quran says he 'was of the jinn' (18:50). Most scholars say he was never an angel. Some early scholars said he had lived and worshipped among them.",
+    "The Quran calls Adam's wife only 'your wife'. The name Hawwa (Eve) comes from the hadith (for example Sahih al-Bukhari 3330).",
+    "Adam as the first Prophet: this is the view of the scholars, based on Allah speaking to him and choosing him (3:33). Some hadith outside al-Bukhari and Muslim state it directly; a scholar should confirm which to cite.",
+    "Popular details such as the type of tree, the serpent, the place where Adam landed on earth and his exact age at death come from weak reports or from the People of the Book. They are left out here or labelled."
+  ],
+  "chapters": [
+    {
+      "id": "adam-1",
+      "title": "The news given to the angels",
+      "paragraphs": [
+        "Before there was a single human being on the earth, Allah told the angels about a new creation He was going to make. “I will make upon the earth a khalifah,” He said: a successor, someone who would live there and be given responsibility.",
+        "The angels asked a question out of wonder, not pride. Would Allah place there someone who might spread corruption and shed blood, while they always praised Him and declared Him holy? Allah's answer teaches every one of us humility: “I know what you do not know.”",
+        "Then Allah taught Adam the names of all things. He showed those things to the angels and asked them to name them. The angels said, “Glory be to You! We have no knowledge except what You have taught us.” Then Adam was told to inform them of the names, and he did. In this way Allah showed the angels the gift of knowledge He had given to the human being.",
+        "Scholars explain the word khalifah in more than one way. Some say it means a people who succeed one another, generation after generation. Others say humans are entrusted to look after the earth by Allah's command. Both meanings carry the same lesson: life on earth is a trust."
+      ],
+      "kidsParagraphs": [
+        "Long ago, before any people lived on the earth, Allah told the angels that He would place a new creation there.",
+        "Allah taught Adam the names of all things. The angels did not know them, and they said: “We only know what You have taught us.” Then Adam told them the names. Knowledge is a gift from Allah!"
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 2, "ayahStart": 30, "ayahEnd": 30 },
+        { "type": "quran", "after": 2, "surah": 2, "ayahStart": 31, "ayahEnd": 33 }
+      ],
+      "lessons": [
+        "Allah's wisdom is greater than ours, even when we do not understand His plan.",
+        "Knowledge is a gift from Allah, and it is part of what honours the human being.",
+        "When we do not know something, it is good manners to say so, as the angels did."
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah tell the angels He would place on the earth?",
+          "options": ["An angel", "A khalifah (successor)", "A king of the jinn", "A mountain"],
+          "answer": 1,
+          "reference": "Quran 2:30"
+        },
+        {
+          "question": "What did Allah teach Adam?",
+          "options": ["The names of all things", "How to build ships", "Only the names of the stars", "Poetry"],
+          "answer": 0,
+          "reference": "Quran 2:31"
+        },
+        {
+          "question": "What did the angels say when they were asked about the names?",
+          "options": ["We know everything", "Ask Iblis", "We have no knowledge except what You have taught us", "We will find out"],
+          "answer": 2,
+          "reference": "Quran 2:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-2",
+      "title": "Created from clay",
+      "paragraphs": [
+        "Allah created Adam in a way unlike any other human being. He had no father and no mother. Allah formed him from clay, from dark, altered mud. When He had shaped him, He breathed into him a soul created by Him, and He commanded the angels to bow down to Adam.",
+        "The Quran compares this to the creation of Isa (AS). Adam was made from dust, then Allah said to him “Be,” and he was. In the same way Allah creates whatever He wills.",
+        "The Prophet Muhammad ﷺ told us that Adam was very tall, sixty cubits, and that Allah sent him to greet a group of angels. The words Adam used, and the angels' reply, became the greeting of all his children.",
+        "So every time a Muslim says “as-salamu alaykum” today, they repeat the first greeting ever spoken by a human being."
+      ],
+      "kidsParagraphs": [
+        "Allah made Adam from clay, with no mother and no father. Then Allah gave him life.",
+        "Adam's first words to the angels were “As-salamu alaykum”: peace be upon you! That is why we still greet each other this way today."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 15, "ayahStart": 28, "ayahEnd": 29 },
+        {
+          "type": "narrationNote",
+          "after": 0,
+          "text": "Some books say that several angels were sent to bring the soil for Adam, and that the earth refused to give it until the Angel of Death took it."
+        },
+        { "type": "quran", "after": 1, "surah": 3, "ayahStart": 59, "ayahEnd": 59 },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3326",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Prophet ﷺ said: “Allah created Adam, and his height was sixty cubits. Then He said: ‘Go and greet that group of angels, and listen to how they greet you, for that will be your greeting and the greeting of your descendants.’ Adam said: ‘As-salamu alaykum (peace be upon you).’ They said: ‘As-salamu alayka wa rahmatullah (peace be upon you, and the mercy of Allah),’ adding ‘and the mercy of Allah’. Everyone who enters Paradise will be in the form of Adam, and people have kept growing smaller ever since.”",
+          "match": "خلق الله ادم وطوله ستون ذراعا"
+        }
+      ],
+      "lessons": [
+        "Allah creates whatever He wills, however He wills.",
+        "The greeting of salam has been the greeting of believers since the very first human.",
+        "Every human being, whatever their colour or land, comes from the same father, Adam."
+      ],
+      "quiz": [
+        {
+          "question": "What was Adam (AS) created from?",
+          "options": ["Fire", "Light", "Clay", "Only water"],
+          "answer": 2,
+          "reference": "Quran 15:28"
+        },
+        {
+          "question": "Which Prophet's creation does the Quran compare to Adam's?",
+          "options": ["Isa (AS)", "Nuh (AS)", "Musa (AS)", "Yusuf (AS)"],
+          "answer": 0,
+          "reference": "Quran 3:59"
+        },
+        {
+          "question": "What did the angels add when they returned Adam's greeting?",
+          "options": ["Nothing", "“And the mercy of Allah” (wa rahmatullah)", "“Good morning”", "“Welcome”"],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3326"
+        }
+      ]
+    },
+    {
+      "id": "adam-3",
+      "title": "Iblis refuses to bow",
+      "paragraphs": [
+        "When Allah commanded the angels to bow before Adam, they all obeyed. Only Iblis refused. The Quran tells us that Iblis was from the jinn, who were created from fire.",
+        "Allah asked him what had stopped him from obeying. His answer showed the disease in his heart: “I am better than him. You created me from fire and created him from clay.” Iblis judged by origin and by his own pride, and he disobeyed his Lord.",
+        "Allah expelled him. Instead of repenting, Iblis asked to be given time until the Day of Resurrection. Then he swore that he would lie in wait for Adam's children on the straight path, coming at them from in front and from behind, from their right and from their left.",
+        "This was the beginning of the enmity between Shaytan and humankind. Allah warned Adam clearly: this is an enemy to you and to your wife."
+      ],
+      "kidsParagraphs": [
+        "All the angels bowed to Adam as Allah commanded. Only Iblis refused.",
+        "Iblis said: “I am better than him!” His pride made him disobey Allah. Since that day, Shaytan has been the enemy of people."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 18, "ayahStart": 50, "ayahEnd": 50 },
+        { "type": "quran", "after": 1, "surah": 7, "ayahStart": 11, "ayahEnd": 13 },
+        { "type": "quran", "after": 2, "surah": 7, "ayahStart": 14, "ayahEnd": 17 },
+        { "type": "quran", "after": 3, "surah": 20, "ayahStart": 117, "ayahEnd": 117 }
+      ],
+      "lessons": [
+        "Arrogance was the first sin committed against Allah.",
+        "Looking down on others because of their origin or appearance is the way of Iblis.",
+        "Shaytan is a clear enemy, so we seek Allah's protection from him."
+      ],
+      "quiz": [
+        {
+          "question": "Who refused to bow to Adam?",
+          "options": ["Jibril", "Iblis", "All the angels", "Mika'il"],
+          "answer": 1,
+          "reference": "Quran 2:34"
+        },
+        {
+          "question": "What did Iblis say he was created from?",
+          "options": ["Fire", "Clay", "Light", "Water"],
+          "answer": 0,
+          "reference": "Quran 7:12"
+        },
+        {
+          "question": "According to the Quran, Iblis was one of the…",
+          "options": ["Angels", "Humans", "Jinn", "Animals"],
+          "answer": 2,
+          "reference": "Quran 18:50"
+        }
+      ]
+    },
+    {
+      "id": "adam-4",
+      "title": "The Garden and the tree",
+      "paragraphs": [
+        "Allah let Adam and his wife live in the Garden. They could eat freely from wherever they wished. There they would not be hungry or unclothed, thirsty or burnt by the sun. There was only one command: do not go near this tree.",
+        "Shaytan came to them with whispers. He told them their Lord had only forbidden the tree so that they would not become angels or live forever. He called it “the tree of eternity and a kingdom that never decays”, and he even swore to them that he was a sincere adviser.",
+        "Adam forgot the promise, and both of them ate from the tree. At once their nakedness became visible to them, and they began to cover themselves with the leaves of the Garden. Their Lord called to them: “Did I not forbid you that tree, and tell you that Shaytan is a clear enemy to you?”",
+        "Notice how the Quran tells this story. Shaytan whispered to both of them, and both of them ate. The Quran does not blame Adam's wife for tempting him. That idea comes from other traditions, not from Islam."
+      ],
+      "kidsParagraphs": [
+        "Adam and his wife lived in a beautiful garden. They could eat anything, except from one tree.",
+        "Shaytan tricked them with lies, and they ate from the tree. They had made a mistake."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 2, "ayahStart": 35, "ayahEnd": 35 },
+        { "type": "quran", "after": 1, "surah": 7, "ayahStart": 20, "ayahEnd": 21 },
+        { "type": "quran", "after": 2, "surah": 7, "ayahStart": 22, "ayahEnd": 22 },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "Some books name the tree (an apple, wheat, a fig or a vine), say that a serpent carried Iblis into the Garden, or say that Adam's wife persuaded him to eat."
+        }
+      ],
+      "lessons": [
+        "Shaytan makes wrong things look attractive, and may even pretend to be giving good advice.",
+        "Allah's commands protect us, even when we do not see the reason for them.",
+        "Men and women are each responsible for their own actions."
+      ],
+      "quiz": [
+        {
+          "question": "What were Adam and his wife told not to approach?",
+          "options": ["The river", "One tree", "The angels", "The gate"],
+          "answer": 1,
+          "reference": "Quran 2:35"
+        },
+        {
+          "question": "What did Shaytan call the forbidden tree?",
+          "options": ["The tree of light", "The tree of fruit", "The tree of eternity", "The tree of the angels"],
+          "answer": 2,
+          "reference": "Quran 20:120"
+        },
+        {
+          "question": "According to the Quran, who ate from the tree?",
+          "options": ["Both Adam and his wife", "Only his wife", "Only Adam", "Iblis"],
+          "answer": 0,
+          "reference": "Quran 20:121"
+        }
+      ]
+    },
+    {
+      "id": "adam-5",
+      "title": "Words of repentance",
+      "paragraphs": [
+        "Adam and his wife did not argue or make excuses, as Iblis had done. They turned to Allah at once, full of regret, and said: “Our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will surely be among the losers.”",
+        "The Quran tells us that Adam received words from his Lord, and Allah accepted his repentance. Many scholars explain that these words were the very prayer the two of them said. Allah, the Accepter of repentance, the Most Merciful, forgave them.",
+        "Then Allah sent them down to the earth, where they and their children would live for a time. He gave them a promise: guidance would come to them from Him, and whoever follows it will have no fear and will not grieve.",
+        "This is the great difference between Adam and Iblis. Both disobeyed, but one was proud and blamed his Lord, while the other was humble and asked for forgiveness. Adam was forgiven, and in Islam no one carries the sin of another: every person answers only for their own deeds."
+      ],
+      "kidsParagraphs": [
+        "Adam and his wife felt very sorry. They asked Allah: “Our Lord, we have wronged ourselves. Please forgive us and have mercy on us.”",
+        "Allah forgave them, because He loves those who say sorry and mean it. Then Allah sent them to live on the earth."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 7, "ayahStart": 23, "ayahEnd": 23 },
+        { "type": "quran", "after": 1, "surah": 2, "ayahStart": 37, "ayahEnd": 37 },
+        { "type": "quran", "after": 2, "surah": 2, "ayahStart": 38, "ayahEnd": 38 },
+        { "type": "quran", "after": 3, "surah": 6, "ayahStart": 164, "ayahEnd": 164 }
+      ],
+      "lessons": [
+        "When we make a mistake, we should admit it and turn back to Allah quickly.",
+        "Allah loves to forgive those who sincerely repent.",
+        "Every person is responsible for their own deeds; no one carries the sin of another."
+      ],
+      "quiz": [
+        {
+          "question": "What did Adam and his wife say after their mistake?",
+          "options": ["It was not our fault", "Our Lord, we have wronged ourselves…", "Iblis made us do it", "We did nothing wrong"],
+          "answer": 1,
+          "reference": "Quran 7:23"
+        },
+        {
+          "question": "What did Allah do when Adam repented?",
+          "options": ["Accepted his repentance", "Turned him into an angel", "Left him in the Garden", "Sent him to the jinn"],
+          "answer": 0,
+          "reference": "Quran 2:37"
+        },
+        {
+          "question": "What did Allah promise those who follow His guidance?",
+          "options": ["Great wealth", "A long life", "No fear and no grief", "Power over others"],
+          "answer": 2,
+          "reference": "Quran 2:38"
+        }
+      ]
+    },
+    {
+      "id": "adam-6",
+      "title": "The two sons of Adam",
+      "paragraphs": [
+        "On the earth, Adam and his wife had children, and the human family began to grow. The Quran tells the story of two of Adam's sons. Each of them offered a sacrifice to Allah. It was accepted from one of them, but not from the other.",
+        "The one whose offering was not accepted became jealous and said: “I will surely kill you.” His brother answered calmly: “Allah only accepts from those who are mindful of Him. Even if you stretch out your hand to kill me, I will not stretch out my hand to kill you, for I fear Allah, the Lord of the worlds.”",
+        "But jealousy won, and the first murder in human history took place. Afterwards the killer did not even know what to do with his brother's body. Then Allah sent a crow, scratching at the ground, to show him. He cried: “Woe to me! Could I not even be like this crow?” and he was filled with regret.",
+        "The Prophet ﷺ taught that whenever a person is killed unjustly, the first son of Adam carries a share of that sin, because he was the first to make killing a practice. And the Quran draws a lesson from this story for all of humanity: killing one innocent soul is like killing all of mankind, and saving one life is like saving all of mankind."
+      ],
+      "kidsParagraphs": [
+        "Adam had two sons who each gave a gift to Allah. Allah accepted the gift of the good son.",
+        "The other son became jealous and killed his brother, and afterwards he was very sorry. Allah teaches us that saving one life is like saving all people!"
+      ],
+      "blocks": [
+        { "type": "quran", "after": 1, "surah": 5, "ayahStart": 27, "ayahEnd": 28 },
+        { "type": "quran", "after": 2, "surah": 5, "ayahStart": 30, "ayahEnd": 31 },
+        {
+          "type": "hadith",
+          "after": 3,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3335",
+          "narrator": "Abdullah ibn Mas'ud",
+          "translation": "The Messenger of Allah ﷺ said: “No soul is killed unjustly except that the first son of Adam carries a share of its blood, because he was the first to begin the practice of killing.”",
+          "match": "لا تقتل نفس ظلما الا كان على ابن ادم الاول كفل من دمها"
+        },
+        { "type": "quran", "after": 3, "surah": 5, "ayahStart": 32, "ayahEnd": 32 },
+        {
+          "type": "narrationNote",
+          "after": 3,
+          "text": "The names Habil (Abel) and Qabil (Cain), and the story that the brothers quarrelled over whom to marry, are not in the Quran or in al-Bukhari and Muslim. They come from later reports, many of them from the People of the Book."
+        }
+      ],
+      "lessons": [
+        "Jealousy that is not controlled can lead a person to terrible sins.",
+        "Allah accepts deeds from those who are mindful of Him.",
+        "Every human life is precious: saving one life is like saving all of humanity.",
+        "Whoever starts a bad practice carries a share of the sin of everyone who follows it."
+      ],
+      "quiz": [
+        {
+          "question": "Why did one son threaten to kill his brother?",
+          "options": ["They argued over land", "His own offering was not accepted", "His brother stole from him", "Iblis ordered him to"],
+          "answer": 1,
+          "reference": "Quran 5:27"
+        },
+        {
+          "question": "What did Allah send to show the killer how to bury his brother?",
+          "options": ["An angel", "A dove", "A wolf", "A crow"],
+          "answer": 3,
+          "reference": "Quran 5:31"
+        },
+        {
+          "question": "According to the Quran, saving one life is like…",
+          "options": ["Saving all of mankind", "Saving one tribe", "Fasting for a day", "Nothing special"],
+          "answer": 0,
+          "reference": "Quran 5:32"
+        }
+      ]
+    },
+    {
+      "id": "adam-7",
+      "title": "Adam's legacy",
+      "paragraphs": [
+        "Adam (AS) was the first human being, and the scholars count him as the first Prophet. Allah chose him, spoke to him and guided him, and he taught his children to worship Allah alone.",
+        "Allah also took a covenant from all the children of Adam. He brought out their descendants and made them testify: “Am I not your Lord?” They answered: “Yes, we testify.” That is why every human heart has a natural sense that it has a Creator.",
+        "The Prophet ﷺ described an argument between Adam and Musa (AS). Musa said: “You are Adam, whose mistake brought you out of the Garden.” Adam replied: “You are Musa, whom Allah chose for His messages and His speech, and yet you blame me for something that was decreed for me before I was created?” The Prophet ﷺ said that Adam had the better argument. Scholars explain that Adam was not excusing a sin by pointing to fate: he had already repented and been forgiven, and he was speaking of the hardship that Allah had decreed.",
+        "The Quran calls all of us “children of Adam”, and it warns us: do not let Shaytan tempt you as he brought your parents out of the Garden. The story of Adam is the story of every person. We will make mistakes, and the way back is always through repentance."
+      ],
+      "kidsParagraphs": [
+        "Adam was the first man and the first Prophet. He taught his children to worship only Allah.",
+        "We are all “children of Adam”. When we make mistakes, we can always say sorry to Allah, just as our father Adam did."
+      ],
+      "blocks": [
+        { "type": "quran", "after": 0, "surah": 3, "ayahStart": 33, "ayahEnd": 33 },
+        { "type": "quran", "after": 1, "surah": 7, "ayahStart": 172, "ayahEnd": 172 },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3409",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “Adam and Musa argued. Musa said to him: ‘You are Adam, whose mistake brought you out of Paradise.’ Adam said to him: ‘You are Musa, whom Allah chose for His messages and His speech, and then you blame me for something that was decreed for me before I was created?’” The Messenger of Allah ﷺ said twice: “So Adam got the better of Musa in the argument.”",
+          "match": "احتج ادم وموسى"
+        },
+        { "type": "quran", "after": 3, "surah": 7, "ayahStart": 27, "ayahEnd": 27 }
+      ],
+      "lessons": [
+        "All people are one family: the children of Adam.",
+        "Every heart knows its Creator; this is the covenant Allah took from us.",
+        "Fate is not an excuse to sin, but after repenting we accept with patience what Allah has decreed.",
+        "Shaytan is still our enemy, so we must stay alert."
+      ],
+      "quiz": [
+        {
+          "question": "According to Quran 3:33, whom did Allah choose over the worlds?",
+          "options": ["Only the angels", "Adam, Nuh, the family of Ibrahim and the family of 'Imran", "The kings of the earth", "The jinn"],
+          "answer": 1,
+          "reference": "Quran 3:33"
+        },
+        {
+          "question": "What question did Allah ask the children of Adam in the covenant?",
+          "options": ["Will you obey Me?", "Who created you?", "Where are you going?", "Am I not your Lord?"],
+          "answer": 3,
+          "reference": "Quran 7:172"
+        },
+        {
+          "question": "Which Prophet argued with Adam about leaving the Garden?",
+          "options": ["Musa (AS)", "Nuh (AS)", "Ibrahim (AS)", "Isa (AS)"],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3409"
+        }
+      ]
+    }
+  ]
+}

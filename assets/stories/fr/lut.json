@@ -1,0 +1,357 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "lut",
+  "language": "fr",
+  "name": "Lout",
+  "title": "Le neveu d'Ibrahim (AS), envoyé à une cité corrompue",
+  "sentTo": "Les gens des cités près de la mer Morte, parmi lesquels il vivait",
+  "era": "L'époque d'Ibrahim (AS), dont il était le neveu. Le Coran et la Sunna ne donnent aucune date.",
+  "places": [
+    {
+      "name": "Les cités du peuple de Lout, que la tradition situe près de la mer Morte. Le Coran dit qu'elles se trouvent sur une route que les gens empruntent encore (15:76).",
+      "lat": 31.3,
+      "lng": 35.45,
+      "approximate": true
+    }
+  ],
+  "summary": "Lout crut en son oncle Ibrahim (AS) et émigra avec lui. Allah l'envoya à un peuple qui commettait un péché honteux que personne n'avait commis avant lui et qui rejetait tout avertissement. Des anges vinrent sauver Lout et sa famille, et les cités furent renversées. Seule son épouse, qui avait pris le parti des injustes, ne fut pas sauvée.",
+  "notes": [
+    "Les noms de Sodome et Gomorrhe ne figurent pas dans le Coran ; ils viennent de la Bible.",
+    "« Voici mes filles » (11:78, 15:71) : beaucoup de savants disent que Lout désignait les femmes de son peuple, car un prophète est comme un père pour son peuple, et qu'il les appelait au mariage licite. D'autres disent qu'il parlait de ses propres filles en mariage.",
+    "L'épouse de Lout : la Bible dit qu'elle devint une colonne de sel en se retournant. Le Coran dit seulement qu'elle fut parmi ceux qui restèrent en arrière et furent détruits.",
+    "L'histoire est racontée ici en termes généraux adaptés à tous les âges ; les parents peuvent expliquer les détails comme ils l'entendent."
+  ],
+  "chapters": [
+    {
+      "id": "lut-1",
+      "title": "Lout croit et émigre",
+      "paragraphs": [
+        "Quand Ibrahim (AS) appela son peuple à Allah et fut sauvé du feu, un jeune homme crut en lui : son neveu Lout. Ibrahim dit : « J'émigre vers mon Seigneur », et Allah les conduisit tous deux vers la terre bénie.",
+        "Allah fit ensuite de Lout un prophète et l'envoya aux gens de cités voisines. Ils étaient tombés dans un péché honteux qu'aucun peuple au monde n'avait commis avant eux : les hommes désiraient les hommes au lieu des femmes. Ils faisaient aussi le mal ouvertement dans leurs assemblées.",
+        "Lout les avertit encore et encore. Leur réponse fut : « Chassez-les de votre cité ! Ce sont des gens qui veulent rester purs. »"
+      ],
+      "kidsParagraphs": [
+        "Lout crut en son oncle Ibrahim et voyagea avec lui pour l'amour d'Allah.",
+        "Allah envoya Lout à un peuple qui faisait des choses très honteuses. Quand Lout les avertit, ils voulurent le chasser de leur ville."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 80,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 7,
+          "ayahStart": 82,
+          "ayahEnd": 82
+        }
+      ],
+      "lessons": [
+        "La foi peut demander de quitter un lieu familier pour l'amour d'Allah.",
+        "Appeler au bien inclut avertir contre ce qui est honteux.",
+        "Les injustes s'en prennent souvent aux gens simplement parce qu'ils veulent rester purs."
+      ],
+      "quiz": [
+        {
+          "question": "De qui Lout (AS) était-il le neveu ?",
+          "options": [
+            "Nouh (AS)",
+            "Ibrahim (AS)",
+            "Moussa (AS)",
+            "Youssouf (AS)"
+          ],
+          "answer": 1,
+          "reference": "Quran 29:26"
+        },
+        {
+          "question": "Que disait le peuple de Lout de lui et de sa famille ?",
+          "options": [
+            "Ce sont des gens qui veulent rester purs",
+            "Ils sont riches",
+            "Ce sont des rois",
+            "Ce sont des étrangers"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:82"
+        },
+        {
+          "question": "Que voulait faire le peuple de Lout ?",
+          "options": [
+            "Le faire roi",
+            "Le chasser de la cité",
+            "Lui faire des cadeaux",
+            "Le suivre"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:82"
+        }
+      ]
+    },
+    {
+      "id": "lut-2",
+      "title": "Les invités",
+      "paragraphs": [
+        "Les anges qui avaient annoncé à Ibrahim la naissance d'Isaac lui dirent qu'ils se rendaient chez le peuple de Lout. Ibrahim dit : « Mais Lout y est ! » Ils répondirent qu'ils le sauveraient, lui et sa famille, sauf son épouse.",
+        "Les anges vinrent à Lout sous l'apparence de beaux jeunes hommes. Lout s'inquiéta profondément pour ses invités, car il connaissait son peuple. « C'est un jour terrible », dit-il.",
+        "Son peuple accourut à sa maison. Lout les supplia de craindre Allah et de ne pas le déshonorer devant ses invités, et il leur indiqua le mariage licite à la place. Ils refusèrent. Seul et sans aide, Lout dit : « Si seulement j'avais de la force contre vous, ou si je pouvais trouver refuge auprès d'un soutien solide ! »"
+      ],
+      "kidsParagraphs": [
+        "Des anges vinrent chez Lout sous l'apparence d'hommes. Lout craignait que son peuple fasse du mal à ses invités.",
+        "Lout dit : « Craignez Allah ! Ne me déshonorez pas devant mes invités. » Il se sentait seul, mais Allah était avec lui."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 29,
+          "ayahStart": 31,
+          "ayahEnd": 32
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 77,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 68,
+          "ayahEnd": 69
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        }
+      ],
+      "lessons": [
+        "Protéger ses invités est une question d'honneur et de foi.",
+        "Un croyant n'est jamais vraiment seul : Allah est le soutien le plus solide.",
+        "La crainte d'Allah doit nous arrêter avant de faire du mal aux autres."
+      ],
+      "quiz": [
+        {
+          "question": "Qui rendit visite à Lout ?",
+          "options": [
+            "Des marchands",
+            "Des anges",
+            "Des rois",
+            "Des bergers"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Comment Lout appela-t-il le jour où ses invités arrivèrent ?",
+          "options": [
+            "Un jour heureux",
+            "Un jour terrible",
+            "Un jour de fête",
+            "Un jour de chance"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:77"
+        },
+        {
+          "question": "Qui les anges dirent-ils qu'ils ne sauveraient pas ?",
+          "options": [
+            "L'épouse de Lout",
+            "Les filles de Lout",
+            "Lout",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Quran 29:32"
+        }
+      ]
+    },
+    {
+      "id": "lut-3",
+      "title": "Partir de nuit",
+      "paragraphs": [
+        "Alors les anges révélèrent qui ils étaient : « Ô Lout, nous sommes des messagers de ton Seigneur. Ils ne t'atteindront jamais. » Ils lui dirent de partir avec sa famille pendant la nuit, de marcher derrière eux, et que personne ne se retourne.",
+        "Le châtiment viendrait à l'aube. Lout partit avec sa famille croyante. Son épouse n'était pas parmi les sauvés ; elle avait pris le parti des injustes.",
+        "Le Prophète Muhammad ﷺ a dit : « Qu'Allah fasse miséricorde à Lout ; il se réfugiait auprès d'un soutien solide. » Autrement dit, Lout n'était jamais vraiment seul : son soutien était Allah."
+      ],
+      "kidsParagraphs": [
+        "Les anges dirent : « N'aie pas peur, Lout ! Pars de nuit avec ta famille, et ne te retourne pas. »",
+        "Le Prophète ﷺ a dit que Lout avait un soutien solide : Allah !"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 81,
+          "ayahEnd": 81
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 65,
+          "ayahEnd": 66
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3372",
+          "narrator": "Abou Hourayra",
+          "translation": "Le Messager d'Allah ﷺ a dit : « …Qu'Allah fasse miséricorde à Lout ; il se réfugiait auprès d'un soutien solide… »",
+          "match": "ويرحم الله لوطا لقد كان ياوي الى ركن شديد",
+          "shortened": true
+        }
+      ],
+      "lessons": [
+        "Le secours d'Allah vient au bon moment.",
+        "Obéis exactement aux instructions d'Allah, même aux petites comme « ne te retourne pas ».",
+        "Allah est le soutien le plus solide des croyants."
+      ],
+      "quiz": [
+        {
+          "question": "Quand Lout et sa famille partirent-ils ?",
+          "options": [
+            "À midi",
+            "Pendant la nuit",
+            "Après une semaine",
+            "Ils ne partirent jamais"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:81"
+        },
+        {
+          "question": "Quand le châtiment devait-il venir ?",
+          "options": [
+            "À l'aube",
+            "Au coucher du soleil",
+            "Dans un an",
+            "À minuit"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:66"
+        },
+        {
+          "question": "Selon le Prophète ﷺ, Lout se réfugiait auprès…",
+          "options": [
+            "De sa tribu",
+            "D'un soutien solide",
+            "D'une grotte",
+            "D'un bateau"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3372"
+        }
+      ]
+    },
+    {
+      "id": "lut-4",
+      "title": "Un signe pour ceux qui réfléchissent",
+      "paragraphs": [
+        "Au lever du soleil, un cri terrible les saisit, et Allah renversa leurs cités sens dessus dessous et fit pleuvoir sur eux des pierres d'argile cuite, marquées auprès de leur Seigneur.",
+        "Allah sauva Lout et toute sa famille, sauf son épouse. Le Coran la cite, avec l'épouse de Nouh, comme exemple de ceux qui mécrurent alors qu'ils vivaient avec des prophètes vertueux.",
+        "Le Coran dit que les ruines de ces cités se trouvent sur une route que les gens empruntent encore, et que les Arabes passaient près d'elles matin et soir. « Ne raisonnerez-vous donc pas ? »"
+      ],
+      "kidsParagraphs": [
+        "Allah renversa leurs cités. Seuls Lout et les croyants furent sauvés.",
+        "Allah laissa leurs ruines comme une leçon pour ceux qui réfléchissent."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 82,
+          "ayahEnd": 83
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 15,
+          "ayahStart": 73,
+          "ayahEnd": 74
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 133,
+          "ayahEnd": 136
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 137,
+          "ayahEnd": 138
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 15,
+          "ayahStart": 76,
+          "ayahEnd": 77
+        }
+      ],
+      "lessons": [
+        "Tout péché persistant et répandu ouvertement attire le châtiment d'Allah.",
+        "Les liens familiaux ne sauvent pas ; c'est la foi qui sauve.",
+        "L'histoire est pleine de signes pour ceux qui réfléchissent."
+      ],
+      "quiz": [
+        {
+          "question": "Qu'Allah fit-Il pleuvoir sur le peuple de Lout ?",
+          "options": [
+            "De l'eau",
+            "Des pierres d'argile cuite",
+            "Du feu",
+            "De la neige"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:82"
+        },
+        {
+          "question": "Qui, dans la famille de Lout, ne fut pas sauvé ?",
+          "options": [
+            "Son épouse",
+            "Ses filles",
+            "Lout",
+            "Personne"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:135"
+        },
+        {
+          "question": "Quand le cri les saisit-il ?",
+          "options": [
+            "Au lever du soleil",
+            "À minuit",
+            "À midi",
+            "Au coucher du soleil"
+          ],
+          "answer": 0,
+          "reference": "Quran 15:73"
+        }
+      ]
+    }
+  ]
+}

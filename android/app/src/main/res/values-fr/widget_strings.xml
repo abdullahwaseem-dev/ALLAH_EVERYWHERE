@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen widget names, descriptions and fallback text. -->
+<resources>
+    <string name="widget_next_prayer_name">Prochaine prière</string>
+    <string name="widget_next_prayer_description">Compte à rebours jusqu\'à la prochaine prière, avec les horaires du jour</string>
+    <string name="widget_hijri_date_name">Date islamique</string>
+    <string name="widget_hijri_date_description">La date hégirienne du jour et les occasions islamiques</string>
+    <string name="widget_reminder_name">Verset du jour</string>
+    <string name="widget_daily_reminder_description">Un verset ou un hadith à méditer chaque jour</string>
+    <string name="widget_next_prayer_fallback">Prochaine prière</string>
+    <string name="widget_set_location_fallback">Ouvrez l\'application pour définir votre position</string>
+    <string name="widget_open_app_fallback">Ouvrez l\'application pour mettre à jour</string>
+    <string name="widget_preview_prayer">Asr</string>
+    <string name="widget_preview_hijri_month">Rabi\' al-Thani</string>
+</resources>

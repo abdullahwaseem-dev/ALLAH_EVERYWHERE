@@ -9,11 +9,18 @@ class AppNotification {
   final DateTime createdAt;
   final bool isRead;
 
+  /// Challenge notifications (written by the server) also have a body and
+  /// the challenge to open.
+  final String body;
+  final String? challengeId;
+
   AppNotification({
     required this.id,
     required this.title,
     required this.createdAt,
     required this.isRead,
+    this.body = '',
+    this.challengeId,
   });
 
   factory AppNotification.fromDoc(QueryDocumentSnapshot<Map<String, dynamic>> doc) {
@@ -23,6 +30,8 @@ class AppNotification {
       title: data['title'] as String? ?? '',
       createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
       isRead: data['isRead'] as bool? ?? false,
+      body: data['body'] as String? ?? '',
+      challengeId: data['type'] == 'challenge' ? data['challengeId'] as String? : null,
     );
   }
 }
@@ -68,6 +77,21 @@ class NotificationsController extends GetxController {
 
   List<AppNotification> search(String query) {
     if (query.isEmpty) return notifications;
-    return notifications.where((n) => n.title.toLowerCase().contains(query.toLowerCase())).toList();
+    final q = query.toLowerCase();
+    return notifications.where((n) => n.title.toLowerCase().contains(q) || n.body.toLowerCase().contains(q)).toList();
+  }
+
+  Future<void> markRead(AppNotification n) async {
+    if (n.isRead) return;
+    final i = notifications.indexWhere((e) => e.id == n.id);
+    if (i >= 0) {
+      notifications[i] = AppNotification(
+          id: n.id, title: n.title, createdAt: n.createdAt, isRead: true, body: n.body, challengeId: n.challengeId);
+    }
+    try {
+      await _collection?.doc(n.id).update({'isRead': true});
+    } catch (e) {
+      VoidLogger.error('Failed to mark notification read', e);
+    }
   }
 }

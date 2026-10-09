@@ -1,0 +1,349 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "dawud",
+  "language": "tr",
+  "name": "Davud",
+  "title": "Zebur verilen kral ve peygamber",
+  "sentTo": "Kral olarak yönettiği İsrailoğulları",
+  "era": "Tarihçilerce genellikle MÖ 1000 civarına tarihlendirilir. Kur'an ve Sünnet bir tarih vermez.",
+  "places": [
+    {
+      "name": "Hüküm sürdüğü Kudüs ve Filistin toprakları.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Davud, Allah'ın izniyle zalim Câlût'u (Golyat) öldüren genç bir askerdi. Allah ona hükümranlık, peygamberlik, hikmet ve Zebur'u verdi. Dağlar ve kuşlar onunla birlikte Allah'ı tesbih ederdi, demir ona yumuşatılmıştı. Adaletle hükmeder, yalnızca kendi emeğinden yer ve gece gündüz Allah'a ibadet ederdi.",
+  "notes": [
+    "Davud'un askerlerinden birinin (Uriya) karısını istediği hikâyesi Kitab-ı Mukaddes'ten ve Ehl-i Kitap rivayetlerinden gelir. İbn Kesîr gibi âlimler bunu bir peygambere yakışmaz diyerek reddetmiştir. Kur'an yalnızca Davud'un imtihan edildiğini anladığını, bağışlanma dilediğini ve bağışlandığını söyler (38:24-25); âlimler imtihanın ne olduğu konusunda ihtilaf etmiştir.",
+    "Tâlût (Saul) ve Câlût (Golyat) Kur'an'da anılır; savaşın diğer ayrıntıları tarihten gelir.",
+    "Davud'a verilen \"Zebur\" genellikle Mezmurlar ile özdeşleştirilir, ama bugün mevcut olan Mezmurlar değişmemiş asıl vahiy olarak kabul edilmez."
+  ],
+  "chapters": [
+    {
+      "id": "dawud-1",
+      "title": "Câlût'u öldüren genç",
+      "paragraphs": [
+        "Hz. Musa'dan (a.s.) sonra İsrailoğulları bir kral istedi ve Allah Tâlût'u tayin etti. Ordu zalim Câlût'a karşı yürürken Tâlût onları bir nehirle imtihan etti: Ondan kana kana içen ondan değildi. Çoğu içti; yalnızca birkaçı imtihanı geçti.",
+        "Küçük ordu Câlût'u ve askerlerini görünce müminler dua etti: \"Rabbimiz! Üzerimize sabır yağdır, ayaklarımızı sabit kıl ve kâfirler topluluğuna karşı bize yardım et.\"",
+        "Allah'ın izniyle onları yendiler ve Davud adında bir genç Câlût'u öldürdü. Allah Davud'a hükümranlık ve hikmet verdi ve ona dilediğini öğretti."
+      ],
+      "kidsParagraphs": [
+        "Küçük bir mümin ordusu dev savaşçı Câlût'un karşısına çıktı.",
+        "Genç Davud Allah'ın izniyle Câlût'u öldürdü! Sonra Allah Davud'u kral ve peygamber yaptı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 2,
+          "ayahStart": 249,
+          "ayahEnd": 249
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 2,
+          "ayahStart": 250,
+          "ayahEnd": 250
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 2,
+          "ayahStart": 251,
+          "ayahEnd": 251
+        }
+      ],
+      "lessons": [
+        "Zafer sayıdan değil, Allah'tandır.",
+        "Nehirdeki imtihan gibi nefse hâkim olmak, insanları büyük işlere hazırlar.",
+        "Zorluklarla karşılaşınca sabır ve sebat için dua et."
+      ],
+      "quiz": [
+        {
+          "question": "Câlût'u (Golyat) kim öldürdü?",
+          "options": [
+            "Tâlût",
+            "Davud",
+            "Süleyman",
+            "Musa"
+          ],
+          "answer": 1,
+          "reference": "Quran 2:251"
+        },
+        {
+          "question": "Tâlût ordusunu nasıl imtihan etti?",
+          "options": [
+            "Bir nehirle",
+            "Bir yarışla",
+            "Bir oruçla",
+            "Altınla"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:249"
+        },
+        {
+          "question": "Müminler savaştan önce ne için dua etti?",
+          "options": [
+            "Sabır, sebat ve zafer",
+            "Servet",
+            "Bir kral",
+            "Yağmur"
+          ],
+          "answer": 0,
+          "reference": "Quran 2:250"
+        }
+      ]
+    },
+    {
+      "id": "dawud-2",
+      "title": "Dağlar, kuşlar ve demir",
+      "paragraphs": [
+        "Allah Davud'a özel bir lütuf verdi. O Allah'ı tesbih edince dağlar ve kuşlar sabah akşam onunla birlikte Allah'ı tesbih ederdi. Allah ona indirilmiş bir kitap olan Zebur'u verdi.",
+        "Allah demiri onun ellerinde yumuşattı ve ona, savaşta insanları korumak için halkaları özenle ölçerek zırh yapmayı öğretti. Allah ona ve ailesine \"Salih amel işleyin\" dedi.",
+        "Davud kral olduğu hâlde kendi emeğiyle geçinirdi. Peygamber ﷺ şöyle buyurdu: \"Davud (a.s.) yalnızca kendi elinin emeğinden yerdi.\""
+      ],
+      "kidsParagraphs": [
+        "Davud Allah'ı övünce dağlar ve kuşlar da onunla birlikte Allah'ı överdi!",
+        "Allah demiri ona yumuşattı ve o zırh yaptı. Kral olduğu hâlde yiyeceğini kendisi kazanırdı."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 34,
+          "ayahStart": 10,
+          "ayahEnd": 10
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 163,
+          "ayahEnd": 163
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 34,
+          "ayahStart": 11,
+          "ayahEnd": 11
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 80,
+          "ayahEnd": 80
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "2073",
+          "narrator": "Ebû Hüreyre",
+          "translation": "Resûlullah ﷺ şöyle buyurdu: \"Davud (a.s.) yalnızca kendi elinin emeğinden yerdi.\"",
+          "match": "ان داود عليه السلام كان لا ياكل الا من عمل يده"
+        }
+      ],
+      "lessons": [
+        "Bütün yaratılış Allah'ı tesbih eder; zikrinle ona katıl.",
+        "Eliyle çalışmak bir kral için bile şereftir.",
+        "Beceriler ve teknoloji hayırda kullanılacak nimetlerdir."
+      ],
+      "quiz": [
+        {
+          "question": "Davud ile birlikte Allah'ı ne tesbih ederdi?",
+          "options": [
+            "Dağlar ve kuşlar",
+            "Denizler",
+            "Yıldızlar",
+            "Cinler"
+          ],
+          "answer": 0,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "Allah Davud için neyi yumuşattı?",
+          "options": [
+            "Taşı",
+            "Demiri",
+            "Altını",
+            "Tahtayı"
+          ],
+          "answer": 1,
+          "reference": "Quran 34:10"
+        },
+        {
+          "question": "Peygamber'e ﷺ göre Davud neyden yerdi?",
+          "options": [
+            "Hazineden",
+            "Kendi elinin emeğinden",
+            "Hediyelerden",
+            "Vergilerden"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 2073"
+        }
+      ]
+    },
+    {
+      "id": "dawud-3",
+      "title": "Hak ile hükmetmek",
+      "paragraphs": [
+        "Bir gün iki adam duvardan aşarak Davud'un özel ibadet yerine girdi ve Davud irkildi. \"Korkma\" dediler. \"Biz birbirine hasım iki tarafız. Aramızda hak ile hükmet.\" Biri dedi ki: \"Kardeşimin doksan dokuz koyunu var, benim bir koyunum var; o da onu kendisine vermem için ısrar ediyor.\"",
+        "Davud, adamın kardeşine haksızlık ettiğine ve ortakların çoğunun, iman edip salih amel işleyenler dışında, birbirine haksızlık ettiğine hükmetti. Sonra Davud Allah'ın onu imtihan ettiğini anladı. Rabbinden bağışlanma diledi, rükûa kapandı ve O'na yöneldi; Allah da onu bağışladı.",
+        "Allah buyurdu: \"Ey Davud! Seni yeryüzünde halife yaptık; insanlar arasında hak ile hükmet ve hevâya uyma, yoksa o seni Allah'ın yolundan saptırır.\""
+      ],
+      "kidsParagraphs": [
+        "İki adam bir sorunla Davud'a geldi ve o aralarında hükmetti.",
+        "Sonra Davud Allah'tan bağışlanma diledi ve Allah onu bağışladı. Allah ona: \"Daima adaletle hükmet!\" dedi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 21,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "Ehl-i Kitap'tan bir rivayet, Davud'un imtihanının askerlerinden birinin karısını istemesi olduğunu söyler. İbn Kesîr gibi âlimler bunu reddetmiştir."
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 38,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Hâkim iki tarafı da dinlemeli ve hevâya değil hakka uymalıdır.",
+        "En hayırlı insanlar bile tövbeyle Allah'a döner.",
+        "Güç, Allah'ın bir emanetidir."
+      ],
+      "quiz": [
+        {
+          "question": "Birinci adamın kardeşinin kaç koyunu vardı?",
+          "options": [
+            "On",
+            "Doksan dokuz",
+            "Yüz",
+            "Yedi"
+          ],
+          "answer": 1,
+          "reference": "Quran 38:23"
+        },
+        {
+          "question": "Davud imtihan edildiğini anlayınca ne yaptı?",
+          "options": [
+            "Bağışlanma diledi ve rükûa kapandı",
+            "Öfkelendi",
+            "Şehri terk etti",
+            "Hiçbir şey"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:24"
+        },
+        {
+          "question": "Allah Davud'a hükmederken neye uymamasını söyledi?",
+          "options": [
+            "Hevâsına",
+            "Tevrat'a",
+            "Oğluna",
+            "Yaşlılara"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:26"
+        }
+      ]
+    },
+    {
+      "id": "dawud-4",
+      "title": "Davud'un ibadeti",
+      "paragraphs": [
+        "Allah Davud'u, güç sahibi ve daima O'na yönelen biri olarak anlatır.",
+        "Peygamber ﷺ şöyle buyurdu: \"Allah'a en sevimli oruç Davud'un orucudur: Bir gün oruç tutar, ertesi gün tutmazdı. Allah'a en sevimli namaz da Davud'un namazıdır: Gecenin yarısını uyur, üçte birinde namaz kılar, altıda birinde uyurdu.\"",
+        "Büyük bir krallığın kralı olduğu hâlde uzun gece namazına ve düzenli oruca vakit ayırırdı. İbadeti dengeliydi: güçlü, istikrarlı ve devamlı."
+      ],
+      "kidsParagraphs": [
+        "Davud bir gün oruç tutar, bir gün tutmazdı ve gece kalkıp namaz kılardı.",
+        "Peygamber ﷺ bunun Allah'ın en çok sevdiği oruç ve namaz olduğunu söyledi."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 38,
+          "ayahStart": 17,
+          "ayahEnd": 18
+        },
+        {
+          "type": "hadith",
+          "after": 1,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3420",
+          "narrator": "Abdullah b. Amr",
+          "translation": "Resûlullah ﷺ bana şöyle buyurdu: \"Allah'a en sevimli oruç Davud'un orucudur: Bir gün oruç tutar, bir gün tutmazdı. Allah'a en sevimli namaz da Davud'un namazıdır: Gecenin yarısını uyur, üçte birinde namaza durur, altıda birinde uyurdu.\"",
+          "match": "احب الصيام الى الله صيام داود كان يصوم يوما ويفطر يوما"
+        }
+      ],
+      "lessons": [
+        "İstikrarlı ve dengeli ibadet Allah'a en sevimli olandır.",
+        "Meşgul insanlar bile gece namazına vakit bulabilir.",
+        "Sık sık Allah'a yönelmek peygamberlerin vasfıdır."
+      ],
+      "quiz": [
+        {
+          "question": "Davud nasıl oruç tutardı?",
+          "options": [
+            "Her gün",
+            "Bir gün tutar, bir gün tutmazdı",
+            "Sadece Ramazan'da",
+            "Yılda bir kez"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Davud gecenin ne kadarında namaz kılardı?",
+          "options": [
+            "Üçte birinde",
+            "Bütün gece",
+            "Hiç",
+            "Onda birinde"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3420"
+        },
+        {
+          "question": "Kur'an 38:17'de Davud'u nasıl anlatır?",
+          "options": [
+            "Daima Allah'a yönelen",
+            "Tembel",
+            "Kibirli",
+            "Korkak"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:17"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "yahya",
+  "language": "zh",
+  "name": "叶哈雅",
+  "title": "自幼纯洁、温和、孝顺",
+  "sentTo": "以色列的后裔",
+  "era": "他的表兄弟尔撒（愿主赐他平安）的时代，公元1世纪；《古兰经》没有给出年代。",
+  "places": [
+    {
+      "name": "耶路撒冷（古德斯），宰凯里雅服务的圣殿周围。",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "宰凯里雅（愿主赐他平安）年老时得到的儿子，他的名字以前没有人用过。真主在他童年时就赐给他智慧、仁慈、纯洁和对父母的孝顺。他证实了他的表兄弟尔撒（愿主赐他平安）的到来，真主在他出生之日、去世之日和复活之日赐他平安。",
+  "notes": [
+    "大多数学者认为叶哈雅就是《圣经》中的施洗约翰。",
+    "关于他去世的故事（被一位国王杀害，他的头被放在盘子里送来）来自基督教资料和后来的传述，而非《古兰经》或可靠的圣训。",
+    "“证实从真主发出的一句话”（3:39），大多数学者解释为证实尔撒（愿主赐他平安），他被称为“从真主发出的一句话”。"
+  ],
+  "chapters": [
+    {
+      "id": "yahya-1",
+      "title": "童年时的智慧",
+      "paragraphs": [
+        "真主呼唤他：“叶哈雅啊！你应当坚持经典。”真主在他童年时就赐给他智慧，以及从祂那里来的仁慈和纯洁，他是敬畏的。",
+        "他孝敬父母，从不傲慢，也不违抗。天使们曾对他的父亲形容他是长者、克己者、清廉的先知，他将证实从真主发出的一句话：尔撒（愿主赐他平安）。",
+        "真主说：“他出生之日、死亡之日、复活之日，愿他得享平安。”"
+      ],
+      "kidsParagraphs": [
+        "叶哈雅小时候就很有智慧。他善良纯洁，爱父母，听父母的话。",
+        "真主赐叶哈雅平安：在他出生时，在他去世时，在他复活时。"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 12,
+          "ayahEnd": 13
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 14,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 39,
+          "ayahEnd": 39
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 15,
+          "ayahEnd": 15
+        }
+      ],
+      "lessons": [
+        "孩子也可以有智慧并亲近真主。",
+        "孝敬父母是众先知的品质。",
+        "要坚持真主的经典。"
+      ],
+      "quiz": [
+        {
+          "question": "叶哈雅被命令坚持什么？",
+          "options": [
+            "经典",
+            "一把剑",
+            "一根手杖",
+            "圣殿的钥匙"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "真主什么时候赐给叶哈雅智慧？",
+          "options": [
+            "在他童年时",
+            "在他年老时",
+            "从未赐给",
+            "在他去世后"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:12"
+        },
+        {
+          "question": "叶哈雅对父母怎样？",
+          "options": [
+            "孝顺",
+            "不听话",
+            "疏远",
+            "骄傲"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:14"
+        }
+      ]
+    },
+    {
+      "id": "yahya-2",
+      "title": "第二层天的表兄弟",
+      "paragraphs": [
+        "在登霄之夜，先知穆罕默德ﷺ到达第二层天，在那里见到了两位表兄弟：叶哈雅和尔撒（愿主赐他们平安）。吉卜利勒说：“这是叶哈雅和尔撒，你向他们问候吧。”他们回了礼，说：“欢迎清廉的兄弟和清廉的先知。”",
+        "叶哈雅和尔撒是同一家族两个妇女的儿子，两人都是同一时期被派往以色列后裔的先知。"
+      ],
+      "kidsParagraphs": [
+        "在登霄之夜，我们的先知ﷺ在第二层天见到了叶哈雅和尔撒。",
+        "叶哈雅和尔撒是表兄弟！他们像欢迎兄弟一样欢迎他。"
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3430",
+          "narrator": "马立克·本·塞尔塞阿",
+          "translation": "先知ﷺ向他们讲述了他被提升的那一夜：“……然后他上升，到了第二层天，请求开门。有人问：‘是谁？’他说：‘吉卜利勒。’有人问：‘和你一起的是谁？’他说：‘穆罕默德。’有人问：‘他已被召请了吗？’他说：‘是的。’我进去时，看见了叶哈雅和尔撒，他们是表兄弟。他说：‘这是叶哈雅和尔撒，你向他们问候吧。’我向他们问候，他们回了礼，说：‘欢迎清廉的兄弟和清廉的先知。’”",
+          "match": "فاذا يحيى وعيسى وهما ابنا خالة",
+          "shortened": true
+        },
+        {
+          "type": "narrationNote",
+          "after": 1,
+          "text": "一个著名的故事说，叶哈雅被一位国王杀害，他的头被放在盘子里送来。"
+        }
+      ],
+      "lessons": [
+        "众先知彼此相爱，彼此欢迎。",
+        "清廉的亲属关系是一种恩典。",
+        "登霄尊荣了所有的先知。"
+      ],
+      "quiz": [
+        {
+          "question": "先知ﷺ在哪一层天见到了叶哈雅和尔撒？",
+          "options": [
+            "第一层",
+            "第二层",
+            "第四层",
+            "第七层"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "叶哈雅和尔撒是什么关系？",
+          "options": [
+            "兄弟",
+            "表兄弟",
+            "父子",
+            "没有亲属关系"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3430"
+        },
+        {
+          "question": "他们怎样称呼先知ﷺ？",
+          "options": [
+            "清廉的兄弟和清廉的先知",
+            "我们的国王",
+            "我们的儿子",
+            "陌生人"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3430"
+        }
+      ]
+    }
+  ]
+}

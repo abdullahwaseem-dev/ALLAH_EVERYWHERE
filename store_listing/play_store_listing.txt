@@ -1,0 +1,52 @@
+TITLE (29/30 chars)
+Allah Everywhere: Islamic App
+
+SHORT DESCRIPTION (75/80 chars)
+Find Islamic prayer times, read Quran & Hadith, and locate Qibla instantly.
+
+FULL DESCRIPTION (3888 chars - under Play Store's 4000 limit)
+------------------------------------------------------------
+
+Find Islamic prayer times, read Quran & Hadith, and locate Qibla instantly - all in one free Islamic app, built to be a daily companion for Muslims of every background and madhab.
+
+Allah Everywhere brings together the Islamic tools Muslims reach for every day: accurate Islamic prayer times with Adhan notifications, the full Quran, nine major Hadith collections, a Qibla compass, Duas for daily life, Fiqh guidance, the Seerah of the Prophet, a digital Tasbeeh counter, and an AI assistant grounded in the Quran and authentic Hadith.
+
+FEATURES
+
+- Islamic Prayer Times: Precise daily prayer times based on your location, with Adhan notifications and reminders so you never miss a prayer. Choose your calculation method and madhab (Hanafi, Shafi'i, Maliki, Hanbali) for Asr timing.
+
+- Qibla Compass: Find the exact direction of the Kaaba from anywhere, using your device's compass and GPS location, with a simple visual guide.
+
+- Quran: Read the full Quran with clear Arabic text, organized by Surah, with audio recitation from a selection of reciters for listening on the go.
+
+- Hadith Collections: Browse nine major Islamic Hadith books - Sahih Bukhari, Sahih Muslim, Jami' At-Tirmidhi, Sunan Abu Dawood, Sunan Ibn-e-Majah, Sunan An-Nasa'i, Mishkat Al-Masabih, Musnad Ahmad, and Al-Silsila Sahiha - searchable by book and chapter.
+
+- Dua Collection: A curated library of Duas for everyday situations, from morning and evening remembrance to travel, illness, and gratitude.
+
+- Fiqh Guidance: Practical Islamic rulings covering worship and daily life, presented clearly for readers of any background.
+
+- Seerah of the Prophet: The life story of Prophet Muhammad (peace be upon him), from his birth to his final years, in an easy-to-follow format.
+
+- Ask AI: Ask an Islamic question - Quran, Hadith, Fiqh, Seerah, or everyday living - and get an answer grounded in the Quran and authentic Hadith, with references cited where possible. Where the major Islamic schools of thought genuinely differ, the app notes that rather than presenting a single view as the only answer. For significant personal rulings, it recommends confirming with a qualified local Islamic scholar.
+
+- Tasbeeh Counter: A simple digital counter for dhikr, with saved counts so you can pick up where you left off.
+
+- Nearby Mosques: Locate mosques near you using your device's location, helpful when traveling.
+
+- Bookmarks & Reading Stats: Save your place in the Quran, Hadith, or Duas, and track your Islamic reading progress over time.
+
+- Reading Reminders: Set daily reminders for Quran reading, customizable to your Islamic study schedule.
+
+WHO IT'S FOR
+
+Whether you're keeping up with your five daily Islamic prayers, deepening your Islamic knowledge of the Quran and Hadith, finding the Qibla while traveling, or simply looking for a reliable place to ask Islamic questions, Allah Everywhere is built for beginners and lifelong students of Islamic learning alike. It supports different Islamic schools of thought (Hanafi, Shafi'i, Maliki, Hanbali) and is available in Arabic, English, French, German, Hindi, Turkish, Urdu, and Chinese.
+
+ACCOUNT & PRIVACY
+
+Most of the app works as a guest, with your bookmarks and Ask AI history stored locally on your device. Signing in with an account syncs that Islamic study data instead, so it isn't lost if you switch devices or reinstall.
+
+FREE, WITH NO PAYWALLS
+
+Allah Everywhere is completely free, with no subscriptions and no in-app purchases. It carries a single small banner ad to help cover running costs - there are no interstitial, rewarded, or full-screen ads anywhere in the app.
+
+Allah Everywhere is built and maintained by a single developer as a form of Sadaqah Jariyah, with the hope that this Islamic app becomes a small, ongoing benefit for anyone who uses it. Feedback and suggestions on any Islamic feature are always welcome through the Settings screen.

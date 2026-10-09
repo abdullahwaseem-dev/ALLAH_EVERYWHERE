@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "de",
+  "name": "Al-Yasa'",
+  "title": "Einer der Besten, vor den Welten bevorzugt",
+  "sentTo": "Die Kinder Israels, nach Ansicht der meisten Gelehrten",
+  "era": "Nach Ilyas (a.s.), laut den Historikern; Koran und Sunna nennen kein Datum. Seine Stellung in dieser Reihenfolge ist ungefähr.",
+  "places": [
+    {
+      "name": "Nicht sicher bekannt; meist im Land Israel (Palästina) verortet.",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Al-Yasa' wird im Koran zweimal genannt, unter den Propheten, die Allah vor den Welten bevorzugt hat, und unter den Besten. Mehr erzählt der Koran nicht über sein Leben.",
+  "notes": [
+    "Die meisten Gelehrten setzen al-Yasa' mit Elisa aus der Bibel gleich, dem Nachfolger Elias (Ilyas). Dies stammt aus der Geschichtsschreibung und von den Leuten der Schrift.",
+    "Der Koran erzählt keine Geschichte über ihn; in authentischen Hadithen wird nichts weiter überliefert."
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "Vor den Welten bevorzugt",
+      "paragraphs": [
+        "Allah erwähnt al-Yasa' (a.s.) in der Sure al-An'am zusammen mit Ismail, Yunus und Lut: „und sie alle haben Wir vor den Welten bevorzugt.“",
+        "In der Sure Sad sagt Allah: „Und gedenke Ismails, al-Yasa's und Dhul-Kifls; alle gehören zu den Besten.“",
+        "Historiker sagen, er sei Ilyas (a.s.) nachgefolgt und habe nach ihm die Kinder Israels zu Allah gerufen. Der Koran hält seine Geschichte kurz, stellt ihn aber unter die Auserwählten und die Besten."
+      ],
+      "kidsParagraphs": [
+        "Al-Yasa' ist ein Prophet, der im Koran mit Ismail, Yunus und Lut genannt wird.",
+        "Allah sagt, er gehörte zu den besten und auserwähltesten Menschen."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "Allahs Auswahl und Lob sind die größte Ehre.",
+        "Jeder Prophet trug dieselbe Botschaft des Tauhid.",
+        "Wir glauben an alle Propheten, ob ihre Geschichten lang oder kurz sind."
+      ],
+      "quiz": [
+        {
+          "question": "Mit wem wird al-Yasa' in 6:86 genannt?",
+          "options": [
+            "Ismail, Yunus und Lut",
+            "Musa und Harun",
+            "Adam und Nuh",
+            "Isa und Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "Wie beschreibt 38:48 al-Yasa'?",
+          "options": [
+            "Unter den Besten",
+            "Als König",
+            "Als Händler",
+            "Als Dichter"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Was sagt Allah über die in 6:86 Genannten?",
+          "options": [
+            "Er hat sie vor den Welten bevorzugt",
+            "Sie waren Könige",
+            "Sie waren reich",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

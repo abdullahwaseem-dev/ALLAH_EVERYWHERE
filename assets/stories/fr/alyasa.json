@@ -1,0 +1,94 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "alyasa",
+  "language": "fr",
+  "name": "Al-Yasa'",
+  "title": "L'un des meilleurs, préféré aux mondes",
+  "sentTo": "Les Enfants d'Israël, selon la plupart des savants",
+  "era": "Après Ilyas (paix sur lui), selon les historiens ; le Coran et la Sunna ne donnent aucune date. Sa place dans cet ordre est approximative.",
+  "places": [
+    {
+      "name": "Pas connu avec certitude ; généralement situé en terre d'Israël (Palestine).",
+      "lat": null,
+      "lng": null
+    }
+  ],
+  "summary": "Al-Yasa' est nommé deux fois dans le Coran, parmi les prophètes qu'Allah a préférés aux mondes et parmi les meilleurs. Le Coran ne dit rien de plus sur sa vie.",
+  "notes": [
+    "La plupart des savants identifient al-Yasa' à Élisée de la Bible, le successeur d'Élie (Ilyas). Cela vient de l'histoire et des Gens du Livre.",
+    "Le Coran ne raconte aucune histoire à son sujet ; rien de plus n'est rapporté dans les hadiths authentiques."
+  ],
+  "chapters": [
+    {
+      "id": "alyasa-1",
+      "title": "Préféré aux mondes",
+      "paragraphs": [
+        "Allah mentionne al-Yasa' (paix sur lui) dans la sourate al-An'am avec Ismaïl, Younous et Lout : « et Nous les avons tous préférés aux mondes ».",
+        "Dans la sourate Sad, Allah dit : « Et rappelle-toi Ismaïl, al-Yasa' et Dhoul-Kifl ; tous sont parmi les meilleurs. »",
+        "Les historiens disent qu'il succéda à Ilyas (paix sur lui) et appela après lui les Enfants d'Israël à Allah. Le Coran garde son histoire brève, mais le place parmi les élus et les meilleurs."
+      ],
+      "kidsParagraphs": [
+        "Al-Yasa' est un prophète nommé dans le Coran avec Ismaïl, Younous et Lout.",
+        "Allah dit qu'il était parmi les meilleurs et les plus élus des gens."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 6,
+          "ayahStart": 86,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 38,
+          "ayahStart": 48,
+          "ayahEnd": 48
+        }
+      ],
+      "lessons": [
+        "Le choix et l'éloge d'Allah sont le plus grand honneur.",
+        "Chaque prophète porta le même message du tawhid.",
+        "Nous croyons en tous les prophètes, que leurs histoires soient longues ou courtes."
+      ],
+      "quiz": [
+        {
+          "question": "Avec qui al-Yasa' est-il nommé en 6:86 ?",
+          "options": [
+            "Ismaïl, Younous et Lout",
+            "Moussa et Haroun",
+            "Adam et Nouh",
+            "Issa et Yahya"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        },
+        {
+          "question": "Comment 38:48 décrit-il al-Yasa' ?",
+          "options": [
+            "Parmi les meilleurs",
+            "Un roi",
+            "Un marchand",
+            "Un poète"
+          ],
+          "answer": 0,
+          "reference": "Quran 38:48"
+        },
+        {
+          "question": "Que dit Allah de ceux qui sont nommés en 6:86 ?",
+          "options": [
+            "Il les a préférés aux mondes",
+            "C'étaient des rois",
+            "Ils étaient riches",
+            "Rien"
+          ],
+          "answer": 0,
+          "reference": "Quran 6:86"
+        }
+      ]
+    }
+  ]
+}

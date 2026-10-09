@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:allah_everywhere/utils/utils/constraints/colors.dart';
 import 'package:allah_everywhere/widgets/void_back_button.dart';
+import 'package:allah_everywhere/widgets/layout_helpers.dart';
 
 class ForgetPasswordSuccess extends StatelessWidget {
   const ForgetPasswordSuccess({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class ForgetPasswordSuccess extends StatelessWidget {
         leading: const VoidBackButton(),
       ),
       backgroundColor: isDark ? VoidColors.bgDark : VoidColors.bgLight,
-      body: SingleChildScrollView(
+      body: ReadableWidth(child: SingleChildScrollView(
         child: Column(
           children: [
             Padding(
@@ -74,7 +75,7 @@ class ForgetPasswordSuccess extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }

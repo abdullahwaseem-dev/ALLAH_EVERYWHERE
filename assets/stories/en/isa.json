@@ -1,0 +1,593 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "isa",
+  "language": "en",
+  "name": "Isa",
+  "title": "The Messiah, son of Maryam, a word from Allah",
+  "sentTo": "The Children of Israel",
+  "era": "Born around the beginning of the Common Era. He was raised to Allah and will return before the Day of Resurrection.",
+  "places": [
+    {
+      "name": "Bethlehem and Jerusalem (al-Quds), Palestine, according to history; the Quran says Maryam withdrew “to a remote place” (19:22).",
+      "lat": 31.7054,
+      "lng": 35.2024,
+      "approximate": true
+    },
+    {
+      "name": "Jerusalem (al-Quds), around the Temple where Zakariya served.",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "approximate": true
+    }
+  ],
+  "summary": "Born to the virgin Maryam without a father, by Allah's word “Be”. He spoke from the cradle, healed the blind and the leper and brought the dead to life by Allah's permission, and called the Children of Israel to worship Allah alone. He was not killed or crucified; Allah raised him up, and he will return before the end of time.",
+  "notes": [
+    "Muslims believe Isa is a Prophet and the Messiah, not God or the son of God (19:35, 5:116-117).",
+    "How he was saved (4:157, “it was made to appear so to them”): scholars differ on the details, including whether someone else was made to resemble him. The Quran is clear that he was not killed or crucified.",
+    "Isa's return is confirmed by authentic hadith (for example Sahih al-Bukhari 3448). Details of the end times come from many narrations of different strength.",
+    "The Gospel (Injil) given to Isa is not considered to be the same as the four Gospels written later."
+  ],
+  "chapters": [
+    {
+      "id": "isa-1",
+      "title": "Maryam, chosen above the women of the worlds",
+      "paragraphs": [
+        "Maryam was the daughter of 'Imran, whose wife had vowed her child to Allah's service. Her mother asked Allah to protect Maryam and her children from Shaytan, and the Prophet ﷺ said that every child is touched by Shaytan at birth and cries, except Maryam and her son.",
+        "Maryam grew up in worship under the care of Zakariya (AS). The angels said to her: “O Maryam, Allah has chosen you and purified you, and chosen you above the women of the worlds. O Maryam, be devoutly obedient to your Lord, prostrate and bow with those who bow.”"
+      ],
+      "kidsParagraphs": [
+        "Maryam was a very good and pure young woman who worshipped Allah.",
+        "The angels told her: “Allah has chosen you above all women!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 36,
+          "ayahEnd": 36
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "4548",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Prophet ﷺ said: “No child is born except that Shaytan touches it when it is born, so it cries out because of Shaytan's touch, except Maryam and her son.”",
+          "match": "ما من مولود يولد الا والشيطان يمسه حين يولد",
+          "shortened": true
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 42,
+          "ayahEnd": 43
+        }
+      ],
+      "lessons": [
+        "Allah protects those who are dedicated to Him.",
+        "A mother's prayer for her child is precious.",
+        "Maryam is a model of worship for women and men."
+      ],
+      "quiz": [
+        {
+          "question": "Above whom did Allah choose Maryam?",
+          "options": [
+            "The women of the worlds",
+            "The angels",
+            "The Prophets",
+            "Kings"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:42"
+        },
+        {
+          "question": "Whom does Shaytan not touch at birth, according to the hadith?",
+          "options": [
+            "Maryam and her son",
+            "All babies",
+            "Only Prophets",
+            "No one"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 4548"
+        },
+        {
+          "question": "Who was Maryam's father?",
+          "options": [
+            "'Imran",
+            "Zakariya",
+            "Yahya",
+            "Harun"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:35"
+        }
+      ]
+    },
+    {
+      "id": "isa-2",
+      "title": "The angel's news",
+      "paragraphs": [
+        "One day Maryam withdrew from her family to a place towards the east. Allah sent the angel Jibril to her in the form of a man. She was afraid: “I seek refuge in the Most Merciful from you, if you fear Allah.”",
+        "He said: “I am only a messenger from your Lord, to give you a pure son.” She asked: “How can I have a son when no man has touched me?” He said: “Your Lord says: it is easy for Me. We will make him a sign for people and a mercy from Us.”",
+        "The angels told her his name: “The Messiah, Isa, son of Maryam, honoured in this world and the Hereafter, and one of those brought near. He will speak to people in the cradle and as a grown man.” When Allah decides a matter, He only says “Be”, and it is."
+      ],
+      "kidsParagraphs": [
+        "An angel came to Maryam and told her: “Allah will give you a pure son.”",
+        "Maryam asked: “How, when I am not married?” The angel said: “It is easy for Allah!”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 16,
+          "ayahEnd": 18
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 19,
+          "ayahEnd": 21
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 3,
+          "ayahStart": 45,
+          "ayahEnd": 47
+        }
+      ],
+      "lessons": [
+        "Seek refuge in Allah when afraid.",
+        "Allah creates as He wills; Isa's birth is a sign of His power.",
+        "Chastity and modesty are honoured by Allah."
+      ],
+      "quiz": [
+        {
+          "question": "Who came to Maryam?",
+          "options": [
+            "An angel in the form of a man",
+            "Zakariya",
+            "A traveller",
+            "A king"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:17"
+        },
+        {
+          "question": "What was the name of her son, according to the angels?",
+          "options": [
+            "The Messiah, Isa, son of Maryam",
+            "Yahya",
+            "Musa",
+            "Ahmad"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:45"
+        },
+        {
+          "question": "What did the angel say about the birth?",
+          "options": [
+            "It is easy for Allah",
+            "It is impossible",
+            "Wait ten years",
+            "Ask Zakariya"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:21"
+        }
+      ]
+    },
+    {
+      "id": "isa-3",
+      "title": "Under the palm tree",
+      "paragraphs": [
+        "Maryam conceived Isa and withdrew to a far place. The pains of childbirth drove her to the trunk of a palm tree. Alone and frightened, she said: “I wish I had died before this and been completely forgotten.”",
+        "Then a voice called her from below: “Do not grieve. Your Lord has placed a stream beneath you. Shake the trunk of the palm tree towards you, and fresh ripe dates will fall for you. So eat, drink and be comforted.”",
+        "She was told that if she saw anyone, she should indicate: “I have vowed a fast of silence to the Most Merciful, so I will not speak to anyone today.”"
+      ],
+      "kidsParagraphs": [
+        "Maryam had her baby under a palm tree. She was tired and scared.",
+        "A voice said: “Do not be sad! Shake the palm tree and eat the fresh dates, and drink from the stream.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 22,
+          "ayahEnd": 23
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 24,
+          "ayahEnd": 25
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 26,
+          "ayahEnd": 26
+        }
+      ],
+      "lessons": [
+        "Allah sends comfort in the hardest moments.",
+        "Allah provides, but we also take the means: Maryam shook the tree.",
+        "Silence can be the best answer to people's accusations."
+      ],
+      "quiz": [
+        {
+          "question": "Where did Maryam give birth?",
+          "options": [
+            "By the trunk of a palm tree",
+            "In a palace",
+            "In the Temple",
+            "On a ship"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:23"
+        },
+        {
+          "question": "What fell from the palm tree?",
+          "options": [
+            "Fresh ripe dates",
+            "Leaves",
+            "Gold",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:25"
+        },
+        {
+          "question": "What kind of fast did Maryam keep?",
+          "options": [
+            "A fast of silence",
+            "A fast from food only",
+            "No fast",
+            "A fast of forty days"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:26"
+        }
+      ]
+    },
+    {
+      "id": "isa-4",
+      "title": "Speaking from the cradle",
+      "paragraphs": [
+        "Maryam brought her baby to her people. They were shocked: “O Maryam, you have done something terrible! O sister of Harun, your father was not a bad man, and your mother was not unchaste.” (The Prophet ﷺ explained that people used to be named after the Prophets and righteous people before them.)",
+        "Maryam pointed to the baby. “How can we speak to a baby in the cradle?” they said. Then Isa spoke: “I am the servant of Allah. He has given me the Scripture and made me a Prophet. He has made me blessed wherever I am, and commanded me to pray and give zakah as long as I live, and to be dutiful to my mother. Peace be upon me the day I was born, the day I die and the day I am raised alive.”",
+        "Allah says: “That is Isa, son of Maryam: the word of truth about which they dispute. It is not for Allah to take a son.”"
+      ],
+      "kidsParagraphs": [
+        "People said bad things about Maryam. She pointed to her baby.",
+        "Baby Isa spoke! He said: “I am the servant of Allah, and He has made me a Prophet.”"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 19,
+          "ayahStart": 27,
+          "ayahEnd": 28
+        },
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "muslim",
+          "source": "Sahih Muslim",
+          "number": "2135",
+          "narrator": "Al-Mughirah ibn Shu'bah",
+          "translation": "When I came to Najran, they asked me: “You recite ‘O sister of Harun’, yet Musa lived long before Isa?” When I came back to the Messenger of Allah ﷺ, I asked him about that, and he said: “They used to give names after their Prophets and the righteous people before them.”",
+          "match": "انهم كانوا يسمون بانبيائهم والصالحين قبلهم"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 19,
+          "ayahStart": 29,
+          "ayahEnd": 33
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 19,
+          "ayahStart": 34,
+          "ayahEnd": 35
+        }
+      ],
+      "lessons": [
+        "Allah defends the innocent.",
+        "Isa's first words were: “I am the servant of Allah.”",
+        "Prayer, charity and kindness to mother are central to faith."
+      ],
+      "quiz": [
+        {
+          "question": "What were Isa's first words from the cradle?",
+          "options": [
+            "I am the servant of Allah",
+            "I am a king",
+            "I am hungry",
+            "I am the son of God"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:30"
+        },
+        {
+          "question": "To whom did Isa say he must be dutiful?",
+          "options": [
+            "His mother",
+            "The king",
+            "The priests",
+            "His teacher"
+          ],
+          "answer": 0,
+          "reference": "Quran 19:32"
+        },
+        {
+          "question": "Why was Maryam called “sister of Harun”?",
+          "options": [
+            "People were named after earlier Prophets and righteous people",
+            "She was Musa's sister",
+            "It was her nickname from Egypt",
+            "No reason"
+          ],
+          "answer": 0,
+          "reference": "Sahih Muslim 2135"
+        }
+      ]
+    },
+    {
+      "id": "isa-5",
+      "title": "Signs by Allah's permission",
+      "paragraphs": [
+        "Allah taught Isa writing and wisdom, the Torah and the Injil, and sent him as a messenger to the Children of Israel. He came with signs, always “by Allah's permission”: he made the shape of a bird from clay and breathed into it, and it became a bird; he healed the blind and the leper; he brought the dead to life; and he told people what they ate and stored in their homes.",
+        "He confirmed the Torah before him and made lawful some things that had been forbidden to them. His message was clear: “Allah is my Lord and your Lord, so worship Him. That is the straight path.”",
+        "Isa also gave good news: “I am the messenger of Allah to you, confirming the Torah before me and bringing good news of a messenger who will come after me, whose name is Ahmad.” That is the Prophet Muhammad ﷺ."
+      ],
+      "kidsParagraphs": [
+        "By Allah's permission, Isa made a clay bird fly, healed the sick and brought the dead back to life.",
+        "He told the people: “Allah is my Lord and your Lord, so worship Him.” And he gave good news of a Prophet called Ahmad."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 3,
+          "ayahStart": 48,
+          "ayahEnd": 49
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 3,
+          "ayahStart": 50,
+          "ayahEnd": 51
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 61,
+          "ayahStart": 6,
+          "ayahEnd": 6
+        }
+      ],
+      "lessons": [
+        "Every miracle is by Allah's permission, not by the Prophet's own power.",
+        "All the Prophets called to worship Allah alone.",
+        "Isa foretold the coming of the Prophet Muhammad ﷺ."
+      ],
+      "quiz": [
+        {
+          "question": "What did Isa make from clay?",
+          "options": [
+            "The shape of a bird",
+            "A house",
+            "A cup",
+            "A lamp"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        },
+        {
+          "question": "What name did Isa give for the messenger after him?",
+          "options": [
+            "Ahmad",
+            "Yahya",
+            "Musa",
+            "Ilyas"
+          ],
+          "answer": 0,
+          "reference": "Quran 61:6"
+        },
+        {
+          "question": "By whose permission did Isa perform his signs?",
+          "options": [
+            "Allah's",
+            "His own",
+            "The angels'",
+            "The king's"
+          ],
+          "answer": 0,
+          "reference": "Quran 3:49"
+        }
+      ]
+    },
+    {
+      "id": "isa-6",
+      "title": "The disciples and the table",
+      "paragraphs": [
+        "Allah inspired the disciples (al-Hawariyyun) to believe in Him and in His messenger. They said: “We believe; bear witness that we are Muslims.”",
+        "The disciples asked: “O Isa, son of Maryam, can your Lord send down to us a table spread with food from heaven?” Isa told them to fear Allah. They explained that they wanted to eat from it, to reassure their hearts and to be witnesses to it.",
+        "Isa prayed: “O Allah, our Lord, send down to us a table from heaven, to be a feast for the first of us and the last of us, and a sign from You.” Allah answered that He would send it, but whoever disbelieved after that would face a severe punishment."
+      ],
+      "kidsParagraphs": [
+        "Isa had faithful helpers called the disciples.",
+        "They asked for a table of food from heaven, and Isa prayed to Allah for it."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 5,
+          "ayahStart": 111,
+          "ayahEnd": 111
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 112,
+          "ayahEnd": 113
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 5,
+          "ayahStart": 114,
+          "ayahEnd": 115
+        }
+      ],
+      "lessons": [
+        "Good companions help us stay firm in faith.",
+        "Ask Allah, not anyone else, for what you need.",
+        "Greater blessings bring greater responsibility."
+      ],
+      "quiz": [
+        {
+          "question": "What did the disciples ask for?",
+          "options": [
+            "A table spread with food from heaven",
+            "A kingdom",
+            "Gold",
+            "A ship"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:112"
+        },
+        {
+          "question": "What did the disciples say about themselves?",
+          "options": [
+            "We are Muslims",
+            "We are kings",
+            "We are angels",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:111"
+        },
+        {
+          "question": "To whom did Isa pray for the table?",
+          "options": [
+            "Allah",
+            "The angels",
+            "The king",
+            "His mother"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:114"
+        }
+      ]
+    },
+    {
+      "id": "isa-7",
+      "title": "Raised up, and coming back",
+      "paragraphs": [
+        "Some of the enemies of Isa plotted to kill him. They claimed: “We killed the Messiah, Isa son of Maryam.” But the Quran says: “They did not kill him, and they did not crucify him; it was only made to appear so to them… Rather, Allah raised him up to Himself.”",
+        "On the Day of Resurrection Allah will ask Isa whether he told people to take him and his mother as gods besides Allah. He will say: “Glory be to You! I said to them only what You commanded me: worship Allah, my Lord and your Lord.”",
+        "The Prophet ﷺ said that Isa son of Maryam will come down as a just ruler before the Hour. He also said: “I am the closest of people to Isa son of Maryam in this world and the Hereafter. The Prophets are brothers: their mothers are different, but their religion is one.”"
+      ],
+      "kidsParagraphs": [
+        "Isa was not killed. Allah raised him up to Himself.",
+        "Our Prophet ﷺ told us that Isa will come back before the end of the world. All the Prophets are brothers with one religion!"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 4,
+          "ayahStart": 157,
+          "ayahEnd": 158
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 5,
+          "ayahStart": 116,
+          "ayahEnd": 117
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3448",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “By the One in whose hand is my soul, the son of Maryam will soon come down among you as a just ruler…”",
+          "match": "ليوشكن ان ينزل فيكم ابن مريم حكما عدلا",
+          "shortened": true
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3443",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Messenger of Allah ﷺ said: “I am the closest of people to Isa son of Maryam in this world and the Hereafter. The Prophets are brothers from one father: their mothers are different, and their religion is one.”",
+          "match": "انا اولى الناس بعيسى ابن مريم في الدنيا والاخرة"
+        }
+      ],
+      "lessons": [
+        "Isa was not killed or crucified; Allah raised him.",
+        "Isa never called people to worship him.",
+        "All the Prophets shared one religion: Islam, submission to Allah."
+      ],
+      "quiz": [
+        {
+          "question": "What does the Quran say happened to Isa?",
+          "options": [
+            "Allah raised him up to Himself",
+            "He was crucified",
+            "He died in battle",
+            "He went to India"
+          ],
+          "answer": 0,
+          "reference": "Quran 4:158"
+        },
+        {
+          "question": "What will Isa say on the Day of Resurrection?",
+          "options": [
+            "I told them only to worship Allah, my Lord and your Lord",
+            "Worship me",
+            "Worship my mother",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 5:117"
+        },
+        {
+          "question": "How did the Prophet ﷺ describe the Prophets?",
+          "options": [
+            "Brothers whose religion is one",
+            "Rivals",
+            "Kings",
+            "Strangers"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3443"
+        }
+      ]
+    }
+  ]
+}

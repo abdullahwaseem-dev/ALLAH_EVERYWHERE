@@ -1,0 +1,341 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart.",
+  "reviewed": false,
+  "id": "yunus",
+  "language": "en",
+  "name": "Yunus",
+  "title": "Dhun-Nun, the companion of the fish",
+  "sentTo": "The people of Nineveh, a hundred thousand or more",
+  "era": "The time is not stated in the Quran or Sunnah; historians place him in the 8th century BCE.",
+  "places": [
+    {
+      "name": "Nineveh, opposite modern Mosul in Iraq, according to most scholars.",
+      "lat": 36.36,
+      "lng": 43.15,
+      "approximate": true
+    }
+  ],
+  "summary": "Yunus left his people in anger before Allah gave him permission. He was thrown from a ship and swallowed by a great fish, where he called out in the darkness: “There is no god but You; glory be to You; I have been among the wrongdoers.” Allah saved him, and his whole people believed.",
+  "notes": [
+    "The Quran does not name the city; Nineveh comes from history and the Bible.",
+    "How long Yunus stayed inside the fish is not stated in the Quran or authentic hadith; reports range from part of a day to forty days.",
+    "“He thought We would not decree anything upon him” (21:87): scholars explain it as “he thought We would not make things hard for him”, not that he doubted Allah's power.",
+    "The famous du'a of Yunus is in the Quran (21:87). A hadith about its virtue is in at-Tirmidhi; it should be checked before being quoted."
+  ],
+  "chapters": [
+    {
+      "id": "yunus-1",
+      "title": "Leaving in anger",
+      "paragraphs": [
+        "Allah sent Yunus (AS) to a great city of a hundred thousand people or more. He called them to Allah, but they did not respond.",
+        "Yunus became angry with them and left before Allah had given him permission. He went to the shore and boarded a fully laden ship.",
+        "The Quran calls him “the man of the fish”: he went off in anger and thought that Allah would not hold him to account. His story teaches that even a Prophet must wait for Allah's command."
+      ],
+      "kidsParagraphs": [
+        "Allah sent Yunus to a big city. When the people did not listen, Yunus got upset and left.",
+        "He got on a ship without waiting for Allah's permission."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 147
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 139,
+          "ayahEnd": 140
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        }
+      ],
+      "lessons": [
+        "Be patient with people and wait for Allah's command.",
+        "Anger can lead us to hasty decisions.",
+        "Calling to Allah needs patience, not frustration."
+      ],
+      "quiz": [
+        {
+          "question": "How many people was Yunus sent to?",
+          "options": [
+            "A hundred thousand or more",
+            "Ten",
+            "A thousand",
+            "Seventy"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:147"
+        },
+        {
+          "question": "Why did Yunus leave his people?",
+          "options": [
+            "He was angry with them",
+            "He was sent to Egypt",
+            "He was sick",
+            "He wanted to trade"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "Where did Yunus go when he left?",
+          "options": [
+            "To a laden ship",
+            "To a mountain",
+            "To a cave",
+            "To the desert"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:140"
+        }
+      ]
+    },
+    {
+      "id": "yunus-2",
+      "title": "In the belly of the fish",
+      "paragraphs": [
+        "Out at sea, the people on the ship drew lots, and Yunus was among the losers. He was cast into the sea, and a great fish swallowed him.",
+        "In the darkness of the night, the sea and the belly of the fish, Yunus called out: “There is no god but You; glory be to You; I have been among the wrongdoers.”",
+        "Allah says that if Yunus had not been one of those who glorify Him, he would have stayed in its belly until the Day of Resurrection. But Allah answered him and saved him from his distress: “And thus We save the believers.”"
+      ],
+      "kidsParagraphs": [
+        "Yunus was thrown into the sea, and a big fish swallowed him!",
+        "In the dark, Yunus prayed: “There is no god but You, glory be to You, I have done wrong.” And Allah saved him."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 141,
+          "ayahEnd": 142
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 21,
+          "ayahStart": 87,
+          "ayahEnd": 87
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 37,
+          "ayahStart": 143,
+          "ayahEnd": 144
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 21,
+          "ayahStart": 88,
+          "ayahEnd": 88
+        }
+      ],
+      "lessons": [
+        "No darkness is too deep for Allah to hear our du'a.",
+        "Admit your mistake to Allah, and glorify Him.",
+        "Remembering Allah in good times helps us in hard times."
+      ],
+      "quiz": [
+        {
+          "question": "What swallowed Yunus?",
+          "options": [
+            "A great fish",
+            "A wave",
+            "A cave",
+            "A crocodile"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:142"
+        },
+        {
+          "question": "What did Yunus say in the darkness?",
+          "options": [
+            "There is no god but You; glory be to You; I have been among the wrongdoers",
+            "Help me, people",
+            "Why me?",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:87"
+        },
+        {
+          "question": "What does Allah say He does for the believers like Yunus?",
+          "options": [
+            "Saves them",
+            "Forgets them",
+            "Punishes them",
+            "Leaves them"
+          ],
+          "answer": 0,
+          "reference": "Quran 21:88"
+        }
+      ]
+    },
+    {
+      "id": "yunus-3",
+      "title": "The whole city believed",
+      "paragraphs": [
+        "Allah cast Yunus out onto an open shore, weak and ill, and made a gourd plant grow over him to shelter him.",
+        "Then Allah sent him back to his people, and this time they believed, all of them. Allah lifted the punishment from them and let them enjoy life for a time. The Quran says no other town that believed at the last moment was helped by its faith in this way, except the people of Yunus.",
+        "Allah told the Prophet Muhammad ﷺ to be patient and not be like the companion of the fish when he called out in distress. Then Allah chose Yunus and made him one of the righteous."
+      ],
+      "kidsParagraphs": [
+        "The fish put Yunus on the beach, and a plant grew to shade him.",
+        "When Yunus went back, everyone in the city believed! Allah forgave them."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 37,
+          "ayahStart": 145,
+          "ayahEnd": 146
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 37,
+          "ayahStart": 147,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 10,
+          "ayahStart": 98,
+          "ayahEnd": 98
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 68,
+          "ayahStart": 48,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Never give up on people; hearts can change.",
+        "Allah gives a second chance to those who return to Him.",
+        "Patience in calling people is better than hasty anger."
+      ],
+      "quiz": [
+        {
+          "question": "What grew over Yunus on the shore?",
+          "options": [
+            "A gourd plant",
+            "A palm tree",
+            "Grass",
+            "A fig tree"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:146"
+        },
+        {
+          "question": "What did the people of Yunus do?",
+          "options": [
+            "They believed",
+            "They left the city",
+            "They fought him",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 37:148"
+        },
+        {
+          "question": "Which people's faith benefited them at the last moment, according to 10:98?",
+          "options": [
+            "The people of Yunus",
+            "The people of Nuh",
+            "Pharaoh's people",
+            "'Ad"
+          ],
+          "answer": 0,
+          "reference": "Quran 10:98"
+        }
+      ]
+    },
+    {
+      "id": "yunus-4",
+      "title": "Do not say you are better than Yunus",
+      "paragraphs": [
+        "Because Yunus made a mistake, some people might think less of him. The Prophet ﷺ forbade this: “No servant should say: I am better than Yunus ibn Matta.”",
+        "Yunus repented sincerely, and Allah chose him and made him one of the righteous. His prayer from the darkness is still the prayer of every believer in distress."
+      ],
+      "kidsParagraphs": [
+        "Our Prophet ﷺ said: “No one should say: I am better than Yunus.”",
+        "Yunus said sorry to Allah, and Allah made him one of the righteous."
+      ],
+      "blocks": [
+        {
+          "type": "hadith",
+          "after": 0,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3416",
+          "narrator": "Abu Hurayrah",
+          "translation": "The Prophet ﷺ said: “It is not fitting for any servant to say: I am better than Yunus ibn Matta.”",
+          "match": "لا ينبغي لعبد ان يقول انا خير من يونس بن متى"
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 68,
+          "ayahStart": 50,
+          "ayahEnd": 50
+        }
+      ],
+      "lessons": [
+        "Respect all the Prophets.",
+        "A mistake followed by repentance does not lower a person in Allah's sight.",
+        "Do not look down on anyone for a past sin they repented from."
+      ],
+      "quiz": [
+        {
+          "question": "What did the Prophet ﷺ say no servant should say?",
+          "options": [
+            "I am better than Yunus ibn Matta",
+            "I love Yunus",
+            "Yunus was a Prophet",
+            "Yunus was patient"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        },
+        {
+          "question": "What did Allah do for Yunus after his repentance?",
+          "options": [
+            "Chose him and made him one of the righteous",
+            "Made him a king",
+            "Gave him a ship",
+            "Nothing"
+          ],
+          "answer": 0,
+          "reference": "Quran 68:50"
+        },
+        {
+          "question": "What was Yunus's father's name, according to the hadith?",
+          "options": [
+            "Matta",
+            "Ya'qub",
+            "Imran",
+            "Ibrahim"
+          ],
+          "answer": 0,
+          "reference": "Sahih al-Bukhari 3416"
+        }
+      ]
+    }
+  ]
+}

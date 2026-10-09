@@ -1,0 +1,344 @@
+{
+  "_note": "CONTENT REVIEW REQUIRED: verify against source before release",
+  "_sources": "Narration: the app's own words, following the Quran and Ibn Kathir's Qasas al-Anbiya as a reference for order and events (no text copied). Quran: references only, text from the `quran` package. Hadith: the app's own English from the Arabic of Sahih al-Bukhari / Sahih Muslim (sunnah.com numbering), checked against the `hadith` package by test/prophet_stories_test.dart. Translated from the English file by the app team; a native speaker and a scholar must review it.",
+  "reviewed": false,
+  "id": "salih",
+  "language": "de",
+  "name": "Salih",
+  "title": "Der Gesandte zu Thamud",
+  "sentTo": "Das Volk Thamud, sein eigenes Volk",
+  "era": "Nach 'Ad. Der Koran sagt, Thamud wurden Nachfolger nach 'Ad (7:74); kein Datum wird genannt.",
+  "places": [
+    {
+      "name": "Al-Hidschr (15:80), im Nordwesten Arabiens. Es wird mit Mada'in Salih (Hegra) gleichgesetzt, dessen in den Fels gehauene Gräber noch heute zu sehen sind.",
+      "lat": 26.79,
+      "lng": 37.95,
+      "approximate": true
+    }
+  ],
+  "summary": "Salih wurde zu Thamud gesandt, die ihre Häuser aus den Bergen hauten. Allah gab ihnen eine Kamelstute als Zeichen und warnte sie, ihr nichts anzutun. Sie töteten sie, und ein schrecklicher Schrei vernichtete sie, während Salih und die Gläubigen gerettet wurden.",
+  "notes": [
+    "Einzelheiten über das Erscheinen der Kamelstute (etwa dass sie auf Verlangen der Leute aus einem Felsen kam) stammen aus Berichten in Tafsir- und Geschichtsbüchern, nicht aus dem Koran oder authentischen Hadithen.",
+    "Die Felsgräber von Mada'in Salih stammen aus der nabatäischen Zeit, später als Thamud; die Gleichsetzung von al-Hidschr mit dieser Gegend beruht darauf, dass der Prophet ﷺ dort vorbeizog, doch welche Ruinen zu Thamud gehören, ist nicht sicher.",
+    "Der Name dessen, der die Kamelstute tötete (oft Qudar genannt), stammt aus späteren Berichten."
+  ],
+  "chapters": [
+    {
+      "id": "salih-1",
+      "title": "Die Bergbehauer",
+      "paragraphs": [
+        "Nach 'Ad setzte Allah ein anderes Volk auf der Erde ein: Thamud. Sie lebten in al-Hidschr im Nordwesten Arabiens, inmitten von Gärten, Quellen, Feldern und fruchtschweren Palmen.",
+        "Sie waren geschickte Baumeister. Sie bauten Paläste in den Ebenen und hauten ihre Häuser aus den Bergen. Doch wie 'Ad vor ihnen vergaßen sie Den, der ihnen all das gegeben hatte, und die Hochmütigen unter ihnen führten die anderen."
+      ],
+      "kidsParagraphs": [
+        "Das Volk Thamud lebte zwischen Gärten und Quellen.",
+        "Sie hauten Häuser aus den Bergen. Aber sie vergaßen, Allah zu danken."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 26,
+          "ayahStart": 146,
+          "ayahEnd": 148
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 74,
+          "ayahEnd": 74
+        }
+      ],
+      "lessons": [
+        "Geschick und Wohlstand sind Gaben Allahs, keine Gründe für Stolz.",
+        "Lerne von den Völkern vor uns.",
+        "Wohlstand kann Menschen das Jenseits vergessen lassen."
+      ],
+      "quiz": [
+        {
+          "question": "Was hauten die Thamud aus den Bergen?",
+          "options": [
+            "Statuen",
+            "Häuser",
+            "Schiffe",
+            "Brunnen"
+          ],
+          "answer": 1,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Nach welchem Volk kam Thamud?",
+          "options": [
+            "'Ad",
+            "Dem Volk Luts",
+            "Dem Volk Musas",
+            "Den Römern"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:74"
+        },
+        {
+          "question": "Was hatten die Thamud laut Koran 26:147-148?",
+          "options": [
+            "Gärten, Quellen und Palmen",
+            "Schiffe und Häfen",
+            "Schnee und Eis",
+            "Goldminen"
+          ],
+          "answer": 0,
+          "reference": "Quran 26:147-148"
+        }
+      ]
+    },
+    {
+      "id": "salih-2",
+      "title": "Die Kamelstute Allahs",
+      "paragraphs": [
+        "Allah sandte ihnen ihren Bruder Salih (a.s.): „O mein Volk, betet Allah an; ihr habt keinen Gott außer Ihm. Er hat euch aus der Erde hervorgebracht und euch darauf angesiedelt, so bittet Ihn um Vergebung und kehrt zu Ihm um.“",
+        "Zuvor hatten sie große Hoffnungen in Salih gesetzt. Nun sagten sie, sie zweifelten an seiner Botschaft, und nannten ihn verzaubert: „Du bist nur ein Mensch wie wir; so bring ein Zeichen, wenn du die Wahrheit sagst.“",
+        "Allah gab ihnen ein klares Zeichen: eine Kamelstute. Salih sagte ihnen: „Das ist die Kamelstute Allahs, ein Zeichen für euch. Lasst sie auf Allahs Erde fressen und tut ihr nichts zuleide.“ Das Wasser sollte geteilt werden: An einem Tag trank sie, am anderen sie."
+      ],
+      "kidsParagraphs": [
+        "Salih sagte seinem Volk, es solle nur Allah anbeten. Sie verlangten ein Zeichen.",
+        "Allah gab ihnen eine besondere Kamelstute. Salih sagte: „Tut ihr nicht weh. Einen Tag trinkt sie, am nächsten Tag ihr.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 61,
+          "ayahEnd": 61
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 62,
+          "ayahEnd": 62
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 26,
+          "ayahStart": 153,
+          "ayahEnd": 154
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 11,
+          "ayahStart": 64,
+          "ayahEnd": 64
+        },
+        {
+          "type": "quran",
+          "after": 2,
+          "surah": 26,
+          "ayahStart": 155,
+          "ayahEnd": 156
+        },
+        {
+          "type": "narrationNote",
+          "after": 2,
+          "text": "Manche Bücher sagen, die Kamelstute sei vor den Augen der Leute aus einem massiven Felsen hervorgekommen, bereits trächtig, nachdem sie genau dieses Zeichen verlangt hatten."
+        }
+      ],
+      "lessons": [
+        "Allahs Zeichen sind Barmherzigkeit und Prüfung zugleich.",
+        "Gerechtes Teilen gehört zum Gehorsam gegenüber Allah.",
+        "Um ein Zeichen zu bitten ist leicht; danach zu glauben und zu gehorchen ist die wahre Prüfung."
+      ],
+      "quiz": [
+        {
+          "question": "Welches Zeichen gab Allah den Thamud?",
+          "options": [
+            "Einen Stab",
+            "Eine Kamelstute",
+            "Ein Schiff",
+            "Eine Wolke"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:64"
+        },
+        {
+          "question": "Wie wurde das Wasser geteilt?",
+          "options": [
+            "Die Kamelstute trank nie",
+            "Sie trank an einem Tag, die Leute am anderen",
+            "Nur die Anführer tranken",
+            "Die Leute tranken zuerst"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:155"
+        },
+        {
+          "question": "Wie nannten die Thamud Salih?",
+          "options": [
+            "Einen König",
+            "Einen Verzauberten",
+            "Einen Händler",
+            "Einen Engel"
+          ],
+          "answer": 1,
+          "reference": "Quran 26:153"
+        }
+      ]
+    },
+    {
+      "id": "salih-3",
+      "title": "Sie lähmten sie",
+      "paragraphs": [
+        "Die hochmütigen Anführer weigerten sich zu glauben und verachteten die Schwachen, die geglaubt hatten. Dann trat der Unseligste unter ihnen hervor, und sie durchschnitten der Kamelstute die Sehnen und töteten sie.",
+        "Sie forderten Salih heraus: „Bring uns, was du uns versprichst, wenn du ein Gesandter bist.“ Salih sagte: „Genießt eure Wohnstätten noch drei Tage. Das ist ein Versprechen, das nicht gelogen ist.“"
+      ],
+      "kidsParagraphs": [
+        "Die Stolzen töteten die Kamelstute Allahs.",
+        "Salih warnte sie: „Ihr habt nur noch drei Tage.“"
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 7,
+          "ayahStart": 75,
+          "ayahEnd": 77
+        },
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 91,
+          "ayahStart": 11,
+          "ayahEnd": 14
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 11,
+          "ayahStart": 65,
+          "ayahEnd": 65
+        }
+      ],
+      "lessons": [
+        "Allahs Gebot offen zu brechen, zieht Seine Strafe nach sich.",
+        "Wer einem Verbrechen zustimmt, hat Anteil daran.",
+        "Eine Warnung zu verspotten, lässt sie nicht verschwinden."
+      ],
+      "quiz": [
+        {
+          "question": "Was taten die Thamud mit der Kamelstute?",
+          "options": [
+            "Sie verkauften sie",
+            "Sie durchschnitten ihr die Sehnen",
+            "Sie versteckten sie",
+            "Sie fütterten sie"
+          ],
+          "answer": 1,
+          "reference": "Quran 91:14"
+        },
+        {
+          "question": "Wie viele Tage gab Salih ihnen danach?",
+          "options": [
+            "Sieben",
+            "Drei",
+            "Vierzig",
+            "Zehn"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:65"
+        },
+        {
+          "question": "Wer trat hervor, um die Kamelstute zu töten?",
+          "options": [
+            "Der Unseligste unter ihnen",
+            "Salihs Sohn",
+            "Ein Fremder",
+            "Der König von Ägypten"
+          ],
+          "answer": 0,
+          "reference": "Quran 91:12"
+        }
+      ]
+    },
+    {
+      "id": "salih-4",
+      "title": "Die Ruinen von al-Hidschr",
+      "paragraphs": [
+        "Als Allahs Befehl kam, rettete Er Salih und die mit ihm Glaubenden durch Seine Barmherzigkeit. Ein schrecklicher Schrei und ein Beben ergriffen die Ungerechten, und am Morgen lagen sie leblos in ihren Häusern, als hätten sie nie dort gewohnt.",
+        "Salih wandte sich von ihnen ab und sagte: „O mein Volk, ich habe euch die Botschaft meines Herrn übermittelt und euch geraten, doch ihr liebt die aufrichtigen Ratgeber nicht.“",
+        "Viele Jahrhunderte später kam der Prophet ﷺ mit seinen Gefährten an al-Hidschr vorbei. Er sagte ihnen, sie sollten die Wohnstätten derer, die sich selbst Unrecht taten, nur weinend betreten, damit sie nicht träfe, was jene getroffen hatte, und er bedeckte sein Gesicht."
+      ],
+      "kidsParagraphs": [
+        "Allah rettete Salih und die Gläubigen. Ein schrecklicher Schrei vernichtete die anderen.",
+        "Als der Prophet ﷺ an ihren Ruinen vorbeikam, sagte er: „Betretet sie nur weinend.“ Er wollte, dass wir lernen und demütig bleiben."
+      ],
+      "blocks": [
+        {
+          "type": "quran",
+          "after": 0,
+          "surah": 11,
+          "ayahStart": 66,
+          "ayahEnd": 68
+        },
+        {
+          "type": "quran",
+          "after": 1,
+          "surah": 7,
+          "ayahStart": 79,
+          "ayahEnd": 79
+        },
+        {
+          "type": "hadith",
+          "after": 2,
+          "collection": "bukhari",
+          "source": "Sahih al-Bukhari",
+          "number": "3380",
+          "narrator": "Abdullah ibn Umar",
+          "translation": "Als der Prophet ﷺ an al-Hidschr vorbeikam, sagte er: „Betretet die Wohnstätten derer, die sich selbst Unrecht taten, nicht, es sei denn weinend, damit euch nicht trifft, was sie getroffen hat.“ Dann bedeckte er seinen Kopf mit seinem Umhang, während er auf seinem Sattel saß.",
+          "match": "لا تدخلوا مساكن الذين ظلموا الا ان تكونوا باكين"
+        }
+      ],
+      "lessons": [
+        "Orte der Strafe sind zum Nachdenken da, nicht zur Unterhaltung.",
+        "Der Rat eines Propheten ist aufrichtig, auch wenn die Menschen ihn ablehnen.",
+        "Allah rettet die Gläubigen selbst inmitten eines vernichteten Volkes."
+      ],
+      "quiz": [
+        {
+          "question": "Was ergriff die Ungerechten der Thamud?",
+          "options": [
+            "Eine Flut",
+            "Ein schrecklicher Schrei und ein Beben",
+            "Ein Feuer",
+            "Ein Sturm von sieben Nächten"
+          ],
+          "answer": 1,
+          "reference": "Quran 11:67"
+        },
+        {
+          "question": "Was sagte der Prophet ﷺ, als er an al-Hidschr vorbeikam?",
+          "options": [
+            "Geht hinein und ruht euch aus",
+            "Betretet sie nur weinend",
+            "Baut dort eine Moschee",
+            "Trinkt aus ihren Brunnen"
+          ],
+          "answer": 1,
+          "reference": "Sahih al-Bukhari 3380"
+        },
+        {
+          "question": "Was sagte Salih, als er sich von ihnen abwandte?",
+          "options": [
+            "Ich habe euch die Botschaft meines Herrn übermittelt und euch geraten",
+            "Ich komme zurück",
+            "Ihr hattet recht",
+            "Nichts"
+          ],
+          "answer": 0,
+          "reference": "Quran 7:79"
+        }
+      ]
+    }
+  ]
+}
